@@ -12,16 +12,16 @@ Understanding Storage Stack is crucial for understanding what technologies are i
 
 Traditional stack compared to storage spaces stack (note that MPIO is missing, but for Storage Spaces Direct it's not needed as there is only one path to the physical device, so it was omitted)
 
-![](/docs/hci/StorageStack/StorageStack01.png)
+![](StorageStack01.png)
 
 You can notice 4 "new" layers, but actually it's just Spaces layer (Spaceport) and Storage Bus Layer.
 
 To better understand what's in the stack, you can also explore some parts with PowerShell
 
-![](/docs/hci/StorageStack/StorageStack02.png)
+![](StorageStack02.png)
 
 
-Anyway, let's explore layers a bit. Following info is based on storage description someone somewhere created and pushed to internet. The only version I found was from webarchive and I copied it [here](/docs/hci/StorageStack/Storage.pdf).
+Anyway, let's explore layers a bit. Following info is based on storage description someone somewhere created and pushed to internet. The only version I found was from webarchive and I copied it [here](Storage.pdf).
 
 ## Layers below S2D Stack
 
@@ -46,7 +46,7 @@ Storage class driver is responsible for claiming devices, interpreting system I/
 
 In Storage Spaces stack (Virtual Disk) disk.sys is responsible for claiming Virtual Disk exposed by spaceport (storage spaces)
 
-![](/docs/hci/StorageStack/StorageStack03.png)
+![](StorageStack03.png)
 
 ### Partition Manager
 
@@ -58,9 +58,9 @@ As you can see in the stack, there are two partition managers. One partition lay
 
 On the picture below you can see individual physical disk from spaces exposed and it's partitions showing metadata partition and partition containing pool data (normally not visible as it's hidden by partmgr.sys when it detects spaces).
 
-![](/docs/hci/StorageStack/StorageStack04.png)
+![](StorageStack04.png)
 
-![](/docs/hci/StorageStack/StorageStack05.png)
+![](StorageStack05.png)
 
 ## S2D Stack
 
@@ -84,9 +84,9 @@ Defines resiliency when volume (virtual disk) is created (creates/distributes ex
 
 disk.sys is now used by storage spaces and exposes virtual disk that was provisioned using spaceport.sys
 
-![](/docs/hci/StorageStack/StorageStack06.png)
+![](StorageStack06.png)
 
-![](/docs/hci/StorageStack/StorageStack07.png)
+![](StorageStack07.png)
 
 ## Layers above S2D Stack
 
@@ -96,7 +96,7 @@ dmio.sys, volmgr.sys
 
 Volumes are created on top of the partition and on volumes you can then create filesystems and expose it to the components higher in the stack.
 
-![](/docs/hci/StorageStack/StorageStack08.png)
+![](StorageStack08.png)
 
 
 ### Volume Snapshot
@@ -111,7 +111,7 @@ fvevol.sys
 
 Bitlocker is well known disk encryption software that is on the market since Windows Vista. In PowerShell you can expose volume status with Get-BitlockerVolume command.
 
-![](/docs/hci/StorageStack/StorageStack09.png)
+![](StorageStack09.png)
 
 ### Filter Drivers
 
@@ -119,10 +119,10 @@ Interesting about filter drivers is, that all FileSystem drivers are actually fi
 
 You can learn more about filesystem using fsutil
 
-![](/docs/hci/StorageStack/StorageStack10.png)
+![](StorageStack10.png)
 
 There are also many first party and third party filter drivers. You can expose those with fltmc command
 
-![](/docs/hci/StorageStack/StorageStack11.png)
+![](StorageStack11.png)
 
 As you can see on above example, there are many filters like Cluster Shared Volume (CsvNSFlt, CsvFLT), deduplication (Dedup), shared vhd (svhdxflt), storage QoS (storqosflt) and many more. Each filter driver has defined altitude and 3rd parties can (reserve theirs)[https://learn.microsoft.com/en-us/windows-hardware/drivers/ifs/allocated-altitudes]
