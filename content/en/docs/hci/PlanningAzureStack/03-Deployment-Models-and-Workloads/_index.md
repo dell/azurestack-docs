@@ -16,7 +16,7 @@ HyperConverged deployments can be small as 2 nodes connected directly with netwo
 
 Simplicity is the main benefit in this deployment model. All hardware is standardized and from one vendor, therefore there is a high chance that there are hundreds of customers with exact same configuration. This significantly helps with troubleshooting. There are no extra hops compared to SAN, where some IOs are going over FC infrastructure and some over LAN (CSV redirection).
 
-![](/docs/hci/PlanningAzureStack/03-Deployment-Models-and-Workloads/media/HyperConvergedModel01.png)
+![](HyperConvergedModel01.png)
 
 ## Converged deployments
 
@@ -24,7 +24,7 @@ Converged deployments have separate AzSHCI cluster with Scale-Out File Server ro
 
 This design adds some complexity as Virtual Machines are accessing its storage over network. Main benefit is, that one VM consuming all CPU cycles will not affect other VMs because of degraded storage performance and also you can scale storage independently from RAM and CPU (if you run out of cpu, no need to buy server loaded with storage). This design allows higher density, better deduplication job schedule and decreased east-west traffic (as VMs are pointed to it's CSV owner node using Witness Service or new [SMB Connections move on connect](https://techcommunity.microsoft.com/t5/failover-clustering/scale-out-file-server-improvements-in-windows-server-2019/ba-p/372156)).
 
-![](/docs/hci/PlanningAzureStack/03-Deployment-Models-and-Workloads/media/ConvergedModel01.png)
+![](ConvergedModel01.png)
 
 ## Cluster Sets
 
@@ -32,7 +32,7 @@ If multiple clusters are using multiple Scale-Out FileServers or even if multipl
 
 Technically all VMs are located on SOFS share that is presented using DFS-N namespace. This namespace is hosted on Management cluster that does not need any shared storage as all configuration data are in registry.
 
-![](/docs/hci/PlanningAzureStack/03-Deployment-Models-and-Workloads/media/ClusterSets01.png)
+![](ClusterSets01.png)
 
 ## User Profile Disks host
 
@@ -44,7 +44,7 @@ There are multiple ways to deploy SQL Server on Azure Stack HCI cluster. But in 
 
 > SQL Performance in one Virtual Machine (out of 40 on 4 node cluster) running SQL workload (database forced to read from disk)
 
-![](/docs/hci/PlanningAzureStack/03-Deployment-Models-and-Workloads/media/SQLPerformanceVM.png)
+![](SQLPerformanceVM.png)
 
 ## Kubernetes
 

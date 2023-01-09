@@ -14,15 +14,15 @@ When disk failure happens, it is necessary to have some capacity reserve to have
 
 It is recommended to have largest disk capacity in each node not occupied - reserved. For calculation you can use http://aka.ms/s2dcalc. It is not necessary to mark disk as "reserved" or anything like that as it all about not consuming capacity of one disk.
 
-![](/docs/hci/PlanningAzureStack/05-Storage-Capacity-Planning/media/capacity01.gif)
+![](capacity01.gif)
 
 Since we regular maintenance is required (security patches), reboot might be necessary. Or for example if any hardware upgrade is done (for example increasing RAM), node might need to be put into maintenance mode or even shut down. If VMs are required to run, then there has to be capacity (RAM) to keep VMs running on rest of the nodes.
 
-![](/docs/hci/PlanningAzureStack/05-Storage-Capacity-Planning/media/capacity02.gif)
+![](capacity02.gif)
 
 With more than 5 nodes it might make sense to reserve entire node. You will have capacity for VMs when node in maintenance, and you will be also able to rebuild if one node is completely lost - assuming all disks damaged (which is usually unlikely to happen as usually just one component fails and can be replaced withing service agreement).
 
-![](/docs/hci/PlanningAzureStack/05-Storage-Capacity-Planning/media/capacity03.gif)
+![](capacity03.gif)
 
 ## Resiliency options
 
@@ -55,7 +55,7 @@ https://learn.microsoft.com/en-us/windows-server/storage/storage-spaces/storage-
 
 With increasing number of nodes it might be useful to put data only on selected nodes to better control what data will be accessible in case of failure of certain nodes. With scoped volumes, volumes can system tolerate more than 2 nodes failure while keeping volumes online.
 
-![](/docs/hci/PlanningAzureStack/05-Storage-Capacity-Planning/media/ScopedVolumes01.png)
+![](ScopedVolumes01.png)
 
 ## Cache drives
 

@@ -21,9 +21,8 @@ Management machine can be also deployed as [Privileged Access Workstation](https
 The minimum components are Domain Controller and Management machine. Management machine can be Windows 10 or Windows Server at least the same version as the managed server (for example Windows 10 1809 and newer can manage Windows Server 2019). DHCP server can significantly help as managed servers can receive IP address. That means you can manage them remotely without logging into servers to configure static IP, but it's not mandatory.
 
 Windows Admin Center can be installed on Admin Workstation. From there, infrastructure can be managed using Windows Admin Center, PowerShell or legacy remote management tools (such as mmc).
-docs/hci/PlanningAzureStack/02-Supporting-Infrastructure/media/MinimumInfrastructure01.png
-![](02-Supporting-Infrastructure/media/MinimumInfrastructure01.png)
-![](/docs/hci/PlanningAzureStack/02-Supporting-Infrastructure/media/MinimumInfrastructure01.png)
+
+![](MinimumInfrastructure01.png)
 
 ## Medium infrastructure
 
@@ -32,7 +31,7 @@ Medium infrastructure assumes you have multiple administrators and/or multiple c
 - [Installing Windows Admin Center in Gateway Mode](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/deploy/install#install-on-server-core)
 - [Planning SCVMM Installation](https://learn.microsoft.com/en-us/system-center/vmm/plan-install?view=sc-vmm-2019)
 
-![](/docs/hci/PlanningAzureStack/02-Supporting-Infrastructure/media/MediumInfrastructure01.png)
+![](MediumInfrastructure01.png)
 
 ## Large Scale infrastructure
 
@@ -40,4 +39,4 @@ Large Infrastructure assumes that you have more clusters spanning multiple racks
 
 - [Planning HA SCVMM Installation](https://learn.microsoft.com/en-us/system-center/vmm/plan-ha-install?view=sc-vmm-2019)
 
-![](/docs/hci/PlanningAzureStack/02-Supporting-Infrastructure/media/LargeScaleInfrastructure01.png)
+![](LargeScaleInfrastructure01.png)

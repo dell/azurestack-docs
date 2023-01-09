@@ -22,7 +22,7 @@ Another significant leap was introduction of Intel Optane SSD, that introduces e
 
 Important piece when selecting storage devices is, that if you consider SSD+HDD combination, all heavy lifting will end up in one SATA/SAS controller connected into one PCIe slot. Therefore it's recommended to consider using NVMe instead, as each NVMe will have its PCIe line.
 
-![](/docs/hci/PlanningAzureStack/06-Hardware/media/InterfaceEfficiency01.png)
+![](InterfaceEfficiency01.png)
 
 ## Network cards
 
@@ -66,4 +66,4 @@ It is very important to follow validated hardware path. This way you can avoid g
 
 >Note: Dell sells only Integrated Systems as Microsoft highly recommend those over just verified solutions.
 
-![](/docs/hci/PlanningAzureStack/06-Hardware/media/PPT01.png)
+![](PPT01.png)
