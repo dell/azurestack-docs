@@ -125,4 +125,4 @@ There are also many first party and third party filter drivers. You can expose t
 
 ![](StorageStack11.png)
 
-As you can see on above example, there are many filters like Cluster Shared Volume (CsvNSFlt, CsvFLT), deduplication (Dedup), shared vhd (svhdxflt), storage QoS (storqosflt) and many more. Each filter driver has defined altitude and 3rd parties can (reserve theirs)[https://learn.microsoft.com/en-us/windows-hardware/drivers/ifs/allocated-altitudes]
+As you can see on above example, there are many filters like Cluster Shared Volume (CsvNSFlt, CsvFLT), deduplication (Dedup), shared vhd (svhdxflt), storage QoS (storqosflt) and many more. Each filter driver has defined altitude and 3rd parties can [reserve theirs](https://learn.microsoft.com/en-us/windows-hardware/drivers/ifs/allocated-altitudes).
