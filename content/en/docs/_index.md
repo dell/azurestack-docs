@@ -6,6 +6,8 @@ weight: 1
 menu:
   main:
     weight: 1
+hide_feedback: true
+
 ---
 
 ## Dell Integrated System for Microsoft Azure Stack Hub

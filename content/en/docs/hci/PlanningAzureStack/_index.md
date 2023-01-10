@@ -3,6 +3,7 @@ title: "Planning Azure Stack"
 linkTitle: "Planning Azure Stack"
 weight: 3
 Description: >
+hide_feedback: true
 
 ---
 

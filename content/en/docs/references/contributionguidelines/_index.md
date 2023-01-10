@@ -4,6 +4,8 @@ linkTitle: "Contribution Guidelines"
 weight: 3
 Description: >
   Dell Technologies Azure Stack Docs Contribution Guidelines
+hide_feedback: true
+
 ---
 
 
