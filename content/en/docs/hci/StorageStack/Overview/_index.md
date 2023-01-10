@@ -19,42 +19,42 @@ To better understand what's in the stack, you can also explore some parts with P
 ![](StorageStack02.png)
 
 
-Anyway, let's explore layers a bit. Following info is based on storage description someone somewhere created and pushed to internet. The only version I found was from webarchive and I copied it [here](Storage.pdf).
+Anyway, let's explore layers a bit. Following info is based on storage description someone somewhere created and pushed to internet. The only version found was from webarchive and can be accessed [here](Storage.pdf).
 
 ## Layers below S2D Stack
 
 ### Port & Miniport driver
 
-storport.sys & stornvme.sys
+***storport.sys*** & ***stornvme.sys***
 
-Port drivers implement the processing of an I/O request specific to a type of I/O port, such as SATA, and are implemented as kernel-mode libraries of functions rather than actual device drivers. Port driver is written by Microsoft (storport.sys). If third party wants to use write their own device driver (like HBA), then it will use miniport driver (except if device is NVMe, then miniport driver is Microsoft stornvme.sys)
+Port drivers implement the processing of an I/O request specific to a type of I/O port, such as SATA, and are implemented as kernel-mode libraries of functions rather than actual device drivers. Port driver is written by Microsoft (***storport.sys***). If third party wants to use write their own device driver (like HBA), then it will use miniport driver (except if device is NVMe, then miniport driver is Microsoft ***stornvme.sys***)
 
-Miniport drivers usually use storport.sys performance enhancements such as support for the paralell execution of IO.
+Miniport drivers usually use ***storport.*** performance enhancements such as support for the paralell execution of IO.
 
 [storage port drivers](https://learn.microsoft.com/en-us/windows-hardware/drivers/storage/storage-port-drivers)
 [storage miniport drivers](https://learn.microsoft.com/en-us/windows-hardware/drivers/storage/storage-miniport-drivers)
 
 ### Class Driver
 
-disk.sys
+***disk.sys***
 
-A [storage class driver](https://learn.microsoft.com/en-us/windows-hardware/drivers/storage/introduction-to-storage-class-drivers) (typically disk.sys) uses the well-established SCSI class/port interface to control a mass storage device of its type on any bus for which the system supplies a storage port driver (currently SCSI, IDE, USB and IEEE 1394). The particular bus to which a storage device is connected is transparent to the storage class driver.
+A [storage class driver](https://learn.microsoft.com/en-us/windows-hardware/drivers/storage/introduction-to-storage-class-drivers) (typically ***disk.sys***) uses the well-established SCSI class/port interface to control a mass storage device of its type on any bus for which the system supplies a storage port driver (currently SCSI, IDE, USB and IEEE 1394). The particular bus to which a storage device is connected is transparent to the storage class driver.
 
 Storage class driver is responsible for claiming devices, interpreting system I/O requests and [many more](https://learn.microsoft.com/en-us/windows-hardware/drivers/storage/storage-class-driver-s-general-functionality)
 
-In Storage Spaces stack (Virtual Disk) disk.sys is responsible for claiming Virtual Disk exposed by spaceport (storage spaces)
+In Storage Spaces stack (Virtual Disk) ***disk.sys*** is responsible for claiming Virtual Disk exposed by spaceport (storage spaces)
 
 ![](StorageStack03.png)
 
 ### Partition Manager
 
-partmgr.sys
+***partmgr.sys***
 
-Partitions are handled by partmgr.sys. Partition is usually GPT or MBR (preferably GPT as MBR has many limitations such as 2TB size limit)
+Partitions are handled by ***partmgr.sys***. Partition is usually GPT or MBR (preferably GPT as MBR has many limitations such as 2TB size limit)
 
 As you can see in the stack, there are two partition managers. One partition layout is on physical disk and it is then consumed by storage spaces (spaceport).
 
-On the picture below you can see individual physical disk from spaces exposed and it's partitions showing metadata partition and partition containing pool data (normally not visible as it's hidden by partmgr.sys when it detects spaces).
+On the picture below you can see individual physical disk from spaces exposed and it's partitions showing metadata partition and partition containing pool data (normally not visible as it's hidden by ***partmgr.sys*** when it detects spaces).
 
 ![](StorageStack04.png)
 
@@ -64,7 +64,7 @@ On the picture below you can see individual physical disk from spaces exposed an
 
 ### Storage Bus Layer
 
-clusport.sys and clusblft.sys
+***clusport.sys*** and ***clusblft.sys***
 
 These two drivers (client/server) are exposing all physical disk to each cluster node, so it looks like all physical disks from every cluster node are connected to each server. For interconnect is SMB used, therefore high-speed RDMA can be used (recommended).
 
@@ -72,7 +72,7 @@ It also contains SBL cache.
 
 ### Spaceport
 
-spaceport.sys
+***spaceport.sys***
 
 Claims disks and adds them to storage spaces pool. It creates partitions where internal data structures are metadata are kept (see screenshot in partition manager).
 
@@ -80,7 +80,7 @@ Defines resiliency when volume (virtual disk) is created (creates/distributes ex
 
 ### Virtual Disk
 
-disk.sys is now used by storage spaces and exposes virtual disk that was provisioned using spaceport.sys
+***disk.sys*** is now used by storage spaces and exposes virtual disk that was provisioned using ***spaceport.sys***
 
 ![](StorageStack06.png)
 
@@ -90,7 +90,7 @@ disk.sys is now used by storage spaces and exposes virtual disk that was provisi
 
 ### Volume Manager
 
-dmio.sys, volmgr.sys
+***dmio.sys***, ***volmgr.sys***
 
 Volumes are created on top of the partition and on volumes you can then create filesystems and expose it to the components higher in the stack.
 
@@ -99,21 +99,21 @@ Volumes are created on top of the partition and on volumes you can then create f
 
 ### Volume Snapshot
 
-volsnap.sys
+***volsnap.sys***
 
-Volsnap is the component that creates system provider for the volume [shadow copy service (VSS)](https://learn.microsoft.com/en-us/windows-server/storage/file-server/volume-shadow-copy-service). This service is controller by vssadmin.exe
+Volsnap is the component that creates system provider for the volume [shadow copy service (VSS)](https://learn.microsoft.com/en-us/windows-server/storage/file-server/volume-shadow-copy-service). This service is controller by ***vssadmin.exe***
 
 ### Bitlocker
 
-fvevol.sys
+***fvevol.sys***
 
-Bitlocker is well known disk encryption software that is on the market since Windows Vista. In PowerShell you can expose volume status with Get-BitlockerVolume command.
+Bitlocker is well known disk encryption software that is on the market since Windows Vista. In PowerShell you can expose volume status with **Get-BitlockerVolume** command.
 
 ![](StorageStack09.png)
 
 ### Filter Drivers
 
-Interesting about filter drivers is, that all FileSystem drivers are actually filter drivers - special ones, File System Drivers - like REFS.sys, NTFS.sys, Exfat.sys ...
+Interesting about filter drivers is, that all FileSystem drivers are actually filter drivers - special ones, File System Drivers - like ***REFS.sys***, ***NTFS.sys***, ***Exfat.sys***.
 
 You can learn more about filesystem using fsutil
 
