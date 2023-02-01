@@ -16,8 +16,7 @@ These release notes contain supplemental information for the Dell 2210 release a
 
 ## New features, changed features, and fixes
 ### New features
-- OpenManage Network Manager is removed for existing deployments and its functionality is replaced with a new process included in the Dell Patch and Update Automation Tool.
-- OpenManage Enterprise is removed for both existing and new deployments.
+There are no new features for this release. There are improvements and updates to Secure Connect Gateway (SCG) and firmware.
 
 ### Changed features
 There are no changed features for this release.
