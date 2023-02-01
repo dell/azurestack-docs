@@ -16,7 +16,8 @@ These release notes contain supplemental information for the Dell 2210 release a
 
 ## New features, changed features, and fixes
 ### New features
-There are no new features for this release. There are improvements and updates to Secure Connect Gateway (SCG) and firmware.
+- OpenManage Network Manager is removed for existing deployments and its functionality is replaced with a new process included in the Dell Patch and Update Automation Tool.
+- OpenManage Enterprise is removed for both existing and new deployments.
 
 ### Changed features
 There are no changed features for this release.
@@ -120,7 +121,7 @@ This information is updated as needed.
 
 {{< /rawhtml >}}
 
-## Additonal resources
+## Additional resources
 
 ### Dell Technologies resources
 Additional Dell Technologies resources are available on the Dell Technologies Online Support website ([13G documentation](https://www.dell.com/support/home/us/en/04/product-support/product/cloud-for-microsoft-azure-stack13g/docs), [14G documentation](https://www.dell.com/support/home/us/en/04/product-support/product/cloud-for-microsoft-azure-stack14g/docs)).
