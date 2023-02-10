@@ -6,7 +6,6 @@ Description: >
 
 ---
 
-
 ### BIOS Configuration
 The following table lists the BIOS configuration settings for server nodes implemented as Storage Spaces Direct cluster nodes.
 
