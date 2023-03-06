@@ -49,7 +49,7 @@ Before you use the Microsoft Patch and Update process to update Azure Stack Hub,
 {{% /alert %}}
 
 ## Microsoft fixed issues
-For information about fixed issues in this release, see the [Azure Stack Hub 2206 update](https://docs.microsoft.com/en-us/azure-stack/operator/release-notes?view=azs-2206) on the Microsoft website.
+For information about fixed issues in this release, see the [Azure Stack Hub 2206 update](https://learn.microsoft.com/en-us/azure-stack/operator/release-notes?view=azs-2206) on the Microsoft website.
 
 ## Hardware and firmware support
 For information about supported hardware, firmware, and software, see the Dell Integrated System for Microsoft Azure Stack Hub Support Matrix. The Support Matrix is available at [Dell Integrated System for Microsoft Azure Stack Hub 13G Documentation](https://www.dell.com/support/home/us/en/04/product-support/product/cloud-for-microsoft-azure-stack13g/docs) and [Dell Integrated System for Microsoft Azure Stack Hub 14G Documentation](https://www.dell.com/support/home/us/en/04/product-support/product/cloud-for-microsoft-azure-stack14g/docs) on the Dell Technologies Online Support website.
@@ -120,7 +120,7 @@ This information is updated as needed.
 
 {{< /rawhtml >}}
 
-## Additonal resources
+## Additional resources
 
 ### Dell Technologies resources
 Additional Dell Technologies resources are available on the Dell Technologies Online Support website ([13G documentation](https://www.dell.com/support/home/us/en/04/product-support/product/cloud-for-microsoft-azure-stack13g/docs), [14G documentation](https://www.dell.com/support/home/us/en/04/product-support/product/cloud-for-microsoft-azure-stack14g/docs)).
@@ -129,9 +129,9 @@ Additional Dell Technologies resources are available on the Dell Technologies On
 
 The following additional resources are available on the Microsoft website:
 
-- [Azure Stack Hub User Documentation](https://docs.microsoft.com/en-us/azure/azure-stack/user/)
-- [Azure Stack Hub Operator Documentation](https://docs.microsoft.com/en-us/azure/azure-stack/)
-- [Datacenter integration considerations for Azure Stack Hub integrated systems](https://docs.microsoft.com/en-us/azure-stack/operator/azure-stack-datacenter-integration)
+- [Azure Stack Hub User Documentation](https://learn.microsoft.com/en-us/azure/azure-stack/user/)
+- [Azure Stack Hub Operator Documentation](https://learn.microsoft.com/en-us/azure/azure-stack/)
+- [Datacenter integration considerations for Azure Stack Hub integrated systems](https://learn.microsoft.com/en-us/azure-stack/operator/azure-stack-datacenter-integration)
 
 ## Payload information
 Firmware and driver versions of each individual component can be found in the Dell Integrated System for Microsoft Azure Stack Hub Support Matrix.

@@ -4,6 +4,7 @@ linkTitle: "Azure Stack HCI"
 type: docs
 weight: 5
 Description: >
+hide_feedback: true
 
 ---
 
