@@ -58,6 +58,11 @@ div.alert,
     border-bottom-color: transparent;
 }
 
+/* Block quotes */
+.td-content>blockquote {
+    color: #8f8f8f;
+}
+
 /* Revert inversion on Azure Stack home page icons */
 .azure-stack-icon {
     filter: hue-rotate(180deg) contrast(100%) invert(100%);
