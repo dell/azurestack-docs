@@ -103,11 +103,11 @@ Volumes are created on top of the partition and on volumes you can then create f
 
 Volsnap is the component that creates system provider for the volume [shadow copy service (VSS)](https://learn.microsoft.com/en-us/windows-server/storage/file-server/volume-shadow-copy-service). This service is controller by ***vssadmin.exe***
 
-### Bitlocker
+### BitLocker
 
 ***fvevol.sys***
 
-Bitlocker is well known disk encryption software that is on the market since Windows Vista. In PowerShell you can expose volume status with **Get-BitlockerVolume** command.
+BitLocker is well known disk encryption software that is on the market since Windows Vista. In PowerShell you can expose volume status with **Get-BitLockerVolume** command.
 
 ![](StorageStack09.png)
 

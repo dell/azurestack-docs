@@ -151,6 +151,6 @@ The difference between SAS and SATA is also 8 vs 4 disks in each node. The diffe
 * [AX6515 - 2nodes, 16 cores and 4xSATA SSDs each](AX6515-All-Flash-8SATA-SSDs-32VMs-2Node.txt)
 * [AX6515 - 2nodes, 16 cores and 4xSATA SSDs each, secured core and deduplication enabled](AX6515-All-Flash-8SATA-SSDs-32VMs-2Node-SC-Dedup.txt)
 * [AX6515 - 2nodes, 16 cores and 4xSATA SSDs each, secured core enabled](AX6515-All-Flash-8SATA-SSDs-32VMs-2Node-SC.txt)
-* [AX6515 - 2nodes, 16 cores and 4xSATA SSDs each, secured core & BitLocker enabled](AX6515-All-Flash-8SATA-SSDs-32VMs-2Node-SC-Bitlocker.txt)
+* [AX6515 - 2nodes, 16 cores and 4xSATA SSDs each, secured core & BitLocker enabled](AX6515-All-Flash-8SATA-SSDs-32VMs-2Node-SC-BitLocker.txt)
 * [AX6515 - 2nodes, 16 cores and 8xSAS SSDs each](AX6515-All-Flash-16SAS-SSDs-32VMs-2nodes-azshci.txt)
 * [R640 - 2nodes, 32 cores and 8xNVMe SSDs each](R640-All-NVMe-16NVMe-64VMs-2Node.txt)
