@@ -24,7 +24,8 @@ pre:not([class]) {
     background-color: #ffffff;
 }
 
-/* Table content borders */
+/* Table borders */
+.td-content th,
 .td-content td {
     border: 1px solid #929292;
 }
