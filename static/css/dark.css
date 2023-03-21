@@ -19,6 +19,11 @@ body.td-section {
     color: #e7e7e7;
 }
 
+/* Panel lines (separators) */
+.panel-line {
+    border-top: 1px solid #dee2e6;
+}
+
 /* Pre-formatted blocks without a language class */
 pre:not([class]) {
     background-color: #ffffff;

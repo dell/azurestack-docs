@@ -2,11 +2,11 @@
 title: "References"
 linkTitle: "References"
 weight: 13
-Description: >
-  Dell Technologies Solutions for Microsoft Azure Stack documentation references
 hide_feedback: true
 
 ---
+
+Dell Technologies Solutions for Microsoft Azure Stack documentation references
 
 * [Azure Stack Hub InfoHub](https://infohub.delltechnologies.com/t/integrated-system-for-azure-stack-hub-1/)
 
