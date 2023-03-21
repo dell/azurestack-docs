@@ -14,6 +14,11 @@ body.td-section {
     background-color: #1d1d1d;
 }
 
+/* Outer div on home page */
+.td-home>.td-outer {
+    background-color: #131313;
+}
+
 /* Left sidebar links */
 .td-sidebar-nav__section-title a {
     color: #e7e7e7;
