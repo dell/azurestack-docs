@@ -1,0 +1,44 @@
+<script>
+    // Credit to https://radu-matei.com/blog/dark-mode/
+
+    var toggleIcon = document.getElementById("dark-mode-toggle");
+    var toggleMenuItem = toggleIcon.parentElement;
+    var toggleText = toggleMenuItem.childNodes[1]
+    var darkTheme = document.getElementById("dark-mode-theme");
+    var nightOwlPrism = document.getElementById("prism-night-owl");
+    var defaultPrism = $('link[href="/css/prism.css"]')[0].sheet
+
+    if (toggleMenuItem) {
+        toggleMenuItem.addEventListener("click", () => {
+            if (toggleIcon.className === "fa fa-moon fa-lg") {
+                setTheme("dark");
+            } else if (toggleIcon.className === "fa fa-sun fa-lg") {
+                setTheme("light");
+            }
+        });
+
+        toggleMenuItem.removeAttribute("href")
+    }
+
+    function setTheme(mode) {
+        localStorage.setItem("dark-mode-storage", mode);
+
+        if (mode === "dark") {
+            darkTheme.disabled = false;
+            nightOwlPrism.disabled = false;
+            defaultPrism.disabled = true;
+            toggleIcon.className = "fa fa-sun fa-lg";
+            toggleText.textContent = "Light"
+        } else if (mode === "light") {
+            darkTheme.disabled = true;
+            nightOwlPrism.disabled = true;
+            defaultPrism.disabled = false;
+            toggleIcon.className = "fa fa-moon fa-lg";
+            toggleText.textContent = "Dark"
+        }
+    }
+
+    // Default to light theme
+    var savedTheme = localStorage.getItem("dark-mode-storage") || "light";
+    setTheme(savedTheme);
+</script>

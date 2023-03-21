@@ -1,0 +1,10 @@
+.td-overlay__inner {
+    position: relative;
+    z-index: 1;
+    align-content: center;
+    display: grid;
+}
+
+.td-cover-block--height-full {
+    min-height: 61vh;
+}
