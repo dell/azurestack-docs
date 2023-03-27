@@ -6,13 +6,11 @@ Description: >
 
 ---
 
-
 ### Overview
 
 This article explains how to create a service principal name (SPN) to manage Azure Stack Hub integrated with Active Directory Federation Services (AD FS) identity using PowerShell.
 
-For more information about this process visit [Give an app access to Azure Stack Hub resources
-](https://learn.microsoft.com/en-us/azure-stack/operator/give-app-access-to-resources?tabs=az1%2Caz2&pivots=state-disconnected).
+For more information about this process, visit [Give an app access to Azure Stack Hub resources](https://learn.microsoft.com/en-us/azure-stack/operator/give-app-access-to-resources?tabs=az1%2Caz2&pivots=state-disconnected).
 
 It will guide you through the creation of:
 
@@ -24,7 +22,7 @@ It will guide you through the creation of:
 
 Prerequisites from a Windows-based external client are:
 
-- PowerShell 7.x and `AzureStack` PowerShell Module
+- PowerShell 7.x and the Azure Stack Hub compatible PowerShell modules
 
   - [Install PowerShell Az module for Azure Stack Hub](https://learn.microsoft.com/en-us/azure-stack/operator/powershell-install-az-module)
 
@@ -52,7 +50,7 @@ This is the main reason why you would want to create an SPN so that you can auto
 4. Assign the appropriate **Role** to your service principal.
 
 {{% alert title="NOTE" color="primary" %}}
-As a bonus, we include an example of how to assign **Owner** role for the AzureStackOwners AD FS group
+As a bonus, we include an example of how to assign the **Owner** role to an AD FS group
 
 The current `AzureStack` modules do not support it natively, but this example will show you how to do it via API.
 
@@ -88,7 +86,7 @@ if (-not (Test-Path -Path $PfxFilePath)) {
 
 $PfxFilePathFull = Join-Path -Path $PfxFilePath -ChildPath "$($CertificateName).pfx"
 
-$PfxPassword = '""' | ConvertTo-SecureString -AsPlainText -Force # replace "" with an actual password or leave "" to for it to be blank
+$PfxPassword = '""' | ConvertTo-SecureString -AsPlainText -Force # replace "" with an actual password or leave "" for it to be blank
 
 #endregion
 
@@ -110,7 +108,7 @@ $Cert = Get-PfxCertificate -FilePath $PfxFilePathFull -Password $PfxPassword
 
 #region Optional steps
 
-#region Export the certificate so that you can use it on an additional VM
+#region Export the certificate so that you can import it on other environments
 
 try {
 
@@ -124,7 +122,7 @@ try {
 
 #endregion
 
-#region Import the certificate into the certificate store on an additional VM
+#region Import the certificate into the certificate store on another environment
 
 Import-PfxCertificate -CertStoreLocation $CertStore -FilePath $PfxFilePathFull -Password $PfxPassword -Exportable
 
