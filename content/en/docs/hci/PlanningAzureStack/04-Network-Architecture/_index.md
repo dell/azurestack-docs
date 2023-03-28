@@ -72,7 +72,7 @@ Great resources explaining benefit of RDMA:
 - [Blog comparing storage performance with and without RDMA](https://techcommunity.microsoft.com/t5/storage-at-microsoft/to-rdma-or-not-to-rdma-8211-that-is-the-question/ba-p/425982)
 - [RDMA protocol deep dive video](https://channel9.msdn.com/Blogs/Regular-IT-Guy/Behind-the-Scenes-with-Storage-Replica-and-RDMA)
 
-There are multiple favors of RDMA. The most used in Azure Stack HCI are RoCEv2 and iWARP. Infiniband can be used also, but just for SMB traffic (NICs cannot be connected to vSwitch).
+There are multiple flavors of RDMA. The most used in Azure Stack HCI are RoCEv2 and iWARP. Infiniband can be used also, but just for SMB traffic (NICs cannot be connected to vSwitch).
 
 ![](RDMA01.png)
 
