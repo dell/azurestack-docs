@@ -84,9 +84,9 @@ Some network vendors require to configure Jumbo Frames to 9014.
 
 ### RoCE
 
-RoCE is using UDP for transport. Since it's UDP, it requires lossless L2. It is mandatory to enable DCB (PFC/ETS) and ECN on both physical NICs and physical network infrastructure.
+RoCE is using UDP for transport. It is mandatory to enable DCB (PFC/ETS) and ECN on both physical NICs and physical network infrastructure.
 
-If Congestion control mechanisms are not correctly implemented, it can lead to huge retransmits. This can lead to infrastructure instabilities and storage disconnections. It is crucial to configure this correctly.
+If congestion control mechanisms are not correctly implemented, it can lead to huge retransmits. This can lead to infrastructure instabilities and storage disconnections. It is crucial to configure this correctly.
 
 **where DCB needs to be configured**
 
