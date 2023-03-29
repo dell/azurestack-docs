@@ -1,0 +1,27 @@
+{{ $scssMain := "scss/main.scss"}}
+{{ if not hugo.IsProduction }}
+{{/* Note the missing postCSS. This makes it snappier to develop in Chrome, but makes it look sub-optimal in other
+browsers. */}}
+{{ $css := resources.Get $scssMain | toCSS (dict "enableSourceMap" true) }}
+<link href="{{ $css.RelPermalink }}" rel="stylesheet">
+{{ else }}
+{{ $css := resources.Get $scssMain | toCSS (dict "enableSourceMap" false) | postCSS | minify | fingerprint }}
+<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
+<link href="{{ $css.RelPermalink }}" rel="stylesheet" integrity="{{ $css.Data.integrity }}">
+{{ end }}
+
+<script>
+    function createDarkThemeStylesheet(mode) {
+        if (mode === "dark") {
+            document.getElementsByTagName("head")[0].insertAdjacentHTML(
+                "beforeEnd",
+                "<link id=\"dark-mode-theme\" rel=\"stylesheet\" href=\"/css/dark.css\" />");
+        }
+
+        localStorage.setItem("dark-mode-storage", mode);
+    }
+
+    // Default to light theme
+    var savedTheme = localStorage.getItem("dark-mode-storage") || "light";
+    createDarkThemeStylesheet(savedTheme);
+</script>

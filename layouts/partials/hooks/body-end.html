@@ -4,7 +4,6 @@
     var toggleIcon = document.getElementById("dark-mode-toggle");
     var toggleMenuItem = toggleIcon.parentElement;
     var toggleText = toggleMenuItem.childNodes[1]
-    var darkTheme = document.getElementById("dark-mode-theme");
     var nightOwlPrism = document.getElementById("prism-night-owl");
     var defaultPrism = $('link[href="/css/prism.css"]')[0].sheet
 
@@ -23,14 +22,22 @@
     function setTheme(mode) {
         localStorage.setItem("dark-mode-storage", mode);
 
+        var darkTheme = document.getElementById("dark-mode-theme");
+
         if (mode === "dark") {
-            darkTheme.disabled = false;
+            if (!darkTheme) {
+                createDarkThemeStylesheet(mode);
+            } else {
+                darkTheme.disabled = false;
+            }
             nightOwlPrism.disabled = false;
             defaultPrism.disabled = true;
             toggleIcon.className = "fa fa-sun fa-lg";
             toggleText.textContent = "Light"
         } else if (mode === "light") {
-            darkTheme.disabled = true;
+            if (darkTheme) {
+                darkTheme.disabled = true;
+            }
             nightOwlPrism.disabled = true;
             defaultPrism.disabled = false;
             toggleIcon.className = "fa fa-moon fa-lg";
