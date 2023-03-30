@@ -38,7 +38,7 @@ If you want to assign a role the SPN for a **User Subscription**, replace the Ad
 
 1. Declare your variables accordingly.
 
-2. Log in to your Azure Stack Hub *Default Provider Subscription* with administrator user credentials (needs to have **Owner** role).
+2. Log in to your Azure Stack Hub *Default Provider Subscription* with administrator user credentials (needs to have the **Owner** role).
 {{% alert title="CAUTION" color="warning" %}}
 This requires interactive prompt as by default when using AD FS as your identity provider you cannot use user credentials in the non-interactive way.
 
