@@ -10,12 +10,14 @@ browsers. */}}
 <link href="{{ $css.RelPermalink }}" rel="stylesheet" integrity="{{ $css.Data.integrity }}">
 {{ end }}
 
+<link id="dark-mode-theme" rel="stylesheet" href="/css/dark.css" />
+
 <script>
-    function createDarkThemeStylesheet(mode) {
-        if (mode === "dark") {
-            document.getElementsByTagName("head")[0].insertAdjacentHTML(
-                "beforeEnd",
-                "<link id=\"dark-mode-theme\" rel=\"stylesheet\" href=\"/css/dark.css\" />");
+    function disableDarkTheme(mode) {
+        if (mode === "light") {
+            var darkTheme = document.getElementById("dark-mode-theme");
+
+            darkTheme.disabled = true;
         }
 
         localStorage.setItem("dark-mode-storage", mode);
@@ -23,5 +25,5 @@ browsers. */}}
 
     // Default to light theme
     var savedTheme = localStorage.getItem("dark-mode-storage") || "light";
-    createDarkThemeStylesheet(savedTheme);
+    disableDarkTheme(savedTheme);
 </script>

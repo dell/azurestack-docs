@@ -25,19 +25,13 @@
         var darkTheme = document.getElementById("dark-mode-theme");
 
         if (mode === "dark") {
-            if (!darkTheme) {
-                createDarkThemeStylesheet(mode);
-            } else {
-                darkTheme.disabled = false;
-            }
+            darkTheme.disabled = false;
             nightOwlPrism.disabled = false;
             defaultPrism.disabled = true;
             toggleIcon.className = "fa fa-sun fa-lg";
             toggleText.textContent = "Light"
         } else if (mode === "light") {
-            if (darkTheme) {
-                darkTheme.disabled = true;
-            }
+            darkTheme.disabled = true;
             nightOwlPrism.disabled = true;
             defaultPrism.disabled = false;
             toggleIcon.className = "fa fa-moon fa-lg";
