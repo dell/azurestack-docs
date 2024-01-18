@@ -11,7 +11,7 @@ Description: >
 ### Release Type: Major (MA)
 
 {{% alert title="NOTE" color="primary" %}}
-These release notes contain supplemental information for the Dell 2306 release and the Microsoft 2301 release.
+Dell Azure Stack Hub OEM updates must be installed in sequential order, it is not supported to skip or miss-out an OEM update version. These release notes contain supplemental information for the Dell 2306 release and the Microsoft 2301 release.
 {{% /alert %}}
 
 ## New features, changed features, and fixes
