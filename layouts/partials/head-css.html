@@ -3,11 +3,11 @@
 {{/* Note the missing postCSS. This makes it snappier to develop in Chrome, but makes it look sub-optimal in other
 browsers. */}}
 {{ $css := resources.Get $scssMain | toCSS (dict "enableSourceMap" true) }}
-<link href="{{ $css.RelPermalink }}" rel="stylesheet">
+<link href="{{ $css.Permalink }}" rel="stylesheet">
 {{ else }}
 {{ $css := resources.Get $scssMain | toCSS (dict "enableSourceMap" false) | postCSS | minify | fingerprint }}
-<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
-<link href="{{ $css.RelPermalink }}" rel="stylesheet" integrity="{{ $css.Data.integrity }}">
+<link rel="preload" href="{{ $css.Permalink }}" as="style">
+<link href="{{ $css.Permalink }}" rel="stylesheet" integrity="{{ $css.Data.integrity }}">
 {{ end }}
 
 <link id="dark-mode-theme" rel="stylesheet" href="/css/dark.css" />
