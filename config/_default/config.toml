@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://dell.github.io/azurestack-docs/"
 title = "Solutions for Microsoft Azure Stack"
 canonifyURLs = false
 
