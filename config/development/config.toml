@@ -1,2 +1,2 @@
-canonifyURLs = false
+canonifyURLs = true
 relativeURLs = false
