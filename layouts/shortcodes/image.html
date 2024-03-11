@@ -1,0 +1,3 @@
+{{ $imgName := .Get "url" }}
+{{ $img := $.Page.Resources.GetMatch $imgName }}
+{{ $img.Permalink }}

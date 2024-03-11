@@ -10,7 +10,7 @@ hide_feedback: true
 
 ### Dell Integrated System for Microsoft Azure Stack Hub
 
-![Azure Stack Hub](prod-1906-server-azure-stack-hub-980x366.jpg)
+![Azure Stack Hub]({{< image url="prod-1906-server-azure-stack-hub-980x366.jpg" >}})
 
 Run your own private, autonomous cloud — connected or disconnected with cloud-native apps using consistent Azure services on-premises.
 

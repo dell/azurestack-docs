@@ -10,14 +10,13 @@ Understanding storage stack is crucial for understanding what technologies are i
 
 Traditional stack compared to storage spaces stack (note that MPIO is missing, but for Storage Spaces Direct it's not needed as there is only one path to the physical device, so it was omitted)
 
-![](StorageStack01.png)
+![]({{< image url="StorageStack01.png" >}})
 
 You can notice 4 "new" layers, but actually it's just Spaces layer (Spaceport) and Storage Bus Layer.
 
 To better understand what's in the stack, you can also explore some parts with PowerShell
 
-![](StorageStack02.png)
-
+![]({{< image url="StorageStack02.png" >}})
 
 Anyway, let's explore layers a bit. Following info is based on storage description someone somewhere created and pushed to internet. The only version found was from webarchive and can be accessed [here](Storage.pdf).
 
@@ -44,7 +43,7 @@ Storage class driver is responsible for claiming devices, interpreting system I/
 
 In Storage Spaces stack (Virtual Disk) ***disk.sys*** is responsible for claiming Virtual Disk exposed by spaceport (storage spaces)
 
-![](StorageStack03.png)
+![]({{< image url="StorageStack03.png" >}})
 
 ### Partition Manager
 
@@ -56,9 +55,9 @@ As you can see in the stack, there are two partition managers. One partition lay
 
 On the picture below you can see individual physical disk from spaces exposed and it's partitions showing metadata partition and partition containing pool data (normally not visible as it's hidden by ***partmgr.sys*** when it detects spaces).
 
-![](StorageStack04.png)
+![]({{< image url="StorageStack04.png" >}})
 
-![](StorageStack05.png)
+![]({{< image url="StorageStack05.png" >}})
 
 ## S2D Stack
 
@@ -82,9 +81,9 @@ Defines resiliency when volume (virtual disk) is created (creates/distributes ex
 
 ***disk.sys*** is now used by storage spaces and exposes virtual disk that was provisioned using ***spaceport.sys***
 
-![](StorageStack06.png)
+![]({{< image url="StorageStack06.png" >}})
 
-![](StorageStack07.png)
+![]({{< image url="StorageStack07.png" >}})
 
 ## Layers above S2D Stack
 
@@ -94,8 +93,7 @@ Defines resiliency when volume (virtual disk) is created (creates/distributes ex
 
 Volumes are created on top of the partition and on volumes you can then create filesystems and expose it to the components higher in the stack.
 
-![](StorageStack08.png)
-
+![]({{< image url="StorageStack08.png" >}})
 
 ### Volume Snapshot
 
@@ -109,7 +107,7 @@ Volsnap is the component that creates system provider for the volume [shadow cop
 
 BitLocker is well known disk encryption software that is on the market since Windows Vista. In PowerShell you can expose volume status with **Get-BitLockerVolume** command.
 
-![](StorageStack09.png)
+![]({{< image url="StorageStack09.png" >}})
 
 ### Filter Drivers
 
@@ -117,10 +115,10 @@ Interesting about filter drivers is, that all FileSystem drivers are actually fi
 
 You can learn more about filesystem using fsutil
 
-![](StorageStack10.png)
+![]({{< image url="StorageStack10.png" >}})
 
 There are also many first party and third party filter drivers. You can expose those with fltmc command
 
-![](StorageStack11.png)
+![]({{< image url="StorageStack11.png" >}})
 
 As you can see on above example, there are many filters like Cluster Shared Volume (CsvNSFlt, CsvFLT), deduplication (Dedup), shared vhd (svhdxflt), storage QoS (storqosflt) and many more. Each filter driver has defined altitude and 3rd parties can [reserve theirs](https://learn.microsoft.com/en-us/windows-hardware/drivers/ifs/allocated-altitudes).

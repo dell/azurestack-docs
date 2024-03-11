@@ -10,7 +10,7 @@ hide_feedback: true
 
 ### Dell Integrated System for Microsoft Azure Stack HCI
 
-![Azure Stack HCI](prod-1906-poweredge-r740xd-12x35-azure-stack-hci-980x366.jpg)
+![Azure Stack HCI]({{< image url="prod-1906-poweredge-r740xd-12x35-azure-stack-hci-980x366.jpg" >}})
 
 Delivered as an Azure service, run virtualized applications on-premises with full stack lifecycle management while easily connecting resources to Azure.
 

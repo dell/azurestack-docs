@@ -22,7 +22,7 @@ The minimum components are Domain Controller and Management machine. Management 
 
 Windows Admin Center can be installed on Admin Workstation. From there, infrastructure can be managed using Windows Admin Center, PowerShell or legacy remote management tools (such as mmc).
 
-![](MinimumInfrastructure01.png)
+![]({{< image url="MinimumInfrastructure01.png" >}})
 
 ## Medium infrastructure
 
@@ -31,7 +31,7 @@ Medium infrastructure assumes you have multiple administrators and/or multiple c
 - [Installing Windows Admin Center in Gateway Mode](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/deploy/install#install-on-server-core)
 - [Planning SCVMM Installation](https://learn.microsoft.com/en-us/system-center/vmm/plan-install?view=sc-vmm-2019)
 
-![](MediumInfrastructure01.png)
+![]({{< image url="MediumInfrastructure01.png" >}})
 
 ## Large Scale infrastructure
 
@@ -39,4 +39,4 @@ Large Infrastructure assumes that you have more clusters spanning multiple racks
 
 - [Planning HA SCVMM Installation](https://learn.microsoft.com/en-us/system-center/vmm/plan-ha-install?view=sc-vmm-2019)
 
-![](LargeScaleInfrastructure01.png)
+![]({{< image url="LargeScaleInfrastructure01.png" >}})
