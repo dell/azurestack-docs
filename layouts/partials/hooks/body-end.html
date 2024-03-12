@@ -1,4 +1,18 @@
-<script src='{{ "js/main.js" | relURL }}'></script>
+<script>
+
+    var mainJS = document.querySelector('script[src*="js/main"]');
+
+    var script = document.createElement("script");
+    script.src = mainJS.src.replace('azurestack-docs/azurestack-docs', 'azurestack-docs');
+    script.integrity = mainJS.integrity;
+    script.crossOrigin = mainJS.crossOrigin;
+
+    document.body.appendChild(script);
+
+    var offlineSearch = document.querySelector('input[data-offline-search-index-json-src*="offline-search"]');
+    offlineSearch.setAttribute('data-offline-search-index-json-src', offlineSearch.getAttribute('data-offline-search-index-json-src').replace('azurestack-docs/azurestack-docs', 'azurestack-docs'));
+
+</script>
 
 <script>
     // Credit to https://radu-matei.com/blog/dark-mode/
