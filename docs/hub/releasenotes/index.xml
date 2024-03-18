@@ -15,6 +15,168 @@
     
     
     <item>
+      <title>Docs: Release Notes for 2401</title>
+      <link>https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2401/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2401/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;dell-integrated-system-for-microsoft-azure-stack-hub-release-notes&#34;&gt;Dell Integrated System for Microsoft Azure Stack Hub Release Notes&lt;/h2&gt;
+&lt;h3 id=&#34;current-release-version-dell-2401-and-microsoft-2306&#34;&gt;Current Release Version: Dell 2401 and Microsoft 2306&lt;/h3&gt;
+&lt;h3 id=&#34;release-type-major-ma&#34;&gt;Release Type: Major (MA)&lt;/h3&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;NOTE&lt;/h4&gt;
+
+    Dell Azure Stack Hub OEM updates must be installed in sequential order, it is not supported to skip or miss-out an OEM update version. These release notes contain supplemental information for the Dell 2401 release and the Microsoft 2306 release.
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;new-features-changed-features-and-fixes&#34;&gt;New features, changed features, and fixes&lt;/h2&gt;
+&lt;h3 id=&#34;new-features&#34;&gt;New features&lt;/h3&gt;
+&lt;p&gt;There are improvements and updates to drivers and firmware.&lt;/p&gt;
+&lt;h3 id=&#34;changed-features&#34;&gt;Changed features&lt;/h3&gt;
+&lt;p&gt;There are no changed features for this release.&lt;/p&gt;
+&lt;h3 id=&#34;fixes&#34;&gt;Fixes&lt;/h3&gt;
+&lt;p&gt;There are no fixes for this release.&lt;/p&gt;
+&lt;h2 id=&#34;known-issues-and-limitations&#34;&gt;Known issues and limitations&lt;/h2&gt;
+&lt;p&gt;This release notes document describes known issues and limitations for the Dell Integrated System for Microsoft Azure Stack Hub solution based on the Dell 2401 release and Microsoft 2306 release.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Item&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;OEM update&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Dell Technologies recommends updating to the n-1 version before applying the latest OEM package.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Microsoft Azure Stack Hub code&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;For information about known issues and limitations in the Microsoft Azure Stack Hub code, see the &lt;a href=&#34;https://learn.microsoft.com/en-us/azure-stack/operator/release-notes?view=azs-2306&#34;&gt;Azure Stack Hub 2306 update&lt;/a&gt; on the Microsoft website&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Secure Connect Gateway 5.18&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;SNMP v3 alerts are not received within Secure Connect Gateway version 5.18, see the &lt;a href=&#34;https://www.dell.com/support/kbdoc/en-ie/000222051/azure-stack-hub-snmp-v3-alerts-are-not-being-received-by-scg-version-5-18&#34;&gt;Knowledge Base Article&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;notes-and-warnings&#34;&gt;Notes and warnings&lt;/h2&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;CAUTION&lt;/h4&gt;
+
+    Before you use the Microsoft Patch and Update process to update Azure Stack Hub, close any active session to the ERCS virtual machines. If an active session is open, the update may fail, and must be resumed.
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;microsoft-fixed-issues&#34;&gt;Microsoft fixed issues&lt;/h2&gt;
+&lt;p&gt;For information about fixed issues in this release, see the &lt;a href=&#34;https://docs.microsoft.com/en-us/azure-stack/operator/release-notes?view=azs-2306&#34;&gt;Azure Stack Hub 2306 update&lt;/a&gt; on the Microsoft website.&lt;/p&gt;
+&lt;h2 id=&#34;hardware-and-firmware-support&#34;&gt;Hardware and firmware support&lt;/h2&gt;
+&lt;p&gt;For information about supported hardware, firmware, and software, see the Dell Integrated System for Microsoft Azure Stack Hub Support Matrix. The Support Matrix is available at &lt;a href=&#34;https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2401/&#34;&gt;Dell Integrated System for Microsoft Azure Stack Hub Support Matrix&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;NOTE&lt;/h4&gt;
+
+    The &lt;a href=&#34;https://infohub.delltechnologies.com/t/tech-book-dell-integrated-system-for-microsoft-azure-stack-hub-1/&#34;&gt;Dell Azure Stack Hub Tech Book&lt;/a&gt; contains information regarding dimensions for Dell Technologies racks, servers, and switches.
+This information is updated as needed.
+
+&lt;/div&gt;
+
+
+
+
+&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt;
+&lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34;&gt;
+&lt;head&gt;
+
+&lt;style&gt;
+table {
+    border-width:1px; border-style:solid;
+    border-color:black;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    table-layout:fixed;
+    overflow-wrap: break-word;
+}
+th {
+    border-width:1px;
+    padding:7px;
+    border-style:solid;
+    border-color:#0076CE;
+    background-color:#0076CE;
+    color:#FFFFFF;
+    text-align:center;
+}
+td {
+    border-width:1px;
+    padding:7px;
+    border-style:solid;
+    border-color:#0076CE;
+    text-align:center;
+}
+caption {
+    padding-bottom: 10px;
+    color:  #0076CE;
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+}
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div id=&#34;content&#34;&gt;
+
+
+&lt;h3 id=&#34;software-versions&#34;&gt;Software Versions&lt;/h3&gt;
+
+
+&lt;table&gt; &lt;colgroup&gt;&lt;col/&gt;&lt;col/&gt;&lt;col/&gt;&lt;/colgroup&gt; &lt;tr&gt;&lt;th&gt;Component&lt;/th&gt;&lt;th&gt;Version&lt;/th&gt;&lt;th&gt;Notes&lt;/th&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Microsoft Azure Stack Hub Baseline (for bare-metal deployment)&lt;/td&gt;&lt;td&gt;1.2306.0.16&lt;/td&gt;&lt;td&gt;&lt;a href=&#39;https://learn.microsoft.com/en-us/azure-stack/operator/release-notes?view=azs-2306&#39;&gt;Azure Stack Hub 2306 update&lt;/a&gt;. The hotfix will be available in the Admin portal.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Hardware Lifecycle Host&lt;/td&gt;&lt;td&gt;1.2306.0.16&lt;/td&gt;&lt;td&gt;N/A&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Hardware Lifecycle Host ISO&lt;/td&gt;&lt;td&gt;2401.14&lt;/td&gt;&lt;td&gt;N/A&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Microsoft Partner Toolkit (PTK)&lt;/td&gt;&lt;td&gt;1.2306.2462.46&lt;/td&gt;&lt;td&gt;Includes the &lt;a href=&#39;https://www.powershellgallery.com/packages/Azs.Deployment.Worksheet/1.2306.2462.46&#39;&gt;Deployment Worksheet&lt;/a&gt;.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Dell Deployment Automation&lt;/td&gt;&lt;td&gt;2.24.2401.8&lt;/td&gt;&lt;td&gt;See the Dell Integrated System for Microsoft Azure Stack Hub Deployment Guide.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Dell Patch and Update Automation Tool&lt;/td&gt;&lt;td&gt;2.0.2401.12&lt;/td&gt;&lt;td&gt;See the Dell Integrated System for Microsoft Azure Stack Hub Patch and Update Installation Guide.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Dell Node Expansion&lt;/td&gt;&lt;td&gt;1.24.2401.8&lt;/td&gt;&lt;td&gt;See the Dell Integrated System for Microsoft Azure Stack Hub Deployment Guide.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Dell RegisterJEA script&lt;/td&gt;&lt;td&gt;1.24.2401.1&lt;/td&gt;&lt;td&gt;See the Dell Integrated System for Microsoft Azure Stack Hub Patch and Update Installation Guide.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Dell Customer Toolkit&lt;/td&gt;&lt;td&gt;2401.7&lt;/td&gt;&lt;td&gt;See &lt;a href=&#39;https://www.dell.com/support/home/en-us/product-support/product/cloud-for-microsoft-azure-stack14g/drivers&#39;&gt;Integrated System for Microsoft Azure Stack Hub 14G/Drivers &amp; Downloads&lt;/a&gt; on the Dell Technologies Online Support website.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Secure Connect Gateway&lt;/td&gt;&lt;td&gt;5.18.00.00&lt;/td&gt;&lt;td&gt;Secure Connect Gateway software.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;UpdateACL&lt;/td&gt;&lt;td&gt;1.1.2&lt;/td&gt;&lt;td&gt;N/A&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;UpdateWDAC&lt;/td&gt;&lt;td&gt;1.1.1&lt;/td&gt;&lt;td&gt;See the Dell Integrated System for Microsoft Azure Stack Hub Patch and Update Installation Guide.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Windows Server 2019 LCU&lt;/td&gt;&lt;td&gt;KB5033371&lt;/td&gt;&lt;td&gt;See the Windows support document &lt;a href=&#39;https://support.microsoft.com/help/5033371&#39;&gt;KB5033371&lt;/a&gt;.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Windows Server 2019 ASDB LCU&lt;/td&gt;&lt;td&gt;KB5017270, KB5018461&lt;/td&gt;&lt;td&gt;Specific to the Windows Server 2019 ASDB image on the Hardware Lifecycle Host.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Windows Server 2019 ASDB SSU&lt;/td&gt;&lt;td&gt;KB5018507&lt;/td&gt;&lt;td&gt;Specific to the Windows Server 2019 ASDB image on the Hardware Lifecycle Host.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;OS9 switch firmware (S3048, S4048, S5048)&lt;/td&gt;&lt;td&gt;9.14.2.21&lt;/td&gt;&lt;td&gt;OS9 switch firmware code is in the Dell Customer Toolkit.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;OS10 switch firmware (S5248, N3248)&lt;/td&gt;&lt;td&gt;10.5.5.6&lt;/td&gt;&lt;td&gt;OS10 switch firmware code is in the Dell Customer Toolkit.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;OEM extension package&lt;/td&gt;&lt;td&gt;2.3.2401.2&lt;/td&gt;&lt;td&gt;Included in the Dell Customer Toolkit and contains the driver and firmware update payload.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Firmware Update Module in OEM Extension Package&lt;/td&gt;&lt;td&gt;2.2.2204.1&lt;/td&gt;&lt;td&gt;N/A&lt;/td&gt;&lt;/tr&gt; &lt;/table&gt;&lt;br&gt;
+
+
+
+
+&lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+
+
+
+&lt;h2 id=&#34;additional-resources&#34;&gt;Additional resources&lt;/h2&gt;
+&lt;h3 id=&#34;dell-technologies-resources&#34;&gt;Dell Technologies resources&lt;/h3&gt;
+&lt;p&gt;Additional Dell Technologies resources are available on the Dell Technologies Online Support website:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.dell.com/support/home/us/en/04/product-support/product/cloud-for-microsoft-azure-stack14g/docs&#34;&gt;14G documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;microsoft-resources&#34;&gt;Microsoft resources&lt;/h3&gt;
+&lt;p&gt;The following additional resources are available on the Microsoft website:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/azure/azure-stack/user/&#34;&gt;Azure Stack Hub User Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/azure/azure-stack/&#34;&gt;Azure Stack Hub Operator Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/azure-stack/operator/azure-stack-datacenter-integration&#34;&gt;Datacenter integration considerations for Azure Stack Hub integrated systems&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;payload-information&#34;&gt;Payload information&lt;/h2&gt;
+&lt;p&gt;Firmware and driver versions of each individual component can be found in the Dell Integrated System for Microsoft Azure Stack Hub Support Matrix.&lt;/p&gt;
+&lt;p&gt;Fixes, enhancements, and other information about each firmware and driver can be found on the &lt;a href=&#34;https://www.dell.com/support/home/en-us/&#34;&gt;Dell Support site&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Release Notes for 2309</title>
       <link>https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2309/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

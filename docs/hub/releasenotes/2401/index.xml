@@ -1,0 +1,18 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Solutions for Microsoft Azure Stack – Release Notes for 2401</title>
+    <link>https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2401/</link>
+    <description>Recent content in Release Notes for 2401 on Solutions for Microsoft Azure Stack</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2401/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>

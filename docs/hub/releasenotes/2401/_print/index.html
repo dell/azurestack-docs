@@ -1,0 +1,515 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.124.0">
+<link rel="canonical" type="text/html" href="https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2401/">
+<link rel="alternate" type="application/rss&#43;xml" href="https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2401/index.xml">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="https://dell.github.io/azurestack-docs/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="https://dell.github.io/azurestack-docs/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="https://dell.github.io/azurestack-docs/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="https://dell.github.io/azurestack-docs/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://dell.github.io/azurestack-docs/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="https://dell.github.io/azurestack-docs/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="https://dell.github.io/azurestack-docs/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="https://dell.github.io/azurestack-docs/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://dell.github.io/azurestack-docs/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="https://dell.github.io/azurestack-docs/favicons/android-192x192.png" sizes="192x192">
+
+<title>Release Notes for 2401 | Solutions for Microsoft Azure Stack</title>
+<meta name="description" content="Dell Technologies (Dell) Azure Stack documentation pages">
+<meta property="og:title" content="Release Notes for 2401" />
+<meta property="og:description" content="Dell Technologies (Dell) Azure Stack documentation pages" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2401/" />
+<meta itemprop="name" content="Release Notes for 2401">
+<meta itemprop="description" content="Dell Technologies (Dell) Azure Stack documentation pages"><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Release Notes for 2401"/>
+<meta name="twitter:description" content="Dell Technologies (Dell) Azure Stack documentation pages"/>
+
+
+
+<link rel="preload" href="https://dell.github.io/azurestack-docs/scss/main.min.f28669251d295836018a6bbf5273ec7f332a49449f7c4fed679c156d07249b58.css" as="style">
+<link href="https://dell.github.io/azurestack-docs/scss/main.min.f28669251d295836018a6bbf5273ec7f332a49449f7c4fed679c156d07249b58.css" rel="stylesheet" integrity="">
+
+
+<link id="dark-mode-theme" rel="stylesheet" href="https://dell.github.io/azurestack-docs/css/dark.css" />
+
+<script>
+    function disableDarkTheme(mode) {
+        if (mode === "light") {
+            var darkTheme = document.getElementById("dark-mode-theme");
+
+            darkTheme.disabled = true;
+        }
+
+        localStorage.setItem("dark-mode-storage", mode);
+    }
+
+    
+    var savedTheme = localStorage.getItem("dark-mode-storage") || "light";
+    disableDarkTheme(savedTheme);
+</script>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK"
+  crossorigin="anonymous"></script>
+<script defer
+  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
+  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://dell.github.io/azurestack-docs/css/prism.css"/>
+<link disabled id="prism-night-owl" rel="stylesheet" href="https://dell.github.io/azurestack-docs/css/prism-nightowl.css">
+<link id="home-page-override" rel="stylesheet" href="https://dell.github.io/azurestack-docs/css/homepage.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PXKTSNG8VW"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-PXKTSNG8VW', { 'anonymize_ip': false });
+}
+</script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="https://dell.github.io/azurestack-docs/">
+		<span class="navbar-logo"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1017 132"><defs><style>.cls-1{fill:#fff}</style></defs><title>DellTech_Logo_Prm_Wht_rgb</title><path class="cls-1" d="M1015 84.89c0-12.23-6.8-17.66-20.39-20.38s-21.73-4.08-21.73-13.58c0-6.8 5.44-10.87 15-10.87 12.22.0 16.3 5.43 16.3 12.22l1.36 1.36h5.43l1.37-1.36c0-13.58-10.88-19-24.46-19-15 0-23.1 8.15-23.1 17.67.0 10.86 8.15 16.3 21.73 19s20.38 4.08 20.38 15c0 6.79-4.07 12.23-17.66 12.23-12.22.0-17.66-6.8-17.66-15l-1.35-1.36h-5.44l-1.35 1.36c0 12.23 9.5 21.74 25.8 21.74 17.66.0 25.82-8.15 25.82-19M956.58 71.31l1.36-1.37V65.87c0-19-10.87-32.61-29.89-32.61s-29.89 13.59-29.89 32.61v2.72c0 19 9.51 35.32 31.25 35.32 19 0 25.81-12.23 27.17-20.38l-1.36-1.36h-5.43l-1.36 1.36c-2.72 8.15-8.16 13.59-19 13.59-17.66.0-23.1-16.31-23.1-24.46l1.36-1.35zm-8.15-6.8H907.67l-1.36-1.36c0-9.51 5.44-23.09 21.74-23.09s21.74 13.58 21.74 23.09zm-59.78 36.68V36l-1.36-1.35h-5.43L880.5 36v65.22l1.36 1.36h5.43zm0-78.8V14.24l-1.36-1.36h-5.43l-1.36 1.36v8.15l1.36 1.36h5.43zM837 97.12c-13.59.0-21.74-9.52-21.74-28.53S823.44 40.06 837 40.06s21.73 9.5 21.73 28.53S850.61 97.12 837 97.12M858.76 93c0 17.66-4.07 31.25-20.38 31.25-12.22.0-16.3-5.44-17.66-12.23l-1.35-1.36h-5.44l-1.36 1.36c1.36 10.87 9.51 19 25.81 19 17.67.0 28.53-10.87 28.53-38V36l-1.35-1.35h-4.08L860.12 36l-1.36 8.16H857.4c-2.71-5.43-9.5-10.87-21.74-10.87-19 0-28.53 15-28.53 35.33s9.52 35.32 28.53 35.32c12.24.0 19-5.43 21.74-10.87zm-88.3-53c13.58.0 23.09 10.87 23.09 28.53S784 97.12 770.46 97.12s-23.1-10.87-23.1-28.53 9.51-28.53 23.1-28.53m0 63.85c17.66.0 31.25-12.23 31.25-35.32s-13.59-35.33-31.25-35.33-31.25 12.23-31.25 35.33 13.59 35.32 31.25 35.32m-40.76-2.72V8.81l-1.36-1.36h-5.43l-1.36 1.36v92.38l1.36 1.36h5.43zM680.8 40.06c13.58.0 23.09 10.87 23.09 28.53s-9.51 28.53-23.09 28.53-23.1-10.87-23.1-28.53 9.51-28.53 23.1-28.53m0 63.85c17.66.0 31.25-12.23 31.25-35.32S698.46 33.26 680.8 33.26s-31.25 12.23-31.25 35.33 13.59 35.32 31.25 35.32m-39.4-2.72V60.43c0-17.66-9.51-27.17-24.45-27.17-9.52.0-17.67 4.08-21.74 10.87h-1.36L592.49 36l-1.36-1.35h-4.08L585.7 36v65.22l1.35 1.36h5.44l1.36-1.36V64.51c0-15 6.79-24.45 21.73-24.45 10.87.0 17.66 6.79 17.66 20.37v40.76l1.37 1.36H640zm-69.29.0V60.43c0-17.66-9.51-27.17-24.45-27.17-9.52.0-17.66 4.08-21.74 10.87h-1.36V8.81L523.2 7.45h-5.43l-1.36 1.36v92.38l1.36 1.36h5.43l1.36-1.36V64.51c0-15 6.8-24.45 21.74-24.45 10.87.0 17.66 6.79 17.66 20.37v40.76l1.36 1.36h5.44zM455.28 68.59c0-19 9.5-28.53 23.09-28.53s19 8.15 20.38 16.29l1.35 1.37h5.44l1.36-1.37c-1.36-13.58-12.23-23.09-28.53-23.09-17.66.0-31.24 10.87-31.24 35.33s13.58 35.32 31.24 35.32c16.3.0 27.17-9.51 28.53-23.1l-1.36-1.36H500.1l-1.35 1.36C497.39 89 492 97.12 478.37 97.12s-23.09-9.52-23.09-28.53m-14.95 2.72 1.36-1.37V65.87c0-19-10.87-32.61-29.9-32.61s-29.88 13.59-29.88 32.61v2.72c0 19 9.51 35.32 31.25 35.32 19 0 25.81-12.23 27.17-20.38L439 82.17h-5.43l-1.36 1.36c-2.72 8.15-8.15 13.59-19 13.59-17.66.0-23.1-16.31-23.1-24.46l1.36-1.35zm-8.15-6.8H391.42l-1.36-1.36c0-9.51 5.44-23.09 21.73-23.09s21.75 13.58 21.75 23.09zM395.57 12.88V8.81l-1.36-1.36H323.56L322.2 8.81v4.07l1.36 1.36h29.89l1.36 1.36v85.59l1.36 1.36h5.43l1.36-1.36V15.6l1.36-1.36h29.89z"/><path class="cls-1" d="M322.2 83.65v18.9H260.85V7.45h21.6v76.2zM38.55 102.55A47.57 47.57.0 0084.58 67l53.8 42 53.77-42v35.56H253.5V83.65H213.75V7.45h-21.6V43L140.58 83.3l-11.54-9L153.73 55l26.89-21-15.35-12-51.58 40.3-11.53-9L153.73 13 138.38 1 84.58 43a47.57 47.57.0 00-46-35.58H0v95.1zM21.6 83.65V26.35H38.55c14.33.0 26 12.83 26 28.65s-11.67 28.65-26 28.65z"/></svg></span><span class="font-weight-bold">Solutions for Microsoft Azure Stack</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="https://dell.github.io/azurestack-docs/docs/" ><span class="active">Dell Technologies Solutions for Microsoft Azure Stack</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="https://github.com/dell/azurestack-docs" target="_blank" ><i class='fab fa-github fa-lg'></i><span>GitHub</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="https://dell.github.io/azurestack-docs/" ><i id='dark-mode-toggle' class='fa fa-moon'></i><span>Dark</span></a>
+			</li>
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block"><input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Search this site…"
+  aria-label="Search this site…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="https://dell.github.io/azurestack-docs/azurestack-docs/offline-search-index.6da7239078179da58d0dd42466bbc575.json"
+  data-offline-search-base-href="https://dell.github.io/azurestack-docs/"
+  data-offline-search-max-results="10"
+>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+
+
+
+
+<div class="td-content">
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+This is the multi-page printable view of this section.
+<a href="#" onclick="print();return false;">Click here to print</a>.
+</p><p>
+<a href="https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2401/">Return to the regular view of this page</a>.
+</p>
+</div>
+
+
+
+<h1 class="title">Release Notes for 2401</h1>
+
+
+
+
+
+  
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#dell-integrated-system-for-microsoft-azure-stack-hub-release-notes">Dell Integrated System for Microsoft Azure Stack Hub Release Notes</a>
+      <ul>
+        <li><a href="#current-release-version-dell-2401-and-microsoft-2306">Current Release Version: Dell 2401 and Microsoft 2306</a></li>
+        <li><a href="#release-type-major-ma">Release Type: Major (MA)</a></li>
+      </ul>
+    </li>
+    <li><a href="#new-features-changed-features-and-fixes">New features, changed features, and fixes</a>
+      <ul>
+        <li><a href="#new-features">New features</a></li>
+        <li><a href="#changed-features">Changed features</a></li>
+        <li><a href="#fixes">Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#known-issues-and-limitations">Known issues and limitations</a></li>
+    <li><a href="#notes-and-warnings">Notes and warnings</a></li>
+    <li><a href="#microsoft-fixed-issues">Microsoft fixed issues</a></li>
+    <li><a href="#hardware-and-firmware-support">Hardware and firmware support</a>
+      <ul>
+        <li><a href="#software-versions">Software Versions</a></li>
+      </ul>
+    </li>
+    <li><a href="#additional-resources">Additional resources</a>
+      <ul>
+        <li><a href="#dell-technologies-resources">Dell Technologies resources</a></li>
+        <li><a href="#microsoft-resources">Microsoft resources</a></li>
+      </ul>
+    </li>
+    <li><a href="#payload-information">Payload information</a></li>
+  </ul>
+</nav>
+  
+
+
+<div class="content">
+      <h2 id="dell-integrated-system-for-microsoft-azure-stack-hub-release-notes">Dell Integrated System for Microsoft Azure Stack Hub Release Notes</h2>
+<h3 id="current-release-version-dell-2401-and-microsoft-2306">Current Release Version: Dell 2401 and Microsoft 2306</h3>
+<h3 id="release-type-major-ma">Release Type: Major (MA)</h3>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">NOTE</h4>
+
+    Dell Azure Stack Hub OEM updates must be installed in sequential order, it is not supported to skip or miss-out an OEM update version. These release notes contain supplemental information for the Dell 2401 release and the Microsoft 2306 release.
+
+</div>
+
+<h2 id="new-features-changed-features-and-fixes">New features, changed features, and fixes</h2>
+<h3 id="new-features">New features</h3>
+<p>There are improvements and updates to drivers and firmware.</p>
+<h3 id="changed-features">Changed features</h3>
+<p>There are no changed features for this release.</p>
+<h3 id="fixes">Fixes</h3>
+<p>There are no fixes for this release.</p>
+<h2 id="known-issues-and-limitations">Known issues and limitations</h2>
+<p>This release notes document describes known issues and limitations for the Dell Integrated System for Microsoft Azure Stack Hub solution based on the Dell 2401 release and Microsoft 2306 release.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Item</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">OEM update</td>
+<td style="text-align:left">Dell Technologies recommends updating to the n-1 version before applying the latest OEM package.</td>
+</tr>
+<tr>
+<td style="text-align:left">Microsoft Azure Stack Hub code</td>
+<td style="text-align:left">For information about known issues and limitations in the Microsoft Azure Stack Hub code, see the <a href="https://learn.microsoft.com/en-us/azure-stack/operator/release-notes?view=azs-2306">Azure Stack Hub 2306 update</a> on the Microsoft website</td>
+</tr>
+<tr>
+<td style="text-align:left">Secure Connect Gateway 5.18</td>
+<td style="text-align:left">SNMP v3 alerts are not received within Secure Connect Gateway version 5.18, see the <a href="https://www.dell.com/support/kbdoc/en-ie/000222051/azure-stack-hub-snmp-v3-alerts-are-not-being-received-by-scg-version-5-18">Knowledge Base Article</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="notes-and-warnings">Notes and warnings</h2>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">CAUTION</h4>
+
+    Before you use the Microsoft Patch and Update process to update Azure Stack Hub, close any active session to the ERCS virtual machines. If an active session is open, the update may fail, and must be resumed.
+
+</div>
+
+<h2 id="microsoft-fixed-issues">Microsoft fixed issues</h2>
+<p>For information about fixed issues in this release, see the <a href="https://docs.microsoft.com/en-us/azure-stack/operator/release-notes?view=azs-2306">Azure Stack Hub 2306 update</a> on the Microsoft website.</p>
+<h2 id="hardware-and-firmware-support">Hardware and firmware support</h2>
+<p>For information about supported hardware, firmware, and software, see the Dell Integrated System for Microsoft Azure Stack Hub Support Matrix. The Support Matrix is available at <a href="https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2401/">Dell Integrated System for Microsoft Azure Stack Hub Support Matrix</a>.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">NOTE</h4>
+
+    The <a href="https://infohub.delltechnologies.com/t/tech-book-dell-integrated-system-for-microsoft-azure-stack-hub-1/">Dell Azure Stack Hub Tech Book</a> contains information regarding dimensions for Dell Technologies racks, servers, and switches.
+This information is updated as needed.
+
+</div>
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<style>
+table {
+    border-width:1px; border-style:solid;
+    border-color:black;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    table-layout:fixed;
+    overflow-wrap: break-word;
+}
+th {
+    border-width:1px;
+    padding:7px;
+    border-style:solid;
+    border-color:#0076CE;
+    background-color:#0076CE;
+    color:#FFFFFF;
+    text-align:center;
+}
+td {
+    border-width:1px;
+    padding:7px;
+    border-style:solid;
+    border-color:#0076CE;
+    text-align:center;
+}
+caption {
+    padding-bottom: 10px;
+    color:  #0076CE;
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="content">
+
+
+<h3 id="software-versions">Software Versions</h3>
+
+
+<table> <colgroup><col/><col/><col/></colgroup> <tr><th>Component</th><th>Version</th><th>Notes</th></tr> <tr><td>Microsoft Azure Stack Hub Baseline (for bare-metal deployment)</td><td>1.2306.0.16</td><td><a href='https://learn.microsoft.com/en-us/azure-stack/operator/release-notes?view=azs-2306'>Azure Stack Hub 2306 update</a>. The hotfix will be available in the Admin portal.</td></tr> <tr><td>Hardware Lifecycle Host</td><td>1.2306.0.16</td><td>N/A</td></tr> <tr><td>Hardware Lifecycle Host ISO</td><td>2401.14</td><td>N/A</td></tr> <tr><td>Microsoft Partner Toolkit (PTK)</td><td>1.2306.2462.46</td><td>Includes the <a href='https://www.powershellgallery.com/packages/Azs.Deployment.Worksheet/1.2306.2462.46'>Deployment Worksheet</a>.</td></tr> <tr><td>Dell Deployment Automation</td><td>2.24.2401.8</td><td>See the Dell Integrated System for Microsoft Azure Stack Hub Deployment Guide.</td></tr> <tr><td>Dell Patch and Update Automation Tool</td><td>2.0.2401.12</td><td>See the Dell Integrated System for Microsoft Azure Stack Hub Patch and Update Installation Guide.</td></tr> <tr><td>Dell Node Expansion</td><td>1.24.2401.8</td><td>See the Dell Integrated System for Microsoft Azure Stack Hub Deployment Guide.</td></tr> <tr><td>Dell RegisterJEA script</td><td>1.24.2401.1</td><td>See the Dell Integrated System for Microsoft Azure Stack Hub Patch and Update Installation Guide.</td></tr> <tr><td>Dell Customer Toolkit</td><td>2401.7</td><td>See <a href='https://www.dell.com/support/home/en-us/product-support/product/cloud-for-microsoft-azure-stack14g/drivers'>Integrated System for Microsoft Azure Stack Hub 14G/Drivers & Downloads</a> on the Dell Technologies Online Support website.</td></tr> <tr><td>Secure Connect Gateway</td><td>5.18.00.00</td><td>Secure Connect Gateway software.</td></tr> <tr><td>UpdateACL</td><td>1.1.2</td><td>N/A</td></tr> <tr><td>UpdateWDAC</td><td>1.1.1</td><td>See the Dell Integrated System for Microsoft Azure Stack Hub Patch and Update Installation Guide.</td></tr> <tr><td>Windows Server 2019 LCU</td><td>KB5033371</td><td>See the Windows support document <a href='https://support.microsoft.com/help/5033371'>KB5033371</a>.</td></tr> <tr><td>Windows Server 2019 ASDB LCU</td><td>KB5017270, KB5018461</td><td>Specific to the Windows Server 2019 ASDB image on the Hardware Lifecycle Host.</td></tr> <tr><td>Windows Server 2019 ASDB SSU</td><td>KB5018507</td><td>Specific to the Windows Server 2019 ASDB image on the Hardware Lifecycle Host.</td></tr> <tr><td>OS9 switch firmware (S3048, S4048, S5048)</td><td>9.14.2.21</td><td>OS9 switch firmware code is in the Dell Customer Toolkit.</td></tr> <tr><td>OS10 switch firmware (S5248, N3248)</td><td>10.5.5.6</td><td>OS10 switch firmware code is in the Dell Customer Toolkit.</td></tr> <tr><td>OEM extension package</td><td>2.3.2401.2</td><td>Included in the Dell Customer Toolkit and contains the driver and firmware update payload.</td></tr> <tr><td>Firmware Update Module in OEM Extension Package</td><td>2.2.2204.1</td><td>N/A</td></tr> </table><br>
+
+
+
+
+</div>
+
+</body>
+
+</html>
+
+
+
+
+<h2 id="additional-resources">Additional resources</h2>
+<h3 id="dell-technologies-resources">Dell Technologies resources</h3>
+<p>Additional Dell Technologies resources are available on the Dell Technologies Online Support website:</p>
+<ul>
+<li><a href="https://www.dell.com/support/home/us/en/04/product-support/product/cloud-for-microsoft-azure-stack14g/docs">14G documentation</a></li>
+</ul>
+<h3 id="microsoft-resources">Microsoft resources</h3>
+<p>The following additional resources are available on the Microsoft website:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-stack/user/">Azure Stack Hub User Documentation</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-stack/">Azure Stack Hub Operator Documentation</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure-stack/operator/azure-stack-datacenter-integration">Datacenter integration considerations for Azure Stack Hub integrated systems</a></li>
+</ul>
+<h2 id="payload-information">Payload information</h2>
+<p>Firmware and driver versions of each individual component can be found in the Dell Integrated System for Microsoft Azure Stack Hub Support Matrix.</p>
+<p>Fixes, enhancements, and other information about each firmware and driver can be found on the <a href="https://www.dell.com/support/home/en-us/">Dell Support site</a>.</p>
+
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/dell/azurestack-docs" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2024 The Dell Technologies All Rights Reserved</small>
+        <small class="ml-1"><a href="https://www.dell.com/learn/us/en/uscorp1/policies-privacy" target="_blank" rel="noopener">Privacy Policy</a></small>
+	
+		
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
+    crossorigin="anonymous"></script>
+
+
+
+
+
+<script src='https://dell.github.io/azurestack-docs/js/tabpane-persist.js'></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://dell.github.io/azurestack-docs/azurestack-docs/js/main.min.9f90c5deff5c6f69d5eaaf614a76a233d8b0b3ae70b942fc78919b6d08041034.js" integrity="sha256-n5DF3v9cb2nV6q9hSnaiM9iws65wuUL8eJGbbQgEEDQ=" crossorigin="anonymous"></script>
+
+
+
+<script src='https://dell.github.io/azurestack-docs/js/prism.js'></script>
+
+<script>
+
+    var mainJS = document.querySelector('script[src*="js/main"]');
+
+    var script = document.createElement("script");
+    script.src = mainJS.src.replace('azurestack-docs/azurestack-docs', 'azurestack-docs');
+    script.integrity = mainJS.integrity;
+    script.crossOrigin = mainJS.crossOrigin;
+
+    document.body.appendChild(script);
+
+    var offlineSearch = document.querySelector('input[data-offline-search-index-json-src*="offline-search"]');
+    offlineSearch.setAttribute('data-offline-search-index-json-src', offlineSearch.getAttribute('data-offline-search-index-json-src').replace('azurestack-docs/azurestack-docs', 'azurestack-docs'));
+
+</script>
+
+<script>
+    
+
+    var toggleIcon = document.getElementById("dark-mode-toggle");
+    var toggleMenuItem = toggleIcon.parentElement;
+    var toggleText = toggleMenuItem.childNodes[1]
+    var nightOwlPrism = document.getElementById("prism-night-owl");
+    var defaultPrism = $('link[href="https://dell.github.io/azurestack-docs/css/prism.css"]')[0].sheet
+
+    if (toggleMenuItem) {
+        toggleMenuItem.addEventListener("click", () => {
+            if (toggleIcon.className === "fa fa-moon fa-lg") {
+                setTheme("dark");
+            } else if (toggleIcon.className === "fa fa-sun fa-lg") {
+                setTheme("light");
+            }
+        });
+
+        toggleMenuItem.removeAttribute("href")
+    }
+
+    function setTheme(mode) {
+        localStorage.setItem("dark-mode-storage", mode);
+
+        var darkTheme = document.getElementById("dark-mode-theme");
+
+        if (mode === "dark") {
+            darkTheme.disabled = false;
+            nightOwlPrism.disabled = false;
+            defaultPrism.disabled = true;
+            toggleIcon.className = "fa fa-sun fa-lg";
+            toggleText.textContent = "Light"
+        } else if (mode === "light") {
+            darkTheme.disabled = true;
+            nightOwlPrism.disabled = true;
+            defaultPrism.disabled = false;
+            toggleIcon.className = "fa fa-moon fa-lg";
+            toggleText.textContent = "Dark"
+        }
+    }
+
+    
+    var savedTheme = localStorage.getItem("dark-mode-storage") || "light";
+    setTheme(savedTheme);
+</script>
+
+
+  </body>
+</html>

@@ -15,6 +15,99 @@
     
     
     <item>
+      <title>Docs: Release Artifacts for 2401</title>
+      <link>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2401/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2401/</guid>
+      <description>
+        
+        
+        
+
+
+&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt;
+&lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34;&gt;
+&lt;head&gt;
+
+&lt;style&gt;
+table {
+    border-width:1px; border-style:solid;
+    border-color:black;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    table-layout:fixed;
+    overflow-wrap: break-word;
+}
+th {
+    border-width:1px;
+    padding:7px;
+    border-style:solid;
+    border-color:#0076CE;
+    background-color:#0076CE;
+    color:#FFFFFF;
+    text-align:center;
+}
+td {
+    border-width:1px;
+    padding:7px;
+    border-style:solid;
+    border-color:#0076CE;
+    text-align:center;
+}
+caption {
+    padding-bottom: 10px;
+    color:  #0076CE;
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+}
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div id=&#34;content&#34;&gt;
+
+
+&lt;h3 id=&#34;dell-customer-tools&#34;&gt;Dell Customer Tools&lt;/h3&gt;
+
+
+&lt;table&gt; &lt;colgroup&gt;&lt;col/&gt;&lt;col/&gt;&lt;col/&gt;&lt;/colgroup&gt; &lt;tr&gt;&lt;th&gt;Component&lt;/th&gt;&lt;th&gt;File Name&lt;/th&gt;&lt;th&gt;Supported Version&lt;/th&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Dell Customer Toolkit&lt;/td&gt;&lt;td&gt;AzS_DellEMC_CustomerToolkit_2401.7.zip&lt;/td&gt;&lt;td&gt;2401.7&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Dell OEM extension package for drivers and firmware updates&lt;/td&gt;&lt;td&gt;AzS-DellEMC-2.3.2401.2.zip&lt;/td&gt;&lt;td&gt;2.3.2401.2&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Dell HLH Rebuild to Windows Server 2019&lt;/td&gt;&lt;td&gt;HLH_DataDrive_2401.18_Redeployment.zip&lt;/td&gt;&lt;td&gt;2401.18&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Dell Patch and Update Automation Tool&lt;/td&gt;&lt;td&gt;Dell_EMC_Patch_and_Update_Automation_QE_2.0.2401.12.exe&lt;/td&gt;&lt;td&gt;2.0.2401.12&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Dell Node Expansion scripts&lt;/td&gt;&lt;td&gt;DELLEMCNodeExpansion_1.24.2401.8.zip&lt;/td&gt;&lt;td&gt;1.24.2401.8&lt;/td&gt;&lt;/tr&gt; &lt;/table&gt;&lt;br&gt;
+
+
+&lt;h3 id=&#34;software-versions&#34;&gt;Software Versions&lt;/h3&gt;
+
+
+&lt;table&gt; &lt;colgroup&gt;&lt;col/&gt;&lt;col/&gt;&lt;col/&gt;&lt;/colgroup&gt; &lt;tr&gt;&lt;th&gt;Component&lt;/th&gt;&lt;th&gt;Version&lt;/th&gt;&lt;th&gt;Notes&lt;/th&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Microsoft Azure Stack Hub Baseline (for bare-metal deployment)&lt;/td&gt;&lt;td&gt;1.2306.0.16&lt;/td&gt;&lt;td&gt;&lt;a href=&#39;https://learn.microsoft.com/en-us/azure-stack/operator/release-notes?view=azs-2306&#39;&gt;Azure Stack Hub 2306 update&lt;/a&gt;. The hotfix will be available in the Admin portal.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Hardware Lifecycle Host&lt;/td&gt;&lt;td&gt;1.2306.0.16&lt;/td&gt;&lt;td&gt;N/A&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Hardware Lifecycle Host ISO&lt;/td&gt;&lt;td&gt;2401.14&lt;/td&gt;&lt;td&gt;N/A&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Microsoft Partner Toolkit (PTK)&lt;/td&gt;&lt;td&gt;1.2306.2462.46&lt;/td&gt;&lt;td&gt;Includes the &lt;a href=&#39;https://www.powershellgallery.com/packages/Azs.Deployment.Worksheet/1.2306.2462.46&#39;&gt;Deployment Worksheet&lt;/a&gt;.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Dell Deployment Automation&lt;/td&gt;&lt;td&gt;2.24.2401.8&lt;/td&gt;&lt;td&gt;See the Dell Integrated System for Microsoft Azure Stack Hub Deployment Guide.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Dell Patch and Update Automation Tool&lt;/td&gt;&lt;td&gt;2.0.2401.12&lt;/td&gt;&lt;td&gt;See the Dell Integrated System for Microsoft Azure Stack Hub Patch and Update Installation Guide.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Dell Node Expansion&lt;/td&gt;&lt;td&gt;1.24.2401.8&lt;/td&gt;&lt;td&gt;See the Dell Integrated System for Microsoft Azure Stack Hub Deployment Guide.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Dell RegisterJEA script&lt;/td&gt;&lt;td&gt;1.24.2401.1&lt;/td&gt;&lt;td&gt;See the Dell Integrated System for Microsoft Azure Stack Hub Patch and Update Installation Guide.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Dell Customer Toolkit&lt;/td&gt;&lt;td&gt;2401.7&lt;/td&gt;&lt;td&gt;See &lt;a href=&#39;https://www.dell.com/support/home/en-us/product-support/product/cloud-for-microsoft-azure-stack14g/drivers&#39;&gt;Integrated System for Microsoft Azure Stack Hub 14G/Drivers &amp; Downloads&lt;/a&gt; on the Dell Technologies Online Support website.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Secure Connect Gateway&lt;/td&gt;&lt;td&gt;5.18.00.00&lt;/td&gt;&lt;td&gt;Secure Connect Gateway software.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;UpdateACL&lt;/td&gt;&lt;td&gt;1.1.2&lt;/td&gt;&lt;td&gt;N/A&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;UpdateWDAC&lt;/td&gt;&lt;td&gt;1.1.1&lt;/td&gt;&lt;td&gt;See the Dell Integrated System for Microsoft Azure Stack Hub Patch and Update Installation Guide.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Windows Server 2019 LCU&lt;/td&gt;&lt;td&gt;KB5033371&lt;/td&gt;&lt;td&gt;See the Windows support document &lt;a href=&#39;https://support.microsoft.com/help/5033371&#39;&gt;KB5033371&lt;/a&gt;.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Windows Server 2019 ASDB LCU&lt;/td&gt;&lt;td&gt;KB5017270, KB5018461&lt;/td&gt;&lt;td&gt;Specific to the Windows Server 2019 ASDB image on the Hardware Lifecycle Host.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Windows Server 2019 ASDB SSU&lt;/td&gt;&lt;td&gt;KB5018507&lt;/td&gt;&lt;td&gt;Specific to the Windows Server 2019 ASDB image on the Hardware Lifecycle Host.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;OS9 switch firmware (S3048, S4048, S5048)&lt;/td&gt;&lt;td&gt;9.14.2.21&lt;/td&gt;&lt;td&gt;OS9 switch firmware code is in the Dell Customer Toolkit.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;OS10 switch firmware (S5248, N3248)&lt;/td&gt;&lt;td&gt;10.5.5.6&lt;/td&gt;&lt;td&gt;OS10 switch firmware code is in the Dell Customer Toolkit.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;OEM extension package&lt;/td&gt;&lt;td&gt;2.3.2401.2&lt;/td&gt;&lt;td&gt;Included in the Dell Customer Toolkit and contains the driver and firmware update payload.&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Firmware Update Module in OEM Extension Package&lt;/td&gt;&lt;td&gt;2.2.2204.1&lt;/td&gt;&lt;td&gt;N/A&lt;/td&gt;&lt;/tr&gt; &lt;/table&gt;&lt;br&gt;
+
+
+&lt;h3 id=&#34;updated-oem-package-components&#34;&gt;Updated OEM Package components&lt;/h3&gt;
+
+
+&lt;table&gt;
+&lt;colgroup&gt;&lt;col/&gt;&lt;col/&gt;&lt;col/&gt;&lt;col/&gt;&lt;col/&gt;&lt;col/&gt;&lt;col/&gt;&lt;col/&gt;&lt;col/&gt;&lt;col/&gt;&lt;col/&gt;&lt;/colgroup&gt;
+&lt;tr&gt;&lt;th&gt;Server Type&lt;/th&gt;&lt;th&gt;Platform&lt;/th&gt;&lt;th&gt;OS Type&lt;/th&gt;&lt;th&gt;Component&lt;/th&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Category&lt;/th&gt;&lt;th&gt;Dell P/N&lt;/th&gt;&lt;th&gt;Previous SWB&lt;/th&gt;&lt;th&gt;Target SWB&lt;/th&gt;&lt;th&gt;Previous Version&lt;/th&gt;&lt;th&gt;Target Version&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Scale Units (PowerEdge R640 AS All Flash)&lt;/td&gt;&lt;td&gt;R640&lt;/td&gt;&lt;td rowspan=&#34;4&#34;&gt;N/A&lt;/td&gt;&lt;td rowspan=&#34;4&#34;&gt;MICRON 5400 Pro M.2 SSD MTFDDAV480TGA-1BC1ZABDA (Boot)&lt;/td&gt;&lt;td rowspan=&#34;4&#34;&gt;Firmware DUP&lt;/td&gt;&lt;td rowspan=&#34;4&#34;&gt;Storage - 480GB SATA SSD &lt;/td&gt;&lt;td rowspan=&#34;4&#34;&gt;VN68H&lt;/td&gt;&lt;td rowspan=&#34;4&#34;&gt;C2Y7D&lt;/td&gt;&lt;td rowspan=&#34;4&#34;&gt;RJ0WY&lt;/td&gt;&lt;td rowspan=&#34;4&#34;&gt;K002&lt;/td&gt;&lt;td rowspan=&#34;4&#34;&gt;K003&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Scale Units (PowerEdge R640 Tactical)&lt;/td&gt;&lt;td&gt;R640&lt;/td&gt;&lt;tr&gt;&lt;td&gt;Scale Units (PowerEdge R740xd)&lt;/td&gt;&lt;td&gt;R740xd&lt;/td&gt;&lt;tr&gt;&lt;td&gt;Scale Units (PowerEdge R840 AS Dense)&lt;/td&gt;&lt;td&gt;R840&lt;/td&gt;&lt;tr&gt;&lt;td&gt;Scale Units (PowerEdge R640 AS All Flash)&lt;/td&gt;&lt;td&gt;R640&lt;/td&gt;&lt;td rowspan=&#34;4&#34;&gt;N/A&lt;/td&gt;&lt;td rowspan=&#34;4&#34;&gt;MICRON 5400 Pro M.2 SSD MTFDDAV960TGA-1BC1ZABDA (Boot)&lt;/td&gt;&lt;td rowspan=&#34;4&#34;&gt;Firmware DUP&lt;/td&gt;&lt;td rowspan=&#34;4&#34;&gt;Storage - 960GB SATA SSD &lt;/td&gt;&lt;td rowspan=&#34;4&#34;&gt;KHRN0&lt;/td&gt;&lt;td rowspan=&#34;4&#34;&gt;C2Y7D&lt;/td&gt;&lt;td rowspan=&#34;4&#34;&gt;RJ0WY&lt;/td&gt;&lt;td rowspan=&#34;4&#34;&gt;K002&lt;/td&gt;&lt;td rowspan=&#34;4&#34;&gt;K003&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Scale Units (PowerEdge R640 Tactical)&lt;/td&gt;&lt;td&gt;R640&lt;/td&gt;&lt;tr&gt;&lt;td&gt;Scale Units (PowerEdge R740xd)&lt;/td&gt;&lt;td&gt;R740xd&lt;/td&gt;&lt;tr&gt;&lt;td&gt;Scale Units (PowerEdge R840 AS Dense)&lt;/td&gt;&lt;td&gt;R840&lt;/td&gt;&lt;tr&gt;&lt;td&gt;N/A&lt;/td&gt;&lt;td&gt;14G&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;N/A&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;S3048-ON&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;Switch Firmware&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;BMC&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;N/A&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;9GWDW&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;XVTCN&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;9.14.2.20&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;9.14.2.21&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;N/A&lt;/td&gt;&lt;td&gt;14G&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;N/A&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;S4048-ON&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;Switch Firmware&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;TOR&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;N/A&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;1NWP3&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;F90H3&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;9.14.2.20&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;9.14.2.21&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;N/A&lt;/td&gt;&lt;td&gt;14G&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;N/A&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;S5048F-ON&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;Switch Firmware&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;TOR&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;N/A&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;FK3NJ&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;HG8VH&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;9.14.2.20&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;9.14.2.21&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;N/A&lt;/td&gt;&lt;td&gt;14G&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;N/A&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;S5248F-ON&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;Switch Firmware&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;TOR&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;N/A&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;29T68&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;NV3YV&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;10.5.5.5&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;10.5.5.6&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;N/A&lt;/td&gt;&lt;td&gt;14G&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;N/A&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;N3248TE-ON&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;Switch Firmware&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;BMC&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;N/A&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;29T68&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;NV3YV&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;10.5.5.5&lt;/td&gt;&lt;td rowspan=&#34;1&#34;&gt;10.5.5.6&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;br&gt;
+
+
+
+
+&lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+
+
+
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Release Artifacts for 2309</title>
       <link>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2309/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
