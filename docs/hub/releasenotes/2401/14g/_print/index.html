@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="canonical" type="text/html" href="https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2401/">
-<link rel="alternate" type="application/rss&#43;xml" href="https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2401/index.xml">
+<link rel="canonical" type="text/html" href="https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2401/14g/">
+<link rel="alternate" type="application/rss&#43;xml" href="https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2401/14g/index.xml">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -19,21 +19,22 @@
 <link rel="icon" type="image/png" href="https://dell.github.io/azurestack-docs/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="https://dell.github.io/azurestack-docs/favicons/android-192x192.png" sizes="192x192">
 
-<title>Release Artifacts for 2401 | Solutions for Microsoft Azure Stack</title>
+<title>Release Notes for 14G - 2401 | Solutions for Microsoft Azure Stack</title>
 <meta name="description" content="Dell Technologies (Dell) Azure Stack documentation pages">
-<meta property="og:url" content="https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2401/">
+<meta property="og:url" content="https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2401/14g/">
   <meta property="og:site_name" content="Solutions for Microsoft Azure Stack">
-  <meta property="og:title" content="Release Artifacts for 2401">
-  <meta property="og:description" content="Dell Technologies (Dell) Azure Stack documentation pages">
+  <meta property="og:title" content="Release Notes for 14G - 2401">
+  <meta property="og:description" content="Dell Integrated System for Microsoft Azure Stack Hub Release Notes Current Release Version: Dell 2401 and Microsoft 2306 Release Type: Major (MA) NOTE Dell Azure Stack Hub OEM updates must be installed in sequential order, it is not supported to skip or miss-out an OEM update version. These release notes contain supplemental information for the Dell 2401 release and the Microsoft 2306 release. New features, changed features, and fixes New features There are improvements and updates to drivers and firmware.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
 
-  <meta itemprop="name" content="Release Artifacts for 2401">
-  <meta itemprop="description" content="Dell Technologies (Dell) Azure Stack documentation pages">
+  <meta itemprop="name" content="Release Notes for 14G - 2401">
+  <meta itemprop="description" content="Dell Integrated System for Microsoft Azure Stack Hub Release Notes Current Release Version: Dell 2401 and Microsoft 2306 Release Type: Major (MA) NOTE Dell Azure Stack Hub OEM updates must be installed in sequential order, it is not supported to skip or miss-out an OEM update version. These release notes contain supplemental information for the Dell 2401 release and the Microsoft 2306 release. New features, changed features, and fixes New features There are improvements and updates to drivers and firmware.">
   <meta itemprop="dateModified" content="2024-05-15T17:13:21+01:00">
+  <meta itemprop="wordCount" content="672">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Release Artifacts for 2401">
-  <meta name="twitter:description" content="Dell Technologies (Dell) Azure Stack documentation pages">
+  <meta name="twitter:title" content="Release Notes for 14G - 2401">
+  <meta name="twitter:description" content="Dell Integrated System for Microsoft Azure Stack Hub Release Notes Current Release Version: Dell 2401 and Microsoft 2306 Release Type: Major (MA) NOTE Dell Azure Stack Hub OEM updates must be installed in sequential order, it is not supported to skip or miss-out an OEM update version. These release notes contain supplemental information for the Dell 2401 release and the Microsoft 2306 release. New features, changed features, and fixes New features There are improvements and updates to drivers and firmware.">
 
 
 
@@ -132,48 +133,123 @@ if (!doNotTrack) {
 This is the multi-page printable view of this section.
 <a href="#" onclick="print();return false;">Click here to print</a>.
 </p><p>
-<a href="https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2401/">Return to the regular view of this page</a>.
+<a href="https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2401/14g/">Return to the regular view of this page</a>.
 </p>
 </div>
 
 
 
-<h1 class="title">Release Artifacts for 2401</h1>
+<h1 class="title">Release Notes for 14G - 2401</h1>
 
 
 
 
 
   
-  <nav id="TableOfContents"></nav>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#dell-integrated-system-for-microsoft-azure-stack-hub-release-notes">Dell Integrated System for Microsoft Azure Stack Hub Release Notes</a>
+      <ul>
+        <li><a href="#current-release-version-dell-2401-and-microsoft-2306">Current Release Version: Dell 2401 and Microsoft 2306</a></li>
+        <li><a href="#release-type-major-ma">Release Type: Major (MA)</a></li>
+      </ul>
+    </li>
+    <li><a href="#new-features-changed-features-and-fixes">New features, changed features, and fixes</a>
+      <ul>
+        <li><a href="#new-features">New features</a></li>
+        <li><a href="#changed-features">Changed features</a></li>
+        <li><a href="#fixes">Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#known-issues-and-limitations">Known issues and limitations</a></li>
+    <li><a href="#notes-and-warnings">Notes and warnings</a></li>
+    <li><a href="#microsoft-fixed-issues">Microsoft fixed issues</a></li>
+    <li><a href="#hardware-and-firmware-support">Hardware and firmware support</a>
+      <ul>
+        <li><a href="#software-versions">Software Versions</a></li>
+      </ul>
+    </li>
+    <li><a href="#additional-resources">Additional resources</a>
+      <ul>
+        <li><a href="#dell-technologies-resources">Dell Technologies resources</a></li>
+        <li><a href="#microsoft-resources">Microsoft resources</a></li>
+      </ul>
+    </li>
+    <li><a href="#payload-information">Payload information</a></li>
+  </ul>
+</nav>
   
 
 
 <div class="content">
-      
+      <h2 id="dell-integrated-system-for-microsoft-azure-stack-hub-release-notes">Dell Integrated System for Microsoft Azure Stack Hub Release Notes</h2>
+<h3 id="current-release-version-dell-2401-and-microsoft-2306">Current Release Version: Dell 2401 and Microsoft 2306</h3>
+<h3 id="release-type-major-ma">Release Type: Major (MA)</h3>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">NOTE</h4>
+
+    Dell Azure Stack Hub OEM updates must be installed in sequential order, it is not supported to skip or miss-out an OEM update version. These release notes contain supplemental information for the Dell 2401 release and the Microsoft 2306 release.
+
 </div>
+
+<h2 id="new-features-changed-features-and-fixes">New features, changed features, and fixes</h2>
+<h3 id="new-features">New features</h3>
+<p>There are improvements and updates to drivers and firmware.</p>
+<h3 id="changed-features">Changed features</h3>
+<p>There are no changed features for this release.</p>
+<h3 id="fixes">Fixes</h3>
+<p>There are no fixes for this release.</p>
+<h2 id="known-issues-and-limitations">Known issues and limitations</h2>
+<p>This release notes document describes known issues and limitations for the Dell Integrated System for Microsoft Azure Stack Hub solution based on the Dell 2401 release and Microsoft 2306 release.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Item</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">OEM update</td>
+<td style="text-align:left">Dell Technologies recommends updating to the n-1 version before applying the latest OEM package.</td>
+</tr>
+<tr>
+<td style="text-align:left">Microsoft Azure Stack Hub code</td>
+<td style="text-align:left">For information about known issues and limitations in the Microsoft Azure Stack Hub code, see the <a href="https://learn.microsoft.com/en-us/azure-stack/operator/release-notes?view=azs-2306">Azure Stack Hub 2306 update</a> on the Microsoft website</td>
+</tr>
+<tr>
+<td style="text-align:left">Secure Connect Gateway 5.18</td>
+<td style="text-align:left">SNMP v3 alerts are not received within Secure Connect Gateway version 5.18, see the <a href="https://www.dell.com/support/kbdoc/en-ie/000222051/azure-stack-hub-snmp-v3-alerts-are-not-being-received-by-scg-version-5-18">Knowledge Base Article</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="notes-and-warnings">Notes and warnings</h2>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">CAUTION</h4>
+
+    Before you use the Microsoft Patch and Update process to update Azure Stack Hub, close any active session to the ERCS virtual machines. If an active session is open, the update may fail, and must be resumed.
+
+</div>
+
+<h2 id="microsoft-fixed-issues">Microsoft fixed issues</h2>
+<p>For information about fixed issues in this release, see the <a href="https://docs.microsoft.com/en-us/azure-stack/operator/release-notes?view=azs-2306">Azure Stack Hub 2306 update</a> on the Microsoft website.</p>
+<h2 id="hardware-and-firmware-support">Hardware and firmware support</h2>
+<p>For information about supported hardware, firmware, and software, see the Dell Integrated System for Microsoft Azure Stack Hub Support Matrix. The Support Matrix is available at <a href="https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2401/14g/">Dell Integrated System for Microsoft Azure Stack Hub Support Matrix</a>.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">NOTE</h4>
+
+    The <a href="https://infohub.delltechnologies.com/t/tech-book-dell-integrated-system-for-microsoft-azure-stack-hub-1/">Dell Azure Stack Hub Tech Book</a> contains information regarding dimensions for Dell Technologies racks, servers, and switches.
+This information is updated as needed.
+
 </div>
 
 
-  
-  
-  
-  
-
-  
-  
-
-  
-    
-    
-	
-    
-
-<div class="td-content" style="">
-    
-	<h1 id="pg-4b0986c677b16eb8dfddfab3a6e29c09">1 - Release Artifacts for 14G - 2401</h1>
-    
-	
 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -222,24 +298,10 @@ caption {
 <div id="content">
 
 
-<h3 id="dell-customer-tools">Dell Customer Tools</h3>
-
-
-<table> <colgroup><col/><col/><col/></colgroup> <tr><th>Component</th><th>File Name</th><th>Supported Version</th></tr> <tr><td>Dell Customer Toolkit</td><td>AzS_DellEMC_CustomerToolkit_2401.7.zip</td><td>2401.7</td></tr> <tr><td>Dell OEM extension package for drivers and firmware updates</td><td>AzS-DellEMC-2.3.2401.2.zip</td><td>2.3.2401.2</td></tr> <tr><td>Dell HLH Rebuild to Windows Server 2019</td><td>HLH_DataDrive_2401.18_Redeployment.zip</td><td>2401.18</td></tr> <tr><td>Dell Patch and Update Automation Tool</td><td>Dell_EMC_Patch_and_Update_Automation_QE_2.0.2401.12.exe</td><td>2.0.2401.12</td></tr> <tr><td>Dell Node Expansion scripts</td><td>DELLEMCNodeExpansion_1.24.2401.8.zip</td><td>1.24.2401.8</td></tr> </table><br>
-
-
 <h3 id="software-versions">Software Versions</h3>
 
 
 <table> <colgroup><col/><col/><col/></colgroup> <tr><th>Component</th><th>Version</th><th>Notes</th></tr> <tr><td>Microsoft Azure Stack Hub Baseline (for bare-metal deployment)</td><td>1.2306.0.16</td><td><a href='https://learn.microsoft.com/en-us/azure-stack/operator/release-notes?view=azs-2306'>Azure Stack Hub 2306 update</a>. The hotfix will be available in the Admin portal.</td></tr> <tr><td>Hardware Lifecycle Host</td><td>1.2306.0.16</td><td>N/A</td></tr> <tr><td>Hardware Lifecycle Host ISO</td><td>2401.14</td><td>N/A</td></tr> <tr><td>Microsoft Partner Toolkit (PTK)</td><td>1.2306.2462.46</td><td>Includes the <a href='https://www.powershellgallery.com/packages/Azs.Deployment.Worksheet/'>Deployment Worksheet</a>.</td></tr> <tr><td>Dell Deployment Automation</td><td>2.24.2401.8</td><td>See the Dell Integrated System for Microsoft Azure Stack Hub Deployment Guide.</td></tr> <tr><td>Dell Patch and Update Automation Tool</td><td>2.0.2401.12</td><td>See the Dell Integrated System for Microsoft Azure Stack Hub Patch and Update Installation Guide.</td></tr> <tr><td>Dell Node Expansion</td><td>1.24.2401.8</td><td>See the Dell Integrated System for Microsoft Azure Stack Hub Deployment Guide.</td></tr> <tr><td>Dell RegisterJEA script</td><td>1.24.2401.1</td><td>See the Dell Integrated System for Microsoft Azure Stack Hub Patch and Update Installation Guide.</td></tr> <tr><td>Dell Customer Toolkit</td><td>2401.7</td><td>See <a href='https://www.dell.com/support/home/en-us/product-support/product/cloud-for-microsoft-azure-stack14g/drivers'>Integrated System for Microsoft Azure Stack Hub 14G/Drivers & Downloads</a> on the Dell Technologies Online Support website.</td></tr> <tr><td>Secure Connect Gateway</td><td>5.18.00.00</td><td>Secure Connect Gateway software.</td></tr> <tr><td>UpdateACL</td><td>1.1.2</td><td>N/A</td></tr> <tr><td>UpdateWDAC</td><td>1.1.1</td><td>See the Dell Integrated System for Microsoft Azure Stack Hub Patch and Update Installation Guide.</td></tr> <tr><td>Windows Server 2019 LCU</td><td>KB5033371</td><td>See the Windows support document <a href='https://support.microsoft.com/help/5033371'>KB5033371</a>.</td></tr> <tr><td>Windows Server 2019 ASDB LCU</td><td>KB5017270, KB5018461</td><td>Specific to the Windows Server 2019 ASDB image on the Hardware Lifecycle Host.</td></tr> <tr><td>Windows Server 2019 ASDB SSU</td><td>KB5018507</td><td>Specific to the Windows Server 2019 ASDB image on the Hardware Lifecycle Host.</td></tr> <tr><td>OS9 switch firmware (S3048, S4048, S5048)</td><td>9.14.2.21</td><td>OS9 switch firmware code is in the Dell Customer Toolkit.</td></tr> <tr><td>OS10 switch firmware (S5248, N3248)</td><td>10.5.5.6</td><td>OS10 switch firmware code is in the Dell Customer Toolkit.</td></tr> <tr><td>OEM extension package</td><td>2.3.2401.2</td><td>Included in the Dell Customer Toolkit and contains the driver and firmware update payload.</td></tr> <tr><td>Firmware Update Module in OEM Extension Package</td><td>2.2.2204.1</td><td>N/A</td></tr> </table><br>
-
-
-<h3 id="updated-oem-package-components">Updated OEM Package components</h3>
-
-
-<table>
-<colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup>
-<tr><th>Server Type</th><th>Platform</th><th>OS Type</th><th>Component</th><th>Type</th><th>Category</th><th>Dell P/N</th><th>Previous SWB</th><th>Target SWB</th><th>Previous Version</th><th>Target Version</th></tr><tr><td>Scale Units (PowerEdge R640 AS All Flash)</td><td>R640</td><td rowspan="4">N/A</td><td rowspan="4">MICRON 5400 Pro M.2 SSD MTFDDAV480TGA-1BC1ZABDA (Boot)</td><td rowspan="4">Firmware DUP</td><td rowspan="4">Storage - 480GB SATA SSD</td><td rowspan="4">VN68H</td><td rowspan="4"><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=C2Y7D'>C2Y7D</a></td><td rowspan="4"><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=RJ0WY'>RJ0WY</a></td><td rowspan="4">K002</td><td rowspan="4">K003</td></tr><tr><td>Scale Units (PowerEdge R640 Tactical)</td><td>R640</td><tr><td>Scale Units (PowerEdge R740xd)</td><td>R740xd</td><tr><td>Scale Units (PowerEdge R840 AS Dense)</td><td>R840</td><tr><td>Scale Units (PowerEdge R640 AS All Flash)</td><td>R640</td><td rowspan="4">N/A</td><td rowspan="4">MICRON 5400 Pro M.2 SSD MTFDDAV960TGA-1BC1ZABDA (Boot)</td><td rowspan="4">Firmware DUP</td><td rowspan="4">Storage - 960GB SATA SSD</td><td rowspan="4">KHRN0</td><td rowspan="4"><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=C2Y7D'>C2Y7D</a></td><td rowspan="4"><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=RJ0WY'>RJ0WY</a></td><td rowspan="4">K002</td><td rowspan="4">K003</td></tr><tr><td>Scale Units (PowerEdge R640 Tactical)</td><td>R640</td><tr><td>Scale Units (PowerEdge R740xd)</td><td>R740xd</td><tr><td>Scale Units (PowerEdge R840 AS Dense)</td><td>R840</td><tr><td>N/A</td><td>14G</td><td rowspan="1">N/A</td><td rowspan="1">S3048-ON</td><td rowspan="1">Switch Firmware</td><td rowspan="1">BMC</td><td rowspan="1">N/A</td><td rowspan="1"><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=9GWDW'>9GWDW</a></td><td rowspan="1"><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=XVTCN'>XVTCN</a></td><td rowspan="1">9.14.2.20</td><td rowspan="1">9.14.2.21</td></tr><tr><td>N/A</td><td>14G</td><td rowspan="1">N/A</td><td rowspan="1">S4048-ON</td><td rowspan="1">Switch Firmware</td><td rowspan="1">TOR</td><td rowspan="1">N/A</td><td rowspan="1"><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=1NWP3'>1NWP3</a></td><td rowspan="1"><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=F90H3'>F90H3</a></td><td rowspan="1">9.14.2.20</td><td rowspan="1">9.14.2.21</td></tr><tr><td>N/A</td><td>14G</td><td rowspan="1">N/A</td><td rowspan="1">S5048F-ON</td><td rowspan="1">Switch Firmware</td><td rowspan="1">TOR</td><td rowspan="1">N/A</td><td rowspan="1"><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=FK3NJ'>FK3NJ</a></td><td rowspan="1"><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=HG8VH'>HG8VH</a></td><td rowspan="1">9.14.2.20</td><td rowspan="1">9.14.2.21</td></tr><tr><td>N/A</td><td>14G</td><td rowspan="1">N/A</td><td rowspan="1">S5248F-ON</td><td rowspan="1">Switch Firmware</td><td rowspan="1">TOR</td><td rowspan="1">N/A</td><td rowspan="1"><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=29T68'>29T68</a></td><td rowspan="1"><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=NV3YV'>NV3YV</a></td><td rowspan="1">10.5.5.5</td><td rowspan="1">10.5.5.6</td></tr><tr><td>N/A</td><td>14G</td><td rowspan="1">N/A</td><td rowspan="1">N3248TE-ON</td><td rowspan="1">Switch Firmware</td><td rowspan="1">BMC</td><td rowspan="1">N/A</td><td rowspan="1"><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=29T68'>29T68</a></td><td rowspan="1"><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=NV3YV'>NV3YV</a></td><td rowspan="1">10.5.5.5</td><td rowspan="1">10.5.5.6</td></tr></table><br>
 
 
 
@@ -253,13 +315,27 @@ caption {
 
 
 
+<h2 id="additional-resources">Additional resources</h2>
+<h3 id="dell-technologies-resources">Dell Technologies resources</h3>
+<p>Additional Dell Technologies resources are available on the Dell Technologies Online Support website:</p>
+<ul>
+<li><a href="https://www.dell.com/support/home/us/en/04/product-support/product/cloud-for-microsoft-azure-stack14g/docs">14G documentation</a></li>
+</ul>
+<h3 id="microsoft-resources">Microsoft resources</h3>
+<p>The following additional resources are available on the Microsoft website:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-stack/user/">Azure Stack Hub User Documentation</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-stack/">Azure Stack Hub Operator Documentation</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure-stack/operator/azure-stack-datacenter-integration">Datacenter integration considerations for Azure Stack Hub integrated systems</a></li>
+</ul>
+<h2 id="payload-information">Payload information</h2>
+<p>Firmware and driver versions of each individual component can be found in the Dell Integrated System for Microsoft Azure Stack Hub Support Matrix.</p>
+<p>Fixes, enhancements, and other information about each firmware and driver can be found on the <a href="https://www.dell.com/support/home/en-us/">Dell Support site</a>.</p>
 
+</div>
 </div>
 
 
-
-    
-      
   
   
   
@@ -268,10 +344,6 @@ caption {
   
   
 
-  
-
-    
-	
   
 
 
