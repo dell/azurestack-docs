@@ -1,57 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Solutions for Microsoft Azure Stack – Support Matrix</title>
+    <title>Support Matrix on Solutions for Microsoft Azure Stack</title>
     <link>https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/</link>
     <description>Recent content in Support Matrix on Solutions for Microsoft Azure Stack</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    
-	  <atom:link href="https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
-    <item>
-      <title>Docs: Support Matrix for 2401</title>
-      <link>https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2401/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2401/</guid>
-      <description>
-        
-        
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Support Matrix for 2309</title>
-      <link>https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2309/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2309/</guid>
-      <description>
-        
-        
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Support Matrix for 2306</title>
-      <link>https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2306/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2306/</guid>
-      <description>
-        
-        
-        
-      </description>
-    </item>
-    
+    <atom:link href="https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -1,17 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Solutions for Microsoft Azure Stack – Dell Technologies</title>
+    <title>Dell Technologies on Solutions for Microsoft Azure Stack</title>
     <link>https://dell.github.io/azurestack-docs/</link>
     <description>Recent content in Dell Technologies on Solutions for Microsoft Azure Stack</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    
-	  <atom:link href="https://dell.github.io/azurestack-docs/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-      
-    
-    
+    <atom:link href="https://dell.github.io/azurestack-docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Search Results</title>
+      <link>https://dell.github.io/azurestack-docs/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://dell.github.io/azurestack-docs/search/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
