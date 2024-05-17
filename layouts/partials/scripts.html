@@ -83,9 +83,9 @@
 {{ $js := $jsArray | resources.Concat "js/main.js" -}}
 {{ if hugo.IsProduction -}}
 {{ $js := $js | minify | fingerprint -}}
-<script src="{{ $js | relURL }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+<script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
 {{ else -}}
-<script src="{{ $js | relURL }}"></script>
+<script src="{{ $js.Permalink }}"></script>
 {{ end -}}
 
 {{ if .Site.Params.prism_syntax_highlighting -}}
