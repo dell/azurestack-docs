@@ -9,13 +9,13 @@ Description: >
 ### Dell Integrated System for Microsoft Azure Stack Hub - Valid from Dell 2401 release and Microsoft 2306 release
 
 #### Abstract
-This support matrix provides information about supported software and hardware configurations for Dell EMC Integrated System for Microsoft Azure Stack Hub.
+This support matrix provides information about supported software and hardware configurations for Dell Integrated System for Microsoft Azure Stack Hub.
 
 #### Introduction
-The Dell EMC Integrated System for Microsoft Azure Stack Hub Support Matrix describes supported drivers, firmware, applications, and hardware for Dell EMC Integrated System for Microsoft Azure Stack Hub.
+The Dell Integrated System for Microsoft Azure Stack Hub Support Matrix describes supported drivers, firmware, applications, and hardware for Dell Integrated System for Microsoft Azure Stack Hub.
 
 {{% alert title="NOTE" color="primary" %}}
-All references to release dates refer to Dell EMC releases, unless otherwise indicated.
+All references to release dates refer to Dell Technologies releases, unless otherwise indicated.
 {{% /alert %}}
 
 {{< rawhtml >}}
