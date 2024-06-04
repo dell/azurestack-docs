@@ -1,3 +1,34 @@
 .td-page-meta--child {
     display: none !important;
 }
+
+@media (min-width: 992px) {
+
+    .td-max-width-on-larger-screens,
+    .td-card.card,
+    .td-card-group.card-group,
+    .td-content>.tab-content .tab-pane,
+    .td-content>pre,
+    .td-content>.highlight,
+    .td-content>.lead,
+    .td-content>h1,
+    .td-content>.h1,
+    .td-content>h2,
+    .td-content>.h2,
+    .td-content>ul,
+    .td-content>ol,
+    .td-content>p,
+    .td-content>blockquote,
+    .td-content>dl dd,
+    .td-content .footnotes,
+    .td-content>.alert {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .ps-md-5 {
+        padding-left: 3rem !important;
+        padding-right: 3rem;
+    }
+}
