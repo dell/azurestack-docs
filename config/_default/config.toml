@@ -16,7 +16,7 @@ defaultContentLanguage = "en"
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
 
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy"]
 
 # Configure how URLs look like per section.
 [permalinks]
@@ -44,6 +44,7 @@ anchor = "smart"
 
 [languages]
 [languages.en]
+[languages.en.params]
 title = "Solutions for Microsoft Azure Stack"
 description = "Dell Technologies (Dell) Azure Stack documentation pages"
 languageName ="English"
@@ -100,9 +101,6 @@ github_repo = "https://github.com/dell/azurestack-docs"
 # Google Custom Search Engine ID. Remove or comment out to disable search.
 #gcs_engine_id = "011737558837375720776:fsdu1nryfng"
 
-# Enable Algolia DocSearch
-algolia_docsearch = false
-
 # Enable Lunr.js offline search
 offlineSearch = true
 
@@ -116,8 +114,8 @@ breadcrumb_disable = false
 sidebar_search_disable = false
 #  Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top nav bar
 navbar_logo = true
-# Set to true to disable the About link in the site footer
-footer_about_disable = false
+# Set to true to enable the About link in the site footer
+footer_about_enable = true
 # Dark mode menu
 showLightDarkModeMenu = true
 
