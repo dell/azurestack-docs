@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Azure Stack HCI Support Matrix for 14G-15G (2406) on Solutions for Microsoft Azure Stack</title>
+    <link>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2406/14g-15g_hci/</link>
+    <description>Recent content in Azure Stack HCI Support Matrix for 14G-15G (2406) on Solutions for Microsoft Azure Stack</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2406/14g-15g_hci/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
