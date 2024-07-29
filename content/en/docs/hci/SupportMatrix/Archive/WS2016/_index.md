@@ -2102,7 +2102,7 @@ Intel Optane P4800x is supported only on the R640 Storage Spaces Direct Ready No
     <th colspan="1" rowspan="1">Form Factor</th>
     <th colspan="1" rowspan="1">Description</th>
     <th colspan="1" rowspan="1">Model Number</th>
-    <th colspan="1" rowspan="1">Device Part Number(P/N)</th>
+    <th colspan="1" rowspan="1">Device Part Number (P/N)</th>
     <th colspan="1" rowspan="1">Software Bundle</th>
     <th colspan="1" rowspan="1">Minimum Supported Version</th>
     <th colspan="1" rowspan="1">Capacity</th>
@@ -2415,7 +2415,7 @@ Toshiba CD5 960GB capacity is supported only on the R640 Storage Spaces Direct R
     <th colspan="1" rowspan="1">Form Factor</th>
     <th colspan="1" rowspan="1">Description</th>
     <th colspan="1" rowspan="1">Model Number</th>
-    <th colspan="1" rowspan="1">Device Part Number(P/N)</th>
+    <th colspan="1" rowspan="1">Device Part Number (P/N)</th>
     <th colspan="1" rowspan="1">Software Bundle</th>
     <th colspan="1" rowspan="1">Minimum Supported Version</th>
     <th colspan="1" rowspan="1">Capacity</th>
