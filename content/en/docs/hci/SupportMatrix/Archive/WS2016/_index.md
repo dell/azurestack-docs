@@ -349,7 +349,7 @@ For example:
     <td colspan="1" rowspan="1">YTPJW</td>
     <td colspan="1" rowspan="1">14.31.20.06</td>
     <td colspan="1" rowspan="1">F3Y6R</td>
-    <td colspan="1" rowspan="1"> <p>02.80.02 – Installer</p> <p>2.80.25134.0 - Driver</p> </td>
+    <td colspan="1" rowspan="1"> <p>02.80.02 - Installer</p> <p>2.80.25134.0 - Driver</p> </td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1"> <p>Mellanox Connectx-5 EX Dual Port 100GbE QSFP20 PCIe Adapter, FH</p> <p>Mellanox Connectx-5 EX Dual Port 100GbE QSFP20 PCIe Adapter, LP</p> <p>Mellanox ConnectX-5 Dual Port 25GbE SFP28 Adapter, FH</p> <p>Mellanox ConnectX-5 Dual Port 25GbE SFP28 Adapter, LP</p> </td>
@@ -358,7 +358,7 @@ For example:
     <td colspan="1" rowspan="1">3CJ0V</td>
     <td colspan="1" rowspan="1">16.31.20.06</td>
     <td colspan="1" rowspan="1">F3Y6R</td>
-    <td colspan="1" rowspan="1"> <p>02.80.02– Installer</p> <p>2.80.25134.0 - Driver</p> </td>
+    <td colspan="1" rowspan="1"> <p>02.80.02 - Installer</p> <p>2.80.25134.0 - Driver</p> </td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1"><p>Mellanox ConnectX-6 Dx Dual Port 100GbE QSFP56 PCIe Adapter, LP</p> <p>Mellanox ConnectX-6 Dx Dual Port 100GbE QSFP56 PCIe Adapter, FH</p></td>
@@ -367,7 +367,7 @@ For example:
     <td colspan="1" rowspan="1">1XPGP</td>
     <td colspan="1" rowspan="1">22.31.20.06</td>
     <td colspan="1" rowspan="1">F3Y6R</td>
-    <td colspan="1" rowspan="1"><p>02.80.02– Installer</p> <p>2.80.25134.0 - Driver</p></td>
+    <td colspan="1" rowspan="1"><p>02.80.02 - Installer</p> <p>2.80.25134.0 - Driver</p></td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1"> <p>Qlogic FastLinQ 41262 Dual Port 25Gbe SFP28, rNDC</p> <p>QLogic FastLinQ 41262 Dual Port 25Gb SFP28 Adapter, LP</p> <p>QLogic FastLinQ 41262 Dual Port 25Gb SFP28 Adapter, FH</p> </td>
