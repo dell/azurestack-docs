@@ -118,7 +118,7 @@ For example:
     <td colspan="1" rowspan="1">BIOS</td>
     <td colspan="1" rowspan="1">W77H1</td>
     <td colspan="1" rowspan="1">2.16.1</td>
-    <td colspan="1" rowspan="1"> <p title="">AX-640</p> <p title="">R640</p> <p title="">AX-740xd</p> <p title="">R740xd</p> </td>
+    <td colspan="1" rowspan="1"> <p>AX-640</p> <p>R640</p> <p>AX-740xd</p> <p>R740xd</p> </td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">BIOS</td>
@@ -158,7 +158,7 @@ For example:
     <td colspan="1" rowspan="1">BIOS</td>
     <td colspan="1" rowspan="1">G7K8G</td>
     <td colspan="1" rowspan="1">1.8.2</td>
-    <td colspan="1" rowspan="1"> <p title="">AX-650</p> <p title="">AX-750</p> </td>
+    <td colspan="1" rowspan="1"> <p>AX-650</p> <p>AX-750</p> </td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">iDRAC9 with Lifecycle Controller</td>
@@ -174,7 +174,7 @@ For example:
     <td colspan="1" rowspan="1">Storage-Backplane</td>
     <td colspan="1" rowspan="1">VV85D</td>
     <td colspan="1" rowspan="1">4.35</td>
-    <td colspan="1" rowspan="1"> <p>AX-640<br> AX-740xd<br> R640<br> R740xd</p> </td>
+    <td colspan="1" rowspan="1"> <p>AX-640</p> <p>AX-740xd</p> <p>R640</p> <p>R740xd</p> </td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">Non-expander Storage Backplane</td>
@@ -182,7 +182,7 @@ For example:
     <td colspan="1" rowspan="1">Storage-Backplane</td>
     <td colspan="1" rowspan="1">6NNVP</td>
     <td colspan="1" rowspan="1">3.72</td>
-    <td colspan="1" rowspan="1">AX-7525<br> AX-650<br> AX-750</td>
+    <td colspan="1" rowspan="1"><p>AX-7525</p> <p>AX-650</p> <p>AX-750</p></td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">NVMe Switch Storage Backplane</td>
@@ -211,7 +211,7 @@ For example:
 <tr>
     <td colspan="1" rowspan="1">Intel S3520, M.2, SSD, RI, 240GB, 480GB</td>
     <td colspan="1" rowspan="1">Firmware DUP</td>
-    <td colspan="1" rowspan="1">BOSS<br> (Boot)</td>
+    <td colspan="1" rowspan="1">BOSS (Boot)</td>
     <td colspan="1" rowspan="1">CHJGV</td>
     <td colspan="1" rowspan="1">DL43</td>
     <td colspan="1" rowspan="1">All</td>
@@ -219,7 +219,7 @@ For example:
 <tr>
     <td colspan="1" rowspan="1">Micron 5100, M.2, SSD, 240GB, 480GB</td>
     <td colspan="1" rowspan="1">Firmware DUP</td>
-    <td colspan="1" rowspan="1">BOSS<br> (Boot)</td>
+    <td colspan="1" rowspan="1">BOSS (Boot)</td>
     <td colspan="1" rowspan="1">YM8KY</td>
     <td colspan="1" rowspan="1">E013</td>
     <td colspan="1" rowspan="1">All</td>
@@ -227,7 +227,7 @@ For example:
 <tr>
     <td colspan="1" rowspan="1">Micron 5300, M.2, SSD, 240GB, 480GB</td>
     <td colspan="1" rowspan="1">Firmware DUP</td>
-    <td colspan="1" rowspan="1">BOSS<br> (Boot)</td>
+    <td colspan="1" rowspan="1">BOSS (Boot)</td>
     <td colspan="1" rowspan="1">PWVX5</td>
     <td colspan="1" rowspan="1">J004</td>
     <td colspan="1" rowspan="1">All</td>
@@ -246,7 +246,7 @@ For example:
     <td colspan="1" rowspan="1">CPLD</td>
     <td colspan="1" rowspan="1">9N4DH</td>
     <td colspan="1" rowspan="1">1.0.6</td>
-    <td colspan="1" rowspan="1"> <p title="">AX-640</p> <p title="">R640</p> </td>
+    <td colspan="1" rowspan="1"> <p>AX-640</p> <p>R640</p> </td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">CPLD</td>
@@ -254,7 +254,7 @@ For example:
     <td colspan="1" rowspan="1">CPLD</td>
     <td colspan="1" rowspan="1">G65GH</td>
     <td colspan="1" rowspan="1">1.1.4</td>
-    <td colspan="1" rowspan="1"> <p title="">AX-740xd</p> <p title="">R740xd</p> </td>
+    <td colspan="1" rowspan="1"> <p>AX-740xd</p> <p>R740xd</p> </td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">CPLD</td>
@@ -286,7 +286,7 @@ For example:
     <td colspan="1" rowspan="1">CPLD</td>
     <td colspan="1" rowspan="1">N9YTC</td>
     <td colspan="1" rowspan="1">1.0.8</td>
-    <td colspan="1" rowspan="1"> <p title="">AX-650<br> AX-750</p> </td>
+    <td colspan="1" rowspan="1"> <p>AX-650</p> <p>AX-750</p> </td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">iDRAC Service Module OS DUP</td>
@@ -328,9 +328,9 @@ For example:
 </colgroup>
 <thead>
 <tr>
-    <td colspan="1" rowspan="2"> <h4>Component</h4> </td>
-    <td colspan="1" rowspan="2"> <h4>Category</h4> </td>
-    <td colspan="1" rowspan="2"> <h4>Part Number</h4> </td>
+    <th colspan="1" rowspan="2">Component</th>
+    <th colspan="1" rowspan="2">Category</th>
+    <th colspan="1" rowspan="2">Part Number</th>
     <td colspan="2" rowspan="1"> <h4>Firmware</h4> </td>
     <td colspan="2" rowspan="1"> <h4>Drivers</h4> </td>
 </tr>
@@ -338,54 +338,54 @@ For example:
     <th colspan="1" rowspan="1">Software Bundle</th>
     <th colspan="1" rowspan="1">Minimum Supported Version</th>
     <th colspan="1" rowspan="1">Software Bundle</th>
-    <th colspan="1" rowspan="1"> <p>Minimum Supported</p> <p>Version</p> </th>
+    <th colspan="1" rowspan="1">Minimum Supported Version</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-    <td colspan="1" rowspan="1"> <p title="">Mellanox ConnectX-4 Lx Dual Port 25GbE DA/SFP rNDC<br> Mellanox ConnextX-4 Lx Dual Port 25GbE DA/SFP Network Adapter, LP<br> Mellanox ConnextX-4 Lx Dual Port 25GbE DA/SFP Network Adapter, FH</p> </td>
+    <td colspan="1" rowspan="1"> <p>Mellanox ConnectX-4 Lx Dual Port 25GbE DA/SFP rNDC</p> <p>Mellanox ConnextX-4 Lx Dual Port 25GbE DA/SFP Network Adapter, LP</p> <p>Mellanox ConnextX-4 Lx Dual Port 25GbE DA/SFP Network Adapter, FH</p> </td>
     <td colspan="1" rowspan="1">Network / RDMA</td>
-    <td colspan="1" rowspan="1"> <p title="">R887V<br> <br> 20NJD</p> <p title="">MRT0D</p> </td>
+    <td colspan="1" rowspan="1"> <p>R887V</p> <p>20NJD</p> <p>MRT0D</p> </td>
     <td colspan="1" rowspan="1">YTPJW</td>
     <td colspan="1" rowspan="1">14.31.20.06</td>
     <td colspan="1" rowspan="1">F3Y6R</td>
-    <td colspan="1" rowspan="1"> <p title="">02.80.02– Installer</p> <p title="">2.80.25134.0- Driver</p> </td>
+    <td colspan="1" rowspan="1"> <p>02.80.02 – Installer</p> <p>2.80.25134.0 - Driver</p> </td>
 </tr>
 <tr>
-    <td colspan="1" rowspan="1"> <p title="">Mellanox Connectx-5 EX Dual Port 100GbE QSFP20 PCIe Adapter, FH<br> Mellanox Connectx-5 EX Dual Port 100GbE QSFP20 PCIe Adapter, LP<br> Mellanox ConnectX-5 Dual Port 25GbE SFP28 Adapter, FH<br> Mellanox ConnectX-5 Dual Port 25GbE SFP28 Adapter, LP</p> </td>
+    <td colspan="1" rowspan="1"> <p>Mellanox Connectx-5 EX Dual Port 100GbE QSFP20 PCIe Adapter, FH</p> <p>Mellanox Connectx-5 EX Dual Port 100GbE QSFP20 PCIe Adapter, LP</p> <p>Mellanox ConnectX-5 Dual Port 25GbE SFP28 Adapter, FH</p> <p>Mellanox ConnectX-5 Dual Port 25GbE SFP28 Adapter, LP</p> </td>
     <td colspan="1" rowspan="1">Network / RDMA</td>
-    <td colspan="1" rowspan="1"> <p title="">71C1T<br> <br> 9FTMY</p> <p title=""><br> TDNNT</p> <p title="">V5DG9</p> </td>
+    <td colspan="1" rowspan="1"> <p>71C1T</p> <p>9FTMY</p> <p>TDNNT</p> <p>V5DG9</p> </td>
     <td colspan="1" rowspan="1">3CJ0V</td>
     <td colspan="1" rowspan="1">16.31.20.06</td>
     <td colspan="1" rowspan="1">F3Y6R</td>
-    <td colspan="1" rowspan="1"> <p title="">02.80.02– Installer</p> <p title="">2.80.25134.0- Driver</p> </td>
+    <td colspan="1" rowspan="1"> <p>02.80.02– Installer</p> <p>2.80.25134.0 - Driver</p> </td>
 </tr>
 <tr>
-    <td colspan="1" rowspan="1">Mellanox ConnectX-6 Dx Dual Port 100GbE QSFP56 PCIe Adapter, LP<br> Mellanox ConnectX-6 Dx Dual Port 100GbE QSFP56 PCIe Adapter, FH</td>
+    <td colspan="1" rowspan="1"><p>Mellanox ConnectX-6 Dx Dual Port 100GbE QSFP56 PCIe Adapter, LP</p> <p>Mellanox ConnectX-6 Dx Dual Port 100GbE QSFP56 PCIe Adapter, FH</p></td>
     <td colspan="1" rowspan="1">Network / RDMA</td>
-    <td colspan="1" rowspan="1">F6FXM<br> <br> <br> <br> 8P2T2</td>
+    <td colspan="1" rowspan="1"><p>F6FXM</p> <p>8P2T2</p></td>
     <td colspan="1" rowspan="1">1XPGP</td>
     <td colspan="1" rowspan="1">22.31.20.06</td>
     <td colspan="1" rowspan="1">F3Y6R</td>
-    <td colspan="1" rowspan="1">02.80.02– Installer<br> 2.80.25134.0- Driver</td>
+    <td colspan="1" rowspan="1"><p>02.80.02– Installer</p> <p>2.80.25134.0 - Driver</p></td>
 </tr>
 <tr>
-    <td colspan="1" rowspan="1"> <p title="">Qlogic FastLinQ 41262 Dual Port 25Gbe SFP28, rNDC<br> QLogic FastLinQ 41262 Dual Port 25Gb SFP28 Adapter, LP<br> QLogic FastLinQ 41262 Dual Port 25Gb SFP28 Adapter, FH</p> </td>
+    <td colspan="1" rowspan="1"> <p>Qlogic FastLinQ 41262 Dual Port 25Gbe SFP28, rNDC</p> <p>QLogic FastLinQ 41262 Dual Port 25Gb SFP28 Adapter, LP</p> <p>QLogic FastLinQ 41262 Dual Port 25Gb SFP28 Adapter, FH</p> </td>
     <td colspan="1" rowspan="1">Network / iWARP</td>
-    <td colspan="1" rowspan="1"> <p title="">4KF8J<br> </p> <p title="">415DX<br> </p> <p title="">51GRM</p> </td>
+    <td colspan="1" rowspan="1"> <p>4KF8J</p> <p>415DX</p> <p>51GRM</p> </td>
     <td colspan="1" rowspan="1">TD0M9</td>
-    <td colspan="1" rowspan="1"><br> 15.20.16<br> </td>
+    <td colspan="1" rowspan="1">15.20.16</td>
     <td colspan="1" rowspan="1">RYX52</td>
-    <td colspan="1" rowspan="1"> <p title="">35.20.14 - Installer<br> 8.53.1.0 - Driver</p> </td>
+    <td colspan="1" rowspan="1"> <p>35.20.14 - Installer</p> <p>8.53.1.0 - Driver</p> </td>
 </tr>
 <tr>
-    <td colspan="1" rowspan="1"> <p title="">QLogic FastLinQ 41162 Dual Port 10GbE BASE-T & Dual Port 1GbE BASE-T, rNDC</p> </td>
+    <td colspan="1" rowspan="1"> <p>QLogic FastLinQ 41162 Dual Port 10GbE BASE-T & Dual Port 1GbE BASE-T, rNDC</p> </td>
     <td colspan="1" rowspan="1">Network / NDC</td>
     <td colspan="1" rowspan="1">0D1WT</td>
     <td colspan="1" rowspan="1">TD0M9</td>
     <td colspan="1" rowspan="1">15.20.16</td>
     <td colspan="1" rowspan="1">RYX52</td>
-    <td colspan="1" rowspan="1"> <p title="">35.20.14 - Installer<br> 8.53.1.0 - Driver</p> </td>
+    <td colspan="1" rowspan="1"> <p>35.20.14 - Installer</p> <p>8.53.1.0 - Driver</p> </td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">QLogic FastLinQ 41164 Quad Port 10GbE SFP+, rNDC</td>
@@ -394,7 +394,7 @@ For example:
     <td colspan="1" rowspan="1">TD0M9</td>
     <td colspan="1" rowspan="1">15.20.16</td>
     <td colspan="1" rowspan="1">RYX52</td>
-    <td colspan="1" rowspan="1"> <p title="">35.20.14 - Installer<br> 8.53.1.0 - Driver</p> </td>
+    <td colspan="1" rowspan="1"> <p>35.20.14 - Installer</p> <p>8.53.1.0 - Driver</p> </td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">QLogic FastLinQ 41164 Quad Port 10GbE BASE-T, rNDC</td>
@@ -403,7 +403,7 @@ For example:
     <td colspan="1" rowspan="1">TD0M9</td>
     <td colspan="1" rowspan="1">15.20.16</td>
     <td colspan="1" rowspan="1">RYX52</td>
-    <td colspan="1" rowspan="1"> <p title="">35.20.14 - Installer<br> 8.53.1.0 - Driver</p> </td>
+    <td colspan="1" rowspan="1"> <p>35.20.14 - Installer</p> <p>8.53.1.0 - Driver</p> </td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1"> <p>Intel X710 DP 10Gb DA/SFP+, +I350 DP 1Gb Ethernet, NDC</p> </td>
@@ -411,17 +411,17 @@ For example:
     <td colspan="1" rowspan="1">6VDPG</td>
     <td colspan="1" rowspan="1">DK4G2</td>
     <td colspan="1" rowspan="1">20.0.17</td>
-    <td colspan="1" rowspan="1"><br> 284J6<br> </td>
-    <td colspan="1" rowspan="1"> <p title="">20.0.0 - Installer</p> <p title="">1.13.104.0 - Driver</p> </td>
+    <td colspan="1" rowspan="1">284J6</td>
+    <td colspan="1" rowspan="1"> <p>20.0.0 - Installer</p> <p>1.13.104.0 - Driver</p> </td>
 </tr>
 <tr>
-    <td colspan="1" rowspan="1"> <p title="">Qlogic 57800 2x10Gb BT + 2x1Gb BT NDC<br> QLogic 57800 2x10Gb DA/SFP+ +2x1Gb BT NDC</p> </td>
+    <td colspan="1" rowspan="1"> <p>Qlogic 57800 2x10Gb BT + 2x1Gb BT NDC</p> <p>QLogic 57800 2x10Gb DA/SFP+ +2x1Gb BT NDC</p> </td>
     <td colspan="1" rowspan="1">Network / NDC</td>
-    <td colspan="1" rowspan="1"> <p title="">G8RPD</p> <p title="">165T0</p> </td>
+    <td colspan="1" rowspan="1"> <p>G8RPD</p> <p>165T0</p> </td>
     <td colspan="1" rowspan="1">899FK</td>
     <td colspan="1" rowspan="1">15.20.13</td>
     <td colspan="1" rowspan="1">MJP9W</td>
-    <td colspan="1" rowspan="1"> <p title="">35.20.04 - Installer</p> </td>
+    <td colspan="1" rowspan="1"> <p>35.20.04 - Installer</p> </td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">Broadcom 5720 Dual Port 1 GbE Network LOM Mezz Card</td>
@@ -430,7 +430,7 @@ For example:
     <td colspan="1" rowspan="1">M18WH</td>
     <td colspan="1" rowspan="1">21.80.9</td>
     <td colspan="1" rowspan="1">49X84</td>
-    <td colspan="1" rowspan="1"> <p title="">21.80.3- Installer</p> <p title="">214.0.0.6- Driver</p> </td>
+    <td colspan="1" rowspan="1"> <p>21.80.3 - Installer</p> <p>214.0.0.6 - Driver</p> </td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">Broadcom 57412 2 Port 10Gb SRP+ + 5720 2 Port 1 GB Base-T, rNDC</td>
@@ -439,7 +439,7 @@ For example:
     <td colspan="1" rowspan="1">YPXWJ</td>
     <td colspan="1" rowspan="1">21.85.21.91</td>
     <td colspan="1" rowspan="1">XYJ8C</td>
-    <td colspan="1" rowspan="1">218.0.169.0 - Installer 21.80.16.60 - Driver</td>
+    <td colspan="1" rowspan="1"><p>218.0.169.0 - Installer</p> <p>21.80.16.60 - Driver</p></td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">Broadcom 57416 Dual Port 10 Gb E SFP+ Network LOM Mezz Card</td>
@@ -448,21 +448,21 @@ For example:
     <td colspan="1" rowspan="1">YPXWJ</td>
     <td colspan="1" rowspan="1">21.85.21.91</td>
     <td colspan="1" rowspan="1">XYJ8C</td>
-    <td colspan="1" rowspan="1">218.0.169.0 - Installer 21.80.16.60 - Driver</td>
+    <td colspan="1" rowspan="1"><p>218.0.169.0 - Installer</p> <p>21.80.16.60 - Driver</p></td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">Broadcom 57414 Dual Port 25 Gb E SFP+ Network LOM Mezz Card</td>
     <td colspan="1" rowspan="1">Network / NDC / OCP</td>
     <td colspan="1" rowspan="1">930PP</td>
     <td colspan="1" rowspan="1">YPXWJ</td>
-    <td colspan="1" rowspan="1"> <p title="">21.85.21.91</p> </td>
+    <td colspan="1" rowspan="1"> <p>21.85.21.91</p> </td>
     <td colspan="1" rowspan="1">XYJ8C</td>
-    <td colspan="1" rowspan="1">218.0.169.0 - Installer 21.80.16.60 - Driver</td>
+    <td colspan="1" rowspan="1"><p>218.0.169.0 - Installer</p> <p>21.80.16.60 - Driver</p></td>
 </tr>
 <tr>
-    <td colspan="1" rowspan="1"> <p>HBA330 Controller, 12Gps Mini Card<br> HBA330 Controller, 12Gps Mini Card, LP</p> </td>
+    <td colspan="1" rowspan="1"> <p>HBA330 Controller, 12Gps Mini Card</p> <p>HBA330 Controller, 12Gps Mini Card, LP</p> </td>
     <td colspan="1" rowspan="1">Storage-HBA</td>
-    <td colspan="1" rowspan="1"> <p>P2R3R<br> <br> J7TNV</p> </td>
+    <td colspan="1" rowspan="1"> <p>P2R3R</p> <p>J7TNV</p> </td>
     <td colspan="1" rowspan="1"> <p>124X2</p> <p>NKNVC</p> </td>
     <td colspan="1" rowspan="1">16.17.01.00</td>
     <td colspan="1" rowspan="1"> <p>P1NP6</p> </td>
@@ -734,11 +734,11 @@ For example:
     <td colspan="1" rowspan="1">HDD</td>
     <td colspan="1" rowspan="1">Toshiba</td>
     <td colspan="1" rowspan="1">Tomcat R</td>
-    <td colspan="1" rowspan="1"> <p title="">MG04ACA200NY</p> <p title="">MG04ACA400NY</p> </td>
-    <td colspan="1" rowspan="1"> <p title="">NPVM6</p> <p title="">95M6K</p> </td>
-    <td colspan="1" rowspan="1"> <p title="">V47C4</p>  </td>
+    <td colspan="1" rowspan="1"> <p>MG04ACA200NY</p> <p>MG04ACA400NY</p> </td>
+    <td colspan="1" rowspan="1"> <p>NPVM6</p> <p>95M6K</p> </td>
+    <td colspan="1" rowspan="1"> <p>V47C4</p>  </td>
     <td colspan="1" rowspan="1">FK5D</td>
-    <td colspan="1" rowspan="1"> <p title="">2 TB</p> <p title="">4 TB</p> </td>
+    <td colspan="1" rowspan="1"> <p>2 TB</p> <p>4 TB</p> </td>
     <td colspan="1" rowspan="1">Capacity</td>
 </tr>
 <tr>
@@ -890,11 +890,11 @@ For example:
     <td colspan="1" rowspan="1">HDD</td>
     <td colspan="1" rowspan="1">Seagate</td>
     <td colspan="1" rowspan="1">Cimarron BP</td>
-    <td colspan="1" rowspan="1">ST4000NM018B-2TF130<br> ST8000NM023B-2TJ133</td>
-    <td colspan="1" rowspan="1">6KR2M<br> J7W80</td>
-    <td colspan="1" rowspan="1">J4X0T<br> 4P5X3</td>
-    <td colspan="1" rowspan="1">LC09<br> LA0A</td>
-    <td colspan="1" rowspan="1">4TB<br> 8TB</td>
+    <td colspan="1" rowspan="1"><p>ST4000NM018B-2TF130</p> <p>ST8000NM023B-2TJ133</p></td>
+    <td colspan="1" rowspan="1"><p>6KR2M</p> <p>J7W80</p></td>
+    <td colspan="1" rowspan="1"><p>J4X0T</p> <p>4P5X3</p></td>
+    <td colspan="1" rowspan="1"><p>LC09</p> <p>LA0A</p></td>
+    <td colspan="1" rowspan="1"><p>4TB<</p> <p>8TB</p></td>
     <td colspan="1" rowspan="1">Capacity</td>
 </tr>
 </tbody>
@@ -1040,7 +1040,7 @@ For example:
     <td colspan="1" rowspan="1">Toshiba</td>
     <td colspan="1" rowspan="1">MG06</td>
     <td colspan="1" rowspan="1">MG06SCA800EY</td>
-    <td colspan="1" rowspan="1"> <p title="">FV725</p> </td>
+    <td colspan="1" rowspan="1"> <p>FV725</p> </td>
     <td colspan="1" rowspan="1">4G5GY</td>
     <td colspan="1" rowspan="1">EH0D</td>
     <td colspan="1" rowspan="1">8 TB</td>
@@ -1159,11 +1159,11 @@ For example:
     <td colspan="1" rowspan="1">HDD</td>
     <td colspan="1" rowspan="1">Seagate</td>
     <td colspan="1" rowspan="1">Cimarron</td>
-    <td colspan="1" rowspan="1"> <p>ST4000NM017A<br> ST8000NM014A</p> </td>
-    <td colspan="1" rowspan="1"> <p>KRM6X<br> 0N660</p> </td>
-    <td colspan="1" rowspan="1"> <p>WTX15<br> PRFRJ</p> </td>
-    <td colspan="1" rowspan="1"> <p>CSJA<br> CSLC</p> </td>
-    <td colspan="1" rowspan="1"> <p>4TB<br> 8TB</p> </td>
+    <td colspan="1" rowspan="1"> <p>ST4000NM017A</p> <p>ST8000NM014A</p> </td>
+    <td colspan="1" rowspan="1"> <p>KRM6X</p> <p>0N660</p> </td>
+    <td colspan="1" rowspan="1"> <p>WTX15</p> <p>PRFRJ</p> </td>
+    <td colspan="1" rowspan="1"> <p>CSJA</p> <p>CSLC</p> </td>
+    <td colspan="1" rowspan="1"> <p>4TB</p> <p>8TB</p> </td>
     <td colspan="1" rowspan="1">Capacity</td>
 </tr>
 <tr>
@@ -1171,11 +1171,11 @@ For example:
     <td colspan="1" rowspan="1">HDD</td>
     <td colspan="1" rowspan="1">Seagate</td>
     <td colspan="1" rowspan="1">Cimarron BP</td>
-    <td colspan="1" rowspan="1">ST4000NM019B<br> ST8000NM024B</td>
-    <td colspan="1" rowspan="1">10N7R<br> C5HD0</td>
-    <td colspan="1" rowspan="1">912Y9<br> DTGXD</td>
-    <td colspan="1" rowspan="1">LW0A<br> LS0A</td>
-    <td colspan="1" rowspan="1">4TB<br> 8TB</td>
+    <td colspan="1" rowspan="1">ST4000NM019B</p> <p>ST8000NM024B</td>
+    <td colspan="1" rowspan="1"><p>10N7R</p> <p>C5HD0</p></td>
+    <td colspan="1" rowspan="1"><p>912Y9</p> <p>DTGXD</p></td>
+    <td colspan="1" rowspan="1"><p>LW0A</p> <p>LS0A</p></td>
+    <td colspan="1" rowspan="1"><p>4TB</p> <p>8TB</p></td>
     <td colspan="1" rowspan="1">Capacity</td>
 </tr>
 <tr>
@@ -1298,22 +1298,22 @@ For example:
     <td colspan="1" rowspan="1">Mixed Use</td>
     <td colspan="1" rowspan="1">Intel</td>
     <td colspan="1" rowspan="1">S4610</td>
-    <td colspan="1" rowspan="1"> <p title="">SSDSC2KG960G8R</p> <p title="">SSDSC2KG019T8R</p> </td>
-    <td colspan="1" rowspan="1"> <p title="">X31G3</p> <p title="">F8N2K/55J8H</p> </td>
+    <td colspan="1" rowspan="1"> <p>SSDSC2KG960G8R</p> <p>SSDSC2KG019T8R</p> </td>
+    <td colspan="1" rowspan="1"> <p>X31G3</p> <p>F8N2K/55J8H</p> </td>
     <td colspan="1" rowspan="1">2674V</td>
     <td colspan="1" rowspan="1">DL69</td>
-    <td colspan="1" rowspan="1"> <p title="">960GB</p> <p title="">1.92TB</p> </td>
+    <td colspan="1" rowspan="1"> <p>960GB</p> <p>1.92TB</p> </td>
     <td colspan="1" rowspan="1">Cache, Capacity</td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">Mixed Use</td>
     <td colspan="1" rowspan="1">Micron</td>
     <td colspan="1" rowspan="1">5200</td>
-    <td colspan="1" rowspan="1"> <p title="">MTFDDAK960TDN</p> <p title="">MTFDDAK1T9TDN</p> </td>
-    <td colspan="1" rowspan="1"> <p title="">HY1F8</p> <p title="">XKF5Y</p> </td>
+    <td colspan="1" rowspan="1"> <p>MTFDDAK960TDN</p> <p>MTFDDAK1T9TDN</p> </td>
+    <td colspan="1" rowspan="1"> <p>HY1F8</p> <p>XKF5Y</p> </td>
     <td colspan="1" rowspan="1">H72VG</td>
     <td colspan="1" rowspan="1">F005</td>
-    <td colspan="1" rowspan="1"> <p title="">960GB</p> <p title="">1.92TB</p> </td>
+    <td colspan="1" rowspan="1"> <p>960GB</p> <p>1.92TB</p> </td>
     <td colspan="1" rowspan="1">Cache, Capacity</td>
 </tr>
 <tr>
@@ -1342,22 +1342,22 @@ For example:
     <td colspan="1" rowspan="1">Mixed Use</td>
     <td colspan="1" rowspan="1">Intel</td>
     <td colspan="1" rowspan="1">Youngsville-RR</td>
-    <td colspan="1" rowspan="1">SSDSC2KG960GZR<br> SSDSC2KG019TZR</td>
-    <td colspan="1" rowspan="1">8MHYH<br> 8RXV5</td>
+    <td colspan="1" rowspan="1"><p>SSDSC2KG960GZR</p> <p>SSDSC2KG019TZR</p></td>
+    <td colspan="1" rowspan="1"><p>8MHYH</p> <p>8RXV5</p></td>
     <td colspan="1" rowspan="1">PN1T8</td>
     <td colspan="1" rowspan="1">DL70</td>
-    <td colspan="1" rowspan="1">960GB<br> 1.92TB</td>
+    <td colspan="1" rowspan="1"><p>960GB</p> <p>1.92TB</p></td>
     <td colspan="1" rowspan="1">Cache, Capacity</td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">Mixed Use</td>
     <td colspan="1" rowspan="1">Samsung</td>
     <td colspan="1" rowspan="1">PM897</td>
-    <td colspan="1" rowspan="1">MZ7L3960HBLTAD3<br> MZ7L31T9HBNAAD3<br> MZ7L33T8HBNAAD3</td>
-    <td colspan="1" rowspan="1">96KT6<br> RRR7M<br> N04DW</td>
+    <td colspan="1" rowspan="1"><p>MZ7L3960HBLTAD3</p> <p>MZ7L31T9HBNAAD3</p> <p>MZ7L33T8HBNAAD3</p></td>
+    <td colspan="1" rowspan="1"><p>96KT6</p> <p>RRR7M</p> <p>N04DW</p></td>
     <td colspan="1" rowspan="1">2PV21</td>
     <td colspan="1" rowspan="1">HH53</td>
-    <td colspan="1" rowspan="1">960GB<br> 1.92TB<br> 3.84TB</td>
+    <td colspan="1" rowspan="1"><p>960GB</p> <p>1.92TB</p> <p>3.84TB</p></td>
     <td colspan="1" rowspan="1">Cache, Capacity</td>
 </tr>
 </tbody>
@@ -1556,33 +1556,33 @@ For example:
     <td colspan="1" rowspan="1">Read Intensive</td>
     <td colspan="1" rowspan="1">Hynix</td>
     <td colspan="1" rowspan="1">SE5110</td>
-    <td colspan="1" rowspan="1">HFS1T9G3H2X069N<br> HFS3T8G3H2X069N</td>
-    <td colspan="1" rowspan="1">962FP<br> 3GDK0</td>
+    <td colspan="1" rowspan="1"><p>HFS1T9G3H2X069N</p> <p>HFS3T8G3H2X069N</p></td>
+    <td colspan="1" rowspan="1"><p>962FP</p> <p>3GDK0</p></td>
     <td colspan="1" rowspan="1">8KVKG</td>
     <td colspan="1" rowspan="1">DZ02</td>
-    <td colspan="1" rowspan="1">1.92TB<br> 3.84TB</td>
+    <td colspan="1" rowspan="1"><p>1.92TB</p> <p>3.84TB</p></td>
     <td colspan="1" rowspan="1">Capacity Only</td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">Read Intensive</td>
     <td colspan="1" rowspan="1">Intel</td>
     <td colspan="1" rowspan="1">Youngsville-RR</td>
-    <td colspan="1" rowspan="1">SSDSC2KB960GZR<br> SSDSC2KB019TZR<br> SSDSC2KB038TZR</td>
-    <td colspan="1" rowspan="1">F6H8H<br> VYYW8<br> WNPN1</td>
+    <td colspan="1" rowspan="1"><p>SSDSC2KB960GZR</p> <p>SSDSC2KB019TZR</p> <p>SSDSC2KB038TZR</p></td>
+    <td colspan="1" rowspan="1"><p>F6H8H</p> <p>VYYW8</p> <p>WNPN1</p></td>
     <td colspan="1" rowspan="1">PN1T8</td>
     <td colspan="1" rowspan="1">DL70</td>
-    <td colspan="1" rowspan="1">960GB<br> 1.92TB<br> 3.84TB</td>
+    <td colspan="1" rowspan="1"><p>960GB</p> <p>1.92TB</p> <p>3.84TB</p></td>
     <td colspan="1" rowspan="1">Capacity Only</td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">Read Intensive</td>
     <td colspan="1" rowspan="1">Samsung</td>
     <td colspan="1" rowspan="1">PM893</td>
-    <td colspan="1" rowspan="1">MZ7L31T9HBLTAD3<br> MZ7L33T8HBLTAD3</td>
-    <td colspan="1" rowspan="1">0KYP4<br> GCN5W</td>
+    <td colspan="1" rowspan="1"><p>MZ7L31T9HBLTAD3</p> <p>MZ7L33T8HBLTAD3</p></td>
+    <td colspan="1" rowspan="1"><p>0KYP4</p> <p>GCN5W</p></td>
     <td colspan="1" rowspan="1">5MKJ8</td>
     <td colspan="1" rowspan="1">HJ53</td>
-    <td colspan="1" rowspan="1">1.92TB<br> 3.84TB</td>
+    <td colspan="1" rowspan="1"><p>1.92TB</p> <p>3.84TB</p></td>
     <td colspan="1" rowspan="1">Capacity Only</td>
 </tr>
 </tbody>
@@ -1666,12 +1666,12 @@ For example:
     <td colspan="1" rowspan="1">Write Intensive</td>
     <td colspan="1" rowspan="1">Toshiba</td>
     <td colspan="1" rowspan="1">Phoenix M5-M</td>
-    <td colspan="1" rowspan="1"> <p title="">KPM5XMUG800G</p> <p title="">KPM5XMUG1T60</p> </td>
+    <td colspan="1" rowspan="1"> <p>KPM5XMUG800G</p> <p>KPM5XMUG1T60</p> </td>
     <td colspan="1" rowspan="1">Hyb, AF</td>
-    <td colspan="1" rowspan="1"> <p title="">DHRVV</p> <p title="">W9G88</p> </td>
+    <td colspan="1" rowspan="1"> <p>DHRVV</p> <p>W9G88</p> </td>
     <td colspan="1" rowspan="1">4P9DW</td>
     <td colspan="1" rowspan="1">B026</td>
-    <td colspan="1" rowspan="1"> <p title="">800 GB</p> <p title="">1.6 TB</p> </td>
+    <td colspan="1" rowspan="1"> <p>800 GB</p> <p>1.6 TB</p> </td>
     <td colspan="1" rowspan="1">Cache, Capacity</td>
 </tr>
 <tr>
@@ -1702,60 +1702,60 @@ For example:
     <td colspan="1" rowspan="1">Mixed Use</td>
     <td colspan="1" rowspan="1">WD</td>
     <td colspan="1" rowspan="1">Bear Cove Quantum</td>
-    <td colspan="1" rowspan="1"> <p title="">WUSTR6480BSS200</p> <p title="">WUSTR6416BSS200</p> </td>
+    <td colspan="1" rowspan="1"> <p>WUSTR6480BSS200</p> <p>WUSTR6416BSS200</p> </td>
     <td colspan="1" rowspan="1">Hyb, AF</td>
-    <td colspan="1" rowspan="1"> <p title="">6VJC9</p> <p title="">6NF96</p> </td>
+    <td colspan="1" rowspan="1"> <p>6VJC9</p> <p>6NF96</p> </td>
     <td colspan="1" rowspan="1">X95FJ</td>
     <td colspan="1" rowspan="1">G130</td>
-    <td colspan="1" rowspan="1"> <p title="">800 GB</p> <p title="">1.6TB</p> </td>
+    <td colspan="1" rowspan="1"> <p>800 GB</p> <p>1.6TB</p> </td>
     <td colspan="1" rowspan="1">Cache, Capacity</td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">Mixed Use</td>
     <td colspan="1" rowspan="1">Toshiba</td>
     <td colspan="1" rowspan="1">Phoenix M5-V</td>
-    <td colspan="1" rowspan="1"> <p title="">KPM5XVUG960G</p> <p title="">KPM5XVUG1T92</p> <p title="">KPM5XVUG3T84</p> </td>
+    <td colspan="1" rowspan="1"> <p>KPM5XVUG960G</p> <p>KPM5XVUG1T92</p> <p>KPM5XVUG3T84</p> </td>
     <td colspan="1" rowspan="1">Hyb, AF</td>
-    <td colspan="1" rowspan="1"> <p title="">WFGTH</p> <p title="">2WVYG</p> <p title="">91W3V</p> </td>
+    <td colspan="1" rowspan="1"> <p>WFGTH</p> <p>2WVYG</p> <p>91W3V</p> </td>
     <td colspan="1" rowspan="1">4P9DW</td>
     <td colspan="1" rowspan="1">B026</td>
-    <td colspan="1" rowspan="1"> <p title="">960 GB</p> <p title="">1.92 TB</p> <p title="">3.84 TB</p> </td>
+    <td colspan="1" rowspan="1"> <p>960 GB</p> <p>1.92 TB</p> <p>3.84 TB</p> </td>
     <td colspan="1" rowspan="1">Cache, Capacity</td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">Write Intensive</td>
     <td colspan="1" rowspan="1">Kioxia</td>
     <td colspan="1" rowspan="1">PM6</td>
-    <td colspan="1" rowspan="1">KPM6XMUG800G<br> KPM6XMUG1T60</td>
+    <td colspan="1" rowspan="1"><p>KPM6XMUG800G</p> <p>KPM6XMUG1T60</p></td>
     <td colspan="1" rowspan="1">Hyb, AF</td>
-    <td colspan="1" rowspan="1">H6GCD<br> 5GDXH</td>
+    <td colspan="1" rowspan="1"><p>H6GCD</p> <p>5GDXH</p></td>
     <td colspan="1" rowspan="1">6K5N9</td>
     <td colspan="1" rowspan="1">BA0D</td>
-    <td colspan="1" rowspan="1">800GB<br> 1.6TB</td>
+    <td colspan="1" rowspan="1"><p>800GB</p> <p>1.6TB</p></td>
     <td colspan="1" rowspan="1">Cache, Capacity</td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">Mixed Use</td>
     <td colspan="1" rowspan="1">Kioxia</td>
     <td colspan="1" rowspan="1">PM6</td>
-    <td colspan="1" rowspan="1">KPM6XVUG800G<br> KPM6XVUG1T60<br> KPM6XVUG6T40</td>
+    <td colspan="1" rowspan="1"><p>KPM6XVUG800G</p> <p>KPM6XVUG1T60</p> <p>KPM6XVUG6T40</p></td>
     <td colspan="1" rowspan="1">Hyb, AF</td>
-    <td colspan="1" rowspan="1">JTKH5<br> GD3N0<br> <span style="font-size: 10.5pt;"><span style="font-family: &quot;Helvetica&quot;,sans-serif;">6NW3J</span></span></td>
+    <td colspan="1" rowspan="1"><p>JTKH5</p> <p>GD3N0</p> <p>6NW3J</p></td>
     <td colspan="1" rowspan="1">6K5N9</td>
     <td colspan="1" rowspan="1">BA0D</td>
-    <td colspan="1" rowspan="1">800GB<br> 1.6TB<br> 6.4TB</td>
+    <td colspan="1" rowspan="1"><p>800GB</p> <p>1.6TB</p> <p>6.4TB</p></td>
     <td colspan="1" rowspan="1">Cache, Capacity</td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">Mixed Use</td>
     <td colspan="1" rowspan="1">Kioxia</td>
     <td colspan="1" rowspan="1">PM6, FIPS</td>
-    <td colspan="1" rowspan="1">KPM6WVUG960G<br> KPM6WVUG1T92<br> KPM6WVUG3T84</td>
+    <td colspan="1" rowspan="1"><p>KPM6WVUG960G</p> <p>KPM6WVUG1T92</p> <p>KPM6WVUG3T84</p></td>
     <td colspan="1" rowspan="1">Hyb, AF</td>
-    <td colspan="1" rowspan="1">WMWKG<br> DHWH5<br> 81H9C</td>
+    <td colspan="1" rowspan="1"><p>WMWKG</p> <p>DHWH5</p> <p>81H9C</p></td>
     <td colspan="1" rowspan="1">376CY</td>
     <td colspan="1" rowspan="1">BD0D</td>
-    <td colspan="1" rowspan="1">960GB<br> 1.92TB<br> 3.84TB</td>
+    <td colspan="1" rowspan="1"><p>960GB</p> <p>1.92TB</p> <p>3.84TB</p></td>
     <td colspan="1" rowspan="1">Cache, Capacity</td>
 </tr>
 </tbody>
@@ -1811,22 +1811,22 @@ For example:
     <td colspan="1" rowspan="1">Read Intensive</td>
     <td colspan="1" rowspan="1">WD</td>
     <td colspan="1" rowspan="1">Bear Cove Plus</td>
-    <td colspan="1" rowspan="1"> <p title="">WUSTR1519ASS200</p> <p title="">WUSTR1538ASS200</p> </td>
-    <td colspan="1" rowspan="1"> <p title="">5ND33</p> <p title="">YW17N</p> </td>
+    <td colspan="1" rowspan="1"> <p>WUSTR1519ASS200</p> <p>WUSTR1538ASS200</p> </td>
+    <td colspan="1" rowspan="1"> <p>5ND33</p> <p>YW17N</p> </td>
     <td colspan="1" rowspan="1">358PN</td>
     <td colspan="1" rowspan="1">K960</td>
-    <td colspan="1" rowspan="1"> <p title="">1.92 TB</p> <p title="">3.84 TB</p> </td>
+    <td colspan="1" rowspan="1"> <p>1.92 TB</p> <p>3.84 TB</p> </td>
     <td colspan="1" rowspan="1">Capacity Only</td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">Read Intensive</td>
     <td colspan="1" rowspan="1">WD</td>
     <td colspan="1" rowspan="1">Bear Cove Quantum</td>
-    <td colspan="1" rowspan="1"> <p title="">WUSTVA119BSS200</p> <p title="">WUSTVA138BSS200</p> </td>
-    <td colspan="1" rowspan="1"> <p title="">02X38</p> <p title="">FP1KF</p> </td>
+    <td colspan="1" rowspan="1"> <p>WUSTVA119BSS200</p> <p>WUSTVA138BSS200</p> </td>
+    <td colspan="1" rowspan="1"> <p>02X38</p> <p>FP1KF</p> </td>
     <td colspan="1" rowspan="1">1GGR2</td>
     <td colspan="1" rowspan="1">G10A</td>
-    <td colspan="1" rowspan="1"> <p title="">1.92 TB</p> <p title="">3.84 TB</p> </td>
+    <td colspan="1" rowspan="1"> <p>1.92 TB</p> <p>3.84 TB</p> </td>
     <td colspan="1" rowspan="1">Capacity Only</td>
 </tr>
 <tr>
@@ -1866,11 +1866,11 @@ For example:
     <td colspan="1" rowspan="1">Read Intensive</td>
     <td colspan="1" rowspan="1">Toshiba</td>
     <td colspan="1" rowspan="1">Phoenix M5-R</td>
-    <td colspan="1" rowspan="1"> <p title="">KPM5XRUG1T92</p> <p title="">KPM5XRUG3T84</p> </td>
-    <td colspan="1" rowspan="1"> <p title="">TDNP7</p> <p title="">N85XX</p> </td>
+    <td colspan="1" rowspan="1"> <p>KPM5XRUG1T92</p> <p>KPM5XRUG3T84</p> </td>
+    <td colspan="1" rowspan="1"> <p>TDNP7</p> <p>N85XX</p> </td>
     <td colspan="1" rowspan="1">4P9DW</td>
     <td colspan="1" rowspan="1">B026</td>
-    <td colspan="1" rowspan="1"> <p title="">1.92 TB</p> <p title="">3.84 TB</p> </td>
+    <td colspan="1" rowspan="1"> <p>1.92 TB</p> <p>3.84 TB</p> </td>
     <td colspan="1" rowspan="1">Capacity Only</td>
 </tr>
 <tr>
@@ -1888,22 +1888,22 @@ For example:
     <td colspan="1" rowspan="1">Read Intensive</td>
     <td colspan="1" rowspan="1">Kioxia</td>
     <td colspan="1" rowspan="1">PM6</td>
-    <td colspan="1" rowspan="1">KPM6XRUG1T92<br> KPM6XRUG3T84<br> KPM6XRUG7T68</td>
-    <td colspan="1" rowspan="1">4CN85<br> H9TT5<br> PD02Y</td>
+    <td colspan="1" rowspan="1"><p>KPM6XRUG1T92</p> <p>KPM6XRUG3T84</p> <p>KPM6XRUG7T68</p></td>
+    <td colspan="1" rowspan="1"><p>4CN85</p> <p>H9TT5</p> <p>PD02Y</p></td>
     <td colspan="1" rowspan="1">2N1R6</td>
     <td colspan="1" rowspan="1">BA0B</td>
-    <td colspan="1" rowspan="1"> <p title="">1.92 TB<br> 3.84 TB<br> 7.68 TB</p> </td>
+    <td colspan="1" rowspan="1"> <p>1.92 TB</p> <p>3.84 TB</p> <p>7.68 TB</p> </td>
     <td colspan="1" rowspan="1">Capacity Only</td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">Read Intensive</td>
     <td colspan="1" rowspan="1">Kioxia</td>
     <td colspan="1" rowspan="1">PM6</td>
-    <td colspan="1" rowspan="1">KPM6WRUG1T92<br> KPM6WRUG3T84</td>
-    <td colspan="1" rowspan="1">7F2D1<br> FH1W9</td>
+    <td colspan="1" rowspan="1"><p>KPM6WRUG1T92</p> <p>KPM6WRUG3T84</p></td>
+    <td colspan="1" rowspan="1"><p>7F2D1</p> <p>FH1W9</p></td>
     <td colspan="1" rowspan="1">376CY</td>
     <td colspan="1" rowspan="1">BD0D</td>
-    <td colspan="1" rowspan="1">1.92TB<br> 3.84TB</td>
+    <td colspan="1" rowspan="1"><p>1.92TB</p> <p>3.84TB</p></td>
     <td colspan="1" rowspan="1">Capacity Only</td>
 </tr>
 </tbody>
@@ -1959,11 +1959,11 @@ For example:
     <td colspan="1" rowspan="1">Mixed Use</td>
     <td colspan="1" rowspan="1">Toshiba</td>
     <td colspan="1" rowspan="1">Phoenix RM5</td>
-    <td colspan="1" rowspan="1"> <p title="">KRM5XVUG3T84</p> </td>
-    <td colspan="1" rowspan="1"> <p title="">X78JM</p> </td>
+    <td colspan="1" rowspan="1"> <p>KRM5XVUG3T84</p> </td>
+    <td colspan="1" rowspan="1"> <p>X78JM</p> </td>
     <td colspan="1" rowspan="1">12D7W</td>
     <td colspan="1" rowspan="1">B70C</td>
-    <td colspan="1" rowspan="1"> <p title="">3.84 TB</p> </td>
+    <td colspan="1" rowspan="1"> <p>3.84 TB</p> </td>
     <td colspan="1" rowspan="1">Cache, Capacity</td>
 </tr>
 <tr>
@@ -1981,22 +1981,22 @@ For example:
     <td colspan="1" rowspan="1">Mixed Use</td>
     <td colspan="1" rowspan="1">Seagate</td>
     <td colspan="1" rowspan="1">LangeBP,SED</td>
-    <td colspan="1" rowspan="1">XS960LE70134<br> XS1920LE70134<br> XS3840LE70134</td>
-    <td colspan="1" rowspan="1">2RDWT<br> N6DRV<br> YM9HP</td>
+    <td colspan="1" rowspan="1"><p>XS960LE70134</p> <p>XS1920LE70134</p> <p>XS3840LE70134</p></td>
+    <td colspan="1" rowspan="1"><p>2RDWT</p> <p>N6DRV</p> <p>YM9HP</p></td>
     <td colspan="1" rowspan="1">G04C8</td>
     <td colspan="1" rowspan="1">4S0C</td>
-    <td colspan="1" rowspan="1">960GB<br> 1.92TB<br> 3.84TB</td>
+    <td colspan="1" rowspan="1"><p>960GB</p> <p>1.92TB</p> <p>3.84TB</p></td>
     <td colspan="1" rowspan="1">Cache, Capacity</td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">Mixed Use</td>
     <td colspan="1" rowspan="1">Kioxia</td>
     <td colspan="1" rowspan="1">RM6,SED</td>
-    <td colspan="1" rowspan="1">KRM6VVUG960G<br> KRM6VVUG1T92<br> KRM6VVUG3T84</td>
-    <td colspan="1" rowspan="1">42XXC<br> N15JP<br> FXYGR</td>
+    <td colspan="1" rowspan="1"><p>KRM6VVUG960G</p> <p>KRM6VVUG1T92</p> <p>KRM6VVUG3T84</p></td>
+    <td colspan="1" rowspan="1"><p>42XXC</p> <p>N15JP</p> <p>FXYGR</p></td>
     <td colspan="1" rowspan="1">3P4FR</td>
     <td colspan="1" rowspan="1">BJ02</td>
-    <td colspan="1" rowspan="1">960GB<br> 1.92TB<br> 3.84TB</td>
+    <td colspan="1" rowspan="1"><p>960GB</p> <p>1.92TB</p> <p>3.84TB</p></td>
     <td colspan="1" rowspan="1">Cache, Capacity</td>
 </tr>
 <tr>
@@ -2036,22 +2036,22 @@ For example:
     <td colspan="1" rowspan="1">Read Intensive</td>
     <td colspan="1" rowspan="1">Seagate</td>
     <td colspan="1" rowspan="1">LangeBP,SED</td>
-    <td colspan="1" rowspan="1">XS1920SE70134<br> XS3840SE70134<br> XS7680SE7013</td>
-    <td colspan="1" rowspan="1">K9T53<br> 4KPKF<br> 2THYF</td>
+    <td colspan="1" rowspan="1"><p>XS1920SE70134</p> <p>XS3840SE70134</p> <p>XS7680SE7013</p></td>
+    <td colspan="1" rowspan="1"><p>K9T53</p> <p>4KPKF</p> <p>2THYF</p></td>
     <td colspan="1" rowspan="1">G04C8</td>
     <td colspan="1" rowspan="1">4S0C</td>
-    <td colspan="1" rowspan="1">1.92TB<br> 3.84TB<br> 7.68TB</td>
+    <td colspan="1" rowspan="1"><p>1.92TB</p> <p>3.84TB</p> <p>7.68TB</p></td>
     <td colspan="1" rowspan="1">Capacity Only</td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">Read Intensive</td>
     <td colspan="1" rowspan="1">Kioxia</td>
     <td colspan="1" rowspan="1">RM6,SED</td>
-    <td colspan="1" rowspan="1">KRM6VRUG1T92<br> KRM6VRUG3T84<br> KRM6VRUG7T68</td>
-    <td colspan="1" rowspan="1">1FGWG<br> XNXD2<br> 5MHY8</td>
+    <td colspan="1" rowspan="1"><p>KRM6VRUG1T92</p> <p>KRM6VRUG3T84</p> <p>KRM6VRUG7T68</p></td>
+    <td colspan="1" rowspan="1"><p>1FGWG</p> <p>XNXD2</p> <p>5MHY8</p></td>
     <td colspan="1" rowspan="1">3P4FR</td>
     <td colspan="1" rowspan="1">BJ02</td>
-    <td colspan="1" rowspan="1">1.92TB<br> 3.84TB<br> 7.68TB</td>
+    <td colspan="1" rowspan="1"><p>1.92TB</p> <p>3.84TB</p> <p>7.68TB</p></td>
     <td colspan="1" rowspan="1">Capacity Only</td>
 </tr>
 </tbody>
@@ -2126,36 +2126,36 @@ Intel Optane P4800x is supported only on the R640 Storage Spaces Direct Ready No
     <td colspan="1" rowspan="1">NVMe only</td>
     <td colspan="1" rowspan="1">Samsung</td>
     <td colspan="1" rowspan="1">2.5"</td>
-    <td colspan="1" rowspan="1"> <p title="">PM1725A</p>  </td>
-    <td colspan="1" rowspan="1"> <p title="">MZWLL1T6HEHP-000D3</p> <p title="">MZWLL3T2HMJP-000D3</p> <p title="">MZWLL6T4HMLS-000D3</p> </td>
-    <td colspan="1" rowspan="1"> <p title="">JD6CH</p> <p title="">JDMHM</p> <p title="">Y3XT2</p> </td>
-    <td colspan="1" rowspan="1"> <p title="">34C36</p> </td>
+    <td colspan="1" rowspan="1"> <p>PM1725A</p>  </td>
+    <td colspan="1" rowspan="1"> <p>MZWLL1T6HEHP-000D3</p> <p>MZWLL3T2HMJP-000D3</p> <p>MZWLL6T4HMLS-000D3</p> </td>
+    <td colspan="1" rowspan="1"> <p>JD6CH</p> <p>JDMHM</p> <p>Y3XT2</p> </td>
+    <td colspan="1" rowspan="1"> <p>34C36</p> </td>
     <td colspan="1" rowspan="1">1.2.1</td>
-    <td colspan="1" rowspan="1"> <p title="">1.6TB</p> <p title="">3.2TB</p> <p title="">6.4TB</p> </td>
+    <td colspan="1" rowspan="1"> <p>1.6TB</p> <p>3.2TB</p> <p>6.4TB</p> </td>
     <td colspan="1" rowspan="1">Cache, Capacity</td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">NVMe only</td>
     <td colspan="1" rowspan="1">Samsung</td>
     <td colspan="1" rowspan="1">2.5"</td>
-    <td colspan="1" rowspan="1"> <p title="">PM1725b</p> </td>
-    <td colspan="1" rowspan="1"> <p title="">MZWLL1T6HAJQ-000D3</p> <p title="">MZWLL3T2HAJQ-000D3</p> <p title="">MZWLL6T4HMLA-000D3</p> </td>
-    <td colspan="1" rowspan="1"> <p title="">4WDXY</p> <p title="">K60N7</p> <p title="">08NMX</p> </td>
+    <td colspan="1" rowspan="1"> <p>PM1725b</p> </td>
+    <td colspan="1" rowspan="1"> <p>MZWLL1T6HAJQ-000D3</p> <p>MZWLL3T2HAJQ-000D3</p> <p>MZWLL6T4HMLA-000D3</p> </td>
+    <td colspan="1" rowspan="1"> <p>4WDXY</p> <p>K60N7</p> <p>08NMX</p> </td>
     <td colspan="1" rowspan="1">3F3N1</td>
     <td colspan="1" rowspan="1">1.2.2</td>
-    <td colspan="1" rowspan="1"> <p title="">1.6TB</p> <p title="">3.2TB</p> <p title="">6.4TB</p> </td>
+    <td colspan="1" rowspan="1"> <p>1.6TB</p> <p>3.2TB</p> <p>6.4TB</p> </td>
     <td colspan="1" rowspan="1">Cache, Capacity</td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">NVMe only</td>
     <td colspan="1" rowspan="1">Intel</td>
     <td colspan="1" rowspan="1">2.5"</td>
-    <td colspan="1" rowspan="1"> <p title="">P4600</p> </td>
-    <td colspan="1" rowspan="1"> <p title="">SSDPE2KE016T7T</p> <p title="">SSDPE2KE032T7T</p> </td>
-    <td colspan="1" rowspan="1"> <p title="">F5P84</p> <p title="">MCV6J</p> </td>
+    <td colspan="1" rowspan="1"> <p>P4600</p> </td>
+    <td colspan="1" rowspan="1"> <p>SSDPE2KE016T7T</p> <p>SSDPE2KE032T7T</p> </td>
+    <td colspan="1" rowspan="1"> <p>F5P84</p> <p>MCV6J</p> </td>
     <td colspan="1" rowspan="1">CR0HC</td>
     <td colspan="1" rowspan="1">QDV1DP17</td>
-    <td colspan="1" rowspan="1"> <p title="">1.6TB</p> <p title="">3.2TB</p> </td>
+    <td colspan="1" rowspan="1"> <p>1.6TB</p> <p>3.2TB</p> </td>
     <td colspan="1" rowspan="1">Cache, Capacity</td>
 </tr>
 <tr>
@@ -2164,7 +2164,7 @@ Intel Optane P4800x is supported only on the R640 Storage Spaces Direct Ready No
     <td colspan="1" rowspan="1">2.5"</td>
     <td colspan="1" rowspan="1"> <p>P4610</p> </td>
     <td colspan="1" rowspan="1"> <p>SSDPE2KE016T8T</p> <p>SSDPE2KE032T8T</p> <p>SSDPE2KE064T8T</p> </td>
-    <td colspan="1" rowspan="1"> <p title="">58V30</p> <p title="">2CN1T</p> <p title="">X27HY</p> </td>
+    <td colspan="1" rowspan="1"> <p>58V30</p> <p>2CN1T</p> <p>X27HY</p> </td>
     <td colspan="1" rowspan="1">GD4X4</td>
     <td colspan="1" rowspan="1">VDV1DP25</td>
     <td colspan="1" rowspan="1"> <p>1.6TB</p> <p>3.2TB</p> <p>6.4TB</p> </td>
@@ -2199,11 +2199,11 @@ Intel Optane P4800x is supported only on the R640 Storage Spaces Direct Ready No
     <td colspan="1" rowspan="1">Samsung</td>
     <td colspan="1" rowspan="1">2.5"</td>
     <td colspan="1" rowspan="1">PM1735 V2</td>
-    <td colspan="1" rowspan="1">Dell Ent NVMe v2 AGN MU U.2 1.6TB<br> Dell Ent NVMe v2 AGN MU U.2 3.2TB<br> Dell Ent NVMe v2 AGN MU U.2 6.4TB</td>
-    <td colspan="1" rowspan="1">0MNMV<br> V69W3<br> H8D5M</td>
+    <td colspan="1" rowspan="1"><p>Dell Ent NVMe v2 AGN MU U.2 1.6TB</p> <p>Dell Ent NVMe v2 AGN MU U.2 3.2TB</p> <p>Dell Ent NVMe v2 AGN MU U.2 6.4TB</p></td>
+    <td colspan="1" rowspan="1"><p>0MNMV</p> <p>V69W3</p> <p>H8D5M</p></td>
     <td colspan="1" rowspan="1">TRCC6</td>
     <td colspan="1" rowspan="1">2.3.0</td>
-    <td colspan="1" rowspan="1">1.6TB<br> 3.2TB<br> 6.4TB</td>
+    <td colspan="1" rowspan="1"><p>1.6TB</p> <p>3.2TB</p> <p>6.4TB</p></td>
     <td colspan="1" rowspan="1">Cache, Capacity</td>
 </tr>
 <tr>
@@ -2211,11 +2211,11 @@ Intel Optane P4800x is supported only on the R640 Storage Spaces Direct Ready No
     <td colspan="1" rowspan="1">Kioxia</td>
     <td colspan="1" rowspan="1">2.5"</td>
     <td colspan="1" rowspan="1">CM6 SP</td>
-    <td colspan="1" rowspan="1">Dell Ent NVMe CM6 MU 1.6TB<br> Dell Ent NVMe CM6 MU 3.2TB<br> Dell Ent NVMe CM6 MU 6.4TB</td>
-    <td colspan="1" rowspan="1">P03YC<br> 97GR0<br> K916X</td>
+    <td colspan="1" rowspan="1"><p>Dell Ent NVMe CM6 MU 1.6TB</p> <p>Dell Ent NVMe CM6 MU 3.2TB</p> <p>Dell Ent NVMe CM6 MU 6.4TB</p></td>
+    <td colspan="1" rowspan="1"><p>P03YC</p> <p>97GR0</p> <p>K916X</p></td>
     <td colspan="1" rowspan="1">511TX</td>
     <td colspan="1" rowspan="1">2.1.8</td>
-    <td colspan="1" rowspan="1">1.6TB<br> 3.2TB<br> 6.4TB</td>
+    <td colspan="1" rowspan="1"><p>1.6TB</p> <p>3.2TB</p> <p>6.4TB</p></td>
     <td colspan="1" rowspan="1">Cache, Capacity</td>
 </tr>
 <tr>
@@ -2223,11 +2223,11 @@ Intel Optane P4800x is supported only on the R640 Storage Spaces Direct Ready No
     <td colspan="1" rowspan="1">Intel</td>
     <td colspan="1" rowspan="1">2.5"</td>
     <td colspan="1" rowspan="1">P5600 SP</td>
-    <td colspan="1" rowspan="1">Dell Ent NVMe P5600 MU U.2 1.6TB<br> Dell Ent NVMe P5600 MU U.2 3.2TB</td>
-    <td colspan="1" rowspan="1">C9X5T<br> PRKTM</td>
+    <td colspan="1" rowspan="1"><p>Dell Ent NVMe P5600 MU U.2 1.6TB</p> <p>Dell Ent NVMe P5600 MU U.2 3.2TB</p></td>
+    <td colspan="1" rowspan="1"><p>C9X5T</p> <p>PRKTM</p></td>
     <td colspan="1" rowspan="1">J7FTF</td>
     <td colspan="1" rowspan="1">1.2.4</td>
-    <td colspan="1" rowspan="1">1.6TB<br> 3.2TB</td>
+    <td colspan="1" rowspan="1"><p>1.6TB</p> <p>3.2TB</p></td>
     <td colspan="1" rowspan="1">Cache, Capacity</td>
 </tr>
 <tr>
@@ -2235,11 +2235,11 @@ Intel Optane P4800x is supported only on the R640 Storage Spaces Direct Ready No
     <td colspan="1" rowspan="1">Intel</td>
     <td colspan="1" rowspan="1">2.5"</td>
     <td colspan="1" rowspan="1">Arbordale Plus RR</td>
-    <td colspan="1" rowspan="1">SSDPF2KE016T1E<br> SSDPF2KE032T1E</td>
-    <td colspan="1" rowspan="1">82TVJ<br> TY3M5</td>
+    <td colspan="1" rowspan="1"><p>SSDPF2KE016T1E</p> <p>SSDPF2KE032T1E</p></td>
+    <td colspan="1" rowspan="1"><p>82TVJ</p> <p>TY3M5</p></td>
     <td colspan="1" rowspan="1">J55N8</td>
     <td colspan="1" rowspan="1">1.0.0</td>
-    <td colspan="1" rowspan="1">1.6TB<br> 3.2TB</td>
+    <td colspan="1" rowspan="1"><p>1.6TB</p> <p>3.2TB</p></td>
     <td colspan="1" rowspan="1">Cache, Capacity</td>
 </tr>
 </tbody>
@@ -2330,44 +2330,44 @@ Toshiba CD5 960GB capacity is supported only on the R640 Storage Spaces Direct R
     <td colspan="1" rowspan="1">Read Intensive</td>
     <td colspan="1" rowspan="1">Intel</td>
     <td colspan="1" rowspan="1">P5500</td>
-    <td colspan="1" rowspan="1">Dell Ent NVMe P5500 RI U.2 1.92TB<br> Dell Ent NVMe P5500 RI U.2 3.84TB<br> Dell Ent NVMe P5500 RI U.2 7.68TB</td>
-    <td colspan="1" rowspan="1">WPP9G<br> KRT3G<br> RNN67</td>
+    <td colspan="1" rowspan="1"><p>Dell Ent NVMe P5500 RI U.2 1.92TB</p> <p>Dell Ent NVMe P5500 RI U.2 3.84TB</p> <p>Dell Ent NVMe P5500 RI U.2 7.68TB</p></td>
+    <td colspan="1" rowspan="1"><p>WPP9G</p> <p>KRT3G</p> <p>RNN67</p></td>
     <td colspan="1" rowspan="1">XXN1D</td>
     <td colspan="1" rowspan="1">1.2.3</td>
-    <td colspan="1" rowspan="1">1.92TB<br> 3.84TB<br> 7.68TB</td>
+    <td colspan="1" rowspan="1"><p>1.92TB</p> <p>3.84TB</p> <p>7.68TB</p></td>
     <td colspan="1" rowspan="1">Capacity Only</td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">Read Intensive</td>
     <td colspan="1" rowspan="1">Samsung</td>
     <td colspan="1" rowspan="1">PM1733 V2</td>
-    <td colspan="1" rowspan="1">Dell Ent NVMe v2 AGN RI U.2 3.84TB<br> Dell Ent NVMe v2 AGN RI U.2 7.68TB</td>
-    <td colspan="1" rowspan="1">G5N65<br> DX74Y</td>
+    <td colspan="1" rowspan="1"><p>Dell Ent NVMe v2 AGN RI U.2 3.84TB</p> <p>Dell Ent NVMe v2 AGN RI U.2 7.68TB</p></td>
+    <td colspan="1" rowspan="1"><p>G5N65</p> <p>DX74Y</p></td>
     <td colspan="1" rowspan="1">FJK0C</td>
     <td colspan="1" rowspan="1">2.2.0</td>
-    <td colspan="1" rowspan="1">3.84TB<br> 7.68TB</td>
+    <td colspan="1" rowspan="1"><p>3.84TB</p> <p>7.68TB</p></td>
     <td colspan="1" rowspan="1">Capacity Only</td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">Read Intensive</td>
     <td colspan="1" rowspan="1">Kioxia</td>
     <td colspan="1" rowspan="1">CM6,SP</td>
-    <td colspan="1" rowspan="1">KCM6XRUL1T92<br> KCM6XRUL3T84<br> KCM6XRUL7T86</td>
-    <td colspan="1" rowspan="1">N0VK0<br> 8W2G5<br> VD0JX</td>
+    <td colspan="1" rowspan="1"><p>KCM6XRUL1T92</p> <p>KCM6XRUL3T84</p> <p>KCM6XRUL7T86</p></td>
+    <td colspan="1" rowspan="1"><p>N0VK0</p> <p>8W2G5</p> <p>VD0JX</p></td>
     <td colspan="1" rowspan="1">511TX</td>
     <td colspan="1" rowspan="1">2.1.8</td>
-    <td colspan="1" rowspan="1">1.92TB<br> 3.84TB<br> 7.68TB</td>
+    <td colspan="1" rowspan="1"><p>1.92TB</p> <p>3.84TB</p> <p>7.68TB</p></td>
     <td colspan="1" rowspan="1">Capacity Only</td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">Read Intensive</td>
     <td colspan="1" rowspan="1">Intel</td>
     <td colspan="1" rowspan="1">Arbordale Plus RR</td>
-    <td colspan="1" rowspan="1">SSDPF2KX019T1E<br> SSDPF2KX038T1E<br> SSDPF2KX076T1E</td>
-    <td colspan="1" rowspan="1">0HVC7<br> 77MRY<br> 90M2J</td>
+    <td colspan="1" rowspan="1"><p>SSDPF2KX019T1E</p> <p>SSDPF2KX038T1E</p> <p>SSDPF2KX076T1E</p></td>
+    <td colspan="1" rowspan="1"><p>0HVC7</p> <p>77MRY</p> <p>90M2J</p></td>
     <td colspan="1" rowspan="1">J55N8</td>
     <td colspan="1" rowspan="1">1.0.0</td>
-    <td colspan="1" rowspan="1">1.92TB<br> 3.84TB<br> 7.68TB</td>
+    <td colspan="1" rowspan="1"><p>1.92TB</p> <p>3.84TB</p> <p>7.68TB</p></td>
     <td colspan="1" rowspan="1">Capacity Only</td>
 </tr>
 </tbody>
@@ -2427,36 +2427,36 @@ Toshiba CD5 960GB capacity is supported only on the R640 Storage Spaces Direct R
     <td colspan="1" rowspan="1">NVMe only</td>
     <td colspan="1" rowspan="1">Samsung</td>
     <td colspan="1" rowspan="1">PCIe AIC</td>
-    <td colspan="1" rowspan="1"> <p title="">PM1725A</p> </td>
-    <td colspan="1" rowspan="1"> <p title="">MZPLL1T6HEHP-000D3</p> <p title="">MZPLL6T4HMLS-000D3</p> </td>
-    <td colspan="1" rowspan="1"> <p title="">06V6M</p> <p title="">604N5</p> </td>
+    <td colspan="1" rowspan="1"> <p>PM1725A</p> </td>
+    <td colspan="1" rowspan="1"> <p>MZPLL1T6HEHP-000D3</p> <p>MZPLL6T4HMLS-000D3</p> </td>
+    <td colspan="1" rowspan="1"> <p>06V6M</p> <p>604N5</p> </td>
     <td colspan="1" rowspan="1">34C36</td>
     <td colspan="1" rowspan="1">1.2.1</td>
-    <td colspan="1" rowspan="1"> <p title="">1.6TB</p> <p title="">6.4TB</p> </td>
+    <td colspan="1" rowspan="1"> <p>1.6TB</p> <p>6.4TB</p> </td>
     <td colspan="1" rowspan="1">Cache, Capacity</td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">NVMe only</td>
     <td colspan="1" rowspan="1">Samsung</td>
     <td colspan="1" rowspan="1">PCIe AIC</td>
-    <td colspan="1" rowspan="1"> <p title="">PM1725b</p> </td>
-    <td colspan="1" rowspan="1"> <p title="">MZPLL1T6HAJQ-000D3</p> <p title="">MZPLL6T4HMLA-000D3</p> </td>
-    <td colspan="1" rowspan="1"> <p title="">FTX2R</p> <p title="">FW2K0</p> </td>
+    <td colspan="1" rowspan="1"> <p>PM1725b</p> </td>
+    <td colspan="1" rowspan="1"> <p>MZPLL1T6HAJQ-000D3</p> <p>MZPLL6T4HMLA-000D3</p> </td>
+    <td colspan="1" rowspan="1"> <p>FTX2R</p> <p>FW2K0</p> </td>
     <td colspan="1" rowspan="1">3F3N1</td>
     <td colspan="1" rowspan="1">1.2.2</td>
-    <td colspan="1" rowspan="1"> <p title="">1.6TB</p> <p title="">6.4TB</p> </td>
+    <td colspan="1" rowspan="1"> <p>1.6TB</p> <p>6.4TB</p> </td>
     <td colspan="1" rowspan="1">Cache, Capacity</td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">NVMe only</td>
     <td colspan="1" rowspan="1">Samsung</td>
     <td colspan="1" rowspan="1">PCIe AIC</td>
-    <td colspan="1" rowspan="1"> <p title="">PM1735</p> </td>
+    <td colspan="1" rowspan="1"> <p>PM1735</p> </td>
     <td colspan="1" rowspan="1"> <p>MZPLJ1T6HBJR-00AD3</p> <p>MZPLJ6T4HALA-00AD3</p> </td>
-    <td colspan="1" rowspan="1"> <p title="">Y7D7D</p> <p title="">91FXC</p> </td>
+    <td colspan="1" rowspan="1"> <p>Y7D7D</p> <p>91FXC</p> </td>
     <td colspan="1" rowspan="1">RDKVC</td>
     <td colspan="1" rowspan="1">2.4.0</td>
-    <td colspan="1" rowspan="1"> <p title="">1.6TB</p> <p title="">6.4TB</p> </td>
+    <td colspan="1" rowspan="1"> <p>1.6TB</p> <p>6.4TB</p> </td>
     <td colspan="1" rowspan="1">Cache, Capacity</td>
 </tr>
 </tbody>
