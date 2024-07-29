@@ -198,7 +198,7 @@ For example:
     <td colspan="1" rowspan="1">Storage-Backplane</td>
     <td colspan="1" rowspan="1">H9PV3</td>
     <td colspan="1" rowspan="1">1.20</td>
-    <td colspan="1" rowspan="1">AX-750,AX-7525</td>
+    <td colspan="1" rowspan="1"><p>AX-750</p> <p>AX-7525</p></td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">Expander Storage Backplane</td>
@@ -466,7 +466,7 @@ For example:
     <td colspan="1" rowspan="1"> <p>124X2</p> <p>NKNVC</p> </td>
     <td colspan="1" rowspan="1">16.17.01.00</td>
     <td colspan="1" rowspan="1"> <p>P1NP6</p> </td>
-    <td colspan="1" rowspan="1"> <p>2.51.25.01 -Windows Server 2016</p> </td>
+    <td colspan="1" rowspan="1"> <p>2.51.25.01 - Windows Server 2016</p> </td>
 </tr>
 <tr>
     <td colspan="1" rowspan="1">BOSS-S1</td>
