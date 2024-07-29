@@ -60,11 +60,11 @@ Description: >
 <p>
 This matrix is for Windows Server operating systems that have exited Microsoft mainstream support. This Windows Server operating system is no longer being validated by Dell for use with hyperconverged cluster deployments. The table in the below link is a snapshot of the last firmware and driver versions that were validated by Dell engineering for use with this legacy Windows Server version.
 <br>
-<a href="https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2016">Windows Server 2016 - Microsoft Lifecycle | Microsoft Learn</a>
+<li><a href="https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2016">Windows Server 2016 - Microsoft Lifecycle | Microsoft Learn</a></li>
 <br><br>
 Customers that are still running this Windows Server version for their hyperconverged cluster deployments are encouraged to perform an in-place upgrade to the Windows Server 2022 operating system per instructions at the following link.
 <br>
-<a href="https://learn.microsoft.com/en-us/windows-server/get-started/perform-in-place-upgrade">Perform a Feature Update of Windows Server | Microsoft Learn</a>
+<li><a href="https://learn.microsoft.com/en-us/windows-server/get-started/perform-in-place-upgrade">Perform a Feature Update of Windows Server | Microsoft Learn</a></li>
 </p>
 
 {{< /rawhtml >}}
