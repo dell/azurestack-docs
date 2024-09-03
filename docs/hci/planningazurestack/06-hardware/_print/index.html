@@ -24,20 +24,17 @@
 <meta property="og:url" content="https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/06-hardware/">
   <meta property="og:site_name" content="Solutions for Microsoft Azure Stack">
   <meta property="og:title" content="06. Hardware">
-  <meta property="og:description" content="Planning hardware CPU In hyperconverged systems, CPU handles both VMs and Storage. Rule of thumb is that each logical processor can handle ~60MiB IOPS. Let’s calculate an exaple: four node cluster, each node two twelve-core CPUs results. If we consider 4k IOPS, each LP can handle ~15k IOPS. With 4 nodes, 24 LPs each it results in ~1.5M IOPS. All assuming that CPU is used for IO operations only.
-Storage devices In general, there are two kinds of devices - spinning media and solid state media disks.">
+  <meta property="og:description" content="Planning hardware CPU In hyperconverged systems, CPU handles both VMs and Storage. Rule of thumb is that each logical processor can handle ~60MiB IOPS. Let’s calculate an exaple: four node cluster, each node two twelve-core CPUs results. If we consider 4k IOPS, each LP can handle ~15k IOPS. With 4 nodes, 24 LPs each it results in ~1.5M IOPS. All assuming that CPU is used for IO operations only.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
 
   <meta itemprop="name" content="06. Hardware">
-  <meta itemprop="description" content="Planning hardware CPU In hyperconverged systems, CPU handles both VMs and Storage. Rule of thumb is that each logical processor can handle ~60MiB IOPS. Let’s calculate an exaple: four node cluster, each node two twelve-core CPUs results. If we consider 4k IOPS, each LP can handle ~15k IOPS. With 4 nodes, 24 LPs each it results in ~1.5M IOPS. All assuming that CPU is used for IO operations only.
-Storage devices In general, there are two kinds of devices - spinning media and solid state media disks.">
+  <meta itemprop="description" content="Planning hardware CPU In hyperconverged systems, CPU handles both VMs and Storage. Rule of thumb is that each logical processor can handle ~60MiB IOPS. Let’s calculate an exaple: four node cluster, each node two twelve-core CPUs results. If we consider 4k IOPS, each LP can handle ~15k IOPS. With 4 nodes, 24 LPs each it results in ~1.5M IOPS. All assuming that CPU is used for IO operations only.">
   <meta itemprop="dateModified" content="2024-03-11T15:58:13+00:00">
   <meta itemprop="wordCount" content="756">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="06. Hardware">
-  <meta name="twitter:description" content="Planning hardware CPU In hyperconverged systems, CPU handles both VMs and Storage. Rule of thumb is that each logical processor can handle ~60MiB IOPS. Let’s calculate an exaple: four node cluster, each node two twelve-core CPUs results. If we consider 4k IOPS, each LP can handle ~15k IOPS. With 4 nodes, 24 LPs each it results in ~1.5M IOPS. All assuming that CPU is used for IO operations only.
-Storage devices In general, there are two kinds of devices - spinning media and solid state media disks.">
+  <meta name="twitter:description" content="Planning hardware CPU In hyperconverged systems, CPU handles both VMs and Storage. Rule of thumb is that each logical processor can handle ~60MiB IOPS. Let’s calculate an exaple: four node cluster, each node two twelve-core CPUs results. If we consider 4k IOPS, each LP can handle ~15k IOPS. With 4 nodes, 24 LPs each it results in ~1.5M IOPS. All assuming that CPU is used for IO operations only.">
 
 
 
@@ -215,30 +212,30 @@ https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/06-hardware/I
 <h3 id="network-interface-speed">Network Interface Speed</h3>
 <p>Network Cards are coming in speeds ranging from 1Gbps to 200Gbps. While hyperconverged infrastructure will work with 1Gbps, the performance will be limited. The requirement is to have at least one 10Gbps port per server. However it&rsquo;s recommended to have at least 2x10Gbps with RDMA enabled.</p>
 <table>
-<thead>
-<tr>
-<th style="text-align:left">Mediatype</th>
-<th style="text-align:left">Recommended NICs</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">SSD as cache or SSD all-flash</td>
-<td style="text-align:left">2×10 Gbps or 2x25Gbps</td>
-</tr>
-<tr>
-<td style="text-align:left">NVMe as cache</td>
-<td style="text-align:left">2-4×25Gbps or 2×100Gbps</td>
-</tr>
-<tr>
-<td style="text-align:left">NVMe all-flash</td>
-<td style="text-align:left">2-4×25Gbps or 2×100Gbps</td>
-</tr>
-<tr>
-<td style="text-align:left">Optane as cache</td>
-<td style="text-align:left">2-4×100 Gbps or 2×200Gbps</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Mediatype</th>
+          <th style="text-align: left">Recommended NICs</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">SSD as cache or SSD all-flash</td>
+          <td style="text-align: left">2×10 Gbps or 2x25Gbps</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">NVMe as cache</td>
+          <td style="text-align: left">2-4×25Gbps or 2×100Gbps</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">NVMe all-flash</td>
+          <td style="text-align: left">2-4×25Gbps or 2×100Gbps</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Optane as cache</td>
+          <td style="text-align: left">2-4×100 Gbps or 2×200Gbps</td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="use-of-rdma">Use of RDMA</h3>
 <p>When RDMA is enabled, it will bypass networking stack and DMA directly into memory of NIC. This will significantly reduce CPU overhead. While RDMA is not mandatory, it&rsquo;s highly recommended for Azure Stack HCI as it will leave more CPU for Virtual Machines and Storage.</p>
@@ -247,30 +244,30 @@ https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/06-hardware/I
 <h2 id="network-infrastructure">Network infrastructure</h2>
 <p>Reliable, low latency infrastructure is a must for reliable function of Converged and HyperConverged infrastructure. As already covered above, DCB (PFC nad ETS) is recommended for iWARP and required for RoCE. There is also alternative - starting Windows Server 2019, direct connection is supported. As you can see, it does not make sense to have more than 5 nodes in the cluster (with increasing number of interconnects)</p>
 <table>
-<thead>
-<tr>
-<th style="text-align:left">Number of nodes</th>
-<th style="text-align:left">Number of direct connections</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">2</td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">3</td>
-<td style="text-align:left">3</td>
-</tr>
-<tr>
-<td style="text-align:left">4</td>
-<td style="text-align:left">6</td>
-</tr>
-<tr>
-<td style="text-align:left">5</td>
-<td style="text-align:left">10</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Number of nodes</th>
+          <th style="text-align: left">Number of direct connections</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">2</td>
+          <td style="text-align: left">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">3</td>
+          <td style="text-align: left">3</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">4</td>
+          <td style="text-align: left">6</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">5</td>
+          <td style="text-align: left">10</td>
+      </tr>
+  </tbody>
 </table>
 <blockquote>
 <p>Note: Dell supports up to 4 nodes in switchless configuration</p>

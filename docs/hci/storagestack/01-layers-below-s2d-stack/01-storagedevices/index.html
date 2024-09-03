@@ -24,23 +24,23 @@
 <meta property="og:url" content="https://dell.github.io/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/">
   <meta property="og:site_name" content="Solutions for Microsoft Azure Stack">
   <meta property="og:title" content="Storage Devices">
-  <meta property="og:description" content="Storage Devices Resources Interfaces Storage Protocol Storage Configurations OS Disks Consumer-Grade SSDs Exploring Stack with PowerShell Get-PhysicalDisk Storage Reliability Counter Performance results Resources Microsoft Documentation
+  <meta property="og:description" content="Storage Devices Resources Interfaces Storage Protocol Storage Configurations OS Disks Consumer-Grade SSDs Exploring Stack with PowerShell Get-PhysicalDisk Storage Reliability Counter Performance results Resources Microsoft Documentation
 https://learn.microsoft.com/en-us/azure-stack/hci/concepts/choose-drives https://learn.microsoft.com/en-us/azure-stack/hci/concepts/drive-symmetry-considerations NVMe vs SATA
-https://sata-io.org/sites/default/files/documents/NVMe%20and%20AHCI%20as%20SATA%20Express%20Interface%20Options%20-%20Whitepaper_.pdf http://www.nvmexpress.org/wp-content/uploads/2013/04/IDF-2012-NVM-Express-and-the-PCI-Express-SSD-Revolution.pdf https://nvmexpress.org/wp-content/uploads/NVMe-101-1-Part-2-Hardware-Designs_Final.pdf https://nvmexpress.org/wp-content/uploads/NVMe_Infrastructure_final1.pdf https://www.storagereview.com/review/dell-emc-poweredge-r750-hands-on https://dl.dell.com/manuals/common/dellemc-nvme-io-topologies-poweredge.pdf https://www.servethehome.com/dell-emc-poweredge-r7525-review-flagship-dell-dual-socket-server-amd-epyc/ Interfaces While SATA is still well performing for most of the customers (see performance results), NVMe offers benefit of higher capacity and also more effective protocol (AHCI vs NVMe), that was developed specifically for SSDs (opposite to AHCI, that was developed for spinning media).">
+https://sata-io.org/sites/default/files/documents/NVMe%20and%20AHCI%20as%20SATA%20Express%20Interface%20Options%20-%20Whitepaper_.pdf http://www.nvmexpress.org/wp-content/uploads/2013/04/IDF-2012-NVM-Express-and-the-PCI-Express-SSD-Revolution.pdf https://nvmexpress.org/wp-content/uploads/NVMe-101-1-Part-2-Hardware-Designs_Final.pdf https://nvmexpress.org/wp-content/uploads/NVMe_Infrastructure_final1.pdf https://www.storagereview.com/review/dell-emc-poweredge-r750-hands-on https://dl.dell.com/manuals/common/dellemc-nvme-io-topologies-poweredge.pdf https://www.servethehome.com/dell-emc-poweredge-r7525-review-flagship-dell-dual-socket-server-amd-epyc/ Interfaces While SATA is still well performing for most of the customers (see performance results), NVMe offers benefit of higher capacity and also more effective protocol (AHCI vs NVMe), that was developed specifically for SSDs (opposite to AHCI, that was developed for spinning media). SATA/SAS is however not scaling well with the larger disks.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
 
   <meta itemprop="name" content="Storage Devices">
-  <meta itemprop="description" content="Storage Devices Resources Interfaces Storage Protocol Storage Configurations OS Disks Consumer-Grade SSDs Exploring Stack with PowerShell Get-PhysicalDisk Storage Reliability Counter Performance results Resources Microsoft Documentation
+  <meta itemprop="description" content="Storage Devices Resources Interfaces Storage Protocol Storage Configurations OS Disks Consumer-Grade SSDs Exploring Stack with PowerShell Get-PhysicalDisk Storage Reliability Counter Performance results Resources Microsoft Documentation
 https://learn.microsoft.com/en-us/azure-stack/hci/concepts/choose-drives https://learn.microsoft.com/en-us/azure-stack/hci/concepts/drive-symmetry-considerations NVMe vs SATA
-https://sata-io.org/sites/default/files/documents/NVMe%20and%20AHCI%20as%20SATA%20Express%20Interface%20Options%20-%20Whitepaper_.pdf http://www.nvmexpress.org/wp-content/uploads/2013/04/IDF-2012-NVM-Express-and-the-PCI-Express-SSD-Revolution.pdf https://nvmexpress.org/wp-content/uploads/NVMe-101-1-Part-2-Hardware-Designs_Final.pdf https://nvmexpress.org/wp-content/uploads/NVMe_Infrastructure_final1.pdf https://www.storagereview.com/review/dell-emc-poweredge-r750-hands-on https://dl.dell.com/manuals/common/dellemc-nvme-io-topologies-poweredge.pdf https://www.servethehome.com/dell-emc-poweredge-r7525-review-flagship-dell-dual-socket-server-amd-epyc/ Interfaces While SATA is still well performing for most of the customers (see performance results), NVMe offers benefit of higher capacity and also more effective protocol (AHCI vs NVMe), that was developed specifically for SSDs (opposite to AHCI, that was developed for spinning media).">
+https://sata-io.org/sites/default/files/documents/NVMe%20and%20AHCI%20as%20SATA%20Express%20Interface%20Options%20-%20Whitepaper_.pdf http://www.nvmexpress.org/wp-content/uploads/2013/04/IDF-2012-NVM-Express-and-the-PCI-Express-SSD-Revolution.pdf https://nvmexpress.org/wp-content/uploads/NVMe-101-1-Part-2-Hardware-Designs_Final.pdf https://nvmexpress.org/wp-content/uploads/NVMe_Infrastructure_final1.pdf https://www.storagereview.com/review/dell-emc-poweredge-r750-hands-on https://dl.dell.com/manuals/common/dellemc-nvme-io-topologies-poweredge.pdf https://www.servethehome.com/dell-emc-poweredge-r7525-review-flagship-dell-dual-socket-server-amd-epyc/ Interfaces While SATA is still well performing for most of the customers (see performance results), NVMe offers benefit of higher capacity and also more effective protocol (AHCI vs NVMe), that was developed specifically for SSDs (opposite to AHCI, that was developed for spinning media). SATA/SAS is however not scaling well with the larger disks.">
   <meta itemprop="dateModified" content="2024-03-11T15:58:13+00:00">
   <meta itemprop="wordCount" content="794">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Storage Devices">
-  <meta name="twitter:description" content="Storage Devices Resources Interfaces Storage Protocol Storage Configurations OS Disks Consumer-Grade SSDs Exploring Stack with PowerShell Get-PhysicalDisk Storage Reliability Counter Performance results Resources Microsoft Documentation
+  <meta name="twitter:description" content="Storage Devices Resources Interfaces Storage Protocol Storage Configurations OS Disks Consumer-Grade SSDs Exploring Stack with PowerShell Get-PhysicalDisk Storage Reliability Counter Performance results Resources Microsoft Documentation
 https://learn.microsoft.com/en-us/azure-stack/hci/concepts/choose-drives https://learn.microsoft.com/en-us/azure-stack/hci/concepts/drive-symmetry-considerations NVMe vs SATA
-https://sata-io.org/sites/default/files/documents/NVMe%20and%20AHCI%20as%20SATA%20Express%20Interface%20Options%20-%20Whitepaper_.pdf http://www.nvmexpress.org/wp-content/uploads/2013/04/IDF-2012-NVM-Express-and-the-PCI-Express-SSD-Revolution.pdf https://nvmexpress.org/wp-content/uploads/NVMe-101-1-Part-2-Hardware-Designs_Final.pdf https://nvmexpress.org/wp-content/uploads/NVMe_Infrastructure_final1.pdf https://www.storagereview.com/review/dell-emc-poweredge-r750-hands-on https://dl.dell.com/manuals/common/dellemc-nvme-io-topologies-poweredge.pdf https://www.servethehome.com/dell-emc-poweredge-r7525-review-flagship-dell-dual-socket-server-amd-epyc/ Interfaces While SATA is still well performing for most of the customers (see performance results), NVMe offers benefit of higher capacity and also more effective protocol (AHCI vs NVMe), that was developed specifically for SSDs (opposite to AHCI, that was developed for spinning media).">
+https://sata-io.org/sites/default/files/documents/NVMe%20and%20AHCI%20as%20SATA%20Express%20Interface%20Options%20-%20Whitepaper_.pdf http://www.nvmexpress.org/wp-content/uploads/2013/04/IDF-2012-NVM-Express-and-the-PCI-Express-SSD-Revolution.pdf https://nvmexpress.org/wp-content/uploads/NVMe-101-1-Part-2-Hardware-Designs_Final.pdf https://nvmexpress.org/wp-content/uploads/NVMe_Infrastructure_final1.pdf https://www.storagereview.com/review/dell-emc-poweredge-r750-hands-on https://dl.dell.com/manuals/common/dellemc-nvme-io-topologies-poweredge.pdf https://www.servethehome.com/dell-emc-poweredge-r7525-review-flagship-dell-dual-socket-server-amd-epyc/ Interfaces While SATA is still well performing for most of the customers (see performance results), NVMe offers benefit of higher capacity and also more effective protocol (AHCI vs NVMe), that was developed specifically for SSDs (opposite to AHCI, that was developed for spinning media). SATA/SAS is however not scaling well with the larger disks.">
 
 
 
@@ -530,30 +530,30 @@ https://dell.github.io/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d
 <p>Storage Spaces requires BusType SATA/SAS/NVMe or SCM. BusType RAID is unsupported.</p>
 <p>You can also see Logical Sector Size and Physical Sector size. This refers to Drive Type (4K native vs 512E vs 512).</p>
 <table>
-<thead>
-<tr>
-<th style="text-align:center">&ldquo;LogicalSectorSize&rdquo; value</th>
-<th style="text-align:center">&ldquo;PhysicalSectorSize&rdquo; value</th>
-<th style="text-align:center">Drive type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">4096</td>
-<td style="text-align:center">4096</td>
-<td style="text-align:center">4K native</td>
-</tr>
-<tr>
-<td style="text-align:center">512</td>
-<td style="text-align:center">4096</td>
-<td style="text-align:center">Advanced Format (also known as 512E)</td>
-</tr>
-<tr>
-<td style="text-align:center">512</td>
-<td style="text-align:center">512</td>
-<td style="text-align:center">512-byte native</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: center">&ldquo;LogicalSectorSize&rdquo; value</th>
+          <th style="text-align: center">&ldquo;PhysicalSectorSize&rdquo; value</th>
+          <th style="text-align: center">Drive type</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">4096</td>
+          <td style="text-align: center">4096</td>
+          <td style="text-align: center">4K native</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">512</td>
+          <td style="text-align: center">4096</td>
+          <td style="text-align: center">Advanced Format (also known as 512E)</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">512</td>
+          <td style="text-align: center">512</td>
+          <td style="text-align: center">512-byte native</td>
+      </tr>
+  </tbody>
 </table>
 <p>Reference</p>
 <ul>
