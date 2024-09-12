@@ -143,7 +143,7 @@ Get-PhysicalDisk -CimSession $Server | Get-StorageReliabilityCounter -CimSession
 
 ## Performance results
 
-From the results below you can see that SATA vs SAS vs NVMe is 590092 vs 738507 vs 1496373 4k 100% read IOPS. All measurements were done with VMFleet 2.0 <https://github.com/DellGEOS/AzureStackHOLs/tree/main/lab-guides/05-TestPerformanceWithVMFleet>
+From the results below you can see that SATA vs SAS vs NVMe is 590092 vs 738507 vs 1496373 4k 100% read IOPS. All measurements were done with VMFleet 2.0 <https://github.com/DellGEOS/AzureStackHOLs/tree/main/lab-guides/02-TestPerformanceWithVMFleet>
 
 The difference between SAS and SATA is also 8 vs 4 disks in each node. The difference between SAS and NVMe is more than double.
 
