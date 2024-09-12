@@ -24,17 +24,20 @@
 <meta property="og:url" content="https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/06-hardware/">
   <meta property="og:site_name" content="Solutions for Microsoft Azure Stack">
   <meta property="og:title" content="06. Hardware">
-  <meta property="og:description" content="Planning hardware CPU In hyperconverged systems, CPU handles both VMs and Storage. Rule of thumb is that each logical processor can handle ~60MiB IOPS. Let’s calculate an exaple: four node cluster, each node two twelve-core CPUs results. If we consider 4k IOPS, each LP can handle ~15k IOPS. With 4 nodes, 24 LPs each it results in ~1.5M IOPS. All assuming that CPU is used for IO operations only.">
+  <meta property="og:description" content="Planning hardware CPU In hyperconverged systems, CPU handles both VMs and Storage. Rule of thumb is that each logical processor can handle ~60MiB IOPS. Let’s calculate an exaple: four node cluster, each node two twelve-core CPUs results. If we consider 4k IOPS, each LP can handle ~15k IOPS. With 4 nodes, 24 LPs each it results in ~1.5M IOPS. All assuming that CPU is used for IO operations only.
+Storage devices In general, there are two kinds of devices - spinning media and solid state media disks. We all know this story as it’s been some time we upgraded our PCs with SSDs and we were able to see the significant latency drop. There are two factors though - type of media (HDD or SSD) and type of bus (SATA, SAS, NVMe or Storage Class Memory -SCM).">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
 
   <meta itemprop="name" content="06. Hardware">
-  <meta itemprop="description" content="Planning hardware CPU In hyperconverged systems, CPU handles both VMs and Storage. Rule of thumb is that each logical processor can handle ~60MiB IOPS. Let’s calculate an exaple: four node cluster, each node two twelve-core CPUs results. If we consider 4k IOPS, each LP can handle ~15k IOPS. With 4 nodes, 24 LPs each it results in ~1.5M IOPS. All assuming that CPU is used for IO operations only.">
+  <meta itemprop="description" content="Planning hardware CPU In hyperconverged systems, CPU handles both VMs and Storage. Rule of thumb is that each logical processor can handle ~60MiB IOPS. Let’s calculate an exaple: four node cluster, each node two twelve-core CPUs results. If we consider 4k IOPS, each LP can handle ~15k IOPS. With 4 nodes, 24 LPs each it results in ~1.5M IOPS. All assuming that CPU is used for IO operations only.
+Storage devices In general, there are two kinds of devices - spinning media and solid state media disks. We all know this story as it’s been some time we upgraded our PCs with SSDs and we were able to see the significant latency drop. There are two factors though - type of media (HDD or SSD) and type of bus (SATA, SAS, NVMe or Storage Class Memory -SCM).">
   <meta itemprop="dateModified" content="2024-03-11T15:58:13+00:00">
   <meta itemprop="wordCount" content="756">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="06. Hardware">
-  <meta name="twitter:description" content="Planning hardware CPU In hyperconverged systems, CPU handles both VMs and Storage. Rule of thumb is that each logical processor can handle ~60MiB IOPS. Let’s calculate an exaple: four node cluster, each node two twelve-core CPUs results. If we consider 4k IOPS, each LP can handle ~15k IOPS. With 4 nodes, 24 LPs each it results in ~1.5M IOPS. All assuming that CPU is used for IO operations only.">
+  <meta name="twitter:description" content="Planning hardware CPU In hyperconverged systems, CPU handles both VMs and Storage. Rule of thumb is that each logical processor can handle ~60MiB IOPS. Let’s calculate an exaple: four node cluster, each node two twelve-core CPUs results. If we consider 4k IOPS, each LP can handle ~15k IOPS. With 4 nodes, 24 LPs each it results in ~1.5M IOPS. All assuming that CPU is used for IO operations only.
+Storage devices In general, there are two kinds of devices - spinning media and solid state media disks. We all know this story as it’s been some time we upgraded our PCs with SSDs and we were able to see the significant latency drop. There are two factors though - type of media (HDD or SSD) and type of bus (SATA, SAS, NVMe or Storage Class Memory -SCM).">
 
 
 
