@@ -56,7 +56,11 @@ Description: >
 
 ## Notes and warnings
 {{% alert title="CAUTION" color="warning" %}}
-The update of Azure Stack HCI, version 22H2 to Azure Stack HCI, version 23H2 is currently not supported. For new deployments, we recommend that you use Azure Stack HCI, version 23H2 which is now generally available. For more information on Azure Stack HCI, version 23H2, see [Use Azure Update Manager to update your Azure Stack HCI, version 23H2](https://learn.microsoft.com/en-us/azure-stack/hci/update/azure-update-manager-23h2).
+The upgrade of Azure Stack HCI, version 22H2 to Azure Stack HCI, version 23H2 is currently not supported by Dell. Dell customers are recommended to wait for Dell to complete the upgrade validation prior to attempting the upgrade. Customers that choose to proceed with the upgrade need to contact Microsoft for any assistance with resolving problems that may occur during the upgrade process.
+
+Dell also recommends that any customer choosing to upgrade their Azure Stack HCI clusters running HCI OS 22H2 to HCI OS 23H2 should update the cluster node to the drivers and firmware versions listed in the 2409 support matrix prior to upgrading. 
+
+For new deployments, we recommend that you use Azure Stack HCI, version 23H2 which is now generally available. For more information on Azure Stack HCI, version 23H2, see Use Azure Update Manager to update your Azure Stack HCI, version 23H2.
 {{% /alert %}}
 
 ### Supported Platforms
