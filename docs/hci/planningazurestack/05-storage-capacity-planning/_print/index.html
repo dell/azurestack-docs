@@ -142,7 +142,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="https://dell.github.io/azurestack-docs/azurestack-docs/offline-search-index.7635b90468b2b63ec52ce598816d8dfc.json"
+    data-offline-search-index-json-src="https://dell.github.io/azurestack-docs/azurestack-docs/offline-search-index.d51b0cce0496c2f5cb0b256b22a6082c.json"
     data-offline-search-base-href="https://dell.github.io/azurestack-docs/"
     data-offline-search-max-results="10"
   >
@@ -205,17 +205,17 @@ This is the multi-page printable view of this section.
 <p><img src="
 
 https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/05-storage-capacity-planning/capacity01.gif
-"></p>
+" alt=""></p>
 <p>Since we regular maintenance is required (security patches), reboot might be necessary. Or for example if any hardware upgrade is done (for example increasing RAM), node might need to be put into maintenance mode or even shut down. If VMs are required to run, then there has to be capacity (RAM) to keep VMs running on rest of the nodes.</p>
 <p><img src="
 
 https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/05-storage-capacity-planning/capacity02.gif
-"></p>
+" alt=""></p>
 <p>With more than 5 nodes it might make sense to reserve entire node. You will have capacity for VMs when node in maintenance, and you will be also able to rebuild if one node is completely lost - assuming all disks damaged (which is usually unlikely to happen as usually just one component fails and can be replaced withing service agreement).</p>
 <p><img src="
 
 https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/05-storage-capacity-planning/capacity03.gif
-"></p>
+" alt=""></p>
 <h2 id="resiliency-options">Resiliency options</h2>
 <h3 id="mirror-two-way-and-three-way">Mirror (two-way and three-way)</h3>
 <p>Two-way mirroring writes two copies of everything. Its storage efficiency is 50% - to write 1TB of data, you need at least 2TB of physical storage capacity. Likewise, you need at least two fault domains. By default, fault domain is Storage Scale Unit (which translates into server node). Fault domain can be also Chassis or Rack. Therefore if you have two node cluster, two-way mirroring will be used.</p>
@@ -235,7 +235,7 @@ To use dual parity, you need at least four hardware fault domains – with Stora
 <p><img src="
 
 https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/05-storage-capacity-planning/ScopedVolumes01.png
-"></p>
+" alt=""></p>
 <h2 id="cache-drives">Cache drives</h2>
 <p>Faster media can be used as cache. If HDDs are used, cache devices are mandatory. Cache drives do not contribute to capacity.</p>
 <p>For more information about cache visit <a href="https://learn.microsoft.com/en-us/windows-server/storage/storage-spaces/understand-the-cache">docs</a></p>

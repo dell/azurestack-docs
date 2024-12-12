@@ -142,7 +142,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="https://dell.github.io/azurestack-docs/azurestack-docs/offline-search-index.7635b90468b2b63ec52ce598816d8dfc.json"
+    data-offline-search-index-json-src="https://dell.github.io/azurestack-docs/azurestack-docs/offline-search-index.d51b0cce0496c2f5cb0b256b22a6082c.json"
     data-offline-search-base-href="https://dell.github.io/azurestack-docs/"
     data-offline-search-max-results="10"
   >
@@ -166,7 +166,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="https://dell.github.io/azurestack-docs/azurestack-docs/offline-search-index.7635b90468b2b63ec52ce598816d8dfc.json"
+    data-offline-search-index-json-src="https://dell.github.io/azurestack-docs/azurestack-docs/offline-search-index.d51b0cce0496c2f5cb0b256b22a6082c.json"
     data-offline-search-base-href="https://dell.github.io/azurestack-docs/"
     data-offline-search-max-results="10"
   >
@@ -436,21 +436,21 @@ if (!doNotTrack) {
 <p><img src="
 
 https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/03-deployment-models-and-workloads/HyperConvergedModel01.png
-"></p>
+" alt=""></p>
 <h2 id="converged-deployments">Converged deployments</h2>
 <p>Converged deployments have separate AzSHCI cluster with Scale-Out File Server role installed. Multiple compute clusters (up to 64 nodes each) can access single Scale-Out File Server. This design allows to use both Datacenter and Standard licenses for Compute Clusters.</p>
 <p>This design adds some complexity as Virtual Machines are accessing its storage over network. Main benefit is, that one VM consuming all CPU cycles will not affect other VMs because of degraded storage performance and also you can scale storage independently from RAM and CPU (if you run out of cpu, no need to buy server loaded with storage). This design allows higher density, better deduplication job schedule and decreased east-west traffic (as VMs are pointed to it&rsquo;s CSV owner node using Witness Service or new <a href="https://techcommunity.microsoft.com/t5/failover-clustering/scale-out-file-server-improvements-in-windows-server-2019/ba-p/372156">SMB Connections move on connect</a>).</p>
 <p><img src="
 
 https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/03-deployment-models-and-workloads/ConvergedModel01.png
-"></p>
+" alt=""></p>
 <h2 id="cluster-sets">Cluster Sets</h2>
 <p>If multiple clusters are using multiple Scale-Out FileServers or even if multiple HyperConverged clusters are present, cluster sets helps putting all clusters under one namespace and allows to define fault domains. When VM is created, fault domain can be used (instead of pointing VM to specific node/cluster).</p>
 <p>Technically all VMs are located on SOFS share that is presented using DFS-N namespace. This namespace is hosted on Management cluster that does not need any shared storage as all configuration data are in registry.</p>
 <p><img src="
 
 https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/03-deployment-models-and-workloads/ClusterSets01.png
-"></p>
+" alt=""></p>
 <h2 id="user-profile-disks-host">User Profile Disks host</h2>
 <p>Azure Stack HCI can also host user profile disks (UPDs). Since UPD is VHD (both native Windows Server functionality and <a href="https://github.com/microsoft/MSLab/tree/master/Scenarios/FSLogix">FSLogix</a>), Scale-Out File Server can be used as workload pattern is the same as for Virtual Machines. However it might make sense to use fileserver hosted Virtual Machine.</p>
 <h2 id="sql">SQL</h2>
@@ -461,7 +461,7 @@ https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/03-deployment
 <p><img src="
 
 https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/03-deployment-models-and-workloads/SQLPerformanceVM.png
-"></p>
+" alt=""></p>
 <h2 id="kubernetes">Kubernetes</h2>
 <p>TBD</p>
 <h2 id="vdi">VDI</h2>

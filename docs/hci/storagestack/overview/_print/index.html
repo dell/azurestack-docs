@@ -142,7 +142,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="https://dell.github.io/azurestack-docs/azurestack-docs/offline-search-index.7635b90468b2b63ec52ce598816d8dfc.json"
+    data-offline-search-index-json-src="https://dell.github.io/azurestack-docs/azurestack-docs/offline-search-index.d51b0cce0496c2f5cb0b256b22a6082c.json"
     data-offline-search-base-href="https://dell.github.io/azurestack-docs/"
     data-offline-search-max-results="10"
   >
@@ -212,13 +212,13 @@ This is the multi-page printable view of this section.
 <p><img src="
 
 https://dell.github.io/azurestack-docs/docs/hci/storagestack/overview/StorageStack01.png
-"></p>
+" alt=""></p>
 <p>You can notice 4 &ldquo;new&rdquo; layers, but actually it&rsquo;s just Spaces layer (Spaceport) and Storage Bus Layer.</p>
 <p>To better understand what&rsquo;s in the stack, you can also explore some parts with PowerShell</p>
 <p><img src="
 
 https://dell.github.io/azurestack-docs/docs/hci/storagestack/overview/StorageStack02.png
-"></p>
+" alt=""></p>
 <p>Anyway, let&rsquo;s explore layers a bit. Following info is based on storage description someone somewhere created and pushed to internet. The only version found was from webarchive and can be accessed <a href="https://dell.github.io/azurestack-docs/azurestack-docs/docs/hci/storagestack/overview/Storage.pdf">here</a>.</p>
 <h2 id="layers-below-s2d-stack">Layers below S2D Stack</h2>
 <h3 id="port--miniport-driver">Port &amp; Miniport driver</h3>
@@ -235,7 +235,7 @@ https://dell.github.io/azurestack-docs/docs/hci/storagestack/overview/StorageSta
 <p><img src="
 
 https://dell.github.io/azurestack-docs/docs/hci/storagestack/overview/StorageStack03.png
-"></p>
+" alt=""></p>
 <h3 id="partition-manager">Partition Manager</h3>
 <p><em><strong>partmgr.sys</strong></em></p>
 <p>Partitions are handled by <em><strong>partmgr.sys</strong></em>. Partition is usually GPT or MBR (preferably GPT as MBR has many limitations such as 2TB size limit)</p>
@@ -244,11 +244,11 @@ https://dell.github.io/azurestack-docs/docs/hci/storagestack/overview/StorageSta
 <p><img src="
 
 https://dell.github.io/azurestack-docs/docs/hci/storagestack/overview/StorageStack04.png
-"></p>
+" alt=""></p>
 <p><img src="
 
 https://dell.github.io/azurestack-docs/docs/hci/storagestack/overview/StorageStack05.png
-"></p>
+" alt=""></p>
 <h2 id="s2d-stack">S2D Stack</h2>
 <h3 id="storage-bus-layer">Storage Bus Layer</h3>
 <p><em><strong>clusport.sys</strong></em> and <em><strong>clusblft.sys</strong></em></p>
@@ -263,11 +263,11 @@ https://dell.github.io/azurestack-docs/docs/hci/storagestack/overview/StorageSta
 <p><img src="
 
 https://dell.github.io/azurestack-docs/docs/hci/storagestack/overview/StorageStack06.png
-"></p>
+" alt=""></p>
 <p><img src="
 
 https://dell.github.io/azurestack-docs/docs/hci/storagestack/overview/StorageStack07.png
-"></p>
+" alt=""></p>
 <h2 id="layers-above-s2d-stack">Layers above S2D Stack</h2>
 <h3 id="volume-manager">Volume Manager</h3>
 <p><em><strong>dmio.sys</strong></em>, <em><strong>volmgr.sys</strong></em></p>
@@ -275,7 +275,7 @@ https://dell.github.io/azurestack-docs/docs/hci/storagestack/overview/StorageSta
 <p><img src="
 
 https://dell.github.io/azurestack-docs/docs/hci/storagestack/overview/StorageStack08.png
-"></p>
+" alt=""></p>
 <h3 id="volume-snapshot">Volume Snapshot</h3>
 <p><em><strong>volsnap.sys</strong></em></p>
 <p>Volsnap is the component that creates system provider for the volume <a href="https://learn.microsoft.com/en-us/windows-server/storage/file-server/volume-shadow-copy-service">shadow copy service (VSS)</a>. This service is controller by <em><strong>vssadmin.exe</strong></em></p>
@@ -285,19 +285,19 @@ https://dell.github.io/azurestack-docs/docs/hci/storagestack/overview/StorageSta
 <p><img src="
 
 https://dell.github.io/azurestack-docs/docs/hci/storagestack/overview/StorageStack09.png
-"></p>
+" alt=""></p>
 <h3 id="filter-drivers">Filter Drivers</h3>
 <p>Interesting about filter drivers is, that all FileSystem drivers are actually filter drivers - special ones, File System Drivers - like <em><strong>REFS.sys</strong></em>, <em><strong>NTFS.sys</strong></em>, <em><strong>Exfat.sys</strong></em>.</p>
 <p>You can learn more about filesystem using fsutil</p>
 <p><img src="
 
 https://dell.github.io/azurestack-docs/docs/hci/storagestack/overview/StorageStack10.png
-"></p>
+" alt=""></p>
 <p>There are also many first party and third party filter drivers. You can expose those with fltmc command</p>
 <p><img src="
 
 https://dell.github.io/azurestack-docs/docs/hci/storagestack/overview/StorageStack11.png
-"></p>
+" alt=""></p>
 <p>As you can see on above example, there are many filters like Cluster Shared Volume (CsvNSFlt, CsvFLT), deduplication (Dedup), shared vhd (svhdxflt), storage QoS (storqosflt) and many more. Each filter driver has defined altitude and 3rd parties can <a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/ifs/allocated-altitudes">reserve theirs</a>.</p>
 
 </div>
