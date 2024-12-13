@@ -57,6 +57,7 @@ Description: >
 ## Notes and warnings
 {{% alert title="CAUTION" color="warning" %}}
 The Dell Integrated System for Microsoft Azure Stack HCI AX-650, AX-750, AX-7525, and AX-6515 now supports upgrades from Azure Stack HCI OS 22H2 to Azure Stack HCI OS 23H2
+Dell Reference: https://www.dell.com/support/kbdoc/en-us/000259175/upgrade-azure-local-version-22h2-to-azure-local-version-23h2
 
 Dell also recommends that any customer choosing to upgrade their Azure Stack HCI clusters running HCI OS 22H2 to HCI OS 23H2 should update the cluster node to the drivers and firmware versions listed in the 2409 support matrix prior to upgrading. 
 
