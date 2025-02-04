@@ -57,6 +57,7 @@ The following table lists the BIOS configuration settings for server nodes imple
 |Processor Settings|Virtualization Technology|Enabled|Enabled|AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c|
 |Processor Settings|x2APIC Mode|Enabled|Enabled|AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c|
 |Processor Settings|NUMA Nodes Per Socket|1|4|AX-6515<br><br>AX-7525|
+|Processor Settings|Dell Controlled Turbo Setting (Optional)|Disabled|Enabled|AX-760<br><br>AX-750<br><br>AX-650<br><br>AX-4510c<br><br>AX-4520c|
 |Integrated Devices|SR-IOV Global Enable|Disabled|Enabled|AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c|
 |System Profile Settings|Systems Profile|Performance Per Watt (DAPC)|Performance|AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c|
 |Systems Security|TPM Security|Off|On|AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c|
