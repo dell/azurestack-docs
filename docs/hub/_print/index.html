@@ -142,7 +142,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="https://dell.github.io/azurestack-docs/offline-search-index.c5afb049b3dee2959858079c8367bd3e.json"
+    data-offline-search-index-json-src="https://dell.github.io/azurestack-docs/offline-search-index.2680b82ca5f5e2c974b0f3bc92ad584b.json"
     data-offline-search-base-href="https://dell.github.io/azurestack-docs/"
     data-offline-search-max-results="10"
   >
@@ -3285,7 +3285,7 @@ caption {
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-34180988b8f23a8515e53a325ba28a2c">4 - How To</h1>
+	<h1 id="pg-a8bb9ceab4a4bedb88366efde9fec974">4 - Patch and Update</h1>
     
 	
 </div>
@@ -3310,7 +3310,812 @@ caption {
 
 <div class="td-content" style="">
     
-	<h1 id="pg-74514daaa2b9f74ecafd695933fe9978">4.1 - How to create a service principal name for Azure Stack Hub integrated with Active Directory Federation Services identity using PowerShell</h1>
+	<h1 id="pg-c60b183e1bd9980c167b4c51e96fbd81">4.1 - Patch and Update for 16G</h1>
+    
+	
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<style>
+table {
+    border-width:1px; border-style:solid;
+    border-color:black;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    table-layout:fixed;
+    overflow-wrap: break-word;
+}
+th {
+    border-width:1px;
+    padding:7px;
+    border-style:solid;
+    border-color:#0076CE;
+    background-color:#0076CE;
+    color:#FFFFFF;
+    text-align:center;
+}
+td {
+    border-width:1px;
+    padding:7px;
+    border-style:solid;
+    border-color:#0076CE;
+    text-align:center;
+}
+caption {
+    padding-bottom: 10px;
+    color:  #0076CE;
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="content">
+
+
+<h2 id="introduction">Introduction</h2>
+<p>Microsoft Azure Stack Hub operators are faced with the enormous challenge of keeping their solution both secure and functional. They must ensure that the solution is not vulnerable to threats, external or internal, while maintaining negotiated service-level agreements.</p>
+<h2 id="solution-overview">Solution overview</h2>
+<p>As a Microsoft Azure Stack Hub systems provider, Dell Technologies is committed to ensuring that your Azure Stack Hub environment is both secure and functional. In Dell Technologies releases, you will find firmware and driver updates for both the Hardware Lifecycle Host (HLH) and the scale unit (SU) nodes that are contained in the OEM package updates. Dell Technologies delivers these updates quarterly, and you can apply them independently of Microsoft updates.</p>
+<p>There are two other types of update packages for the Azure Stack Hub integrated systems: <em>software updates</em> and <em>hotfixes</em>.</p>
+<p>For more information, see <a href="https://learn.microsoft.com/en-us/azure-stack/operator/azure-stack-updates?#update-package-types">Update package types - Azure Stack Hub</a>.</p>
+<h3 id="audience">Audience</h3>
+<p>This patch and update guide is for Azure Stack Hub 16th-generation (16G) operators who intend to perform lifecycle operations (Patch and Update) for:</p>
+<ul>
+<li>Firmware updates for the Hardware Lifecycle Host (HLH)</li>
+<li>Operating System updates for the HLH (Windows Server 2022)</li>
+<li>Driver updates for the HLH (Windows Server 2022)</li>
+<li>Windows Defender Application Control (WDAC) policy updates for the HLH Operating System</li>
+<li>Firmware updates for the Top-of-Rack (ToR) switches (S5248F-ON)</li>
+<li>Firmware updates for the scale unit (SU) nodes</li>
+<li>Driver updates for the scale unit nodes (Windows Server 2022)</li>
+</ul>
+<h4 id="dell-integrated-system-for-microsoft-azure-stack-hub-lifecycle-manager-overview">Dell Integrated System for Microsoft Azure Stack Hub Lifecycle Manager overview</h4>
+<p>Dell Integrated System for Microsoft Azure Stack Hub Lifecycle Manager provides an automated way of upgrading HLH firmware, software, and driver components.</p>
+<p>Lifecycle Manager will perform the following tasks:</p>
+<ul>
+<li>Update firmware on the Hardware Lifecycle Host</li>
+<li>Update drivers on the Hardware Lifecycle Host</li>
+<li>Install Windows updates for the Hardware Lifecycle Host Operating System</li>
+<li>Update the Windows Defender Application Control (WDAC) policy on the Hardware Lifecycle Host</li>
+</ul>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">NOTE</h4>
+
+    <p>Firmware updates for the Top-of-Rack (ToR) switches are not included in the Lifecycle Manager update process and <u><strong>must</strong></u> be updated manually from the Hardware Lifecycle Host (HLH) using SCP and SSH commands. See the section <a href="https://dell.github.io/azurestack-docs/docs/hub/patchandupdate/16g/#top-of-rack-tor-switches">Manually Updating the Switch Firmware from the Hardware Lifecycle Host (HLH)</a> for more information.</p>
+<p>Firmware and driver updates for scale unit (SU) nodes are not included in the Lifecycle Manager update process and <u><strong>must</strong></u> be updated manually using the Azure Stack Hub administrator portal. See the section <a href="https://dell.github.io/azurestack-docs/docs/hub/patchandupdate/16g/#original-equipment-manufacturer-oem-package-updates">OEM package updates</a> for more information.</p>
+
+
+</div>
+
+<p>Lifecycle Manager should take between 1-2 hours to complete.</p>
+<p>Lifecycle Manager is available for download on the <a href="https://www.dell.com/support/product-details/en-us/product/cloud-for-microsoft-azure-stack16g/drivers">Integrated System for Microsoft Azure Stack Hub 16G &gt; Drivers &amp; Downloads</a> product support website.</p>
+<h4 id="oem-package-updates">OEM package updates</h4>
+<p>The Azure Stack Hub OEM package update contains firmware, device drivers, and hardware management tools in a specialized format used by Azure Stack Hub during initial deployment and update.</p>
+<p>Dell Technologies is responsible for the end-to-end servicing lifecycle for the hardware-related firmware and driver update packages.</p>
+<p>In addition, Dell Technologies will own and maintain guidance for all software and hardware on the HLH.</p>
+<p>OEM package updates are available for download on the <a href="https://www.dell.com/support/product-details/en-us/product/cloud-for-microsoft-azure-stack16g/drivers">Integrated System for Microsoft Azure Stack Hub 16G &gt; Drivers &amp; Downloads</a> product support website.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Perform the following steps before proceeding with the Lifecycle Manager update process. There are some steps which are a one-time-activity and some that you must perform in every release.</p>
+<h3 id="download-the-lifecycle-manager-zip-file">Download the Lifecycle Manager zip file</h3>
+<p>To download the latest Lifecycle Manager zip file, perform the following steps:</p>
+<h4 id="steps">Steps</h4>
+<ol>
+<li>
+<p>Go to the Dell Technologies Support website at <a href="https://www.dell.com/support/product-details/en-us/product/cloud-for-microsoft-azure-stack16g/drivers">Integrated System for Microsoft Azure Stack Hub 16G &gt; Drivers &amp; Downloads</a> and download the latest Lifecycle Manager zip file.</p>
+</li>
+<li>
+<p>Log in to the HLH with the <strong>HLHAdmin</strong> default administrator account or a customer specified administrative user account.</p>
+<ul>
+<li>
+<p>The HLH can be accessed via Remote Desktop Protocol (RDP) from a <em>Permitted Network</em> or directly via the iDRAC Direct port (USB to Micro-USB) connection.</p>
+<ul>
+<li>See <a href="https://learn.microsoft.com/en-us/azure-stack/operator/azure-stack-network#permitted-networks">Permitted Networks - Azure Stack Hub</a> for additional details.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>On the HLH, navigate to the <strong>E:\</strong> drive and create a folder named <strong>Temp</strong>.</p>
+</li>
+<li>
+<p>Download the Lifecycle Manager zip file to the HLH <strong>E:\Temp</strong> directory.</p>
+</li>
+</ol>
+<h3 id="download-the-oem-update-package-zip-file">Download the OEM Update Package zip file</h3>
+<p>To download the corresponding OEM package update zip file, perform the following steps:</p>
+<h4 id="steps-1">Steps</h4>
+<ol>
+<li>
+<p>Go to the Dell Technologies Support website at <a href="https://www.dell.com/support/product-details/en-us/product/cloud-for-microsoft-azure-stack16g/drivers">Integrated System for Microsoft Azure Stack Hub 16G &gt; Drivers &amp; Downloads</a> and download the latest OEM package update zip file.</p>
+
+
+<div class="alert alert-danger" role="alert">
+<h4 class="alert-heading">WARNING</h4>
+
+    <p>The Lifecycle Manager zip file version <strong>must match</strong> the version of the OEM package zip file, otherwise the Lifecycle Manager will not pass the pre-checks.</p>
+<p>For example, if the Lifecycle Manager zip file is <strong>2502</strong>, then the OEM package zip file <strong>must</strong> also be <strong>2502</strong>.</p>
+
+
+</div>
+
+</li>
+<li>
+<p>Log in to the HLH with the <strong>HLHAdmin</strong> default administrator account or a customer specified administrative user account.</p>
+<ul>
+<li>
+<p>The HLH can be accessed via Remote Desktop Protocol (RDP) from a <em>Permitted Network</em> or directly via the iDRAC Direct port (USB to Micro-USB) connection.</p>
+<ul>
+<li>See <a href="https://learn.microsoft.com/en-us/azure-stack/operator/azure-stack-network#permitted-networks">Permitted Networks - Azure Stack Hub</a> for additional details.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Download the OEM package update zip file to the HLH <strong>E:\Temp</strong> directory.</p>
+</li>
+</ol>
+<h3 id="extract-lifecycle-manager-and-oem-package-update-zip-files">Extract Lifecycle Manager and OEM package update zip files</h3>
+<p>Lifecycle Manager zip and OEM package update zip files that were downloaded to the HLH from the Dell support website will need to be extracted into their own directories.</p>
+<p>To extract Lifecycle Manager and OEM package update zip files, perform the following steps:</p>
+<h4 id="steps-2">Steps</h4>
+<ol>
+<li>
+<p>Before beginning the extraction process, first the files in the <strong>E:\Temp</strong> directory will need to be unblocked. Open a PowerShell terminal as administrator and type the following command:</p>
+<pre><code class="language-powershell">Get-ChildItem -Path &quot;E:\Temp&quot; -Recurse | Unblock-File
+</code></pre>
+
+
+<div class="alert alert-danger" role="alert">
+<h4 class="alert-heading">WARNING</h4>
+
+    Lifecycle Manager zip file contents must be <strong>unblocked</strong>; otherwise, the Lifecycle Manager will not pass the pre-checks.
+
+</div>
+
+</li>
+<li>
+<p>Once the contents within the <strong>E:\Temp</strong> directory have been unblocked, you can begin to extract the zip files into their directories.</p>
+</li>
+<li>
+<p>On the HLH, navigate to the <strong>E:\</strong> drive and create a folder named <strong>LCM</strong>.</p>
+</li>
+<li>
+<p>On the HLH, navigate to the <strong>E:\</strong> drive and create a folder named <strong>OEM</strong>.</p>
+</li>
+<li>
+<p>Extract the Lifecycle Manager zip file from the <strong>E:\Temp</strong> directory to the <strong>E:\LCM</strong> directory.</p>
+</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 810px">
+<img class="card-img-top" style="margin-left:30px;" src="https://dell.github.io/azurestack-docs/docs/hub/patchandupdate/16g/hlh_E_lcm_hu_de00e245d9237c7d.png" width="800" height="238" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<p><small class="text-body-secondary"> </small></p>
+</p>
+</figcaption>
+</figure>
+<ol start="6">
+<li>Extract the OEM package update zip file from the <strong>E:\Temp</strong> directory to the <strong>E:\OEM</strong> directory.</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 810px">
+<img class="card-img-top" style="margin-left:30px;" src="https://dell.github.io/azurestack-docs/docs/hub/patchandupdate/16g/hlh_E_oem_hu_94357818099f6489.png" width="800" height="238" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<p><small class="text-body-secondary"> </small></p>
+</p>
+</figcaption>
+</figure>
+<h2 id="hardware-lifecycle-host-hlh">Hardware Lifecycle Host (HLH)</h2>
+<h3 id="running-lifecycle-manager">Running Lifecycle Manager</h3>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">NOTE</h4>
+
+    <p>Lifecycle Manager will reboot the HLH multiple times during the upgrade process. You will need to log back into the HLH manually after each reboot; otherwise, the upgrade will not continue until you do.</p>
+<p>As an <strong>optional</strong> step you can enable the <strong>Auto Logon</strong> feature on the HLH. This will allow the HLH to automatically log back in after each reboot.</p>
+<p>For more information on how to enable the <strong>Auto Logon</strong> feature, see <a href="https://learn.microsoft.com/en-us/troubleshoot/windows-server/user-profiles-and-logon/turn-on-automatic-logon">Turn on automatic logon in Windows</a>.</p>
+
+
+</div>
+
+<p>To run Lifecycle Manager on the HLH, perform the following steps:</p>
+<h4 id="steps-3">Steps</h4>
+
+
+<div class="alert alert-danger" role="alert">
+<h4 class="alert-heading">WARNING</h4>
+
+    Never use PowerShell ISE at any time during the use of this document.
+
+</div>
+
+<ol>
+<li>
+<p>From the HLH, open a PowerShell console window as an administrator.</p>
+</li>
+<li>
+<p>You will need to export the BitLocker recovery keys before proceeding with the upgrade. Type the command below into your PowerShell prompt to export your BitLocker recovery keys.</p>
+<pre><code class="language-powershell">(Get-BitLockerVolume -MountPoint D, E).KeyProtector | Where-Object -FilterScript {$_.KeyProtectorType -eq 'RecoveryPassword'} | Select-Object -Property KeyProtectorId,RecoveryPassword | Out-File -FilePath &quot;E:\Temp\BitLockerRecoveryKeys.txt&quot;
+</code></pre>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">CAUTION</h4>
+
+    <p>Once the BitLocker recovery keys have been exported into the <strong>E:\Temp</strong> folder, ensure they are moved to a secure location <strong>outside</strong> of the HLH.</p>
+<p>Failure to do so may result in an inaccessible HLH due to firmware or hardware issues during the firmware upgrade process.</p>
+<p>For more information see <a href="https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/operations-guide?tabs=powershell#reset-and-backup-a-recovery-password">BitLocker Operations Guide</a>.</p>
+
+
+</div>
+
+</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 810px">
+<img class="card-img-top" style="margin-left:30px;" src="https://dell.github.io/azurestack-docs/docs/hub/patchandupdate/16g/hlh_E_temp_bitlocker_keys_exported_hu_4f6746b4dfa4beff.png" width="800" height="238" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<p><small class="text-body-secondary"> </small></p>
+</p>
+</figcaption>
+</figure>
+<ol start="3">
+<li>
+<p>Change the current directory to the E:\LCM location that the Lifecycle Manager zip file was extracted to in a previous step:</p>
+<pre><code class="language-powershell">Set-Location -Path &quot;E:\LCM&quot;
+</code></pre>
+</li>
+<li>
+<p>Run Lifecycle Manager by using the following command:</p>
+<pre><code class="language-powershell">.\Invoke-DellAzSHubLifecyclemanager.ps1 -OEMPackagePath &quot;E:\OEM\AzS-Dell-&lt;version&gt;.zip&quot;
+</code></pre>
+<p>You will be prompted to provide credentials for the following endpoints:</p>
+<ul>
+<li>Hardware Lifecycle Host OS administrative account credential</li>
+<li>iDRAC administrative account credential for the Hardware Lifecycle Host</li>
+</ul>
+<p>You will then be prompted to confirm that you have backed up the BitLocker recovery keys. Press <strong>Y</strong> to confirm if you have backed up the BitLocker recovery keys; otherwise, press <strong>N</strong> to cancel the update process and back up your BitLocker recovery keys.</p>
+</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 810px">
+<img class="card-img-top" style="margin-left:30px;" src="https://dell.github.io/azurestack-docs/docs/hub/patchandupdate/16g/hlh_lifecycle_manager_bitlocker_prompt_hu_439785a35aa7867b.png" width="800" height="222" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<p><small class="text-body-secondary"> </small></p>
+</p>
+</figcaption>
+</figure>
+<ol start="5">
+<li>
+<p>Once the update process begins, continue to monitor Lifecycle Manager while it runs. While the automation is running there will be multiple reboots, in order to keep the upgrade process progressing <strong>you must log back into the HLH manually; otherwise, the upgrade will not continue until you do</strong>.</p>
+<p>Some updates are grouped together to limit the amount of reboots. The HLH may reboot for any of the following reasons:
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Update Type</th>
+      <th>Reboot Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Firmware updates</td>
+      <td>Separate reboot</td>
+    </tr>
+    <tr>
+      <td>Driver updates</td>
+      <td>Grouped reboot</td>
+    </tr>
+    <tr>
+      <td>Operating System updates</td>
+      <td>Grouped reboot</td>
+    </tr>
+    <tr>
+      <td>Windows Defender Application Control (WDAC) policy updates</td>
+      <td>Grouped reboot</td>
+    </tr>
+  </tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Upon completion, the output should look similar to the image shown below. This shows a list of all completed tasks from Lifecycle Manager, as well as the total elapsed time of the upgrade.</p>
+<p>If the upgrade was successful, you will see the <strong>Dell AzS Hub Lifecycle Manager completed successfully</strong> message in the output.</p>
+</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 584px">
+<img class="card-img-top" style="margin-left:30px;" src="https://dell.github.io/azurestack-docs/docs/hub/patchandupdate/16g/hlh_lifecycle_manager_successfully_completed_hu_2bb697cc3851bd51.png" width="574" height="450" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<p><small class="text-body-secondary"> </small></p>
+</p>
+</figcaption>
+</figure>
+<ol start="7">
+<li>Finally, you can gather logs by navigating to the directory <strong>E:\LCM\Logs</strong> on the HLH. These logs can be used for troubleshooting purposes if needed.
+<ul>
+<li>Additionally, <strong>C:\MASLogs</strong> will contain logs related to the firmware update process.</li>
+</ul>
+</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 810px">
+<img class="card-img-top" style="margin-left:30px;" src="https://dell.github.io/azurestack-docs/docs/hub/patchandupdate/16g/hlh_E_lcm_logs_hu_69d29e440fc21fb3.png" width="800" height="223" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<p><small class="text-body-secondary"> </small></p>
+</p>
+</figcaption>
+</figure>
+<h2 id="top-of-rack-tor-switches">Top-of-Rack (ToR) Switches</h2>
+<h3 id="manually-updating-the-switch-firmware-from-the-hardware-lifecycle-host-hlh">Manually Updating the Switch Firmware from the Hardware Lifecycle Host (HLH)</h3>
+<p>You must manually install the OS10 software image from the HLH using SCP and SSH commands.</p>
+
+
+<div class="alert alert-danger" role="alert">
+<h4 class="alert-heading">WARNING</h4>
+
+    To maintain the integrity of Dell Azure Stack Hub Integrated System, it is <strong>required</strong> to perform the switch firmware update in conjunction with the Lifecycle Manager update process.
+
+</div>
+
+<p>To update switch firmware, perform the following steps:</p>
+<h4 id="steps-4">Steps</h4>
+
+
+<div class="alert alert-danger" role="alert">
+<h4 class="alert-heading">WARNING</h4>
+
+    Never use PowerShell ISE at any time during the use of this document.
+
+</div>
+
+<ol>
+<li>
+<p>From the HLH, open a PowerShell console window as an administrator.</p>
+<ul>
+<li>The HLH can be accessed via Remote Desktop Protocol (RDP) from a <em>Permitted Network</em>.</li>
+</ul>
+</li>
+<li>
+<p>Change directory to <em><strong>E:\OEM\AzS-Dell</strong></em>-<em>&lt;version&gt;</em><em><strong>\Firmware\Switches\msftdell</strong></em></p>
+<pre><code class="language-powershell">Set-Location -Path &quot;E:\OEM\AzS-Dell-&lt;version&gt;\Firmware\Switches\msftdell&quot;
+</code></pre>
+</li>
+<li>
+<p>Run the following command to copy the switch firmware from the extracted OEM package update zip file on the HLH to the ToR switches.</p>
+<p>For example, if upgrading the firmware on ToR-1 with an IP address of <strong>10.128.164.98</strong> and a switch administrative user account of <em>azsadmin-gtbzp</em>, you would run the following:</p>
+<pre><code class="language-bash">scp -o MACs=hmac-sha2-512 .\PKGS_OS10-Enterprise-&lt;version&gt;-installer-x86_64.bin azsadmin-gtbzp@10.128.164.98:
+</code></pre>
+</li>
+<li>
+<p>Repeat the above step for ToR-2.</p>
+<p>For example, if upgrading the firmware on ToR-2 with an IP address of <strong>10.128.164.99</strong> and a switch administrative user account of <em>azsadmin-gtbzp</em>, you would run the following:</p>
+<pre><code class="language-bash">scp -o MACs=hmac-sha2-512 .\PKGS_OS10-Enterprise-&lt;version&gt;-installer-x86_64.bin azsadmin-gtbzp@10.128.164.99:
+</code></pre>
+</li>
+<li>
+<p>The below steps will be repeated on each ToR switch (e.g. ToR-1 and ToR-2) <strong>ONLY</strong> after fully completing the first switch (e.g. ToR-1).</p>
+<ul>
+<li>
+<p>Run the following commands to connect to the ToR switch.</p>
+<p>For example, if upgrading the firmware on ToR-1 with an IP address of <strong>10.128.164.98</strong> and a switch administrative user account of <em>azsadmin-gtbzp</em>, you would run the following:</p>
+<pre><code class="language-bash">ssh -o MACs=hmac-sha2-512 azsadmin-gtbzp@10.128.164.98
+</code></pre>
+<ul>
+<li>Enter the password of the switch administrative user account when prompted.</li>
+</ul>
+</li>
+<li>
+<p>Run the following command to move the SCP copied firmware file to its intended destination (<em>/var/os10-image</em>):</p>
+<pre><code class="language-bash">system &quot;sudo mv ./PKGS_OS10-Enterprise-&lt;version&gt;-installer-x86_64.bin /var/os10-image&quot;
+</code></pre>
+<ul>
+<li>Enter the password of the switch administrative user account when prompted.</li>
+</ul>
+</li>
+<li>
+<p>Verify the image is now located in the <strong>image</strong> directory.</p>
+<pre><code class="language-plaintext">dir image
+</code></pre>
+<ul>
+<li>
+<p>The output should look similar to the below example:</p>
+<pre><code class="language-plaintext">Directory contents for folder:
+Date (modified)        Size (bytes)  Name
+---------------------  ------------  ------------------------------------------
+2025-03-18T18:37:56+00:667040481     PKGS_OS10-Enterprise-&lt;version&gt;-installer-x86_64.bin
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>To verify that an installation is <em>not</em> already in progress, run the following command:</p>
+<pre><code class="language-plaintext">show image status
+</code></pre>
+<ul>
+<li>
+<p>The output should look similar to the below example:</p>
+<pre><code class="language-plaintext">Image Upgrade State:     idle
+==================================================
+File Transfer State:     idle
+--------------------------------------------------
+  State Detail:          No download information available
+  Task Start:            -001-11-30T00:00:00+00:00
+  Task End:              -001-11-30T00:00:00+00:00
+  Transfer Progress:     0 %
+  Transfer Bytes:        0 bytes
+  File Size:             0 bytes
+  Transfer Rate:         0 kbps
+
+Installation State:      idle
+--------------------------------------------------
+  State Detail:          No install information available
+  Task Start:            -001-11-30T00:00:00+00:00
+  Task End:              -001-11-30T00:00:00+00:00
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Run the following command to install the downloaded image to the <em>standby</em> partition:</p>
+<pre><code class="language-plaintext">image install image://PKGS_OS10-Enterprise-&lt;version&gt;-installer-x86_64.bin
+</code></pre>
+</li>
+<li>
+<p>To view the image install progress, run the following command:</p>
+<pre><code class="language-plaintext">show image status
+</code></pre>
+<ul>
+<li>
+<p>The output should look similar to the below example:</p>
+<pre><code class="language-plaintext">Image Upgrade State:     idle
+==================================================
+File Transfer State:     idle
+--------------------------------------------------
+  State Detail:          No download information available
+  Task Start:            0000-00-00T00:00:00Z
+  Task End:              0000-00-00T00:00:00Z
+  Transfer Progress:     0 %
+  Transfer Bytes:        0 bytes
+  File Size:             0 bytes
+  Transfer Rate:         0 kbps
+
+Installation State:      install
+--------------------------------------------------
+  State Detail:          In progress: Configure filesystem (3 of 9)
+  Task Start:            2025-03-17T21:15:16Z
+  Task End:              0000-00-00T00:00:00Z
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Keep checking until the image installation is complete. Then check to verify if the image is installed to the <em>standby</em> partition by running the following command:</p>
+<pre><code class="language-plaintext">show boot
+</code></pre>
+<ul>
+<li>
+<p>The output should look similar to the below example:</p>
+<pre><code class="language-plaintext">Current system image information:
+===================================
+Type      Boot Type      Active                   Standby                 Next-Boot
+-----------------------------------------------------------------------------------
+Node-id 1 Flash Boot     [B] 10.5.6.5            [A] 10.6.0.1            [B] active
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Set the next boot partition to the <em>standby</em> partition where the downloaded image is installed by running the following command:</p>
+<pre><code class="language-plaintext">boot system standby
+</code></pre>
+</li>
+<li>
+<p>Save the currently running configuration and then reload to the configured image by running the following commands:</p>
+<pre><code class="language-plaintext">write memory
+reload
+</code></pre>
+</li>
+<li>
+<p>After the switch reloads, copy the new <em>active</em> image to the <em>standby</em> boot partition by running the following command:</p>
+<pre><code class="language-plaintext">image copy active-to-standby
+</code></pre>
+</li>
+<li>
+<p>Verify the status of the BGP connections on the switches by running the following command:</p>
+<pre><code class="language-plaintext">show ip bgp summary
+</code></pre>
+<ul>
+<li>
+<p>Verify that BGP is established for all neighbors as indicated by the <strong>Up/Down</strong> column showing a connection timer. The output should look similar to the below example:</p>
+<pre><code class="language-plaintext">BGP router identifier 10.128.164.24 local AS number 64910
+Neighbor                                      AS          MsgRcvd     MsgSent     Up/Down           State/Pfx
+10.128.165.12                                 64912       11          12          00:07:01          25
+10.128.165.13                                 64912       11          12          00:07:01          25
+10.128.165.33                                 64912       10          10          00:07:01          25
+10.128.164.1                                  64900       11          12          00:07:06          1
+10.128.164.9                                  64900       11          12          00:07:06          1
+10.128.164.30                                 64910       12          14          00:06:23          8
+10.128.164.34                                 64910       12          14          00:07:06          8
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Verify that the switch firmware version was updated by running the following command:</p>
+<pre><code class="language-plaintext">show version
+</code></pre>
+<ul>
+<li>
+<p>The output should look similar to the below example:</p>
+<pre><code class="language-plaintext">Dell SmartFabric OS10 Enterprise
+Copyright (c) 1999-2024 by Dell Inc. All Rights Reserved.
+OS Version: 10.6.0.1
+Build Version: 10.6.0.1.35
+Build Time: 2024-12-02T17:55:39+0000
+System Type: S5248F-ON
+Architecture: x86_64
+Up Time: 1 day 00:11:14
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="original-equipment-manufacturer-oem-package-updates">Original Equipment Manufacturer (OEM) package updates</h2>
+<h3 id="servicing-policy">Servicing Policy</h3>
+<p>Updates for the hardware components in the form of driver updates, firmware updates, and security patches are provided by Dell Technologies. These updates are referred to as <strong>OEM package updates</strong>. It is recommended to be within <strong>N-2</strong> of the current available OEM package for Azure Stack Hub.</p>
+
+
+<div class="alert alert-danger" role="alert">
+<h4 class="alert-heading">WARNING</h4>
+
+    <p>Azure Stack Hub OEM package updates must be installed in sequential order.</p>
+<p>It is not supported to skip an OEM package update version.</p>
+
+
+</div>
+
+<h3 id="identify-the-oem-version-applied-to-the-azure-stack-hub">Identify the OEM version applied to the Azure Stack Hub</h3>
+<p>To identify the version of the Original Equipment Manufacturer (OEM) package currently applied to the Azure Stack Hub, perform the following steps:</p>
+<h4 id="steps-5">Steps</h4>
+<ol>
+<li>
+<p>Open the Azure Stack Hub administrator portal.</p>
+</li>
+<li>
+<p>Open the <strong>Microsoft Azure Stack Hub - Administration Dashboard</strong> and click <strong>Dashboard</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Update</strong>.</p>
+</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 492px">
+<img class="card-img-top" style="margin-left:30px;" src="https://dell.github.io/azurestack-docs/docs/hub/patchandupdate/16g/admin_portal_dashboard_update_tile_hu_1df8dcf1eca89a50.png" width="482" height="450" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<p><small class="text-body-secondary"> </small></p>
+</p>
+</figcaption>
+</figure>
+<ol start="4">
+<li>The <strong>Updates</strong> blade will appear as shown below. The <strong>Updates</strong> blade displays your current Azure Stack Hub version and the latest deployed version of the OEM package update.</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 810px">
+<img class="card-img-top" style="margin-left:30px;" src="https://dell.github.io/azurestack-docs/docs/hub/patchandupdate/16g/admin_portal_updates_oemversion_hu_91bff8bd33998bdf.png" width="800" height="268" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<p><small class="text-body-secondary"> </small></p>
+</p>
+</figcaption>
+</figure>
+<h3 id="import-and-install-an-oem-package-update">Import and Install an OEM package update</h3>
+<p>In this step you will be uploading and installing the OEM package update utilizing the Azure Stack Hub administrator portal.</p>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">CAUTION</h4>
+
+    Before you apply an OEM package update, always apply the latest Azure Stack Hub hotfix available for your Azure Stack Hub system.
+
+</div>
+
+<p>For additional information about Azure Stack Hub updates, please see:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure-stack/operator/azure-stack-servicing-policy#oem-packages">Updates and servicing policy - Azure Stack Hub</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure-stack/operator/release-notes-checklist">Checklist for applying updates - Azure Stack Hub</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure-stack/operator/azure-stack-update-prepare-package">Prepare the update package - Azure Stack Hub</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure-stack/operator/azure-stack-apply-updates">Apply updates - Azure Stack Hub</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure-stack/operator/azure-stack-update-oem">Apply OEM updates - Azure Stack Hub</a></li>
+</ul>
+<h4 id="steps-6">Steps</h4>
+<ol>
+<li>
+<p>Access the Azure Stack Hub administrator portal of the system you wish to perform the OEM package update on.</p>
+</li>
+<li>
+<p>Navigate to <strong>Storage accounts &gt; updateadminaccount &gt; Containers</strong>.</p>
+</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 602px">
+<img class="card-img-top" style="margin-left:30px;" src="https://dell.github.io/azurestack-docs/docs/hub/patchandupdate/16g/admin_portal_updateadminaccount_hu_12f81a7d91979b55.png" width="592" height="450" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<p><small class="text-body-secondary"> </small></p>
+</p>
+</figcaption>
+</figure>
+<ol start="3">
+<li>
+<p>Create a container for the OEM package update by clicking <strong>+Container</strong>.</p>
+</li>
+<li>
+<p>In the <strong>Name</strong> field on the right navigation pane enter the name for your container e.g. <em>2408oemupdate</em> and then click <strong>Create</strong>.</p>
+</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 1423px">
+<img class="card-img-top" style="margin-left:30px;" src="https://dell.github.io/azurestack-docs/docs/hub/patchandupdate/16g/admin_portal_updateadminaccount_create_container_oemupdate_hu_3d6d77c4df02b8bc.png" width="1413" height="250" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<p><small class="text-body-secondary"> </small></p>
+</p>
+</figcaption>
+</figure>
+<ol start="5">
+<li>Once the container is created, click the name of the container to access it.</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 2010px">
+<img class="card-img-top" style="margin-left:30px;" src="https://dell.github.io/azurestack-docs/docs/hub/patchandupdate/16g/admin_portal_updateadminaccount_containers_oemupdate_hu_47e2d489fc058ce5.png" width="2000" height="443" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<p><small class="text-body-secondary"> </small></p>
+</p>
+</figcaption>
+</figure>
+<ol start="6">
+<li>Once you have clicked on the container click <strong>Upload</strong> at the top of the page.</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 1495px">
+<img class="card-img-top" style="margin-left:30px;" src="https://dell.github.io/azurestack-docs/docs/hub/patchandupdate/16g/admin_portal_updateadminaccount_container_oemupdate_upload_hu_e7f4cea2ea38dc32.png" width="1485" height="450" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<p><small class="text-body-secondary"> </small></p>
+</p>
+</figcaption>
+</figure>
+<ol start="7">
+<li>Dell OEM package updates are in a zip format. The zip file contains the <strong>oemMetadata.xml</strong> file and the OEM package update payload.
+You will need to upload both the zip file for the OEM package update and the <strong>oemMetadata.xml</strong> that is associated with it.</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 810px">
+<img class="card-img-top" style="margin-left:30px;" src="https://dell.github.io/azurestack-docs/docs/hub/patchandupdate/16g/hlh_E_oem_hu_94357818099f6489.png" width="800" height="238" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<p><small class="text-body-secondary"> </small></p>
+</p>
+</figcaption>
+</figure>
+<ol start="8">
+<li>
+<p>Once uploaded to the storage account container, they should appear in the container that was created in step 3.</p>
+</li>
+<li>
+<p>Navigate back to the <strong>Dashboard</strong> and then click the <strong>Update</strong> tile.</p>
+</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 492px">
+<img class="card-img-top" style="margin-left:30px;" src="https://dell.github.io/azurestack-docs/docs/hub/patchandupdate/16g/admin_portal_dashboard_update_tile_hu_74f7fdee5dcb8589.png" width="482" height="450" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<p><small class="text-body-secondary"> </small></p>
+</p>
+</figcaption>
+</figure>
+<ol start="10">
+<li>
+<p>The <strong>Updates</strong> blade should now show an available OEM package update that can be installed.</p>
+</li>
+<li>
+<p>Click the update and then click <strong>Install</strong> to install the OEM package update.</p>
+</li>
+<li>
+<p>After clicking install on the OEM package update, the update run details can be seen by clicking on the update in the <strong>Updates</strong> menu once the update has entered into a <strong>Preparing</strong> or <strong>Installing</strong> state.</p>
+</li>
+</ol>
+<ol start="13">
+<li>
+<p>Once completed, <strong>Updates</strong> blade should display <strong>Applied successfully</strong> and in the <strong>Update history</strong> menu the update state should be marked as <strong>Installed</strong>.</p>
+</li>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 1255px">
+<img class="card-img-top" style="margin-left:;" src="https://dell.github.io/azurestack-docs/docs/hub/patchandupdate/16g/admin_portal_updates_applied_successfully_hu_409b90e90000ef6b.png" width="1245" height="450" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:;">
+<p class="card-text">
+<p><small class="text-body-secondary"> </small></p>
+</p>
+</figcaption>
+</figure>
+<p>If the update fails, the <strong>Update</strong> blade reports <strong>Needs attention</strong>. Click on the failed update and use the <strong>Download summary</strong> button to get a high-level status of where the update failed.</p>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 382px">
+<img class="card-img-top" style="margin-left:;" src="https://dell.github.io/azurestack-docs/docs/hub/patchandupdate/16g/admin_portal_updates_failed_hu_268923b950a7459b.png" width="372" height="650" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:;">
+<p class="card-text">
+<p><small class="text-body-secondary"> </small></p>
+</p>
+</figcaption>
+</figure>
+</ol>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-34180988b8f23a8515e53a325ba28a2c">5 - How To</h1>
+    
+	
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="">
+    
+	<h1 id="pg-74514daaa2b9f74ecafd695933fe9978">5.1 - How to create a service principal name for Azure Stack Hub integrated with Active Directory Federation Services identity using PowerShell</h1>
     
 	<h3 id="overview">Overview</h3>
 <p>This article explains how to create a service principal name (SPN) to manage Azure Stack Hub integrated with Active Directory Federation Services (AD FS) identity using PowerShell.</p>
