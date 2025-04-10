@@ -85,6 +85,7 @@ To download the latest Lifecycle Manager zip file, perform the following steps:
     - The HLH can be accessed via Remote Desktop Protocol (RDP) from a *Permitted Network* or directly via the iDRAC Direct port (USB to Micro-USB) connection.
 
         - See [Permitted Networks - Azure Stack Hub](https://learn.microsoft.com/en-us/azure-stack/operator/azure-stack-network#permitted-networks) for additional details.
+        <br><br>
 
 3. On the HLH, navigate to the **E:\\** drive and create a folder named **Temp**.
 
@@ -111,6 +112,7 @@ For example, if the Lifecycle Manager zip file is **2502**, then the OEM package
     - The HLH can be accessed via Remote Desktop Protocol (RDP) from a *Permitted Network* or directly via the iDRAC Direct port (USB to Micro-USB) connection.
 
       - See [Permitted Networks - Azure Stack Hub](https://learn.microsoft.com/en-us/azure-stack/operator/azure-stack-network#permitted-networks) for additional details.
+      <br><br>
 
 3. Download the OEM package update zip file to the HLH **E:\Temp** directory.
 
@@ -274,6 +276,7 @@ Never use PowerShell ISE at any time during the use of this document.
 1. From the HLH, open a PowerShell console window as an administrator.
 
    - The HLH can be accessed via Remote Desktop Protocol (RDP) from a *Permitted Network*.
+   <br><br>
 
 2. Change directory to ***E:\OEM\AzS-Dell***-*&lt;version&gt;****\Firmware\Switches\msftdell***
 
@@ -308,6 +311,7 @@ Never use PowerShell ISE at any time during the use of this document.
         ```
 
       - Enter the password of the switch administrative user account when prompted.
+    <br><br>
 
     - Run the following command to move the SCP copied firmware file to its intended destination (*/var/os10-image*):
 
@@ -316,6 +320,7 @@ Never use PowerShell ISE at any time during the use of this document.
         ```
 
       - Enter the password of the switch administrative user account when prompted.
+    <br><br>
 
    - Verify the image is now located in the **image** directory.
 
