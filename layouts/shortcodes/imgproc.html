@@ -1,0 +1,28 @@
+{{ $original := .Page.Resources.GetMatch (printf "**%s*" (.Get 0)) -}}
+{{ $command := .Get 1 -}}
+{{ $options := .Get 2 -}}
+{{ $marginleft := .Get 3 -}}
+{{ if eq $command "Fit" -}}
+    {{ .Scratch.Set "image" ($original.Fit $options) -}}
+{{ else if eq $command "Resize" -}}
+    {{ .Scratch.Set "image" ($original.Resize $options) -}}
+{{ else if eq $command "Fill" -}}
+    {{ .Scratch.Set "image" ($original.Fill $options) -}}
+{{ else if eq $command "Crop" -}}
+    {{ .Scratch.Set "image" ($original.Crop $options) -}}
+{{ else -}}
+    {{ errorf "Invalid image processing command: Must be one of Fit, Fill, Crop or Resize." -}}
+{{ end -}}
+{{ $image := .Scratch.Get "image" -}}
+
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: {{ add $image.Width 10 -}}px">
+<img class="card-img-top" style="margin-left: {{- $marginleft -}};" src="{{- $image.RelPermalink -}}" width="{{- $image.Width -}}" height="{{- $image.Height -}}" border="0">
+{{ with .Inner -}}
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left: {{- $marginleft -}};">
+<p class="card-text">
+{{/* Do **not** remove this comment! It ends above html block! See https://spec.commonmark.org/0.30/#html-blocks, 7. */}}
+<small class="text-body-secondary">{{ . }}</small>
+</p>
+</figcaption>
+{{ end -}}
+</figure>
