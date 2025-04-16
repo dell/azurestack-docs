@@ -16,9 +16,9 @@ Dell Azure Stack Hub OEM updates must be installed in sequential order, it is no
 
 ## New features, changed features, and fixes
 ### New features
-* Initial release of the Dell Integrated System for Microsoft Azure Stack Hub Lifecycle Manager which provides an automated way of upgrading Hardware Lifecycle Host (HLH) firmware, software and driver components.
+* Initial release of the Dell Integrated System for Microsoft Azure Stack Hub Lifecycle Manager which provides an automated way of upgrading Hardware Lifecycle Host (HLH) firmware, software and driver components. See [Patch and Update for 16G]({{< ref "../../../PatchAndUpdate/16G/_index.md" >}}).
 
-* There are improvements and updates to drivers and firmware.
+* There are improvements and updates to drivers and firmware. See [Release Artifacts for 16G - 2502]({{< ref "../../../ReleaseArtifacts/2502/16G/_index.md" >}}).
 
 ### Changed features
 There are no changed features for this release.
@@ -44,7 +44,7 @@ Before you use the Microsoft Patch and Update process to update Azure Stack Hub,
 For information about fixed issues in this release, see the [Azure Stack Hub 2501 update](https://docs.microsoft.com/en-us/azure-stack/operator/release-notes?view=azs-2501) on the Microsoft website.
 
 ## Hardware and firmware support
-For information about supported hardware, firmware, and software, see the Dell Integrated System for Microsoft Azure Stack Hub Support Matrix. The Support Matrix is available at [Dell Integrated System for Microsoft Azure Stack Hub Support Matrix]({{< ref "../../../SupportMatrix/2502/16G/_index.md" >}}).
+For information about supported hardware, firmware, and software, see the [Dell Integrated System for Microsoft Azure Stack Hub Support Matrix]({{< ref "../../../SupportMatrix/2502/16G/_index.md" >}}).
 
 {{% alert title="NOTE" color="primary" %}}
 The [Dell Azure Stack Hub Tech Book](https://infohub.delltechnologies.com/t/tech-book-dell-integrated-system-for-microsoft-azure-stack-hub-1/) contains information regarding dimensions for Dell Technologies racks, servers, and switches.
@@ -129,9 +129,3 @@ The following additional resources are available on the Microsoft website:
 - [Azure Stack Hub User Documentation](https://learn.microsoft.com/en-us/azure/azure-stack/user/)
 - [Azure Stack Hub Operator Documentation](https://learn.microsoft.com/en-us/azure/azure-stack/)
 - [Datacenter integration considerations for Azure Stack Hub integrated systems](https://learn.microsoft.com/en-us/azure-stack/operator/azure-stack-datacenter-integration)
-
-## Payload information
-
-Firmware and driver versions of each individual component can be found in the Dell Integrated System for Microsoft Azure Stack Hub Support Matrix.
-
-Fixes, enhancements, and other information about each firmware and driver can be found on the [Dell Support site](https://www.dell.com/support/home/en-us/).
