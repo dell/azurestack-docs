@@ -1,5 +1,5 @@
 ---
-title: "Azure Stack HCI Support Matrix for 14G-15G (2412)"
+title: "Azure Local Support Matrix for 14G-15G (2412)"
 linkTitle: "14G-15G"
 weight: 7588
 Description: >
@@ -55,10 +55,10 @@ Description: >
 {{< /rawhtml >}}
 
 {{% alert title="NOTE" color="primary" %}}
-The Dell Integrated System for Microsoft Azure Stack HCI AX-640, AX-740xd, AX-650, AX-750, AX-7525, and AX-6515 now supports upgrades from Azure Stack HCI 22H2 to Azure Stack HCI 23H2. The cluster must have firmware and drivers updated to the levels listed in this support matrix prior to starting the upgrade process.
+The Dell Integrated System for Microsoft Azure Local AX-640, AX-740xd, AX-650, AX-750, AX-7525, and AX-6515 now supports upgrades from Azure Stack HCI operating system 22H2 to Azure Stack HCI operating system 23H2. The cluster must have firmware and drivers updated to the levels listed in this support matrix prior to starting the upgrade process.
 
 Please see the following knowledge base article for procedure details and known issues:<br>
-[Upgrade Azure Stack HCI version 22H2 to Azure Stack HCI version 23H2](https://www.dell.com/support/kbdoc/en-us/000259175/upgrade-azure-local-version-22h2-to-azure-local-version-23h2)
+[Upgrade Azure Stack HCI operating system 22H2 to Azure Stack HCI operating system 23H2](https://www.dell.com/support/kbdoc/en-us/000259175/upgrade-azure-local-version-22h2-to-azure-local-version-23h2)
 {{% /alert %}}
 
 ### Supported Platforms

@@ -1,5 +1,5 @@
 ---
-title: "Azure Stack HCI Support Matrix (2412)"
+title: "Azure Local Support Matrix (2412)"
 linkTitle: "2412"
 weight: 7588
 Description: >

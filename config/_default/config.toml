@@ -1,5 +1,5 @@
 baseURL = "https://dell.github.io/azurestack-docs/"
-title = "Solutions for Microsoft Azure Stack"
+title = "Solutions for Microsoft Azure"
 canonifyURLs = false
 
 enableRobotsTXT = true
@@ -45,8 +45,8 @@ anchor = "smart"
 [languages]
 [languages.en]
 [languages.en.params]
-title = "Solutions for Microsoft Azure Stack"
-description = "Dell Technologies (Dell) Azure Stack documentation pages"
+title = "Solutions for Microsoft Azure"
+description = "Dell Technologies (Dell) Azure documentation pages"
 languageName ="English"
 
 [markup]

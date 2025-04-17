@@ -1,5 +1,5 @@
 ---
-title: "Azure Stack HCI Support Matrix for 16G (2412)"
+title: "Azure Local Support Matrix for 16G (2412)"
 linkTitle: "16G"
 weight: 7588
 Description: >

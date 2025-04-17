@@ -1,5 +1,5 @@
 ---
-title: "Azure Stack HCI Firmware and Driver Matrix for Legacy Windows Server Operating Systems (Windows Server 2016)"
+title: "Azure Local Firmware and Driver Matrix for Legacy Windows Server Operating Systems (Windows Server 2016)"
 linkTitle: "Windows Server 2016"
 weight: 1000
 Description: >

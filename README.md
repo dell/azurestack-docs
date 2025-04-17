@@ -8,12 +8,12 @@ You may obtain a copy of the License at
     http://www.apache.org/licenses/LICENSE-2.0
 -->
 
-# Dell Technologies (Dell) Azure Stack Docs
+# Dell Technologies (Dell) Azure Docs
 
-Dell Technologies (Dell) Azure Stack Docs is an open-source repository for Azure Stack family of products.
+Dell Technologies (Dell) Azure Docs is an open-source repository for Azure Stack Hub and Azure Local.
 
 ## About
 
-Dell Technologies (Dell) Azure Stack Docs repository is 100% open source and community-driven. All components are available
+Dell Technologies (Dell) Azure Docs repository is 100% open source and community-driven. All components are available
 under [Apache 2 License](https://www.apache.org/licenses/LICENSE-2.0.html) on
 GitHub.

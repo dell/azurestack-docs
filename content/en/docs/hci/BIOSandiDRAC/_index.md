@@ -74,7 +74,7 @@ The following table lists the BIOS configuration settings for server nodes imple
 |Systems Security|SMM Security Mitigation|Disabled|Enabled|AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c|
 
 ### iDRAC Configuration
-The following table lists the iDRAC settings for server nodes configured as Azure Stack HCI cluster nodes.
+The following table lists the iDRAC settings for nodes in an Azure Local instance.
 
 {{< rawhtml >}}
 <table style="width:100%">

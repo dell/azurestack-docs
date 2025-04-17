@@ -1,7 +1,7 @@
 
 ---
-title: "Dell Technologies Solutions for Microsoft Azure Stack"
-linkTitle: "Dell Technologies Solutions for Microsoft Azure Stack"
+title: "Dell Technologies Solutions for Microsoft Azure"
+linkTitle: "Dell Technologies Solutions for Microsoft Azure"
 weight: 1
 menu:
   main:
@@ -21,7 +21,7 @@ It delivers enterprise-grade performance and resiliency, including integrated de
 
 One-contact support reduces your operational risk, while flexible consumption models make it easy to use.
 
-## Dell Integrated System for Microsoft Azure Stack HCI
+## Dell Integrated System for Microsoft Azure Local
 A purpose-built system designed to simplify and streamline Azure multi-cloud ecosystem with integrated fully engineered infrastructure foundation.
 
 Designed with full-stack lifecycle management and native Azure integration, the integrated system delivers efficient operations, flexible consumption models and high-level enterprise expertise.

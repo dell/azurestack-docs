@@ -1,5 +1,5 @@
 ---
-title: "Azure Stack HCI Support Matrix (Archive)"
+title: "Azure Local Support Matrix (Archive)"
 linkTitle: "Archive"
 weight: 10000
 Description: >
