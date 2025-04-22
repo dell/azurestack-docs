@@ -44,11 +44,6 @@ For information about fixed issues in this release, see the [Azure Stack Hub 250
 ## Hardware and firmware support
 For information about supported hardware, firmware, and software, see the [Dell Integrated System for Microsoft Azure Stack Hub Support Matrix]({{< ref "../../../SupportMatrix/2502/14G/_index.md" >}}).
 
-{{% alert title="NOTE" color="primary" %}}
-The [Dell Azure Stack Hub Tech Book](https://infohub.delltechnologies.com/t/tech-book-dell-integrated-system-for-microsoft-azure-stack-hub-1/) contains information regarding dimensions for Dell Technologies racks, servers, and switches.
-This information is updated as needed.
-{{% /alert %}}
-
 {{< rawhtml >}}
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
