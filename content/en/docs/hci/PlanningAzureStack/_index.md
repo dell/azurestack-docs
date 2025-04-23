@@ -1,6 +1,6 @@
 ---
-title: "Planning Azure Stack"
-linkTitle: "Planning Azure Stack"
+title: "Planning Azure Local"
+linkTitle: "Planning Azure Local"
 weight: 3
 Description: >
 hide_feedback: true
