@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Release Artifacts for 2502 on Solutions for Microsoft Azure Stack</title>
+    <title>Release Artifacts for 2502 on Solutions for Microsoft Azure</title>
     <link>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2502/</link>
-    <description>Recent content in Release Artifacts for 2502 on Solutions for Microsoft Azure Stack</description>
+    <description>Recent content in Release Artifacts for 2502 on Solutions for Microsoft Azure</description>
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2502/index.xml" rel="self" type="application/rss+xml" />

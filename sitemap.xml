@@ -6,7 +6,7 @@
     <lastmod>2023-03-29T17:24:24+01:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/</loc>
-    <lastmod>2023-01-10T16:00:42+00:00</lastmod>
+    <lastmod>2025-04-28T16:05:28+01:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/</loc>
     <lastmod>2024-09-12T17:42:32+01:00</lastmod>
@@ -24,7 +24,7 @@
     <lastmod>2023-01-10T16:00:42+00:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/</loc>
-    <lastmod>2023-01-10T16:00:42+00:00</lastmod>
+    <lastmod>2025-04-28T16:05:28+01:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/</loc>
     <lastmod>2023-01-10T16:00:42+00:00</lastmod>
@@ -48,7 +48,7 @@
     <lastmod>2024-03-11T15:58:13+00:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/</loc>
-    <lastmod>2024-03-11T15:58:13+00:00</lastmod>
+    <lastmod>2025-04-28T16:05:28+01:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/04-network-architecture/</loc>
     <lastmod>2024-03-11T15:58:13+00:00</lastmod>
@@ -63,7 +63,7 @@
     <lastmod>2025-04-10T11:17:48+01:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/references/</loc>
-    <lastmod>2023-03-21T13:29:24-05:00</lastmod>
+    <lastmod>2025-04-28T16:05:28+01:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/</loc>
     <lastmod>2025-04-02T11:02:08+01:00</lastmod>
@@ -72,13 +72,13 @@
     <lastmod>2024-07-29T13:08:37+01:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2503/14g-15g_hci/</loc>
-    <lastmod>2025-04-25T08:07:37-05:00</lastmod>
+    <lastmod>2025-04-28T16:05:28+01:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2503/16g_hci/</loc>
-    <lastmod>2025-04-25T08:07:37-05:00</lastmod>
+    <lastmod>2025-04-28T16:05:28+01:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2503/</loc>
-    <lastmod>2025-04-01T09:58:25-04:00</lastmod>
+    <lastmod>2025-04-28T16:05:28+01:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2502/14g/</loc>
     <lastmod>2025-04-01T16:12:58+01:00</lastmod>
@@ -108,13 +108,13 @@
     <lastmod>2025-04-01T16:12:58+01:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2412/14g-15g_hci/</loc>
-    <lastmod>2025-02-18T10:21:04-05:00</lastmod>
+    <lastmod>2025-04-28T16:05:28+01:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2412/16g_hci/</loc>
-    <lastmod>2025-02-20T04:41:29-05:00</lastmod>
+    <lastmod>2025-04-28T16:05:28+01:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2412/</loc>
-    <lastmod>2024-12-12T11:33:56-06:00</lastmod>
+    <lastmod>2025-04-28T16:05:28+01:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2411/14g/</loc>
     <lastmod>2025-01-16T15:08:57+00:00</lastmod>
@@ -167,17 +167,17 @@
     <loc>https://dell.github.io/azurestack-docs/docs/hub/howto/</loc>
     <lastmod>2023-03-28T03:53:06-05:00</lastmod>
   </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/archive/</loc>
-    <lastmod>2024-07-29T13:08:37+01:00</lastmod>
-  </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/biosandidrac/</loc>
-    <lastmod>2025-02-04T10:30:13-06:00</lastmod>
+    <lastmod>2025-04-28T16:05:28+01:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/sbereleasenotes/</loc>
-    <lastmod>2025-04-02T11:02:08+01:00</lastmod>
+    <lastmod>2025-04-28T16:05:28+01:00</lastmod>
+  </url><url>
+    <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/archive/</loc>
+    <lastmod>2025-04-28T16:05:28+01:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/</loc>
-    <lastmod>2024-03-08T11:51:23+00:00</lastmod>
+    <lastmod>2025-04-28T16:05:28+01:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/search/</loc>
     <lastmod>2022-12-08T11:36:45-06:00</lastmod>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>05. Storage Capacity Planning on Solutions for Microsoft Azure Stack</title>
+    <title>05. Storage Capacity Planning on Solutions for Microsoft Azure</title>
     <link>https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/05-storage-capacity-planning/</link>
-    <description>Recent content in 05. Storage Capacity Planning on Solutions for Microsoft Azure Stack</description>
+    <description>Recent content in 05. Storage Capacity Planning on Solutions for Microsoft Azure</description>
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/05-storage-capacity-planning/index.xml" rel="self" type="application/rss+xml" />
