@@ -8,7 +8,7 @@ hide_feedback: true
 
 ---
 
-### Dell Integrated System for Microsoft Azure Local
+### Dell AX System for Azure Local
 
 ![Azure Local]({{< image url="prod-1906-poweredge-r740xd-12x35-azure-stack-hci-980x366.jpg" >}})
 
