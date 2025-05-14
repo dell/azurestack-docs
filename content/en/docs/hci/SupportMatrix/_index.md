@@ -12,5 +12,9 @@ Dell Technologies does not currently support upgrading Azure Local instances to 
 {{% /alert %}}
 
 {{% alert title="NOTE" color="primary" %}}
-Dell Technologies does not support 22H2 to 23H2 OS upgrades with stretch cluster.
+Azure Stack HCI version 22H2 will reach end of support on May 31st, 2025. After this date, you will not receive monthly security and quality updates from Microsoft. Microsoft recommends that customers upgrade their operating system to 23H2 to continue receiving updates.
+
+Dell Technologies has been unable to validate this OS upgrade on stretched clusters because we have encountered a production-impacting bug in the upgrade that can cause corruption of meta-data. Due to the nature of the bug, Dell Technologies recommends customers wait until a fix is available from Microsoft before attempting this upgrade.
+
+Customers who choose to upgrade the OS of their stretched clusters before a fix is available from Microsoft can contact Microsoft for support with the upgrade.
 {{% /alert %}}
