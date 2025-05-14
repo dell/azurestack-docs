@@ -24,17 +24,17 @@
 <meta property="og:url" content="https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/">
   <meta property="og:site_name" content="Solutions for Microsoft Azure">
   <meta property="og:title" content="Support Matrix">
-  <meta property="og:description" content="NOTE Dell Technologies does not currently support upgrading Azure Local instances to Azure Stack HCI OS 24H2 or deploying Azure Local instances with Azure Stack HCI OS 24H2. Support for these scenarios is coming soon. Azure Local instances running Solution 2504 and newer are supported only with Azure Stack HCI OS 23H2. NOTE Dell Technologies does not support 22H2 to 23H2 OS upgrades with stretch cluster.">
+  <meta property="og:description" content="NOTE Dell Technologies does not currently support upgrading Azure Local instances to Azure Stack HCI OS 24H2 or deploying Azure Local instances with Azure Stack HCI OS 24H2. Support for these scenarios is coming soon. Azure Local instances running Solution 2504 and newer are supported only with Azure Stack HCI OS 23H2. NOTE Azure Stack HCI version 22H2 will reach end of support on May 31st, 2025. After this date, you will not receive monthly security and quality updates from Microsoft. Microsoft recommends that customers upgrade their operating system to 23H2 to continue receiving updates.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
 
   <meta itemprop="name" content="Support Matrix">
-  <meta itemprop="description" content="NOTE Dell Technologies does not currently support upgrading Azure Local instances to Azure Stack HCI OS 24H2 or deploying Azure Local instances with Azure Stack HCI OS 24H2. Support for these scenarios is coming soon. Azure Local instances running Solution 2504 and newer are supported only with Azure Stack HCI OS 23H2. NOTE Dell Technologies does not support 22H2 to 23H2 OS upgrades with stretch cluster.">
-  <meta itemprop="dateModified" content="2025-05-01T11:40:34+01:00">
-  <meta itemprop="wordCount" content="66">
+  <meta itemprop="description" content="NOTE Dell Technologies does not currently support upgrading Azure Local instances to Azure Stack HCI OS 24H2 or deploying Azure Local instances with Azure Stack HCI OS 24H2. Support for these scenarios is coming soon. Azure Local instances running Solution 2504 and newer are supported only with Azure Stack HCI OS 23H2. NOTE Azure Stack HCI version 22H2 will reach end of support on May 31st, 2025. After this date, you will not receive monthly security and quality updates from Microsoft. Microsoft recommends that customers upgrade their operating system to 23H2 to continue receiving updates.">
+  <meta itemprop="dateModified" content="2025-05-14T11:07:11+01:00">
+  <meta itemprop="wordCount" content="173">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Support Matrix">
-  <meta name="twitter:description" content="NOTE Dell Technologies does not currently support upgrading Azure Local instances to Azure Stack HCI OS 24H2 or deploying Azure Local instances with Azure Stack HCI OS 24H2. Support for these scenarios is coming soon. Azure Local instances running Solution 2504 and newer are supported only with Azure Stack HCI OS 23H2. NOTE Dell Technologies does not support 22H2 to 23H2 OS upgrades with stretch cluster.">
+  <meta name="twitter:description" content="NOTE Dell Technologies does not currently support upgrading Azure Local instances to Azure Stack HCI OS 24H2 or deploying Azure Local instances with Azure Stack HCI OS 24H2. Support for these scenarios is coming soon. Azure Local instances running Solution 2504 and newer are supported only with Azure Stack HCI OS 23H2. NOTE Azure Stack HCI version 22H2 will reach end of support on May 31st, 2025. After this date, you will not receive monthly security and quality updates from Microsoft. Microsoft recommends that customers upgrade their operating system to 23H2 to continue receiving updates.">
 
 
 
@@ -139,7 +139,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="https://dell.github.io/azurestack-docs/offline-search-index.1c62333f4039d6b97c269edbe011b2c0.json"
+    data-offline-search-index-json-src="https://dell.github.io/azurestack-docs/offline-search-index.66a8052fb34890a57d97bbde3d53e428.json"
     data-offline-search-base-href="https://dell.github.io/azurestack-docs/"
     data-offline-search-max-results="10"
   >
@@ -195,7 +195,10 @@ This is the multi-page printable view of this section.
 <div class="alert alert-primary" role="alert">
 <h4 class="alert-heading">NOTE</h4>
 
-    Dell Technologies does not support 22H2 to 23H2 OS upgrades with stretch cluster.
+    <p>Azure Stack HCI version 22H2 will reach end of support on May 31st, 2025. After this date, you will not receive monthly security and quality updates from Microsoft. Microsoft recommends that customers upgrade their operating system to 23H2 to continue receiving updates.</p>
+<p>Dell Technologies has been unable to validate this OS upgrade on stretched clusters because we have encountered a production-impacting bug in the upgrade that can cause corruption of meta-data. Due to the nature of the bug, Dell Technologies recommends customers wait until a fix is available from Microsoft before attempting this upgrade.</p>
+<p>Customers who choose to upgrade the OS of their stretched clusters before a fix is available from Microsoft can contact Microsoft for support with the upgrade.</p>
+
 
 </div>
 
