@@ -63,6 +63,7 @@ Description: >
 </table>
 <br>
 {{< /rawhtml >}}
+
 ### Base Components
 {{< rawhtml >}}
 <table>
@@ -79,6 +80,7 @@ Description: >
 </table>
 <br>
 {{< /rawhtml >}}
+
 ### Network Adapters
 {{< rawhtml >}}
 <table>
@@ -107,6 +109,7 @@ Description: >
 </table>
 <br>
 {{< /rawhtml >}}
+
 ### Network Switches
 {{< rawhtml >}}
 <table>
@@ -121,7 +124,8 @@ Description: >
 <tr><td>Dell EMC Networking S5448F-ON</td><td>Network Switch</td><td>10.6.0.1.35</td></tr>
 </table>
 <br>
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
+
 ### GPUs
 {{< rawhtml >}}
 <table>
@@ -136,7 +140,7 @@ Description: >
 <tr><td>L40S</td><td>NVIDIA</td><td>NVIDIA Ampere L40S, PCIe, 350W, 48GB Passive, Double Wide, Full Height, Full Length, GPU with cable</td><td>7WK28</td><td>95.02.66.00.02</td><td>553.62</td><td>Yes</td><td>AX-760</td><td>Azure Stack HCI-22H2<br>Azure Stack HCI-23H2</td></tr>
 </table>
 
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
 {{% alert title="NOTE" color="primary" %}}
 Dell update packages are not available for GPU cards, please download the latest driver version from NVIDIA driver download page.
 {{% /alert %}}
@@ -149,7 +153,8 @@ Dell update packages are not available for GPU cards, please download the latest
 <tr><td>HBA355i</td><td>K6MCJ</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=Y99R5">Y99R5</a></td><td>24.15.14.00</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=M2P63">M2P63</a></td><td>2.61.48.00</td><td>AX-760</td><td>Windows Server 2022 Datacenter<br><br>Windows Server 2025 Datacenter<br><br>Azure Stack HCI-22H2<br><br>Azure Stack HCI-23H2</td></tr>
 </table>
 <br>
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
+
 
 ### SATA M.2 SSD Boot Only
 {{< rawhtml >}}
@@ -160,7 +165,8 @@ Dell update packages are not available for GPU cards, please download the latest
 <tr><td>NVMe</td><td>PCIe</td><td>M.2</td><td>Read Intensive</td><td>Micron</td><td>7400</td><td>MTFDKBG960TDZ</td><td>0V8F7</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=N71F4">N71F4</a></td><td>1.6.0</td><td>960GB</td><td>Boot</td></tr>
 </table>
 <br>
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
+
 ### SAS 3.5" HDD Capacity Only
 {{< rawhtml >}}
 <table>
@@ -191,7 +197,8 @@ Dell update packages are not available for GPU cards, please download the latest
 <tr><td>HDD</td><td>SAS</td><td>3.5</td><td>NA</td><td>WD</td><td>London DP</td><td>WUH722420AL5200</td><td>MTTCF</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=FN2N1">FN2N1</a></td><td>YS01</td><td>20 TB</td><td>Capacity</td></tr>
 </table>
 <br>
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
+
 ### SAS 2.5" SSD Cache or Capacity
 {{< rawhtml >}}
 <table>
@@ -204,7 +211,8 @@ Dell update packages are not available for GPU cards, please download the latest
 <tr><td>SSD</td><td>SAS</td><td>2.5</td><td>Mixed Use</td><td>Kioxia</td><td>PM7</td><td>KPM7XVUG800G</td><td>X96H8</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=T21WT">T21WT</a></td><td>C10E</td><td>800 GB</td><td>Cache,Capacity</td></tr>
 </table>
 <br>
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
+
 ### SAS 2.5" SSD Capacity Only
 {{< rawhtml >}}
 <table>
@@ -218,7 +226,8 @@ Dell update packages are not available for GPU cards, please download the latest
 <tr><td>SSD</td><td>SAS</td><td>2.5</td><td>Read Intensive</td><td>Kioxia</td><td>PM7</td><td>KPM7XRUG7T68</td><td>7N1WT</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=T21WT">T21WT</a></td><td>C10E</td><td>7.68 TB</td><td>Capacity</td></tr>
 </table>
 <br>
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
+
 ### NVMe 2.5" Cache or Capacity
 {{< rawhtml >}}
 <table>
@@ -245,7 +254,8 @@ Dell update packages are not available for GPU cards, please download the latest
 <tr><td>NVMe</td><td>PCIe</td><td>2.5</td><td>Mixed Use</td><td>Samsung</td><td>PM1745</td><td>MZWLO6T4HBLA-00AD3</td><td>64K9C</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=V7V0K">V7V0K</a></td><td>1.0.0</td><td>6.4 TB</td><td>Cache, Capacity</td></tr>
 </table>
 <br>
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
+
 ### NVMe 2.5" Capacity Only
 {{< rawhtml >}}
 <table>
@@ -295,7 +305,8 @@ Dell update packages are not available for GPU cards, please download the latest
 <tr><td>NVMe</td><td>PCIe</td><td>2.5</td><td>Read Intensive</td><td>Kioxia</td><td>CD8</td><td>KCD8XRUG7T68</td><td>MXD8J</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=HV8P1">HV8P1</a></td><td>2.0.1</td><td>7.68TB</td><td>Capacity</td></tr>
 </table>
 <br>
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
+
 {{< rawhtml >}}
 </div>
 
