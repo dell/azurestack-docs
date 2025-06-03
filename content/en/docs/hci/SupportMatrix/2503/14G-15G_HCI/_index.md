@@ -81,6 +81,7 @@ Please see the following knowledge base article for procedure details and known 
 </table>
 <br>
 {{< /rawhtml >}}
+
 ### Base Components
 {{< rawhtml >}}
 <table>
@@ -119,6 +120,7 @@ Please see the following knowledge base article for procedure details and known 
 </table>
 <br>
 {{< /rawhtml >}}
+
 ### Network Adapters
 {{< rawhtml >}}
 <table>
@@ -197,6 +199,7 @@ Please see the following knowledge base article for procedure details and known 
 </table>
 <br>
 {{< /rawhtml >}}
+
 ### Network Switches
 {{< rawhtml >}}
 <table>
@@ -211,7 +214,8 @@ Please see the following knowledge base article for procedure details and known 
 <tr><td>Dell EMC Networking S5448F-ON</td><td>Network Switch</td><td>10.6.0.1.35</td></tr>
 </table>
 <br>
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
+
 ### GPUs
 {{< rawhtml >}}
 <table>
@@ -232,7 +236,7 @@ Please see the following knowledge base article for procedure details and known 
 <tr><td>T4</td><td>NVIDIA</td><td>NVIDIA Tesla T4 16GB, PCIe, 70W, Passive, Single Wide, Low Profile GPU</td><td>7PH29</td><td>90.04.96.00.01</td><td>528.89 WHQL</td><td>No</td><td>AX-750</td><td>Azure Stack HCI-22H2<br>Azure Stack HCI-23H2</td></tr>
 </table>
 
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
 {{% alert title="NOTE" color="primary" %}}
 Dell update packages are not available for GPU cards, please download the latest driver version from NVIDIA driver download page.
 {{% /alert %}}
@@ -253,7 +257,8 @@ Dell update packages are not available for GPU cards, please download the latest
 <tr><td>HBA355i</td><td>K6MCJ</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=Y99R5">Y99R5</a></td><td>24.15.14.00</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=4MJP3">4MJP3</a></td><td>2.61.69.00</td><td>AX-7525<br><br>AX-650<br><br>AX-750</td><td>Windows Server 2025 Datacenter</td></tr>
 </table>
 <br>
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
+
 
 ### SATA M.2 SSD Boot Only
 {{< rawhtml >}}
@@ -270,7 +275,8 @@ Dell update packages are not available for GPU cards, please download the latest
 <tr><td>SSD</td><td>SATA</td><td>M.2</td><td>Read Intensive</td><td>Micron</td><td>5400</td><td>MTFDDAV240TGC-1BC1ZABDA</td><td>T4MJ3</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=RJ0WY">RJ0WY</a></td><td>K003</td><td>240 GB</td><td>Boot</td></tr>
 </table>
 <br>
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
+
 ### SAS 2.5" HDD Capacity Only
 {{< rawhtml >}}
 <table>
@@ -283,7 +289,8 @@ Dell update packages are not available for GPU cards, please download the latest
 <tr><td>HDD</td><td>SAS</td><td>2.5</td><td>NA</td><td>Seagate</td><td>Skybolt ServoBP</td><td>BL2400MM0159</td><td>1D0F5</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=CF4VF">CF4VF</a></td><td>SBS6</td><td>2.4TB</td><td>Capacity</td></tr>
 </table>
 <br>
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
+
 ### SATA 2.5" HDD Capacity Only
 {{< rawhtml >}}
 <table>
@@ -292,7 +299,8 @@ Dell update packages are not available for GPU cards, please download the latest
 <tr><td>HDD</td><td>SATA</td><td>2.5</td><td>NA</td><td>Seagate</td><td>Avenger</td><td>ST2000NX0423</td><td>VR92X</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=GMW4P">GMW4P</a></td><td>NB33</td><td>2 TB</td><td>Capacity</td></tr>
 </table>
 <br>
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
+
 ### SATA 3.5" HDD Capacity Only
 {{< rawhtml >}}
 <table>
@@ -325,7 +333,8 @@ Dell update packages are not available for GPU cards, please download the latest
 <tr><td>HDD</td><td>SATA</td><td>3.5</td><td>NA</td><td>Seagate</td><td>Cimarron BP</td><td>ST8000NM023B-2TJ133</td><td>J7W80</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=P183W">P183W</a></td><td>LA0C</td><td>8 TB</td><td>Capacity</td></tr>
 </table>
 <br>
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
+
 ### SAS 3.5" HDD Capacity Only
 {{< rawhtml >}}
 <table>
@@ -366,7 +375,8 @@ Dell update packages are not available for GPU cards, please download the latest
 <tr><td>HDD</td><td>SAS</td><td>3.5</td><td>NA</td><td>Toshiba&#160;</td><td>MG10SD</td><td>MG10SDA800EY</td><td>VJDMM</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=99TKP">99TKP</a></td><td>EP02</td><td>8 TB</td><td>Capacity</td></tr>
 </table>
 <br>
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
+
 ### SATA 2.5" SSD Cache or Capacity
 {{< rawhtml >}}
 <table>
@@ -401,7 +411,8 @@ Dell update packages are not available for GPU cards, please download the latest
 <tr><td>SSD</td><td>SATA</td><td>2.5</td><td>Mixed Use</td><td>Samsung</td><td>PM897</td><td>MZ7L31T9HBNAAD3</td><td>RRR7M</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=Y4WVW">Y4WVW</a></td><td>HH62</td><td>1.92 TB</td><td>Cache,Capacity</td></tr>
 </table>
 <br>
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
+
 ### SATA 2.5" SSD Capacity Only
 {{< rawhtml >}}
 <table>
@@ -442,7 +453,8 @@ Dell update packages are not available for GPU cards, please download the latest
 <tr><td>SSD</td><td>SATA</td><td>2.5</td><td>Mixed Use</td><td>Hynix</td><td>SE5031</td><td>HFS1T9G32FEH-BA1</td><td>GKTF1</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=2CY65">2CY65</a></td><td>DD02</td><td>1.92 TB</td><td>Capacity</td></tr>
 </table>
 <br>
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
+
 ### SAS 2.5" SSD Cache or Capacity
 {{< rawhtml >}}
 <table>
@@ -488,7 +500,8 @@ Dell update packages are not available for GPU cards, please download the latest
 <tr><td>SSD</td><td>SAS</td><td>2.5</td><td>Mixed Use</td><td>WD</td><td>Bear Cove Plus</td><td>WUSTR6416ASS200</td><td>8W6HC</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=7HYHH">7HYHH</a></td><td>K968</td><td>1.6 TB</td><td>Cache,Capacity</td></tr>
 </table>
 <br>
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
+
 ### SAS 2.5" SSD Capacity Only
 {{< rawhtml >}}
 <table>
@@ -534,7 +547,8 @@ Dell update packages are not available for GPU cards, please download the latest
 <tr><td>SSD</td><td>SAS</td><td>2.5</td><td>Read Intensive</td><td>Kioxia</td><td>PM7</td><td>KPM7XRUG7T68</td><td>7N1WT</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=T21WT">T21WT</a></td><td>C10E</td><td>7.68 TB</td><td>Capacity</td></tr>
 </table>
 <br>
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
+
 ### Value SAS 2.5" SSD
 {{< rawhtml >}}
 <table>
@@ -567,7 +581,8 @@ Dell update packages are not available for GPU cards, please download the latest
 <tr><td>SSD</td><td>vSAS</td><td>2.5</td><td>Read Intensive</td><td>Seagate</td><td>Cooper</td><td>XS7680SE70145</td><td>1J46N</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=RRWVT">RRWVT</a></td><td>CPE9</td><td>7.68 TB</td><td>Capacity</td></tr>
 </table>
 <br>
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
+
 ### NVMe 2.5" Cache or Capacity
 {{< rawhtml >}}
 <table>
@@ -621,7 +636,8 @@ PM1725A, Dell Express Flash NVMe 6.4TB 2.5&quot; SFF</td><td>MZWLL6T4HMLS-000D3<
 <tr><td>NVMe</td><td>PCIe</td><td>2.5</td><td>Mixed Use</td><td>Samsung</td><td>PM1745</td><td>MZWLO6T4HBLA-00AD3</td><td>64K9C</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=V7V0K">V7V0K</a></td><td>1.0.0</td><td>6.4 TB</td><td>Cache, Capacity</td></tr>
 </table>
 <br>
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
+
 ### NVMe 2.5" Capacity Only
 {{< rawhtml >}}
 <table>
@@ -684,7 +700,8 @@ PM1725A, Dell Express Flash NVMe 6.4TB 2.5&quot; SFF</td><td>MZWLL6T4HMLS-000D3<
 <tr><td>NVMe</td><td>PCIe</td><td>2.5</td><td>Read Intensive</td><td>Samsung</td><td>PM1743</td><td>MZWLO7T6HBLA-00AD3</td><td>DNPR4</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=V7V0K">V7V0K</a></td><td>1.0.0</td><td>7.68 TB</td><td>Capacity</td></tr>
 </table>
 <br>
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
+
 ### NVMe Add-in Cards
 {{< rawhtml >}}
 <table>
@@ -700,7 +717,8 @@ PM1725A, Dell Express Flash NVMe 6.4TB 2.5&quot; SFF</td><td>MZWLL6T4HMLS-000D3<
 <tr><td>NVMe</td><td>PCIe</td><td>AIC</td><td>Mixed Use</td><td>Samsung</td><td>PM1735 SP 3WPD, SSD, NVMe, HHHL, 512e, ISE </td><td>MZPLJ6T4HALA-00AD3</td><td>91FXC</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=5CM3G">5CM3G</a></td><td>2.5.0</td><td>6.4 TB</td><td>Cache, Capacity</td></tr>
 </table>
 <br>
-    {{< /rawhtml >}}
+{{< /rawhtml >}}
+
 {{< rawhtml >}}
 </div>
 
