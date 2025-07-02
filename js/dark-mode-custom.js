@@ -33,6 +33,16 @@
 
         document.getElementById("prism-night-owl").disabled = (theme === 'light' ? true : false)
         $('link[href*="/css/prism.css"]')[0].sheet.disabled = (theme === 'light' ? false : true)
+
+        // Notify cookie consent manager about theme change
+        if (window.cookieConsentManager && window.cookieConsentManager.updateThemeClasses) {
+            setTimeout(() => {
+                window.cookieConsentManager.updateThemeClasses();
+            }, 50);
+        }
+
+        // Dispatch custom event for theme change
+        window.dispatchEvent(new CustomEvent('themeChanged', { detail: { theme: theme } }));
     }
 
     setTheme(getPreferredTheme())
