@@ -1,0 +1,480 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="canonical" type="text/html" href="https://dell.github.io/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/">
+<link rel="alternate" type="application/rss&#43;xml" href="https://dell.github.io/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/index.xml">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/azurestack-docs/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/azurestack-docs/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/azurestack-docs/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/azurestack-docs/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/azurestack-docs/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/azurestack-docs/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/azurestack-docs/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/azurestack-docs/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/azurestack-docs/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/azurestack-docs/favicons/android-192x192.png" sizes="192x192">
+
+<title>Storage Devices | Solutions for Microsoft Azure</title>
+<meta name="description" content="Storage Devices Resources Interfaces Storage Protocol Storage Configurations OS Disks Consumer-Grade SSDs Exploring Stack with PowerShell Get-PhysicalDisk Storage Reliability Counter Performance results Resources Microsoft Documentation
+https://learn.microsoft.com/en-us/azure-stack/hci/concepts/choose-drives https://learn.microsoft.com/en-us/azure-stack/hci/concepts/drive-symmetry-considerations NVMe vs SATA
+https://sata-io.org/sites/default/files/documents/NVMe%20and%20AHCI%20as%20SATA%20Express%20Interface%20Options%20-%20Whitepaper_.pdf http://www.nvmexpress.org/wp-content/uploads/2013/04/IDF-2012-NVM-Express-and-the-PCI-Express-SSD-Revolution.pdf https://nvmexpress.org/wp-content/uploads/NVMe-101-1-Part-2-Hardware-Designs_Final.pdf https://nvmexpress.org/wp-content/uploads/NVMe_Infrastructure_final1.pdf https://www.storagereview.com/review/dell-emc-poweredge-r750-hands-on https://dl.dell.com/manuals/common/dellemc-nvme-io-topologies-poweredge.pdf https://www.servethehome.com/dell-emc-poweredge-r7525-review-flagship-dell-dual-socket-server-amd-epyc/ Interfaces While SATA is still well performing for most of the customers (see performance results), NVMe offers benefit of higher capacity and also more effective protocol (AHCI vs NVMe), that was developed specifically for SSDs (opposite to AHCI, that was developed for spinning media). SATA/SAS is however not scaling well with the larger disks.">
+<meta property="og:url" content="https://dell.github.io/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/">
+  <meta property="og:site_name" content="Solutions for Microsoft Azure">
+  <meta property="og:title" content="Storage Devices">
+  <meta property="og:description" content="Storage Devices Resources Interfaces Storage Protocol Storage Configurations OS Disks Consumer-Grade SSDs Exploring Stack with PowerShell Get-PhysicalDisk Storage Reliability Counter Performance results Resources Microsoft Documentation
+https://learn.microsoft.com/en-us/azure-stack/hci/concepts/choose-drives https://learn.microsoft.com/en-us/azure-stack/hci/concepts/drive-symmetry-considerations NVMe vs SATA
+https://sata-io.org/sites/default/files/documents/NVMe%20and%20AHCI%20as%20SATA%20Express%20Interface%20Options%20-%20Whitepaper_.pdf http://www.nvmexpress.org/wp-content/uploads/2013/04/IDF-2012-NVM-Express-and-the-PCI-Express-SSD-Revolution.pdf https://nvmexpress.org/wp-content/uploads/NVMe-101-1-Part-2-Hardware-Designs_Final.pdf https://nvmexpress.org/wp-content/uploads/NVMe_Infrastructure_final1.pdf https://www.storagereview.com/review/dell-emc-poweredge-r750-hands-on https://dl.dell.com/manuals/common/dellemc-nvme-io-topologies-poweredge.pdf https://www.servethehome.com/dell-emc-poweredge-r7525-review-flagship-dell-dual-socket-server-amd-epyc/ Interfaces While SATA is still well performing for most of the customers (see performance results), NVMe offers benefit of higher capacity and also more effective protocol (AHCI vs NVMe), that was developed specifically for SSDs (opposite to AHCI, that was developed for spinning media). SATA/SAS is however not scaling well with the larger disks.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Storage Devices">
+  <meta itemprop="description" content="Storage Devices Resources Interfaces Storage Protocol Storage Configurations OS Disks Consumer-Grade SSDs Exploring Stack with PowerShell Get-PhysicalDisk Storage Reliability Counter Performance results Resources Microsoft Documentation
+https://learn.microsoft.com/en-us/azure-stack/hci/concepts/choose-drives https://learn.microsoft.com/en-us/azure-stack/hci/concepts/drive-symmetry-considerations NVMe vs SATA
+https://sata-io.org/sites/default/files/documents/NVMe%20and%20AHCI%20as%20SATA%20Express%20Interface%20Options%20-%20Whitepaper_.pdf http://www.nvmexpress.org/wp-content/uploads/2013/04/IDF-2012-NVM-Express-and-the-PCI-Express-SSD-Revolution.pdf https://nvmexpress.org/wp-content/uploads/NVMe-101-1-Part-2-Hardware-Designs_Final.pdf https://nvmexpress.org/wp-content/uploads/NVMe_Infrastructure_final1.pdf https://www.storagereview.com/review/dell-emc-poweredge-r750-hands-on https://dl.dell.com/manuals/common/dellemc-nvme-io-topologies-poweredge.pdf https://www.servethehome.com/dell-emc-poweredge-r7525-review-flagship-dell-dual-socket-server-amd-epyc/ Interfaces While SATA is still well performing for most of the customers (see performance results), NVMe offers benefit of higher capacity and also more effective protocol (AHCI vs NVMe), that was developed specifically for SSDs (opposite to AHCI, that was developed for spinning media). SATA/SAS is however not scaling well with the larger disks.">
+  <meta itemprop="dateModified" content="2024-09-12T17:42:32+01:00">
+  <meta itemprop="wordCount" content="794">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Storage Devices">
+  <meta name="twitter:description" content="Storage Devices Resources Interfaces Storage Protocol Storage Configurations OS Disks Consumer-Grade SSDs Exploring Stack with PowerShell Get-PhysicalDisk Storage Reliability Counter Performance results Resources Microsoft Documentation
+https://learn.microsoft.com/en-us/azure-stack/hci/concepts/choose-drives https://learn.microsoft.com/en-us/azure-stack/hci/concepts/drive-symmetry-considerations NVMe vs SATA
+https://sata-io.org/sites/default/files/documents/NVMe%20and%20AHCI%20as%20SATA%20Express%20Interface%20Options%20-%20Whitepaper_.pdf http://www.nvmexpress.org/wp-content/uploads/2013/04/IDF-2012-NVM-Express-and-the-PCI-Express-SSD-Revolution.pdf https://nvmexpress.org/wp-content/uploads/NVMe-101-1-Part-2-Hardware-Designs_Final.pdf https://nvmexpress.org/wp-content/uploads/NVMe_Infrastructure_final1.pdf https://www.storagereview.com/review/dell-emc-poweredge-r750-hands-on https://dl.dell.com/manuals/common/dellemc-nvme-io-topologies-poweredge.pdf https://www.servethehome.com/dell-emc-poweredge-r7525-review-flagship-dell-dual-socket-server-amd-epyc/ Interfaces While SATA is still well performing for most of the customers (see performance results), NVMe offers benefit of higher capacity and also more effective protocol (AHCI vs NVMe), that was developed specifically for SSDs (opposite to AHCI, that was developed for spinning media). SATA/SAS is however not scaling well with the larger disks.">
+
+
+
+<link rel="preload" href="https://dell.github.io/azurestack-docs/scss/main.min.3bbbd1da83a1df4050f3781674d04914e5e948db064961f6f3ef3cb2f9735e30.css" as="style">
+<link href="https://dell.github.io/azurestack-docs/scss/main.min.3bbbd1da83a1df4050f3781674d04914e5e948db064961f6f3ef3cb2f9735e30.css" rel="stylesheet" integrity="">
+
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+<script defer
+  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
+  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/azurestack-docs/css/prism.css"/>
+<link disabled id="prism-night-owl" rel="stylesheet" href='/azurestack-docs/css/prism-nightowl.css'>
+<link id="home-page-override" rel="stylesheet" href='/azurestack-docs/css/homepage.css'>
+<link rel="stylesheet" href='/azurestack-docs/css/cookie-consent.css'>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXKTSNG8VW"></script>
+      <script>
+        function getConsentAnalytics() {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; azs-cookie-consent=`);
+            var cookieAnalytics = false;
+            if (parts.length === 2) {
+                try {
+                    cookieAnalytics = (JSON.parse(decodeURIComponent(parts.pop().split(';').shift()))).analytics;
+                } catch (e) {
+                    cookieAnalytics = false;
+                }
+            }
+            return cookieAnalytics;
+        }
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack && getConsentAnalytics()) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-PXKTSNG8VW');
+        }
+      </script>
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll" data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row">
+  <a class="navbar-brand" href="/azurestack-docs/"><span class="navbar-brand__logo navbar-logo"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1017 132"><defs><style>.cls-1{fill:#fff}</style></defs><title>DellTech_Logo_Prm_Wht_rgb</title><path class="cls-1" d="M1015 84.89c0-12.23-6.8-17.66-20.39-20.38s-21.73-4.08-21.73-13.58c0-6.8 5.44-10.87 15-10.87 12.22.0 16.3 5.43 16.3 12.22l1.36 1.36h5.43l1.37-1.36c0-13.58-10.88-19-24.46-19-15 0-23.1 8.15-23.1 17.67.0 10.86 8.15 16.3 21.73 19s20.38 4.08 20.38 15c0 6.79-4.07 12.23-17.66 12.23-12.22.0-17.66-6.8-17.66-15l-1.35-1.36h-5.44l-1.35 1.36c0 12.23 9.5 21.74 25.8 21.74 17.66.0 25.82-8.15 25.82-19M956.58 71.31l1.36-1.37V65.87c0-19-10.87-32.61-29.89-32.61s-29.89 13.59-29.89 32.61v2.72c0 19 9.51 35.32 31.25 35.32 19 0 25.81-12.23 27.17-20.38l-1.36-1.36h-5.43l-1.36 1.36c-2.72 8.15-8.16 13.59-19 13.59-17.66.0-23.1-16.31-23.1-24.46l1.36-1.35zm-8.15-6.8H907.67l-1.36-1.36c0-9.51 5.44-23.09 21.74-23.09s21.74 13.58 21.74 23.09zm-59.78 36.68V36l-1.36-1.35h-5.43L880.5 36v65.22l1.36 1.36h5.43zm0-78.8V14.24l-1.36-1.36h-5.43l-1.36 1.36v8.15l1.36 1.36h5.43zM837 97.12c-13.59.0-21.74-9.52-21.74-28.53S823.44 40.06 837 40.06s21.73 9.5 21.73 28.53S850.61 97.12 837 97.12M858.76 93c0 17.66-4.07 31.25-20.38 31.25-12.22.0-16.3-5.44-17.66-12.23l-1.35-1.36h-5.44l-1.36 1.36c1.36 10.87 9.51 19 25.81 19 17.67.0 28.53-10.87 28.53-38V36l-1.35-1.35h-4.08L860.12 36l-1.36 8.16H857.4c-2.71-5.43-9.5-10.87-21.74-10.87-19 0-28.53 15-28.53 35.33s9.52 35.32 28.53 35.32c12.24.0 19-5.43 21.74-10.87zm-88.3-53c13.58.0 23.09 10.87 23.09 28.53S784 97.12 770.46 97.12s-23.1-10.87-23.1-28.53 9.51-28.53 23.1-28.53m0 63.85c17.66.0 31.25-12.23 31.25-35.32s-13.59-35.33-31.25-35.33-31.25 12.23-31.25 35.33 13.59 35.32 31.25 35.32m-40.76-2.72V8.81l-1.36-1.36h-5.43l-1.36 1.36v92.38l1.36 1.36h5.43zM680.8 40.06c13.58.0 23.09 10.87 23.09 28.53s-9.51 28.53-23.09 28.53-23.1-10.87-23.1-28.53 9.51-28.53 23.1-28.53m0 63.85c17.66.0 31.25-12.23 31.25-35.32S698.46 33.26 680.8 33.26s-31.25 12.23-31.25 35.33 13.59 35.32 31.25 35.32m-39.4-2.72V60.43c0-17.66-9.51-27.17-24.45-27.17-9.52.0-17.67 4.08-21.74 10.87h-1.36L592.49 36l-1.36-1.35h-4.08L585.7 36v65.22l1.35 1.36h5.44l1.36-1.36V64.51c0-15 6.79-24.45 21.73-24.45 10.87.0 17.66 6.79 17.66 20.37v40.76l1.37 1.36H640zm-69.29.0V60.43c0-17.66-9.51-27.17-24.45-27.17-9.52.0-17.66 4.08-21.74 10.87h-1.36V8.81L523.2 7.45h-5.43l-1.36 1.36v92.38l1.36 1.36h5.43l1.36-1.36V64.51c0-15 6.8-24.45 21.74-24.45 10.87.0 17.66 6.79 17.66 20.37v40.76l1.36 1.36h5.44zM455.28 68.59c0-19 9.5-28.53 23.09-28.53s19 8.15 20.38 16.29l1.35 1.37h5.44l1.36-1.37c-1.36-13.58-12.23-23.09-28.53-23.09-17.66.0-31.24 10.87-31.24 35.33s13.58 35.32 31.24 35.32c16.3.0 27.17-9.51 28.53-23.1l-1.36-1.36H500.1l-1.35 1.36C497.39 89 492 97.12 478.37 97.12s-23.09-9.52-23.09-28.53m-14.95 2.72 1.36-1.37V65.87c0-19-10.87-32.61-29.9-32.61s-29.88 13.59-29.88 32.61v2.72c0 19 9.51 35.32 31.25 35.32 19 0 25.81-12.23 27.17-20.38L439 82.17h-5.43l-1.36 1.36c-2.72 8.15-8.15 13.59-19 13.59-17.66.0-23.1-16.31-23.1-24.46l1.36-1.35zm-8.15-6.8H391.42l-1.36-1.36c0-9.51 5.44-23.09 21.73-23.09s21.75 13.58 21.75 23.09zM395.57 12.88V8.81l-1.36-1.36H323.56L322.2 8.81v4.07l1.36 1.36h29.89l1.36 1.36v85.59l1.36 1.36h5.43l1.36-1.36V15.6l1.36-1.36h29.89z"/><path class="cls-1" d="M322.2 83.65v18.9H260.85V7.45h21.6v76.2zM38.55 102.55A47.57 47.57.0 0084.58 67l53.8 42 53.77-42v35.56H253.5V83.65H213.75V7.45h-21.6V43L140.58 83.3l-11.54-9L153.73 55l26.89-21-15.35-12-51.58 40.3-11.53-9L153.73 13 138.38 1 84.58 43a47.57 47.57.0 00-46-35.58H0v95.1zM21.6 83.65V26.35H38.55c14.33.0 26 12.83 26 28.65s-11.67 28.65-26 28.65z"/></svg></span><span class="navbar-brand__name">Solutions for Microsoft Azure</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="/azurestack-docs/docs/"><span>Dell Technologies Solutions for Microsoft Azure</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/dell/azurestack-docs" target="_blank" rel="noopener"><i class='fab fa-github fa-lg'></i><span>GitHub</span></a>
+      </li>
+      <li class="td-light-dark-menu nav-item dropdown">
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="check2" viewBox="0 0 16 16">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </symbol>
+  <symbol id="circle-half" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+  </symbol>
+  <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+  </symbol>
+  <symbol id="sun-fill" viewBox="0 0 16 16">
+    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+  </symbol>
+</svg>
+
+<button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center"
+        id="bd-theme"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        data-bs-display="static"
+        aria-label="Toggle theme (auto)">
+  <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg>
+</button>
+<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+      <svg class="bi me-2 opacity-50"><use href="#sun-fill"></use></svg>
+      Light
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+      <svg class="bi me-2 opacity-50"><use href="#moon-stars-fill"></use></svg>
+      Dark
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+      <svg class="bi me-2 opacity-50"><use href="#circle-half"></use></svg>
+      Auto
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+</ul>
+
+      </li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    class="td-search__input form-control"
+    placeholder="Search this site…"
+    aria-label="Search this site…"
+    autocomplete="off"
+    
+    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.a1986784ca812fc94a2ab9c9bab02fbf.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
+  </div>
+</div>
+</nav>
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+
+
+
+
+<div class="td-content">
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+This is the multi-page printable view of this section.
+<a href="#" onclick="print();return false;">Click here to print</a>.
+</p><p>
+<a href="/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/">Return to the regular view of this page</a>.
+</p>
+</div>
+
+
+
+<h1 class="title">Storage Devices</h1>
+
+
+
+
+
+  
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="#interfaces">Interfaces</a></li>
+    <li><a href="#storage-protocol">Storage Protocol</a></li>
+    <li><a href="#storage-configurations">Storage Configurations</a></li>
+    <li><a href="#os-disks">OS Disks</a></li>
+    <li><a href="#consumer-grade-ssds">Consumer-Grade SSDs</a></li>
+    <li><a href="#exploring-stack-with-powershell">Exploring Stack with PowerShell</a>
+      <ul>
+        <li><a href="#get-physicaldisk">Get-PhysicalDisk</a></li>
+        <li><a href="#storage-reliability-counter">Storage Reliability Counter</a></li>
+      </ul>
+    </li>
+    <li><a href="#performance-results">Performance results</a></li>
+  </ul>
+</nav>
+  
+
+
+<div class="content">
+      <!-- TOC -->
+<ul>
+<li><a href="/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/#storage-devices">Storage Devices</a>
+<ul>
+<li><a href="/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/#resources">Resources</a></li>
+<li><a href="/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/#interfaces">Interfaces</a></li>
+<li><a href="/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/#storage-protocol">Storage Protocol</a></li>
+<li><a href="/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/#storage-configurations">Storage Configurations</a></li>
+<li><a href="/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/#os-disks">OS Disks</a></li>
+<li><a href="/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/#consumer-grade-ssds">Consumer-Grade SSDs</a></li>
+<li><a href="/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/#exploring-stack-with-powershell">Exploring Stack with PowerShell</a>
+<ul>
+<li><a href="/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/#get-physicaldisk">Get-PhysicalDisk</a></li>
+<li><a href="/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/#storage-reliability-counter">Storage Reliability Counter</a></li>
+</ul>
+</li>
+<li><a href="/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/#performance-results">Performance results</a></li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<p><img src="
+
+https://dell.github.io/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/Stack-PhysicalDisks.png
+" alt=""></p>
+<h2 id="resources">Resources</h2>
+<p>Microsoft Documentation</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure-stack/hci/concepts/choose-drives">https://learn.microsoft.com/en-us/azure-stack/hci/concepts/choose-drives</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure-stack/hci/concepts/drive-symmetry-considerations">https://learn.microsoft.com/en-us/azure-stack/hci/concepts/drive-symmetry-considerations</a></li>
+</ul>
+<p>NVMe vs SATA</p>
+<ul>
+<li><a href="https://sata-io.org/sites/default/files/documents/NVMe%20and%20AHCI%20as%20SATA%20Express%20Interface%20Options%20-%20Whitepaper_.pdf">https://sata-io.org/sites/default/files/documents/NVMe%20and%20AHCI%20as%20SATA%20Express%20Interface%20Options%20-%20Whitepaper_.pdf</a></li>
+<li><a href="http://www.nvmexpress.org/wp-content/uploads/2013/04/IDF-2012-NVM-Express-and-the-PCI-Express-SSD-Revolution.pdf">http://www.nvmexpress.org/wp-content/uploads/2013/04/IDF-2012-NVM-Express-and-the-PCI-Express-SSD-Revolution.pdf</a></li>
+<li><a href="https://nvmexpress.org/wp-content/uploads/NVMe-101-1-Part-2-Hardware-Designs_Final.pdf">https://nvmexpress.org/wp-content/uploads/NVMe-101-1-Part-2-Hardware-Designs_Final.pdf</a></li>
+<li><a href="https://nvmexpress.org/wp-content/uploads/NVMe_Infrastructure_final1.pdf">https://nvmexpress.org/wp-content/uploads/NVMe_Infrastructure_final1.pdf</a></li>
+<li><a href="https://www.storagereview.com/review/dell-emc-poweredge-r750-hands-on">https://www.storagereview.com/review/dell-emc-poweredge-r750-hands-on</a></li>
+<li><a href="https://dl.dell.com/manuals/common/dellemc-nvme-io-topologies-poweredge.pdf">https://dl.dell.com/manuals/common/dellemc-nvme-io-topologies-poweredge.pdf</a></li>
+<li><a href="https://www.servethehome.com/dell-emc-poweredge-r7525-review-flagship-dell-dual-socket-server-amd-epyc/">https://www.servethehome.com/dell-emc-poweredge-r7525-review-flagship-dell-dual-socket-server-amd-epyc/</a></li>
+</ul>
+<h2 id="interfaces">Interfaces</h2>
+<p>While SATA is still well performing for most of the customers (see performance results), NVMe offers benefit of higher capacity and also more effective protocol (AHCI vs NVMe), that was developed specifically for SSDs (opposite to AHCI, that was developed for spinning media). SATA/SAS is however not scaling well with the larger disks.</p>
+<p><img src="
+
+https://dell.github.io/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/ScalablePerformance.png
+" alt=""></p>
+<ul>
+<li>Source: <a href="https://nvmexpress.org/wp-content/uploads/NVMe-101-1-Part-2-Hardware-Designs_Final.pdf">https://nvmexpress.org/wp-content/uploads/NVMe-101-1-Part-2-Hardware-Designs_Final.pdf</a></li>
+</ul>
+<p>There is also another aspect of performance limitation of SATA/SAS devices - the controller. All SATA/SAS devices are connected to one SAS controller (non-raid) that has limited speed (only one PCI-e connection).</p>
+<p>Drive Connector is universal (U2, also known as SFF-8639)</p>
+<p><img src="
+
+https://dell.github.io/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/DriveConnector.png
+" alt=""></p>
+<ul>
+<li>Source: <a href="https://nvmexpress.org/wp-content/uploads/NVMe_Infrastructure_final1.pdf">https://nvmexpress.org/wp-content/uploads/NVMe_Infrastructure_final1.pdf</a></li>
+</ul>
+<p>NVMe drives are mapped directly to CPU</p>
+<p><img src="
+
+https://dell.github.io/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/NVMeDriveMapping.png
+" alt=""></p>
+<ul>
+<li>Source: <a href="https://dl.dell.com/manuals/common/dellemc-nvme-io-topologies-poweredge.pdf">https://dl.dell.com/manuals/common/dellemc-nvme-io-topologies-poweredge.pdf</a></li>
+</ul>
+<p>NVMe backplane connection - Example AX7525 - 16 PCIe Gen4 lanes in each connection (8 are used), 12 connections in backplane, in this case no PCIe switches.</p>
+<p><img src="
+
+https://dell.github.io/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/AX7525Backplane.png
+" alt=""></p>
+<ul>
+<li>Source: <a href="https://www.servethehome.com/dell-emc-poweredge-r7525-review-flagship-dell-dual-socket-server-amd-epyc/dell-emc-poweredge-r7525-internal-view-24x-nvme-backplane-and-fans/">https://www.servethehome.com/dell-emc-poweredge-r7525-review-flagship-dell-dual-socket-server-amd-epyc/dell-emc-poweredge-r7525-internal-view-24x-nvme-backplane-and-fans/</a></li>
+</ul>
+<h2 id="storage-protocol">Storage Protocol</h2>
+<p>SSDs were originally created to replace conventional rotating media. As such they were designed to connect to the same bus types as HDDs, both SATA and SAS (Serial ATA and Serial Attached SCSI).</p>
+<p>However, this imposed speed limitations on the SSDs.  Now a new type of SSD exists that attaches to PCI-e. Known as NVMe SSDs or simply NVMe.</p>
+<p>For 1M IOPS, NVMe has more than <a href="https://www.nvmexpress.org/wp-content/uploads/2013/04/IDF-2012-NVM-Express-and-the-PCI-Express-SSD-Revolution.pdf">50% less latency with less than 50% CPU Cycles used</a>. It is due to <a href="https://en.wikipedia.org/wiki/NVM_Express#Comparison_with_AHCI">improved protocol</a> (AHCI vs NVMe)</p>
+<h2 id="storage-configurations">Storage Configurations</h2>
+<p>(slowest to fastest)</p>
+<ul>
+<li>Hybrid (HDD+SSD)</li>
+<li>All Flash (All SSD)</li>
+<li>NVMe+HDD</li>
+<li>All-NVMe</li>
+</ul>
+<p>When combining multiple media types, faster media will be used as caching. While it is recommended to use 10% of the capacity for cache, it should be noted, that it is just important to not spill the cache with the production workload, as it will dramatically reduce performance. Therefore all production workload should fit into the Storage Bus Layer Cache (cache devices). The sweet spot (price vs performance) is combination of fast NVMe (mixed use or write intensive) with HDDs. For performance intensive workloads it&rsquo;s recommended to use all-flash solutions as caching introduces ~20% overhead + less predicable behavior (data can be already destaged&hellip;), therefore it is recommended to use All-Flash for SQL workloads.</p>
+<p>Performance drop when spilling cache devices:</p>
+<p><img src="
+
+https://dell.github.io/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/CachePerfDrop.png
+" alt=""></p>
+<ul>
+<li>Source: <a href="https://web.archive.org/web/20160817193242/http://itpeernetwork.intel.com/iops-performance-nvme-hdd-configuration-windows-server-2016-storage-spaces-direct/">https://web.archive.org/web/20160817193242/http://itpeernetwork.intel.com/iops-performance-nvme-hdd-configuration-windows-server-2016-storage-spaces-direct/</a></li>
+</ul>
+<h2 id="os-disks">OS Disks</h2>
+<p>In Dell Servers are BOSS (Boot Optimized Storage Solution) cards used. In essence it card wih 2x m2 2280 NVMe disks connected to PCI-e with configurable non-RAID/RAID 1</p>
+<p><img src="
+
+https://dell.github.io/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/AX750BOSS01.png
+" alt=""></p>
+<p><img src="
+
+https://dell.github.io/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/AX750BOSS02.png
+" alt=""></p>
+<h2 id="consumer-grade-ssds">Consumer-Grade SSDs</h2>
+<p>You should avoid any consumer grade SSDs as consumer grade SSDs might contain NAND with higher latency (therefore there can be performance drop after spilling FTL buffer) or because consumer grade SSDs are not power protected (PLP). You can learn more about why consumer-grade SSDs are not good idea in a <a href="https://techcommunity.microsoft.com/t5/storage-at-microsoft/don-t-do-it-consumer-grade-solid-state-drives-ssd-in-storage/ba-p/425914">blog post</a>. Consumer-grade SSDs do also have lower DWPD (Disk Written Per Day). You can learn about DWPD in <a href="https://blogs.technet.microsoft.com/filecab/2017/08/11/understanding-dwpd-tbw/">this blogpost</a></p>
+<h2 id="exploring-stack-with-powershell">Exploring Stack with PowerShell</h2>
+<h3 id="get-physicaldisk">Get-PhysicalDisk</h3>
+<pre><code class="language-powershell">$Server = &quot;axnode1&quot;
+Get-PhysicalDisk -CimSession $Server | Format-Table -Property FriendlyName, Manufacturer, Model, SerialNumber, MediaType, BusType, SpindleSpeed, LogicalSectorSize, PhysicalSectorSize
+</code></pre>
+<p><img src="
+
+https://dell.github.io/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/PowerShell01.png
+" alt=""></p>
+<p>From screenshot you can see, that AX640 BOSS card reports as SATA device with Unspecified Mediatype, while SAS disks are reported as SSDs, with SAS BusType. Let&rsquo;s deep dive into BusType/MediaType a little bit (see table below)</p>
+<p><img src="
+
+https://dell.github.io/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/BusType.png
+" alt=""></p>
+<p>Storage Spaces requires BusType SATA/SAS/NVMe or SCM. BusType RAID is unsupported.</p>
+<p>You can also see Logical Sector Size and Physical Sector size. This refers to Drive Type (4K native vs 512E vs 512).</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">&ldquo;LogicalSectorSize&rdquo; value</th>
+          <th style="text-align: center">&ldquo;PhysicalSectorSize&rdquo; value</th>
+          <th style="text-align: center">Drive type</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">4096</td>
+          <td style="text-align: center">4096</td>
+          <td style="text-align: center">4K native</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">512</td>
+          <td style="text-align: center">4096</td>
+          <td style="text-align: center">Advanced Format (also known as 512E)</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">512</td>
+          <td style="text-align: center">512</td>
+          <td style="text-align: center">512-byte native</td>
+      </tr>
+  </tbody>
+</table>
+<p>Reference</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-US/troubleshoot/windows-server/backup-and-storage/support-policy-4k-sector-hard-drives">https://learn.microsoft.com/en-US/troubleshoot/windows-server/backup-and-storage/support-policy-4k-sector-hard-drives</a></li>
+<li><a href="https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh147334%28v=ws.10%29?redirectedfrom=MSDN">https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh147334(v=ws.10)?redirectedfrom=MSDN</a></li>
+</ul>
+<h3 id="storage-reliability-counter">Storage Reliability Counter</h3>
+<p>Once disk is added to storage spaces, S.M.A.R.T. attributes can be filtered out. For reading disk status (such as wear level temperatures&hellip;) can be get-storagereliability counter used.</p>
+<pre><code class="language-powershell">$Server = &quot;axnode1&quot;
+Get-PhysicalDisk -CimSession $Server | Get-StorageReliabilityCounter -CimSession $Server | Format-Table -Property DeviceID, Wear, Temperature*, PowerOnHours, ManufactureDate, ReadLatencyMax, WriteLatencyMax, PSComputerName
+</code></pre>
+<p><img src="
+
+https://dell.github.io/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/PowerShell02.png
+" alt=""></p>
+<h2 id="performance-results">Performance results</h2>
+<p>From the results below you can see that SATA vs SAS vs NVMe is 590092 vs 738507 vs 1496373 4k 100% read IOPS. All measurements were done with VMFleet 2.0 <a href="https://github.com/DellGEOS/AzureStackHOLs/tree/main/lab-guides/02-TestPerformanceWithVMFleet">https://github.com/DellGEOS/AzureStackHOLs/tree/main/lab-guides/02-TestPerformanceWithVMFleet</a></p>
+<p>The difference between SAS and SATA is also 8 vs 4 disks in each node. The difference between SAS and NVMe is more than double.</p>
+<ul>
+<li><a href="
+
+https://dell.github.io/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/AX6515-All-Flash-8SATA-SSDs-32VMs-2Node.txt
+">AX6515 - 2nodes, 16 cores and 4xSATA SSDs each</a></li>
+<li><a href="
+
+https://dell.github.io/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/AX6515-All-Flash-8SATA-SSDs-32VMs-2Node-SC-Dedup.txt
+">AX6515 - 2nodes, 16 cores and 4xSATA SSDs each, secured core and deduplication enabled</a></li>
+<li><a href="
+
+https://dell.github.io/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/AX6515-All-Flash-8SATA-SSDs-32VMs-2Node-SC.txt
+">AX6515 - 2nodes, 16 cores and 4xSATA SSDs each, secured core enabled</a></li>
+<li><a href="
+
+https://dell.github.io/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/AX6515-All-Flash-8SATA-SSDs-32VMs-2Node-SC-BitLocker.txt
+">AX6515 - 2nodes, 16 cores and 4xSATA SSDs each, secured core &amp; BitLocker enabled</a></li>
+<li><a href="
+
+https://dell.github.io/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/AX6515-All-Flash-16SAS-SSDs-32VMs-2nodes-azshci.txt
+">AX6515 - 2nodes, 16 cores and 8xSAS SSDs each</a></li>
+<li><a href="
+
+https://dell.github.io/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/R640-All-NVMe-16NVMe-64VMs-2Node.txt
+">R640 - 2nodes, 32 cores and 8xNVMe SSDs each</a></li>
+</ul>
+
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/dell/azurestack-docs" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2025
+    <span class="td-footer__authors">The Dell Technologies</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://www.dell.com/learn/us/en/uscorp1/policies-privacy" target="_blank" rel="noopener">Privacy Policy</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src='/azurestack-docs/js/dark-mode-custom.js'></script>
+<script src="https://dell.github.io/azurestack-docs/js/main.min.403ff095218c662472dab60ed98ecbb19431682de5ac7c6159891241cd366af5.js" integrity="sha256-QD/wlSGMZiRy2rYO2Y7LsZQxaC3lrHxhWYkSQc02avU=" crossorigin="anonymous"></script>
+<script src='/azurestack-docs/js/prism.js'></script>
+<script src='/azurestack-docs/js/tabpane-persist.js'></script>
+<script>
+
+    var offlineSearch = document.querySelector('input[data-offline-search-index-json-src*="offline-search"]');
+    offlineSearch.setAttribute('data-offline-search-index-json-src', offlineSearch.getAttribute('data-offline-search-index-json-src').replace('azurestack-docs/azurestack-docs', 'azurestack-docs'));
+
+</script>
+
+
+<script src='/azurestack-docs/js/cookie-consent.js'></script>
+
+  </body>
+</html>
