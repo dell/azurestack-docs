@@ -68,12 +68,12 @@ Please see the following knowledge base article for procedure details and known 
 <tr><th>Model</th><th>Supported Operating System</th></tr>
 <tr><td>AX-4510c</td><td>Windows Server 2022 Datacenter<br>Windows Server 2025 Datacenter<br>Azure Stack HCI-23H2<br>Azure Stack HCI-24H2</td></tr>
 <tr><td>AX-4520c</td><td>Windows Server 2022 Datacenter<br>Windows Server 2025 Datacenter<br>Azure Stack HCI-23H2<br>Azure Stack HCI-24H2</td></tr>
-<tr><td>AX-640</td><td>Windows Server 2022 Datacenter<br>Azure Stack HCI-23H2 (Upgrade only)<br>Azure Stack HCI-24H2 (Upgrade only)</td></tr>
-<tr><td>AX-740xd</td><td>Windows Server 2022 Datacenter<br>Azure Stack HCI-23H2 (Upgrade only)<br>Azure Stack HCI-24H2 (Upgrade only)</td></tr>
-<tr><td>AX-6515</td><td>Windows Server 2022 Datacenter<br>Windows Server 2025 Datacenter<br>Azure Stack HCI-23H2<br>Azure Stack HCI-24H2 (Upgrade only)</td></tr>
-<tr><td>AX-7525</td><td>Windows Server 2022 Datacenter<br>Windows Server 2025 Datacenter<br>Azure Stack HCI-23H2<br>Azure Stack HCI-24H2 (Upgrade only)</td></tr>
-<tr><td>AX-650</td><td>Windows Server 2022 Datacenter<br>Windows Server 2025 Datacenter<br>Azure Stack HCI-23H2<br>Azure Stack HCI-24H2 (Upgrade only)</td></tr>
-<tr><td>AX-750</td><td>Windows Server 2022 Datacenter<br>Windows Server 2025 Datacenter<br>Azure Stack HCI-23H2<br>Azure Stack HCI-24H2 (Upgrade only)</td></tr>
+<tr><td>AX-640</td><td>Windows Server 2022 Datacenter<br>Azure Stack HCI-23H2 (Upgrade only)<br>Azure Stack HCI-24H2</td></tr>
+<tr><td>AX-740xd</td><td>Windows Server 2022 Datacenter<br>Azure Stack HCI-23H2 (Upgrade only)<br>Azure Stack HCI-24H2</td></tr>
+<tr><td>AX-6515</td><td>Windows Server 2022 Datacenter<br>Windows Server 2025 Datacenter<br>Azure Stack HCI-23H2<br>Azure Stack HCI-24H2</td></tr>
+<tr><td>AX-7525</td><td>Windows Server 2022 Datacenter<br>Windows Server 2025 Datacenter<br>Azure Stack HCI-23H2<br>Azure Stack HCI-24H2</td></tr>
+<tr><td>AX-650</td><td>Windows Server 2022 Datacenter<br>Windows Server 2025 Datacenter<br>Azure Stack HCI-23H2<br>Azure Stack HCI-24H2</td></tr>
+<tr><td>AX-750</td><td>Windows Server 2022 Datacenter<br>Windows Server 2025 Datacenter<br>Azure Stack HCI-23H2<br>Azure Stack HCI-24H2</td></tr>
 </table>
 <br>
 {{< /rawhtml >}}
