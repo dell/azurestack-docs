@@ -170,7 +170,7 @@ It delivers enterprise-grade performance and resiliency, including integrated de
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.6226a93eb43c3dc8cbfbbacedf212844.json"
+    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.8e19ee0e8726f37caa0504af67d89315.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -3751,7 +3751,7 @@ caption {
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-a8bb9ceab4a4bedb88366efde9fec974">1.4 - Patch and Update</h1>
+	<h1 id="pg-7ee5379056e3d4cc0442b9843e3af5e8">1.4 - Node Expansion</h1>
     
 	
 </div>
@@ -3776,7 +3776,1038 @@ caption {
 
 <div class="td-content" style="">
     
-	<h1 id="pg-c60b183e1bd9980c167b4c51e96fbd81">1.4.1 - Patch and Update for 16G</h1>
+	<h1 id="pg-7ed6e0bb755902551db9178675dcbba0">1.4.1 - Node Expansion for 16G</h1>
+    
+	
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<style>
+table {
+    border-width:1px; border-style:solid;
+    border-color:black;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    table-layout:fixed;
+    overflow-wrap: break-word;
+}
+th {
+    border-width:1px;
+    padding:7px;
+    border-style:solid;
+    border-color:#0076CE;
+    background-color:#0076CE;
+    color:#FFFFFF;
+    text-align:center;
+}
+td {
+    border-width:1px;
+    padding:7px;
+    border-style:solid;
+    border-color:#0076CE;
+    text-align:center;
+}
+caption {
+    padding-bottom: 10px;
+    color:  #0076CE;
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="content">
+
+
+<h2 id="introduction">Introduction</h2>
+<p>This document will guide users through how to add one or more scale unit nodes to their Dell Integrated System for Microsoft Azure Stack Hub that is fully installed and operational.</p>
+<p>For the official Microsoft documentation on node expansion, see <a href="https://learn.microsoft.com/en-us/azure-stack/operator/azure-stack-add-scale-node">Add scale unit nodes - Azure Stack Hub</a>.</p>
+<h2 id="solution-overview">Solution overview</h2>
+<p>The only way to increase the capacity of an Azure Stack Hub integrated system is to add more physical computers to the existing scale unit. The scale unit is a collection of physical computers that work together to provide compute, storage, and networking resources. Each physical computer in the scale unit is referred to as a scale unit node.</p>
+<p>In order to add a scale unit node, you will need to physically rack, stack, and cable the new node(s), configure Top-of-Rack (ToR) switches, ensure firmware and BIOS configuration match the existing nodes, and add the new node(s) to the Azure Stack Hub integrated system via the Azure Stack Hub administrator portal. This document will guide you through this process.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">NOTE</h4>
+
+    A single scale unit can support up to 16 nodes. You can add scale unit nodes to a scale unit until it reaches its maximum capacity.
+
+</div>
+
+<h3 id="audience">Audience</h3>
+<p>This node expansion guide is for Azure Stack Hub 16th-generation (16G) operators and the Dell Customer Service team who intend to add scale unit nodes to an existing Azure Stack Hub integrated system.</p>
+<h3 id="end-to-end-deployment-workflow">End-to-end deployment workflow</h3>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 352px">
+<img class="card-img-top" style="margin-left:;" src="/azurestack-docs/docs/hub/nodeexpansion/16g/Prerequisites_Overview_hu_34d405be1f4aadab.png" width="342" height="450" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:;">
+<p class="card-text">
+<small class="text-body-secondary">
+Node expansion workflow
+</small>
+</p>
+</figcaption>
+</figure>
+<br>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Ensure the following before you can add a node:</p>
+<ul>
+<li>Administrator access to the Azure Stack Hub integrated system.</li>
+<li>The rack and the power distribution unit (PDU) must be able to accommodate the new nodes.</li>
+<li>New scale unit (SU) nodes must use the same hardware configuration as the existing Azure Stack Hub scale unit nodes.</li>
+<li>The Azure Stack Hub integrated system must have the most current Microsoft and Dell Technologies patches and updates. If it does not, update it with the most recent patches and update versions before starting the node expansion process.</li>
+<li>The Azure Stack Hub integrated system must be healthy. Check the health state by logging in to the Azure Stack Hub administrator portal. Any active health alerts must be resolved before adding a scale unit node.</li>
+</ul>
+<h3 id="rack-stack-and-cable-physical-nodes">Rack, stack, and cable physical nodes</h3>
+<p>After the new scale unit node or nodes arrive at the customer site, on-site engineers must perform the manual process to rack, stack, and cable the new node(s).</p>
+<p>Refer to the following diagrams for Top-of-Rack (ToR) switches cabling guidance.</p>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 683px">
+<img class="card-img-top" style="margin-left:;" src="/azurestack-docs/docs/hub/nodeexpansion/16g/Prerequisites_RackStackCable_ToR1_Network_hu_7c6f25451eb1a4b3.png" width="673" height="650" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:;">
+<p class="card-text">
+<small class="text-body-secondary">
+Scale unit node to ToR-1 network cabling
+</small>
+</p>
+</figcaption>
+</figure>
+<br>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 683px">
+<img class="card-img-top" style="margin-left:;" src="/azurestack-docs/docs/hub/nodeexpansion/16g/Prerequisites_RackStackCable_ToR2_Network_hu_478128ac4e1a7180.png" width="673" height="650" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:;">
+<p class="card-text">
+<small class="text-body-secondary">
+Scale unit node to ToR-2 network cabling
+</small>
+</p>
+</figcaption>
+</figure>
+<br>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 639px">
+<img class="card-img-top" style="margin-left:;" src="/azurestack-docs/docs/hub/nodeexpansion/16g/Prerequisites_RackStackCable_ToR1_iDRAC_hu_779a267e45d936bc.png" width="629" height="650" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:;">
+<p class="card-text">
+<small class="text-body-secondary">
+Scale unit node to ToR-1 iDRAC cabling
+</small>
+</p>
+</figcaption>
+</figure>
+<br>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 640px">
+<img class="card-img-top" style="margin-left:;" src="/azurestack-docs/docs/hub/nodeexpansion/16g/Prerequisites_RackStackCable_ToR2_iDRAC_hu_12e201ac0ec56f17.png" width="630" height="650" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:;">
+<p class="card-text">
+<small class="text-body-secondary">
+Scale unit node to ToR-2 iDRAC cabling
+</small>
+</p>
+</figcaption>
+</figure>
+<br>
+<h4 id="check-component-readiness">Check Component Readiness</h4>
+<p>After the new scale unit node or nodes are racked and cabled, power on the new node or nodes and check the LED indicator lights to ensure that all power supply and network cables are connected. See steps below on checking power readiness and checking network fabric connectivity before proceeding with a scale unit node expansion.</p>
+<h4 id="check-power-readiness">Check Power Readiness</h4>
+<p>To check power readiness, perform the following steps:</p>
+<h5 id="steps">Steps</h5>
+<ol>
+<li>Use a separate power bus for each power distribution unit (PDU).</li>
+<li>Ensure that the PDUs are firmly connected to the applicable power sources.</li>
+<li>Ensure that the PDUs are powered on.</li>
+<li>All servers and switches are equipped with dual power supplies. Ensure that these power supplies are connected to separate PDUs to ensure power redundancy.</li>
+</ol>
+<h4 id="checking-network-fabric-connectivity">Checking network fabric connectivity</h4>
+<p>Ensure that the new and existing scale unit nodes are connected to the ToR switches.</p>
+<ol>
+<li>The odd numbered nodes iDRAC (OoB) port connects to the ToR-1 switch.</li>
+<li>The even numbered nodes iDRAC (OoB) port connects to the ToR-2 switch.</li>
+<li>The Slot 6 Port 1 port is connected to the ToR-1 switch.</li>
+<li>The Slot 6 Port 2 port is connected to the ToR-2 switch.</li>
+</ol>
+<p>The following figure shows the port locations for an AS-760 server.</p>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 810px">
+<img class="card-img-top" style="margin-left:;" src="/azurestack-docs/docs/hub/nodeexpansion/16g/Prerequisites_PortLocations_hu_fed3086b0d617035.png" width="800" height="217" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:;">
+<p class="card-text">
+<small class="text-body-secondary">
+Port Locations for AS-760
+</small>
+</p>
+</figcaption>
+</figure>
+<br>
+<h4 id="s5248f-on-tor-1-port-map">S5248F-ON ToR-1 port map</h4>
+<p>The following table lists the Slot 6 Port 1 connections, cable types, node ports, and switch ports to the S5248F-ON ToR-1 switch.</p>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Origin</th>
+      <th>Destination</th>
+      <th>Cable Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ToR-1 Port 1</td>
+      <td>Slot 6 Port 1 on Node 1 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-1 Port 2</td>
+      <td>Slot 6 Port 1 on Node 2 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-1 Port 3</td>
+      <td>Slot 6 Port 1 on Node 3 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-1 Port 4</td>
+      <td>Slot 6 Port 1 on Node 4 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-1 Port 5</td>
+      <td>Slot 6 Port 1 on Node 5 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-1 Port 6</td>
+      <td>Slot 6 Port 1 on Node 6 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-1 Port 7</td>
+      <td>Slot 6 Port 1 on Node 7 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-1 Port 8</td>
+      <td>Slot 6 Port 1 on Node 8 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-1 Port 9</td>
+      <td>Slot 6 Port 1 on Node 9 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-1 Port 10</td>
+      <td>Slot 6 Port 1 on Node 10 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-1 Port 11</td>
+      <td>Slot 6 Port 1 on Node 11 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-1 Port 12</td>
+      <td>Slot 6 Port 1 on Node 12 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-1 Port 13</td>
+      <td>Slot 6 Port 1 on Node 13 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-1 Port 14</td>
+      <td>Slot 6 Port 1 on Node 14 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-1 Port 15</td>
+      <td>Slot 6 Port 1 on Node 15 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-1 Port 16</td>
+      <td>Slot 6 Port 1 on Node 16 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<p><br>The following table lists the iDRAC connections, cable types, node ports, and switch ports to the S5248F-ON ToR-1 switch.</p>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Origin</th>
+      <th>Destination</th>
+      <th>Cable Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ToR-1 Port 25</td>
+      <td>iDRAC on Node 1 (AS-760)</td>
+      <td>1GbE Cat-6</td>
+    </tr>
+    <tr>
+      <td>ToR-1 Port 26</td>
+      <td>iDRAC on Node 3 (AS-760)</td>
+      <td>1GbE Cat-6</td>
+    </tr>
+    <tr>
+      <td>ToR-1 Port 27</td>
+      <td>iDRAC on Node 5 (AS-760)</td>
+      <td>1GbE Cat-6</td>
+    </tr>
+    <tr>
+      <td>ToR-1 Port 28</td>
+      <td>iDRAC on Node 7 (AS-760)</td>
+      <td>1GbE Cat-6</td>
+    </tr>
+    <tr>
+      <td>ToR-1 Port 29</td>
+      <td>iDRAC on Node 9 (AS-760)</td>
+      <td>1GbE Cat-6</td>
+    </tr>
+    <tr>
+      <td>ToR-1 Port 30</td>
+      <td>iDRAC on Node 11 (AS-760)</td>
+      <td>1GbE Cat-6</td>
+    </tr>
+    <tr>
+      <td>ToR-1 Port 31</td>
+      <td>iDRAC on Node 13 (AS-760)</td>
+      <td>1GbE Cat-6</td>
+    </tr>
+    <tr>
+      <td>ToR-1 Port 32</td>
+      <td>iDRAC on Node 15 (AS-760)</td>
+      <td>1GbE Cat-6</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h4 id="s5248f-on-tor-2-port-map">S5248F-ON ToR-2 port map</h4>
+<p>The following table lists the Slot 6 Port 2 connections, cable types, node ports, and switch ports to the S5248F-ON ToR-2 switch.</p>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Origin</th>
+      <th>Destination</th>
+      <th>Cable Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ToR-2 Port 1</td>
+      <td>Slot 6 Port 2 on Node 1 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-2 Port 2</td>
+      <td>Slot 6 Port 2 on Node 2 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-2 Port 3</td>
+      <td>Slot 6 Port 2 on Node 3 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-2 Port 4</td>
+      <td>Slot 6 Port 2 on Node 4 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-2 Port 5</td>
+      <td>Slot 6 Port 2 on Node 5 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-2 Port 6</td>
+      <td>Slot 6 Port 2 on Node 6 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-2 Port 7</td>
+      <td>Slot 6 Port 2 on Node 7 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-2 Port 8</td>
+      <td>Slot 6 Port 2 on Node 8 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-2 Port 9</td>
+      <td>Slot 6 Port 2 on Node 9 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-2 Port 10</td>
+      <td>Slot 6 Port 2 on Node 10 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-2 Port 11</td>
+      <td>Slot 6 Port 2 on Node 11 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-2 Port 12</td>
+      <td>Slot 6 Port 2 on Node 12 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-2 Port 13</td>
+      <td>Slot 6 Port 2 on Node 13 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-2 Port 14</td>
+      <td>Slot 6 Port 2 on Node 14 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-2 Port 15</td>
+      <td>Slot 6 Port 2 on Node 15 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+    <tr>
+      <td>ToR-2 Port 16</td>
+      <td>Slot 6 Port 2 on Node 16 (AS-760)</td>
+      <td>25 GbE Twinax</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<p><br>The following table lists the iDRAC connections, cable types, node ports, and switch ports to the S5248F-ON ToR-2 switch.</p>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Origin</th>
+      <th>Destination</th>
+      <th>Cable Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ToR-2 Port 25</td>
+      <td>iDRAC on Node 2 (AS-760)</td>
+      <td>1GbE Cat-6</td>
+    </tr>
+    <tr>
+      <td>ToR-2 Port 26</td>
+      <td>iDRAC on Node 4 (AS-760)</td>
+      <td>1GbE Cat-6</td>
+    </tr>
+    <tr>
+      <td>ToR-2 Port 27</td>
+      <td>iDRAC on Node 6 (AS-760)</td>
+      <td>1GbE Cat-6</td>
+    </tr>
+    <tr>
+      <td>ToR-2 Port 28</td>
+      <td>iDRAC on Node 8 (AS-760)</td>
+      <td>1GbE Cat-6</td>
+    </tr>
+    <tr>
+      <td>ToR-2 Port 29</td>
+      <td>iDRAC on Node 10 (AS-760)</td>
+      <td>1GbE Cat-6</td>
+    </tr>
+    <tr>
+      <td>ToR-2 Port 30</td>
+      <td>iDRAC on Node 12 (AS-760)</td>
+      <td>1GbE Cat-6</td>
+    </tr>
+    <tr>
+      <td>ToR-2 Port 31</td>
+      <td>iDRAC on Node 14 (AS-760)</td>
+      <td>1GbE Cat-6</td>
+    </tr>
+    <tr>
+      <td>ToR-2 Port 32</td>
+      <td>iDRAC on Node 16 (AS-760)</td>
+      <td>1GbE Cat-6</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h3 id="configure-tor-switches">Configure ToR Switches</h3>
+<p>Using a crash cart with a serial connection or an SSH connection to the ToR switches, ensure that all ports that have a new node connected have been configured correctly.</p>
+<p>To configure the ToR switches, perform the following steps:</p>
+<h4 id="steps-1">Steps</h4>
+<ol>
+<li>
+<p>Log in to the S5248F-ON ToR-1 switch</p>
+</li>
+<li>
+<p>Once logged in type the commands below to configure the data link connections to the newly added scale unit nodes. For example, if wishing to expand a four-node scale unit with additional four nodes, you would run the below on the switch:</p>
+<pre><code class="language-plaintext">conf t
+interface range ethernet 1/1/5-1/1/8
+description &quot;CL01 Nodes NIC&quot;
+no shutdown
+switchport mode trunk
+switchport access vlan 7
+switchport trunk allowed vlan 107
+mtu 9216
+flowcontrol receive off
+priority-flow-control mode on
+service-policy input type network-qos AZS_SERVICES_pfc
+service-policy output type queuing AZS_SERVICES_ets
+ets mode on
+qos-map traffic-class AZS_SERVICES_Que
+spanning-tree bpduguard enable
+spanning-tree guard root
+spanning-tree port type edge
+exit
+</code></pre>
+</li>
+<li>
+<p>Once the data link port or ports are configured on the switch proceed to configuring the BMC Management ports. For example, if wishing to expand a four-node scale unit with an additional four nodes, you would run the below on the switch:</p>
+<pre><code class="language-plaintext">conf t
+interface range ethernet 1/1/27:1-1/1/28:1
+description &quot;BMCMgmt Ports&quot;
+no shutdown
+switchport access vlan 125
+mtu 9216
+flowcontrol receive off
+spanning-tree bpduguard enable
+spanning-tree guard root
+end
+</code></pre>
+</li>
+<li>
+<p>Once the BMC Management port or ports have been configured you will need to run the command below to write the new configuration into memory on the switch:</p>
+<pre><code class="language-plaintext">copy running-configuration startup-configuration
+</code></pre>
+</li>
+<li>
+<p>Once you have completed steps 1-4, repeat them on the ToR-2 switch.</p>
+</li>
+</ol>
+<h3 id="accessing-the-idrac-direct-port">Accessing the iDRAC Direct port</h3>
+<p>The iDRAC Direct port is a USB port located on the front of the server and is used to access the iDRAC web interface, RACADM, and Redfish API, without needing to connect to the network.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">NOTE</h4>
+
+    The factory default defined iDRAC administrator credential username will be <strong>azsinstall</strong> and the password will be <strong>azsinstall</strong>. This credential will be rotated as part of the node expansion process.
+
+</div>
+
+<p>To access the iDRAC Direct port, perform the following steps:</p>
+<h4 id="steps-2">Steps</h4>
+<ol>
+<li>To access the iDRAC Direct port, you must connect a USB Type A to micro-USB cable from a laptop or mobile KVM host to the micro-USB port on the front of the server.</li>
+<li>From your host, turn off any wireless networks and disconnect from any other hard-wired networks.</li>
+<li>Connect a USB Type A to micro-USB cable from your host to the iDRAC Direct micro-USB port located on the front control panel of the AS-760 server.</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 810px">
+<img class="card-img-top" style="margin-left:30px;" src="/azurestack-docs/docs/hub/nodeexpansion/16g/Prerequisites_AS760FrontView_hu_7775be0464c9e17.png" width="800" height="202" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<small class="text-body-secondary">
+AS-760 front view with iDRAC Direct port highlighted
+</small>
+</p>
+</figcaption>
+</figure>
+<br>
+<ol start="4">
+<li>Wait for the host to acquire an IP address of <strong>169.254.0.4</strong>. It may take several seconds for the IP address to be acquired. The iDRAC will acquire an IP address of <strong>169.254.0.3</strong>.</li>
+<li>Open a web browser and provide the iDRAC Direct port IP address as the URL. For example, <em>https<span>://</span>169.254.0.3</em>.</li>
+<li>At the certificate warning window, click <strong>Advanced</strong> and then click <strong>Proceed to 169.254.0.3 (unsafe)</strong>.</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 531px">
+<img class="card-img-top" style="margin-left:30px;" src="/azurestack-docs/docs/hub/nodeexpansion/16g/Prerequisites_CertificateWarning_hu_464318384e85ba50.png" width="521" height="449" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<small class="text-body-secondary">
+Certificate warning window
+</small>
+</p>
+</figcaption>
+</figure>
+<br>
+<ol start="7">
+<li>Enter the factory default username and password for the iDRAC, and click <strong>Log In</strong>.</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 474px">
+<img class="card-img-top" style="margin-left:30px;" src="/azurestack-docs/docs/hub/nodeexpansion/16g/Prerequisites_iDRACLogIn_hu_6b986bca6bbd047f.png" width="464" height="328" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<small class="text-body-secondary">
+iDRAC 9 login screen
+</small>
+</p>
+</figcaption>
+</figure>
+<br>
+<h3 id="assigning-idrac-ip-addresses-to-the-new-scale-unit-nodes-for-expansion">Assigning iDRAC IP addresses to the new scale unit nodes for expansion</h3>
+<p>The iDRAC IP address assignment is a manual step. The iDRAC Direct port can be leveraged on the node(s) to assign the iDRAC IP addresses based on the assigned BMC management (BMCMgmt) network IP address from the Azure Stack Hub deployment worksheet.</p>
+<p>To manually assign the iDRAC IP addresses to the new scale unit nodes for expansion, perform the following steps:</p>
+<h4 id="steps-3">Steps</h4>
+<p>The below steps will be repeated for each new scale unit node to be added.</p>
+<ol>
+<li>Follow the steps previously mentioned on <a href="/azurestack-docs/docs/hub/nodeexpansion/16g/#accessing-the-idrac-direct-port">Accessing the iDRAC Direct port</a>.</li>
+<li>From the iDRAC dashboard, browse to <strong>iDRAC Settings &gt; Connectivity</strong> and expand the <strong>Network &gt; IPv4 Settings</strong> menu.</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 646px">
+<img class="card-img-top" style="margin-left:30px;" src="/azurestack-docs/docs/hub/nodeexpansion/16g/Prerequisites_iDRACSettings_hu_8752d34431749289.png" width="636" height="602" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<small class="text-body-secondary">
+iDRAC Settings > Network > IPv4 Settings menu
+</small>
+</p>
+</figcaption>
+</figure>
+<br>
+<ol start="3">
+<li>Set the static IP address, static gateway, and static subnet mask according to the values defined in the Azure Stack Hub deployment worksheet. These IP addresses are defined by the BMCMgmt /26 subnet provided to the deployment worksheet.
+<ul>
+<li>For more information about the deployment worksheet for Azure Stack Hub integrated systems, please see: <a href="https://learn.microsoft.com/en-us/azure-stack/operator/azure-stack-deployment-worksheet">Deployment worksheet - Azure Stack Hub</a>.</li>
+</ul>
+</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 419px">
+<img class="card-img-top" style="margin-left:30px;" src="/azurestack-docs/docs/hub/nodeexpansion/16g/Prerequisites_DeploymentWorksheet_hu_96e717926ec0d990.png" width="409" height="282" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<small class="text-body-secondary">
+Azure Stack Hub deployment worksheet BMCMgmt network
+</small>
+</p>
+</figcaption>
+</figure>
+<br>
+<ol start="4">
+<li>Click <strong>Apply</strong>.</li>
+</ol>
+<h3 id="perform-a-health-check-on-the-new-nodes">Perform a health check on the new nodes</h3>
+<p>Prior to running the node expansion script, it is important to perform a quick health check of the new node(s). This also allows the iDRAC to perform an inventory collection which is needed for the firmware upgrade automation to successfully validate the new node(s).</p>
+<p>To perform a health check on the new nodes for expansion, perform the following steps:</p>
+<h4 id="steps-4">Steps</h4>
+<p>The below steps will be repeated for each new scale unit node to be added.</p>
+<ol>
+<li>If the new node(s) are powered off, press the power button to boot the new node(s).</li>
+<li>Allow up to 10 minutes for the new node(s) to fully load BIOS settings and complete the BIOS initialization.</li>
+<li>Once complete, access the iDRAC web interface either via the iDRAC Direct port or by leveraging a remote desktop (RDP) connection from the Hardware Lifecycle Host (HLH).</li>
+<li>Verify there are no alerts or warnings on the dashboard.</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 1367px">
+<img class="card-img-top" style="margin-left:30px;" src="/azurestack-docs/docs/hub/nodeexpansion/16g/Prerequisites_HealthCheck_Alerts_hu_3851b73749026ad3.png" width="1357" height="650" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<small class="text-body-secondary">
+</small>
+</p>
+</figcaption>
+</figure>
+<br>
+<ol start="5">
+<li>Navigate to <strong>System &gt; Overview &gt; Network Devices</strong> and verify that <strong>NIC Slot 6</strong> shows both ports with a <strong>Link Status</strong> of <strong>Up</strong>.</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 1565px">
+<img class="card-img-top" style="margin-left:30px;" src="/azurestack-docs/docs/hub/nodeexpansion/16g/Prerequisites_HealthCheck_Network_hu_efa679cb0b3a4d61.png" width="1555" height="650" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<small class="text-body-secondary">
+</small>
+</p>
+</figcaption>
+</figure>
+<br>
+<ol start="6">
+<li>Navigate to <strong>Storage &gt; Overview &gt; Physical Disks</strong> and verify all drives are present and healthy.</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 1362px">
+<img class="card-img-top" style="margin-left:30px;" src="/azurestack-docs/docs/hub/nodeexpansion/16g/Prerequisites_HealthCheck_PhysicalDisks_hu_95008b751309672b.png" width="1352" height="650" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<small class="text-body-secondary">
+</small>
+</p>
+</figcaption>
+</figure>
+<br>
+<ol start="7">
+<li>Navigate to <strong>Storage &gt; Overview &gt; Virtual Disks</strong> and verify a virtual disk is present.</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 1794px">
+<img class="card-img-top" style="margin-left:30px;" src="/azurestack-docs/docs/hub/nodeexpansion/16g/Prerequisites_HealthCheck_VirtualDisks_hu_727706cc7d52d246.png" width="1784" height="650" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<small class="text-body-secondary">
+</small>
+</p>
+</figcaption>
+</figure>
+<br>
+<ol start="8">
+<li>Once complete, navigate back to the <strong>Dashboard</strong> and power off the node.</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 1089px">
+<img class="card-img-top" style="margin-left:30px;" src="/azurestack-docs/docs/hub/nodeexpansion/16g/Prerequisites_HealthCheck_PowerOff_hu_3dd7fd524624869.png" width="1079" height="592" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<small class="text-body-secondary">
+</small>
+</p>
+</figcaption>
+</figure>
+<br>
+<h2 id="update-firmware-on-new-scale-unit-nodes">Update firmware on new scale unit nodes</h2>
+<p>This section covers updating firmware on scale unit node(s).</p>
+
+
+<div class="alert alert-danger" role="alert">
+<h4 class="alert-heading">WARNING</h4>
+
+    <p>To maintain the integrity of Dell Azure Stack Hub Integrated System before adding any new scale unit nodes, you <strong>must</strong> first follow the <a href="/azurestack-docs/docs/hub/patchandupdate/16g/">Patch and Update</a> guide which includes Lifecycle Manager, ToR switch firmware updates, and OEM package updates.</p>
+<p>This will ensure that any new scale unit nodes have the correct firmware and BIOS configuration applied when they are added to the cluster.</p>
+
+
+</div>
+
+<h3 id="node-expansion-script">Node expansion script</h3>
+<p>The node expansion script is used to update firmware and apply BIOS configuration on the new scale unit node(s) before they are added to the Azure Stack Hub integrated system.</p>
+<p>The script will also update the DeploymentData JSON file with the new scale unit node(s) information.</p>
+<p>The script will <strong>not</strong> add the new scale unit node(s) to the Azure Stack Hub integrated system, see the <a href="/azurestack-docs/docs/hub/nodeexpansion/16g/#add-scale-unit-node-in-the-azure-stack-hub-administrator-portal">Add scale unit node in the Azure Stack Hub administrator portal</a> section for more information on how to add the new scale unit node(s) to the Azure Stack Hub integrated system.</p>
+<p>Dell Integrated System for Microsoft Azure Stack Hub Lifecycle Manager contains the node expansion script, <strong>Invoke-DellAzSHubNodeExpansion.ps1</strong>. After completing the <a href="/azurestack-docs/docs/hub/patchandupdate/16g/">Patch and Update</a> process, you should have the latest Lifecycle Manager available in <strong>E:\LCM</strong>.</p>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 1030px">
+<img class="card-img-top" style="margin-left:;" src="/azurestack-docs/docs/hub/nodeexpansion/16g/UpdateFirmware_NodeExpansion_Folder_hu_333724889b7bce14.png" width="1020" height="300" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:;">
+<p class="card-text">
+<small class="text-body-secondary">
+</small>
+</p>
+</figcaption>
+</figure>
+<br>
+
+
+<div class="alert alert-danger" role="alert">
+<h4 class="alert-heading">WARNING</h4>
+
+    Ensure that the new scale unit node(s) are powered off before running the <strong>Invoke-DellAzSHubNodeExpansion.ps1</strong> script, otherwise the script will fail.
+
+</div>
+
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">NOTE</h4>
+
+    The factory default defined iDRAC administrator credential username is <strong>azsinstall</strong> and the password is <strong>azsinstall</strong>.
+
+</div>
+
+<p>To run the node expansion script, perform the following steps:</p>
+<h4 id="steps-5">Steps</h4>
+<ol>
+<li>
+<p>From the HLH, open a PowerShell console window as an administrator.</p>
+</li>
+<li>
+<p>Before running the node expansion script, make sure you have the following information:</p>
+<ul>
+<li>Number of nodes being added</li>
+<li>Factory BMC user credentials</li>
+<li>BMC administrator credentials</li>
+<li>HLH administrator credentials
+<br><br></li>
+</ul>
+</li>
+<li>
+<p>Change the directory to <strong>E:\LCM</strong></p>
+<pre><code class="language-powershell">Set-Location -Path E:\LCM
+</code></pre>
+</li>
+<li>
+<p>Run the following command to start the expansion process. Change the &ldquo;X&rdquo; to the number of nodes that are being added.</p>
+<pre><code class="language-powershell">.\Invoke-DellAzSHubNodeExpansion.ps1 -AdditionalNodeCount X
+</code></pre>
+</li>
+<li>
+<p>You will be prompted to input the BMC user, BMC administrator and HLH administrator credentials before the upgrade begins.</p>
+</li>
+</ol>
+<p>The automation will run the firmware update process <strong>one node at a time</strong>. Each node will take about an hour to complete.</p>
+<p>Once the firmware update process is complete on all nodes your prompt will look as shown below. The new nodes have now been added to the DeploymentData JSON file and are ready to be added to the cluster from the Azure Stack Hub administrator portal:</p>
+<pre><code class="language-powershell">(...)
+VERBOSE: 20250214-225038:Invoke-FirmwarePostUpdate:Invoke-OEMFirmwarePostUpdate completed successfully.
+VERBOSE: 20250214-225038:Remove-AutoLogon:Removing auto admin logon.
+VERBOSE: 20250214-225038:Resume-HLHBitLocker:Importing BitLocker module.
+VERBOSE: 20250214-225038:Resume-HLHBitLocker:Getting BitLocker encrypted volumes.
+VERBOSE: 20250214-225039:Resume-HLHBitLocker:Restoring TPM protector on volume 'D:'.
+VERBOSE: 20250214-225039:Disable-DHCPServer:Disabling DHCP server service.
+VERBOSE: 20250214-225039:Invoke-OEMFirmwareBootstrap:PROGRESS - Cleanup complete.
+VERBOSE: 20250214-225039:Invoke-OEMFirmwareBootstrap:PROGRESS - Invoke-OEMFirmwareBootstrap completed successfully.
+Finished running Invoke-FirmwareBootstrap for sac42-S1-N08 - 10.128.164.74 with Deployment Data JSON: E:\AzureStack\DeploymentData_new_one.json
+  &gt; List of nodes in the Deployment Data JSON: 'E:\AzureStack\DeploymentData_new_one.json'.
+
+Name         BMCIPAddress
+----         ------------
+sac42-S1-N01 10.128.164.67
+sac42-S1-N02 10.128.164.68
+sac42-S1-N03 10.128.164.69
+sac42-S1-N04 10.128.164.70
+sac42-S1-N05 10.128.164.71
+sac42-S1-N06 10.128.164.72
+sac42-S1-N07 10.128.164.73
+sac42-S1-N08 10.128.164.74
+
+(...)
+
+  &gt; Successfully replaced the original Deployment Data JSON with the new one.
+
+</code></pre>
+<h3 id="locate-logs">Locate Logs</h3>
+<p>To locate the logs from the node expansion script, perform the following steps:</p>
+<h4 id="steps-6">Steps</h4>
+<ol>
+<li>
+<p>From the HLH, open File Explorer and navigate to the <strong>C:\MASLogs</strong> folder.</p>
+</li>
+<li>
+<p>The logs that were generated from the node expansion script will have the filename: <strong>OEMFirmwareUpdate_[date]-[time]</strong>.</p>
+</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 952px">
+<img class="card-img-top" style="margin-left:30px;" src="/azurestack-docs/docs/hub/nodeexpansion/16g/UpdateFirmware_NodeExpansion_MASLogs_hu_ec8cc81860a09fb1.png" width="942" height="300" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<small class="text-body-secondary">
+</small>
+</p>
+</figcaption>
+</figure>
+<br>
+<h2 id="add-scale-unit-node-in-the-azure-stack-hub-administrator-portal">Add scale unit node in the Azure Stack Hub administrator portal</h2>
+<p>The operation to add a scale unit node consists of two distinct phases: <em>compute</em> and <em>storage</em>.</p>
+<p>The <em>compute</em> expansion process can take between 1-3 hours to complete per scale unit node. The <em>storage</em> expansion process can take several days to complete, depending on the size of the storage pool and the number of scale unit nodes being added.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">NOTE</h4>
+
+    To perform any tasks within the Azure Stack Hub administrator portal, you must have the necessary administrator privileges to the <strong>Default Provider Subscription</strong>.
+
+</div>
+
+<p>Before adding a scale unit node within the Azure Stack Hub administrator portal, ensure that you have completed all the steps below:</p>
+<ul>
+<li><a href="/azurestack-docs/docs/hub/nodeexpansion/16g/#rack-stack-and-cable-physical-nodes">Rack, stack, and cable the physical node(s)</a>.</li>
+<li><a href="/azurestack-docs/docs/hub/nodeexpansion/16g/#configure-tor-switches">Configure ToR switches</a>.</li>
+<li><a href="/azurestack-docs/docs/hub/nodeexpansion/16g/#update-firmware-on-new-scale-unit-nodes">Update firmware on the new scale unit node(s)</a>.</li>
+</ul>
+
+
+<div class="alert alert-danger" role="alert">
+<h4 class="alert-heading">WARNING</h4>
+
+    <p>While an add scale unit node operation is already in progress do <strong>not</strong> attempt any of the following operations:</p>
+<ul>
+<li>Stop Azure Stack Hub</li>
+<li>Update Azure Stack Hub</li>
+<li>Repair/FRU scale unit node</li>
+<li>Certificates rotation</li>
+<li>Add another scale unit node (the previous add scale unit node operation failure is also considered in progress)</li>
+</ul>
+
+</div>
+
+<h3 id="steps-7">Steps</h3>
+
+
+<div class="alert alert-danger" role="alert">
+<h4 class="alert-heading">WARNING</h4>
+
+    Only one scale unit node can be added at a time during the <em>compute</em> expansion process. Once one scale unit node has been successfully added to the cluster, you can proceed with adding the next scale unit node.
+
+</div>
+
+<ol>
+<li>Log into the Azure Stack Hub administrator portal as an Azure Stack Hub administrator.</li>
+<li>Browse to <strong>All services &gt; Region management &gt; Scale units &gt; [Cluster name] &gt; Nodes</strong>.</li>
+<li>Click the <strong>Add node</strong> button.</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 839px">
+<img class="card-img-top" style="margin-left:30px;" src="/azurestack-docs/docs/hub/nodeexpansion/16g/AdminPortal_AddNode_hu_3f781baab13e4274.png" width="829" height="300" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<small class="text-body-secondary">
+</small>
+</p>
+</figcaption>
+</figure>
+<br>
+<ol start="4">
+<li>The <strong>Region</strong> and the <strong>Scale unit</strong> will be populated automatically. You will need to specify the <strong>BMC IP Address</strong> of the scale unit node you are adding.</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 532px">
+<img class="card-img-top" style="margin-left:30px;" src="/azurestack-docs/docs/hub/nodeexpansion/16g/AdminPortal_AddNode_Details_hu_f3c962762f8e53c7.png" width="522" height="300" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<small class="text-body-secondary">
+</small>
+</p>
+</figcaption>
+</figure>
+<br>
+<ol start="5">
+<li>
+<p>Once you have entered the IP address of the new scale unit node, click <strong>Add</strong> at the bottom of the screen.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">NOTE</h4>
+
+    <p>The add node operation first adds the new scale unit node as available <em>compute</em> capacity and then automatically extends the <em>storage</em> capacity.</p>
+<p>It will take a few minutes for the new scale unit node to be visible in the Azure Stack Hub administrator portal.
+The new scale unit node will be in a <strong>Adding</strong> state until the <em>compute</em> expansion process is complete.</p>
+
+
+</div>
+
+</li>
+<li>
+<p>Click the notifications in the upper right to check the status as shown below:</p>
+</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 1129px">
+<img class="card-img-top" style="margin-left:30px;" src="/azurestack-docs/docs/hub/nodeexpansion/16g/AdminPortal_Nodes_Adding_hu_cc41b4e5e07673c6.png" width="1119" height="300" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<small class="text-body-secondary">
+</small>
+</p>
+</figcaption>
+</figure>
+<br>
+<ol start="7">
+<li>Once the scale unit node expansion <em>compute</em> process is complete, your notifications will show as the following:
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">CAUTION</h4>
+
+    After a scale unit node is added, the <em>storage</em> expansion process begins and can run for multiple days before it completes the expansion.
+
+</div>
+</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 1141px">
+<img class="card-img-top" style="margin-left:30px;" src="/azurestack-docs/docs/hub/nodeexpansion/16g/AdminPortal_Nodes_Complete_hu_21dbfbc32230bff9.png" width="1131" height="300" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<small class="text-body-secondary">
+</small>
+</p>
+</figcaption>
+</figure>
+<br>
+<ol start="8">
+<li>
+<p>In order to check the status of the <em>storage</em> expansion provisioning task you can navigate to <strong>All services &gt; Region management &gt; Scale units</strong>. Once here, you will see the status as <strong>Configuring Storage</strong> if the <em>storage</em> expansion provisioning task is not yet complete. When this task is complete the status will change to <strong>Running</strong>.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">NOTE</h4>
+
+    <p>You do <strong>not</strong> need to wait for the <strong>Configuring Storage</strong> task to complete before adding the next scale unit node.</p>
+<p>There is no impact to the running workloads while another scale unit node is being added.</p>
+
+
+</div>
+
+</li>
+</ol>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 1020px">
+<img class="card-img-top" style="margin-left:30px;" src="/azurestack-docs/docs/hub/nodeexpansion/16g/AdminPortal_ConfiguringStorage_hu_6ef4f883583aa44f.png" width="1010" height="300" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:30px;">
+<p class="card-text">
+<small class="text-body-secondary">
+</small>
+</p>
+</figcaption>
+</figure>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-a8bb9ceab4a4bedb88366efde9fec974">1.5 - Patch and Update</h1>
+    
+	
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="">
+    
+	<h1 id="pg-c60b183e1bd9980c167b4c51e96fbd81">1.5.1 - Patch and Update for 16G</h1>
     
 	
 
@@ -4561,7 +5592,7 @@ You will need to upload both the zip file for the OEM package update and the <st
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-34180988b8f23a8515e53a325ba28a2c">1.5 - How To</h1>
+	<h1 id="pg-34180988b8f23a8515e53a325ba28a2c">1.6 - How To</h1>
     
 	
 </div>
@@ -4586,7 +5617,7 @@ You will need to upload both the zip file for the OEM package update and the <st
 
 <div class="td-content" style="">
     
-	<h1 id="pg-74514daaa2b9f74ecafd695933fe9978">1.5.1 - How to create a service principal name for Azure Stack Hub integrated with Active Directory Federation Services identity using PowerShell</h1>
+	<h1 id="pg-74514daaa2b9f74ecafd695933fe9978">1.6.1 - How to create a service principal name for Azure Stack Hub integrated with Active Directory Federation Services identity using PowerShell</h1>
     
 	<h3 id="overview">Overview</h3>
 <p>This article explains how to create a service principal name (SPN) to manage Azure Stack Hub integrated with Active Directory Federation Services (AD FS) identity using PowerShell.</p>
