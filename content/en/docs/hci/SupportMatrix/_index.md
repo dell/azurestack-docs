@@ -9,9 +9,9 @@ comment: "Copyright © 2025 Dell Inc."
 ---
 
 {{% alert title="NOTE" color="primary" %}}
-Upgrading Azure Local instances from 11.\*.1001.\* (Azure Stack HCI OS 23H2) to 12.\*.1001.\* (Azure Stack HCI OS 24H2) is not currently supported. However, new instance deployments of 12.\*.1001.\* (Azure Stack HCI OS 24H2) are supported.
+Starting with Azure Local 2508, you can opt-in to upgrade your Azure Local instance from 11.\*.1001.\* (Azure Stack HCI OS 23H2) to 12.\*.1001.\* (Azure Stack HCI OS 24H2).
 
-Support for upgrades from 11.\*.1001.\* to 12.\*.1001.\* is expected in October 2025 per [Microsoft release information](https://learn.microsoft.com/en-us/azure/azure-local/media/release-information-23h2/release-trains-supported-update-paths.png?view=azloc-2507).
+For more information, see [Opt-in update to Azure Local solution version 12.25xx](https://learn.microsoft.com/en-us/azure/azure-local/update/update-opt-enable?view=azloc-2508).
 {{% /alert %}}
 
 {{% alert title="NOTE" color="primary" %}}
