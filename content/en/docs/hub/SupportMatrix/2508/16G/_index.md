@@ -3,6 +3,7 @@ title: "Support Matrix for 16G - 2508"
 linkTitle: "16G"
 weight: 7492
 Description: >
+comment: "Copyright © 2025 Dell Inc."
 
 ---
 
