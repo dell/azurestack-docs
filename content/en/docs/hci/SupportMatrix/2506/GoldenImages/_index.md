@@ -37,7 +37,7 @@ The Dell Technologies provided operating system golden image for Azure Local ins
 </tr>
 <tr>
 <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=853T3">Azure Stack HCI 23H2 with OS customization 11.2504.0.3141 and 2503 drivers for 15G, AX-7525, AX-6515 | ISO version 25041601</a></td>
-<td>AX-7515<br>AX-6515</td>
+<td>AX-7525<br>AX-6515</td>
 </tr>
 </tbody>
 </table>
