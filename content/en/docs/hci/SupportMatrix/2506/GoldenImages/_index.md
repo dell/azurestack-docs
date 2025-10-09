@@ -47,4 +47,4 @@ The Dell Technologies provided operating system golden image for Azure Local ins
 </tbody>
 </table>
 
-\* New golden image with support for imaging severs with and without OEM licensing.
+\* New golden image with support for imaging servers with and without OEM licensing.
