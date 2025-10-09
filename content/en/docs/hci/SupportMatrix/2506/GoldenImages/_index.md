@@ -47,4 +47,4 @@ The Dell Technologies provided operating system golden image for Azure Local ins
 </tbody>
 </table>
 
-\* Not supported for imaging severs that have OEM licensing. See [KB000353577](https://www.dell.com/support/kbdoc/en-us/000353577/azure-local-bugcheck-or-recovery-console-during-deployment-on-servers-with-oem-licensing?lang=en) for details.
+\* New golden image with support for imaging severs with and without OEM licensing.
