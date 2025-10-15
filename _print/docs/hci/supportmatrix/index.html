@@ -166,7 +166,7 @@ NOTE Azure Stack HCI version 22H2 reached end of support on May 31st, 2025. You 
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.50afdbb3a2962fd2a018a5e038115a83.json"
+    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.a86eee5cb5ea7ce737647f5f98362875.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -252,7 +252,7 @@ This is the multi-page printable view of this section.
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-97b90d8dfa9682c140b981b42d49f752">1 - Azure Local Support Matrix (2506)</h1>
+	<h1 id="pg-b659b2bd1f677d1e5b23329aef6f692b">1 - Azure Local Support Matrix (2509)</h1>
     
 	
 </div>
@@ -277,7 +277,181 @@ This is the multi-page printable view of this section.
 
 <div class="td-content" style="">
     
-	<h1 id="pg-fad71b4096b88411c738d1cef77efe77">1.1 - Azure Local Support Matrix for 14G-15G (2506)</h1>
+	<h1 id="pg-1a8d12be1062ffdef55d5de2ceacea94">1.1 - Azure Local Golden Images (2509)</h1>
+    
+	
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<style>
+table {
+    border-width:1px; border-style:solid;
+    border-color:black;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    table-layout:fixed;
+    overflow-wrap: break-word;
+}
+th {
+    border-width:1px;
+    padding:7px;
+    border-style:solid;
+    border-color:#0076CE;
+    background-color:#0076CE;
+    color:#FFFFFF;
+    text-align:center;
+}
+td {
+    border-width:1px;
+    padding:7px;
+    border-style:solid;
+    border-color:#0076CE;
+    text-align:center;
+}
+caption {
+    padding-bottom: 10px;
+    color:  #0076CE;
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="content">
+
+
+<p>The Dell Technologies provided operating system golden image for Azure Local instances is for imaging AX servers prior to deploying an Azure Local instance. This image is based on the Azure Stack HCI OS, with Microsoft customization and Dell Technologies customization. This image includes drivers provided by Dell Technologies.</p>
+<h3 id="azure-local-golden-images-for-solution-version-111001">Azure Local Golden Images for Solution version 11.*.1001.*</h3>
+<table>
+<thead>
+<tr>
+<th>Azure Stack HCI OS Golden Image for Azure Local</th>
+<th>Platform</th>
+<th>Use</th>
+<th>Instance Expansion and Machine Repair Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=6PDNC">Azure Stack HCI 24H2 with OS customization 11.2504.0.3141 and 2509 drivers for AX-760, AX-660, AX-4510c, AX-4520c | ISO version A01</a></td>
+<td>AX-760<br>AX-660<br>AX-4510c<br>AX-4520c</td>
+<td rowspan='4'>Instance Expansion (Add-Server)<br><br>Machine Repair</td>
+<td rowspan='4'>Use with Azure Local instances running Solution version 11.*.1001.*<br><br>Specify Azure Local instance Solution version when running Arc registration using:<br><i>Invoke-AzStackHciArcInitialization -TargetSolutionVersion [Solution Version]</i></td>
+</tr>
+<tr>
+<td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=0YKNF">Azure Stack HCI 24H2 with OS customization 11.2504.0.3141 and 2509 drivers for AX-750, AX-650 | ISO version A01</a></td>
+<td>AX-750<br>AX-650</td>
+</tr>
+<tr>
+<td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=NMRC5">Azure Stack HCI 24H2 with OS customization 11.2504.0.3141 and 2509 drivers for AX-7525, AX-6515 | ISO version A01</a></td>
+<td>AX-7525<br>AX-6515</td>
+</tr>
+<tr>
+<td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=HPX73">Azure Stack HCI 24H2 with OS customization 11.2504.0.3141 and 2509 drivers for AX-740xd, AX-640 | ISO version A01</a></td>
+<td>AX-640<br>AX-740xd</td>
+</tr>
+</tbody>
+</table>
+<h3 id="azure-local-golden-images-for-solution-version-121001">Azure Local Golden Images for Solution version 12.*.1001.*</h3>
+<table>
+<thead>
+<tr>
+<th>Azure Stack HCI OS Golden Image for Azure Local</th>
+<th>Platform</th>
+<th>Use</th>
+<th>Instance Expansion and Machine Repair Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=8C8KK">Azure Stack HCI 24H2 with OS customization 12.2509.0.3051 and 2509 drivers for AX-760, AX-660, AX-4510c, AX-4520c | ISO version A01</a></td>
+<td>AX-760<br>AX-660<br>AX-4510c<br>AX-4520c</td>
+<td rowspan='4'>Deploy<br><br>Instance Expansion (Add-Server)<br><br>Machine Repair</td>
+<td rowspan='5'>Use with Azure Local instances running Solution version 12.*.1001.*<br><br>Specify Azure Local instance Solution version when running Arc registration using:<br><i>Invoke-AzStackHciArcInitialization -TargetSolutionVersion [Solution Version]</i></td>
+</tr>
+<tr>
+<td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=X988J">Azure Stack HCI 24H2 with OS customization 12.2506.0.3136 and 2509 drivers for AX-750, AX-650 | ISO version A01</a></td>
+<td>AX-750<br>AX-650</td>
+</tr>
+<tr>
+<td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=NPM59">Azure Stack HCI 24H2 with OS customization 12.2506.0.3136 and 2509 drivers for AX-7525, AX-6515 | ISO version A01</a></td>
+<td>AX-7525<br>AX-6515</td>
+</tr>
+<tr>
+<td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=K0MHP">Azure Stack HCI 24H2 with OS customization 12.2506.0.3136 and 2509 drivers for AX-740xd, AX-640 | ISO version A01</a></td>
+<td>AX-640<br>AX-740xd</td>
+</tr>
+<tr>
+<td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=8HKX9">Azure Stack HCI 24H2 with OS customization 12.2506.0.3136 and 2509 drivers for AX-760, AX-660, AX-4510c, AX-4520c | ISO version A01</a></td>
+<td>AX-760<br>AX-660<br>AX-4510c<br>AX-4520c</td>
+<td rowspan='1'>Instance Expansion (Add-Server)<br><br>Machine Repair</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-97b90d8dfa9682c140b981b42d49f752">2 - Azure Local Support Matrix (2506)</h1>
+    
+	
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="">
+    
+	<h1 id="pg-fad71b4096b88411c738d1cef77efe77">2.1 - Azure Local Support Matrix for 14G-15G (2506)</h1>
     
 	
 
@@ -1015,7 +1189,7 @@ PM1725A, Dell Express Flash NVMe 6.4TB 2.5&quot; SFF</td><td>MZWLL6T4HMLS-000D3<
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-5c3c0acfc329e76aff77bc48422a91dc">1.2 - Azure Local Support Matrix for 16G (2506)</h1>
+	<h1 id="pg-5c3c0acfc329e76aff77bc48422a91dc">2.2 - Azure Local Support Matrix for 16G (2506)</h1>
     
 	
 
@@ -1410,7 +1584,7 @@ PM1725A, Dell Express Flash NVMe 6.4TB 2.5&quot; SFF</td><td>MZWLL6T4HMLS-000D3<
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-40c79aea0186d58f4feb2d9d264d8bd8">1.3 - Azure Local Golden Images (2506)</h1>
+	<h1 id="pg-40c79aea0186d58f4feb2d9d264d8bd8">2.3 - Azure Local Golden Images (2506)</h1>
     
 	
 
@@ -1552,7 +1726,7 @@ caption {
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-07e71e615db6e47338a71f1215ced31c">2 - Azure Local Support Matrix (2503)</h1>
+	<h1 id="pg-07e71e615db6e47338a71f1215ced31c">3 - Azure Local Support Matrix (2503)</h1>
     
 	
 </div>
@@ -1577,7 +1751,7 @@ caption {
 
 <div class="td-content" style="">
     
-	<h1 id="pg-0b40d18adb1cbfa64cc64cc60970a88b">2.1 - Azure Local Support Matrix for 14G-15G (2503)</h1>
+	<h1 id="pg-0b40d18adb1cbfa64cc64cc60970a88b">3.1 - Azure Local Support Matrix for 14G-15G (2503)</h1>
     
 	
 
@@ -2361,7 +2535,7 @@ PM1725A, Dell Express Flash NVMe 6.4TB 2.5&quot; SFF</td><td>MZWLL6T4HMLS-000D3<
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-eea2c3226f8f3753335942ea354c0220">2.2 - Azure Local Support Matrix for 16G (2503)</h1>
+	<h1 id="pg-eea2c3226f8f3753335942ea354c0220">3.2 - Azure Local Support Matrix for 16G (2503)</h1>
     
 	
 
@@ -2758,7 +2932,7 @@ PM1725A, Dell Express Flash NVMe 6.4TB 2.5&quot; SFF</td><td>MZWLL6T4HMLS-000D3<
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-54fc658b9214719985b85e783d0b3b2b">2.3 - Azure Local Golden Images (2503)</h1>
+	<h1 id="pg-54fc658b9214719985b85e783d0b3b2b">3.3 - Azure Local Golden Images (2503)</h1>
     
 	
 
@@ -2894,7 +3068,7 @@ caption {
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-554581004bc68a89739b57af27df2857">3 - Azure Local Support Matrix (2412)</h1>
+	<h1 id="pg-554581004bc68a89739b57af27df2857">4 - Azure Local Support Matrix (2412)</h1>
     
 	
 </div>
@@ -2919,7 +3093,7 @@ caption {
 
 <div class="td-content" style="">
     
-	<h1 id="pg-bd759f303038a584ed5aed749be358ba">3.1 - Azure Local Support Matrix for 14G-15G (2412)</h1>
+	<h1 id="pg-bd759f303038a584ed5aed749be358ba">4.1 - Azure Local Support Matrix for 14G-15G (2412)</h1>
     
 	
 
@@ -3150,7 +3324,7 @@ PM1725A, Dell Express Flash NVMe 6.4TB 2.5&quot; SFF</td><td>MZWLL6T4HMLS-000D3<
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-f447c58e86ccb4883521b8f979a682d5">4 - Dell Solution Builder Extensions for Azure Local Integrated System AX Server Release Notes</h1>
+	<h1 id="pg-f447c58e86ccb4883521b8f979a682d5">5 - Dell Solution Builder Extensions for Azure Local Integrated System AX Server Release Notes</h1>
     
 	
 </div>
@@ -3179,7 +3353,7 @@ PM1725A, Dell Express Flash NVMe 6.4TB 2.5&quot; SFF</td><td>MZWLL6T4HMLS-000D3<
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-7a0c74608f5c99410548c7210ca50d20">5 - Azure Stack HCI Support Matrix (Archive)</h1>
+	<h1 id="pg-7a0c74608f5c99410548c7210ca50d20">6 - Azure Stack HCI Support Matrix (Archive)</h1>
     
 	
 </div>
@@ -3204,7 +3378,7 @@ PM1725A, Dell Express Flash NVMe 6.4TB 2.5&quot; SFF</td><td>MZWLL6T4HMLS-000D3<
 
 <div class="td-content" style="">
     
-	<h1 id="pg-e4f7218b9b6c2db30a49712803ef4d0b">5.1 - Azure Stack HCI Firmware and Driver Matrix for Legacy Windows Server Operating Systems (Windows Server 2016)</h1>
+	<h1 id="pg-e4f7218b9b6c2db30a49712803ef4d0b">6.1 - Azure Stack HCI Firmware and Driver Matrix for Legacy Windows Server Operating Systems (Windows Server 2016)</h1>
     
 	
 
