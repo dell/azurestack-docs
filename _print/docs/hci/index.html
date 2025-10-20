@@ -162,7 +162,7 @@ Refresh and modernize aging virtualization platforms Integrate with Azure for hy
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.19d24237897c1c4ae01dfc46f9c148df.json"
+    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.1b79a899c2a1e89b65691526b998545d.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -439,7 +439,8 @@ https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/03-deployment
 <h2 id="sql">SQL</h2>
 <p>There are multiple ways to deploy SQL Server on Azure Stack HCI cluster. But in the end there are two main - Deploying a SQL Server in a Virtual Machine, or in AKS (Azure Kubernetes Service) as SQL Managed instance.</p>
 <blockquote>
-<p>SQL Performance in one Virtual Machine (out of 40 on 4 node cluster) running SQL workload (database forced to read from disk)</p></blockquote>
+<p>SQL Performance in one Virtual Machine (out of 40 on 4 node cluster) running SQL workload (database forced to read from disk)</p>
+</blockquote>
 <p><img src="
 
 https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/03-deployment-models-and-workloads/SQLPerformanceVM.png
@@ -520,7 +521,8 @@ https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/04-network-ar
 https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/04-network-architecture/topology04.png
 " alt=""></p>
 <blockquote>
-<p>Note: Two subnet deployment is being now standard. Same approach is used when <a href="https://learn.microsoft.com/en-us/azure-stack/hci/deploy/network-atc">NetworkATC</a> is deployed.</p></blockquote>
+<p>Note: Two subnet deployment is being now standard. Same approach is used when <a href="https://learn.microsoft.com/en-us/azure-stack/hci/deploy/network-atc">NetworkATC</a> is deployed.</p>
+</blockquote>
 <h3 id="direct-connections-switchless">Direct connections (Switchless)</h3>
 <p>In Windows Server 2019 you can connect all nodes in mesh mode. In case you have 2 nodes, it&rsquo;s just one connection. With 3 nodes, it&rsquo;s 3 interconnects. With 5 nodes, it whoops to 10. For 2 or 3 nodes design it makes sense to use 2 connections between 2 nodes in case one link goes down (for example cable failure). This would result traffic going over slower connection (like 1Gb if North-South is using Gigabit network links). Dell supports up to 4 nodes in switchless configuration.</p>
 <p>The math is simple. With 5 nodes its 4+3+2+1=10. Each connection requires separate subnet.</p>
@@ -756,11 +758,13 @@ https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/06-hardware/I
   </tbody>
 </table>
 <blockquote>
-<p>Note: Dell supports up to 4 nodes in switchless configuration</p></blockquote>
+<p>Note: Dell supports up to 4 nodes in switchless configuration</p>
+</blockquote>
 <h2 id="hardware-certification-programme">Hardware certification programme</h2>
 <p>It is very important to follow validated hardware path. This way you can avoid ghost hunting when single component will misbehave due to firmware or even hardware not being able to handle load under high pressure. There is very good blog summarizing importance of validated hardware <a href="https://cloudblogs.microsoft.com/windowsserver/2018/02/20/the-technical-value-of-wssd-validated-hci-solutions-part-1/">part1</a> <a href="https://cloudblogs.microsoft.com/windowsserver/2018/02/21/the-technical-value-of-validated-hci-solutions-part-2/">part2</a>. Validated solutions are available in <a href="https://www.microsoft.com/en-us/cloud-platform/azure-stack-hci-catalog">Azure Stack HCI Catalog</a>. For Azure Stack HCI you can also consider <a href="https://hcicatalog.azurewebsites.net/#/?IntegratedSystem=Integrated&#43;System">Integrated System</a> which includes the Azure Stack HCI operating system pre-installed as well as partner extensions for driver and firmware updates.</p>
 <blockquote>
-<p>Note: Dell sells only Integrated Systems as Microsoft highly recommend those over just verified solutions.</p></blockquote>
+<p>Note: Dell sells only Integrated Systems as Microsoft highly recommend those over just verified solutions.</p>
+</blockquote>
 <p><img src="
 
 https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/06-hardware/PPT01.png
@@ -2277,6 +2281,7 @@ PM1725A, Dell Express Flash NVMe 6.4TB 2.5&quot; SFF</td><td>MZWLL6T4HMLS-000D3<
 <tr><td>NVMe</td><td>PCIe</td><td>2.5</td><td>Mixed Use</td><td>Samsung</td><td>PM1735 SP 3WPD, SSD, NVMe, 2.5, 512e, ISE </td><td>MZWLJ1T6HBJRAD3</td><td>6GK00</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=5CM3G">5CM3G</a></td><td>2.5.0</td><td>1.6 TB</td><td>Cache, Capacity</td></tr>
 <tr><td>NVMe</td><td>PCIe</td><td>2.5</td><td>Mixed Use</td><td>Samsung</td><td>PM1735 SP 3WPD, SSD, Gen4 NVMe, 2.5, 512e, ISE</td><td>MZWLJ3T2HBJRAD3</td><td>15TVC</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=5CM3G">5CM3G</a></td><td>2.5.0</td><td>3.2TB</td><td>Cache,Capacity</td></tr>
 <tr><td>NVMe</td><td>PCIe</td><td>2.5</td><td>Mixed Use</td><td>Samsung</td><td>PM1735 SP 3WPD, SSD, Gen4 NVMe, 2.5, 512e, ISE</td><td>MZWLJ6T4HALAAD3</td><td>F6V5P</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=5CM3G">5CM3G</a></td><td>2.5.0</td><td>6.4TB</td><td>Cache,Capacity</td></tr>
+<tr><td>NVMe</td><td>PCIe</td><td>2.5</td><td>Mixed Use</td><td>Kioxia</td><td>CM6 SP</td><td>KCM6XVUL1T60</td><td>P03YC</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=GMM6V">GMM6V</a></td><td>2.2.2</td><td>1.6 TB</td><td>Cache, Capacity</td></tr>
 <tr><td>NVMe</td><td>PCIe</td><td>2.5</td><td>Mixed Use</td><td>Kioxia</td><td>CM6 SP</td><td>KCM6XVUL3T20</td><td>97GR0</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=GMM6V">GMM6V</a></td><td>2.2.2</td><td>3.2 TB</td><td>Cache, Capacity</td></tr>
 <tr><td>NVMe</td><td>PCIe</td><td>2.5</td><td>Mixed Use</td><td>Kioxia</td><td>CM6 SP</td><td>KCM6XVUL6T40</td><td>K916X</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=GMM6V">GMM6V</a></td><td>2.2.2</td><td>6.4 TB</td><td>Cache, Capacity</td></tr>
 <tr><td>NVMe</td><td>PCIe</td><td>2.5</td><td>Mixed Use</td><td>Samsung</td><td>PM1735 V2 SP 3WPD</td><td>MZWLR3T2HBLSAD3</td><td>V69W3</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=5V3P7">5V3P7</a></td><td>2.5.0</td><td>3.2 TB</td><td>Cache, Capacity</td></tr>
@@ -8452,7 +8457,8 @@ Customers that are still running this Windows Server version for their hyperconv
 
 
 <blockquote>
-<p>*Required only if you plan to use SCVMM based management of bare-metal server.</p></blockquote>
+<p>*Required only if you plan to use SCVMM based management of bare-metal server.</p>
+</blockquote>
 
 </div>
 

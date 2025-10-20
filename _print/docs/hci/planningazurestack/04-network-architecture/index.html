@@ -162,7 +162,7 @@ In general there are two types of traffic - East-West and North-South. East-West
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.19d24237897c1c4ae01dfc46f9c148df.json"
+    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.1b79a899c2a1e89b65691526b998545d.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -271,7 +271,8 @@ https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/04-network-ar
 https://dell.github.io/azurestack-docs/docs/hci/planningazurestack/04-network-architecture/topology04.png
 " alt=""></p>
 <blockquote>
-<p>Note: Two subnet deployment is being now standard. Same approach is used when <a href="https://learn.microsoft.com/en-us/azure-stack/hci/deploy/network-atc">NetworkATC</a> is deployed.</p></blockquote>
+<p>Note: Two subnet deployment is being now standard. Same approach is used when <a href="https://learn.microsoft.com/en-us/azure-stack/hci/deploy/network-atc">NetworkATC</a> is deployed.</p>
+</blockquote>
 <h3 id="direct-connections-switchless">Direct connections (Switchless)</h3>
 <p>In Windows Server 2019 you can connect all nodes in mesh mode. In case you have 2 nodes, it&rsquo;s just one connection. With 3 nodes, it&rsquo;s 3 interconnects. With 5 nodes, it whoops to 10. For 2 or 3 nodes design it makes sense to use 2 connections between 2 nodes in case one link goes down (for example cable failure). This would result traffic going over slower connection (like 1Gb if North-South is using Gigabit network links). Dell supports up to 4 nodes in switchless configuration.</p>
 <p>The math is simple. With 5 nodes its 4+3+2+1=10. Each connection requires separate subnet.</p>
