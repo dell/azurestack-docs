@@ -19,7 +19,7 @@ Please note all Golden Images (ISOs) relating to Microsoft Solution version 2510
 
 Any previously downloaded images (Dell or Microsoft) will no longer work for new deployments, and can be deleted. If you need to deploy, please use the previous builds available below.
 
-Microsoft Solution, version 2510, and Dell Golden Images are expected to be re-release within the coming week (~5th Nov).
+Microsoft Solution, version 2510, and Dell Golden Images are expected to be re-released within the coming week (~5th Nov).
 {{% /alert %}}
 
 ### Azure Local Golden Images for Solution version 12.\*.1001.\*
