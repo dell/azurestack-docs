@@ -14,6 +14,12 @@ comment: "Copyright © 2025 Dell Inc."
 
 The Dell Technologies provided operating system golden image for Azure Local instances is for imaging AX servers prior to deploying an Azure Local instance. This image is based on the Azure Stack HCI OS, with Microsoft customization and Dell Technologies customization. This image includes drivers provided by Dell Technologies.
 
+{{% alert title="Microsoft Solution, Version 2510 Recalled" color="warning" %}}
+Please note all Golden Images (ISOs) relating to Microsoft Solution version 2510 have been recalled by Microsoft due to a known issue. Upgrades have also been disabled from 2509 to 2510, by Microsoft.
+
+Microsoft Solution, version 2510, and Dell Golden Images are expected to be re-release within the coming week (~5th Nov)
+{{% /alert %}}
+
 ### Azure Local Golden Images for Solution version 12.\*.1001.\*
 
 <table>
