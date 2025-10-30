@@ -17,6 +17,8 @@ The Dell Technologies provided operating system golden image for Azure Local ins
 {{% alert title="Microsoft Solution, Version 2510 Recalled" color="warning" %}}
 Please note all Golden Images (ISOs) relating to Microsoft Solution version 2510 have been recalled by Microsoft due to a known issue. Upgrades have also been disabled from 2509 to 2510, by Microsoft.
 
+Any previously downloaded images (Dell or Microsoft) will no longer work for new deployments, and can be deleted. If you need to deploy, please use the previous builds available below.
+
 Microsoft Solution, version 2510, and Dell Golden Images are expected to be re-release within the coming week (~5th Nov)
 {{% /alert %}}
 
