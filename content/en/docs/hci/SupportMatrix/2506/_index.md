@@ -1,5 +1,5 @@
 ---
-title: "Azure Local Support Matrix (2506)"
+title: "Azure Local Support Matrix (Dell 2506)"
 linkTitle: "Dell 2506"
 weight: 7494
 Description: >

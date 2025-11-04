@@ -1,5 +1,5 @@
 ---
-title: "Azure Local Golden Images (2506)"
+title: "Azure Local Golden Images (Dell 2506)"
 linkTitle: "Golden Images"
 weight: 15000
 Description: >

@@ -1,5 +1,5 @@
 ---
-title: "Azure Local Support Matrix for 14G-15G (2503)"
+title: "Azure Local Support Matrix for 14G-15G (Dell 2503)"
 linkTitle: "14G-15G"
 weight: 7497
 Description: >

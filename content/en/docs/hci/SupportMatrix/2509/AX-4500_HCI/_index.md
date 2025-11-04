@@ -1,5 +1,5 @@
 ---
-title: "Azure Local Support Matrix for AX-4500 (2509)"
+title: "Azure Local Support Matrix for AX-4500 (Dell 2509)"
 linkTitle: "AX-4500"
 weight: 7491
 Description: >
