@@ -1,5 +1,5 @@
 ---
-title: "Release Notes for 14G - 2411"
+title: "Release Notes for 14G - Dell 2411"
 linkTitle: "14G"
 weight: 7589
 Description: >
@@ -17,7 +17,7 @@ Dell Azure Stack Hub OEM updates must be installed in sequential order, it is no
 
 ## New features, changed features, and fixes
 ### New features
-There are improvements and updates to drivers and firmware. See [Release Artifacts for 14G - 2411]({{< ref "../../../ReleaseArtifacts/2411/14G/_index.md" >}}).
+There are improvements and updates to drivers and firmware. See [Release Artifacts for 14G - Dell 2411]({{< ref "../../../ReleaseArtifacts/2411/14G/_index.md" >}}).
 
 ### Changed features
 There are no changed features for this release.

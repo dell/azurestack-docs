@@ -1,5 +1,5 @@
 ---
-title: "Support Matrix for 16G - 2508"
+title: "Support Matrix for 16G - Dell 2508"
 linkTitle: "16G"
 weight: 7492
 Description: >

@@ -1,6 +1,6 @@
 ---
-title: "Release Artifacts for 2504"
-linkTitle: "2504"
+title: "Release Artifacts for Dell 2504"
+linkTitle: "Dell 2504"
 weight: 7496
 Description: >
 hide_feedback: true

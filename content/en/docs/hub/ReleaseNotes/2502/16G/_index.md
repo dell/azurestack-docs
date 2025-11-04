@@ -1,5 +1,5 @@
 ---
-title: "Release Notes for 16G - 2502"
+title: "Release Notes for 16G - Dell 2502"
 linkTitle: "16G"
 weight: 7498
 Description: >
@@ -19,7 +19,7 @@ Dell Azure Stack Hub OEM updates must be installed in sequential order, it is no
 ### New features
 * Initial release of the Dell Integrated System for Microsoft Azure Stack Hub Lifecycle Manager which provides an automated way of upgrading Hardware Lifecycle Host (HLH) firmware, software and driver components. See [Patch and Update for 16G]({{< ref "../../../PatchAndUpdate/16G/_index.md" >}}).
 
-* There are improvements and updates to drivers and firmware. See [Release Artifacts for 16G - 2502]({{< ref "../../../ReleaseArtifacts/2502/16G/_index.md" >}}).
+* There are improvements and updates to drivers and firmware. See [Release Artifacts for 16G - Dell 2502]({{< ref "../../../ReleaseArtifacts/2502/16G/_index.md" >}}).
 
 ### Changed features
 There are no changed features for this release.

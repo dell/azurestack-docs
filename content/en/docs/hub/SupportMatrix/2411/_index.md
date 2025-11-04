@@ -1,6 +1,6 @@
 ---
-title: "Support Matrix for 2411"
-linkTitle: "2411"
+title: "Support Matrix for Dell 2411"
+linkTitle: "Dell 2411"
 weight: 7589
 Description: >
 hide_feedback: true

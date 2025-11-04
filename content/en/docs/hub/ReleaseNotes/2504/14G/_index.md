@@ -1,5 +1,5 @@
 ---
-title: "Release Notes for 14G - 2504"
+title: "Release Notes for 14G - Dell 2504"
 linkTitle: "14G"
 weight: 7496
 Description: >
@@ -17,7 +17,7 @@ Dell Azure Stack Hub OEM updates must be installed in sequential order, it is no
 
 ## New features, changed features, and fixes
 ### New features
-There are improvements and updates to drivers and firmware. See [Release Artifacts for 14G - 2504]({{< ref "../../../ReleaseArtifacts/2504/14G/_index.md" >}}).
+There are improvements and updates to drivers and firmware. See [Release Artifacts for 14G - Dell 2504]({{< ref "../../../ReleaseArtifacts/2504/14G/_index.md" >}}).
 
 ### Changed features
 There are no changed features for this release.

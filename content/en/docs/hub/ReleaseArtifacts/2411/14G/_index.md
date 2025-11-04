@@ -1,5 +1,5 @@
 ---
-title: "Release Artifacts for 14G - 2411"
+title: "Release Artifacts for 14G - Dell 2411"
 linkTitle: "14G"
 weight: 7589
 Description: >

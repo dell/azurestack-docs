@@ -1,6 +1,6 @@
 ---
-title: "Support Matrix for 2508"
-linkTitle: "2508"
+title: "Support Matrix for Dell 2508"
+linkTitle: "Dell 2508"
 weight: 7492
 Description: >
 hide_feedback: true
