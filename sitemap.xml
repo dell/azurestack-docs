@@ -56,11 +56,11 @@
     <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2509/16g_hci/</loc>
     <lastmod>2025-10-20T08:57:10-05:00</lastmod>
   </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2509/</loc>
-    <lastmod>2025-10-15T10:26:53+01:00</lastmod>
-  </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2509/ax-4500_hci/</loc>
     <lastmod>2025-10-15T10:02:53-05:00</lastmod>
+  </url><url>
+    <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2509/</loc>
+    <lastmod>2025-11-04T10:29:50+00:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2508/14g/</loc>
     <lastmod>2025-09-30T14:37:14+01:00</lastmod>
@@ -96,7 +96,7 @@
     <lastmod>2025-09-23T09:40:54-04:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2506/</loc>
-    <lastmod>2025-09-16T12:24:19+01:00</lastmod>
+    <lastmod>2025-11-04T10:29:50+00:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2504/14g/</loc>
     <lastmod>2025-09-16T12:24:19+01:00</lastmod>
@@ -132,7 +132,7 @@
     <lastmod>2025-09-23T14:02:33+01:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2503/</loc>
-    <lastmod>2025-09-16T12:24:19+01:00</lastmod>
+    <lastmod>2025-11-04T10:29:50+00:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2502/14g/</loc>
     <lastmod>2025-09-16T12:24:19+01:00</lastmod>
@@ -159,12 +159,6 @@
     <lastmod>2025-09-16T12:24:19+01:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2502/</loc>
-    <lastmod>2025-09-16T12:24:19+01:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2412/14g-15g_hci/</loc>
-    <lastmod>2025-09-16T12:24:19+01:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2412/</loc>
     <lastmod>2025-09-16T12:24:19+01:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2411/14g/</loc>
