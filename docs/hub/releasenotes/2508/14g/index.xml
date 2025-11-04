@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Release Notes for 14G - 2508 on Solutions for Microsoft Azure</title>
+    <title>Release Notes for 14G - Dell 2508 on Solutions for Microsoft Azure</title>
     <link>https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2508/14g/</link>
-    <description>Recent content in Release Notes for 14G - 2508 on Solutions for Microsoft Azure</description>
+    <description>Recent content in Release Notes for 14G - Dell 2508 on Solutions for Microsoft Azure</description>
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2508/14g/index.xml" rel="self" type="application/rss+xml" />
