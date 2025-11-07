@@ -30,8 +30,8 @@
 
   <meta itemprop="name" content="Azure Local Golden Images (Dell 2509)">
   <meta itemprop="description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; The Dell Technologies provided operating system golden image for Azure Local instances is for imaging AX servers prior to deploying an Azure Local instance. This image is based on the Azure Stack HCI OS, with Microsoft customization and Dell Technologies customization. This image includes drivers provided by Dell Technologies.">
-  <meta itemprop="dateModified" content="2025-11-04T10:37:18+00:00">
-  <meta itemprop="wordCount" content="450">
+  <meta itemprop="dateModified" content="2025-11-07T11:46:57+00:00">
+  <meta itemprop="wordCount" content="646">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Azure Local Golden Images (Dell 2509)">
   <meta name="twitter:description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; The Dell Technologies provided operating system golden image for Azure Local instances is for imaging AX servers prior to deploying an Azure Local instance. This image is based on the Azure Stack HCI OS, with Microsoft customization and Dell Technologies customization. This image includes drivers provided by Dell Technologies.">
@@ -158,7 +158,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.65463cd8040b62914011335e3739ae72.json"
+    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.e0e380e5d4a18bd8c31369acc5d92dd3.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -195,12 +195,7 @@ This is the multi-page printable view of this section.
 
 
   
-  <nav id="TableOfContents">
-  <ul>
-        <li><a href="#azure-local-golden-images-for-solution-version-121001">Azure Local Golden Images for Solution version 12.*.1001.*</a></li>
-        <li><a href="#azure-local-golden-images-for-solution-version-111001">Azure Local Golden Images for Solution version 11.*.1001.*</a></li>
-      </ul>
-</nav>
+  <nav id="TableOfContents"></nav>
   
 
 
@@ -255,84 +250,181 @@ caption {
 
 <p>The Dell Technologies provided operating system golden image for Azure Local instances is for imaging AX servers prior to deploying an Azure Local instance. This image is based on the Azure Stack HCI OS, with Microsoft customization and Dell Technologies customization. This image includes drivers provided by Dell Technologies.</p>
 
+   
+   
+   
+<ul class="nav nav-tabs" id="tabs-1" role="tablist">
+  <li class="nav-item">
+      <button class="nav-link disabled"
+          id="tabs-01-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-01-00" role="tab"
+          aria-controls="tabs-01-00" aria-selected="false">
+        <strong>Azure Stack HCI OS</strong>:
+      </button>
+    </li><li class="nav-item">
+      <button class="nav-link active"
+          id="tabs-01-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-01-01" role="tab"
+          data-td-tp-persist="24h2" aria-controls="tabs-01-01" aria-selected="true">
+        24H2
+      </button>
+    </li><li class="nav-item">
+      <button class="nav-link"
+          id="tabs-01-02-tab" data-bs-toggle="tab" data-bs-target="#tabs-01-02" role="tab"
+          data-td-tp-persist="23h2" aria-controls="tabs-01-02" aria-selected="false">
+        23H2
+      </button>
+    </li>
+</ul>
 
-<div class="alert alert-warning" role="alert">
-<h4 class="alert-heading">Microsoft Solution, Version 2510 Recalled</h4>
+<div class="tab-content" id="tabs-1-content">
+    <div class="tab-body tab-pane fade"
+        id="tabs-01-00" role="tabpanel" aria-labelled-by="tabs-01-00-tab" tabindex="1">
+        
+    </div>
+    <div class="tab-body tab-pane fade show active"
+        id="tabs-01-01" role="tabpanel" aria-labelled-by="tabs-01-01-tab" tabindex="1">
+        
+       <h3>Azure Local Golden Images for Solution version 12.*.1002.*</h3>
+       <table>
+       <thead>
+       <tr>
+       <th>Azure Stack HCI OS Golden Image for Azure Local</th>
+       <th>Platform</th>
+       <th>Use</th>
+       <th>Instance Expansion and Machine Repair Notes</th>
+       </tr>
+       </thead>
+       <tbody>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=V77HH">Azure Stack HCI 24H2 with OS customization 12.2510.0.3165 and 2509 drivers for AX-760, AX-660, AX-4510c, AX-4520c | ISO version A01</a></td>
+       <td>AX-760<br>AX-660<br>AX-4510c<br>AX-4520c</td>
+       <td rowspan='4'>Deploy<br><br>Instance Expansion (Add-Server)<br><br>Machine Repair</td>
+       <td rowspan='4'>Use with Azure Local instances running Solution version 12.*.1002.*<br><br>Specify Azure Local instance Solution version when running Arc registration using:<br><i>Invoke-AzStackHciArcInitialization -TargetSolutionVersion [Solution Version]</i></td>
+       </tr>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=814HF">Azure Stack HCI 24H2 with OS customization 12.2510.0.3165 and 2509 drivers for AX-750, AX-650 | ISO version A01</a></td>
+       <td>AX-750<br>AX-650</td>
+       </tr>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=PR9NV">Azure Stack HCI 24H2 with OS customization 12.2510.0.3165 and 2509 drivers for AX-7525, AX-6515 | ISO version A01</a></td>
+       <td>AX-7525<br>AX-6515</td>
+       </tr>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=06G2R">Azure Stack HCI 24H2 with OS customization 12.2510.0.3165 and 2509 drivers for AX-740xd, AX-640 | ISO version A01</a></td>
+       <td>AX-640<br>AX-740xd</td>
+       </tr>
+       </tbody>
+       </table>
 
-    <p>Please note all Golden Images (ISOs) relating to Microsoft Solution version 2510 have been recalled by Microsoft due to a known issue. Upgrades have also been disabled from 2509 to 2510, by Microsoft.</p>
-<p>Any previously downloaded images (Dell or Microsoft) will no longer work for new deployments, and can be deleted. If you need to deploy, please use the previous builds available below.</p>
-<p>Microsoft Solution, version 2510, and Dell Golden Images are expected to be re-released within the coming week (~5th Nov).</p>
+       <h3>Azure Local Golden Images for Solution version 12.*.1001.*</h3>
+       <table>
+       <thead>
+       <tr>
+       <th>Azure Stack HCI OS Golden Image for Azure Local</th>
+       <th>Platform</th>
+       <th>Use</th>
+       <th>Instance Expansion and Machine Repair Notes</th>
+       </tr>
+       </thead>
+       <tbody>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=8C8KK">Azure Stack HCI 24H2 with OS customization 12.2509.0.3051 and 2509 drivers for AX-760, AX-660, AX-4510c, AX-4520c | ISO version A01</a></td>
+       <td>AX-760<br>AX-660<br>AX-4510c<br>AX-4520c</td>
+       <td rowspan='4'>Deploy<br><br>Instance Expansion (Add-Server)<br><br>Machine Repair</td>
+       <td rowspan='5'>Use with Azure Local instances running Solution version 12.*.1001.*<br><br>Specify Azure Local instance Solution version when running Arc registration using:<br><i>Invoke-AzStackHciArcInitialization -TargetSolutionVersion [Solution Version]</i></td>
+       </tr>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=X988J">Azure Stack HCI 24H2 with OS customization 12.2506.0.3136 and 2509 drivers for AX-750, AX-650 | ISO version A01</a></td>
+       <td>AX-750<br>AX-650</td>
+       </tr>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=NPM59">Azure Stack HCI 24H2 with OS customization 12.2506.0.3136 and 2509 drivers for AX-7525, AX-6515 | ISO version A01</a></td>
+       <td>AX-7525<br>AX-6515</td>
+       </tr>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=K0MHP">Azure Stack HCI 24H2 with OS customization 12.2506.0.3136 and 2509 drivers for AX-740xd, AX-640 | ISO version A01</a></td>
+       <td>AX-640<br>AX-740xd</td>
+       </tr>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=8HKX9">Azure Stack HCI 24H2 with OS customization 12.2506.0.3136 and 2509 drivers for AX-760, AX-660, AX-4510c, AX-4520c | ISO version A01</a></td>
+       <td>AX-760<br>AX-660<br>AX-4510c<br>AX-4520c</td>
+       <td rowspan='1'>Instance Expansion (Add-Server)<br><br>Machine Repair</td>
+       </tr>
+       </tbody>
+       </table>
 
+   
+    </div>
+    <div class="tab-body tab-pane fade"
+        id="tabs-01-02" role="tabpanel" aria-labelled-by="tabs-01-02-tab" tabindex="1">
+        
+       <h3>Azure Local Golden Images for Solution version 11.*.1002.*</h3>
+       <table>
+       <thead>
+       <tr>
+       <th>Azure Stack HCI OS Golden Image for Azure Local</th>
+       <th>Platform</th>
+       <th>Use</th>
+       <th>Instance Expansion and Machine Repair Notes</th>
+       </tr>
+       </thead>
+       <tbody>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=H4RK4">Azure Stack HCI 23H2 with OS customization 11.2510.0.3164 and 2509 drivers for AX-760, AX-660, AX-4510c, AX-4520c | ISO version A01</a></td>
+       <td>AX-760<br>AX-660<br>AX-4510c<br>AX-4520c</td>
+       <td rowspan='4'>Instance Expansion (Add-Server)<br><br>Machine Repair</td>
+       <td rowspan='4'>Use with Azure Local instances running Solution version 11.*.1002.*<br><br>Specify Azure Local instance Solution version when running Arc registration using:<br><i>Invoke-AzStackHciArcInitialization -TargetSolutionVersion [Solution Version]</i></td>
+       </tr>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=5GWGG">Azure Stack HCI 23H2 with OS customization 11.2510.0.3164 and 2509 drivers for AX-750, AX-650 | ISO version A01</a></td>
+       <td>AX-750<br>AX-650</td>
+       </tr>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=0JYK5">Azure Stack HCI 23H2 with OS customization 11.2510.0.3164 and 2509 drivers for AX-7525, AX-6515 | ISO version A01</a></td>
+       <td>AX-7525<br>AX-6515</td>
+       </tr>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=X1XKM">Azure Stack HCI 23H2 with OS customization 11.2510.0.3164 and 2509 drivers for AX-740xd, AX-640 | ISO version A01</a></td>
+       <td>AX-640<br>AX-740xd</td>
+       </tr>
+       </tbody>
+       </table>
 
+       <h3>Azure Local Golden Images for Solution version 11.*.1001.*</h3>
+       <table>
+       <thead>
+       <tr>
+       <th>Azure Stack HCI OS Golden Image for Azure Local</th>
+       <th>Platform</th>
+       <th>Use</th>
+       <th>Instance Expansion and Machine Repair Notes</th>
+       </tr>
+       </thead>
+       <tbody>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=6PDNC">Azure Stack HCI 23H2 with OS customization 11.2504.0.3141 and 2509 drivers for AX-760, AX-660, AX-4510c, AX-4520c | ISO version A01</a></td>
+       <td>AX-760<br>AX-660<br>AX-4510c<br>AX-4520c</td>
+       <td rowspan='4'>Instance Expansion (Add-Server)<br><br>Machine Repair</td>
+       <td rowspan='4'>Use with Azure Local instances running Solution version 11.*.1001.*<br><br>Specify Azure Local instance Solution version when running Arc registration using:<br><i>Invoke-AzStackHciArcInitialization -TargetSolutionVersion [Solution Version]</i></td>
+       </tr>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=0YKNF">Azure Stack HCI 23H2 with OS customization 11.2504.0.3141 and 2509 drivers for AX-750, AX-650 | ISO version A01</a></td>
+       <td>AX-750<br>AX-650</td>
+       </tr>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=NMRC5">Azure Stack HCI 23H2 with OS customization 11.2504.0.3141 and 2509 drivers for AX-7525, AX-6515 | ISO version A01</a></td>
+       <td>AX-7525<br>AX-6515</td>
+       </tr>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=HPX73">Azure Stack HCI 23H2 with OS customization 11.2504.0.3141 and 2509 drivers for AX-740xd, AX-640 | ISO version A01</a></td>
+       <td>AX-640<br>AX-740xd</td>
+       </tr>
+       </tbody>
+       </table>
+
+   
+    </div>
 </div>
 
-<h3 id="azure-local-golden-images-for-solution-version-121001">Azure Local Golden Images for Solution version 12.*.1001.*</h3>
-<table>
-<thead>
-<tr>
-<th>Azure Stack HCI OS Golden Image for Azure Local</th>
-<th>Platform</th>
-<th>Use</th>
-<th>Instance Expansion and Machine Repair Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=8C8KK">Azure Stack HCI 24H2 with OS customization 12.2509.0.3051 and 2509 drivers for AX-760, AX-660, AX-4510c, AX-4520c | ISO version A01</a></td>
-<td>AX-760<br>AX-660<br>AX-4510c<br>AX-4520c</td>
-<td rowspan='4'>Deploy<br><br>Instance Expansion (Add-Server)<br><br>Machine Repair</td>
-<td rowspan='5'>Use with Azure Local instances running Solution version 12.*.1001.*<br><br>Specify Azure Local instance Solution version when running Arc registration using:<br><i>Invoke-AzStackHciArcInitialization -TargetSolutionVersion [Solution Version]</i></td>
-</tr>
-<tr>
-<td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=X988J">Azure Stack HCI 24H2 with OS customization 12.2506.0.3136 and 2509 drivers for AX-750, AX-650 | ISO version A01</a></td>
-<td>AX-750<br>AX-650</td>
-</tr>
-<tr>
-<td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=NPM59">Azure Stack HCI 24H2 with OS customization 12.2506.0.3136 and 2509 drivers for AX-7525, AX-6515 | ISO version A01</a></td>
-<td>AX-7525<br>AX-6515</td>
-</tr>
-<tr>
-<td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=K0MHP">Azure Stack HCI 24H2 with OS customization 12.2506.0.3136 and 2509 drivers for AX-740xd, AX-640 | ISO version A01</a></td>
-<td>AX-640<br>AX-740xd</td>
-</tr>
-<tr>
-<td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=8HKX9">Azure Stack HCI 24H2 with OS customization 12.2506.0.3136 and 2509 drivers for AX-760, AX-660, AX-4510c, AX-4520c | ISO version A01</a></td>
-<td>AX-760<br>AX-660<br>AX-4510c<br>AX-4520c</td>
-<td rowspan='1'>Instance Expansion (Add-Server)<br><br>Machine Repair</td>
-</tr>
-</tbody>
-</table>
-<h3 id="azure-local-golden-images-for-solution-version-111001">Azure Local Golden Images for Solution version 11.*.1001.*</h3>
-<table>
-<thead>
-<tr>
-<th>Azure Stack HCI OS Golden Image for Azure Local</th>
-<th>Platform</th>
-<th>Use</th>
-<th>Instance Expansion and Machine Repair Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=6PDNC">Azure Stack HCI 23H2 with OS customization 11.2504.0.3141 and 2509 drivers for AX-760, AX-660, AX-4510c, AX-4520c | ISO version A01</a></td>
-<td>AX-760<br>AX-660<br>AX-4510c<br>AX-4520c</td>
-<td rowspan='4'>Instance Expansion (Add-Server)<br><br>Machine Repair</td>
-<td rowspan='4'>Use with Azure Local instances running Solution version 11.*.1001.*<br><br>Specify Azure Local instance Solution version when running Arc registration using:<br><i>Invoke-AzStackHciArcInitialization -TargetSolutionVersion [Solution Version]</i></td>
-</tr>
-<tr>
-<td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=0YKNF">Azure Stack HCI 23H2 with OS customization 11.2504.0.3141 and 2509 drivers for AX-750, AX-650 | ISO version A01</a></td>
-<td>AX-750<br>AX-650</td>
-</tr>
-<tr>
-<td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=NMRC5">Azure Stack HCI 23H2 with OS customization 11.2504.0.3141 and 2509 drivers for AX-7525, AX-6515 | ISO version A01</a></td>
-<td>AX-7525<br>AX-6515</td>
-</tr>
-<tr>
-<td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=HPX73">Azure Stack HCI 23H2 with OS customization 11.2504.0.3141 and 2509 drivers for AX-740xd, AX-640 | ISO version A01</a></td>
-<td>AX-640<br>AX-740xd</td>
-</tr>
-</tbody>
-</table>
 
 </div>
 </div>
