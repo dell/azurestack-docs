@@ -94,6 +94,10 @@ caption {
 <table>
 <colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup>
 <tr><th>Server Type</th><th>Platform</th><th>OS Type</th><th>Component</th><th>Type</th><th>Category</th><th>Dell P/N</th><th>Previous SWB</th><th>Target SWB</th><th>Previous Version</th><th>Target Version</th></tr>
+<tr><td>Scale Units (PowerEdge R640 AS All Flash)</td><td>R640</td><td rowspan="4">WS2022</td><td rowspan="4">Mellanox ConnectX-4 LX / 25GbE</td><td rowspan="4">Driver DUP</td><td rowspan="4">Network / RDMA</td><td rowspan="4">N/A</td><td rowspan="4"><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=G6M58'>G6M58</a></td><td rowspan="4"><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=3G71F'>3G71F</a></td><td rowspan="4">24.04.03</td><td rowspan="4">25.1</td></tr>
+<tr><td>Scale Units (PowerEdge R640 Tactical)</td><td>R640</td>
+<tr><td>Scale Units (PowerEdge R740xd)</td><td>R740xd</td>
+<tr><td>Scale Units (PowerEdge R840 AS Dense)</td><td>R840</td>
 <tr><td>N/A</td><td>14G</td><td rowspan="1">N/A</td><td rowspan="1">S5248F-ON</td><td rowspan="1">Switch Firmware</td><td rowspan="1">TOR</td><td rowspan="1">N/A</td><td rowspan="1"><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=82WVT'>82WVT</a></td><td rowspan="1"><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=P8GNV'>P8GNV</a></td><td rowspan="1">10.6.0.3</td><td rowspan="1">10.6.0.5</td></tr>
 <tr><td>N/A</td><td>14G</td><td rowspan="1">N/A</td><td rowspan="1">N3248TE-ON</td><td rowspan="1">Switch Firmware</td><td rowspan="1">BMC</td><td rowspan="1">N/A</td><td rowspan="1"><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=82WVT'>82WVT</a></td><td rowspan="1"><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=P8GNV'>P8GNV</a></td><td rowspan="1">10.6.0.3</td><td rowspan="1">10.6.0.5</td></tr>
 </table>

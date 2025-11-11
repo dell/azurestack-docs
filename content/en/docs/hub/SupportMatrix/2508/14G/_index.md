@@ -73,7 +73,7 @@ caption {
 <colgroup><col/><col/><col/><col/><col/><col/></colgroup>
 <tr><th>Component</th><th>Type</th><th>Category</th><th>Dell Part Number (P/N)</th><th>Software Bundle (SWB)</th><th>Supported Version</th></tr>
 <tr><td>INTEL C600/C610/C220/C230/C2000 Series</td><td>Driver DUP</td><td>Chipset</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=4DDMJ'>4DDMJ</a></td><td>10.1.19913.8607</td></tr>
-<tr><td>Mellanox ConnectX-4 LX / 25GbE</td><td>Driver DUP</td><td>Network / RDMA</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=G6M58'>G6M58</a></td><td>24.04.03</td></tr>
+<tr><td>Mellanox ConnectX-4 LX / 25GbE</td><td>Driver DUP</td><td>Network / RDMA</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=3G71F'>3G71F</a></td><td>25.1</td></tr>
 <tr><td>Dell HBA330</td><td>Driver DUP</td><td>Storage - HBA</td><td>N/A</td><td>N/A</td><td>Native</td></tr>
 <tr><td>BIOS</td><td>Firmware DUP</td><td>BIOS</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=T4VCN'>T4VCN</a></td><td>2.24.0</td></tr>
 <tr><td>BOSS-S1  Firmware</td><td>Firmware DUP</td><td>BOSS-S1</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=3P39V'>3P39V</a></td><td>2.5.13.3024</td></tr>
@@ -175,7 +175,7 @@ caption {
 <colgroup><col/><col/><col/><col/><col/><col/></colgroup>
 <tr><th>Component</th><th>Type</th><th>Category</th><th>Dell Part Number (P/N)</th><th>Software Bundle (SWB)</th><th>Supported Version</th></tr>
 <tr><td>INTEL C600/C610/C220/C230/C2000 Series</td><td>Driver DUP</td><td>Chipset</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=4DDMJ'>4DDMJ</a></td><td>10.1.19913.8607</td></tr>
-<tr><td>Mellanox ConnectX-4 LX / 25GbE</td><td>Driver DUP</td><td>Network / RDMA</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=G6M58'>G6M58</a></td><td>24.04.03</td></tr>
+<tr><td>Mellanox ConnectX-4 LX / 25GbE</td><td>Driver DUP</td><td>Network / RDMA</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=3G71F'>3G71F</a></td><td>25.1</td></tr>
 <tr><td>Dell HBA330</td><td>Driver DUP</td><td>Storage - HBA</td><td>N/A</td><td>N/A</td><td>Native</td></tr>
 <tr><td>BIOS</td><td>Firmware DUP</td><td>BIOS</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=T4VCN'>T4VCN</a></td><td>2.24.0</td></tr>
 <tr><td>BOSS-S1  Firmware</td><td>Firmware DUP</td><td>BOSS-S1</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=3P39V'>3P39V</a></td><td>2.5.13.3024</td></tr>
@@ -242,7 +242,7 @@ caption {
 <colgroup><col/><col/><col/><col/><col/><col/></colgroup>
 <tr><th>Component</th><th>Type</th><th>Category</th><th>Dell Part Number (P/N)</th><th>Software Bundle (SWB)</th><th>Supported Version</th></tr>
 <tr><td>INTEL C600/C610/C220/C230/C2000 Series</td><td>Driver DUP</td><td>Chipset</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=4DDMJ'>4DDMJ</a></td><td>10.1.19913.8607</td></tr>
-<tr><td>Mellanox ConnectX-4 LX / 25GbE</td><td>Driver DUP</td><td>Network / RDMA</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=G6M58'>G6M58</a></td><td>24.04.03</td></tr>
+<tr><td>Mellanox ConnectX-4 LX / 25GbE</td><td>Driver DUP</td><td>Network / RDMA</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=3G71F'>3G71F</a></td><td>25.1</td></tr>
 <tr><td>Dell HBA330</td><td>Driver DUP</td><td>Storage - HBA</td><td>N/A</td><td>N/A</td><td>Native</td></tr>
 <tr><td>BIOS</td><td>Firmware DUP</td><td>BIOS</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=T4VCN'>T4VCN</a></td><td>2.24.0</td></tr>
 <tr><td>BOSS-S1  Firmware</td><td>Firmware DUP</td><td>BOSS-S1</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=3P39V'>3P39V</a></td><td>2.5.13.3024</td></tr>
@@ -308,7 +308,7 @@ caption {
 <colgroup><col/><col/><col/><col/><col/><col/></colgroup>
 <tr><th>Component</th><th>Type</th><th>Category</th><th>Dell Part Number (P/N)</th><th>Software Bundle (SWB)</th><th>Supported Version</th></tr>
 <tr><td>INTEL C600/C610/C220/C230/C2000 Series</td><td>Driver DUP</td><td>Chipset</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=4DDMJ'>4DDMJ</a></td><td>10.1.19913.8607</td></tr>
-<tr><td>Mellanox ConnectX-4 LX / 25GbE</td><td>Driver DUP</td><td>Network / RDMA</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=G6M58'>G6M58</a></td><td>24.04.03</td></tr>
+<tr><td>Mellanox ConnectX-4 LX / 25GbE</td><td>Driver DUP</td><td>Network / RDMA</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=3G71F'>3G71F</a></td><td>25.1</td></tr>
 <tr><td>Dell HBA330</td><td>Driver DUP</td><td>Storage - HBA</td><td>N/A</td><td>N/A</td><td>Native</td></tr>
 <tr><td>BIOS</td><td>Firmware DUP</td><td>BIOS</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=NW297'>NW297</a></td><td>2.24.0</td></tr>
 <tr><td>BOSS-S1  Firmware</td><td>Firmware DUP</td><td>BOSS-S1</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=3P39V'>3P39V</a></td><td>2.5.13.3024</td></tr>
