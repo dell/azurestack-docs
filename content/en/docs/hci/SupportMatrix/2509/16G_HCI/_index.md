@@ -130,14 +130,14 @@ comment: "Copyright © 2025 Dell Inc."
 <table>
 <colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup>
 <tr><th>GPU Model</th><th>Vendor</th><th>Description</th><th>Part Number</th><th>Firmware version</th><th>Driver Version</th><th>GPU-P capable</th><th>Supported Platform</th><th>Supported OS</th></tr>
-<tr><td>A16</td><td>NVIDIA</td><td>NVIDIA Ampere A16, PCIe, 250W, 64GB Passive, Double Wide, Full Height GPU,V2</td><td>D1P1T</td><td>94.07.54.00.45</td><td>553.62</td><td>Yes</td><td>AX-760</td><td>Azure Stack HCI-23H2</td></tr>
-<tr><td>A2</td><td>NVIDIA</td><td>NVIDIA Ampere A2, PCIe, 60W, 16GB Passive, Single Wide, Low Profile GPU, V2</td><td>H98K0</td><td>94.07.5B.00.55</td><td>553.62</td><td>Yes</td><td>AX-660<br>AX-760</td><td>Azure Stack HCI-23H2</td></tr>
-<tr><td>A2</td><td>NVIDIA</td><td>NVIDIA Ampere A2, PCIe, 60W, 16GB Passive, Single Wide, Full Height GPU, V2</td><td>MG5JX</td><td>94.07.5B.00.55</td><td>553.62</td><td>Yes</td><td>AX-660<br>AX-760</td><td>Azure Stack HCI-23H2</td></tr>
-<tr><td>A40</td><td>NVIDIA</td><td>NVIDIA Ampere A40, PCIe, 300W, 48GB Passive, Double Wide, Full Height GPU</td><td>W6GX6</td><td>94.02.5C.00.0F</td><td>553.62</td><td>Yes</td><td>AX-760</td><td>Azure Stack HCI-23H2</td></tr>
-<tr><td>L4</td><td>NVIDIA</td><td>NVIDIA L4, PCIe, 72W, 24GB Passive, Single Wide Full Height GPU</td><td>NG3PY</td><td>95.04.29.00.06</td><td>553.62</td><td>Yes</td><td>AX-660<br>AX-760</td><td>Azure Stack HCI-23H2</td></tr>
-<tr><td>L4</td><td>NVIDIA</td><td>NVIDIA L4, PCIe, 72W, 24GB Passive, Single Wide Low Profile GPU</td><td>V9XT2</td><td>95.04.29.00.06</td><td>553.62</td><td>Yes</td><td>AX-660<br>AX-760</td><td>Azure Stack HCI-23H2</td></tr>
-<tr><td>L40</td><td>NVIDIA</td><td>NVIDIA Ampere L40, PCIe, 300W, 48GB Passive, Double Wide, Full Height, Full Length, GPU with cable</td><td>VHNWT</td><td>95.02.39.00.01</td><td>553.62</td><td>Yes</td><td>AX-760</td><td>Azure Stack HCI-23H2</td></tr>
-<tr><td>L40S</td><td>NVIDIA</td><td>NVIDIA Ampere L40S, PCIe, 350W, 48GB Passive, Double Wide, Full Height, Full Length, GPU with cable</td><td>7WK28</td><td>95.02.66.00.02</td><td>553.62</td><td>Yes</td><td>AX-760</td><td>Azure Stack HCI-23H2</td></tr>
+<tr><td>A16</td><td>NVIDIA</td><td>NVIDIA Ampere A16, PCIe, 250W, 64GB Passive, Double Wide, Full Height GPU,V2</td><td>D1P1T</td><td>94.07.54.00.45</td><td>553.62</td><td>Yes</td><td>AX-760</td><td>Azure Stack HCI-23H2<br>Azure Stack HCI-24H2</td></tr>
+<tr><td>A2</td><td>NVIDIA</td><td>NVIDIA Ampere A2, PCIe, 60W, 16GB Passive, Single Wide, Low Profile GPU, V2</td><td>H98K0</td><td>94.07.5B.00.55</td><td>553.62</td><td>Yes</td><td>AX-660<br>AX-760</td><td>Azure Stack HCI-23H2<br>Azure Stack HCI-24H2</td></tr>
+<tr><td>A2</td><td>NVIDIA</td><td>NVIDIA Ampere A2, PCIe, 60W, 16GB Passive, Single Wide, Full Height GPU, V2</td><td>MG5JX</td><td>94.07.5B.00.55</td><td>553.62</td><td>Yes</td><td>AX-660<br>AX-760</td><td>Azure Stack HCI-23H2<br>Azure Stack HCI-24H2</td></tr>
+<tr><td>A40</td><td>NVIDIA</td><td>NVIDIA Ampere A40, PCIe, 300W, 48GB Passive, Double Wide, Full Height GPU</td><td>W6GX6</td><td>94.02.5C.00.0F</td><td>553.62</td><td>Yes</td><td>AX-760</td><td>Azure Stack HCI-23H2<br>Azure Stack HCI-24H2</td></tr>
+<tr><td>L4</td><td>NVIDIA</td><td>NVIDIA L4, PCIe, 72W, 24GB Passive, Single Wide Full Height GPU</td><td>NG3PY</td><td>95.04.29.00.06</td><td>553.62</td><td>Yes</td><td>AX-660<br>AX-760</td><td>Azure Stack HCI-23H2<br>Azure Stack HCI-24H2</td></tr>
+<tr><td>L4</td><td>NVIDIA</td><td>NVIDIA L4, PCIe, 72W, 24GB Passive, Single Wide Low Profile GPU</td><td>V9XT2</td><td>95.04.29.00.06</td><td>553.62</td><td>Yes</td><td>AX-660<br>AX-760</td><td>Azure Stack HCI-23H2<br>Azure Stack HCI-24H2</td></tr>
+<tr><td>L40</td><td>NVIDIA</td><td>NVIDIA Ampere L40, PCIe, 300W, 48GB Passive, Double Wide, Full Height, Full Length, GPU with cable</td><td>VHNWT</td><td>95.02.39.00.01</td><td>553.62</td><td>Yes</td><td>AX-760</td><td>Azure Stack HCI-23H2<br>Azure Stack HCI-24H2</td></tr>
+<tr><td>L40S</td><td>NVIDIA</td><td>NVIDIA Ampere L40S, PCIe, 350W, 48GB Passive, Double Wide, Full Height, Full Length, GPU with cable</td><td>7WK28</td><td>95.02.66.00.02</td><td>553.62</td><td>Yes</td><td>AX-760</td><td>Azure Stack HCI-23H2<br>Azure Stack HCI-24H2</td></tr>
 </table>
 
 {{< /rawhtml >}}
