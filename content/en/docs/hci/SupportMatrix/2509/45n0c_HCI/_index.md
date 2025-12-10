@@ -122,8 +122,8 @@ comment: "Copyright © 2025 Dell Inc."
 <table>
 <colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup>
 <tr><th>GPU Model</th><th>Vendor</th><th>Description</th><th>Part Number</th><th>Firmware version</th><th>Driver Version</th><th>GPU-P capable</th><th>Supported Platform</th><th>Supported OS</th></tr>
-<tr><td>A2</td><td>NVIDIA</td><td>NVIDIA Ampere A2, PCIe, 60W, 16GB Passive, Single Wide, Full Height GPU, V2</td><td>MG5JX</td><td>94.07.5B.00.55</td><td>528.89 WHQL</td><td>Yes</td><td>AX-4520c</td><td>Azure Stack HCI-23H2</td></tr>
-<tr><td>L4</td><td>NVIDIA</td><td>NVIDIA L4, PCIe, 72W, 24GB Passive, Single Wide Full Height GPU</td><td>NG3PY</td><td>95.04.29.00.06</td><td>528.89 WHQL</td><td>Yes</td><td>AX-4520c</td><td>Azure Stack HCI-23H2</td></tr>
+<tr><td>A2</td><td>NVIDIA</td><td>NVIDIA Ampere A2, PCIe, 60W, 16GB Passive, Single Wide, Full Height GPU, V2</td><td>MG5JX</td><td>94.07.5B.00.55</td><td>528.89 WHQL</td><td>Yes</td><td>AX-4520c</td><td>Azure Stack HCI-23H2<br>Azure Stack HCI-24H2</td></tr>
+<tr><td>L4</td><td>NVIDIA</td><td>NVIDIA L4, PCIe, 72W, 24GB Passive, Single Wide Full Height GPU</td><td>NG3PY</td><td>95.04.29.00.06</td><td>528.89 WHQL</td><td>Yes</td><td>AX-4520c</td><td>Azure Stack HCI-23H2<br>Azure Stack HCI-24H2</td></tr>
 </table>
 
 {{< /rawhtml >}}
