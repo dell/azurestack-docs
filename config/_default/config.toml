@@ -47,23 +47,23 @@ anchor = "smart"
 [languages.en.params]
 title = "Solutions for Microsoft Azure"
 description = "Dell Technologies (Dell) Azure documentation pages"
-languageName ="English"
+languageName = "English"
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-  [markup.highlight]
-      codeFences = false
-  [markup.tableOfContents]
-    endLevel = 4
-    ordered = false
-    startLevel = 2
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+[markup.highlight]
+codeFences = false
+[markup.tableOfContents]
+endLevel = 4
+ordered = false
+startLevel = 2
 
 # Everything below this are Site Params
 
 [params]
-copyright = "[Copyright © 2025 Dell Inc.](https://www.dell.com/en-us/lp/legal/site-terms-of-use-copyright) | [Terms of Sale](https://www.dell.com/en-us/lp/legal/terms-of-sale) | [Privacy Statement](https://www.dell.com/en-us/lp/legal/policies-privacy) | [Do Not Sell or Share My Personal Information](https://www.dell.com/en-us/lp/do-not-sell-my-info) | [Cookies, Ads & Emails](https://www.dell.com/en-us/lp/legal/policies-cookies-ads-emails) | [Legal & Regulatory](https://www.dell.com/en-us/lp/legal/terms)"
+copyright = "[Copyright © 2026 Dell Inc.](https://www.dell.com/en-us/lp/legal/site-terms-of-use-copyright) | [Terms of Sale](https://www.dell.com/en-us/lp/legal/terms-of-sale) | [Privacy Statement](https://www.dell.com/en-us/lp/legal/policies-privacy) | [Do Not Sell or Share My Personal Information](https://www.dell.com/en-us/lp/do-not-sell-my-info) | [Cookies, Ads & Emails](https://www.dell.com/en-us/lp/legal/policies-cookies-ads-emails) | [Legal & Regulatory](https://www.dell.com/en-us/lp/legal/terms)"
 # privacy_policy = "https://www.dell.com/learn/us/en/uscorp1/policies-privacy"
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
@@ -154,10 +154,10 @@ enable = false
 #        desc = "Practical questions and curated answers"
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
-	name = "GitHub"
-	url = "https://github.com/dell/azurestack-docs"
-	icon = "fab fa-github"
-        desc = "Development takes place here!"
+name = "GitHub"
+url = "https://github.com/dell/azurestack-docs"
+icon = "fab fa-github"
+desc = "Development takes place here!"
 #[[params.links.developer]]
 #	name = "Slack"
 #	url = "http://del.ly/Slack_request"
@@ -185,17 +185,17 @@ enable = false
 #   url = "https://dell.github.io/azurestack-docs/v3"
 
 [[menu.main]]
-    name = "GitHub"
-    pre = "<i class='fab fa-github fa-lg'></i>"
-    weight = 50
-    url = "https://github.com/dell/azurestack-docs"
+name = "GitHub"
+pre = "<i class='fab fa-github fa-lg'></i>"
+weight = 50
+url = "https://github.com/dell/azurestack-docs"
 
 [module]
 proxy = "direct"
-  [[module.imports]]
-    path = "github.com/google/docsy"
-  [[module.imports]]
-    path = "github.com/google/docsy/dependencies"
+[[module.imports]]
+path = "github.com/google/docsy"
+[[module.imports]]
+path = "github.com/google/docsy/dependencies"
 
 
 [outputs]
@@ -206,5 +206,5 @@ section = ["HTML", "RSS", "print"]
 
 # Privacy settings for GDPR compliance
 [privacy]
-  [privacy.googleAnalytics]
-    respectDoNotTrack = true
+[privacy.googleAnalytics]
+respectDoNotTrack = true

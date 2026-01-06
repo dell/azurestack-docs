@@ -3,7 +3,7 @@ title: "Support Matrix for 16G - Dell 2504"
 linkTitle: "16G"
 weight: 7496
 Description: >
-comment: "Copyright © 2025 Dell Inc."
+comment: "Copyright © 2026 Dell Inc."
 
 ---
 

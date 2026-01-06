@@ -4,7 +4,7 @@ linkTitle: "Dell 2503"
 weight: 7497
 Description: >
 hide_feedback: true
-comment: "Copyright © 2025 Dell Inc."
+comment: "Copyright © 2026 Dell Inc."
 
 ---
 

@@ -3,7 +3,7 @@ title: "Azure Local Support Matrix for 16G (Dell 2509)"
 linkTitle: "16G"
 weight: 7491
 Description: >
-comment: "Copyright © 2025 Dell Inc."
+comment: "Copyright © 2026 Dell Inc."
 
 ---
 

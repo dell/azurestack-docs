@@ -3,7 +3,7 @@ title: "Azure Local Support Matrix for 45n0c (Dell 2509)"
 linkTitle: "45n0c"
 weight: 7491
 Description: >
-comment: "Copyright © 2025 Dell Inc."
+comment: "Copyright © 2026 Dell Inc."
 
 ---
 

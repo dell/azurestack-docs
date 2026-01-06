@@ -3,7 +3,7 @@ title: "How to create a service principal name for Azure Stack Hub integrated wi
 linkTitle: "Create AD FS SPN"
 weight: 1
 Description: >
-comment: "Copyright © 2025 Dell Inc."
+comment: "Copyright © 2026 Dell Inc."
 
 ---
 

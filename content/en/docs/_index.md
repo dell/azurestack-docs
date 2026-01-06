@@ -6,7 +6,7 @@ menu:
   main:
     weight: 1
 hide_feedback: true
-comment: "Copyright © 2025 Dell Inc."
+comment: "Copyright © 2026 Dell Inc."
 
 ---
 

@@ -3,7 +3,7 @@ title: "Release Notes for 16G - Dell 2508"
 linkTitle: "16G"
 weight: 7492
 Description: >
-comment: "Copyright © 2025 Dell Inc."
+comment: "Copyright © 2026 Dell Inc."
 
 ---
 

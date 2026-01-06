@@ -3,7 +3,7 @@ title: "Azure Stack HCI Firmware and Driver Matrix for Legacy Windows Server Ope
 linkTitle: "Windows Server 2016"
 weight: 1000
 Description: >
-comment: "Copyright © 2025 Dell Inc."
+comment: "Copyright © 2026 Dell Inc."
 
 ---
 

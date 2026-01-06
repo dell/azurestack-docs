@@ -3,7 +3,7 @@ title: "Release Artifacts for 16G - Dell 2511"
 linkTitle: "16G"
 weight: 7489
 Description: >
-comment: "Copyright © 2025 Dell Inc."
+comment: "Copyright © 2026 Dell Inc."
 
 ---
 

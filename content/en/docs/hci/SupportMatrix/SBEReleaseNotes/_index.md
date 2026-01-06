@@ -5,6 +5,6 @@ manuallink: "https://www.dell.com/support/kbdoc/en-us/000224407/dell-for-microso
 weight: 10000
 Description: >
 hide_feedback: true
-comment: "Copyright © 2025 Dell Inc."
+comment: "Copyright © 2026 Dell Inc."
 
 ---

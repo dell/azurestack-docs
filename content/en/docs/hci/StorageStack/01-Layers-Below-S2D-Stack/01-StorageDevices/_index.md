@@ -3,7 +3,7 @@ title: "Storage Devices"
 linkTitle: "Storage Devices"
 weight: 1
 Description: >
-comment: "Copyright © 2025 Dell Inc."
+comment: "Copyright © 2026 Dell Inc."
 
 ---
 

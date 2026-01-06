@@ -1,7 +1,7 @@
 ---
 title: Search Results
 layout: search
-comment: "Copyright © 2025 Dell Inc."
+comment: "Copyright © 2026 Dell Inc."
 
 ---
 
