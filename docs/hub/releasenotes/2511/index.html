@@ -1,0 +1,555 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="alternate" type="application/rss&#43;xml" href="https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2511/index.xml">
+<link rel="alternate" type="text/html" href="https://dell.github.io/azurestack-docs/_print/docs/hub/releasenotes/2511/">
+<meta name="robots" content="index, follow">
+
+
+<link rel="shortcut icon" href="/azurestack-docs/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/azurestack-docs/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/azurestack-docs/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/azurestack-docs/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/azurestack-docs/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/azurestack-docs/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/azurestack-docs/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/azurestack-docs/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/azurestack-docs/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/azurestack-docs/favicons/android-192x192.png" sizes="192x192">
+
+<title>Release Notes for Dell 2511 | Solutions for Microsoft Azure</title>
+<meta name="description" content="Dell Technologies (Dell) Azure documentation pages">
+<meta property="og:url" content="https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2511/">
+  <meta property="og:site_name" content="Solutions for Microsoft Azure">
+  <meta property="og:title" content="Release Notes for Dell 2511">
+  <meta property="og:description" content="Dell Technologies (Dell) Azure documentation pages">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Release Notes for Dell 2511">
+  <meta itemprop="description" content="Dell Technologies (Dell) Azure documentation pages">
+  <meta itemprop="dateModified" content="2026-01-06T15:20:49+00:00">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Release Notes for Dell 2511">
+  <meta name="twitter:description" content="Dell Technologies (Dell) Azure documentation pages">
+
+
+
+<link rel="preload" href="https://dell.github.io/azurestack-docs/scss/main.min.4be8cdcf78a52ff9809ae73a7245abb788ca6ce762500dcb809e2dc2750919a0.css" as="style">
+<link href="https://dell.github.io/azurestack-docs/scss/main.min.4be8cdcf78a52ff9809ae73a7245abb788ca6ce762500dcb809e2dc2750919a0.css" rel="stylesheet" integrity="">
+
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+<script defer
+  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
+  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/azurestack-docs/css/prism.css"/>
+<link disabled id="prism-night-owl" rel="stylesheet" href='/azurestack-docs/css/prism-nightowl.css'>
+<link id="home-page-override" rel="stylesheet" href='/azurestack-docs/css/homepage.css'>
+<link rel="stylesheet" href='/azurestack-docs/css/cookie-consent.css'>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXKTSNG8VW"></script>
+      <script>
+        function getConsentAnalytics() {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; azs-cookie-consent=`);
+            var cookieAnalytics = false;
+            if (parts.length === 2) {
+                try {
+                    cookieAnalytics = (JSON.parse(decodeURIComponent(parts.pop().split(';').shift()))).analytics;
+                } catch (e) {
+                    cookieAnalytics = false;
+                }
+            }
+            return cookieAnalytics;
+        }
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack && getConsentAnalytics()) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-PXKTSNG8VW');
+        }
+      </script>
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll" data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row">
+  <a class="navbar-brand" href="/azurestack-docs/"><span class="navbar-brand__logo navbar-logo"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1017 132"><defs><style>.cls-1{fill:#fff}</style></defs><title>DellTech_Logo_Prm_Wht_rgb</title><path class="cls-1" d="M1015 84.89c0-12.23-6.8-17.66-20.39-20.38s-21.73-4.08-21.73-13.58c0-6.8 5.44-10.87 15-10.87 12.22.0 16.3 5.43 16.3 12.22l1.36 1.36h5.43l1.37-1.36c0-13.58-10.88-19-24.46-19-15 0-23.1 8.15-23.1 17.67.0 10.86 8.15 16.3 21.73 19s20.38 4.08 20.38 15c0 6.79-4.07 12.23-17.66 12.23-12.22.0-17.66-6.8-17.66-15l-1.35-1.36h-5.44l-1.35 1.36c0 12.23 9.5 21.74 25.8 21.74 17.66.0 25.82-8.15 25.82-19M956.58 71.31l1.36-1.37V65.87c0-19-10.87-32.61-29.89-32.61s-29.89 13.59-29.89 32.61v2.72c0 19 9.51 35.32 31.25 35.32 19 0 25.81-12.23 27.17-20.38l-1.36-1.36h-5.43l-1.36 1.36c-2.72 8.15-8.16 13.59-19 13.59-17.66.0-23.1-16.31-23.1-24.46l1.36-1.35zm-8.15-6.8H907.67l-1.36-1.36c0-9.51 5.44-23.09 21.74-23.09s21.74 13.58 21.74 23.09zm-59.78 36.68V36l-1.36-1.35h-5.43L880.5 36v65.22l1.36 1.36h5.43zm0-78.8V14.24l-1.36-1.36h-5.43l-1.36 1.36v8.15l1.36 1.36h5.43zM837 97.12c-13.59.0-21.74-9.52-21.74-28.53S823.44 40.06 837 40.06s21.73 9.5 21.73 28.53S850.61 97.12 837 97.12M858.76 93c0 17.66-4.07 31.25-20.38 31.25-12.22.0-16.3-5.44-17.66-12.23l-1.35-1.36h-5.44l-1.36 1.36c1.36 10.87 9.51 19 25.81 19 17.67.0 28.53-10.87 28.53-38V36l-1.35-1.35h-4.08L860.12 36l-1.36 8.16H857.4c-2.71-5.43-9.5-10.87-21.74-10.87-19 0-28.53 15-28.53 35.33s9.52 35.32 28.53 35.32c12.24.0 19-5.43 21.74-10.87zm-88.3-53c13.58.0 23.09 10.87 23.09 28.53S784 97.12 770.46 97.12s-23.1-10.87-23.1-28.53 9.51-28.53 23.1-28.53m0 63.85c17.66.0 31.25-12.23 31.25-35.32s-13.59-35.33-31.25-35.33-31.25 12.23-31.25 35.33 13.59 35.32 31.25 35.32m-40.76-2.72V8.81l-1.36-1.36h-5.43l-1.36 1.36v92.38l1.36 1.36h5.43zM680.8 40.06c13.58.0 23.09 10.87 23.09 28.53s-9.51 28.53-23.09 28.53-23.1-10.87-23.1-28.53 9.51-28.53 23.1-28.53m0 63.85c17.66.0 31.25-12.23 31.25-35.32S698.46 33.26 680.8 33.26s-31.25 12.23-31.25 35.33 13.59 35.32 31.25 35.32m-39.4-2.72V60.43c0-17.66-9.51-27.17-24.45-27.17-9.52.0-17.67 4.08-21.74 10.87h-1.36L592.49 36l-1.36-1.35h-4.08L585.7 36v65.22l1.35 1.36h5.44l1.36-1.36V64.51c0-15 6.79-24.45 21.73-24.45 10.87.0 17.66 6.79 17.66 20.37v40.76l1.37 1.36H640zm-69.29.0V60.43c0-17.66-9.51-27.17-24.45-27.17-9.52.0-17.66 4.08-21.74 10.87h-1.36V8.81L523.2 7.45h-5.43l-1.36 1.36v92.38l1.36 1.36h5.43l1.36-1.36V64.51c0-15 6.8-24.45 21.74-24.45 10.87.0 17.66 6.79 17.66 20.37v40.76l1.36 1.36h5.44zM455.28 68.59c0-19 9.5-28.53 23.09-28.53s19 8.15 20.38 16.29l1.35 1.37h5.44l1.36-1.37c-1.36-13.58-12.23-23.09-28.53-23.09-17.66.0-31.24 10.87-31.24 35.33s13.58 35.32 31.24 35.32c16.3.0 27.17-9.51 28.53-23.1l-1.36-1.36H500.1l-1.35 1.36C497.39 89 492 97.12 478.37 97.12s-23.09-9.52-23.09-28.53m-14.95 2.72 1.36-1.37V65.87c0-19-10.87-32.61-29.9-32.61s-29.88 13.59-29.88 32.61v2.72c0 19 9.51 35.32 31.25 35.32 19 0 25.81-12.23 27.17-20.38L439 82.17h-5.43l-1.36 1.36c-2.72 8.15-8.15 13.59-19 13.59-17.66.0-23.1-16.31-23.1-24.46l1.36-1.35zm-8.15-6.8H391.42l-1.36-1.36c0-9.51 5.44-23.09 21.73-23.09s21.75 13.58 21.75 23.09zM395.57 12.88V8.81l-1.36-1.36H323.56L322.2 8.81v4.07l1.36 1.36h29.89l1.36 1.36v85.59l1.36 1.36h5.43l1.36-1.36V15.6l1.36-1.36h29.89z"/><path class="cls-1" d="M322.2 83.65v18.9H260.85V7.45h21.6v76.2zM38.55 102.55A47.57 47.57.0 0084.58 67l53.8 42 53.77-42v35.56H253.5V83.65H213.75V7.45h-21.6V43L140.58 83.3l-11.54-9L153.73 55l26.89-21-15.35-12-51.58 40.3-11.53-9L153.73 13 138.38 1 84.58 43a47.57 47.57.0 00-46-35.58H0v95.1zM21.6 83.65V26.35H38.55c14.33.0 26 12.83 26 28.65s-11.67 28.65-26 28.65z"/></svg></span><span class="navbar-brand__name">Solutions for Microsoft Azure</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="/azurestack-docs/docs/"><span>Dell Technologies Solutions for Microsoft Azure</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/dell/azurestack-docs" target="_blank" rel="noopener"><i class='fab fa-github fa-lg'></i><span>GitHub</span></a>
+      </li>
+      <li class="td-light-dark-menu nav-item dropdown">
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="check2" viewBox="0 0 16 16">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </symbol>
+  <symbol id="circle-half" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+  </symbol>
+  <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+  </symbol>
+  <symbol id="sun-fill" viewBox="0 0 16 16">
+    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+  </symbol>
+</svg>
+
+<button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center"
+        id="bd-theme"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        data-bs-display="static"
+        aria-label="Toggle theme (auto)">
+  <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg>
+</button>
+<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+      <svg class="bi me-2 opacity-50"><use href="#sun-fill"></use></svg>
+      Light
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+      <svg class="bi me-2 opacity-50"><use href="#moon-stars-fill"></use></svg>
+      Dark
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+      <svg class="bi me-2 opacity-50"><use href="#circle-half"></use></svg>
+      Auto
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+</ul>
+
+      </li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    class="td-search__input form-control"
+    placeholder="Search this site…"
+    aria-label="Search this site…"
+    autocomplete="off"
+    
+    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.2f373abf02cbf84775e87227584e96af.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
+  </div>
+</div>
+</nav>
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            <div id="td-sidebar-menu" class="td-sidebar__inner">
+  <form class="td-sidebar__search d-flex align-items-center">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    class="td-search__input form-control"
+    placeholder="Search this site…"
+    aria-label="Search this site…"
+    autocomplete="off"
+    
+    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.2f373abf02cbf84775e87227584e96af.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="td-sidebar-nav collapse" id="td-section-nav">
+    <ul class="td-sidebar-nav__section pe-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-azurestack-docsdocs-li">
+  <a href="/azurestack-docs/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-azurestack-docsdocs"><span class="">Dell Technologies Solutions for Microsoft Azure</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-azurestack-docsdocshub-li">
+  <a href="/azurestack-docs/docs/hub/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshub"><span class="">Azure Stack Hub</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-azurestack-docsdocshubreleaseartifacts-li">
+  <a href="/azurestack-docs/docs/hub/releaseartifacts/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleaseartifacts"><span class="">Release Artifacts</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-azurestack-docsdocshubreleaseartifacts2511-li">
+  <a href="/azurestack-docs/docs/hub/releaseartifacts/2511/" title="Release Artifacts for Dell 2511" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleaseartifacts2511"><span class="">Dell 2511</span></a>
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubreleaseartifacts251114g-li">
+  <a href="/azurestack-docs/docs/hub/releaseartifacts/2511/14g/" title="Release Artifacts for 14G - Dell 2511" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleaseartifacts251114g"><span class="">14G</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubreleaseartifacts251116g-li">
+  <a href="/azurestack-docs/docs/hub/releaseartifacts/2511/16g/" title="Release Artifacts for 16G - Dell 2511" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleaseartifacts251116g"><span class="">16G</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-azurestack-docsdocshubreleaseartifacts2508-li">
+  <a href="/azurestack-docs/docs/hub/releaseartifacts/2508/" title="Release Artifacts for Dell 2508" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleaseartifacts2508"><span class="">Dell 2508</span></a>
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubreleaseartifacts250814g-li">
+  <a href="/azurestack-docs/docs/hub/releaseartifacts/2508/14g/" title="Release Artifacts for 14G - Dell 2508" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleaseartifacts250814g"><span class="">14G</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubreleaseartifacts250816g-li">
+  <a href="/azurestack-docs/docs/hub/releaseartifacts/2508/16g/" title="Release Artifacts for 16G - Dell 2508" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleaseartifacts250816g"><span class="">16G</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-azurestack-docsdocshubreleaseartifacts2504-li">
+  <a href="/azurestack-docs/docs/hub/releaseartifacts/2504/" title="Release Artifacts for Dell 2504" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleaseartifacts2504"><span class="">Dell 2504</span></a>
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubreleaseartifacts250414g-li">
+  <a href="/azurestack-docs/docs/hub/releaseartifacts/2504/14g/" title="Release Artifacts for 14G - Dell 2504" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleaseartifacts250414g"><span class="">14G</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubreleaseartifacts250416g-li">
+  <a href="/azurestack-docs/docs/hub/releaseartifacts/2504/16g/" title="Release Artifacts for 16G - Dell 2504" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleaseartifacts250416g"><span class="">16G</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-azurestack-docsdocshubreleaseartifacts2502-li">
+  <a href="/azurestack-docs/docs/hub/releaseartifacts/2502/" title="Release Artifacts for Dell 2502" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleaseartifacts2502"><span class="">Dell 2502</span></a>
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubreleaseartifacts250214g-li">
+  <a href="/azurestack-docs/docs/hub/releaseartifacts/2502/14g/" title="Release Artifacts for 14G - Dell 2502" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleaseartifacts250214g"><span class="">14G</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubreleaseartifacts250216g-li">
+  <a href="/azurestack-docs/docs/hub/releaseartifacts/2502/16g/" title="Release Artifacts for 16G - Dell 2502" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleaseartifacts250216g"><span class="">16G</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-azurestack-docsdocshubreleaseartifacts2411-li">
+  <a href="/azurestack-docs/docs/hub/releaseartifacts/2411/" title="Release Artifacts for Dell 2411" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleaseartifacts2411"><span class="">Dell 2411</span></a>
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubreleaseartifacts241114g-li">
+  <a href="/azurestack-docs/docs/hub/releaseartifacts/2411/14g/" title="Release Artifacts for 14G - Dell 2411" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleaseartifacts241114g"><span class="">14G</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubreleaseartifacts241116g-li">
+  <a href="/azurestack-docs/docs/hub/releaseartifacts/2411/16g/" title="Release Artifacts for 16G - Dell 2411" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleaseartifacts241116g"><span class="">16G</span></a>
+</li>
+  </ul>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-azurestack-docsdocshubreleasenotes-li">
+  <a href="/azurestack-docs/docs/hub/releasenotes/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleasenotes"><span class="">Release Notes</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-azurestack-docsdocshubreleasenotes2511-li">
+  <a href="/azurestack-docs/docs/hub/releasenotes/2511/" title="Release Notes for Dell 2511" class="align-left ps-0 active td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleasenotes2511"><span class="td-sidebar-nav-active-item">Dell 2511</span></a>
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-azurestack-docsdocshubreleasenotes251114g-li">
+  <a href="/azurestack-docs/docs/hub/releasenotes/2511/14g/" title="Release Notes for 14G - Dell 2511" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleasenotes251114g"><span class="">14G</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-azurestack-docsdocshubreleasenotes251116g-li">
+  <a href="/azurestack-docs/docs/hub/releasenotes/2511/16g/" title="Release Notes for 16G - Dell 2511" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleasenotes251116g"><span class="">16G</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-azurestack-docsdocshubreleasenotes2508-li">
+  <a href="/azurestack-docs/docs/hub/releasenotes/2508/" title="Release Notes for Dell 2508" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleasenotes2508"><span class="">Dell 2508</span></a>
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubreleasenotes250814g-li">
+  <a href="/azurestack-docs/docs/hub/releasenotes/2508/14g/" title="Release Notes for 14G - Dell 2508" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleasenotes250814g"><span class="">14G</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubreleasenotes250816g-li">
+  <a href="/azurestack-docs/docs/hub/releasenotes/2508/16g/" title="Release Notes for 16G - Dell 2508" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleasenotes250816g"><span class="">16G</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-azurestack-docsdocshubreleasenotes2504-li">
+  <a href="/azurestack-docs/docs/hub/releasenotes/2504/" title="Release Notes for Dell 2504" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleasenotes2504"><span class="">Dell 2504</span></a>
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubreleasenotes250414g-li">
+  <a href="/azurestack-docs/docs/hub/releasenotes/2504/14g/" title="Release Notes for 14G - Dell 2504" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleasenotes250414g"><span class="">14G</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubreleasenotes250416g-li">
+  <a href="/azurestack-docs/docs/hub/releasenotes/2504/16g/" title="Release Notes for 16G - Dell 2504" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleasenotes250416g"><span class="">16G</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-azurestack-docsdocshubreleasenotes2502-li">
+  <a href="/azurestack-docs/docs/hub/releasenotes/2502/" title="Release Notes for Dell 2502" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleasenotes2502"><span class="">Dell 2502</span></a>
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubreleasenotes250214g-li">
+  <a href="/azurestack-docs/docs/hub/releasenotes/2502/14g/" title="Release Notes for 14G - Dell 2502" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleasenotes250214g"><span class="">14G</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubreleasenotes250216g-li">
+  <a href="/azurestack-docs/docs/hub/releasenotes/2502/16g/" title="Release Notes for 16G - Dell 2502" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleasenotes250216g"><span class="">16G</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-azurestack-docsdocshubreleasenotes2411-li">
+  <a href="/azurestack-docs/docs/hub/releasenotes/2411/" title="Release Notes for Dell 2411" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleasenotes2411"><span class="">Dell 2411</span></a>
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubreleasenotes241114g-li">
+  <a href="/azurestack-docs/docs/hub/releasenotes/2411/14g/" title="Release Notes for 14G - Dell 2411" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleasenotes241114g"><span class="">14G</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubreleasenotes241116g-li">
+  <a href="/azurestack-docs/docs/hub/releasenotes/2411/16g/" title="Release Notes for 16G - Dell 2411" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubreleasenotes241116g"><span class="">16G</span></a>
+</li>
+  </ul>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-azurestack-docsdocshubsupportmatrix-li">
+  <a href="/azurestack-docs/docs/hub/supportmatrix/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubsupportmatrix"><span class="">Support Matrix</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-azurestack-docsdocshubsupportmatrix2511-li">
+  <a href="/azurestack-docs/docs/hub/supportmatrix/2511/" title="Support Matrix for Dell 2511" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubsupportmatrix2511"><span class="">Dell 2511</span></a>
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubsupportmatrix251114g-li">
+  <a href="/azurestack-docs/docs/hub/supportmatrix/2511/14g/" title="Support Matrix for 14G - Dell 2511" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubsupportmatrix251114g"><span class="">14G</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubsupportmatrix251116g-li">
+  <a href="/azurestack-docs/docs/hub/supportmatrix/2511/16g/" title="Support Matrix for 16G - Dell 2511" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubsupportmatrix251116g"><span class="">16G</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-azurestack-docsdocshubsupportmatrix2508-li">
+  <a href="/azurestack-docs/docs/hub/supportmatrix/2508/" title="Support Matrix for Dell 2508" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubsupportmatrix2508"><span class="">Dell 2508</span></a>
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubsupportmatrix250814g-li">
+  <a href="/azurestack-docs/docs/hub/supportmatrix/2508/14g/" title="Support Matrix for 14G - Dell 2508" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubsupportmatrix250814g"><span class="">14G</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubsupportmatrix250816g-li">
+  <a href="/azurestack-docs/docs/hub/supportmatrix/2508/16g/" title="Support Matrix for 16G - Dell 2508" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubsupportmatrix250816g"><span class="">16G</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-azurestack-docsdocshubsupportmatrix2504-li">
+  <a href="/azurestack-docs/docs/hub/supportmatrix/2504/" title="Support Matrix for Dell 2504" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubsupportmatrix2504"><span class="">Dell 2504</span></a>
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubsupportmatrix250414g-li">
+  <a href="/azurestack-docs/docs/hub/supportmatrix/2504/14g/" title="Support Matrix for 14G - Dell 2504" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubsupportmatrix250414g"><span class="">14G</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubsupportmatrix250416g-li">
+  <a href="/azurestack-docs/docs/hub/supportmatrix/2504/16g/" title="Support Matrix for 16G - Dell 2504" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubsupportmatrix250416g"><span class="">16G</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-azurestack-docsdocshubsupportmatrix2502-li">
+  <a href="/azurestack-docs/docs/hub/supportmatrix/2502/" title="Support Matrix for Dell 2502" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubsupportmatrix2502"><span class="">Dell 2502</span></a>
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubsupportmatrix250214g-li">
+  <a href="/azurestack-docs/docs/hub/supportmatrix/2502/14g/" title="Support Matrix for 14G - Dell 2502" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubsupportmatrix250214g"><span class="">14G</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubsupportmatrix250216g-li">
+  <a href="/azurestack-docs/docs/hub/supportmatrix/2502/16g/" title="Support Matrix for 16G - Dell 2502" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubsupportmatrix250216g"><span class="">16G</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-azurestack-docsdocshubsupportmatrix2411-li">
+  <a href="/azurestack-docs/docs/hub/supportmatrix/2411/" title="Support Matrix for Dell 2411" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubsupportmatrix2411"><span class="">Dell 2411</span></a>
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubsupportmatrix241114g-li">
+  <a href="/azurestack-docs/docs/hub/supportmatrix/2411/14g/" title="Support Matrix for 14G - Dell 2411" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubsupportmatrix241114g"><span class="">14G</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubsupportmatrix241116g-li">
+  <a href="/azurestack-docs/docs/hub/supportmatrix/2411/16g/" title="Support Matrix for 16G - Dell 2411" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubsupportmatrix241116g"><span class="">16G</span></a>
+</li>
+  </ul>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-azurestack-docsdocshubnodeexpansion-li">
+  <a href="/azurestack-docs/docs/hub/nodeexpansion/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubnodeexpansion"><span class="">Node Expansion</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubnodeexpansion16g-li">
+  <a href="/azurestack-docs/docs/hub/nodeexpansion/16g/" title="Node Expansion for 16G" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubnodeexpansion16g"><span class="">16G</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-azurestack-docsdocshubpatchandupdate-li">
+  <a href="/azurestack-docs/docs/hub/patchandupdate/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubpatchandupdate"><span class="">Patch and Update</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubpatchandupdate16g-li">
+  <a href="/azurestack-docs/docs/hub/patchandupdate/16g/" title="Patch and Update for 16G" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubpatchandupdate16g"><span class="">16G</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-azurestack-docsdocshubhowto-li">
+  <a href="/azurestack-docs/docs/hub/howto/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubhowto"><span class="">How To</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshubhowtoadfsspn-li">
+  <a href="/azurestack-docs/docs/hub/howto/adfsspn/" title="How to create a service principal name for Azure Stack Hub integrated with Active Directory Federation Services identity using PowerShell" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshubhowtoadfsspn"><span class="">Create AD FS SPN</span></a>
+</li>
+  </ul>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-azurestack-docsdocshci-li">
+  <a href="/azurestack-docs/docs/hci/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshci"><span class="">Azure Local</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-azurestack-docsdocshcistoragestack-li">
+  <a href="/azurestack-docs/docs/hci/storagestack/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshcistoragestack"><span class="">Storage Stack</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshcistoragestackoverview-li">
+  <a href="/azurestack-docs/docs/hci/storagestack/overview/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshcistoragestackoverview"><span class="">Storage Stack Overview</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-azurestack-docsdocshcistoragestack01-layers-below-s2d-stack-li">
+  <a href="/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshcistoragestack01-layers-below-s2d-stack"><span class="">Layers Below S2D Stack</span></a>
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshcistoragestack01-layers-below-s2d-stack01-storagedevices-li">
+  <a href="/azurestack-docs/docs/hci/storagestack/01-layers-below-s2d-stack/01-storagedevices/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshcistoragestack01-layers-below-s2d-stack01-storagedevices"><span class="">Storage Devices</span></a>
+</li>
+  </ul>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-azurestack-docsdocshcisupportmatrix-li">
+  <a href="/azurestack-docs/docs/hci/supportmatrix/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshcisupportmatrix"><span class="">Support Matrix</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-azurestack-docsdocshcisupportmatrix2509-li">
+  <a href="/azurestack-docs/docs/hci/supportmatrix/2509/" title="Azure Local Support Matrix (Dell 2509)" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshcisupportmatrix2509"><span class="">Dell 2509</span></a>
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshcisupportmatrix250914g-15g_hci-li">
+  <a href="/azurestack-docs/docs/hci/supportmatrix/2509/14g-15g_hci/" title="Azure Local Support Matrix for 14G-15G (Dell 2509)" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshcisupportmatrix250914g-15g_hci"><span class="">14G-15G</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshcisupportmatrix250916g_hci-li">
+  <a href="/azurestack-docs/docs/hci/supportmatrix/2509/16g_hci/" title="Azure Local Support Matrix for 16G (Dell 2509)" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshcisupportmatrix250916g_hci"><span class="">16G</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshcisupportmatrix250945n0c_hci-li">
+  <a href="/azurestack-docs/docs/hci/supportmatrix/2509/45n0c_hci/" title="Azure Local Support Matrix for 45n0c (Dell 2509)" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshcisupportmatrix250945n0c_hci"><span class="">45n0c</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshcisupportmatrix2509goldenimages-li">
+  <a href="/azurestack-docs/docs/hci/supportmatrix/2509/goldenimages/" title="Azure Local Golden Images (Dell 2509)" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshcisupportmatrix2509goldenimages"><span class="">Golden Images</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-azurestack-docsdocshcisupportmatrix2506-li">
+  <a href="/azurestack-docs/docs/hci/supportmatrix/2506/" title="Azure Local Support Matrix (Dell 2506)" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshcisupportmatrix2506"><span class="">Dell 2506</span></a>
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshcisupportmatrix250614g-15g_hci-li">
+  <a href="/azurestack-docs/docs/hci/supportmatrix/2506/14g-15g_hci/" title="Azure Local Support Matrix for 14G-15G (Dell 2506)" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshcisupportmatrix250614g-15g_hci"><span class="">14G-15G</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshcisupportmatrix250616g_hci-li">
+  <a href="/azurestack-docs/docs/hci/supportmatrix/2506/16g_hci/" title="Azure Local Support Matrix for 16G (Dell 2506)" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshcisupportmatrix250616g_hci"><span class="">16G</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshcisupportmatrix2506goldenimages-li">
+  <a href="/azurestack-docs/docs/hci/supportmatrix/2506/goldenimages/" title="Azure Local Golden Images (Dell 2506)" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshcisupportmatrix2506goldenimages"><span class="">Golden Images</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-azurestack-docsdocshcisupportmatrix2503-li">
+  <a href="/azurestack-docs/docs/hci/supportmatrix/2503/" title="Azure Local Support Matrix (Dell 2503)" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshcisupportmatrix2503"><span class="">Dell 2503</span></a>
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshcisupportmatrix250314g-15g_hci-li">
+  <a href="/azurestack-docs/docs/hci/supportmatrix/2503/14g-15g_hci/" title="Azure Local Support Matrix for 14G-15G (Dell 2503)" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshcisupportmatrix250314g-15g_hci"><span class="">14G-15G</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshcisupportmatrix250316g_hci-li">
+  <a href="/azurestack-docs/docs/hci/supportmatrix/2503/16g_hci/" title="Azure Local Support Matrix for 16G (Dell 2503)" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshcisupportmatrix250316g_hci"><span class="">16G</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshcisupportmatrix2503goldenimages-li">
+  <a href="/azurestack-docs/docs/hci/supportmatrix/2503/goldenimages/" title="Azure Local Golden Images (Dell 2503)" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshcisupportmatrix2503goldenimages"><span class="">Golden Images</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshcisupportmatrixsbereleasenotes-li">
+  <a href="https://www.dell.com/support/kbdoc/en-us/000224407/dell-for-microsoft-azure-stack-hci-ax-hardware-updates-release-notes" title="Dell Solution Builder Extensions for Azure Local Integrated System AX Server Release Notes" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshcisupportmatrixsbereleasenotes"><span class="">SBE Release Notes</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-azurestack-docsdocshcisupportmatrixarchive-li">
+  <a href="/azurestack-docs/docs/hci/supportmatrix/archive/" title="Azure Stack HCI Support Matrix (Archive)" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshcisupportmatrixarchive"><span class="">Archive</span></a>
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshcisupportmatrixarchivews2016-li">
+  <a href="/azurestack-docs/docs/hci/supportmatrix/archive/ws2016/" title="Azure Stack HCI Firmware and Driver Matrix for Legacy Windows Server Operating Systems (Windows Server 2016)" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshcisupportmatrixarchivews2016"><span class="">Windows Server 2016</span></a>
+</li>
+  </ul>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-azurestack-docsdocshcibiosandidrac-li">
+  <a href="/azurestack-docs/docs/hci/biosandidrac/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocshcibiosandidrac"><span class="">BIOS and iDRAC configuration recommendations</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-azurestack-docsdocsreferences-li">
+  <a href="/azurestack-docs/docs/references/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-azurestack-docsdocsreferences"><span class="">References</span></a>
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
+<a href="https://github.com/dell/azurestack-docs/tree/main/content/en/docs/hub/ReleaseNotes/2511/_index.md" class="td-page-meta--view td-page-meta__view" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines fa-fw"></i> View page source</a>
+  <a href="https://github.com/dell/azurestack-docs/edit/main/content/en/docs/hub/ReleaseNotes/2511/_index.md" class="td-page-meta--edit td-page-meta__edit" target="_blank" rel="noopener"><i class="fa-solid fa-pen-to-square fa-fw"></i> Edit</a>
+  <a href="https://github.com/dell/azurestack-docs/new/main/content/en/docs/hub/ReleaseNotes/2511?filename=change-me.md&amp;value=---%0Atitle%3A&#43;%22Long&#43;Page&#43;Title%22%0AlinkTitle%3A&#43;%22Short&#43;Nav&#43;Title%22%0Aweight%3A&#43;100%0Adescription%3A&#43;%3E-%0A&#43;&#43;&#43;&#43;&#43;Page&#43;description&#43;for&#43;heading&#43;and&#43;indexes.%0A---%0A%0A%23%23&#43;Heading%0A%0AEdit&#43;this&#43;template&#43;to&#43;create&#43;your&#43;new&#43;page.%0A%0A%2A&#43;Give&#43;it&#43;a&#43;good&#43;name%2C&#43;ending&#43;in&#43;%60.md%60&#43;-&#43;e.g.&#43;%60getting-started.md%60%0A%2A&#43;Edit&#43;the&#43;%22front&#43;matter%22&#43;section&#43;at&#43;the&#43;top&#43;of&#43;the&#43;page&#43;%28weight&#43;controls&#43;how&#43;its&#43;ordered&#43;amongst&#43;other&#43;pages&#43;in&#43;the&#43;same&#43;directory%3B&#43;lowest&#43;number&#43;first%29.%0A%2A&#43;Add&#43;a&#43;good&#43;commit&#43;message&#43;at&#43;the&#43;bottom&#43;of&#43;the&#43;page&#43;%28%3C80&#43;characters%3B&#43;use&#43;the&#43;extended&#43;description&#43;field&#43;for&#43;more&#43;detail%29.%0A%2A&#43;Create&#43;a&#43;new&#43;branch&#43;so&#43;you&#43;can&#43;preview&#43;your&#43;new&#43;file&#43;and&#43;request&#43;a&#43;review&#43;via&#43;Pull&#43;Request.%0A" class="td-page-meta--child td-page-meta__child" target="_blank" rel="noopener"><i class="fa-solid fa-pen-to-square fa-fw"></i> Create child page</a>
+  <a href="https://github.com/dell/azurestack-docs/issues/new?title=Release%20Notes%20for%20Dell%202511" class="td-page-meta--issue td-page-meta__issue" target="_blank" rel="noopener"><i class="fa-solid fa-list-check fa-fw"></i> Open an issue</a>
+  <a id="print" href="/azurestack-docs/_print/docs/hub/releasenotes/2511/"><i class="fa-solid fa-print fa-fw"></i> Print page</a>
+
+</div>
+
+            
+            
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/azurestack-docs/docs/">Dell Technologies Solutions for Microsoft Azure</a></li>
+  <li class="breadcrumb-item">
+    <a href="/azurestack-docs/docs/hub/">Azure Stack Hub</a></li>
+  <li class="breadcrumb-item">
+    <a href="/azurestack-docs/docs/hub/releasenotes/">Release Notes</a></li>
+  <li class="breadcrumb-item active" aria-current="page">
+    Dell 2511</li>
+  </ol>
+</nav>
+<div class="td-content">
+	<h1>Release Notes for Dell 2511</h1>
+  
+	<header class="article-meta">
+		
+</header>
+	
+	<div class="section-index">
+    
+    
+    <hr class="panel-line">
+        <div class="entry">
+                <h5>
+                    <a href="/azurestack-docs/docs/hub/releasenotes/2511/14g/">Release Notes for 14G - Dell 2511</a>
+                </h5>
+                <p></p>
+            </div>
+        <div class="entry">
+                <h5>
+                    <a href="/azurestack-docs/docs/hub/releasenotes/2511/16g/">Release Notes for 16G - Dell 2511</a>
+                </h5>
+                <p></p>
+            </div>
+        </div>
+<div class="td-page-meta__lastmod">
+  Last modified January 6, 2026: <a data-proofer-ignore href="https://github.com/dell/azurestack-docs/commit/1d921b5934fdf2753bc4f13f486912f865d94231">Add Azure Stack Hub 14G and 16G docs for 2511 release (#232) (1d921b59)</a>
+</div>
+</div>
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/dell/azurestack-docs" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">
+    <span class="td-footer__authors"><a href="https://www.dell.com/en-us/lp/legal/site-terms-of-use-copyright">Copyright © 2025 Dell Inc.</a> | <a href="https://www.dell.com/en-us/lp/legal/terms-of-sale">Terms of Sale</a> | <a href="https://www.dell.com/en-us/lp/legal/policies-privacy">Privacy Statement</a> | <a href="https://www.dell.com/en-us/lp/do-not-sell-my-info">Do Not Sell or Share My Personal Information</a> | <a href="https://www.dell.com/en-us/lp/legal/policies-cookies-ads-emails">Cookies, Ads &amp; Emails</a> | <a href="https://www.dell.com/en-us/lp/legal/terms">Legal &amp; Regulatory</a></span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src='/azurestack-docs/js/dark-mode-custom.js'></script>
+<script src="https://dell.github.io/azurestack-docs/js/main.min.403ff095218c662472dab60ed98ecbb19431682de5ac7c6159891241cd366af5.js" integrity="sha256-QD/wlSGMZiRy2rYO2Y7LsZQxaC3lrHxhWYkSQc02avU=" crossorigin="anonymous"></script>
+<script src='/azurestack-docs/js/prism.js'></script>
+<script src='/azurestack-docs/js/tabpane-persist.js'></script>
+<script>
+
+    var offlineSearch = document.querySelector('input[data-offline-search-index-json-src*="offline-search"]');
+    offlineSearch.setAttribute('data-offline-search-index-json-src', offlineSearch.getAttribute('data-offline-search-index-json-src').replace('azurestack-docs/azurestack-docs', 'azurestack-docs'));
+
+</script>
+
+
+<script src='/azurestack-docs/js/cookie-consent.js'></script>
+
+  </body>
+</html>
