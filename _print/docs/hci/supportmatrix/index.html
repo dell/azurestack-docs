@@ -166,7 +166,7 @@ NOTE Azure Stack HCI version 22H2 reached end of support on May 31st, 2025. You 
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.a4a8adbdf44ce13794e2fec02d85c86c.json"
+    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.b0f8bf84be502f046e8ba5ac7ee8b530.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -1639,7 +1639,159 @@ PM1725A, Dell Express Flash NVMe 6.4TB 2.5&quot; SFF</td><td>MZWLL6T4HMLS-000D3<
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-f4086569f20176645c5b67423f77f6e7">1.4 - Azure Local Dell Solution Builder Extensions Release Notes (Dell 2512)</h1>
+	<h1 id="pg-3c1a0546fdbea29d65fc45d08f86eaa4">1.4 - Azure Local Golden Images (Dell 2512)</h1>
+    
+	
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<style>
+table {
+    border-width:1px; border-style:solid;
+    border-color:black;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    table-layout:fixed;
+    overflow-wrap: break-word;
+}
+th {
+    border-width:1px;
+    padding:7px;
+    border-style:solid;
+    border-color:#0076CE;
+    background-color:#0076CE;
+    color:#FFFFFF;
+    text-align:center;
+}
+td {
+    border-width:1px;
+    padding:7px;
+    border-style:solid;
+    border-color:#0076CE;
+    text-align:center;
+}
+caption {
+    padding-bottom: 10px;
+    color:  #0076CE;
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="content">
+
+
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">NOTE</h4>
+
+    <p>SBE package 4.2.2512.xxxx and newer will only support Azure Local solution versions 12.*.1001.* or 12.*.1002.* (HCI OS 24H2) and newer.</p>
+<p>Dell will support the use of SBE package 4.2.2509.xxxx on Azure Local instances running version 11.* (HCI OS 23H2) until April 2026. Dell recommends that instances running version 11.* be upgraded to 12.* as soon as possible to remain in a supported state.</p>
+
+
+</div>
+
+<p>The Dell Technologies provided operating system golden image for Azure Local instances is for imaging AX servers prior to deploying an Azure Local instance. This image is based on the Azure Stack HCI OS, with Microsoft customization and Dell Technologies customization. This image includes drivers provided by Dell Technologies.</p>
+
+   
+   
+<ul class="nav nav-tabs" id="tabs-2" role="tablist">
+  <li class="nav-item">
+      <button class="nav-link disabled"
+          id="tabs-02-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-02-00" role="tab"
+          aria-controls="tabs-02-00" aria-selected="false">
+        <strong>Azure Stack HCI OS</strong>:
+      </button>
+    </li><li class="nav-item">
+      <button class="nav-link active"
+          id="tabs-02-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-02-01" role="tab"
+          data-td-tp-persist="os build 26100.xxxx (24h2)" aria-controls="tabs-02-01" aria-selected="true">
+        OS build 26100.xxxx (24H2)
+      </button>
+    </li>
+</ul>
+
+<div class="tab-content" id="tabs-2-content">
+    <div class="tab-body tab-pane fade"
+        id="tabs-02-00" role="tabpanel" aria-labelled-by="tabs-02-00-tab" tabindex="2">
+        
+    </div>
+    <div class="tab-body tab-pane fade show active"
+        id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab" tabindex="2">
+        
+       <h3>Azure Local Golden Images for Solution versions 12.2510.1002.* - 12.2604.1002.* with Dell SBE 4.2.2512.*</h3>
+       <table>
+       <thead>
+       <tr>
+       <th>Azure Stack HCI OS Golden Image for Azure Local</th>
+       <th>Platform</th>
+       <th>Use</th>
+       <th>Instance Expansion and Machine Repair Notes</th>
+       </tr>
+       </thead>
+       <tbody>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=RCWKY">Azure Stack HCI 24H2 with OS customization 12.2510.0.3165 and 2512 drivers for AX-760, AX-660, AX-4510c, AX-4520c | ISO version A00</a></td>
+       <td>AX-760<br>AX-660<br>AX-4510c<br>AX-4520c<br>APEX MC-760<br>APEX MC-660<br>APEX MC-4510c<br>APEX MC-4520c</td>
+       <td rowspan='4'>Deploy<br><br>Instance Expansion (Add-Server)<br><br>Machine Repair</td>
+       <td rowspan='4'>Use with Azure Local instances running Solution version 12.*.1002.*<br><br>Specify Azure Local instance Solution version when running Arc registration using:<br><i>Invoke-AzStackHciArcInitialization -TargetSolutionVersion [Solution Version]</i></td>
+       </tr>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=CG6F3">Azure Stack HCI 24H2 with OS customization 12.2510.0.3165 and 2512 drivers for AX-750, AX-650 | ISO version A00</a></td>
+       <td>AX-750<br>AX-650</td>
+       </tr>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=X6WTW">Azure Stack HCI 24H2 with OS customization 12.2510.0.3165 and 2512 drivers for AX-7525, AX-6515 | ISO version A00</a></td>
+       <td>AX-7525<br>AX-6515</td>
+       </tr>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=8MXRD">Azure Stack HCI 24H2 with OS customization 12.2510.0.3165 and 2512 drivers for AX-740xd, AX-640 | ISO version A00</a></td>
+       <td>AX-640<br>AX-740xd</td>
+       </tr>
+       </tbody>
+       </table>
+
+   
+    </div>
+</div>
+
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-f4086569f20176645c5b67423f77f6e7">1.5 - Azure Local Dell Solution Builder Extensions Release Notes (Dell 2512)</h1>
     
 	
 
