@@ -1,0 +1,862 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="canonical" type="text/html" href="https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2512/sbereleasenotes/">
+<link rel="alternate" type="application/rss&#43;xml" href="https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2512/sbereleasenotes/index.xml">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/azurestack-docs/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/azurestack-docs/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/azurestack-docs/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/azurestack-docs/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/azurestack-docs/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/azurestack-docs/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/azurestack-docs/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/azurestack-docs/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/azurestack-docs/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/azurestack-docs/favicons/android-192x192.png" sizes="192x192">
+
+<title>Azure Local Dell Solution Builder Extensions Release Notes (Dell 2512) | Solutions for Microsoft Azure</title>
+<meta name="description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; Overview Solution Builder Extensions (SBE) for Azure Local. Firmware, Driver, and WDAC Supplemental policy for lifecycle management for Azure Local instances running on Dell AX servers.">
+<meta property="og:url" content="https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2512/sbereleasenotes/">
+  <meta property="og:site_name" content="Solutions for Microsoft Azure">
+  <meta property="og:title" content="Azure Local Dell Solution Builder Extensions Release Notes (Dell 2512)">
+  <meta property="og:description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; Overview Solution Builder Extensions (SBE) for Azure Local. Firmware, Driver, and WDAC Supplemental policy for lifecycle management for Azure Local instances running on Dell AX servers.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Azure Local Dell Solution Builder Extensions Release Notes (Dell 2512)">
+  <meta itemprop="description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; Overview Solution Builder Extensions (SBE) for Azure Local. Firmware, Driver, and WDAC Supplemental policy for lifecycle management for Azure Local instances running on Dell AX servers.">
+  <meta itemprop="dateModified" content="2026-01-08T11:45:23-06:00">
+  <meta itemprop="wordCount" content="2898">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Azure Local Dell Solution Builder Extensions Release Notes (Dell 2512)">
+  <meta name="twitter:description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; Overview Solution Builder Extensions (SBE) for Azure Local. Firmware, Driver, and WDAC Supplemental policy for lifecycle management for Azure Local instances running on Dell AX servers.">
+
+
+
+<link rel="preload" href="https://dell.github.io/azurestack-docs/scss/main.min.4be8cdcf78a52ff9809ae73a7245abb788ca6ce762500dcb809e2dc2750919a0.css" as="style">
+<link href="https://dell.github.io/azurestack-docs/scss/main.min.4be8cdcf78a52ff9809ae73a7245abb788ca6ce762500dcb809e2dc2750919a0.css" rel="stylesheet" integrity="">
+
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+<script defer
+  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
+  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/azurestack-docs/css/prism.css"/>
+<link disabled id="prism-night-owl" rel="stylesheet" href='/azurestack-docs/css/prism-nightowl.css'>
+<link id="home-page-override" rel="stylesheet" href='/azurestack-docs/css/homepage.css'>
+<link rel="stylesheet" href='/azurestack-docs/css/cookie-consent.css'>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXKTSNG8VW"></script>
+      <script>
+        function getConsentAnalytics() {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; azs-cookie-consent=`);
+            var cookieAnalytics = false;
+            if (parts.length === 2) {
+                try {
+                    cookieAnalytics = (JSON.parse(decodeURIComponent(parts.pop().split(';').shift()))).analytics;
+                } catch (e) {
+                    cookieAnalytics = false;
+                }
+            }
+            return cookieAnalytics;
+        }
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack && getConsentAnalytics()) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-PXKTSNG8VW');
+        }
+      </script>
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll" data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row">
+  <a class="navbar-brand" href="/azurestack-docs/"><span class="navbar-brand__logo navbar-logo"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1017 132"><defs><style>.cls-1{fill:#fff}</style></defs><title>DellTech_Logo_Prm_Wht_rgb</title><path class="cls-1" d="M1015 84.89c0-12.23-6.8-17.66-20.39-20.38s-21.73-4.08-21.73-13.58c0-6.8 5.44-10.87 15-10.87 12.22.0 16.3 5.43 16.3 12.22l1.36 1.36h5.43l1.37-1.36c0-13.58-10.88-19-24.46-19-15 0-23.1 8.15-23.1 17.67.0 10.86 8.15 16.3 21.73 19s20.38 4.08 20.38 15c0 6.79-4.07 12.23-17.66 12.23-12.22.0-17.66-6.8-17.66-15l-1.35-1.36h-5.44l-1.35 1.36c0 12.23 9.5 21.74 25.8 21.74 17.66.0 25.82-8.15 25.82-19M956.58 71.31l1.36-1.37V65.87c0-19-10.87-32.61-29.89-32.61s-29.89 13.59-29.89 32.61v2.72c0 19 9.51 35.32 31.25 35.32 19 0 25.81-12.23 27.17-20.38l-1.36-1.36h-5.43l-1.36 1.36c-2.72 8.15-8.16 13.59-19 13.59-17.66.0-23.1-16.31-23.1-24.46l1.36-1.35zm-8.15-6.8H907.67l-1.36-1.36c0-9.51 5.44-23.09 21.74-23.09s21.74 13.58 21.74 23.09zm-59.78 36.68V36l-1.36-1.35h-5.43L880.5 36v65.22l1.36 1.36h5.43zm0-78.8V14.24l-1.36-1.36h-5.43l-1.36 1.36v8.15l1.36 1.36h5.43zM837 97.12c-13.59.0-21.74-9.52-21.74-28.53S823.44 40.06 837 40.06s21.73 9.5 21.73 28.53S850.61 97.12 837 97.12M858.76 93c0 17.66-4.07 31.25-20.38 31.25-12.22.0-16.3-5.44-17.66-12.23l-1.35-1.36h-5.44l-1.36 1.36c1.36 10.87 9.51 19 25.81 19 17.67.0 28.53-10.87 28.53-38V36l-1.35-1.35h-4.08L860.12 36l-1.36 8.16H857.4c-2.71-5.43-9.5-10.87-21.74-10.87-19 0-28.53 15-28.53 35.33s9.52 35.32 28.53 35.32c12.24.0 19-5.43 21.74-10.87zm-88.3-53c13.58.0 23.09 10.87 23.09 28.53S784 97.12 770.46 97.12s-23.1-10.87-23.1-28.53 9.51-28.53 23.1-28.53m0 63.85c17.66.0 31.25-12.23 31.25-35.32s-13.59-35.33-31.25-35.33-31.25 12.23-31.25 35.33 13.59 35.32 31.25 35.32m-40.76-2.72V8.81l-1.36-1.36h-5.43l-1.36 1.36v92.38l1.36 1.36h5.43zM680.8 40.06c13.58.0 23.09 10.87 23.09 28.53s-9.51 28.53-23.09 28.53-23.1-10.87-23.1-28.53 9.51-28.53 23.1-28.53m0 63.85c17.66.0 31.25-12.23 31.25-35.32S698.46 33.26 680.8 33.26s-31.25 12.23-31.25 35.33 13.59 35.32 31.25 35.32m-39.4-2.72V60.43c0-17.66-9.51-27.17-24.45-27.17-9.52.0-17.67 4.08-21.74 10.87h-1.36L592.49 36l-1.36-1.35h-4.08L585.7 36v65.22l1.35 1.36h5.44l1.36-1.36V64.51c0-15 6.79-24.45 21.73-24.45 10.87.0 17.66 6.79 17.66 20.37v40.76l1.37 1.36H640zm-69.29.0V60.43c0-17.66-9.51-27.17-24.45-27.17-9.52.0-17.66 4.08-21.74 10.87h-1.36V8.81L523.2 7.45h-5.43l-1.36 1.36v92.38l1.36 1.36h5.43l1.36-1.36V64.51c0-15 6.8-24.45 21.74-24.45 10.87.0 17.66 6.79 17.66 20.37v40.76l1.36 1.36h5.44zM455.28 68.59c0-19 9.5-28.53 23.09-28.53s19 8.15 20.38 16.29l1.35 1.37h5.44l1.36-1.37c-1.36-13.58-12.23-23.09-28.53-23.09-17.66.0-31.24 10.87-31.24 35.33s13.58 35.32 31.24 35.32c16.3.0 27.17-9.51 28.53-23.1l-1.36-1.36H500.1l-1.35 1.36C497.39 89 492 97.12 478.37 97.12s-23.09-9.52-23.09-28.53m-14.95 2.72 1.36-1.37V65.87c0-19-10.87-32.61-29.9-32.61s-29.88 13.59-29.88 32.61v2.72c0 19 9.51 35.32 31.25 35.32 19 0 25.81-12.23 27.17-20.38L439 82.17h-5.43l-1.36 1.36c-2.72 8.15-8.15 13.59-19 13.59-17.66.0-23.1-16.31-23.1-24.46l1.36-1.35zm-8.15-6.8H391.42l-1.36-1.36c0-9.51 5.44-23.09 21.73-23.09s21.75 13.58 21.75 23.09zM395.57 12.88V8.81l-1.36-1.36H323.56L322.2 8.81v4.07l1.36 1.36h29.89l1.36 1.36v85.59l1.36 1.36h5.43l1.36-1.36V15.6l1.36-1.36h29.89z"/><path class="cls-1" d="M322.2 83.65v18.9H260.85V7.45h21.6v76.2zM38.55 102.55A47.57 47.57.0 0084.58 67l53.8 42 53.77-42v35.56H253.5V83.65H213.75V7.45h-21.6V43L140.58 83.3l-11.54-9L153.73 55l26.89-21-15.35-12-51.58 40.3-11.53-9L153.73 13 138.38 1 84.58 43a47.57 47.57.0 00-46-35.58H0v95.1zM21.6 83.65V26.35H38.55c14.33.0 26 12.83 26 28.65s-11.67 28.65-26 28.65z"/></svg></span><span class="navbar-brand__name">Solutions for Microsoft Azure</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="/azurestack-docs/docs/"><span>Dell Technologies Solutions for Microsoft Azure</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/dell/azurestack-docs" target="_blank" rel="noopener"><i class='fab fa-github fa-lg'></i><span>GitHub</span></a>
+      </li>
+      <li class="td-light-dark-menu nav-item dropdown">
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="check2" viewBox="0 0 16 16">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </symbol>
+  <symbol id="circle-half" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+  </symbol>
+  <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+  </symbol>
+  <symbol id="sun-fill" viewBox="0 0 16 16">
+    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+  </symbol>
+</svg>
+
+<button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center"
+        id="bd-theme"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        data-bs-display="static"
+        aria-label="Toggle theme (auto)">
+  <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg>
+</button>
+<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+      <svg class="bi me-2 opacity-50"><use href="#sun-fill"></use></svg>
+      Light
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+      <svg class="bi me-2 opacity-50"><use href="#moon-stars-fill"></use></svg>
+      Dark
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+      <svg class="bi me-2 opacity-50"><use href="#circle-half"></use></svg>
+      Auto
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+</ul>
+
+      </li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    class="td-search__input form-control"
+    placeholder="Search this site…"
+    aria-label="Search this site…"
+    autocomplete="off"
+    
+    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.a4a8adbdf44ce13794e2fec02d85c86c.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
+  </div>
+</div>
+</nav>
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+
+
+
+
+<div class="td-content">
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+This is the multi-page printable view of this section.
+<a href="#" onclick="print();return false;">Click here to print</a>.
+</p><p>
+<a href="/azurestack-docs/docs/hci/supportmatrix/2512/sbereleasenotes/">Return to the regular view of this page</a>.
+</p>
+</div>
+
+
+
+<h1 class="title">Azure Local Dell Solution Builder Extensions Release Notes (Dell 2512)</h1>
+
+
+
+
+
+  
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#important-caveats">Important Caveats</a></li>
+    <li><a href="#new-for-this-release">New for This Release</a>
+      <ul>
+        <li><a href="#sbe-4225121616">SBE 4.2.2512.1616</a></li>
+        <li><a href="#sbe-4225121514">SBE 4.2.2512.1514</a></li>
+        <li><a href="#sbe-4225121403">SBE 4.2.2512.1403</a></li>
+      </ul>
+    </li>
+    <li><a href="#prerequisites">Prerequisites</a>
+      <ul>
+        <li><a href="#update-firmware-and-drivers-prior-to-azure-local-instance-deployment">Update Firmware and Drivers Prior to Azure Local Instance Deployment</a></li>
+        <li><a href="#idrac-access-from-host-os">iDRAC Access from Host OS</a>
+          <ul>
+            <li><a href="#manual-idrac-access-verification">Manual iDRAC Access Verification</a></li>
+          </ul>
+        </li>
+        <li><a href="#azure-local-instances-using-non-transparent-unauthenticated-network-proxy">Azure Local instances using Non-Transparent, Unauthenticated Network Proxy</a></li>
+      </ul>
+    </li>
+    <li><a href="#download-connector--automated-download-of-future-sbe-release">Download Connector – Automated download of future SBE release</a>
+      <ul>
+        <li><a href="#overview-1">Overview</a></li>
+        <li><a href="#firewall-requirements">Firewall Requirements</a></li>
+      </ul>
+    </li>
+    <li><a href="#installation">Installation</a>
+      <ul>
+        <li><a href="#download-and-extract">Download and Extract</a></li>
+        <li><a href="#automated-download-and-extraction">Automated Download and Extraction</a></li>
+        <li><a href="#installing-sbe-as-part-of-instance-creation">Installing SBE as Part of Instance Creation</a></li>
+        <li><a href="#importing-the-sbe-after-successful-azure-local-instance-creation">Importing the SBE After Successful Azure Local Instance Creation</a></li>
+      </ul>
+    </li>
+    <li><a href="#known-issues">Known Issues</a>
+      <ul>
+        <li><a href="#sbe-installation-may-fail-with-driver-cau-plug-in-error-when-attempting-to-delete-nvidia-connectx-driver-that-is-not-installed">SBE Installation May Fail With Driver CAU Plug-In Error When Attempting to Delete NVIDIA ConnectX Driver That Is Not Installed</a>
+          <ul>
+            <li><a href="#description">Description</a></li>
+            <li><a href="#workaround">Workaround</a></li>
+            <li><a href="#background">Background</a></li>
+          </ul>
+        </li>
+        <li><a href="#partially-installed-sbe-version-4000-when-sbe-is-installed-as-part-of-cluster-deployment">Partially Installed SBE Version <code>4.0.0.0</code> When SBE Is Installed as Part of Cluster Deployment</a>
+          <ul>
+            <li><a href="#description-1">Description</a></li>
+            <li><a href="#workaround-1">Workaround</a></li>
+            <li><a href="#background-1">Background</a></li>
+          </ul>
+        </li>
+        <li><a href="#sbe-installation-will-not-downgrade-drivers-that-have-a-newer-version-than-the-same-driver-in-the-sbe-payload">SBE installation will not downgrade drivers that have a newer version than the same driver in the SBE payload</a>
+          <ul>
+            <li><a href="#description-2">Description</a></li>
+          </ul>
+        </li>
+        <li><a href="#amd-drtm-dynamic-root-of-trust-for-measurement-driver-fails-to-update-on-ax-amd-platforms-when-the-drtm-device-was-originally-enabled-at-azure-local-instance-deployment-time-and-later-disabled">AMD DRTM (Dynamic Root of Trust for Measurement) Driver Fails to Update on AX AMD Platforms When the DRTM Device Was Originally Enabled at Azure Local Instance Deployment Time and Later Disabled</a>
+          <ul>
+            <li><a href="#description-3">Description</a></li>
+            <li><a href="#workaround-2">Workaround</a></li>
+            <li><a href="#background-2">Background</a></li>
+          </ul>
+    </li>
+    <li><a href="#previous-releases">Previous Releases</a></li>
+  </ul>
+</nav>
+  
+
+
+<div class="content">
+      
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<style>
+table {
+    border-width:1px; border-style:solid;
+    border-color:black;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    table-layout:fixed;
+    overflow-wrap: break-word;
+}
+th {
+    border-width:1px;
+    padding:7px;
+    border-style:solid;
+    border-color:#0076CE;
+    background-color:#0076CE;
+    color:#FFFFFF;
+    text-align:center;
+}
+td {
+    border-width:1px;
+    padding:7px;
+    border-style:solid;
+    border-color:#0076CE;
+    text-align:center;
+}
+caption {
+    padding-bottom: 10px;
+    color:  #0076CE;
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="content">
+
+
+<h2 id="overview">Overview</h2>
+<p>Solution Builder Extensions (SBE) for Azure Local. Firmware, Driver, and WDAC Supplemental policy for lifecycle management for Azure Local instances running on Dell AX servers.</p>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>SBE Release Version</th>
+      <th>Download links</th>
+      <th>Supported Servers</th>
+      <th>Driver and Firmware versions</th>
+      <th>HCI OS Version</th>
+      <th>Supported Solution Version</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>4.2.2512.1616</td>
+      <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=52Y76">https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=52Y76</a></td>
+      <td>AX-660<br>AX-760<br>AX-4510C<br>AX-4520C<br>APEX MC-660<br>APEX MC-760<br>APEX MC-4510C<br>APEX MC-4520C</td>
+      <td><a href="/azurestack-docs/docs/hci/supportmatrix/2512/16g_hci/">Azure Local Support Matrix for 16G (2512) | Solutions for Microsoft Azure</a><br><a href="/azurestack-docs/docs/hci/supportmatrix/2512/45n0c_hci/">Azure Local Support Matrix for AX-4500 (2512) | Solutions for Microsoft Azure</a></td>
+      <td>24H2</td>
+      <td>12.*.1002.*<br>12.*.1001.*</td>
+    </tr>
+    <tr>
+      <td>4.2.2512.1514</td>
+      <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=DTD2M">https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=DTD2M</a></td>
+      <td>AX-650<br>AX-750<br>AX-6515<br>AX-7525</td>
+      <td><a href="/azurestack-docs/docs/hci/supportmatrix/2512/14g-15g_hci/">Azure Local Support Matrix for 14G-15G (2512) | Solutions for Microsoft Azure</a></td>
+      <td>24H2</td>
+      <td>12.*.1002.*<br>12.*.1001.*</td>
+    </tr>
+    <tr>
+      <td>4.2.2512.1403</td>
+      <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=VJ48M">https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=VJ48M</a></td>
+      <td>AX-640<br>AX-740xd</td>
+      <td><a href="/azurestack-docs/docs/hci/supportmatrix/2512/14g-15g_hci/">Azure Local Support Matrix for 14G-15G (2512) | Solutions for Microsoft Azure</a></td>
+      <td>24H2</td>
+      <td>12.*.1002.*<br>12.*.1001.*</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h2 id="important-caveats">Important Caveats</h2>
+<ul>
+<li>
+<p>NVIDIA ConnectX NIC resets have been observed by customers under certain workloads. Affected driver version <code>25.1.26647.0</code> and corresponding firmware was introduced in the SBE <code>4.2.2506.n</code>. SBE <code>4.2.2509.n</code> and <code>4.2.2512.n</code> will downgrade the NVIDIA ConnectX driver to version <code>24.4.26429.0</code>, but the ConnectX firmware must be manually downgraded prior to installing SBE <code>4.2.2512.n</code>.
+For details and instructions, see <a href="https://www.dell.com/support/kbdoc/en-us/000376360">KB000376360</a>.</p>
+</li>
+<li>
+<p>Dell Micron 7450 and 7500 NVMe SSDs occasionally enter a panic state. For details and instructions, see <a href="https://www.dell.com/support/kbdoc/en-us/000368482/poweredge-dell-micron-7450-and-7500-nvme-ssds-occasionally-enters-a-panic-state">KB000368482</a>. From the SBE table above, find the version relevant to your product and install the SBE with updated firmware that resolves the defect for the Micron 7450 and 7500 drives.</p>
+</li>
+<li>
+<p>SBE versions <code>4.2.2512.1616</code> and <code>4.2.2512.1514</code> include the same BIOS version as previously released SBE versions <code>4.2.2509.1625</code> and <code>4.1.2509.1516</code> for the 16G, 45n0c, AX-650, and AX-750. New Azure Local instance deployments may have newer BIOS versions as listed in the <a href="https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2512/">Dell 2512 support matrix</a>. The installation of SBE <code>4.2.2512.n</code> will <strong>not downgrade</strong> the BIOS version in this case. The supported BIOS versions are listed in the <a href="https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2512/">Dell 2512 support matrix</a>.</p>
+</li>
+</ul>
+<h2 id="new-for-this-release">New for This Release</h2>
+<h3 id="sbe-4225121616">SBE 4.2.2512.1616</h3>
+<ul>
+<li>Driver and Firmware 2512 Update</li>
+<li>Added server component health checks</li>
+<li>Added checks for downloading the latest SBE discovery manifest during updates that use automated SBE download</li>
+<li>Added support for APEX MC branded nodes</li>
+<li>To install this SBE version, Azure Local instances that are already deployed must be running solution version <code>12.*.1001.*</code> or <code>12.*.1002.*</code></li>
+</ul>
+<h3 id="sbe-4225121514">SBE 4.2.2512.1514</h3>
+<ul>
+<li>Driver and Firmware 2512 Update</li>
+<li>Added server component health checks</li>
+<li>Added checks for downloading the latest SBE discovery manifest during updates that use automated SBE download</li>
+<li>To install this SBE version, Azure Local instances that are already deployed must be running solution version <code>12.*.1001.*</code> or <code>12.*.1002.*</code></li>
+</ul>
+<h3 id="sbe-4225121403">SBE 4.2.2512.1403</h3>
+<ul>
+<li>Driver and Firmware 2512 Update</li>
+<li>Added server component health checks</li>
+<li>Added checks for downloading the latest SBE discovery manifest during updates that use automated SBE download</li>
+<li>To install this SBE version, Azure Local instances that are already deployed must be running solution version <code>12.*.1001.*</code> or <code>12.*.1002.*</code></li>
+</ul>
+<h2 id="prerequisites">Prerequisites</h2>
+<h3 id="update-firmware-and-drivers-prior-to-azure-local-instance-deployment">Update Firmware and Drivers Prior to Azure Local Instance Deployment</h3>
+<p>Drivers and firmware need to be installed on the servers that will be the instance members prior to deployment from the Azure Portal or using an ARM Template. This requirement is independent of the installation of the SBE. The machines imaged with Dell provided golden image will include the required Dell provided Out-of-Box drivers, but the firmware versions must still be validated and possibly updated prior to the instance deployment. The most current driver and firmware versions listed in the support matrix are recommended.</p>
+<p>The Azure Local support matrix for Dell AX servers can be found here, <a href="https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/">Support Matrix | Solutions for Microsoft Azure</a></p>
+<h3 id="idrac-access-from-host-os">iDRAC Access from Host OS</h3>
+<p>The iDRAC pass-through NIC must be enabled and have an IP address assigned to it. iDRAC pass-through NIC is enabled by default and has an APIPA (Automatic Private IP Addressing) IP address assigned. This IP address must be accessible by the iDRAC NIC <code>Remote NDIS Compatible Device</code> in the host operating system. This is a dedicated link to the host OS and cannot be accessed outside the host OS.</p>
+<p>iDRAC access health checks are introduced starting with the December 2024 SBE releases. These health checks verify that the required iDRAC access has been implemented on each server that will be an instance member. The iDRAC access health checks run automatically as part of the standard built-in SBE health checks. These health checks must complete successfully for the SBE installation to proceed. Failure remediation instructions are provided in case the health check fails.</p>
+<h4 id="manual-idrac-access-verification">Manual iDRAC Access Verification</h4>
+<p>The following procedures provide a manual method for verifying the required iDRAC access. The iDRAC access health checks provide automated and more comprehensive verification method.</p>
+<figure class="card rounded p-0 td-post-card mb-0 mt-0 border-0" style="max-width: 764px">
+<img class="card-img-top" style="margin-left:;" src="/azurestack-docs/docs/hci/supportmatrix/2512/sbereleasenotes/iDRACPassThroughSettings_hu_af95d7b560168d04.jpeg" width="754" height="519" border="0">
+<figcaption class="card-body px-0 pt-0 pb-0" style="margin-left:;">
+<p class="card-text">
+<small class="text-body-secondary">
+Example iDRAC Pass-through settings
+</small>
+</p>
+</figcaption>
+</figure>
+<br>
+<p>The iDRAC NIC <code>Remote NDIS Compatible Device</code> in the host operating system is used by the <code>SBE CAU plug-in</code> to update firmware. This NIC must be enabled and have an IP address assigned to it. By default, this NIC is enabled and has an APIPA IP address assigned to it that can access the iDRAC pass-through IP address. DHCP client should not be disabled on this NIC.</p>
+<p>This is a dedicated link to iDRAC from the host OS and cannot be accessed outside the host OS.</p>
+<p>The IP address can be obtained using the following PowerShell command:</p>
+<pre><code class="language-powershell">Get-NetAdapter -InterfaceDescription &quot;Remote NDIS Compatible Device&quot; | Get-NetIPAddress -AddressFamily IPv4 | Select-Object -Property IPAddress
+</code></pre>
+<p>Example:</p>
+<pre><code class="language-powershell">IPAddress
+---------
+169.254.0.2
+</code></pre>
+<br>
+<h3 id="azure-local-instances-using-non-transparent-unauthenticated-network-proxy">Azure Local instances using Non-Transparent, Unauthenticated Network Proxy</h3>
+<p>Azure Local instances using non-transparent, unauthenticated network proxy must have the iDRAC pass-through IP address in the network proxy exclusion list. For information on how to configure the non-transparent, unauthenticated network proxy see, <a href="https://learn.microsoft.com/en-us/azure-stack/hci/manage/configure-proxy-settings-23h2">Configure proxy settings for Azure Local</a></p>
+<p>The following example shows how to configure the APIPA IP address range <code>169.254.0.0/16</code> to be in the network proxy exclusion list.</p>
+<pre><code class="language-powershell">$NoProxy = &quot;localhost,127.0.0.1,.svc,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,.contoso.com,node1,node2,ClusterName,169.254.0.0/16&quot;
+[Environment]::SetEnvironmentVariable(&quot;NO_PROXY&quot;, $NoProxy, &quot;Machine&quot;)
+</code></pre>
+<br>
+<h2 id="download-connector--automated-download-of-future-sbe-release">Download Connector – Automated download of future SBE release</h2>
+<h3 id="overview-1">Overview</h3>
+<p><code>Download Connector</code> is a component in the SBE (Solutions Builder Extensions) that automates the downloading of new SBE bundles as they become available for your cluster. Once an SBE that includes the <code>Download Connector</code> is installed on your cluster, manually downloading and importing follow-on SBE version is no longer required. The update service will automate the downloading of the next available SBE for your Azure Local instance in a similar manner to how the download of the solution upgrade is automated. The <code>Download Connector</code> is part of the SBE version <code>4.1.2505.1501</code> and newer.</p>
+<p>SBE versions that include the <code>Download Connector</code> also include system and update health checks that proactively verify the ability of the <code>Download Connector</code> to access the required remote resource when it comes time to download the next SBE for your cluster. System health checks are run once per day and update health checks are run at the initial phase of the update process.</p>
+<h3 id="firewall-requirements">Firewall Requirements</h3>
+<p>The SBE <code>Download Connector</code> running in the Azure Local instance needs to periodically connect to the internet resources to download SBE bundles for your cluster. The following outbound connectivity is required.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Endpoint Description</th>
+          <th>Endpoint URL</th>
+          <th>Port</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>SBE bundle download</td>
+          <td>dl.dell.com/*</td>
+          <td>443</td>
+      </tr>
+      <tr>
+          <td>SBE download catalog</td>
+          <td>downloads.dell.com/filestore/Prod/SbeDownloadCatalog/AX_SBE_Download_Catalog.xml</td>
+          <td>443</td>
+      </tr>
+      <tr>
+          <td>SBE download catalog redirection</td>
+          <td>aka.ms/DellAzureLocalSBEDownloadCatalog</td>
+          <td>443</td>
+      </tr>
+      <tr>
+          <td>Digicert Certificate Revocation Status</td>
+          <td>http://crl3.digicert.com/*</td>
+          <td>80</td>
+      </tr>
+      <tr>
+          <td>Digicert Certificate Revocation Status</td>
+          <td>http://crl4.digicert.com/*</td>
+          <td>80</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="installation">Installation</h2>
+<h3 id="download-and-extract">Download and Extract</h3>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">CAUTION</h4>
+
+    Steps 3 and 4 must be completed to ensure that the latest SBE Discovery manifest is used.
+
+</div>
+
+<p>SBE bundle zip file has the naming convention Bundle_SBE_Dell_AS-HCI-AX-<code>GenerationNumber</code>_<code>VersionNumber</code>.zip.</p>
+<ol>
+<li>
+<p>Download the SBE bundle zip file for your Dell AX server generation using the download link above. The SBE bundles are specific to the AX 14G platforms, AX 15G platforms, and AX 16G platforms</p>
+</li>
+<li>
+<p>Extract the three SBE files from the SBE bundle zip file. There are two xml files and one zip file. Example:</p>
+<ul>
+<li>SBE_Dell_AS-HCI-AX-16G-45n0c_4.2.2506.1600.xml</li>
+<li>SBE_Dell_AS-HCI-AX-16G-45n0c_4.2.2506.1600.zip</li>
+<li>SBE_Discovery_Dell.xml</li>
+</ul>
+</li>
+<li>
+<p>Navigate to <a href="https://aka.ms/AzureStackSBEUpdate/DellEMC"><a href="https://aka.ms/AzureStackSBEUpdate/DellEMC">https://aka.ms/AzureStackSBEUpdate/DellEMC</a></a> and press <code>Ctrl + S</code> to download the SBE_Discovery_Dell.xml file</p>
+</li>
+<li>
+<p>Replace the SBE_Discovery_Dell.xml file that was in the SBE bundle zip with the file downloaded in step 3</p>
+</li>
+</ol>
+<p>There are two options for installing the SBE package. The SBE package can be installed as part of instance creation or imported after instance creation is successfully completed. The importing method is also used to update the SBE to a newer version when the currently running SBE does not include <code>Download Connector</code> capability.</p>
+<h3 id="automated-download-and-extraction">Automated Download and Extraction</h3>
+<p>SBE release starting with <code>4.1.2505.1501</code> and newer include the <code>Download Connector</code> that automates downloading and extracting the SBE. Manual download and SBE bundle extraction are unnecessary when an SBE with this capability is already installed on the Azure Local instance.</p>
+<h3 id="installing-sbe-as-part-of-instance-creation">Installing SBE as Part of Instance Creation</h3>
+<p>Starting with June 2025 Dell golden image release, the SBE files are included in the golden image and already placed in the <code>C:\SBE</code> directory. The following 3 steps do not need to be performed.</p>
+<ol>
+<li>On each server that will be an instance member, create the following directory: <code>C:\SBE</code></li>
+<li>Copy the three SBE files to the directory <code>C:\SBE</code> on each server that will be an instance member</li>
+<li>Proceed to deploying the instance from the Azure Portal or an ARM template</li>
+</ol>
+<h3 id="importing-the-sbe-after-successful-azure-local-instance-creation">Importing the SBE After Successful Azure Local Instance Creation</h3>
+<ol>
+<li>
+<p>Create a directory on a cluster shared volume (CSV) for sideloading the SBE, e.g., <code>C:\ClusterStorage\Infrastructure_1\SBE\SBE-AX-16G-45n0c_4.2.2506.1600</code></p>
+</li>
+<li>
+<p>Copy the three extracted SBE files to this directory</p>
+</li>
+<li>
+<p>Load the SBE files by running the following command with the path to the directory that holds the three extracted SBE files</p>
+<pre><code class="language-powershell">Add-SolutionUpdate -SourceFolder &quot;C:\ClusterStorage\Infrastructure_1\SBE\SBE-AX-16G-45n0c_4.2.2506.1600&quot;
+</code></pre>
+</li>
+<li>
+<p>Check the state of the SBE that was just added. The state needs to be <code>Ready</code>.</p>
+<pre><code class="language-powershell">Get-SolutionUpdate | Where-Object -Property PackageType -EQ &quot;SBE&quot;
+</code></pre>
+</li>
+<li>
+<p>Verify that the Azure Local instance is in a healthy state and is ready for the SBE installation by running the following commands on one of the Azure Local instance machines:</p>
+<pre><code class="language-powershell">Get-SolutionUpdate | Where-Object { $_.State -imatch &quot;Ready&quot; -and $_.PackageType -eq &quot;SBE&quot; } | Start-SolutionUpdate -PrepareOnly
+</code></pre>
+</li>
+<li>
+<p>Wait for the health check to complete. The solution update state will report <code>HealthChecking</code> while the health check is in progress.</p>
+</li>
+<li>
+<p>After the health check completes, run the following command if the solution update state reports <code>HealthCheckFailed</code>:</p>
+<pre><code class="language-powershell">$Result = (Get-SolutionUpdate | Where-Object {$_.State -imatch &quot;Ready&quot; -and $_.PackageType -eq &quot;SBE&quot;}).HealthCheckResult
+
+$Result | Where-Object { ($_.Status -ne &quot;SUCCESS&quot; -and $_.Severity -eq &quot;CRITICAL&quot; ) } | Format-List -Property Title, Status, Severity, Description, Remediation, TargetResourceName, TargetResourceType
+</code></pre>
+</li>
+</ol>
+<p>All tests with <code>Critical</code> severity must have the <code>Success</code> status before continuing to the next step.</p>
+<ol>
+<li>
+<p>Start the SBE installation by running the following command:</p>
+<pre><code class="language-powershell">Get-SolutionUpdate | Where-Object { $_.State -imatch &quot;Ready&quot; -and $_.PackageType -eq &quot;SBE&quot; } | Start-SolutionUpdate
+</code></pre>
+</li>
+<li>
+<p>The SBE installation progress can be checked by running the following command:</p>
+<pre><code class="language-powershell">Get-SolutionUpdate | Where-Object -Property PackageType -EQ &quot;SBE&quot; | Format-List -Property ResourceID, Description, State, SBEVersion, UpdateStateProperties, HealthState
+</code></pre>
+</li>
+</ol>
+<p>For more information see, <a href="https://learn.microsoft.com/en-us/azure/azure-local/update/update-via-powershell-23h2?view=azloc-24113">Update Azure Local via PowerShell</a></p>
+<h2 id="known-issues">Known Issues</h2>
+<h3 id="sbe-installation-may-fail-with-driver-cau-plug-in-error-when-attempting-to-delete-nvidia-connectx-driver-that-is-not-installed">SBE Installation May Fail With Driver CAU Plug-In Error When Attempting to Delete NVIDIA ConnectX Driver That Is Not Installed</h3>
+<h4 id="description">Description</h4>
+<p>The failure occurs in the driver CAU plug-in when driver downgrade option is specified for a given driver and the driver is not found in the driver store. This failure occurs in the following conditions:</p>
+<ul>
+<li>Cluster nodes were not imaged using Dell provided Azure Local golden image</li>
+<li>NVIDIA ConnectX NIC is not installed in the cluster nodes</li>
+<li>A previous version of an AX SBE is not installed</li>
+</ul>
+<h4 id="workaround">Workaround</h4>
+<p>Run the following script on each instance machine after completing step 5 &ldquo;<em>Verify that the Azure Local instance is in a healthy state and is ready for the SBE installation</em>&rdquo; in the <a href="/azurestack-docs/docs/hci/supportmatrix/2512/sbereleasenotes/#importing-the-sbe-after-successful-azure-local-instance-creation">Importing the SBE After Successful Azure Local Instance Creation</a> section or when the failure is encountered during the SBE installation.</p>
+<pre><code class="language-powershell">#Run this script on each node in the cluster.
+
+$ConnectXDriverFileName = &quot;mlx5.inf&quot;
+
+$InstalledConnectXDriver = Get-WindowsDriver -Online | Where-Object -Property OriginalFileName -IMatch $ConnectXDriverFileName
+
+if (-not $InstalledConnectXDriver) {
+
+    Write-Output &quot;Out-of-Box NVIDIA ConnectX driver not found on node: $($env:COMPUTERNAME)&quot;
+    Write-Output &quot;Checking SBE installation status on cluster: $((Get-Cluster).Name)&quot;
+
+    $SBEWithPackagePaths = Get-SolutionUpdate | Where-Object { ($_.PackageType -eq &quot;SBE&quot;) -and ($_.PackagePath -ne $null) -and ($_.PackagePath -notlike &quot;https*&quot;) }
+
+    if ($SBEWithPackagePaths) {
+
+        $SBEPackagePath = ($SBEWithPackagePaths | Select-Object -First 1).PackagePath
+
+        $MlxDriverInfBaseFilePath = Join-Path -Path $SBEPackagePath -ChildPath &quot;DriversGE\Network\Mellanox&quot;
+
+        $MlxDriverInfFilePath = Get-ChildItem -Path $MlxDriverInfBaseFilePath -Filter $ConnectXDriverFileName -Recurse
+
+        Write-Output &quot;SBE payload NVIDIA ConnectX driver file path: $($MlxDriverInfFilePath.FullName)&quot;
+
+        if (Test-Path -Path $MlxDriverInfFilePath.FullName) {
+
+            Write-Output &quot;Importing NVIDIA ConnectX driver...&quot;
+
+            pnputil.exe /add-driver $MlxDriverInfFilePath.FullName /install
+
+            if (Get-WindowsDriver -Online | Where-Object -Property OriginalFileName -IMatch $ConnectXDriverFileName) {
+
+                Write-Output &quot;NVIDIA ConnectX driver has been added to the driver store&quot;
+
+            } else {
+
+                Write-Output &quot;NVIDIA ConnectX driver is still not found in the driver store on node: $($env:COMPUTERNAME)&quot;
+
+            }
+
+        } else {
+
+            Write-Output &quot;Failed to resolve path: $($MlxDriverInfFilePath.FullName)&quot;
+
+        }
+
+    } else {
+
+        Write-Output &quot;SBE package path not found&quot;
+
+    }
+
+} else {
+
+    Write-Output &quot;Found NVIDIA ConnectX driver version: $($InstalledConnectXDriver.Version) in the driver store&quot;
+    Write-Output &quot;No further action is required on this node&quot;
+
+}
+</code></pre>
+<h4 id="background">Background</h4>
+<p>This SBE installation failure is resolved in the Azure Local Solution version <code>12.2512.1002.*</code> and newer.</p>
+<p>The driver CAU plug-in driver downgrade option is used in special cases. Currently, it is only used in the case of NVIDIA ConnectX NIC driver.</p>
+<h3 id="partially-installed-sbe-version-4000-when-sbe-is-installed-as-part-of-cluster-deployment">Partially Installed SBE Version <code>4.0.0.0</code> When SBE Is Installed as Part of Cluster Deployment</h3>
+<h4 id="description-1">Description</h4>
+<p><code>Get-SolutionUpdateEnvironment</code> reports partially installed SBE when installing the SBE as part of Azure Local instance deployment. SBE version <code>4.0.0.0</code> indicates a partially installed Solution Builder Extension (SBE).</p>
+<pre><code class="language-powershell">Get-SolutionUpdateEnvironment
+
+ResourceId        : redmond
+SbeFamily         : AX-16G-45n0c
+HardwareModel     : AX-760
+LastChecked       : 08/01/2026 14:09:31
+PackageVersions   : {Solution: 12.2512.1002.16, Services: 10.2512.0.9, Platform: 12.2512.0.3021, SBE: 4.0.0.0}
+CurrentVersion    : 12.2512.1002.16
+CurrentSbeVersion : 4.0.0.0
+LastUpdated       :
+State             : UpdateAvailable
+HealthState       : Success
+HealthCheckResult : {Storage Services Physical Disks Summary, Storage Services Physical Disks Summary, Storage Services Physical Disks Summary, Storage Services Physical Disks Summary...}
+HealthCheckDate   : 07/01/2026 17:50:07
+AdditionalData    : {[SBEAdditionalData, Solution Builder extension is partially installed. Please install the latest Solution Builder Extension provided by your hardware vendor. For more information, see https://aka.ms/SBE.]}
+</code></pre>
+<h4 id="workaround-1">Workaround</h4>
+<p>Reinstall the same SBE version using the SBE import method or automated download method after Azure Local instance deployment successfully completes.</p>
+<h4 id="background-1">Background</h4>
+<p>The SBE driver CAU plug-in expects all drivers and firmware in the SBE payload to be installed on the server during or prior to deployment. However, some of the drivers in the SBE payload may not apply to the server model or components in the server model. Microsoft is aware of this limitation and is working to resolve this issue in a future release.</p>
+<p>The partially installed SBE issue, can also occur if a component firmware version installed on the server is different than what is in the SBE payload. The SBE cannot update firmware or drivers during Azure Local instance deployment.</p>
+<h3 id="sbe-installation-will-not-downgrade-drivers-that-have-a-newer-version-than-the-same-driver-in-the-sbe-payload">SBE installation will not downgrade drivers that have a newer version than the same driver in the SBE payload</h3>
+<p>Dell supports the driver and firmware versions listed here, <a href="https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/">Support Matrix | Solutions for Microsoft Azure</a></p>
+<h4 id="description-2">Description</h4>
+<p>The SBE driver CAU plug-in will not attempt to downgrade installed drivers that are higher version than the ones in its payload unless otherwise specified by Dell.</p>
+<h3 id="amd-drtm-dynamic-root-of-trust-for-measurement-driver-fails-to-update-on-ax-amd-platforms-when-the-drtm-device-was-originally-enabled-at-azure-local-instance-deployment-time-and-later-disabled">AMD DRTM (Dynamic Root of Trust for Measurement) Driver Fails to Update on AX AMD Platforms When the DRTM Device Was Originally Enabled at Azure Local Instance Deployment Time and Later Disabled</h3>
+<h4 id="description-3">Description</h4>
+<p>SBE installation fails because the driver CAU plug-in in the SBE is unable to update the AMD DRTM driver to a newer version that is in the SBE payload. The AMD DRTM driver is one of the AMD Chipset drivers in the SBE package. The AMD DRTM driver update fails because the AMD DRTM setting was originally enabled but later disabled.</p>
+<h4 id="workaround-2">Workaround</h4>
+<p>Verify that the AMD DRTM BIOS setting is on. Turn back on the AMD DRTM setting if it is off.</p>
+<p>The DRTM option is in the BIOS configuration: System Security -&gt; TPM Advanced Settings -&gt; AMD DRTM</p>
+<p>Make sure to suspend and drain the Azure Local cluster node prior to rebooting the node. Make sure that BitLocker protection is disabled for the boot volume on the cluster node before making BIOS configuration changes. Disable BitLocker if it is enabled for the boot volume <code>C:\</code> prior to rebooting the server for the BIOS changes to take effect. Reenable BitLocker for the boot drive after the server successfully reboots.</p>
+<h4 id="background-2">Background</h4>
+<p>AMD DRTM is an advanced security feature that is available on modern AMD CPUs and is used to protect the secure boot enclaves. The AMD DRTM setting is enabled by default on AX servers with AMD CPUs that support the DRTM feature. AMD DRTM should not be disabled.</p>
+<h2 id="previous-releases">Previous Releases</h2>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th>SBE Bundle Version</th>
+      <th>Firmware And Driver Payload</th>
+      <th>Download URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AX 16G-45n0c</td>
+      <td>4.2.2509.1625</td>
+      <td>September 2025 Driver and Firmware Update</td>
+      <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=CGKK0">https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=CGKK0</a></td>
+    </tr>
+    <tr>
+      <td>AX 15G</td>
+      <td>4.2.2509.1516</td>
+      <td>September 2025 Driver and Firmware Update</td>
+      <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=DTM18">https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=DTM18</a></td>
+    </tr>
+    <tr>
+      <td>AX 14G</td>
+      <td>4.2.2509.1411</td>
+      <td>September 2025 Driver and Firmware Update</td>
+      <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=D5R9P">https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=D5R9P</a></td>
+    </tr>
+    <tr>
+      <td>AX 16G-45n0c</td>
+      <td>4.2.2506.1600</td>
+      <td>June 2025 Driver and Firmware Update</td>
+      <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=8D3FF">https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=8D3FF</a></td>
+    </tr>
+    <tr>
+      <td>AX 15G</td>
+      <td>4.2.2506.1506</td>
+      <td>June 2025 Driver and Firmware Update</td>
+      <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=P4WF9">https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=P4WF9</a></td>
+    </tr>
+    <tr>
+      <td>AX 14G</td>
+      <td>4.2.2506.1404</td>
+      <td>June 2025 Driver and Firmware Update</td>
+      <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=9F1W7">https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=9F1W7</a></td>
+    </tr>
+    <tr>
+      <td>AX 15G</td>
+      <td>4.1.2505.1503</td>
+      <td>March 2025 Driver and Firmware Update</td>
+      <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=W0R1F">https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=W0R1F</a></td>
+    </tr>
+    <tr>
+      <td>AX 16G-45n0c</td>
+      <td>4.1.2505.1504</td>
+      <td>March 2025 Driver and Firmware Update</td>
+      <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=149T3">https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=149T3</a></td>
+    </tr>
+    <tr>
+      <td>AX 15G</td>
+      <td>4.1.2505.1501</td>
+      <td>March 2025 Driver and Firmware Update</td>
+      <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=C5Y7V">https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=C5Y7V</a></td>
+    </tr>
+    <tr>
+      <td>AX 16G-45n0c</td>
+      <td>4.1.2505.1502</td>
+      <td>March 2025 Driver and Firmware Update</td>
+      <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=60GPP">https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=60GPP</a></td>
+    </tr>
+    <tr>
+      <td>AX 15G</td>
+      <td>4.1.2503.3101</td>
+      <td>March 2025 Driver and Firmware Update</td>
+      <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=M13VT">https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=M13VT</a></td>
+    </tr>
+    <tr>
+      <td>AX 16G</td>
+      <td>4.1.2503.3102</td>
+      <td>March 2025 Driver and Firmware Update</td>
+      <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=T5K74">https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=T5K74</a></td>
+    </tr>
+    <tr>
+      <td>AX 15G</td>
+      <td>4.1.2412.1201</td>
+      <td>December 2024 Driver and Firmware Update</td>
+      <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=XG1TT">https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=XG1TT</a></td>
+    </tr>
+    <tr>
+      <td>AX 16G</td>
+      <td>4.1.2412.1202</td>
+      <td>December 2024 Driver and Firmware Update</td>
+      <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=PPH7R">https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=PPH7R</a></td>
+    </tr>
+    <tr>
+      <td>AX 15G</td>
+      <td>4.1.2410.901</td>
+      <td>September 2024 Driver and Firmware Update</td>
+      <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=XNYNG">https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=XNYNG</a></td>
+    </tr>
+    <tr>
+      <td>AX 16G</td>
+      <td>4.1.2409.1501</td>
+      <td>September 2024 Driver and Firmware Update</td>
+      <td><a href="https://www.dell.com/support/home/en-tc/drivers/driversdetails?driverid=6t8nt">https://www.dell.com/support/home/en-tc/drivers/driversdetails?driverid=6t8nt</a></td>
+    </tr>
+    <tr>
+      <td>AX 15G</td>
+      <td>4.1.2406.3001</td>
+      <td>June 2024 Driver and Firmware Update</td>
+      <td><a href="https://www.dell.com/support/home/en-tc/drivers/driversdetails?driverid=6k6g3">https://www.dell.com/support/home/en-tc/drivers/driversdetails?driverid=6k6g3</a></td>
+    </tr>
+    <tr>
+      <td>AX 15G</td>
+      <td>4.1.2405.2001</td>
+      <td>March 2024 Driver and Firmware Update</td>
+      <td><a href="https://www.dell.com/support/home/en-tc/drivers/driversdetails?driverid=5WH4H">https://www.dell.com/support/home/en-tc/drivers/driversdetails?driverid=5WH4H</a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+
+
+<span class="td-footer__copyright">
+    <span class="td-footer__authors"><a href="https://www.dell.com/en-us/lp/legal/site-terms-of-use-copyright">Copyright © 2026 Dell Inc.</a> | <a href="https://www.dell.com/en-us/lp/legal/terms-of-sale">Terms of Sale</a> | <a href="https://www.dell.com/en-us/lp/legal/policies-privacy">Privacy Statement</a> | <a href="https://www.dell.com/en-us/lp/do-not-sell-my-info">Do Not Sell or Share My Personal Information</a> | <a href="https://www.dell.com/en-us/lp/legal/policies-cookies-ads-emails">Cookies, Ads &amp; Emails</a> | <a href="https://www.dell.com/en-us/lp/legal/terms">Legal &amp; Regulatory</a></span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span>
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/dell/azurestack-docs" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">
+    <span class="td-footer__authors"><a href="https://www.dell.com/en-us/lp/legal/site-terms-of-use-copyright">Copyright © 2026 Dell Inc.</a> | <a href="https://www.dell.com/en-us/lp/legal/terms-of-sale">Terms of Sale</a> | <a href="https://www.dell.com/en-us/lp/legal/policies-privacy">Privacy Statement</a> | <a href="https://www.dell.com/en-us/lp/do-not-sell-my-info">Do Not Sell or Share My Personal Information</a> | <a href="https://www.dell.com/en-us/lp/legal/policies-cookies-ads-emails">Cookies, Ads &amp; Emails</a> | <a href="https://www.dell.com/en-us/lp/legal/terms">Legal &amp; Regulatory</a></span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src='/azurestack-docs/js/dark-mode-custom.js'></script>
+<script src="https://dell.github.io/azurestack-docs/js/main.min.403ff095218c662472dab60ed98ecbb19431682de5ac7c6159891241cd366af5.js" integrity="sha256-QD/wlSGMZiRy2rYO2Y7LsZQxaC3lrHxhWYkSQc02avU=" crossorigin="anonymous"></script>
+<script src='/azurestack-docs/js/prism.js'></script>
+<script src='/azurestack-docs/js/tabpane-persist.js'></script>
+<script>
+
+    var offlineSearch = document.querySelector('input[data-offline-search-index-json-src*="offline-search"]');
+    offlineSearch.setAttribute('data-offline-search-index-json-src', offlineSearch.getAttribute('data-offline-search-index-json-src').replace('azurestack-docs/azurestack-docs', 'azurestack-docs'));
+
+</script>
+
+
+<script src='/azurestack-docs/js/cookie-consent.js'></script>
+
+  </body>
+</html>
