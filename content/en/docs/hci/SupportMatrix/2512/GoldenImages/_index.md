@@ -49,7 +49,7 @@ The Dell Technologies provided operating system golden image for Azure Local ins
        <td>AX-7525<br>AX-6515</td>
        </tr>
        <tr>
-       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=8MXRD">Azure Stack HCI 24H2 with OS customization 12.2510.0.3165, Dell 2512 drivers, and Dell SBE 4.2.2512.1514 for AX-740xd and AX-640</a></td>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=8MXRD">Azure Stack HCI 24H2 with OS customization 12.2510.0.3165, Dell 2512 drivers, and Dell SBE 4.2.2512.1403 for AX-740xd and AX-640</a></td>
        <td>AX-640<br>AX-740xd</td>
        </tr>
        </tbody>
