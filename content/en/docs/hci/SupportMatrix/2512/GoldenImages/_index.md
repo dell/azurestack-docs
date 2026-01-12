@@ -23,7 +23,7 @@ The Dell Technologies provided operating system golden image for Azure Local ins
 {{< tabpane text=true >}}
    {{% tab header="**Azure Stack HCI OS**:" disabled=true /%}}
    {{< tab header="OS build 26100.xxxx (24H2)" lang='en' >}}
-       <h3>Azure Local Golden Images for Solution versions 12.2510.1002.* - 12.2604.1002.* with Dell SBE 4.2.2512.*</h3>
+       <h3>Azure Local Golden Images for Solution versions 12.2510.1002.* - 12.2603.1002.* with Dell SBE 4.2.2512.*</h3>
        <table>
        <thead>
        <tr>
