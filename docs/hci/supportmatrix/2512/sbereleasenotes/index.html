@@ -30,7 +30,7 @@
 
   <meta itemprop="name" content="Azure Local Dell Solution Builder Extensions Release Notes (Dell 2512)">
   <meta itemprop="description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; Overview Solution Builder Extensions (SBE) for Azure Local. Firmware, Driver, and WDAC Supplemental policy for lifecycle management for Azure Local instances running on Dell AX servers.">
-  <meta itemprop="dateModified" content="2026-01-08T11:45:23-06:00">
+  <meta itemprop="dateModified" content="2026-01-13T05:31:00-06:00">
   <meta itemprop="wordCount" content="2898">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Azure Local Dell Solution Builder Extensions Release Notes (Dell 2512)">
@@ -158,7 +158,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.7464d72bf8544cdef83d2a0a6b684a17.json"
+    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.112228e52abb22e6acffd3b8adf5797d.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -182,7 +182,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.7464d72bf8544cdef83d2a0a6b684a17.json"
+    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.112228e52abb22e6acffd3b8adf5797d.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -677,7 +677,7 @@ For details and instructions, see <a href="https://www.dell.com/support/kbdoc/en
 <h2 id="prerequisites">Prerequisites</h2>
 <h3 id="update-firmware-and-drivers-prior-to-azure-local-instance-deployment">Update Firmware and Drivers Prior to Azure Local Instance Deployment</h3>
 <p>Drivers and firmware need to be installed on the servers that will be the instance members prior to deployment from the Azure Portal or using an ARM Template. This requirement is independent of the installation of the SBE. The machines imaged with Dell provided golden image will include the required Dell provided Out-of-Box drivers, but the firmware versions must still be validated and possibly updated prior to the instance deployment. The most current driver and firmware versions listed in the support matrix are recommended.</p>
-<p>The Azure Local support matrix for Dell AX servers can be found here, <a href="https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/">Support Matrix | Solutions for Microsoft Azure</a></p>
+<p>The Azure Local support matrix for Dell AX servers can be found here, <a href="https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/">Support Matrix | Solutions for Microsoft Azure</a>.</p>
 <h3 id="idrac-access-from-host-os">iDRAC Access from Host OS</h3>
 <p>The iDRAC pass-through NIC must be enabled and have an IP address assigned to it. iDRAC pass-through NIC is enabled by default and has an APIPA (Automatic Private IP Addressing) IP address assigned. This IP address must be accessible by the iDRAC NIC <code>Remote NDIS Compatible Device</code> in the host operating system. This is a dedicated link to the host OS and cannot be accessed outside the host OS.</p>
 <p>iDRAC access health checks are introduced starting with the December 2024 SBE releases. These health checks verify that the required iDRAC access has been implemented on each server that will be an instance member. The iDRAC access health checks run automatically as part of the standard built-in SBE health checks. These health checks must complete successfully for the SBE installation to proceed. Failure remediation instructions are provided in case the health check fails.</p>
@@ -706,7 +706,7 @@ Example iDRAC Pass-through settings
 </code></pre>
 <br>
 <h3 id="azure-local-instances-using-non-transparent-unauthenticated-network-proxy">Azure Local instances using Non-Transparent, Unauthenticated Network Proxy</h3>
-<p>Azure Local instances using non-transparent, unauthenticated network proxy must have the iDRAC pass-through IP address in the network proxy exclusion list. For information on how to configure the non-transparent, unauthenticated network proxy see, <a href="https://learn.microsoft.com/en-us/azure-stack/hci/manage/configure-proxy-settings-23h2">Configure proxy settings for Azure Local</a></p>
+<p>Azure Local instances using non-transparent, unauthenticated network proxy must have the iDRAC pass-through IP address in the network proxy exclusion list. For information on how to configure the non-transparent, unauthenticated network proxy see, <a href="https://learn.microsoft.com/en-us/azure-stack/hci/manage/configure-proxy-settings-23h2">Configure proxy settings for Azure Local</a>.</p>
 <p>The following example shows how to configure the APIPA IP address range <code>169.254.0.0/16</code> to be in the network proxy exclusion list.</p>
 <pre><code class="language-powershell">$NoProxy = &quot;localhost,127.0.0.1,.svc,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,.contoso.com,node1,node2,ClusterName,169.254.0.0/16&quot;
 [Environment]::SetEnvironmentVariable(&quot;NO_PROXY&quot;, $NoProxy, &quot;Machine&quot;)
@@ -842,7 +842,7 @@ $Result | Where-Object { ($_.Status -ne &quot;SUCCESS&quot; -and $_.Severity -eq
 </code></pre>
 </li>
 </ol>
-<p>For more information see, <a href="https://learn.microsoft.com/en-us/azure/azure-local/update/update-via-powershell-23h2?view=azloc-24113">Update Azure Local via PowerShell</a></p>
+<p>For more information see, <a href="https://learn.microsoft.com/en-us/azure/azure-local/update/update-via-powershell-23h2?view=azloc-24113">Update Azure Local via PowerShell</a>.</p>
 <h2 id="known-issues">Known Issues</h2>
 <h3 id="sbe-installation-may-fail-with-driver-cau-plug-in-error-when-attempting-to-delete-nvidia-connectx-driver-that-is-not-installed">SBE Installation May Fail With Driver CAU Plug-In Error When Attempting to Delete NVIDIA ConnectX Driver That Is Not Installed</h3>
 <h4 id="description">Description</h4>
@@ -940,7 +940,7 @@ AdditionalData    : {[SBEAdditionalData, Solution Builder extension is partially
 <p>The SBE driver CAU plug-in expects all drivers and firmware in the SBE payload to be installed on the server during or prior to deployment. However, some of the drivers in the SBE payload may not apply to the server model or components in the server model. Microsoft is aware of this limitation and is working to resolve this issue in a future release.</p>
 <p>The partially installed SBE issue, can also occur if a component firmware version installed on the server is different than what is in the SBE payload. The SBE cannot update firmware or drivers during Azure Local instance deployment.</p>
 <h3 id="sbe-installation-will-not-downgrade-drivers-that-have-a-newer-version-than-the-same-driver-in-the-sbe-payload">SBE installation will not downgrade drivers that have a newer version than the same driver in the SBE payload</h3>
-<p>Dell supports the driver and firmware versions listed here, <a href="https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/">Support Matrix | Solutions for Microsoft Azure</a></p>
+<p>Dell supports the driver and firmware versions listed here, <a href="https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/">Support Matrix | Solutions for Microsoft Azure</a>.</p>
 <h4 id="description-2">Description</h4>
 <p>The SBE driver CAU plug-in will not attempt to downgrade installed drivers that are higher version than the ones in its payload unless otherwise specified by Dell.</p>
 <h3 id="amd-drtm-dynamic-root-of-trust-for-measurement-driver-fails-to-update-on-ax-amd-platforms-when-the-drtm-device-was-originally-enabled-at-azure-local-instance-deployment-time-and-later-disabled">AMD DRTM (Dynamic Root of Trust for Measurement) Driver Fails to Update on AX AMD Platforms When the DRTM Device Was Originally Enabled at Azure Local Instance Deployment Time and Later Disabled</h3>
@@ -1139,7 +1139,7 @@ AdditionalData    : {[SBEAdditionalData, Solution Builder extension is partially
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified January 8, 2026: <a data-proofer-ignore href="https://github.com/dell/azurestack-docs/commit/782b6ecf86375fe936e8503c2321423a4f7c5f65">Add Azure Local SBE Release Notes for 2512 release (#237) (782b6ecf)</a>
+  Last modified January 13, 2026: <a data-proofer-ignore href="https://github.com/dell/azurestack-docs/commit/0d1b3d18f3e548a8bef76cd04bb24df2981fa00b">Add missing dots (#241) (0d1b3d18)</a>
 </div>
 </div>
 
