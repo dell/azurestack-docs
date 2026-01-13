@@ -30,7 +30,7 @@
 
   <meta itemprop="name" content="Azure Local Dell Solution Builder Extensions Release Notes (Dell 2512)">
   <meta itemprop="description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; Overview Solution Builder Extensions (SBE) for Azure Local. Firmware, Driver, and WDAC Supplemental policy for lifecycle management for Azure Local instances running on Dell AX servers.">
-  <meta itemprop="dateModified" content="2026-01-13T05:31:00-06:00">
+  <meta itemprop="dateModified" content="2026-01-13T10:51:51-06:00">
   <meta itemprop="wordCount" content="2898">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Azure Local Dell Solution Builder Extensions Release Notes (Dell 2512)">
@@ -488,28 +488,28 @@
       <ul>
         <li><a href="#sbe-installation-may-fail-with-driver-cau-plug-in-error-when-attempting-to-delete-nvidia-connectx-driver-that-is-not-installed">SBE Installation May Fail With Driver CAU Plug-In Error When Attempting to Delete NVIDIA ConnectX Driver That Is Not Installed</a>
           <ul>
-            <li><a href="#description">Description</a></li>
-            <li><a href="#workaround">Workaround</a></li>
-            <li><a href="#background">Background</a></li>
+            <li><a href="#description"><strong>Description</strong></a></li>
+            <li><a href="#workaround"><strong>Workaround</strong></a></li>
+            <li><a href="#background"><strong>Background</strong></a></li>
           </ul>
         </li>
         <li><a href="#partially-installed-sbe-version-4000-when-sbe-is-installed-as-part-of-cluster-deployment">Partially Installed SBE Version <code>4.0.0.0</code> When SBE Is Installed as Part of Cluster Deployment</a>
           <ul>
-            <li><a href="#description-1">Description</a></li>
-            <li><a href="#workaround-1">Workaround</a></li>
-            <li><a href="#background-1">Background</a></li>
+            <li><a href="#description-1"><strong>Description</strong></a></li>
+            <li><a href="#workaround-1"><strong>Workaround</strong></a></li>
+            <li><a href="#background-1"><strong>Background</strong></a></li>
           </ul>
         </li>
         <li><a href="#sbe-installation-will-not-downgrade-drivers-that-have-a-newer-version-than-the-same-driver-in-the-sbe-payload">SBE installation will not downgrade drivers that have a newer version than the same driver in the SBE payload</a>
           <ul>
-            <li><a href="#description-2">Description</a></li>
+            <li><a href="#description-2"><strong>Description</strong></a></li>
           </ul>
         </li>
         <li><a href="#amd-drtm-dynamic-root-of-trust-for-measurement-driver-fails-to-update-on-ax-amd-platforms-when-the-drtm-device-was-originally-enabled-at-azure-local-instance-deployment-time-and-later-disabled">AMD DRTM (Dynamic Root of Trust for Measurement) Driver Fails to Update on AX AMD Platforms When the DRTM Device Was Originally Enabled at Azure Local Instance Deployment Time and Later Disabled</a>
           <ul>
-            <li><a href="#description-3">Description</a></li>
-            <li><a href="#workaround-2">Workaround</a></li>
-            <li><a href="#background-2">Background</a></li>
+            <li><a href="#description-3"><strong>Description</strong></a></li>
+            <li><a href="#workaround-2"><strong>Workaround</strong></a></li>
+            <li><a href="#background-2"><strong>Background</strong></a></li>
           </ul>
         </li>
       </ul>
@@ -844,15 +844,20 @@ $Result | Where-Object { ($_.Status -ne &quot;SUCCESS&quot; -and $_.Severity -eq
 </ol>
 <p>For more information see, <a href="https://learn.microsoft.com/en-us/azure/azure-local/update/update-via-powershell-23h2?view=azloc-24113">Update Azure Local via PowerShell</a>.</p>
 <h2 id="known-issues">Known Issues</h2>
+<br>
 <h3 id="sbe-installation-may-fail-with-driver-cau-plug-in-error-when-attempting-to-delete-nvidia-connectx-driver-that-is-not-installed">SBE Installation May Fail With Driver CAU Plug-In Error When Attempting to Delete NVIDIA ConnectX Driver That Is Not Installed</h3>
-<h4 id="description">Description</h4>
+<br>
+<h4 id="description"><strong>Description</strong></h4>
+<br>
 <p>The failure occurs in the driver CAU plug-in when driver downgrade option is specified for a given driver and the driver is not found in the driver store. This failure occurs in the following conditions:</p>
 <ul>
 <li>Cluster nodes were not imaged using Dell provided Azure Local golden image</li>
 <li>NVIDIA ConnectX NIC is not installed in the cluster nodes</li>
 <li>A previous version of an AX SBE is not installed</li>
 </ul>
-<h4 id="workaround">Workaround</h4>
+<br>
+<h4 id="workaround"><strong>Workaround</strong></h4>
+<br>
 <p>Run the following script on each instance machine after completing step 5 &ldquo;<em>Verify that the Azure Local instance is in a healthy state and is ready for the SBE installation</em>&rdquo; in the <a href="/azurestack-docs/docs/hci/supportmatrix/2512/sbereleasenotes/#importing-the-sbe-after-successful-azure-local-instance-creation">Importing the SBE After Successful Azure Local Instance Creation</a> section or when the failure is encountered during the SBE installation.</p>
 <pre><code class="language-powershell">#Run this script on each node in the cluster.
 
@@ -912,11 +917,16 @@ if (-not $InstalledConnectXDriver) {
 
 }
 </code></pre>
-<h4 id="background">Background</h4>
+<br>
+<h4 id="background"><strong>Background</strong></h4>
+<br>
 <p>This SBE installation failure is resolved in the Azure Local Solution version <code>12.2512.1002.*</code> and newer.</p>
 <p>The driver CAU plug-in driver downgrade option is used in special cases. Currently, it is only used in the case of NVIDIA ConnectX NIC driver.</p>
+<br>
 <h3 id="partially-installed-sbe-version-4000-when-sbe-is-installed-as-part-of-cluster-deployment">Partially Installed SBE Version <code>4.0.0.0</code> When SBE Is Installed as Part of Cluster Deployment</h3>
-<h4 id="description-1">Description</h4>
+<br>
+<h4 id="description-1"><strong>Description</strong></h4>
+<br>
 <p><code>Get-SolutionUpdateEnvironment</code> reports partially installed SBE when installing the SBE as part of Azure Local instance deployment. SBE version <code>4.0.0.0</code> indicates a partially installed Solution Builder Extension (SBE).</p>
 <pre><code class="language-powershell">Get-SolutionUpdateEnvironment
 
@@ -934,23 +944,38 @@ HealthCheckResult : {Storage Services Physical Disks Summary, Storage Services P
 HealthCheckDate   : 07/01/2026 17:50:07
 AdditionalData    : {[SBEAdditionalData, Solution Builder extension is partially installed. Please install the latest Solution Builder Extension provided by your hardware vendor. For more information, see https://aka.ms/SBE.]}
 </code></pre>
-<h4 id="workaround-1">Workaround</h4>
+<br>
+<h4 id="workaround-1"><strong>Workaround</strong></h4>
+<br>
 <p>Reinstall the same SBE version using the SBE import method or automated download method after Azure Local instance deployment successfully completes.</p>
-<h4 id="background-1">Background</h4>
+<br>
+<h4 id="background-1"><strong>Background</strong></h4>
+<br>
 <p>The SBE driver CAU plug-in expects all drivers and firmware in the SBE payload to be installed on the server during or prior to deployment. However, some of the drivers in the SBE payload may not apply to the server model or components in the server model. Microsoft is aware of this limitation and is working to resolve this issue in a future release.</p>
 <p>The partially installed SBE issue, can also occur if a component firmware version installed on the server is different than what is in the SBE payload. The SBE cannot update firmware or drivers during Azure Local instance deployment.</p>
+<br>
 <h3 id="sbe-installation-will-not-downgrade-drivers-that-have-a-newer-version-than-the-same-driver-in-the-sbe-payload">SBE installation will not downgrade drivers that have a newer version than the same driver in the SBE payload</h3>
+<br>
 <p>Dell supports the driver and firmware versions listed here, <a href="https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/">Support Matrix | Solutions for Microsoft Azure</a>.</p>
-<h4 id="description-2">Description</h4>
+<br>
+<h4 id="description-2"><strong>Description</strong></h4>
+<br>
 <p>The SBE driver CAU plug-in will not attempt to downgrade installed drivers that are higher version than the ones in its payload unless otherwise specified by Dell.</p>
+<br>
 <h3 id="amd-drtm-dynamic-root-of-trust-for-measurement-driver-fails-to-update-on-ax-amd-platforms-when-the-drtm-device-was-originally-enabled-at-azure-local-instance-deployment-time-and-later-disabled">AMD DRTM (Dynamic Root of Trust for Measurement) Driver Fails to Update on AX AMD Platforms When the DRTM Device Was Originally Enabled at Azure Local Instance Deployment Time and Later Disabled</h3>
-<h4 id="description-3">Description</h4>
+<br>
+<h4 id="description-3"><strong>Description</strong></h4>
+<br>
 <p>SBE installation fails because the driver CAU plug-in in the SBE is unable to update the AMD DRTM driver to a newer version that is in the SBE payload. The AMD DRTM driver is one of the AMD Chipset drivers in the SBE package. The AMD DRTM driver update fails because the AMD DRTM setting was originally enabled but later disabled.</p>
-<h4 id="workaround-2">Workaround</h4>
+<br>
+<h4 id="workaround-2"><strong>Workaround</strong></h4>
+<br>
 <p>Verify that the AMD DRTM BIOS setting is on. Turn back on the AMD DRTM setting if it is off.</p>
 <p>The DRTM option is in the BIOS configuration: System Security -&gt; TPM Advanced Settings -&gt; AMD DRTM</p>
 <p>Make sure to suspend and drain the Azure Local cluster node prior to rebooting the node. Make sure that BitLocker protection is disabled for the boot volume on the cluster node before making BIOS configuration changes. Disable BitLocker if it is enabled for the boot volume <code>C:\</code> prior to rebooting the server for the BIOS changes to take effect. Reenable BitLocker for the boot drive after the server successfully reboots.</p>
-<h4 id="background-2">Background</h4>
+<br>
+<h4 id="background-2"><strong>Background</strong></h4>
+<br>
 <p>AMD DRTM is an advanced security feature that is available on modern AMD CPUs and is used to protect the secure boot enclaves. The AMD DRTM setting is enabled by default on AX servers with AMD CPUs that support the DRTM feature. AMD DRTM should not be disabled.</p>
 <h2 id="previous-releases">Previous Releases</h2>
 
@@ -1139,7 +1164,7 @@ AdditionalData    : {[SBEAdditionalData, Solution Builder extension is partially
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified January 13, 2026: <a data-proofer-ignore href="https://github.com/dell/azurestack-docs/commit/0d1b3d18f3e548a8bef76cd04bb24df2981fa00b">Add missing dots (#241) (0d1b3d18)</a>
+  Last modified January 13, 2026: <a data-proofer-ignore href="https://github.com/dell/azurestack-docs/commit/ec2807636ff7bd3d34b210493a8548f53be914f1">Fix SBE NE KIs layout (#243) (ec280763)</a>
 </div>
 </div>
 
