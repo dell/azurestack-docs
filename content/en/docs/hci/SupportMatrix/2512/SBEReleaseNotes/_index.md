@@ -435,7 +435,7 @@ Make sure to suspend and drain the Azure Local cluster node prior to rebooting t
 
 <br>
 
-### **Background**
+#### **Background**
 
 <br>
 
