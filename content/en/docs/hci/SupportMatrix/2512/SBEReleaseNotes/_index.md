@@ -253,9 +253,15 @@ For more information see, [Update Azure Local via PowerShell](<https://learn.mic
 
 ## Known Issues
 
+<br>
+
 ### SBE Installation May Fail With Driver CAU Plug-In Error When Attempting to Delete NVIDIA ConnectX Driver That Is Not Installed
 
-#### Description
+<br>
+
+#### **Description**
+
+<br>
 
 The failure occurs in the driver CAU plug-in when driver downgrade option is specified for a given driver and the driver is not found in the driver store. This failure occurs in the following conditions:
 
@@ -263,7 +269,11 @@ The failure occurs in the driver CAU plug-in when driver downgrade option is sp
 - NVIDIA ConnectX NIC is not installed in the cluster nodes
 - A previous version of an AX SBE is not installed
 
-#### Workaround
+<br>
+
+#### **Workaround**
+
+<br>
 
 Run the following script on each instance machine after completing step 5 "*Verify that the Azure Local instance is in a healthy state and is ready for the SBE installation*" in the [Importing the SBE After Successful Azure Local Instance Creation](#importing-the-sbe-after-successful-azure-local-instance-creation) section or when the failure is encountered during the SBE installation.
 
@@ -327,15 +337,25 @@ if (-not $InstalledConnectXDriver) {
 }
 ```
 
-#### Background
+<br>
+
+#### **Background**
+
+<br>
 
 This SBE installation failure is resolved in the Azure Local Solution version `12.2512.1002.*` and newer.
 
 The driver CAU plug-in driver downgrade option is used in special cases. Currently, it is only used in the case of NVIDIA ConnectX NIC driver.
 
+<br>
+
 ### Partially Installed SBE Version `4.0.0.0` When SBE Is Installed as Part of Cluster Deployment
 
-#### Description
+<br>
+
+#### **Description**
+
+<br>
 
 `Get-SolutionUpdateEnvironment` reports partially installed SBE when installing the SBE as part of Azure Local instance deployment. SBE version `4.0.0.0` indicates a partially installed Solution Builder Extension (SBE).
 
@@ -357,31 +377,55 @@ HealthCheckDate   : 07/01/2026 17:50:07
 AdditionalData    : {[SBEAdditionalData, Solution Builder extension is partially installed. Please install the latest Solution Builder Extension provided by your hardware vendor. For more information, see https://aka.ms/SBE.]}
 ```
 
-#### Workaround
+<br>
+
+#### **Workaround**
+
+<br>
 
 Reinstall the same SBE version using the SBE import method or automated download method after Azure Local instance deployment successfully completes.
 
-#### Background
+<br>
+
+#### **Background**
+
+<br>
 
 The SBE driver CAU plug-in expects all drivers and firmware in the SBE payload to be installed on the server during or prior to deployment. However, some of the drivers in the SBE payload may not apply to the server model or components in the server model. Microsoft is aware of this limitation and is working to resolve this issue in a future release.
 
 The partially installed SBE issue, can also occur if a component firmware version installed on the server is different than what is in the SBE payload. The SBE cannot update firmware or drivers during Azure Local instance deployment.
 
+<br>
+
 ### SBE installation will not downgrade drivers that have a newer version than the same driver in the SBE payload
 
 Dell supports the driver and firmware versions listed here, [Support Matrix | Solutions for Microsoft Azure]({{< ref "../../_index.md" >}}).
 
-#### Description
+<br>
+
+#### **Description**
+
+<br>
 
 The SBE driver CAU plug-in will not attempt to downgrade installed drivers that are higher version than the ones in its payload unless otherwise specified by Dell.
 
+<br>
+
 ### AMD DRTM (Dynamic Root of Trust for Measurement) Driver Fails to Update on AX AMD Platforms When the DRTM Device Was Originally Enabled at Azure Local Instance Deployment Time and Later Disabled
 
-#### Description
+<br>
+
+#### **Description**
+
+<br>
 
 SBE installation fails because the driver CAU plug-in in the SBE is unable to update the AMD DRTM driver to a newer version that is in the SBE payload. The AMD DRTM driver is one of the AMD Chipset drivers in the SBE package. The AMD DRTM driver update fails because the AMD DRTM setting was originally enabled but later disabled.
 
-#### Workaround
+<br>
+
+#### **Workaround**
+
+<br>
 
 Verify that the AMD DRTM BIOS setting is on. Turn back on the AMD DRTM setting if it is off.
 
@@ -389,7 +433,11 @@ The DRTM option is in the BIOS configuration: System Security -> TPM Advanced Se
 
 Make sure to suspend and drain the Azure Local cluster node prior to rebooting the node. Make sure that BitLocker protection is disabled for the boot volume on the cluster node before making BIOS configuration changes. Disable BitLocker if it is enabled for the boot volume `C:\` prior to rebooting the server for the BIOS changes to take effect. Reenable BitLocker for the boot drive after the server successfully reboots.
 
-#### Background
+<br>
+
+### **Background**
+
+<br>
 
 AMD DRTM is an advanced security feature that is available on modern AMD CPUs and is used to protect the secure boot enclaves. The AMD DRTM setting is enabled by default on AX servers with AMD CPUs that support the DRTM feature. AMD DRTM should not be disabled.
 
