@@ -99,7 +99,7 @@ For details and instructions, see [KB000376360](https://www.dell.com/support/kbd
 
 Drivers and firmware need to be installed on the servers that will be the instance members prior to deployment from the Azure Portal or using an ARM Template. This requirement is independent of the installation of the SBE. The machines imaged with Dell provided golden image will include the required Dell provided Out-of-Box drivers, but the firmware versions must still be validated and possibly updated prior to the instance deployment. The most current driver and firmware versions listed in the support matrix are recommended.
 
-The Azure Local support matrix for Dell AX servers can be found here, [Support Matrix | Solutions for Microsoft Azure]({{< ref "../../_index.md" >}})
+The Azure Local support matrix for Dell AX servers can be found here, [Support Matrix | Solutions for Microsoft Azure]({{< ref "../../_index.md" >}}).
 
 ### iDRAC Access from Host OS
 
@@ -138,7 +138,7 @@ IPAddress
 
 ### Azure Local instances using Non-Transparent, Unauthenticated Network Proxy
 
-Azure Local instances using non-transparent, unauthenticated network proxy must have the iDRAC pass-through IP address in the network proxy exclusion list. For information on how to configure the non-transparent, unauthenticated network proxy see, [Configure proxy settings for Azure Local](<https://learn.microsoft.com/en-us/azure-stack/hci/manage/configure-proxy-settings-23h2>)
+Azure Local instances using non-transparent, unauthenticated network proxy must have the iDRAC pass-through IP address in the network proxy exclusion list. For information on how to configure the non-transparent, unauthenticated network proxy see, [Configure proxy settings for Azure Local](<https://learn.microsoft.com/en-us/azure-stack/hci/manage/configure-proxy-settings-23h2>).
 
 The following example shows how to configure the APIPA IP address range `169.254.0.0/16` to be in the network proxy exclusion list.
 
@@ -249,7 +249,7 @@ All tests with `Critical` severity must have the `Success` status before continu
     Get-SolutionUpdate | Where-Object -Property PackageType -EQ "SBE" | Format-List -Property ResourceID, Description, State, SBEVersion, UpdateStateProperties, HealthState
     ```
 
-For more information see, [Update Azure Local via PowerShell](<https://learn.microsoft.com/en-us/azure/azure-local/update/update-via-powershell-23h2?view=azloc-24113>)
+For more information see, [Update Azure Local via PowerShell](<https://learn.microsoft.com/en-us/azure/azure-local/update/update-via-powershell-23h2?view=azloc-24113>).
 
 ## Known Issues
 
@@ -369,7 +369,7 @@ The partially installed SBE issue, can also occur if a component firmware versio
 
 ### SBE installation will not downgrade drivers that have a newer version than the same driver in the SBE payload
 
-Dell supports the driver and firmware versions listed here, [Support Matrix | Solutions for Microsoft Azure]({{< ref "../../_index.md" >}})
+Dell supports the driver and firmware versions listed here, [Support Matrix | Solutions for Microsoft Azure]({{< ref "../../_index.md" >}}).
 
 #### Description
 
