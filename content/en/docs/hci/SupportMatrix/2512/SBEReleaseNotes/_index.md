@@ -399,6 +399,8 @@ The partially installed SBE issue, can also occur if a component firmware versio
 
 ### SBE installation will not downgrade drivers that have a newer version than the same driver in the SBE payload
 
+<br>
+
 Dell supports the driver and firmware versions listed here, [Support Matrix | Solutions for Microsoft Azure]({{< ref "../../_index.md" >}}).
 
 <br>
