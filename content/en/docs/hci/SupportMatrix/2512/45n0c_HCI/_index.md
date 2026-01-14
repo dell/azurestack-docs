@@ -79,7 +79,8 @@ Dell will support the use of SBE package 4.2.2509.xxxx on Azure Local instances 
 <table>
 <colgroup><col/><col/><col/><col/><col/><col/></colgroup>
 <tr><th>Component</th><th>Type</th><th>Software Bundle</th><th>Minimum Supported Version</th><th>Supported Platforms</th><th>Supported OS</th></tr>
-<tr><td>BIOS</td><td>Firmware DUP</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=FP79X">FP79X</a></td><td>1.21.1</td><td>AX-4510c<br><br>AX-4520c<br><br>MC-4510c<br><br>MC-4520c</td><td>NA</td></tr>
+<tr><td rowspan="2">BIOS</td><td rowspan="2">Firmware DUP</td><td rowspan="1"><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=FP79X">FP79X</a></td><td rowspan="1">1.21.1</td><td rowspan="2">AX-4510c<br><br>AX-4520c<br><br>MC-4510c<br><br>MC-4520c</td><td rowspan="2">NA</td></tr>
+<td rowspan="1"><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=0YP04">0YP04</a></td><td rowspan="1">1.19.1</td></tr>
 <tr><td>iDRAC9 with Lifecycle Controller</td><td>Firmware DUP</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=KYWDC">KYWDC</a></td><td>7.20.80.50</td><td>AX-4510c<br><br>AX-4520c<br><br>MC-4510c<br><br>MC-4520c</td><td>NA</td></tr>
 <tr><td>Chipset driver for 15G Intel platforms</td><td>Driver DUP</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=C2MC3">C2MC3</a></td><td>10.1.19928.8615</td><td>AX-4510c<br><br>AX-4520c<br><br>MC-4510c<br><br>MC-4520c</td><td>Windows Server 2022 Datacenter<br><br>Windows Server 2025 Datacenter<br><br>Azure Stack HCI-24H2</td></tr>
 <tr><td>iDRAC Service Module</td><td>Firmware DUP</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=258RC">258RC</a></td><td>5.4.0.0</td><td>AX-4510c<br><br>AX-4520c<br><br>MC-4510c<br><br>MC-4520c</td><td>NA</td></tr>

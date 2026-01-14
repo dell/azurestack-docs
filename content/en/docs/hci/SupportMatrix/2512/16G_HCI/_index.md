@@ -79,7 +79,8 @@ Dell will support the use of SBE package 4.2.2509.xxxx on Azure Local instances 
 <table>
 <colgroup><col/><col/><col/><col/><col/><col/></colgroup>
 <tr><th>Component</th><th>Type</th><th>Software Bundle</th><th>Minimum Supported Version</th><th>Supported Platforms</th><th>Supported OS</th></tr>
-<tr><td>BIOS</td><td>Firmware DUP</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=GPMNW">GPMNW</a></td><td>2.8.2</td><td>AX-660<br><br>AX-760<br><br>MC-660<br><br>MC-760</td><td>NA</td></tr>
+<tr><td rowspan="2">BIOS</td><td rowspan="2">Firmware DUP</td><td rowspan="1"><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=GPMNW">GPMNW</a></td><td rowspan="1">2.8.2</td><td rowspan="2">AX-660<br><br>AX-760<br><br>MC-660<br><br>MC-760</td><td rowspan="2">NA</td></tr>
+<td rowspan="1"><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=W23G7">W23G7</a></td><td rowspan="1">2.7.5</td></tr>
 <tr><td>Chipset driver for 16G Intel platforms</td><td>Driver DUP</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=R40PW">R40PW</a></td><td>10.1.19928.8615</td><td>AX-660<br><br>AX-760<br><br>MC-660<br><br>MC-760</td><td>Windows Server 2022 Datacenter<br><br>Windows Server 2025 Datacenter<br><br>Azure Stack HCI-24H2</td></tr>
 <tr><td>iDRAC9 with Lifecycle Controller</td><td>Firmware DUP</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=KYWDC">KYWDC</a></td><td>7.20.80.50</td><td>AX-660<br><br>AX-760<br><br>MC-660<br><br>MC-760</td><td>NA</td></tr>
 <tr><td>Expander Storage Backplane</td><td>Firmware DUP</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=J9JW2">J9JW2</a></td><td>1.61</td><td>AX-760<br><br>MC-760</td><td>NA</td></tr>
