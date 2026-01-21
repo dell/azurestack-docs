@@ -200,6 +200,7 @@ Dell update packages are not available for GPU cards, please download the latest
 <tr><td>HDD</td><td>SAS</td><td>3.5</td><td>NA</td><td>WD</td><td>Paris-D PR2</td><td>WUH722020BL5200</td><td>1D4CR</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=XRFX3">XRFX3</a></td><td>VS19</td><td>20 TB</td><td>Capacity</td></tr>
 <tr><td>HDD</td><td>SAS</td><td>3.5</td><td>NA</td><td>Seagate</td><td>Summit</td><td>ST20000NM007H</td><td>R5KP7</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=C50CR">C50CR</a></td><td>SYS9</td><td>20 TB</td><td>Capacity</td></tr>
 <tr><td>HDD</td><td>SAS</td><td>3.5</td><td>NA</td><td>WD</td><td>London DP</td><td>WUH722420AL5200</td><td>MTTCF</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=FN2N1">FN2N1</a></td><td>YS01</td><td>20 TB</td><td>Capacity</td></tr>
+<tr><td>HDD</td><td>SAS</td><td>3.5</td><td>NA</td><td>WD</td><td>Paris-CP</td><td>WUH722012CL5200</td><td>849H4</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=VK0PK">VK0PK</a></td><td>AS05</td><td>12 TB</td><td>Capacity</td></tr>
 </table>
 <br>
 {{< /rawhtml >}}
