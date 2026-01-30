@@ -1,0 +1,21 @@
+{{ define "main" -}}
+<script>
+    (function () {
+        try {
+            var Pathname = window.location.pathname;
+            var Lower = Pathname.toLowerCase();
+            if (Pathname !== Lower) {
+                var NewUrl = Lower + window.location.search + window.location.hash;
+                window.location.replace(NewUrl);
+            }
+        }
+        catch (e) {
+            /* ignore errors */
+        }
+    })();
+</script>
+<div class="td-content">
+    <h1>Not found</h1>
+    <p>Oops! This page doesn't exist. Try going back to the <a href="{{ "" | relURL }}">home page</a>.</p>
+</div>
+{{- end }}
