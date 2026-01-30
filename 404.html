@@ -165,9 +165,24 @@
     </header>
     <div class="container-fluid td-default td-outer">
       <main role="main" class="td-main">
-        <div class="td-content">
-  <h1>Not found</h1>
-  <p>Oops! This page doesn't exist. Try going back to the <a href="/azurestack-docs/">home page</a>.</p>
+        <script>
+    (function () {
+        try {
+            var Pathname = window.location.pathname;
+            var Lower = Pathname.toLowerCase();
+            if (Pathname !== Lower) {
+                var NewUrl = Lower + window.location.search + window.location.hash;
+                window.location.replace(NewUrl);
+            }
+        }
+        catch (e) {
+             
+        }
+    })();
+</script>
+<div class="td-content">
+    <h1>Not found</h1>
+    <p>Oops! This page doesn't exist. Try going back to the <a href="/azurestack-docs/">home page</a>.</p>
 </div>
       </main>
       <footer class="td-footer row d-print-none">
