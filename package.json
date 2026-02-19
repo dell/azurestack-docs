@@ -18,7 +18,7 @@
   "homepage": "https://github.com/dell/azurestack-docs#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.21",
-    "hugo-extended": "^0.103.1",
+    "hugo-extended": "^0.156.0",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1"
   }
