@@ -53,26 +53,55 @@ comment: "Copyright © 2026 Dell Inc."
 ### BIOS Configuration
 The following table lists the BIOS configuration settings for server nodes implemented as Storage Spaces Direct cluster nodes.
 
+> [!IMPORTANT]
+> Some settings and their placement have changed in current BIOS versions. See instructions for older BIOS settings or models below.
+> The following table will include the latest changes.
+
+#### Current models
+
 |BIOS Section| BIOS Token|PE Default Value|AX Value|Platform|
 |---|---|---|---|---|
-|Processor Settings|Virtualization Technology|Enabled|Enabled|AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c|
-|Processor Settings|x2APIC Mode|Enabled|Enabled|AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c|
+|Processor Settings|Virtualization Technology|Enabled|Enabled|<br>AX-760<br><br>AX660<br><br>AX-4510c<br><br>AX-4520c<br><br>MC-4510c<br><br>MC-4520c<br><br>MC-760<br><br>|
+|Processor Settings|x2APIC Mode|Enabled|Enabled|<br>AX-760<br><br>AX660<br><br>AX-4510c<br><br>AX-4520c<br><br>MC-4510c<br><br>MC-4520c<br><br>MC-760<br><br>|
 |Processor Settings|NUMA Nodes Per Socket|1|4|AX-6515<br><br>AX-7525|
-|Processor Settings|Dell Controlled Turbo Setting (Optional)|Disabled|Enabled|AX-760<br><br>AX-750<br><br>AX-650<br><br>AX-4510c<br><br>AX-4520c|
-|Integrated Devices|SR-IOV Global Enable|Disabled|Enabled|AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c|
-|System Profile Settings|Systems Profile|Performance Per Watt (DAPC)|Performance|AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c|
-|Systems Security|TPM Security|Off|On|AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c|
-|Systems Security|AC Power Recovery|NA|On|AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c|
-|Systems Security|AC Power Recovery Delay|NA|Random|AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c|
-|Systems Security|Secure Boot|Disabled|Enabled|AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c|
-|Processor Settings|Kernel DMA Protection|Disabled|Enabled|AX-650<br><br>AX-750<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c|
-|Processor Settings|Secure Memory Encryption|Disabled|Enabled|AX-7525|
-|Processor Settings|Transparent Secure Memory Encryption|Disabled|Enabled|AX-7525|
-|Systems Security|TPM PPI Bypass Provision|Disabled|Enabled|AX-650<br><br>AX-750<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c|
-|Systems Security|TPM PPI Bypass Clear|Disabled|Enabled|AX-650<br><br>AX-750<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c|
-|Systems Security|TPM2 Algorithm Selection|SHA1|SHA256|AX-650<br><br>AX-750<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c|
-|Systems Security|Intel TXT/AMD DRTM|Off|On|AX-650<br><br>AX-750<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c|
-|Systems Security|SMM Security Mitigation|Disabled|Enabled|AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c|
+|Processor Settings|Dell Controlled Turbo Setting (Optional)|Disabled|Enabled|<br>AX-760<br><br>AX660<br><br>AX-4510c<br><br>AX-4520c<br><br>MC-4510c<br><br>MC-4520c<br><br>MC-760<br><br>|
+|Processor Settings|Kernel DMA Protection|Disabled|Enabled|<br>AX-760<br><br>AX660<br><br>AX-4510c<br><br>AX-4520c<br><br>MC-4510c<br><br>MC-4520c<br><br>MC-760<br><br>|
+|Processor Settings|Secure Memory Encryption|Disabled|Enabled|<br>AX-760<br><br>AX660<br><br>AX-4510c<br><br>AX-4520c<br><br>MC-4510c<br><br>MC-4520c<br><br>MC-760<br><br>|
+|Processor Settings|Transparent Secure Memory Encryption|Disabled|Enabled|<br>AX-760<br><br>AX660<br><br>AX-4510c<br><br>AX-4520c<br><br>MC-4510c<br><br>MC-4520c<br><br>MC-760<br><br>|
+|Integrated Devices|SR-IOV Global Enable|Disabled|Enabled|<br>AX-760<br><br>AX660<br><br>AX-4510c<br><br>AX-4520c<br><br>MC-4510c<br><br>MC-4520c<br><br>MC-760<br><br>|
+|System Profile Settings|Systems Profile|Performance Per Watt (DAPC)|Performance|<br>AX-760<br><br>AX660<br><br>AX-4510c<br><br>AX-4520c<br><br>MC-4510c<br><br>MC-4520c<br><br>MC-760<br><br>|
+|Systems Security|TPM Security|Off|On|<br>AX-760<br><br>AX660<br><br>AX-4510c<br><br>AX-4520c<br><br>MC-4510c<br><br>MC-4520c<br><br>MC-760<br><br>|
+|Systems Security|AC Power Recovery|NA|On|<br>AX-760<br><br>AX660<br><br>AX-4510c<br><br>AX-4520c<br><br>MC-4510c<br><br>MC-4520c<br><br>MC-760<br><br>|
+|Systems Security|AC Power Recovery Delay|NA|Random|<br>AX-760<br><br>AX660<br><br>AX-4510c<br><br>AX-4520c<br><br>MC-4510c<br><br>MC-4520c<br><br>MC-760<br><br>|
+|Systems Security|Secure Boot|Disabled|Enabled|<br>AX-760<br><br>AX660<br><br>AX-4510c<br><br>AX-4520c<br><br>MC-4510c<br><br>MC-4520c<br><br>MC-760<br><br>|
+|Systems Security|TPM PPI Bypass Provision|Disabled|Enabled|<br>AX-760<br><br>AX660<br><br>AX-4510c<br><br>AX-4520c<br><br>MC-4510c<br><br>MC-4520c<br><br>MC-760<br><br>|
+|Systems Security|TPM PPI Bypass Clear|Disabled|Enabled|<br>AX-760<br><br>AX660<br><br>AX-4510c<br><br>AX-4520c<br><br>MC-4510c<br><br>MC-4520c<br><br>MC-760<br><br>|
+|Systems Security|TPM2 Algorithm Selection|SHA1|SHA256|<br>AX-760<br><br>AX660<br><br>AX-4510c<br><br>AX-4520c<br><br>MC-4510c<br><br>MC-4520c<br><br>MC-760<br><br>|
+|Systems Security|Intel TXT/AMD DRTM|Off|On|<br>AX-760<br><br>AX660<br><br>AX-4510c<br><br>AX-4520c<br><br>MC-4510c<br><br>MC-4520c<br><br>MC-760<br><br>|
+|Systems Security|SMM Security Mitigation|Disabled|Enabled|<br>AX-760<br><br>AX660<br><br>AX-4510c<br><br>AX-4520c<br><br>MC-4510c<br><br>MC-4520c<br><br>MC-760<br><br>|
+
+#### previous models
+
+|BIOS Section| BIOS Token|PE Default Value|AX Value|Platform|
+|---|---|---|---|---|
+|Processor Settings|Virtualization Technology|Enabled|Enabled|<br>AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>|
+|Processor Settings|x2APIC Mode|Enabled|Enabled|<br>AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br>|
+|Processor Settings|NUMA Nodes Per Socket|1|4|AX-6515<br><br>AX-7525<br><br>|
+|Processor Settings|Dell Controlled Turbo Setting (Optional)|Disabled|Enabled|AX-760<br><br>AX-750<br><br>AX-650<br><br>|
+|Processor Settings|Kernel DMA Protection|Disabled|Enabled|AX-650<br><br>AX-750<br><br>AX-7525<br><br>|
+|Processor Settings|Secure Memory Encryption|Disabled|Enabled|AX-7525<br><br>|
+|Processor Settings|Transparent Secure Memory Encryption|Disabled|Enabled|AX-7525<br><br>|
+|Integrated Devices|SR-IOV Global Enable|Disabled|Enabled|<br>AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c|
+|System Profile Settings|Systems Profile|Performance Per Watt (DAPC)|Performance|<br>AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>|
+|Systems Security|TPM Security|Off|On|<br>AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>|
+|Systems Security|AC Power Recovery|NA|On|<br>AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>|
+|Systems Security|AC Power Recovery Delay|NA|Random|<br>AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>|
+|Systems Security|Secure Boot|Disabled|Enabled|<br>AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>|
+|Systems Security|TPM PPI Bypass Provision|Disabled|Enabled|AX-650<br><br>AX-750<br><br>AX-7525<br><br>|
+|Systems Security|TPM PPI Bypass Clear|Disabled|Enabled|AX-650<br><br>AX-750<br><br>AX-7525<br><br>|
+|Systems Security|TPM2 Algorithm Selection|SHA1|SHA256|AX-650<br><br>AX-750<br><br>AX-7525<br><br>|
+|Systems Security|Intel TXT/AMD DRTM|Off|On|AX-650<br><br>AX-750<br><br>AX-7525<br><br>|
+|Systems Security|SMM Security Mitigation|Disabled|Enabled|AX-7525<br><br>|
 
 ### iDRAC Configuration
 The following table lists the iDRAC settings for nodes in an Azure Local instance.
