@@ -81,7 +81,8 @@ Dell will support the use of SBE package 4.2.2509.xxxx on Azure Local instances 
 <table>
 <colgroup><col/><col/><col/><col/><col/><col/></colgroup>
 <tr><th>Component</th><th>Type</th><th>Software Bundle</th><th>Minimum Supported Version</th><th>Supported Platforms</th><th>Supported OS</th></tr>
-<tr><td>BIOS</td><td>Firmware DUP</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=9M80P">9M80P</a></td><td>2.25.0</td><td>AX-640<br><br>AX-740xd</td><td>NA</td></tr>
+<tr><td rowspan="2">BIOS</td><td rowspan="2">Firmware DUP</td><td rowspan="1"><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=9M80P">9M80P</a></td><td rowspan="1">2.25.0</td><td rowspan="2">AX-640<br><br>AX-740xd</td><td rowspan="2">NA</td></tr>
+<td rowspan="1"><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=T4VCN">T4VCN</a></td><td rowspan="1">2.24.0</td></tr>
 <tr><td>BIOS</td><td>Firmware DUP</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=74JWM">74JWM</a></td><td>2.22.0</td><td>AX-6515</td><td>NA</td></tr>
 <tr><td>BIOS</td><td>Firmware DUP</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=2KY3W">2KY3W</a></td><td>2.22.0</td><td>AX-7525</td><td>NA</td></tr>
 <tr><td rowspan="2">BIOS</td><td rowspan="2">Firmware DUP</td><td rowspan="1"><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=8388K">8388K</a></td><td rowspan="1">1.19.2</td><td rowspan="2">AX-650<br><br>AX-750</td><td rowspan="2">NA</td></tr>
