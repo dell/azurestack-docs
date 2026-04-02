@@ -56,7 +56,7 @@ Solution Builder Extensions (SBE) for Azure Local. Firmware, Driver, and WDAC Su
       <td>5.0.2603.1407</td>
       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=95NXT">https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=95NXT</a></td>
       <td>AX-640<br>AX-740xd</td>
-      <td><a href="{{< relref "docs/hci/supportmatrix/2512/14G-15G_HCI">}}">Azure Local Support Matrix for 14G-15G (2603) | Solutions for Microsoft Azure</a></td>
+      <td><a href="{{< relref "docs/hci/supportmatrix/2603/14G-15G_HCI">}}">Azure Local Support Matrix for 14G-15G (2603) | Solutions for Microsoft Azure</a></td>
       <td>24H2</td>
       <td>12.2603.1002.*</td>
     </tr>
@@ -73,7 +73,6 @@ Solution Builder Extensions (SBE) for Azure Local. Firmware, Driver, and WDAC Su
 - NVIDIA ConnectX NIC resets have been observed by customers under certain workloads. Affected driver version '25.1.26647.0' and corresponding firmware was introduced in the SBE '4.2.2506.n'. SBE '4.2.2509.n' and '4.2.2512.n' will downgrade the NVIDIA ConnectX driver to version '24.4.26429.0' and firmware versions '26.41.10.00', '22.41.10.00', and '14.32.20.04' when installing SBE '5.0.2603.1641', '5.0.2603.1522', or '5.0.2603.1407'. Manually downgrading the firmware is no longer required. For reference, see [KB000376360](https://www.dell.com/support/kbdoc/en-us/000376360).
 
 - Dell Micron 7450 and 7500 NVMe SSDs occasionally enter a panic state. For details and instructions, see [KB000368482](https://www.dell.com/support/kbdoc/en-us/000368482/poweredge-dell-micron-7450-and-7500-nvme-ssds-occasionally-enters-a-panic-state). From the SBE table above, find the version relevant to your product and install the SBE with updated firmware that resolves the defect for the Micron 7450 and 7500 drives.
-
 
 ## New for This Release
 
@@ -185,7 +184,6 @@ The SBE `Download Connector` running in the Azure Local instance needs to period
 ### Automated Download and Extraction
 
 SBE release starting with `4.1.2505.1501` and newer include the `Download Connector` that automates downloading and extracting the SBE. Manual download and SBE bundle extraction are unnecessary when an SBE with this capability is already installed or partially installed on the Azure Local instance.
-
 
 ### Manual Download and Extract
 
