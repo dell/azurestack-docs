@@ -30,8 +30,8 @@
 
   <meta itemprop="name" content="Azure Local Dell Solution Builder Extensions Release Notes (Dell 2603)">
   <meta itemprop="description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; Overview Solution Builder Extensions (SBE) for Azure Local. Firmware, Driver, and WDAC Supplemental policy for lifecycle management for Azure Local instances running on Dell AX servers.">
-  <meta itemprop="dateModified" content="2026-04-02T15:29:54+01:00">
-  <meta itemprop="wordCount" content="2670">
+  <meta itemprop="dateModified" content="2026-04-14T15:04:53+01:00">
+  <meta itemprop="wordCount" content="2948">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Azure Local Dell Solution Builder Extensions Release Notes (Dell 2603)">
   <meta name="twitter:description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; Overview Solution Builder Extensions (SBE) for Azure Local. Firmware, Driver, and WDAC Supplemental policy for lifecycle management for Azure Local instances running on Dell AX servers.">
@@ -158,7 +158,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.58951d68ec9e408bb5954f4180577edf.json"
+    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.30862acd6182a92b0ef66bfed56fa280.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -182,7 +182,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.58951d68ec9e408bb5954f4180577edf.json"
+    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.30862acd6182a92b0ef66bfed56fa280.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -525,23 +525,30 @@
     </li>
     <li><a href="#known-issues">Known Issues</a>
       <ul>
-        <li><a href="#partially-installed-sbe-version-4000-when-sbe-is-installed-as-part-of-cluster-deployment">Partially Installed SBE Version <code>4.0.0.0</code> When SBE Is Installed as Part of Cluster Deployment</a>
+        <li><a href="#sbe-installation-may-fail-with-firmware-cau-plug-in-cau-scan-error">SBE Installation May Fail with Firmware CAU Plug-in CAU Scan Error</a>
           <ul>
             <li><a href="#description"><strong>Description</strong></a></li>
             <li><a href="#workaround"><strong>Workaround</strong></a></li>
             <li><a href="#background"><strong>Background</strong></a></li>
           </ul>
         </li>
-        <li><a href="#sbe-installation-will-not-downgrade-drivers-that-have-a-newer-version-than-the-same-driver-in-the-sbe-payload">SBE installation will not downgrade drivers that have a newer version than the same driver in the SBE payload</a>
+        <li><a href="#partially-installed-sbe-version-4000-when-sbe-is-installed-as-part-of-cluster-deployment">Partially Installed SBE Version <code>4.0.0.0</code> When SBE Is Installed as Part of Cluster Deployment</a>
           <ul>
             <li><a href="#description-1"><strong>Description</strong></a></li>
+            <li><a href="#workaround-1"><strong>Workaround</strong></a></li>
+            <li><a href="#background-1"><strong>Background</strong></a></li>
+          </ul>
+        </li>
+        <li><a href="#sbe-installation-will-not-downgrade-drivers-that-have-a-newer-version-than-the-same-driver-in-the-sbe-payload">SBE installation will not downgrade drivers that have a newer version than the same driver in the SBE payload</a>
+          <ul>
+            <li><a href="#description-2"><strong>Description</strong></a></li>
           </ul>
         </li>
         <li><a href="#amd-drtm-dynamic-root-of-trust-for-measurement-driver-fails-to-update-on-ax-amd-platforms-when-the-drtm-device-was-originally-enabled-at-azure-local-instance-deployment-time-and-later-disabled">AMD DRTM (Dynamic Root of Trust for Measurement) Driver Fails to Update on AX AMD Platforms When the DRTM Device Was Originally Enabled at Azure Local Instance Deployment Time and Later Disabled</a>
           <ul>
-            <li><a href="#description-2"><strong>Description</strong></a></li>
-            <li><a href="#workaround-1"><strong>Workaround</strong></a></li>
-            <li><a href="#background-1"><strong>Background</strong></a></li>
+            <li><a href="#description-3"><strong>Description</strong></a></li>
+            <li><a href="#workaround-2"><strong>Workaround</strong></a></li>
+            <li><a href="#background-2"><strong>Background</strong></a></li>
           </ul>
         </li>
       </ul>
@@ -680,7 +687,7 @@ caption {
 <h2 id="important-caveats">Important Caveats</h2>
 <ul>
 <li>
-<p>AX 17G SBE 5.0.2603.1709 does not contain the NVIDIA ConnectX-6 NIC firmware. This is due to an iDRAC defect that prevents the SBE from updating the NVIDIA ConnectX-6 NIC firmware. The NVIDIA ConnectX-6 NIC firmware in 17G AX servers must be manually updated to version <a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=KX0W4">26.48.1000</a> for ConnectX-6 LX and version <a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=0WM7T">22.48.1000</a> for ConnectX-6 DX prior to Azure Local instance creation.</p>
+<p>AX 17G SBE 5.0.2603.1709 does not contain the NVIDIA ConnectX-6 NIC firmware. This is due to an iDRAC defect that prevents the SBE from updating the NVIDIA ConnectX-6 NIC firmware. The NVIDIA ConnectX-6 NIC firmware in 17G AX servers must be manually updated to version <a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=KX0W4">26.48.1000</a> for ConnectX-6 LX and version <a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=0WM7T">22.48.1000</a> for ConnectX-6 DX prior to Azure Local instance creation.</p>
 </li>
 <li>
 <p>Secure Boot 2023 Certificates must be installed on each instance machine in order for the BIOS version to be upgraded to the versions that are included in this SBE release. The Secure Boot 2023 Certificates are installed as part of installing Solution version 12.2603.1002.*, which is a prerequisite for installing these new SBE versions.</p>
@@ -802,7 +809,16 @@ Example iDRAC Pass-through settings
 </table>
 <h2 id="installation">Installation</h2>
 <h3 id="automated-download-and-extraction">Automated Download and Extraction</h3>
-<p>SBE release starting with <code>4.1.2505.1501</code> and newer include the <code>Download Connector</code> that automates downloading and extracting the SBE. Manual download and SBE bundle extraction are unnecessary when an SBE with this capability is already installed or partially installed on the Azure Local instance.</p>
+<p>SBE releases starting with <code>4.1.2505.1501</code> and newer include the <code>Download Connector</code> that automates downloading and extracting the SBE.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    Manual download and SBE bundle extraction are unnecessary when an SBE with this capability is already installed or partially installed on the Azure Local instance.
+
+</div>
+
 <h3 id="manual-download-and-extract">Manual Download and Extract</h3>
 
 
@@ -892,9 +908,59 @@ $Result | Where-Object { ($_.Status -ne &quot;SUCCESS&quot; -and $_.Severity -eq
 <p>For more information see, <a href="https://learn.microsoft.com/en-us/azure/azure-local/update/update-via-powershell-23h2?view=azloc-24113">Update Azure Local via PowerShell</a>.</p>
 <h2 id="known-issues">Known Issues</h2>
 <br>
-<h3 id="partially-installed-sbe-version-4000-when-sbe-is-installed-as-part-of-cluster-deployment">Partially Installed SBE Version <code>4.0.0.0</code> When SBE Is Installed as Part of Cluster Deployment</h3>
+<h3 id="sbe-installation-may-fail-with-firmware-cau-plug-in-cau-scan-error">SBE Installation May Fail with Firmware CAU Plug-in CAU Scan Error</h3>
 <br>
 <h4 id="description"><strong>Description</strong></h4>
+<br>
+<p>The SBE installation may fail when the Dell firmware CAU plug-in is running the CAU scan operation to identify server components that require firmware updates. The SBE installation workflow terminates and reports the following error when this condition occurs.</p>
+<pre><code>Microsoft.HardwareUpdatePlugin (2) plug-in reported a failure while attempting to scan for applicable updates on node &lt;NodeName&gt;
+Additional information reported by the plug-in: (ClusterUpdateException) Encountered Exception while running ScanAsync
+</code></pre>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    HardwareUpdatePlugin (2) refers to the firmware CAU plug-in in the Dell SBE.
+
+</div>
+
+<br>
+<h4 id="workaround"><strong>Workaround</strong></h4>
+<br>
+<ol>
+<li>
+<p>Identify the failing node name from the error message.</p>
+</li>
+<li>
+<p>Reboot iDRAC on that node via WebUI by logging in to iDRAC, selecting the menu <em>Maintenance</em> &gt; <em>Diagnostics</em> &gt; <em>Reboot iDRAC</em>.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    iDRAC takes a few minutes to reboot. The session to the iDRAC WebUI will drop and automatically re-establish when iDRAC completes the reboot process.
+
+</div>
+
+</li>
+<li>
+<p>Wait for iDRAC to complete its reboot and verify you can log in.</p>
+</li>
+<li>
+<p>Restart the SBE installation from Azure Update Manager or from PowerShell by running the following command on one of the Azure Local instance nodes:</p>
+<pre><code class="language-powershell">Get-SolutionUpdate | Where-Object { $_.State -eq &quot;InstallationFailed&quot; -and $_.PackageType -eq &quot;SBE&quot; } | Start-SolutionUpdate
+</code></pre>
+</li>
+</ol>
+<br>
+<h4 id="background"><strong>Background</strong></h4>
+<br>
+<p>The Dell firmware CAU plug-in implements the CAU scan operation to identify components that require firmware updates prior to running the CAU run operation. Azure Local machine components that do not require firmware updates are excluded from the CAU run operation. The firmware CAU plug-in obtains a list of machine components and their firmware versions from iDRAC. This error occurs when iDRAC does not respond correctly to the component inventory request issued by the firmware CAU plug-in.</p>
+<br>
+<h3 id="partially-installed-sbe-version-4000-when-sbe-is-installed-as-part-of-cluster-deployment">Partially Installed SBE Version <code>4.0.0.0</code> When SBE Is Installed as Part of Cluster Deployment</h3>
+<br>
+<h4 id="description-1"><strong>Description</strong></h4>
 <br>
 <p><code>Get-SolutionUpdateEnvironment</code> reports partially installed SBE when installing the SBE as part of Azure Local instance deployment. SBE version <code>4.0.0.0</code> indicates a partially installed Solution Builder Extension (SBE).</p>
 <pre><code class="language-powershell">Get-SolutionUpdateEnvironment
@@ -914,11 +980,11 @@ HealthCheckDate   : 07/01/2026 17:50:07
 AdditionalData    : {[SBEAdditionalData, Solution Builder extension is partially installed. Please install the latest Solution Builder Extension provided by your hardware vendor. For more information, see https://aka.ms/SBE.]}
 </code></pre>
 <br>
-<h4 id="workaround"><strong>Workaround</strong></h4>
+<h4 id="workaround-1"><strong>Workaround</strong></h4>
 <br>
 <p>Reinstall the same SBE version using the SBE import method or automated download method after Azure Local instance deployment successfully completes.</p>
 <br>
-<h4 id="background"><strong>Background</strong></h4>
+<h4 id="background-1"><strong>Background</strong></h4>
 <br>
 <p>The SBE driver CAU plug-in expects all drivers and firmware in the SBE payload to be installed on the server during or prior to deployment. However, some of the drivers in the SBE payload may not apply to the server model or components in the server model. Microsoft is aware of this limitation and is working to resolve this issue in a future release.</p>
 <p>The partially installed SBE issue can also occur if a component firmware version installed on the server is different than what is in the SBE payload. The SBE cannot update firmware or drivers during Azure Local instance deployment.</p>
@@ -927,23 +993,23 @@ AdditionalData    : {[SBEAdditionalData, Solution Builder extension is partially
 <br>
 <p>Dell supports the driver and firmware versions listed here, <a href="https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/">Support Matrix | Solutions for Microsoft Azure</a>.</p>
 <br>
-<h4 id="description-1"><strong>Description</strong></h4>
+<h4 id="description-2"><strong>Description</strong></h4>
 <br>
 <p>The SBE driver CAU plug-in will not attempt to downgrade installed drivers that are higher version than the ones in its payload unless otherwise specified by Dell.</p>
 <br>
 <h3 id="amd-drtm-dynamic-root-of-trust-for-measurement-driver-fails-to-update-on-ax-amd-platforms-when-the-drtm-device-was-originally-enabled-at-azure-local-instance-deployment-time-and-later-disabled">AMD DRTM (Dynamic Root of Trust for Measurement) Driver Fails to Update on AX AMD Platforms When the DRTM Device Was Originally Enabled at Azure Local Instance Deployment Time and Later Disabled</h3>
 <br>
-<h4 id="description-2"><strong>Description</strong></h4>
+<h4 id="description-3"><strong>Description</strong></h4>
 <br>
 <p>SBE installation fails because the driver CAU plug-in in the SBE is unable to update the AMD DRTM driver to a newer version that is in the SBE payload. The AMD DRTM driver is one of the AMD Chipset drivers in the SBE package. The AMD DRTM driver update fails because the AMD DRTM setting was originally enabled but later disabled.</p>
 <br>
-<h4 id="workaround-1"><strong>Workaround</strong></h4>
+<h4 id="workaround-2"><strong>Workaround</strong></h4>
 <br>
 <p>Verify that the AMD DRTM BIOS setting is on. Re-enable the AMD DRTM setting if it is off.</p>
 <p>The DRTM option is in the BIOS configuration: System Security -&gt; TPM Advanced Settings -&gt; AMD DRTM</p>
 <p>Make sure to suspend and drain the Azure Local cluster node prior to rebooting the node. Make sure that BitLocker protection is disabled for the boot volume on the cluster node before making BIOS configuration changes. Disable BitLocker if it is enabled for the boot volume <code>C:\</code> prior to rebooting the server for the BIOS changes to take effect. Reenable BitLocker for the boot drive after the server successfully reboots.</p>
 <br>
-<h4 id="background-1"><strong>Background</strong></h4>
+<h4 id="background-2"><strong>Background</strong></h4>
 <br>
 <p>AMD DRTM is an advanced security feature that is available on modern AMD CPUs and is used to protect the secure boot enclaves. The AMD DRTM setting is enabled by default on AX servers with AMD CPUs that support the DRTM feature. AMD DRTM should not be disabled.</p>
 <h2 id="previous-releases">Previous Releases</h2>
@@ -1151,7 +1217,7 @@ AdditionalData    : {[SBEAdditionalData, Solution Builder extension is partially
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified April 2, 2026: <a data-proofer-ignore href="https://github.com/dell/azurestack-docs/commit/c394c3ac3f09b9465fab5398aa4bfff9b72259fe">Add Azure Local SBE Release Notes for 2603 release (#258) (c394c3ac)</a>
+  Last modified April 14, 2026: <a data-proofer-ignore href="https://github.com/dell/azurestack-docs/commit/6efbd2cddb39165e16c11651a4c6f11c9cf508a5">Add Azure Local SBE Release Notes for 2603 release (#263) (6efbd2cd)</a>
 </div>
 </div>
 
