@@ -66,7 +66,7 @@ Solution Builder Extensions (SBE) for Azure Local. Firmware, Driver, and WDAC Su
 
 ## Important Caveats
 
-- AX 17G SBE 5.0.2603.1709 does not contain the NVIDIA ConnectX-6 NIC firmware. This is due to an iDRAC defect that prevents the SBE from updating the NVIDIA ConnectX-6 NIC firmware. The NVIDIA ConnectX-6 NIC firmware in 17G AX servers must be manually updated to version [26.48.1000](https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=KX0W4) for ConnectX-6 LX and version [22.48.1000](https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=0WM7T) for ConnectX-6 DX prior to Azure Local instance creation.
+- AX 17G SBE 5.0.2603.1709 does not contain the NVIDIA ConnectX-6 NIC firmware. This is due to an iDRAC defect that prevents the SBE from updating the NVIDIA ConnectX-6 NIC firmware. The NVIDIA ConnectX-6 NIC firmware in 17G AX servers must be manually updated to version [26.48.1000](https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=KX0W4) for ConnectX-6 LX and version [22.48.1000](https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=0WM7T) for ConnectX-6 DX prior to Azure Local instance creation.
 
 - Secure Boot 2023 Certificates must be installed on each instance machine in order for the BIOS version to be upgraded to the versions that are included in this SBE release. The Secure Boot 2023 Certificates are installed as part of installing Solution version 12.2603.1002.*, which is a prerequisite for installing these new SBE versions.
 
@@ -183,7 +183,11 @@ The SBE `Download Connector` running in the Azure Local instance needs to period
 
 ### Automated Download and Extraction
 
-SBE release starting with `4.1.2505.1501` and newer include the `Download Connector` that automates downloading and extracting the SBE. Manual download and SBE bundle extraction are unnecessary when an SBE with this capability is already installed or partially installed on the Azure Local instance.
+SBE releases starting with `4.1.2505.1501` and newer include the `Download Connector` that automates downloading and extracting the SBE.
+
+{{% alert title="Note" color="primary" %}}
+Manual download and SBE bundle extraction are unnecessary when an SBE with this capability is already installed or partially installed on the Azure Local instance.
+{{% /alert %}}
 
 ### Manual Download and Extract
 
@@ -264,6 +268,55 @@ All tests with `Critical` severity must have the `Success` status before continu
 For more information see, [Update Azure Local via PowerShell](<https://learn.microsoft.com/en-us/azure/azure-local/update/update-via-powershell-23h2?view=azloc-24113>).
 
 ## Known Issues
+
+<br>
+
+### SBE Installation May Fail with Firmware CAU Plug-in CAU Scan Error
+
+<br>
+
+#### **Description**
+
+<br>
+
+The SBE installation may fail when the Dell firmware CAU plug-in is running the CAU scan operation to identify server components that require firmware updates. The SBE installation workflow terminates and reports the following error when this condition occurs.
+
+```
+Microsoft.HardwareUpdatePlugin (2) plug-in reported a failure while attempting to scan for applicable updates on node <NodeName>
+Additional information reported by the plug-in: (ClusterUpdateException) Encountered Exception while running ScanAsync
+```
+
+{{% alert title="Note" color="primary" %}}
+HardwareUpdatePlugin (2) refers to the firmware CAU plug-in in the Dell SBE.
+{{% /alert %}}
+
+<br>
+
+#### **Workaround**
+
+<br>
+
+1. Identify the failing node name from the error message.
+2. Reboot iDRAC on that node via WebUI by logging in to iDRAC, selecting the menu *Maintenance* > *Diagnostics* > *Reboot iDRAC*.
+
+    {{% alert title="Note" color="primary" %}}
+iDRAC takes a few minutes to reboot. The session to the iDRAC WebUI will drop and automatically re-establish when iDRAC completes the reboot process.
+    {{% /alert %}}
+
+3. Wait for iDRAC to complete its reboot and verify you can log in.
+4. Restart the SBE installation from Azure Update Manager or from PowerShell by running the following command on one of the Azure Local instance nodes:
+
+   ```powershell
+   Get-SolutionUpdate | Where-Object { $_.State -eq "InstallationFailed" -and $_.PackageType -eq "SBE" } | Start-SolutionUpdate
+   ```
+
+<br>
+
+#### **Background**
+
+<br>
+
+The Dell firmware CAU plug-in implements the CAU scan operation to identify components that require firmware updates prior to running the CAU run operation. Azure Local machine components that do not require firmware updates are excluded from the CAU run operation. The firmware CAU plug-in obtains a list of machine components and their firmware versions from iDRAC. This error occurs when iDRAC does not respond correctly to the component inventory request issued by the firmware CAU plug-in.
 
 <br>
 
