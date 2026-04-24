@@ -35,14 +35,14 @@ Solution Builder Extensions (SBE) for Azure Local. Firmware, Driver, and WDAC Su
       <td>AX-670<br>AX-770</td>
       <td><a href="{{< relref "docs/hci/supportmatrix/2603/17G_HCI">}}">Azure Local Support Matrix for 17G (2603) | Solutions for Microsoft Azure</a></td>
       <td>24H2</td>
-      <td>12.*.1002.*</td>
+      <td>12.*.1003.*<br>12.*.1002.*</td>
     <tr>
       <td>5.0.2603.1641</td>
       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=M61YY">https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=M61YY</a></td>
       <td>AX-660<br>AX-760<br>AX-4510C<br>AX-4520C<br>APEX MC-660<br>APEX MC-760<br>APEX MC-4510C<br>APEX MC-4520C</td>
       <td><a href="{{< relref "docs/hci/supportmatrix/2603/16G_HCI">}}">Azure Local Support Matrix for 16G (2603) | Solutions for Microsoft Azure</a><br><a href="{{< relref "docs/hci/supportmatrix/2603/45n0c_hci">}}">Azure Local Support Matrix for AX-4500 (2603) | Solutions for Microsoft Azure</a></td>
       <td>24H2</td>
-      <td>12.2603.1002.*</td>
+      <td>12.*.1003.*<br>12.2603.1002.*</td>
     </tr>
     <tr>
       <td>5.0.2603.1522</td>
@@ -50,7 +50,7 @@ Solution Builder Extensions (SBE) for Azure Local. Firmware, Driver, and WDAC Su
       <td>AX-650<br>AX-750<br>AX-6515<br>AX-7525</td>
       <td><a href="{{< relref "docs/hci/supportmatrix/2603/14G-15G_HCI">}}">Azure Local Support Matrix for 14G-15G (2603) | Solutions for Microsoft Azure</a></td>
       <td>24H2</td>
-      <td>12.2603.1002.*</td>
+      <td>12.*.1003.*<br>12.2603.1002.*</td>
     </tr>
     <tr>
       <td>5.0.2603.1407</td>
@@ -58,7 +58,7 @@ Solution Builder Extensions (SBE) for Azure Local. Firmware, Driver, and WDAC Su
       <td>AX-640<br>AX-740xd</td>
       <td><a href="{{< relref "docs/hci/supportmatrix/2603/14G-15G_HCI">}}">Azure Local Support Matrix for 14G-15G (2603) | Solutions for Microsoft Azure</a></td>
       <td>24H2</td>
-      <td>12.2603.1002.*</td>
+      <td>12.*.1003.*<br>12.2603.1002.*</td>
     </tr>
   </tbody>
 </table>
@@ -68,7 +68,7 @@ Solution Builder Extensions (SBE) for Azure Local. Firmware, Driver, and WDAC Su
 
 - AX 17G SBE 5.0.2603.1709 does not contain the NVIDIA ConnectX-6 NIC firmware. This is due to an iDRAC defect that prevents the SBE from updating the NVIDIA ConnectX-6 NIC firmware. The NVIDIA ConnectX-6 NIC firmware in 17G AX servers must be manually updated to version [26.48.1000](https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=KX0W4) for ConnectX-6 LX and version [22.48.1000](https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=0WM7T) for ConnectX-6 DX prior to Azure Local instance creation.
 
-- Secure Boot 2023 Certificates must be installed on each instance machine in order for the BIOS version to be upgraded to the versions that are included in this SBE release. The Secure Boot 2023 Certificates are installed as part of installing Solution version 12.2603.1002.*, which is a prerequisite for installing these new SBE versions.
+- Secure Boot 2023 Certificates must be installed on each instance machine in order for the BIOS version to be upgraded to the versions that are included in this SBE release. The Secure Boot 2023 Certificates are installed as part of installing Solution version 12.2603.1002.* or newer, which is a prerequisite for installing these new SBE versions.
 
 - NVIDIA ConnectX NIC resets have been observed by customers under certain workloads. Affected driver version '25.1.26647.0' and corresponding firmware was introduced in the SBE '4.2.2506.n'. SBE '4.2.2509.n' and '4.2.2512.n' will downgrade the NVIDIA ConnectX driver to version '24.4.26429.0' and firmware versions '26.41.10.00', '22.41.10.00', and '14.32.20.04' when installing SBE '5.0.2603.1641', '5.0.2603.1522', or '5.0.2603.1407'. Manually downgrading the firmware is no longer required. For reference, see [KB000376360](https://www.dell.com/support/kbdoc/en-us/000376360).
 
@@ -80,28 +80,28 @@ Solution Builder Extensions (SBE) for Azure Local. Firmware, Driver, and WDAC Su
 
 - New for AX-670 and AX-770 Platforms
 - Driver and Firmware 2603 Update
-- To install this SBE version, Azure Local instances that are already deployed must be running solution version `12.*.1002.*`
+- To install this SBE version, Azure Local instances that are already deployed must be running solution versions `12.*.1003.*` and `12.*.1002.*`
 
 ### SBE 5.2603.1641
 
 - Driver and Firmware 2603 Update
 - Added Secure Boot 2023 certificate prerequisite check prior to BIOS update
 - Added automated capability for downgrading NVIDIA ConnectX-6 NIC firmware if necessary
-- To install this SBE version, Azure Local instances that are already deployed must be running solution version `12.2603.1002.*`
+- To install this SBE version, Azure Local instances that are already deployed must be running solution versions `12.*.1003.*` and `12.2603.1002.*`
 
 ### SBE 5.2603.1522
 
 - Driver and Firmware 2603 Update
 - Added Secure Boot 2023 certificate prerequisite check prior to BIOS update
 - Added automated capability for downgrading NVIDIA ConnectX-6 NIC firmware if necessary
-- To install this SBE version, Azure Local instances that are already deployed must be running solution version `12.2603.1002.*`
+- To install this SBE version, Azure Local instances that are already deployed must be running solution versions `12.*.1003.*` and `12.2603.1002.*`
 
 ### SBE 5.2603.1407
 
 - Driver and Firmware 2603 Update
 - Added Secure Boot 2023 certificate prerequisite check prior to BIOS update
 - Added automated capability for downgrading NVIDIA ConnectX-6 NIC firmware if necessary
-- To install this SBE version, Azure Local instances that are already deployed must be running solution version `12.2603.1002.*`
+- To install this SBE version, Azure Local instances that are already deployed must be running solution versions `12.*.1003.*` and `12.2603.1002.*`
 
 ## Prerequisites
 
