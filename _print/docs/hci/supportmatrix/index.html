@@ -166,7 +166,7 @@ NOTE Azure Stack HCI version 22H2 reached end of support on May 31st, 2025. You 
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.30862acd6182a92b0ef66bfed56fa280.json"
+    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.3417a2d7f37fefd19b7e9bbb4051f2dd.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -2164,14 +2164,14 @@ caption {
       <td>AX-670<br>AX-770</td>
       <td><a href="/azurestack-docs/docs/hci/supportmatrix/2603/17g_hci/">Azure Local Support Matrix for 17G (2603) | Solutions for Microsoft Azure</a></td>
       <td>24H2</td>
-      <td>12.*.1002.*</td>
+      <td>12.*.1003.*<br>12.*.1002.*</td>
     <tr>
       <td>5.0.2603.1641</td>
       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=M61YY">https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=M61YY</a></td>
       <td>AX-660<br>AX-760<br>AX-4510C<br>AX-4520C<br>APEX MC-660<br>APEX MC-760<br>APEX MC-4510C<br>APEX MC-4520C</td>
       <td><a href="/azurestack-docs/docs/hci/supportmatrix/2603/16g_hci/">Azure Local Support Matrix for 16G (2603) | Solutions for Microsoft Azure</a><br><a href="/azurestack-docs/docs/hci/supportmatrix/2603/45n0c_hci/">Azure Local Support Matrix for AX-4500 (2603) | Solutions for Microsoft Azure</a></td>
       <td>24H2</td>
-      <td>12.2603.1002.*</td>
+      <td>12.*.1003.*<br>12.2603.1002.*</td>
     </tr>
     <tr>
       <td>5.0.2603.1522</td>
@@ -2179,7 +2179,7 @@ caption {
       <td>AX-650<br>AX-750<br>AX-6515<br>AX-7525</td>
       <td><a href="/azurestack-docs/docs/hci/supportmatrix/2603/14g-15g_hci/">Azure Local Support Matrix for 14G-15G (2603) | Solutions for Microsoft Azure</a></td>
       <td>24H2</td>
-      <td>12.2603.1002.*</td>
+      <td>12.*.1003.*<br>12.2603.1002.*</td>
     </tr>
     <tr>
       <td>5.0.2603.1407</td>
@@ -2187,7 +2187,7 @@ caption {
       <td>AX-640<br>AX-740xd</td>
       <td><a href="/azurestack-docs/docs/hci/supportmatrix/2603/14g-15g_hci/">Azure Local Support Matrix for 14G-15G (2603) | Solutions for Microsoft Azure</a></td>
       <td>24H2</td>
-      <td>12.2603.1002.*</td>
+      <td>12.*.1003.*<br>12.2603.1002.*</td>
     </tr>
   </tbody>
 </table>
@@ -2199,7 +2199,7 @@ caption {
 <p>AX 17G SBE 5.0.2603.1709 does not contain the NVIDIA ConnectX-6 NIC firmware. This is due to an iDRAC defect that prevents the SBE from updating the NVIDIA ConnectX-6 NIC firmware. The NVIDIA ConnectX-6 NIC firmware in 17G AX servers must be manually updated to version <a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=KX0W4">26.48.1000</a> for ConnectX-6 LX and version <a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=0WM7T">22.48.1000</a> for ConnectX-6 DX prior to Azure Local instance creation.</p>
 </li>
 <li>
-<p>Secure Boot 2023 Certificates must be installed on each instance machine in order for the BIOS version to be upgraded to the versions that are included in this SBE release. The Secure Boot 2023 Certificates are installed as part of installing Solution version 12.2603.1002.*, which is a prerequisite for installing these new SBE versions.</p>
+<p>Secure Boot 2023 Certificates must be installed on each instance machine in order for the BIOS version to be upgraded to the versions that are included in this SBE release. The Secure Boot 2023 Certificates are installed as part of installing Solution version 12.2603.1002.* or newer, which is a prerequisite for installing these new SBE versions.</p>
 </li>
 <li>
 <p>NVIDIA ConnectX NIC resets have been observed by customers under certain workloads. Affected driver version &lsquo;25.1.26647.0&rsquo; and corresponding firmware was introduced in the SBE &lsquo;4.2.2506.n&rsquo;. SBE &lsquo;4.2.2509.n&rsquo; and &lsquo;4.2.2512.n&rsquo; will downgrade the NVIDIA ConnectX driver to version &lsquo;24.4.26429.0&rsquo; and firmware versions &lsquo;26.41.10.00&rsquo;, &lsquo;22.41.10.00&rsquo;, and &lsquo;14.32.20.04&rsquo; when installing SBE &lsquo;5.0.2603.1641&rsquo;, &lsquo;5.0.2603.1522&rsquo;, or &lsquo;5.0.2603.1407&rsquo;. Manually downgrading the firmware is no longer required. For reference, see <a href="https://www.dell.com/support/kbdoc/en-us/000376360">KB000376360</a>.</p>
@@ -2213,28 +2213,28 @@ caption {
 <ul>
 <li>New for AX-670 and AX-770 Platforms</li>
 <li>Driver and Firmware 2603 Update</li>
-<li>To install this SBE version, Azure Local instances that are already deployed must be running solution version <code>12.*.1002.*</code></li>
+<li>To install this SBE version, Azure Local instances that are already deployed must be running solution versions <code>12.*.1003.*</code> and <code>12.*.1002.*</code></li>
 </ul>
 <h3 id="sbe-526031641">SBE 5.2603.1641</h3>
 <ul>
 <li>Driver and Firmware 2603 Update</li>
 <li>Added Secure Boot 2023 certificate prerequisite check prior to BIOS update</li>
 <li>Added automated capability for downgrading NVIDIA ConnectX-6 NIC firmware if necessary</li>
-<li>To install this SBE version, Azure Local instances that are already deployed must be running solution version <code>12.2603.1002.*</code></li>
+<li>To install this SBE version, Azure Local instances that are already deployed must be running solution versions <code>12.*.1003.*</code> and <code>12.2603.1002.*</code></li>
 </ul>
 <h3 id="sbe-526031522">SBE 5.2603.1522</h3>
 <ul>
 <li>Driver and Firmware 2603 Update</li>
 <li>Added Secure Boot 2023 certificate prerequisite check prior to BIOS update</li>
 <li>Added automated capability for downgrading NVIDIA ConnectX-6 NIC firmware if necessary</li>
-<li>To install this SBE version, Azure Local instances that are already deployed must be running solution version <code>12.2603.1002.*</code></li>
+<li>To install this SBE version, Azure Local instances that are already deployed must be running solution versions <code>12.*.1003.*</code> and <code>12.2603.1002.*</code></li>
 </ul>
 <h3 id="sbe-526031407">SBE 5.2603.1407</h3>
 <ul>
 <li>Driver and Firmware 2603 Update</li>
 <li>Added Secure Boot 2023 certificate prerequisite check prior to BIOS update</li>
 <li>Added automated capability for downgrading NVIDIA ConnectX-6 NIC firmware if necessary</li>
-<li>To install this SBE version, Azure Local instances that are already deployed must be running solution version <code>12.2603.1002.*</code></li>
+<li>To install this SBE version, Azure Local instances that are already deployed must be running solution versions <code>12.*.1003.*</code> and <code>12.2603.1002.*</code></li>
 </ul>
 <h2 id="prerequisites">Prerequisites</h2>
 <h3 id="update-firmware-and-drivers-prior-to-azure-local-instance-deployment">Update Firmware and Drivers Prior to Azure Local Instance Deployment</h3>
