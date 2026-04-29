@@ -12,22 +12,23 @@ jobs:
     steps:
       - uses: actions/checkout@main
         with:
-          submodules: recursive  # Fetch Hugo themes
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: recursive # Fetch Hugo themes
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          hugo-version: "latest"
           extended: true
       - name: Setup Go
         uses: actions/setup-go@v2
         with:
-          go-version: '1.19.1'
+          go-version: "1.19.1"
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: "22"
+
 
       - name: Cache dependencies
         uses: actions/cache@v3
@@ -40,10 +41,10 @@ jobs:
 
       - name: Build
         run: |
-         npm install -D --save autoprefixer
-         npm install -D --save postcss-cli
-         npm install -D --save postcss
-         hugo --baseURL="${{ vars.BASEURL }}"
+          npm install -D --save autoprefixer
+          npm install -D --save postcss-cli
+          npm install -D --save postcss
+          hugo --baseURL="${{ vars.BASEURL }}"
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
