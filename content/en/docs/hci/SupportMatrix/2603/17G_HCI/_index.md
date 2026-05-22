@@ -149,7 +149,7 @@ Dell update packages are not available for GPU cards, please download the latest
 <table>
 <colgroup><col/><col/><col/><col/><col/><col/><col/><col/></colgroup>
 <tr><th>Component</th><th>Dell Part Number</th><th>Firmware Software Bundle</th><th>Firmware Minimum Supported Version</th><th>Driver Software Bundle</th><th>Driver Minimum Supported Version</th><th>Supported Platforms</th><th>Supported OS</th></tr>
-<tr><td>BOSS-N1</td><td></td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=PVDY9">PVDY9</a></td><td>2.2.13.2037</td><td>Inbox</td><td>Inbox</td><td>AX-670<br><br>AX-770</td><td>Windows Server 2025 Datacenter<br><br>Azure Stack HCI-24H2</td></tr>
+<tr><td>BOSS-N1</td><td>NH7WD</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=PVDY9">PVDY9</a></td><td>2.2.13.2037</td><td>Inbox</td><td>Inbox</td><td>AX-670<br><br>AX-770</td><td>Windows Server 2025 Datacenter<br><br>Azure Stack HCI-24H2</td></tr>
 </table>
 <br>
 {{< /rawhtml >}}
