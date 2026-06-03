@@ -208,3 +208,7 @@ section = ["HTML", "RSS", "print"]
 [privacy]
   [privacy.googleAnalytics]
     respectDoNotTrack = true
+
+# From Hugo 162 we need to allow text/html content
+[security]
+  allowContent = ['^text/html$']
