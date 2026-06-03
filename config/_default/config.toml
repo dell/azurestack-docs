@@ -211,4 +211,4 @@ section = ["HTML", "RSS", "print"]
 
 # From Hugo 162 we need to allow text/html content
 [security]
-  allowContent = ['^text/html$']
+  allowContent = ['^text/html$', '^text/markdown$']
