@@ -22,19 +22,19 @@
 <title>BIOS and iDRAC configuration recommendations | Solutions for Microsoft Azure</title>
 <meta name="description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; BIOS Configuration The following table lists the BIOS configuration settings for server nodes implemented as Storage Spaces Direct cluster nodes.">
 <meta property="og:url" content="https://dell.github.io/azurestack-docs/docs/hci/biosandidrac/">
-  <meta property="og:site_name" content="Solutions for Microsoft Azure">
-  <meta property="og:title" content="BIOS and iDRAC configuration recommendations">
-  <meta property="og:description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; BIOS Configuration The following table lists the BIOS configuration settings for server nodes implemented as Storage Spaces Direct cluster nodes.">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="website">
+	<meta property="og:site_name" content="Solutions for Microsoft Azure">
+	<meta property="og:title" content="BIOS and iDRAC configuration recommendations">
+	<meta property="og:description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; BIOS Configuration The following table lists the BIOS configuration settings for server nodes implemented as Storage Spaces Direct cluster nodes.">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="website">
 
-  <meta itemprop="name" content="BIOS and iDRAC configuration recommendations">
-  <meta itemprop="description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; BIOS Configuration The following table lists the BIOS configuration settings for server nodes implemented as Storage Spaces Direct cluster nodes.">
-  <meta itemprop="dateModified" content="2026-01-06T09:36:02-06:00">
-  <meta itemprop="wordCount" content="351">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BIOS and iDRAC configuration recommendations">
-  <meta name="twitter:description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; BIOS Configuration The following table lists the BIOS configuration settings for server nodes implemented as Storage Spaces Direct cluster nodes.">
+	<meta itemprop="name" content="BIOS and iDRAC configuration recommendations">
+	<meta itemprop="description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; BIOS Configuration The following table lists the BIOS configuration settings for server nodes implemented as Storage Spaces Direct cluster nodes.">
+	<meta itemprop="dateModified" content="2026-01-06T09:36:02-06:00">
+	<meta itemprop="wordCount" content="351">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="BIOS and iDRAC configuration recommendations">
+	<meta name="twitter:description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; BIOS Configuration The following table lists the BIOS configuration settings for server nodes implemented as Storage Spaces Direct cluster nodes.">
 
 
 
@@ -158,7 +158,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.dd14c76a715470386465427b8aaac67a.json"
+    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.9492bb9f7f42349ce6682af0ac302184.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -252,143 +252,143 @@ This is the multi-page printable view of this section.
 <h3 id="bios-configuration">BIOS Configuration</h3>
 <p>The following table lists the BIOS configuration settings for server nodes implemented as Storage Spaces Direct cluster nodes.</p>
 <table>
-  <thead>
-      <tr>
-          <th>BIOS Section</th>
-          <th> BIOS Token</th>
-          <th>PE Default Value</th>
-          <th>AX Value</th>
-          <th>Platform</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Processor Settings</td>
-          <td>Virtualization Technology</td>
-          <td>Enabled</td>
-          <td>Enabled</td>
-          <td>AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
-      </tr>
-      <tr>
-          <td>Processor Settings</td>
-          <td>x2APIC Mode</td>
-          <td>Enabled</td>
-          <td>Enabled</td>
-          <td>AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
-      </tr>
-      <tr>
-          <td>Processor Settings</td>
-          <td>NUMA Nodes Per Socket</td>
-          <td>1</td>
-          <td>4</td>
-          <td>AX-6515<br><br>AX-7525</td>
-      </tr>
-      <tr>
-          <td>Processor Settings</td>
-          <td>Dell Controlled Turbo Setting (Optional)</td>
-          <td>Disabled</td>
-          <td>Enabled</td>
-          <td>AX-760<br><br>AX-750<br><br>AX-650<br><br>AX-4510c<br><br>AX-4520c</td>
-      </tr>
-      <tr>
-          <td>Integrated Devices</td>
-          <td>SR-IOV Global Enable</td>
-          <td>Disabled</td>
-          <td>Enabled</td>
-          <td>AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
-      </tr>
-      <tr>
-          <td>System Profile Settings</td>
-          <td>Systems Profile</td>
-          <td>Performance Per Watt (DAPC)</td>
-          <td>Performance</td>
-          <td>AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
-      </tr>
-      <tr>
-          <td>Systems Security</td>
-          <td>TPM Security</td>
-          <td>Off</td>
-          <td>On</td>
-          <td>AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
-      </tr>
-      <tr>
-          <td>Systems Security</td>
-          <td>AC Power Recovery</td>
-          <td>NA</td>
-          <td>On</td>
-          <td>AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
-      </tr>
-      <tr>
-          <td>Systems Security</td>
-          <td>AC Power Recovery Delay</td>
-          <td>NA</td>
-          <td>Random</td>
-          <td>AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
-      </tr>
-      <tr>
-          <td>Systems Security</td>
-          <td>Secure Boot</td>
-          <td>Disabled</td>
-          <td>Enabled</td>
-          <td>AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
-      </tr>
-      <tr>
-          <td>Processor Settings</td>
-          <td>Kernel DMA Protection</td>
-          <td>Disabled</td>
-          <td>Enabled</td>
-          <td>AX-650<br><br>AX-750<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
-      </tr>
-      <tr>
-          <td>Processor Settings</td>
-          <td>Secure Memory Encryption</td>
-          <td>Disabled</td>
-          <td>Enabled</td>
-          <td>AX-7525</td>
-      </tr>
-      <tr>
-          <td>Processor Settings</td>
-          <td>Transparent Secure Memory Encryption</td>
-          <td>Disabled</td>
-          <td>Enabled</td>
-          <td>AX-7525</td>
-      </tr>
-      <tr>
-          <td>Systems Security</td>
-          <td>TPM PPI Bypass Provision</td>
-          <td>Disabled</td>
-          <td>Enabled</td>
-          <td>AX-650<br><br>AX-750<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
-      </tr>
-      <tr>
-          <td>Systems Security</td>
-          <td>TPM PPI Bypass Clear</td>
-          <td>Disabled</td>
-          <td>Enabled</td>
-          <td>AX-650<br><br>AX-750<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
-      </tr>
-      <tr>
-          <td>Systems Security</td>
-          <td>TPM2 Algorithm Selection</td>
-          <td>SHA1</td>
-          <td>SHA256</td>
-          <td>AX-650<br><br>AX-750<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
-      </tr>
-      <tr>
-          <td>Systems Security</td>
-          <td>Intel TXT/AMD DRTM</td>
-          <td>Off</td>
-          <td>On</td>
-          <td>AX-650<br><br>AX-750<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
-      </tr>
-      <tr>
-          <td>Systems Security</td>
-          <td>SMM Security Mitigation</td>
-          <td>Disabled</td>
-          <td>Enabled</td>
-          <td>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>BIOS Section</th>
+					<th> BIOS Token</th>
+					<th>PE Default Value</th>
+					<th>AX Value</th>
+					<th>Platform</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Processor Settings</td>
+					<td>Virtualization Technology</td>
+					<td>Enabled</td>
+					<td>Enabled</td>
+					<td>AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
+			</tr>
+			<tr>
+					<td>Processor Settings</td>
+					<td>x2APIC Mode</td>
+					<td>Enabled</td>
+					<td>Enabled</td>
+					<td>AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
+			</tr>
+			<tr>
+					<td>Processor Settings</td>
+					<td>NUMA Nodes Per Socket</td>
+					<td>1</td>
+					<td>4</td>
+					<td>AX-6515<br><br>AX-7525</td>
+			</tr>
+			<tr>
+					<td>Processor Settings</td>
+					<td>Dell Controlled Turbo Setting (Optional)</td>
+					<td>Disabled</td>
+					<td>Enabled</td>
+					<td>AX-760<br><br>AX-750<br><br>AX-650<br><br>AX-4510c<br><br>AX-4520c</td>
+			</tr>
+			<tr>
+					<td>Integrated Devices</td>
+					<td>SR-IOV Global Enable</td>
+					<td>Disabled</td>
+					<td>Enabled</td>
+					<td>AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
+			</tr>
+			<tr>
+					<td>System Profile Settings</td>
+					<td>Systems Profile</td>
+					<td>Performance Per Watt (DAPC)</td>
+					<td>Performance</td>
+					<td>AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
+			</tr>
+			<tr>
+					<td>Systems Security</td>
+					<td>TPM Security</td>
+					<td>Off</td>
+					<td>On</td>
+					<td>AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
+			</tr>
+			<tr>
+					<td>Systems Security</td>
+					<td>AC Power Recovery</td>
+					<td>NA</td>
+					<td>On</td>
+					<td>AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
+			</tr>
+			<tr>
+					<td>Systems Security</td>
+					<td>AC Power Recovery Delay</td>
+					<td>NA</td>
+					<td>Random</td>
+					<td>AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
+			</tr>
+			<tr>
+					<td>Systems Security</td>
+					<td>Secure Boot</td>
+					<td>Disabled</td>
+					<td>Enabled</td>
+					<td>AX-640<br><br>AX-740xd<br><br>AX-650<br><br>AX-750<br><br>AX-6515<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
+			</tr>
+			<tr>
+					<td>Processor Settings</td>
+					<td>Kernel DMA Protection</td>
+					<td>Disabled</td>
+					<td>Enabled</td>
+					<td>AX-650<br><br>AX-750<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
+			</tr>
+			<tr>
+					<td>Processor Settings</td>
+					<td>Secure Memory Encryption</td>
+					<td>Disabled</td>
+					<td>Enabled</td>
+					<td>AX-7525</td>
+			</tr>
+			<tr>
+					<td>Processor Settings</td>
+					<td>Transparent Secure Memory Encryption</td>
+					<td>Disabled</td>
+					<td>Enabled</td>
+					<td>AX-7525</td>
+			</tr>
+			<tr>
+					<td>Systems Security</td>
+					<td>TPM PPI Bypass Provision</td>
+					<td>Disabled</td>
+					<td>Enabled</td>
+					<td>AX-650<br><br>AX-750<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
+			</tr>
+			<tr>
+					<td>Systems Security</td>
+					<td>TPM PPI Bypass Clear</td>
+					<td>Disabled</td>
+					<td>Enabled</td>
+					<td>AX-650<br><br>AX-750<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
+			</tr>
+			<tr>
+					<td>Systems Security</td>
+					<td>TPM2 Algorithm Selection</td>
+					<td>SHA1</td>
+					<td>SHA256</td>
+					<td>AX-650<br><br>AX-750<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
+			</tr>
+			<tr>
+					<td>Systems Security</td>
+					<td>Intel TXT/AMD DRTM</td>
+					<td>Off</td>
+					<td>On</td>
+					<td>AX-650<br><br>AX-750<br><br>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
+			</tr>
+			<tr>
+					<td>Systems Security</td>
+					<td>SMM Security Mitigation</td>
+					<td>Disabled</td>
+					<td>Enabled</td>
+					<td>AX-7525<br><br>AX-760<br><br>AX-4510c<br><br>AX-4520c</td>
+			</tr>
+	</tbody>
 </table>
 <h3 id="idrac-configuration">iDRAC Configuration</h3>
 <p>The following table lists the iDRAC settings for nodes in an Azure Local instance.</p>
