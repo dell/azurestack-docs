@@ -55,12 +55,6 @@ comment: "Copyright © 2026 Dell Inc."
     <div id="content">
 {{< /rawhtml >}}
 
-{{% alert title="NOTE" color="primary" %}}
-SBE package 4.2.2512.xxxx and newer will only support Azure Local solution versions 12.\*.1001.\* or 12.\*.1002.\* (HCI OS 24H2) and newer.
-
-Dell will support the use of SBE package 4.2.2509.xxxx on Azure Local instances running version 11.* (HCI OS 23H2) until April 2026. Dell recommends that instances running version 11.* be upgraded to 12.* as soon as possible to remain in a supported state.
-{{% /alert %}}
-
 ### Supported Platforms
 {{< rawhtml >}}
 <table>
