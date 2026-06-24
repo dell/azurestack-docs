@@ -157,7 +157,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.6be7bd18116a5389ad59dccd8ad0d1ff.json"
+    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.1dd940781cf326a7e1c7a147b1a38938.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -1940,7 +1940,161 @@ PM1725A, Dell Express Flash NVMe 6.4TB 2.5&quot; SFF</td><td>MZWLL6T4HMLS-000D3<
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-4580c88456c8fbe6b05f377702d6e991">1.5 - Azure Local Dell Solution Builder Extensions Release Notes (Dell 2606)</h1>
+	<h1 id="pg-ea4bd56bff55c62d9b3ad48d70f2ac06">1.5 - Azure Local Golden Images (Dell 2606)</h1>
+    
+	
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<style>
+table {
+    border-width:1px; border-style:solid;
+    border-color:black;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    table-layout:fixed;
+    overflow-wrap: break-word;
+}
+th {
+    border-width:1px;
+    padding:7px;
+    border-style:solid;
+    border-color:#0076CE;
+    background-color:#0076CE;
+    color:#FFFFFF;
+    text-align:center;
+}
+td {
+    border-width:1px;
+    padding:7px;
+    border-style:solid;
+    border-color:#0076CE;
+    text-align:center;
+}
+caption {
+    padding-bottom: 10px;
+    color:  #0076CE;
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="content">
+
+
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">NOTE</h4>
+
+    PowerEdge branded servers can only be deployed with Azure Local when enabled with Dell Private Cloud.
+
+</div>
+
+<p>The Dell Technologies provided operating system golden image for Azure Local instances is for imaging servers prior to deploying an Azure Local instance. This image is based on the Azure Stack HCI OS, with Microsoft customization and Dell Technologies customization. This image includes drivers provided by Dell Technologies.</p>
+
+   
+   
+<ul class="nav nav-tabs" id="tabs-2" role="tablist">
+  <li class="nav-item">
+      <button class="nav-link disabled"
+          id="tabs-02-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-02-00" role="tab"
+          aria-controls="tabs-02-00" aria-selected="false">
+        <strong>Azure Stack HCI OS</strong>:
+      </button>
+    </li><li class="nav-item">
+      <button class="nav-link active"
+          id="tabs-02-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-02-01" role="tab"
+          data-td-tp-persist="os build 26100.32230 (24h2)" aria-controls="tabs-02-01" aria-selected="true">
+        OS build 26100.32230 (24H2)
+      </button>
+    </li>
+</ul>
+
+<div class="tab-content" id="tabs-2-content">
+    <div class="tab-body tab-pane fade"
+        id="tabs-02-00" role="tabpanel" aria-labelled-by="tabs-02-00-tab" tabindex="2">
+        
+    </div>
+    <div class="tab-body tab-pane fade show active"
+        id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab" tabindex="2">
+        
+       <h3>Azure Local Golden Images for Solution versions 12.2604.1003.* - 12.2609.1003.* with Dell SBE 5.0.2606.*</h3>
+       <table>
+       <thead>
+       <tr>
+       <th>Azure Stack HCI OS Golden Image for Azure Local</th>
+       <th>Platform</th>
+       <th>Use</th>
+       <th>Instance Expansion and Machine Repair Notes</th>
+       </tr>
+       </thead>
+       <tbody>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=0TDCJ">Azure Stack HCI 24H2 with OS customization 12.2604.1.3008, Dell 2606 drivers, and Dell SBE 5.0.2606.1713 for AX-670, AX-770, PowerEdge R670 and PowerEdge R770 | ISO version A01</a></td>
+       <td>AX-770<br>AX-670<br>PowerEdge R770<br>PowerEdge R670</td>
+       <td rowspan='5'>Deploy<br><br>Instance Expansion (Add-Server)<br><br>Machine Repair</td>
+       <td rowspan='5'>Use with Azure Local instances running Solution version 12.*.1003.*<br><br>Specify Azure Local instance Solution version when running Arc registration using:<br><i>Invoke-AzStackHciArcInitialization -TargetSolutionVersion [Solution Version]</i></td>
+       </tr>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=5C7XG">Azure Stack HCI 24H2 with OS customization 12.2604.1.3008, Dell 2606 drivers, and Dell SBE 5.0.2606.1616 for AX-660, AX-760, AX-4510c, AX-4520c, PowerEdge R660 and PowerEdge R760 | ISO version A01</a></td>
+       <td>AX-760<br>AX-660<br>AX-4510c<br>AX-4520c<br>APEX MC-760<br>APEX MC-660<br>APEX MC-4510c<br>APEX MC-4520c<br>PowerEdge R760<br>PowerEdge R660</td>
+       </tr>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=W2JYX">Azure Stack HCI 24H2 with OS customization 12.2604.1.3008, Dell 2606 drivers, and Dell SBE 5.0.2606.1510 for AX-650 and AX-750 | ISO version A01</a></td>
+       <td>AX-750<br>AX-650</td>
+       </tr>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=P59GW">Azure Stack HCI 24H2 with OS customization 12.2604.1.3008, Dell 2606 drivers, and Dell SBE 5.0.2606.1510 for AX-6515 and AX-7525 | ISO version A01</a></td>
+       <td>AX-7525<br>AX-6515</td>
+       </tr>
+       <tr>
+       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=F0X07">Azure Stack HCI 24H2 with OS customization 12.2604.1.3008, Dell 2606 drivers, and Dell SBE 5.0.2606.1407 for AX-640 and AX-740xd | ISO version A01</a></td>
+       <td>AX-640<br>AX-740xd</td>
+       </tr>
+       </tbody>
+       </table>
+
+   
+    </div>
+</div>
+
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-4580c88456c8fbe6b05f377702d6e991">1.6 - Azure Local Dell Solution Builder Extensions Release Notes (Dell 2606)</h1>
     
 	
 
