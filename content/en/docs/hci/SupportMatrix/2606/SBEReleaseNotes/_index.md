@@ -68,7 +68,7 @@ Solution Builder Extensions (SBE) for Azure Local. Firmware, Driver, and WDAC Su
 
 - AX 17G SBE 5.0.2606.1713 does not contain the NVIDIA ConnectX-6 NIC firmware. This is due to an iDRAC defect that prevents the SBE from updating the NVIDIA ConnectX-6 NIC firmware. The NVIDIA ConnectX-6 NIC firmware in 17G AX servers must be manually updated to version [26.48.1000](https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=KX0W4) for ConnectX-6 LX and version [22.48.1000](https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=0WM7T) for ConnectX-6 DX prior to Azure Local instance creation.
 
-- Secure Boot 2023 Certificates must be installed on each instance machine in order for the BIOS version to be upgraded to the versions that are included in this SBE release. The Secure Boot 2023 Certificates are installed as part of installing solution version 12.2603.1002.* or newer, which is a prerequisite for installing these new SBE versions.
+- Secure Boot 2023 Certificates must be installed on each instance machine in order for the BIOS version to be upgraded to the versions that are included in this SBE release. The Secure Boot 2023 Certificates are installed as part of installing solution version `12.2603.1002.*` or newer, which is a prerequisite for installing these new SBE versions.
 
 ## New for This Release
 
