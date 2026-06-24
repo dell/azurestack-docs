@@ -45,10 +45,25 @@
     <lastmod>2026-01-06T09:36:02-06:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
+    <lastmod>2026-06-24T09:16:09-04:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/archive/ws2016/</loc>
     <lastmod>2026-01-06T09:36:02-06:00</lastmod>
+  </url><url>
+    <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2606/14g-15g_hci/</loc>
+    <lastmod>2026-06-24T09:16:09-04:00</lastmod>
+  </url><url>
+    <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2606/16g_hci/</loc>
+    <lastmod>2026-06-24T09:16:09-04:00</lastmod>
+  </url><url>
+    <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2606/17g_hci/</loc>
+    <lastmod>2026-06-24T09:16:09-04:00</lastmod>
+  </url><url>
+    <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2606/45n0c_hci/</loc>
+    <lastmod>2026-06-24T09:16:09-04:00</lastmod>
+  </url><url>
+    <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2606/</loc>
+    <lastmod>2026-06-24T09:16:09-04:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2603/14g-15g_hci/</loc>
     <lastmod>2026-06-03T03:32:26-04:00</lastmod>
@@ -122,18 +137,6 @@
     <loc>https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2511/</loc>
     <lastmod>2026-01-06T09:36:02-06:00</lastmod>
   </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2509/14g-15g_hci/</loc>
-    <lastmod>2026-01-13T06:38:48-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2509/16g_hci/</loc>
-    <lastmod>2026-01-13T06:38:48-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2509/45n0c_hci/</loc>
-    <lastmod>2026-01-13T06:38:48-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2509/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2508/14g/</loc>
     <lastmod>2026-01-06T09:36:02-06:00</lastmod>
   </url><url>
@@ -161,15 +164,6 @@
     <loc>https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2508/</loc>
     <lastmod>2026-01-06T09:36:02-06:00</lastmod>
   </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2506/14g-15g_hci/</loc>
-    <lastmod>2026-01-13T06:38:48-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2506/16g_hci/</loc>
-    <lastmod>2026-01-13T06:38:48-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2506/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2504/14g/</loc>
     <lastmod>2026-01-06T09:36:02-06:00</lastmod>
   </url><url>
@@ -195,15 +189,6 @@
     <lastmod>2026-01-06T09:36:02-06:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2504/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2503/14g-15g_hci/</loc>
-    <lastmod>2026-01-13T06:38:48-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2503/16g_hci/</loc>
-    <lastmod>2026-01-13T06:38:48-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2503/</loc>
     <lastmod>2026-01-06T09:36:02-06:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2502/14g/</loc>
@@ -244,15 +229,6 @@
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/biosandidrac/</loc>
     <lastmod>2026-06-24T09:15:58-04:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2503/goldenimages/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2506/goldenimages/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2509/goldenimages/</loc>
-    <lastmod>2026-01-12T10:28:56+00:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2512/goldenimages/</loc>
     <lastmod>2026-01-12T10:28:56+00:00</lastmod>
