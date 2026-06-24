@@ -75,30 +75,30 @@ Solution Builder Extensions (SBE) for Azure Local. Firmware, Driver, and WDAC Su
 ### SBE 5.0.2606.1713
 
 - Added support for PowerEdge R670 and R770 Platforms. PowerEdge branded servers are supported with Azure Local only when enabled with Dell Private Cloud.
-- Driver and Firmware 2606 Update for 17G platforms
-- To install this SBE version, Azure Local instances that are already deployed must be running solution versions `12.*.1003.*` or `12.2603.1002.*`
+- Driver and Firmware 2606 Update for 17G platforms.
+- To install this SBE version, Azure Local instances that are already deployed must be running solution versions `12.*.1003.*` or `12.2603.1002.*`.
 - Automated remediation for most common CAU Scan failures that result from iDRAC returning invalid data. The SBE firmware CAU Plug-in will automatically restart iDRAC when iDRAC returns invalid data.
 
 ### SBE 5.0.2606.1616
 
-- Driver and Firmware 2606 Update for 16G platforms
-- NVIDIA ConnectX-6 NIC firmware and driver upgrade
-- Added Intel QuickAssist Technology (QAT) driver installation
-- To install this SBE version, Azure Local instances that are already deployed must be running solution versions `12.*.1003.*` or `12.2603.1002.*`
+- Driver and Firmware 2606 Update for 16G platforms.
+- NVIDIA ConnectX-6 NIC firmware and driver upgrade.
+- Added Intel QuickAssist Technology (QAT) driver installation.
+- To install this SBE version, Azure Local instances that are already deployed must be running solution versions `12.*.1003.*` or `12.2603.1002.*`.
 - Automated remediation for most common CAU Scan failures that result from iDRAC returning invalid data. The SBE firmware CAU Plug-in will automatically restart iDRAC when iDRAC returns invalid data.
 
 ### SBE 5.0.2606.1510
 
-- Driver and Firmware 2606 Update for 15G platforms
-- NVIDIA ConnectX-6 and ConnectX-5 NIC firmware and driver upgrade
-- To install this SBE version, Azure Local instances that are already deployed must be running solution versions `12.*.1003.*` or `12.2603.1002.*`
+- Driver and Firmware 2606 Update for 15G platforms.
+- NVIDIA ConnectX-6 and ConnectX-5 NIC firmware and driver upgrade.
+- To install this SBE version, Azure Local instances that are already deployed must be running solution versions `12.*.1003.*` or `12.2603.1002.*`.
 - Automated remediation for most common CAU Scan failures that result from iDRAC returning invalid data. The SBE firmware CAU Plug-in will automatically restart iDRAC when iDRAC returns invalid data.
 
 ### SBE 5.0.2606.1407
 
-- Driver and Firmware 2606 Update for 14G platforms
-- NVIDIA ConnectX-5 and ConnectX-4 NIC firmware and driver upgrade
-- To install this SBE version, Azure Local instances that are already deployed must be running solution versions `12.*.1003.*` or `12.2603.1002.*`
+- Driver and Firmware 2606 Update for 14G platforms.
+- NVIDIA ConnectX-5 and ConnectX-4 NIC firmware and driver upgrade.
+- To install this SBE version, Azure Local instances that are already deployed must be running solution versions `12.*.1003.*` or `12.2603.1002.*`.
 - Automated remediation for most common CAU Scan failures that result from iDRAC returning invalid data. The SBE firmware CAU Plug-in will automatically restart iDRAC when iDRAC returns invalid data.
 
 ## Prerequisites
