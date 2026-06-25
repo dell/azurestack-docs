@@ -1,13 +1,13 @@
 ---
-title: "Support Matrix for 16G - Dell 2508"
+title: "Support Matrix for 16G - Dell 2606"
 linkTitle: "16G"
-weight: 7492
+weight: 7394
 Description: >
 comment: "Copyright © 2026 Dell Inc."
 
 ---
 
-### Dell Integrated System for Microsoft Azure Stack Hub - Valid from Dell 2508 release and Microsoft 2506 release
+### Dell Integrated System for Microsoft Azure Stack Hub - Valid from Dell 2606 release and Microsoft 2601 release
 
 #### Abstract
 This support matrix provides information about supported software and hardware configurations for Dell Integrated System for Microsoft Azure Stack Hub.
@@ -74,13 +74,13 @@ caption {
 <tr><th>Component</th><th>Type</th><th>Category</th><th>Dell Part Number (P/N)</th><th>Software Bundle (SWB)</th><th>Supported Version</th></tr>
 <tr><td>BOSS-N1</td><td>Driver DUP</td><td>BOSS-N1</td><td>2MFVD</td><td>N/A</td><td>Inbox</td></tr>
 <tr><td>Chipset driver for 16G Intel platforms</td><td>Driver DUP</td><td>Chipset</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=R40PW'>R40PW</a></td><td>10.1.19928.8615</td></tr>
-<tr><td>Nvidia ConnectX-6 Lx</td><td>Driver DUP</td><td>Network/RDMA</td><td>R5WK9</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=3G71F'>3G71F</a></td><td>25.1</td></tr>
-<tr><td>HBA355i</td><td>Driver DUP</td><td>Storage - HBA</td><td>K6MCJ</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=M2P63'>M2P63</a></td><td>2.61.48.00</td></tr>
-<tr><td>BIOS</td><td>Firmware DUP</td><td>BIOS</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=W23G7'>W23G7</a></td><td>2.7.5</td></tr>
-<tr><td>BOSS-N1</td><td>Firmware DUP</td><td>BOSS-N1</td><td>2MFVD</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=C6MVR'>C6MVR</a></td><td>2.1.13.2037</td></tr>
-<tr><td>CPLD</td><td>Firmware DUP</td><td>CPLD</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=503F0'>503F0</a></td><td>1.2.6</td></tr>
-<tr><td>iDRAC9 with Lifecycle Controller</td><td>Firmware DUP</td><td>iDRAC with Lifecycle Controller</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=6CKFT'>6CKFT</a></td><td>7.20.60.50</td></tr>
-<tr><td>Nvidia ConnectX-6 Lx</td><td>Firmware DUP</td><td>Network/RDMA</td><td>R5WK9</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=1H4PM'>1H4PM</a></td><td>26.41.1000</td></tr>
+<tr><td>Nvidia ConnectX-6 Lx</td><td>Driver DUP</td><td>Network/RDMA</td><td>R5WK9</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=3T3MK'>3T3MK</a></td><td>26.001.03</td></tr>
+<tr><td>HBA355i</td><td>Driver DUP</td><td>Storage - HBA</td><td>K6MCJ</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=R31NP'>R31NP</a></td><td>2.61.74.00</td></tr>
+<tr><td>BIOS</td><td>Firmware DUP</td><td>BIOS</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=G93PH'>G93PH</a></td><td>2.10.1</td></tr>
+<tr><td>BOSS-N1</td><td>Firmware DUP</td><td>BOSS-N1</td><td>2MFVD</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=WGYK7'>WGYK7</a></td><td>2.1.13.2038</td></tr>
+<tr><td>CPLD</td><td>Firmware DUP</td><td>CPLD</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=XJG0V'>XJG0V</a></td><td>1.2.7</td></tr>
+<tr><td>iDRAC9 with Lifecycle Controller</td><td>Firmware DUP</td><td>iDRAC with Lifecycle Controller</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=924YT'>924YT</a></td><td>7.30.10.50</td></tr>
+<tr><td>Nvidia ConnectX-6 Lx</td><td>Firmware DUP</td><td>Network/RDMA</td><td>R5WK9</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=NMDJG'>NMDJG</a></td><td>26.48.10.00</td></tr>
 <tr><td>PM6 1WPD, SSD, 24Gbps SAS, 2.5 15mm, 512e, ISE</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD</td><td>VRTN9</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=NGPR2'>NGPR2</a></td><td>BA48</td></tr>
 <tr><td>MG07, HDD, 12Gbps SAS, 3.5, 7.2K, 512e, ISE</td><td>Firmware DUP</td><td>Storage - 12TB SAS HDD</td><td>DK7C9</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=NFFHM'>NFFHM</a></td><td>EI0D</td></tr>
 <tr><td>7450 SP 3WPD, SSD, Gen4 NVMe, 2.5 15mm, 512e, ISE</td><td>Firmware DUP</td><td>Storage - 3.2TB NVMe SSD</td><td>FRHHG</td><td>N/A</td><td>N/A</td></tr>
@@ -115,9 +115,9 @@ caption {
 <tr><td>PE8010 SP 1WPD, SSD, Gen3 NVMe, M.2 22x80, 512e, ISE (Boot)</td><td>Firmware DUP</td><td>Storage - 960GB NVMe SSD</td><td>21GXV</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>PE9010 SP 1WPD, SSD, Gen3 NVMe, M.2 22x80, 512e, ISE (Boot)</td><td>Firmware DUP</td><td>Storage - 960GB NVMe SSD</td><td>XN5KG</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>Expander Storage Backplane</td><td>Firmware DUP</td><td>Storage - Backplane</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=J9JW2'>J9JW2</a></td><td>1.61</td></tr>
-<tr><td>Non-expander Storage Backplane</td><td>Firmware DUP</td><td>Storage - Backplane</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=GXH37'>GXH37</a></td><td>7.1</td></tr>
+<tr><td>Non-expander Storage Backplane</td><td>Firmware DUP</td><td>Storage - Backplane</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=58MWX'>58MWX</a></td><td>7.20</td></tr>
 <tr><td>NVMe Switch Storage Backplane</td><td>Firmware DUP</td><td>Storage - Backplane</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=R39FM'>R39FM</a></td><td>3.33</td></tr>
-<tr><td>HBA355i</td><td>Firmware DUP</td><td>Storage - HBA</td><td>K6MCJ</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=Y99R5'>Y99R5</a></td><td>24.15.14.00</td></tr>
+<tr><td>HBA355i</td><td>Firmware DUP</td><td>Storage - HBA</td><td>K6MCJ</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=CG0P9'>CG0P9</a></td><td>33.15.00.00</td></tr>
 </table>
 <br>
 {{< /rawhtml >}}
@@ -129,13 +129,13 @@ caption {
 <tr><th>Component</th><th>Type</th><th>Category</th><th>Dell Part Number (P/N)</th><th>Software Bundle (SWB)</th><th>Supported Version</th></tr>
 <tr><td>BOSS-N1</td><td>Driver DUP</td><td>BOSS-N1</td><td>2MFVD</td><td>N/A</td><td>Inbox</td></tr>
 <tr><td>Chipset driver for 16G Intel platforms</td><td>Driver DUP</td><td>Chipset</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=R40PW'>R40PW</a></td><td>10.1.19928.8615</td></tr>
-<tr><td>Nvidia ConnectX-6 Lx</td><td>Driver DUP</td><td>Network/RDMA</td><td>R5WK9</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=3G71F'>3G71F</a></td><td>25.1</td></tr>
+<tr><td>Nvidia ConnectX-6 Lx</td><td>Driver DUP</td><td>Network/RDMA</td><td>R5WK9</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=3T3MK'>3T3MK</a></td><td>26.001.03</td></tr>
 <tr><td>PERC H355 Adapter</td><td>Driver DUP</td><td>Storage - HBA</td><td>VCV6T</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=6R1TD'>6R1TD</a></td><td>7.730.02.00</td></tr>
-<tr><td>BIOS</td><td>Firmware DUP</td><td>BIOS</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=W23G7'>W23G7</a></td><td>2.7.5</td></tr>
-<tr><td>BOSS-N1</td><td>Firmware DUP</td><td>BOSS-N1</td><td>2MFVD</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=C6MVR'>C6MVR</a></td><td>2.1.13.2037</td></tr>
-<tr><td>CPLD</td><td>Firmware DUP</td><td>CPLD</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=503F0'>503F0</a></td><td>1.2.6</td></tr>
-<tr><td>iDRAC9 with Lifecycle Controller</td><td>Firmware DUP</td><td>iDRAC with Lifecycle Controller</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=6CKFT'>6CKFT</a></td><td>7.20.60.50</td></tr>
-<tr><td>Nvidia ConnectX-6 Lx</td><td>Firmware DUP</td><td>Network/RDMA</td><td>R5WK9</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=1H4PM'>1H4PM</a></td><td>26.41.1000</td></tr>
+<tr><td>BIOS</td><td>Firmware DUP</td><td>BIOS</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=G93PH'>G93PH</a></td><td>2.10.1</td></tr>
+<tr><td>BOSS-N1</td><td>Firmware DUP</td><td>BOSS-N1</td><td>2MFVD</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=WGYK7'>WGYK7</a></td><td>2.1.13.2038</td></tr>
+<tr><td>CPLD</td><td>Firmware DUP</td><td>CPLD</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=XJG0V'>XJG0V</a></td><td>1.2.7</td></tr>
+<tr><td>iDRAC9 with Lifecycle Controller</td><td>Firmware DUP</td><td>iDRAC with Lifecycle Controller</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=924YT'>924YT</a></td><td>7.30.10.50</td></tr>
+<tr><td>Nvidia ConnectX-6 Lx</td><td>Firmware DUP</td><td>Network/RDMA</td><td>R5WK9</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=NMDJG'>NMDJG</a></td><td>26.48.10.00</td></tr>
 <tr><td>PM6 1WPD, SSD, 24Gbps SAS, 2.5 15mm, 512e, ISE</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD</td><td>VRTN9</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=NGPR2'>NGPR2</a></td><td>BA48</td></tr>
 <tr><td>MG07, HDD, 12Gbps SAS, 3.5, 7.2K, 512e, ISE</td><td>Firmware DUP</td><td>Storage - 12TB SAS HDD</td><td>DK7C9</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=NFFHM'>NFFHM</a></td><td>EI0D</td></tr>
 <tr><td>7450 SP 3WPD, SSD, Gen4 NVMe, 2.5 15mm, 512e, ISE</td><td>Firmware DUP</td><td>Storage - 3.2TB NVMe SSD</td><td>FRHHG</td><td>N/A</td><td>N/A</td></tr>
@@ -170,9 +170,9 @@ caption {
 <tr><td>PE8010 SP 1WPD, SSD, Gen3 NVMe, M.2 22x80, 512e, ISE (Boot)</td><td>Firmware DUP</td><td>Storage - 960GB NVMe SSD</td><td>21GXV</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>PE9010 SP 1WPD, SSD, Gen3 NVMe, M.2 22x80, 512e, ISE (Boot)</td><td>Firmware DUP</td><td>Storage - 960GB NVMe SSD</td><td>XN5KG</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>Expander Storage Backplane</td><td>Firmware DUP</td><td>Storage - Backplane</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=J9JW2'>J9JW2</a></td><td>1.61</td></tr>
-<tr><td>Non-expander Storage Backplane</td><td>Firmware DUP</td><td>Storage - Backplane</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=GXH37'>GXH37</a></td><td>7.1</td></tr>
+<tr><td>Non-expander Storage Backplane</td><td>Firmware DUP</td><td>Storage - Backplane</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=58MWX'>58MWX</a></td><td>7.20</td></tr>
 <tr><td>NVMe Switch Storage Backplane</td><td>Firmware DUP</td><td>Storage - Backplane</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=R39FM'>R39FM</a></td><td>3.33</td></tr>
-<tr><td>PERC H355 Adapter</td><td>Firmware DUP</td><td>Storage - HBA</td><td>VCV6T</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=PXRX0'>PXRX0</a></td><td>52.30.0-6115</td></tr>
+<tr><td>PERC H355 Adapter</td><td>Firmware DUP</td><td>Storage - HBA</td><td>VCV6T</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=1DHXW'>1DHXW</a></td><td>52.30.0-6347</td></tr>
 </table>
 <br>
 {{< /rawhtml >}}
@@ -181,7 +181,7 @@ caption {
 <table>
 <colgroup><col/><col/><col/><col/></colgroup>
 <tr><th>Platform</th><th>Type</th><th>Dell Part Number (P/N)</th><th>Supported Switch OS Version</th></tr>
-<tr><td>Dell EMC PowerSwitch S5248F-ON</td><td>ToR</td><td>N/A</td><td>10.6.0.5</td></tr>
+<tr><td>Dell EMC PowerSwitch S5248F-ON</td><td>ToR</td><td>N/A</td><td>10.6.1.1</td></tr>
 </table>
 <br>
 {{< /rawhtml >}}
@@ -217,9 +217,9 @@ caption {
 <table>
 <colgroup><col/><col/><col/></colgroup>
 <tr><th>Component</th><th>File Name</th><th>Supported Version</th></tr>
-<tr><td>Dell Integrated System for Microsoft Azure Stack Hub OEM extension package with drivers and firmware updates</td><td>AzSHub_16G_Dell2508.4_OEMPackage.zip</td><td>2508.4</td></tr>
-<tr><td>Dell Integrated System for Microsoft Azure Stack Hub HLH ISO</td><td>MS2506_Dell2508.9.iso</td><td>2508.9</td></tr>
-<tr><td>Dell Integrated System for Microsoft Azure Stack Hub Lifecycle Manager</td><td>AzSHub_Dell2508.3_LifecycleManager.zip</td><td>2508.3</td></tr>
+<tr><td>Dell Integrated System for Microsoft Azure Stack Hub OEM extension package with drivers and firmware updates</td><td>AzSHub_16G_Dell2606.3_OEMPackage.zip</td><td>2606.3</td></tr>
+<tr><td>Dell Integrated System for Microsoft Azure Stack Hub HLH ISO</td><td>MS2601_Dell2606.3.iso</td><td>2606.3</td></tr>
+<tr><td>Dell Integrated System for Microsoft Azure Stack Hub Lifecycle Manager</td><td>AzSHub_Dell2606.2_LifecycleManager.zip</td><td>2606.2</td></tr>
 </table>
 <br>
 {{< /rawhtml >}}

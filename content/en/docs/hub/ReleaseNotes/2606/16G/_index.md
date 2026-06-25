@@ -1,23 +1,23 @@
 ---
-title: "Release Notes for 16G - Dell 2504"
+title: "Release Notes for 16G - Dell 2606"
 linkTitle: "16G"
-weight: 7496
+weight: 7394
 Description: >
 comment: "Copyright © 2026 Dell Inc."
 
 ---
 
 ## Dell Integrated System for Microsoft Azure Stack Hub Release Notes
-### Current Release Version: Dell 2504 and Microsoft 2501
+### Current Release Version: Dell 2606 and Microsoft 2601
 ### Release Type: Major (MA)
 
 {{% alert title="NOTE" color="primary" %}}
-Dell Azure Stack Hub OEM updates must be installed in sequential order, it is not supported to skip or miss-out an OEM update version. These release notes contain supplemental information for the Dell 2504 release and the Microsoft 2501 release.
+Dell Azure Stack Hub OEM updates must be installed in sequential order, it is not supported to skip or miss-out an OEM update version. These release notes contain supplemental information for the Dell 2606 release and the Microsoft 2601 release.
 {{% /alert %}}
 
 ## New features, changed features, and fixes
 ### New features
-There are improvements and updates to drivers and firmware. See [Release Artifacts for 16G - Dell 2504]({{< ref "../../../ReleaseArtifacts/2504/16G/_index.md" >}}).
+There are improvements and updates to drivers and firmware. See [Release Artifacts for 16G - Dell 2606]({{< ref "../../../ReleaseArtifacts/2606/16G/_index.md" >}}).
 
 ### Changed features
 There are no changed features for this release.
@@ -27,12 +27,12 @@ There are no fixes for this release.
 
 ## Known issues and limitations
 
-This release notes document describes known issues and limitations for the Dell Integrated System for Microsoft Azure Stack Hub solution based on the Dell 2504 release and Microsoft 2501 release.
+This release notes document describes known issues and limitations for the Dell Integrated System for Microsoft Azure Stack Hub solution based on the Dell 2606 release and Microsoft 2601 release.
 
 | Item                           | Description                                                                                                                                                                                                                                  |
 | :----------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | OEM update                     | Dell Technologies recommends updating to the n-1 version before applying the latest OEM package.                                                          |
-| Microsoft Azure Stack Hub code | For information about known issues and limitations in the Microsoft Azure Stack Hub code, see the [Azure Stack Hub 2501 update](https://learn.microsoft.com/en-us/azure-stack/operator/release-notes?view=azs-2501) on the Microsoft website |
+| Microsoft Azure Stack Hub code | For information about known issues and limitations in the Microsoft Azure Stack Hub code, see the [Azure Stack Hub 2601 update](https://learn.microsoft.com/en-us/azure-stack/operator/release-notes?view=azs-2601) on the Microsoft website |
 
 ## Notes and warnings
 {{% alert title="CAUTION" color="warning" %}}
@@ -40,10 +40,10 @@ Before you use the Microsoft Patch and Update process to update Azure Stack Hub,
 {{% /alert %}}
 
 ## Microsoft fixed issues
-For information about fixed issues in this release, see the [Azure Stack Hub 2501 update](https://docs.microsoft.com/en-us/azure-stack/operator/release-notes?view=azs-2501) on the Microsoft website.
+For information about fixed issues in this release, see the [Azure Stack Hub 2601 update](https://docs.microsoft.com/en-us/azure-stack/operator/release-notes?view=azs-2601) on the Microsoft website.
 
 ## Hardware and firmware support
-For information about supported hardware, firmware, and software, see the [Dell Integrated System for Microsoft Azure Stack Hub Support Matrix]({{< ref "../../../SupportMatrix/2504/16G/_index.md" >}}).
+For information about supported hardware, firmware, and software, see the [Dell Integrated System for Microsoft Azure Stack Hub Support Matrix]({{< ref "../../../SupportMatrix/2606/16G/_index.md" >}}).
 
 {{< rawhtml >}}
 
@@ -98,14 +98,14 @@ caption {
 <table>
 <colgroup><col/><col/><col/></colgroup>
 <tr><th>Component</th><th>Version</th><th>Notes</th></tr>
-<tr><td>Microsoft Azure Stack Hub Baseline (for bare-metal deployment)</td><td>1.2501.0.21</td><td><a href='https://learn.microsoft.com/en-us/azure-stack/operator/release-notes?view=azs-2501'>Azure Stack Hub 2501 update</a>. The hotfix will be available in the Admin portal.</td></tr>
-<tr><td>Hardware Lifecycle Host</td><td>1.2406.0.8</td><td>N/A</td></tr>
-<tr><td>Hardware Lifecycle Host ISO</td><td>2504.6</td><td>N/A</td></tr>
-<tr><td>Microsoft Partner Toolkit (PTK)</td><td>1.2501.2966.112</td><td>Includes the <a href='https://www.powershellgallery.com/packages/Azs.Deployment.Worksheet/1.2501.2966.112'>Deployment Worksheet</a>.</td></tr>
-<tr><td>Windows Server 2022 LCU</td><td>KB5058385</td><td>See the Windows support document <a href='https://support.microsoft.com/help/5058385'>KB5058385</a>.</td></tr>
-<tr><td>OS10 switch firmware (S5248)</td><td>10.6.0.3</td><td>OS10 switch firmware is included in the OEM Extension Package.</td></tr>
-<tr><td>OEM extension package</td><td>2.4.2504.2</td><td>Contains the driver and firmware update payload.</td></tr>
-<tr><td>OEM package</td><td>2504.2</td><td>Includes the OEM extension package.</td></tr>
+<tr><td>Microsoft Azure Stack Hub Baseline (for bare-metal deployment)</td><td>1.2601.0.4</td><td><a href='https://learn.microsoft.com/en-us/azure-stack/operator/release-notes?view=azs-2601'>Azure Stack Hub 2601 update</a>. The hotfix will be available in the Admin portal.</td></tr>
+<tr><td>Hardware Lifecycle Host</td><td>1.2601.0.4</td><td>N/A</td></tr>
+<tr><td>Hardware Lifecycle Host ISO</td><td>2606.3</td><td>N/A</td></tr>
+<tr><td>Microsoft Partner Toolkit (PTK)</td><td>1.2601.3322.143</td><td>Includes the <a href='https://www.powershellgallery.com/packages/Azs.Deployment.Worksheet/'>Deployment Worksheet</a>.</td></tr>
+<tr><td>Windows Server 2022 LCU</td><td>KB5087545</td><td>See the Windows support document <a href='https://support.microsoft.com/help/5087545'>KB5087545</a>.</td></tr>
+<tr><td>OS10 switch firmware (S5248)</td><td>10.6.1.1</td><td>OS10 switch firmware is included in the OEM Extension Package.</td></tr>
+<tr><td>OEM extension package</td><td>2.4.2606.3</td><td>Contains the driver and firmware update payload.</td></tr>
+<tr><td>OEM package</td><td>2606.3</td><td>Includes the OEM extension package.</td></tr>
 </table>
 <br>
 {{< /rawhtml >}}

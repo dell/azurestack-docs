@@ -1,13 +1,13 @@
 ---
-title: "Support Matrix for 14G - Dell 2504"
+title: "Support Matrix for 14G - Dell 2606"
 linkTitle: "14G"
-weight: 7496
+weight: 7394
 Description: >
 comment: "Copyright © 2026 Dell Inc."
 
 ---
 
-### Dell Integrated System for Microsoft Azure Stack Hub - Valid from Dell 2504 release and Microsoft 2501 release
+### Dell Integrated System for Microsoft Azure Stack Hub - Valid from Dell 2606 release and Microsoft 2601 release
 
 #### Abstract
 This support matrix provides information about supported software and hardware configurations for Dell Integrated System for Microsoft Azure Stack Hub.
@@ -73,13 +73,13 @@ caption {
 <colgroup><col/><col/><col/><col/><col/><col/></colgroup>
 <tr><th>Component</th><th>Type</th><th>Category</th><th>Dell Part Number (P/N)</th><th>Software Bundle (SWB)</th><th>Supported Version</th></tr>
 <tr><td>INTEL C600/C610/C220/C230/C2000 Series</td><td>Driver DUP</td><td>Chipset</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=4DDMJ'>4DDMJ</a></td><td>10.1.19913.8607</td></tr>
-<tr><td>Mellanox ConnectX-4 LX / 25GbE</td><td>Driver DUP</td><td>Network / RDMA</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=G6M58'>G6M58</a></td><td>24.04.03</td></tr>
+<tr><td>Mellanox ConnectX-4 LX / 25GbE</td><td>Driver DUP</td><td>Network / RDMA</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=3T3MK'>3T3MK</a></td><td>26.001.03</td></tr>
 <tr><td>Dell HBA330</td><td>Driver DUP</td><td>Storage - HBA</td><td>N/A</td><td>N/A</td><td>Native</td></tr>
-<tr><td>BIOS</td><td>Firmware DUP</td><td>BIOS</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=T4VCN'>T4VCN</a></td><td>2.24.0</td></tr>
+<tr><td>BIOS</td><td>Firmware DUP</td><td>BIOS</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=N5C9K'>N5C9K</a></td><td>2.27.0</td></tr>
 <tr><td>BOSS-S1  Firmware</td><td>Firmware DUP</td><td>BOSS-S1</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=3P39V'>3P39V</a></td><td>2.5.13.3024</td></tr>
 <tr><td>CPLD</td><td>Firmware DUP</td><td>CPLD</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=G65GH'>G65GH</a></td><td>1.1.4</td></tr>
-<tr><td>iDRAC with Lifecycle Controller</td><td>Firmware DUP</td><td>iDRAC with Lifecycle Controller</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=RVDDR'>RVDDR</a></td><td>7.00.00.181</td></tr>
-<tr><td>Mellanox ConnectX-4 LX  / 25GbE</td><td>Firmware DUP</td><td>Network/RDMA</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=76DNG'>76DNG</a></td><td>14.32.21.02</td></tr>
+<tr><td>iDRAC with Lifecycle Controller</td><td>Firmware DUP</td><td>iDRAC with Lifecycle Controller</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=FWMWV'>FWMWV</a></td><td>7.00.00.184</td></tr>
+<tr><td>Mellanox ConnectX-4 LX  / 25GbE</td><td>Firmware DUP</td><td>Network/RDMA</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=N62GF'>N62GF</a></td><td>14.32.21.04</td></tr>
 <tr><td>Dell SEP Non-expander Storage Backplane</td><td>Firmware DUP</td><td>Non-expander Storage Backplane</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=VV85D'>VV85D</a></td><td>4.35</td></tr>
 <tr><td>KIOXIA KPM6XVUG1T60</td><td>Firmware DUP</td><td>Storage - 1.6TB SAS SSD</td><td>GD3N0</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=NGPR2'>NGPR2</a></td><td>BA48</td></tr>
 <tr><td>KIOXIA KPM7XVUG1T60</td><td>Firmware DUP</td><td>Storage - 1.6TB SAS SSD</td><td>4TRHM</td><td>N/A</td><td>N/A</td></tr>
@@ -95,7 +95,7 @@ caption {
 <tr><td>SEAGATE XS1920LE70134</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD</td><td>N6DRV</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>SEAGATE XS1920LE70154</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD</td><td>91DPV</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>TOSHIBA KPM5XVUG1T92</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD</td><td>2WVYG</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=CPP97'>CPP97</a></td><td>B02A</td></tr>
-<tr><td>TOSHIBA PX05SVB192Y</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD</td><td>V0K7V</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>TOSHIBA PX05SVB192Y</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD</td><td>V0K7V</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=1DJXX'>1DJXX</a></td><td>AS10</td></tr>
 <tr><td>KIOXIA KRM7VRUG1T92</td><td>Firmware DUP</td><td>Storage - 1.92TB vSAS SSD</td><td>86XW7</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>SEAGATE XS1920LE70095</td><td>Firmware DUP</td><td>Storage - 1.92TB vSAS SSD</td><td>K805Y</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>HGST HUH721010AL4200</td><td>Firmware DUP</td><td>Storage - 10TB SAS HDD </td><td>YG2KH</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=MGW91'>MGW91</a></td><td>LS21</td></tr>
@@ -175,13 +175,13 @@ caption {
 <colgroup><col/><col/><col/><col/><col/><col/></colgroup>
 <tr><th>Component</th><th>Type</th><th>Category</th><th>Dell Part Number (P/N)</th><th>Software Bundle (SWB)</th><th>Supported Version</th></tr>
 <tr><td>INTEL C600/C610/C220/C230/C2000 Series</td><td>Driver DUP</td><td>Chipset</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=4DDMJ'>4DDMJ</a></td><td>10.1.19913.8607</td></tr>
-<tr><td>Mellanox ConnectX-4 LX / 25GbE</td><td>Driver DUP</td><td>Network / RDMA</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=G6M58'>G6M58</a></td><td>24.04.03</td></tr>
+<tr><td>Mellanox ConnectX-4 LX / 25GbE</td><td>Driver DUP</td><td>Network / RDMA</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=3T3MK'>3T3MK</a></td><td>26.001.03</td></tr>
 <tr><td>Dell HBA330</td><td>Driver DUP</td><td>Storage - HBA</td><td>N/A</td><td>N/A</td><td>Native</td></tr>
-<tr><td>BIOS</td><td>Firmware DUP</td><td>BIOS</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=T4VCN'>T4VCN</a></td><td>2.24.0</td></tr>
+<tr><td>BIOS</td><td>Firmware DUP</td><td>BIOS</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=N5C9K'>N5C9K</a></td><td>2.27.0</td></tr>
 <tr><td>BOSS-S1  Firmware</td><td>Firmware DUP</td><td>BOSS-S1</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=3P39V'>3P39V</a></td><td>2.5.13.3024</td></tr>
 <tr><td>CPLD</td><td>Firmware DUP</td><td>CPLD</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=9N4DH'>9N4DH</a></td><td>1.0.6</td></tr>
-<tr><td>iDRAC with Lifecycle Controller</td><td>Firmware DUP</td><td>iDRAC with Lifecycle Controller</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=RVDDR'>RVDDR</a></td><td>7.00.00.181</td></tr>
-<tr><td>Mellanox ConnectX-4 LX  / 25GbE</td><td>Firmware DUP</td><td>Network/RDMA</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=76DNG'>76DNG</a></td><td>14.32.21.02</td></tr>
+<tr><td>iDRAC with Lifecycle Controller</td><td>Firmware DUP</td><td>iDRAC with Lifecycle Controller</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=FWMWV'>FWMWV</a></td><td>7.00.00.184</td></tr>
+<tr><td>Mellanox ConnectX-4 LX  / 25GbE</td><td>Firmware DUP</td><td>Network/RDMA</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=N62GF'>N62GF</a></td><td>14.32.21.04</td></tr>
 <tr><td>Dell SEP Non-expander Storage Backplane</td><td>Firmware DUP</td><td>Non-expander Storage Backplane</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=VV85D'>VV85D</a></td><td>4.35</td></tr>
 <tr><td>KIOXIA KPM5XVUG1T92</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD</td><td>2WVYG</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=CPP97'>CPP97</a></td><td>B02A</td></tr>
 <tr><td>KIOXIA KPM6WVUG1T92</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD</td><td>1081V</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=6DH0W'>6DH0W</a></td><td>BD48</td></tr>
@@ -194,7 +194,7 @@ caption {
 <tr><td>SEAGATE XS1920LE70134</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD</td><td>N6DRV</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>SEAGATE XS1920LE70154</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD</td><td>91DPV</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>TOSHIBA KPM5XVUG1T92</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD</td><td>2WVYG</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=CPP97'>CPP97</a></td><td>B02A</td></tr>
-<tr><td>TOSHIBA PX05SVB192Y</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD</td><td>V0K7V</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>TOSHIBA PX05SVB192Y</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD</td><td>V0K7V</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=1DJXX'>1DJXX</a></td><td>AS10</td></tr>
 <tr><td>KIOXIA KRM7VRUG1T92</td><td>Firmware DUP</td><td>Storage - 1.92TB vSAS SSD</td><td>86XW7</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>SEAGATE XS1920LE70095</td><td>Firmware DUP</td><td>Storage - 1.92TB vSAS SSD</td><td>K805Y</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>KIOXIA KPM6XVUG3T20</td><td>Firmware DUP</td><td>Storage - 3.2TB SAS SSD</td><td>NKM7P</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=NGPR2'>NGPR2</a></td><td>BA48</td></tr>
@@ -242,13 +242,13 @@ caption {
 <colgroup><col/><col/><col/><col/><col/><col/></colgroup>
 <tr><th>Component</th><th>Type</th><th>Category</th><th>Dell Part Number (P/N)</th><th>Software Bundle (SWB)</th><th>Supported Version</th></tr>
 <tr><td>INTEL C600/C610/C220/C230/C2000 Series</td><td>Driver DUP</td><td>Chipset</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=4DDMJ'>4DDMJ</a></td><td>10.1.19913.8607</td></tr>
-<tr><td>Mellanox ConnectX-4 LX / 25GbE</td><td>Driver DUP</td><td>Network / RDMA</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=G6M58'>G6M58</a></td><td>24.04.03</td></tr>
+<tr><td>Mellanox ConnectX-4 LX / 25GbE</td><td>Driver DUP</td><td>Network / RDMA</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=3T3MK'>3T3MK</a></td><td>26.001.03</td></tr>
 <tr><td>Dell HBA330</td><td>Driver DUP</td><td>Storage - HBA</td><td>N/A</td><td>N/A</td><td>Native</td></tr>
-<tr><td>BIOS</td><td>Firmware DUP</td><td>BIOS</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=T4VCN'>T4VCN</a></td><td>2.24.0</td></tr>
+<tr><td>BIOS</td><td>Firmware DUP</td><td>BIOS</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=N5C9K'>N5C9K</a></td><td>2.27.0</td></tr>
 <tr><td>BOSS-S1  Firmware</td><td>Firmware DUP</td><td>BOSS-S1</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=3P39V'>3P39V</a></td><td>2.5.13.3024</td></tr>
 <tr><td>CPLD</td><td>Firmware DUP</td><td>CPLD</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=9N4DH'>9N4DH</a></td><td>1.0.6</td></tr>
-<tr><td>iDRAC with Lifecycle Controller</td><td>Firmware DUP</td><td>iDRAC with Lifecycle Controller</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=RVDDR'>RVDDR</a></td><td>7.00.00.181</td></tr>
-<tr><td>Mellanox ConnectX-4 LX  / 25GbE</td><td>Firmware DUP</td><td>Network/RDMA</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=76DNG'>76DNG</a></td><td>14.32.21.02</td></tr>
+<tr><td>iDRAC with Lifecycle Controller</td><td>Firmware DUP</td><td>iDRAC with Lifecycle Controller</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=FWMWV'>FWMWV</a></td><td>7.00.00.184</td></tr>
+<tr><td>Mellanox ConnectX-4 LX  / 25GbE</td><td>Firmware DUP</td><td>Network/RDMA</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=N62GF'>N62GF</a></td><td>14.32.21.04</td></tr>
 <tr><td>Dell SEP Non-expander Storage Backplane</td><td>Firmware DUP</td><td>Non-expander Storage Backplane</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=VV85D'>VV85D</a></td><td>4.35</td></tr>
 <tr><td>KIOXIA KPM5XVUG1T92</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD</td><td>2WVYG</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=CPP97'>CPP97</a></td><td>B02A</td></tr>
 <tr><td>KIOXIA KPM6WVUG1T92</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD</td><td>1081V</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=6DH0W'>6DH0W</a></td><td>BD48</td></tr>
@@ -261,7 +261,7 @@ caption {
 <tr><td>SEAGATE XS1920LE70134</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD</td><td>N6DRV</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>SEAGATE XS1920LE70154</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD</td><td>91DPV</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>TOSHIBA KPM5XVUG1T92</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD</td><td>2WVYG</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=CPP97'>CPP97</a></td><td>B02A</td></tr>
-<tr><td>TOSHIBA PX05SVB192Y</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD</td><td>V0K7V</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>TOSHIBA PX05SVB192Y</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD</td><td>V0K7V</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=1DJXX'>1DJXX</a></td><td>AS10</td></tr>
 <tr><td>KIOXIA KRM7VRUG1T92</td><td>Firmware DUP</td><td>Storage - 1.92TB vSAS SSD</td><td>86XW7</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>SEAGATE XS1920LE70095</td><td>Firmware DUP</td><td>Storage - 1.92TB vSAS SSD</td><td>K805Y</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>KIOXIA KPM7WVUG3T20</td><td>Firmware DUP</td><td>Storage - 3.2TB SAS SSD</td><td>RGP9J</td><td>N/A</td><td>N/A</td></tr>
@@ -308,13 +308,13 @@ caption {
 <colgroup><col/><col/><col/><col/><col/><col/></colgroup>
 <tr><th>Component</th><th>Type</th><th>Category</th><th>Dell Part Number (P/N)</th><th>Software Bundle (SWB)</th><th>Supported Version</th></tr>
 <tr><td>INTEL C600/C610/C220/C230/C2000 Series</td><td>Driver DUP</td><td>Chipset</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=4DDMJ'>4DDMJ</a></td><td>10.1.19913.8607</td></tr>
-<tr><td>Mellanox ConnectX-4 LX / 25GbE</td><td>Driver DUP</td><td>Network / RDMA</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=G6M58'>G6M58</a></td><td>24.04.03</td></tr>
+<tr><td>Mellanox ConnectX-4 LX / 25GbE</td><td>Driver DUP</td><td>Network / RDMA</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=3T3MK'>3T3MK</a></td><td>26.001.03</td></tr>
 <tr><td>Dell HBA330</td><td>Driver DUP</td><td>Storage - HBA</td><td>N/A</td><td>N/A</td><td>Native</td></tr>
-<tr><td>BIOS</td><td>Firmware DUP</td><td>BIOS</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=NW297'>NW297</a></td><td>2.24.0</td></tr>
+<tr><td>BIOS</td><td>Firmware DUP</td><td>BIOS</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=HV7HK'>HV7HK</a></td><td>2.27.0</td></tr>
 <tr><td>BOSS-S1  Firmware</td><td>Firmware DUP</td><td>BOSS-S1</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=3P39V'>3P39V</a></td><td>2.5.13.3024</td></tr>
 <tr><td>CPLD</td><td>Firmware DUP</td><td>CPLD</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=67GJY'>67GJY</a></td><td>1.0.6</td></tr>
-<tr><td>iDRAC with Lifecycle Controller</td><td>Firmware DUP</td><td>iDRAC with Lifecycle Controller</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=RVDDR'>RVDDR</a></td><td>7.00.00.181</td></tr>
-<tr><td>Mellanox ConnectX-4 LX  / 25GbE</td><td>Firmware DUP</td><td>Network/RDMA</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=76DNG'>76DNG</a></td><td>14.32.21.02</td></tr>
+<tr><td>iDRAC with Lifecycle Controller</td><td>Firmware DUP</td><td>iDRAC with Lifecycle Controller</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=FWMWV'>FWMWV</a></td><td>7.00.00.184</td></tr>
+<tr><td>Mellanox ConnectX-4 LX  / 25GbE</td><td>Firmware DUP</td><td>Network/RDMA</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=N62GF'>N62GF</a></td><td>14.32.21.04</td></tr>
 <tr><td>Dell SEP Non-expander Storage Backplane</td><td>Firmware DUP</td><td>Non-expander Storage Backplane</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=VV85D'>VV85D</a></td><td>4.35</td></tr>
 <tr><td>KIOXIA KPM6XVUG3T20</td><td>Firmware DUP</td><td>Storage - 3.2TB SAS SSD</td><td>NKM7P</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=NGPR2'>NGPR2</a></td><td>BA48</td></tr>
 <tr><td>KIOXIA KPM7WVUG3T20</td><td>Firmware DUP</td><td>Storage - 3.2TB SAS SSD</td><td>RGP9J</td><td>N/A</td><td>N/A</td></tr>
@@ -361,12 +361,12 @@ caption {
 <colgroup><col/><col/><col/><col/><col/><col/></colgroup>
 <tr><th>Component</th><th>Type</th><th>Category</th><th>Dell Part Number (P/N)</th><th>Software Bundle (SWB)</th><th>Supported Version</th></tr>
 <tr><td>INTEL C600/C610/C220/C230/C2000 Series</td><td>Driver DUP</td><td>Chipset</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=4DDMJ'>4DDMJ</a></td><td>10.1.19913.8607</td></tr>
-<tr><td>INTEL X710 DP 10Gb DA/SFP+, + I350 DP 1Gb Ethernet, NDC</td><td>Driver DUP</td><td>Network</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=6JHVK'>6JHVK</a></td><td>23.0.0</td></tr>
+<tr><td>INTEL X710 DP 10Gb DA/SFP+, + I350 DP 1Gb Ethernet, NDC</td><td>Driver DUP</td><td>Network</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=3VT4C'>3VT4C</a></td><td>25.0.4</td></tr>
 <tr><td>PERC H330</td><td>Driver DUP</td><td>SAS HBA - Internal</td><td>N/A</td><td>N/A</td><td>Native</td></tr>
-<tr><td>BIOS</td><td>Firmware DUP</td><td>BIOS</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=T4VCN'>T4VCN</a></td><td>2.24.0</td></tr>
+<tr><td>BIOS</td><td>Firmware DUP</td><td>BIOS</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=N5C9K'>N5C9K</a></td><td>2.27.0</td></tr>
 <tr><td>CPLD</td><td>Firmware DUP</td><td>CPLD</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=9N4DH'>9N4DH</a></td><td>1.0.6</td></tr>
-<tr><td>iDRAC with Lifecycle controller</td><td>Firmware DUP</td><td>iDRAC with Lifecycle Controller</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=RVDDR'>RVDDR</a></td><td>7.00.00.181</td></tr>
-<tr><td>INTEL X710 DP 10Gb DA/SFP+, + I350 DP 1Gb Ethernet, NDC</td><td>Firmware DUP</td><td>Network</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=H8M48'>H8M48</a></td><td>20.5.16</td></tr>
+<tr><td>iDRAC with Lifecycle controller</td><td>Firmware DUP</td><td>iDRAC with Lifecycle Controller</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=FWMWV'>FWMWV</a></td><td>7.00.00.184</td></tr>
+<tr><td>INTEL X710 DP 10Gb DA/SFP+, + I350 DP 1Gb Ethernet, NDC</td><td>Firmware DUP</td><td>Network</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=PJDHV'>PJDHV</a></td><td>25.0.4</td></tr>
 <tr><td>Dell SEP Non-expander Storage Backplane</td><td>Firmware DUP</td><td>Non-expander Storage Backplane</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=VV85D'>VV85D</a></td><td>4.35</td></tr>
 <tr><td>PERC H330</td><td>Firmware DUP</td><td>SAS HBA - Internal</td><td>N/A</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=NYKX7'>NYKX7</a></td><td>25.5.9.0001</td></tr>
 <tr><td>HGST HUSTR7619ASS200</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD (Boot)</td><td>J68N1</td><td>N/A</td><td>N/A</td></tr>
@@ -387,7 +387,7 @@ caption {
 <tr><td>TOSHIBA KPM5XRUG1T92</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD (Boot)</td><td>TDNP7</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=CPP97'>CPP97</a></td><td>B02A</td></tr>
 <tr><td>TOSHIBA KPM5XVUG1T92</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD (Boot)</td><td>2WVYG</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=CPP97'>CPP97</a></td><td>B02A</td></tr>
 <tr><td>TOSHIBA PX05SRB192Y</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD (Boot)</td><td>0FYFW</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>TOSHIBA PX05SVB192Y</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD (Boot)</td><td>V0K7V</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>TOSHIBA PX05SVB192Y</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD (Boot)</td><td>V0K7V</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=1DJXX'>1DJXX</a></td><td>AS10</td></tr>
 <tr><td>WESTERN DIGITAL WUSTVA119BSS200</td><td>Firmware DUP</td><td>Storage - 1.92TB SAS SSD (Boot)</td><td>02X38</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>KIOXIA KRM7VRUG1T92</td><td>Firmware DUP</td><td>Storage - 1.92TB vSAS SSD (Boot)</td><td>86XW7</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>SEAGATE XS1920LE70095</td><td>Firmware DUP</td><td>Storage - 1.92TB vSAS SSD (Boot)</td><td>K805Y</td><td>N/A</td><td>N/A</td></tr>
@@ -401,9 +401,9 @@ caption {
 <table>
 <colgroup><col/><col/><col/><col/></colgroup>
 <tr><th>Platform</th><th>Type</th><th>Dell Part Number (P/N)</th><th>Supported Switch OS Version</th></tr>
-<tr><td>Dell EMC PowerSwitch N3248TE-ON</td><td>MGMT</td><td>05WPCH</td><td>10.6.0.3</td></tr>
-<tr><td>Dell EMC PowerSwitch S5248F-ON</td><td>ToR</td><td>N/A</td><td>10.6.0.3</td></tr>
-<tr><td>Z9100-ON</td><td>Internal backend</td><td>N/A</td><td>10.6.0.3</td></tr>
+<tr><td>Dell EMC PowerSwitch N3248TE-ON</td><td>MGMT</td><td>05WPCH</td><td>10.6.1.1</td></tr>
+<tr><td>Dell EMC PowerSwitch S5248F-ON</td><td>ToR</td><td>N/A</td><td>10.6.1.1</td></tr>
+<tr><td>Z9100-ON</td><td>Internal backend</td><td>N/A</td><td>10.6.1.1</td></tr>
 <tr><td>Cisco 9348GC-FXP</td><td>MGMT</td><td>N/A</td><td>Minimum supported version:9.3(3)</td></tr>
 <tr><td>Cisco 93180YC-FX</td><td>ToR</td><td>N/A</td><td>Minimum supported version:9.3(3)</td></tr>
 </table>
@@ -443,10 +443,10 @@ caption {
 <table>
 <colgroup><col/><col/><col/></colgroup>
 <tr><th>Component</th><th>File Name</th><th>Supported Version</th></tr>
-<tr><td>Dell Customer Toolkit</td><td>AzS_DellEMC_CustomerToolkit_2504.7.zip</td><td>2504.7</td></tr>
-<tr><td>Dell OEM extension package for drivers and firmware updates</td><td>AzS-DellEMC-2.4.2504.1.zip</td><td>2.4.2504.1</td></tr>
-<tr><td>Dell HLH Rebuild to Windows Server 2022</td><td>HLH_DataDrive_2504.5_Redeployment.zip</td><td>2504.5</td></tr>
-<tr><td>Dell Patch and Update Automation Tool</td><td>Dell_EMC_Patch_and_Update_Automation_QE_2.0.2504.2.exe</td><td>2.0.2504.2</td></tr>
+<tr><td>Dell Customer Toolkit</td><td>AzS_DellEMC_CustomerToolkit_2606.5.zip</td><td>2606.5</td></tr>
+<tr><td>Dell OEM extension package for drivers and firmware updates</td><td>AzS-DellEMC-2.4.2606.2.zip</td><td>2.4.2606.2</td></tr>
+<tr><td>Dell HLH Rebuild to Windows Server 2022</td><td>HLH_DataDrive_2606.8_Redeployment.zip</td><td>2606.8</td></tr>
+<tr><td>Dell Patch and Update Automation Tool</td><td>Dell_EMC_Patch_and_Update_Automation_QE_2.0.2511.14.exe</td><td>2.0.2511.14</td></tr>
 </table>
 <br>
 {{< /rawhtml >}}
