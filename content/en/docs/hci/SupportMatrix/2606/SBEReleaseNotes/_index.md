@@ -32,14 +32,14 @@ Solution Builder Extensions (SBE) for Azure Local. Firmware, Driver, and WDAC Su
     <tr>
       <td>5.0.2606.1713</td>
       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=XWR63">https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=XWR63</a></td>
-      <td>AX-670<br>AX-770</td>
+      <td>AX-670<br>AX-770<br>PowerEdge R670<br>PowerEdge R770</td>
       <td><a href="{{< relref "docs/hci/supportmatrix/2606/17G_HCI">}}">Azure Local Support Matrix for 17G (2606) | Solutions for Microsoft Azure</a></td>
       <td>24H2</td>
       <td>12.*.1003.*<br>12.2603.1002.*</td>
     <tr>
       <td>5.0.2606.1616</td>
       <td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=7C1DM">https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=7C1DM</a></td>
-      <td>AX-660<br>AX-760<br>AX-4510C<br>AX-4520C<br>APEX MC-660<br>APEX MC-760<br>APEX MC-4510C<br>APEX MC-4520C</td>
+      <td>AX-660<br>AX-760<br>AX-4510C<br>AX-4520C<br>APEX MC-660<br>APEX MC-760<br>APEX MC-4510C<br>APEX MC-4520C<br>PowerEdge R660<br>PowerEdge R760</td>
       <td><a href="{{< relref "docs/hci/supportmatrix/2606/16G_HCI">}}">Azure Local Support Matrix for 16G (2606) | Solutions for Microsoft Azure</a><br><a href="{{< relref "docs/hci/supportmatrix/2606/45n0c_hci">}}">Azure Local Support Matrix for AX-4500 (2606) | Solutions for Microsoft Azure</a></td>
       <td>24H2</td>
       <td>12.*.1003.*<br>12.2603.1002.*</td>
@@ -63,6 +63,10 @@ Solution Builder Extensions (SBE) for Azure Local. Firmware, Driver, and WDAC Su
   </tbody>
 </table>
 {{< /rawhtml >}}
+
+{{% alert title="Note" color="primary" %}}
+PowerEdge branded servers are supported with Azure Local only when enabled with Dell Private Cloud.
+{{% /alert %}}
 
 ## Important Caveats
 
