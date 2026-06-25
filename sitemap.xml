@@ -50,11 +50,29 @@
     <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/archive/ws2016/</loc>
     <lastmod>2026-01-06T09:36:02-06:00</lastmod>
   </url><url>
+    <loc>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2606/14g/</loc>
+    <lastmod>2026-06-25T08:48:21+01:00</lastmod>
+  </url><url>
+    <loc>https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2606/14g/</loc>
+    <lastmod>2026-06-25T08:48:21+01:00</lastmod>
+  </url><url>
+    <loc>https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2606/14g/</loc>
+    <lastmod>2026-06-25T08:48:21+01:00</lastmod>
+  </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2606/14g-15g_hci/</loc>
     <lastmod>2026-06-24T09:16:09-04:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2606/16g_hci/</loc>
     <lastmod>2026-06-25T03:41:54-04:00</lastmod>
+  </url><url>
+    <loc>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2606/16g/</loc>
+    <lastmod>2026-06-25T08:48:21+01:00</lastmod>
+  </url><url>
+    <loc>https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2606/16g/</loc>
+    <lastmod>2026-06-25T08:48:21+01:00</lastmod>
+  </url><url>
+    <loc>https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2606/16g/</loc>
+    <lastmod>2026-06-25T08:48:21+01:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2606/17g_hci/</loc>
     <lastmod>2026-06-24T09:16:09-04:00</lastmod>
@@ -64,6 +82,15 @@
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2606/</loc>
     <lastmod>2026-06-24T09:16:09-04:00</lastmod>
+  </url><url>
+    <loc>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2606/</loc>
+    <lastmod>2026-06-25T08:48:21+01:00</lastmod>
+  </url><url>
+    <loc>https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2606/</loc>
+    <lastmod>2026-06-25T08:48:21+01:00</lastmod>
+  </url><url>
+    <loc>https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2606/</loc>
+    <lastmod>2026-06-25T08:48:21+01:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2603/14g-15g_hci/</loc>
     <lastmod>2026-06-03T03:32:26-04:00</lastmod>
@@ -135,87 +162,6 @@
     <lastmod>2026-01-06T09:36:02-06:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2511/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2508/14g/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2508/14g/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2508/14g/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2508/16g/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2508/16g/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2508/16g/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2508/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2508/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2508/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2504/14g/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2504/14g/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2504/14g/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2504/16g/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2504/16g/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2504/16g/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2504/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2504/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2504/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2502/14g/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2502/14g/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2502/14g/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2502/16g/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2502/16g/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2502/16g/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/releaseartifacts/2502/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/releasenotes/2502/</loc>
-    <lastmod>2026-01-06T09:36:02-06:00</lastmod>
-  </url><url>
-    <loc>https://dell.github.io/azurestack-docs/docs/hub/supportmatrix/2502/</loc>
     <lastmod>2026-01-06T09:36:02-06:00</lastmod>
   </url><url>
     <loc>https://dell.github.io/azurestack-docs/docs/hub/nodeexpansion/16g/</loc>
