@@ -266,6 +266,9 @@ Dell update packages are not available for GPU cards, please download the latest
 <tr><td>SSD</td><td>SAS</td><td>2.5</td><td>Mixed Use</td><td>Samsung</td><td>PM1655a</td><td>MZILG1T6HFJAAD3</td><td>J7MWC</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=42TFH">42TFH</a></td><td>DWB1</td><td>1.6 TB</td><td>Cache, Capacity</td></tr>
 <tr><td>SSD</td><td>SAS</td><td>2.5</td><td>Mixed Use</td><td>Samsung</td><td>PM1655a</td><td>MZILG3T2HFLTAD3</td><td>03P3V</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=42TFH">42TFH</a></td><td>DWB1</td><td>3.2 TB</td><td>Cache, Capacity</td></tr>
 <tr><td>SSD</td><td>SAS</td><td>2.5</td><td>Mixed Use</td><td>Samsung</td><td>PM1655a</td><td>MZILG6T4HBLCAD3</td><td>24VJM</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=42TFH">42TFH</a></td><td>DWB1</td><td>6.4 TB</td><td>Cache, Capacity</td></tr>
+<tr><td>SSD</td><td>SAS</td><td>2.5</td><td>Mixed Use</td><td>Kioxia</td><td>RM7</td><td>KRM7VVUG960G</td><td>05MT7</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=1YD58">1YD58</a></td><td>CA0C</td><td>960 GB</td><td>Cache, Capacity</td></tr>
+<tr><td>SSD</td><td>SAS</td><td>2.5</td><td>Mixed Use</td><td>Kioxia</td><td>RM7</td><td>KRM7VVUG1T92</td><td>59XF2</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=1YD58">1YD58</a></td><td>CA0C</td><td>1.92 TB</td><td>Cache, Capacity</td></tr>
+<tr><td>SSD</td><td>SAS</td><td>2.5</td><td>Mixed Use</td><td>Kioxia</td><td>RM7</td><td>KRM7VVUG3T84</td><td>M0JVN</td><td><a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=1YD58">1YD58</a></td><td>CA0C</td><td>3.84 TB</td><td>Cache, Capacity</td></tr>
 </table>
 <br>
 {{< /rawhtml >}}
