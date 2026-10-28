@@ -20,26 +20,190 @@
 <link rel="icon" type="image/png" href="/azurestack-docs/favicons/android-192x192.png" sizes="192x192">
 
 <title>Azure Local Support Matrix for 17G (Dell 2603) | Solutions for Microsoft Azure</title>
-<meta name="description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; NOTE SBE package 4.2.2512.xxxx and newer will only support Azure Local solution versions 12.*.1001.* or 12.*.1002.* (HCI OS 24H2) and newer.">
+<meta name="description" content="NOTE SBE package 4.2.2512.xxxx and newer will only support Azure Local solution versions 12.*.1001.* or 12.*.1002.* (HCI OS 24H2) and newer.
+Dell will support the use of SBE package 4.2.2509.xxxx on Azure Local instances running version 11.* (HCI OS 23H2) until April 2026. Dell recommends that instances running version 11.* be upgraded to 12.* as soon as possible to remain in a supported state.
+Supported Platforms Model Supported Operating System AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-670 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 Base Components Component Type Software Bundle Minimum Supported Version Supported Platforms Supported OS BIOS Firmware DUP 11N9M 1.7.5 AX-670
+AX-770 NA Chipset driver for 17G Intel platforms Driver DUP 7TXYY 10.1.19928.8615 AX-670
+AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 iDRAC10 with Lifecycle Controller Firmware DUP YP95X 1.30.10.50 AX-670
+AX-770 NA Passive Backplane (1U 8xE3 x2) Firmware DUP 0M4TD 1.92 AX-670 NA Passive Backplane (2U 8xE3 x2) Firmware DUP 7P6P5 1.92 AX-770 NA iDRAC Service Module Firmware DUP 238XW 6.1.0.0 AX-670
+AX-770 NA FPGA Firmware DUP RYRRC 109.126.104 AX-670
+AX-770 NA Network Adapters Component Part Number SDDC Advanced Qualification RDMA Protocol Firmware Software Bundle Firmware Minimum Supported Version Driver Software Bundle Driver Minimum Supported Version Supported OS Supported Platforms Emulex LPe37102 SecureHBA Dual Port Fibre Channel 32Gb Adapter, PCIe Low Profile &#43;Sec 2HGNX NA NA 15J5T 03.10.12 8XGGG 14.4.624.1 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-670 Emulex LPe38102 SecureHBA Dual Port Fibre Channel 64Gb Adapter, PCIe Low Profile &#43;Sec TF3HV Emulex LPe38102 SecureHBA Dual Port Fibre Channel 64Gb Adapter, PCIe Full Height &#43;Sec D6PNX NA NA 15J5T 03.10.12 8XGGG 14.4.624.1 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-770 Emulex LPe37102 SecureHBA Dual Port Fibre Channel 32Gb Adapter, PCIe Full Height &#43;Sec JWVMH NVIDIA/Mellanox ConnectX-6 Dx OCP3 769PV Management
+Compute (Premium)
+Storage (Premium) RoCEv2 0WM7T 22.48.1000 3T3MK 26.001.03 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-670
+AX-770 NVIDIA/Mellanox ConnectX-6 Dx PCIe LP PXKX5 NVIDIA/Mellanox ConnectX-6 Dx PCIe FH 6PKY5 Management
+Compute (Premium)
+Storage (Premium) RoCEv2 0WM7T 22.48.1000 3T3MK 26.001.03 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-770 NVIDIA/Mellanox ConnectX-6 Lx PCIe LP 74GDV Management
+Compute (Premium)
+Storage (Premium) RoCEv2 KX0W4 26.48.1000 3T3MK 26.001.03 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-670
+AX-770 NVIDIA/Mellanox ConnectX-6 Lx OCP3 7GGY4 NVIDIA/Mellanox ConnectX-6 Lx PCIe FH 17W36 Management
+Compute (Premium)
+Storage (Premium) RoCEv2 KX0W4 26.48.1000 3T3MK 26.001.03 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-770 QLogic QLE2772C Dual Port 32Gb Fibre Channel, PCIe Low Profile &#43;Sec K10X5 NA NA 3XDWV 17.10.04 RF21G 9.4.12.20 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-670 QLogic QLE2772C Dual Port 32Gb Fibre Channel, PCIe Full Height &#43;Sec 663P2 NA NA 3XDWV 17.10.04 RF21G 9.4.12.20 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-770 QLogic QLE2872C Dual Port 64Gb Fibre Channel, PCIe Low Profile &#43;Sec W72F2 NA NA XMXP3 17.10.04 RF21G 9.4.12.20 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-670 QLogic QLE2872C Dual Port 64Gb Fibre Channel, PCIe Full Height &#43;Sec X29W4 NA NA XMXP3 17.10.04 RF21G 9.4.12.20 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-770 Network Switches NOTE A list of supported Network Switch models along with the supported firmware versions can be found here, Physical network requirements for Azure Local. PowerFlex Component PowerFlex SDC Driver Version Validated Platforms Supported OS Download Link Extracted Package Location PowerFlex Storage Data Client (SDC) 4.5.2.2 AX-670
+AX-770 Azure Stack HCI-24H2 https://dl.dell.com/downloads/41X88_PowerFlex-Software-4.5.5.2-SDC-Driver.zip PowerFlex_4.5.5200.104_Windows_SDC:
+EMC-ScaleIO-sdc-4.5-5200.104.msi PowerFlex Storage Data Client (SDC) 5.0 AX-670
+AX-770 Azure Stack HCI-24H2 https://dl.dell.com/downloads/09J62_PowerFlex-Software-5.0.0.0-SDC-Driver.zip PowerFlex_5.0.0.941_Windows_SDC:
+EMC-ScaleIO-sdc-5.0-0.941.msi GPUs GPU Model Vendor Description Part Number Firmware Version Driver Version GPU-P capable Supported Platform Supported OS A16 NVIDIA NVIDIA Ampere A16, PCIe, 250W, 64GB Passive, Double Wide, Full Height GPU,V2 D1P1T AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 L4 NVIDIA NVIDIA L4, PCIe, 72W, 24GB Passive, Single Wide Low Profile GPU V9XT2 AX-670 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 L4 NVIDIA NVIDIA L4, PCIe, 72W, 24GB Passive, Single Wide Full Height GPU NG3PY AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 L40S NVIDIA NVIDIA Ampere L40S, PCIe, 350W, 48GB Passive, Double Wide, Full Height, Full Length, GPU with cable 7WK28 AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 RTX PRO 6000 NVIDIA NVIDIA RTX PRO 6000 BSE 96GB 600W PCIe GPU THH68 AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 NOTE Dell update packages are not available for GPU cards, please download the latest driver version from NVIDIA driver download page. Storage Controllers Component Dell Part Number Firmware Software Bundle Firmware Minimum Supported Version Driver Software Bundle Driver Minimum Supported Version Supported Platforms Supported OS BOSS-N1 NH7WD PVDY9 2.2.13.2037 Inbox Inbox AX-670
+AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 SATA M.2 SSD Boot Only Type Drive Type Form Factor Endurance Vendor Series Model Device Part Number (P/N) Firmware Software Bundle Firmware Minimum Supported Version Capacity Use NVMe PCIe M.2 NA Solidigm PE9010 HFS960GDJ8X167N XN5KG 8X8YR 1.2.1 960GB Boot NVMe PCIe M.2 NA Solidigm PE9010 HFS960GEJ8X167N 4H05X YJG7C 1.3.1 960GB Boot NVMe PCIe M.2 NA Micron 7450 MTFDKBAXXXTFR PH7J6 JHKXR 1.4.0 960GB Boot NVMe 2.5&#34; Cache or Capacity Type Drive Type Form Factor Endurance Vendor Series Model Device Part Number (P/N) Firmware Software Bundle Firmware Minimum Supported Version Capacity Use NVMe PCIe E3.s Mixed Use Kioxia CD8P KCD8XPJE1T60 R64H4 50PDK 2.0.4 1.6TB Cache, Capacity NVMe PCIe E3.s Mixed Use Hynix PE1030 HFS1T6GFJCX180N MXDXH 0930W 1.1.0 1.6TB Cache, Capacity NVMe PCIe E3.s Mixed Use Samsung PM1745 MZ3LO3T2HCLSAD3 7R3TT 694C5 1.1.0 3.2TB Cache, Capacity NVMe PCIe E3.s Mixed Use Kioxia CM7 KCM7XVJE3T20 6J3Y1 0822W 2.0.4 3.2TB Cache, Capacity NVMe PCIe E3.s Mixed Use Kioxia CD8P KCD8XPJE3T20 GP5GV 50PDK 2.0.4 3.2TB Cache, Capacity NVMe PCIe E3.s Mixed Use Hynix PS1030 HFS3T2GFJCX171N 734CX WHGGM 1.1.0 3.2TB Cache, Capacity NVMe PCIe E3.s Mixed Use Hynix PE1030 HFS3T2GFJCX180N HCDFH 0930W 1.1.0 3.2TB Cache, Capacity NVMe PCIe E3.s Mixed Use Hynix PS1030 HFS6T4GFJCX171N DH5XD WHGGM 1.1.0 6.4TB Cache, Capacity NVMe PCIe E3.s Mixed Use Samsung PM1745 MZ3LO6T4HBLAAD3 FNPJC 694C5 1.1.0 6.4TB Cache, Capacity NVMe PCIe E3.s Mixed Use Kioxia CM7 KCM7XVJE6T40 V4DNH 0822W 2.0.4 6.4TB Cache, Capacity NVMe 2.5&#34; Capacity Only Type Drive Type Form Factor Endurance Vendor Series Model Device Part Number (P/N) Firmware Software Bundle Firmware Minimum Supported Version Capacity Use NVMe PCIe E3.s Read Intensive Kioxia CD8P KCD8XPJE1T92 59Y5J 50PDK 2.0.4 1.92TB Capacity NVMe PCIe E3.s Read Intensive Hynix PE1010 HFS1T9GFJCX180N 9CC5X 0930W 1.1.0 1.92TB Capacity NVMe PCIe E3.s Read Intensive Samsung PM1743 MZ3LO3T8HCLSAD3 831H5 8K2NH 1.1.0 3.84TB Capacity NVMe PCIe E3.s Read Intensive Kioxia CM7 KCM7XRJE3T84 YGK8R KCGDP 2.0.0 3.84TB Capacity NVMe PCIe E3.s Read Intensive Hynix PS1010 HFS3T8GFJCX171N 84M8H WHGGM 1.1.0 3.84TB Capacity NVMe PCIe E3.s Read Intensive Kioxia CD8P KCD8XPJE3T84 6RC59 50PDK 2.0.4 3.84TB Capacity NVMe PCIe E3.s Read Intensive Hynix PE1010 HFS3T8GFJCX180N 1NFG2 0930W 1.1.0 3.84TB Capacity NVMe PCIe E3.s Read Intensive Samsung PM1743 MZ3LO7T6HBLAAD3 NKGTX 8K2NH 1.1.0 7.68TB Capacity NVMe PCIe E3.s Read Intensive Kioxia CM7 KCM7XRJE7T68 G27W5 KCGDP 2.0.0 7.68TB Capacity NVMe PCIe E3.s Read Intensive Hynix PS1010 HFS7T6GFJCX171N DDKCG WHGGM 1.1.0 7.68TB Capacity NVMe PCIe E3.s Read Intensive Samsung PM1743 MZ3LO15THBLAAD3 RRYKC 8K2NH 1.1.0 15.36TB Capacity NVMe PCIe E3.s Read Intensive Kioxia CM7 KCM7XRJE15T3 YRN98 KCGDP 2.0.0 15.36TB Capacity NVMe PCIe E3.s Read Intensive Hynix PS1010 HFS15T3FJCX171N HK6WK WHGGM 1.1.0 15.36TB Capacity">
 <meta property="og:url" content="https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/2603/17g_hci/">
 	<meta property="og:site_name" content="Solutions for Microsoft Azure">
 	<meta property="og:title" content="Azure Local Support Matrix for 17G (Dell 2603)">
-	<meta property="og:description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; NOTE SBE package 4.2.2512.xxxx and newer will only support Azure Local solution versions 12.*.1001.* or 12.*.1002.* (HCI OS 24H2) and newer.">
+	<meta property="og:description" content="NOTE SBE package 4.2.2512.xxxx and newer will only support Azure Local solution versions 12.*.1001.* or 12.*.1002.* (HCI OS 24H2) and newer.
+Dell will support the use of SBE package 4.2.2509.xxxx on Azure Local instances running version 11.* (HCI OS 23H2) until April 2026. Dell recommends that instances running version 11.* be upgraded to 12.* as soon as possible to remain in a supported state.
+Supported Platforms Model Supported Operating System AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-670 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 Base Components Component Type Software Bundle Minimum Supported Version Supported Platforms Supported OS BIOS Firmware DUP 11N9M 1.7.5 AX-670
+AX-770 NA Chipset driver for 17G Intel platforms Driver DUP 7TXYY 10.1.19928.8615 AX-670
+AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 iDRAC10 with Lifecycle Controller Firmware DUP YP95X 1.30.10.50 AX-670
+AX-770 NA Passive Backplane (1U 8xE3 x2) Firmware DUP 0M4TD 1.92 AX-670 NA Passive Backplane (2U 8xE3 x2) Firmware DUP 7P6P5 1.92 AX-770 NA iDRAC Service Module Firmware DUP 238XW 6.1.0.0 AX-670
+AX-770 NA FPGA Firmware DUP RYRRC 109.126.104 AX-670
+AX-770 NA Network Adapters Component Part Number SDDC Advanced Qualification RDMA Protocol Firmware Software Bundle Firmware Minimum Supported Version Driver Software Bundle Driver Minimum Supported Version Supported OS Supported Platforms Emulex LPe37102 SecureHBA Dual Port Fibre Channel 32Gb Adapter, PCIe Low Profile &#43;Sec 2HGNX NA NA 15J5T 03.10.12 8XGGG 14.4.624.1 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-670 Emulex LPe38102 SecureHBA Dual Port Fibre Channel 64Gb Adapter, PCIe Low Profile &#43;Sec TF3HV Emulex LPe38102 SecureHBA Dual Port Fibre Channel 64Gb Adapter, PCIe Full Height &#43;Sec D6PNX NA NA 15J5T 03.10.12 8XGGG 14.4.624.1 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-770 Emulex LPe37102 SecureHBA Dual Port Fibre Channel 32Gb Adapter, PCIe Full Height &#43;Sec JWVMH NVIDIA/Mellanox ConnectX-6 Dx OCP3 769PV Management
+Compute (Premium)
+Storage (Premium) RoCEv2 0WM7T 22.48.1000 3T3MK 26.001.03 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-670
+AX-770 NVIDIA/Mellanox ConnectX-6 Dx PCIe LP PXKX5 NVIDIA/Mellanox ConnectX-6 Dx PCIe FH 6PKY5 Management
+Compute (Premium)
+Storage (Premium) RoCEv2 0WM7T 22.48.1000 3T3MK 26.001.03 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-770 NVIDIA/Mellanox ConnectX-6 Lx PCIe LP 74GDV Management
+Compute (Premium)
+Storage (Premium) RoCEv2 KX0W4 26.48.1000 3T3MK 26.001.03 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-670
+AX-770 NVIDIA/Mellanox ConnectX-6 Lx OCP3 7GGY4 NVIDIA/Mellanox ConnectX-6 Lx PCIe FH 17W36 Management
+Compute (Premium)
+Storage (Premium) RoCEv2 KX0W4 26.48.1000 3T3MK 26.001.03 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-770 QLogic QLE2772C Dual Port 32Gb Fibre Channel, PCIe Low Profile &#43;Sec K10X5 NA NA 3XDWV 17.10.04 RF21G 9.4.12.20 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-670 QLogic QLE2772C Dual Port 32Gb Fibre Channel, PCIe Full Height &#43;Sec 663P2 NA NA 3XDWV 17.10.04 RF21G 9.4.12.20 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-770 QLogic QLE2872C Dual Port 64Gb Fibre Channel, PCIe Low Profile &#43;Sec W72F2 NA NA XMXP3 17.10.04 RF21G 9.4.12.20 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-670 QLogic QLE2872C Dual Port 64Gb Fibre Channel, PCIe Full Height &#43;Sec X29W4 NA NA XMXP3 17.10.04 RF21G 9.4.12.20 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-770 Network Switches NOTE A list of supported Network Switch models along with the supported firmware versions can be found here, Physical network requirements for Azure Local. PowerFlex Component PowerFlex SDC Driver Version Validated Platforms Supported OS Download Link Extracted Package Location PowerFlex Storage Data Client (SDC) 4.5.2.2 AX-670
+AX-770 Azure Stack HCI-24H2 https://dl.dell.com/downloads/41X88_PowerFlex-Software-4.5.5.2-SDC-Driver.zip PowerFlex_4.5.5200.104_Windows_SDC:
+EMC-ScaleIO-sdc-4.5-5200.104.msi PowerFlex Storage Data Client (SDC) 5.0 AX-670
+AX-770 Azure Stack HCI-24H2 https://dl.dell.com/downloads/09J62_PowerFlex-Software-5.0.0.0-SDC-Driver.zip PowerFlex_5.0.0.941_Windows_SDC:
+EMC-ScaleIO-sdc-5.0-0.941.msi GPUs GPU Model Vendor Description Part Number Firmware Version Driver Version GPU-P capable Supported Platform Supported OS A16 NVIDIA NVIDIA Ampere A16, PCIe, 250W, 64GB Passive, Double Wide, Full Height GPU,V2 D1P1T AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 L4 NVIDIA NVIDIA L4, PCIe, 72W, 24GB Passive, Single Wide Low Profile GPU V9XT2 AX-670 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 L4 NVIDIA NVIDIA L4, PCIe, 72W, 24GB Passive, Single Wide Full Height GPU NG3PY AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 L40S NVIDIA NVIDIA Ampere L40S, PCIe, 350W, 48GB Passive, Double Wide, Full Height, Full Length, GPU with cable 7WK28 AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 RTX PRO 6000 NVIDIA NVIDIA RTX PRO 6000 BSE 96GB 600W PCIe GPU THH68 AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 NOTE Dell update packages are not available for GPU cards, please download the latest driver version from NVIDIA driver download page. Storage Controllers Component Dell Part Number Firmware Software Bundle Firmware Minimum Supported Version Driver Software Bundle Driver Minimum Supported Version Supported Platforms Supported OS BOSS-N1 NH7WD PVDY9 2.2.13.2037 Inbox Inbox AX-670
+AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 SATA M.2 SSD Boot Only Type Drive Type Form Factor Endurance Vendor Series Model Device Part Number (P/N) Firmware Software Bundle Firmware Minimum Supported Version Capacity Use NVMe PCIe M.2 NA Solidigm PE9010 HFS960GDJ8X167N XN5KG 8X8YR 1.2.1 960GB Boot NVMe PCIe M.2 NA Solidigm PE9010 HFS960GEJ8X167N 4H05X YJG7C 1.3.1 960GB Boot NVMe PCIe M.2 NA Micron 7450 MTFDKBAXXXTFR PH7J6 JHKXR 1.4.0 960GB Boot NVMe 2.5&#34; Cache or Capacity Type Drive Type Form Factor Endurance Vendor Series Model Device Part Number (P/N) Firmware Software Bundle Firmware Minimum Supported Version Capacity Use NVMe PCIe E3.s Mixed Use Kioxia CD8P KCD8XPJE1T60 R64H4 50PDK 2.0.4 1.6TB Cache, Capacity NVMe PCIe E3.s Mixed Use Hynix PE1030 HFS1T6GFJCX180N MXDXH 0930W 1.1.0 1.6TB Cache, Capacity NVMe PCIe E3.s Mixed Use Samsung PM1745 MZ3LO3T2HCLSAD3 7R3TT 694C5 1.1.0 3.2TB Cache, Capacity NVMe PCIe E3.s Mixed Use Kioxia CM7 KCM7XVJE3T20 6J3Y1 0822W 2.0.4 3.2TB Cache, Capacity NVMe PCIe E3.s Mixed Use Kioxia CD8P KCD8XPJE3T20 GP5GV 50PDK 2.0.4 3.2TB Cache, Capacity NVMe PCIe E3.s Mixed Use Hynix PS1030 HFS3T2GFJCX171N 734CX WHGGM 1.1.0 3.2TB Cache, Capacity NVMe PCIe E3.s Mixed Use Hynix PE1030 HFS3T2GFJCX180N HCDFH 0930W 1.1.0 3.2TB Cache, Capacity NVMe PCIe E3.s Mixed Use Hynix PS1030 HFS6T4GFJCX171N DH5XD WHGGM 1.1.0 6.4TB Cache, Capacity NVMe PCIe E3.s Mixed Use Samsung PM1745 MZ3LO6T4HBLAAD3 FNPJC 694C5 1.1.0 6.4TB Cache, Capacity NVMe PCIe E3.s Mixed Use Kioxia CM7 KCM7XVJE6T40 V4DNH 0822W 2.0.4 6.4TB Cache, Capacity NVMe 2.5&#34; Capacity Only Type Drive Type Form Factor Endurance Vendor Series Model Device Part Number (P/N) Firmware Software Bundle Firmware Minimum Supported Version Capacity Use NVMe PCIe E3.s Read Intensive Kioxia CD8P KCD8XPJE1T92 59Y5J 50PDK 2.0.4 1.92TB Capacity NVMe PCIe E3.s Read Intensive Hynix PE1010 HFS1T9GFJCX180N 9CC5X 0930W 1.1.0 1.92TB Capacity NVMe PCIe E3.s Read Intensive Samsung PM1743 MZ3LO3T8HCLSAD3 831H5 8K2NH 1.1.0 3.84TB Capacity NVMe PCIe E3.s Read Intensive Kioxia CM7 KCM7XRJE3T84 YGK8R KCGDP 2.0.0 3.84TB Capacity NVMe PCIe E3.s Read Intensive Hynix PS1010 HFS3T8GFJCX171N 84M8H WHGGM 1.1.0 3.84TB Capacity NVMe PCIe E3.s Read Intensive Kioxia CD8P KCD8XPJE3T84 6RC59 50PDK 2.0.4 3.84TB Capacity NVMe PCIe E3.s Read Intensive Hynix PE1010 HFS3T8GFJCX180N 1NFG2 0930W 1.1.0 3.84TB Capacity NVMe PCIe E3.s Read Intensive Samsung PM1743 MZ3LO7T6HBLAAD3 NKGTX 8K2NH 1.1.0 7.68TB Capacity NVMe PCIe E3.s Read Intensive Kioxia CM7 KCM7XRJE7T68 G27W5 KCGDP 2.0.0 7.68TB Capacity NVMe PCIe E3.s Read Intensive Hynix PS1010 HFS7T6GFJCX171N DDKCG WHGGM 1.1.0 7.68TB Capacity NVMe PCIe E3.s Read Intensive Samsung PM1743 MZ3LO15THBLAAD3 RRYKC 8K2NH 1.1.0 15.36TB Capacity NVMe PCIe E3.s Read Intensive Kioxia CM7 KCM7XRJE15T3 YRN98 KCGDP 2.0.0 15.36TB Capacity NVMe PCIe E3.s Read Intensive Hynix PS1010 HFS15T3FJCX171N HK6WK WHGGM 1.1.0 15.36TB Capacity">
 	<meta property="og:locale" content="en">
 	<meta property="og:type" content="website">
 
 	<meta itemprop="name" content="Azure Local Support Matrix for 17G (Dell 2603)">
-	<meta itemprop="description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; NOTE SBE package 4.2.2512.xxxx and newer will only support Azure Local solution versions 12.*.1001.* or 12.*.1002.* (HCI OS 24H2) and newer.">
+	<meta itemprop="description" content="NOTE SBE package 4.2.2512.xxxx and newer will only support Azure Local solution versions 12.*.1001.* or 12.*.1002.* (HCI OS 24H2) and newer.
+Dell will support the use of SBE package 4.2.2509.xxxx on Azure Local instances running version 11.* (HCI OS 23H2) until April 2026. Dell recommends that instances running version 11.* be upgraded to 12.* as soon as possible to remain in a supported state.
+Supported Platforms Model Supported Operating System AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-670 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 Base Components Component Type Software Bundle Minimum Supported Version Supported Platforms Supported OS BIOS Firmware DUP 11N9M 1.7.5 AX-670
+AX-770 NA Chipset driver for 17G Intel platforms Driver DUP 7TXYY 10.1.19928.8615 AX-670
+AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 iDRAC10 with Lifecycle Controller Firmware DUP YP95X 1.30.10.50 AX-670
+AX-770 NA Passive Backplane (1U 8xE3 x2) Firmware DUP 0M4TD 1.92 AX-670 NA Passive Backplane (2U 8xE3 x2) Firmware DUP 7P6P5 1.92 AX-770 NA iDRAC Service Module Firmware DUP 238XW 6.1.0.0 AX-670
+AX-770 NA FPGA Firmware DUP RYRRC 109.126.104 AX-670
+AX-770 NA Network Adapters Component Part Number SDDC Advanced Qualification RDMA Protocol Firmware Software Bundle Firmware Minimum Supported Version Driver Software Bundle Driver Minimum Supported Version Supported OS Supported Platforms Emulex LPe37102 SecureHBA Dual Port Fibre Channel 32Gb Adapter, PCIe Low Profile &#43;Sec 2HGNX NA NA 15J5T 03.10.12 8XGGG 14.4.624.1 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-670 Emulex LPe38102 SecureHBA Dual Port Fibre Channel 64Gb Adapter, PCIe Low Profile &#43;Sec TF3HV Emulex LPe38102 SecureHBA Dual Port Fibre Channel 64Gb Adapter, PCIe Full Height &#43;Sec D6PNX NA NA 15J5T 03.10.12 8XGGG 14.4.624.1 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-770 Emulex LPe37102 SecureHBA Dual Port Fibre Channel 32Gb Adapter, PCIe Full Height &#43;Sec JWVMH NVIDIA/Mellanox ConnectX-6 Dx OCP3 769PV Management
+Compute (Premium)
+Storage (Premium) RoCEv2 0WM7T 22.48.1000 3T3MK 26.001.03 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-670
+AX-770 NVIDIA/Mellanox ConnectX-6 Dx PCIe LP PXKX5 NVIDIA/Mellanox ConnectX-6 Dx PCIe FH 6PKY5 Management
+Compute (Premium)
+Storage (Premium) RoCEv2 0WM7T 22.48.1000 3T3MK 26.001.03 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-770 NVIDIA/Mellanox ConnectX-6 Lx PCIe LP 74GDV Management
+Compute (Premium)
+Storage (Premium) RoCEv2 KX0W4 26.48.1000 3T3MK 26.001.03 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-670
+AX-770 NVIDIA/Mellanox ConnectX-6 Lx OCP3 7GGY4 NVIDIA/Mellanox ConnectX-6 Lx PCIe FH 17W36 Management
+Compute (Premium)
+Storage (Premium) RoCEv2 KX0W4 26.48.1000 3T3MK 26.001.03 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-770 QLogic QLE2772C Dual Port 32Gb Fibre Channel, PCIe Low Profile &#43;Sec K10X5 NA NA 3XDWV 17.10.04 RF21G 9.4.12.20 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-670 QLogic QLE2772C Dual Port 32Gb Fibre Channel, PCIe Full Height &#43;Sec 663P2 NA NA 3XDWV 17.10.04 RF21G 9.4.12.20 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-770 QLogic QLE2872C Dual Port 64Gb Fibre Channel, PCIe Low Profile &#43;Sec W72F2 NA NA XMXP3 17.10.04 RF21G 9.4.12.20 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-670 QLogic QLE2872C Dual Port 64Gb Fibre Channel, PCIe Full Height &#43;Sec X29W4 NA NA XMXP3 17.10.04 RF21G 9.4.12.20 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-770 Network Switches NOTE A list of supported Network Switch models along with the supported firmware versions can be found here, Physical network requirements for Azure Local. PowerFlex Component PowerFlex SDC Driver Version Validated Platforms Supported OS Download Link Extracted Package Location PowerFlex Storage Data Client (SDC) 4.5.2.2 AX-670
+AX-770 Azure Stack HCI-24H2 https://dl.dell.com/downloads/41X88_PowerFlex-Software-4.5.5.2-SDC-Driver.zip PowerFlex_4.5.5200.104_Windows_SDC:
+EMC-ScaleIO-sdc-4.5-5200.104.msi PowerFlex Storage Data Client (SDC) 5.0 AX-670
+AX-770 Azure Stack HCI-24H2 https://dl.dell.com/downloads/09J62_PowerFlex-Software-5.0.0.0-SDC-Driver.zip PowerFlex_5.0.0.941_Windows_SDC:
+EMC-ScaleIO-sdc-5.0-0.941.msi GPUs GPU Model Vendor Description Part Number Firmware Version Driver Version GPU-P capable Supported Platform Supported OS A16 NVIDIA NVIDIA Ampere A16, PCIe, 250W, 64GB Passive, Double Wide, Full Height GPU,V2 D1P1T AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 L4 NVIDIA NVIDIA L4, PCIe, 72W, 24GB Passive, Single Wide Low Profile GPU V9XT2 AX-670 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 L4 NVIDIA NVIDIA L4, PCIe, 72W, 24GB Passive, Single Wide Full Height GPU NG3PY AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 L40S NVIDIA NVIDIA Ampere L40S, PCIe, 350W, 48GB Passive, Double Wide, Full Height, Full Length, GPU with cable 7WK28 AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 RTX PRO 6000 NVIDIA NVIDIA RTX PRO 6000 BSE 96GB 600W PCIe GPU THH68 AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 NOTE Dell update packages are not available for GPU cards, please download the latest driver version from NVIDIA driver download page. Storage Controllers Component Dell Part Number Firmware Software Bundle Firmware Minimum Supported Version Driver Software Bundle Driver Minimum Supported Version Supported Platforms Supported OS BOSS-N1 NH7WD PVDY9 2.2.13.2037 Inbox Inbox AX-670
+AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 SATA M.2 SSD Boot Only Type Drive Type Form Factor Endurance Vendor Series Model Device Part Number (P/N) Firmware Software Bundle Firmware Minimum Supported Version Capacity Use NVMe PCIe M.2 NA Solidigm PE9010 HFS960GDJ8X167N XN5KG 8X8YR 1.2.1 960GB Boot NVMe PCIe M.2 NA Solidigm PE9010 HFS960GEJ8X167N 4H05X YJG7C 1.3.1 960GB Boot NVMe PCIe M.2 NA Micron 7450 MTFDKBAXXXTFR PH7J6 JHKXR 1.4.0 960GB Boot NVMe 2.5&#34; Cache or Capacity Type Drive Type Form Factor Endurance Vendor Series Model Device Part Number (P/N) Firmware Software Bundle Firmware Minimum Supported Version Capacity Use NVMe PCIe E3.s Mixed Use Kioxia CD8P KCD8XPJE1T60 R64H4 50PDK 2.0.4 1.6TB Cache, Capacity NVMe PCIe E3.s Mixed Use Hynix PE1030 HFS1T6GFJCX180N MXDXH 0930W 1.1.0 1.6TB Cache, Capacity NVMe PCIe E3.s Mixed Use Samsung PM1745 MZ3LO3T2HCLSAD3 7R3TT 694C5 1.1.0 3.2TB Cache, Capacity NVMe PCIe E3.s Mixed Use Kioxia CM7 KCM7XVJE3T20 6J3Y1 0822W 2.0.4 3.2TB Cache, Capacity NVMe PCIe E3.s Mixed Use Kioxia CD8P KCD8XPJE3T20 GP5GV 50PDK 2.0.4 3.2TB Cache, Capacity NVMe PCIe E3.s Mixed Use Hynix PS1030 HFS3T2GFJCX171N 734CX WHGGM 1.1.0 3.2TB Cache, Capacity NVMe PCIe E3.s Mixed Use Hynix PE1030 HFS3T2GFJCX180N HCDFH 0930W 1.1.0 3.2TB Cache, Capacity NVMe PCIe E3.s Mixed Use Hynix PS1030 HFS6T4GFJCX171N DH5XD WHGGM 1.1.0 6.4TB Cache, Capacity NVMe PCIe E3.s Mixed Use Samsung PM1745 MZ3LO6T4HBLAAD3 FNPJC 694C5 1.1.0 6.4TB Cache, Capacity NVMe PCIe E3.s Mixed Use Kioxia CM7 KCM7XVJE6T40 V4DNH 0822W 2.0.4 6.4TB Cache, Capacity NVMe 2.5&#34; Capacity Only Type Drive Type Form Factor Endurance Vendor Series Model Device Part Number (P/N) Firmware Software Bundle Firmware Minimum Supported Version Capacity Use NVMe PCIe E3.s Read Intensive Kioxia CD8P KCD8XPJE1T92 59Y5J 50PDK 2.0.4 1.92TB Capacity NVMe PCIe E3.s Read Intensive Hynix PE1010 HFS1T9GFJCX180N 9CC5X 0930W 1.1.0 1.92TB Capacity NVMe PCIe E3.s Read Intensive Samsung PM1743 MZ3LO3T8HCLSAD3 831H5 8K2NH 1.1.0 3.84TB Capacity NVMe PCIe E3.s Read Intensive Kioxia CM7 KCM7XRJE3T84 YGK8R KCGDP 2.0.0 3.84TB Capacity NVMe PCIe E3.s Read Intensive Hynix PS1010 HFS3T8GFJCX171N 84M8H WHGGM 1.1.0 3.84TB Capacity NVMe PCIe E3.s Read Intensive Kioxia CD8P KCD8XPJE3T84 6RC59 50PDK 2.0.4 3.84TB Capacity NVMe PCIe E3.s Read Intensive Hynix PE1010 HFS3T8GFJCX180N 1NFG2 0930W 1.1.0 3.84TB Capacity NVMe PCIe E3.s Read Intensive Samsung PM1743 MZ3LO7T6HBLAAD3 NKGTX 8K2NH 1.1.0 7.68TB Capacity NVMe PCIe E3.s Read Intensive Kioxia CM7 KCM7XRJE7T68 G27W5 KCGDP 2.0.0 7.68TB Capacity NVMe PCIe E3.s Read Intensive Hynix PS1010 HFS7T6GFJCX171N DDKCG WHGGM 1.1.0 7.68TB Capacity NVMe PCIe E3.s Read Intensive Samsung PM1743 MZ3LO15THBLAAD3 RRYKC 8K2NH 1.1.0 15.36TB Capacity NVMe PCIe E3.s Read Intensive Kioxia CM7 KCM7XRJE15T3 YRN98 KCGDP 2.0.0 15.36TB Capacity NVMe PCIe E3.s Read Intensive Hynix PS1010 HFS15T3FJCX171N HK6WK WHGGM 1.1.0 15.36TB Capacity">
 	<meta itemprop="dateModified" content="2026-05-22T03:15:54-04:00">
-	<meta itemprop="wordCount" content="669">
+	<meta itemprop="wordCount" content="1188">
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="Azure Local Support Matrix for 17G (Dell 2603)">
-	<meta name="twitter:description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; NOTE SBE package 4.2.2512.xxxx and newer will only support Azure Local solution versions 12.*.1001.* or 12.*.1002.* (HCI OS 24H2) and newer.">
+	<meta name="twitter:description" content="NOTE SBE package 4.2.2512.xxxx and newer will only support Azure Local solution versions 12.*.1001.* or 12.*.1002.* (HCI OS 24H2) and newer.
+Dell will support the use of SBE package 4.2.2509.xxxx on Azure Local instances running version 11.* (HCI OS 23H2) until April 2026. Dell recommends that instances running version 11.* be upgraded to 12.* as soon as possible to remain in a supported state.
+Supported Platforms Model Supported Operating System AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-670 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 Base Components Component Type Software Bundle Minimum Supported Version Supported Platforms Supported OS BIOS Firmware DUP 11N9M 1.7.5 AX-670
+AX-770 NA Chipset driver for 17G Intel platforms Driver DUP 7TXYY 10.1.19928.8615 AX-670
+AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 iDRAC10 with Lifecycle Controller Firmware DUP YP95X 1.30.10.50 AX-670
+AX-770 NA Passive Backplane (1U 8xE3 x2) Firmware DUP 0M4TD 1.92 AX-670 NA Passive Backplane (2U 8xE3 x2) Firmware DUP 7P6P5 1.92 AX-770 NA iDRAC Service Module Firmware DUP 238XW 6.1.0.0 AX-670
+AX-770 NA FPGA Firmware DUP RYRRC 109.126.104 AX-670
+AX-770 NA Network Adapters Component Part Number SDDC Advanced Qualification RDMA Protocol Firmware Software Bundle Firmware Minimum Supported Version Driver Software Bundle Driver Minimum Supported Version Supported OS Supported Platforms Emulex LPe37102 SecureHBA Dual Port Fibre Channel 32Gb Adapter, PCIe Low Profile &#43;Sec 2HGNX NA NA 15J5T 03.10.12 8XGGG 14.4.624.1 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-670 Emulex LPe38102 SecureHBA Dual Port Fibre Channel 64Gb Adapter, PCIe Low Profile &#43;Sec TF3HV Emulex LPe38102 SecureHBA Dual Port Fibre Channel 64Gb Adapter, PCIe Full Height &#43;Sec D6PNX NA NA 15J5T 03.10.12 8XGGG 14.4.624.1 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-770 Emulex LPe37102 SecureHBA Dual Port Fibre Channel 32Gb Adapter, PCIe Full Height &#43;Sec JWVMH NVIDIA/Mellanox ConnectX-6 Dx OCP3 769PV Management
+Compute (Premium)
+Storage (Premium) RoCEv2 0WM7T 22.48.1000 3T3MK 26.001.03 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-670
+AX-770 NVIDIA/Mellanox ConnectX-6 Dx PCIe LP PXKX5 NVIDIA/Mellanox ConnectX-6 Dx PCIe FH 6PKY5 Management
+Compute (Premium)
+Storage (Premium) RoCEv2 0WM7T 22.48.1000 3T3MK 26.001.03 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-770 NVIDIA/Mellanox ConnectX-6 Lx PCIe LP 74GDV Management
+Compute (Premium)
+Storage (Premium) RoCEv2 KX0W4 26.48.1000 3T3MK 26.001.03 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-670
+AX-770 NVIDIA/Mellanox ConnectX-6 Lx OCP3 7GGY4 NVIDIA/Mellanox ConnectX-6 Lx PCIe FH 17W36 Management
+Compute (Premium)
+Storage (Premium) RoCEv2 KX0W4 26.48.1000 3T3MK 26.001.03 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-770 QLogic QLE2772C Dual Port 32Gb Fibre Channel, PCIe Low Profile &#43;Sec K10X5 NA NA 3XDWV 17.10.04 RF21G 9.4.12.20 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-670 QLogic QLE2772C Dual Port 32Gb Fibre Channel, PCIe Full Height &#43;Sec 663P2 NA NA 3XDWV 17.10.04 RF21G 9.4.12.20 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-770 QLogic QLE2872C Dual Port 64Gb Fibre Channel, PCIe Low Profile &#43;Sec W72F2 NA NA XMXP3 17.10.04 RF21G 9.4.12.20 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-670 QLogic QLE2872C Dual Port 64Gb Fibre Channel, PCIe Full Height &#43;Sec X29W4 NA NA XMXP3 17.10.04 RF21G 9.4.12.20 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 AX-770 Network Switches NOTE A list of supported Network Switch models along with the supported firmware versions can be found here, Physical network requirements for Azure Local. PowerFlex Component PowerFlex SDC Driver Version Validated Platforms Supported OS Download Link Extracted Package Location PowerFlex Storage Data Client (SDC) 4.5.2.2 AX-670
+AX-770 Azure Stack HCI-24H2 https://dl.dell.com/downloads/41X88_PowerFlex-Software-4.5.5.2-SDC-Driver.zip PowerFlex_4.5.5200.104_Windows_SDC:
+EMC-ScaleIO-sdc-4.5-5200.104.msi PowerFlex Storage Data Client (SDC) 5.0 AX-670
+AX-770 Azure Stack HCI-24H2 https://dl.dell.com/downloads/09J62_PowerFlex-Software-5.0.0.0-SDC-Driver.zip PowerFlex_5.0.0.941_Windows_SDC:
+EMC-ScaleIO-sdc-5.0-0.941.msi GPUs GPU Model Vendor Description Part Number Firmware Version Driver Version GPU-P capable Supported Platform Supported OS A16 NVIDIA NVIDIA Ampere A16, PCIe, 250W, 64GB Passive, Double Wide, Full Height GPU,V2 D1P1T AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 L4 NVIDIA NVIDIA L4, PCIe, 72W, 24GB Passive, Single Wide Low Profile GPU V9XT2 AX-670 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 L4 NVIDIA NVIDIA L4, PCIe, 72W, 24GB Passive, Single Wide Full Height GPU NG3PY AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 L40S NVIDIA NVIDIA Ampere L40S, PCIe, 350W, 48GB Passive, Double Wide, Full Height, Full Length, GPU with cable 7WK28 AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 RTX PRO 6000 NVIDIA NVIDIA RTX PRO 6000 BSE 96GB 600W PCIe GPU THH68 AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 NOTE Dell update packages are not available for GPU cards, please download the latest driver version from NVIDIA driver download page. Storage Controllers Component Dell Part Number Firmware Software Bundle Firmware Minimum Supported Version Driver Software Bundle Driver Minimum Supported Version Supported Platforms Supported OS BOSS-N1 NH7WD PVDY9 2.2.13.2037 Inbox Inbox AX-670
+AX-770 Windows Server 2025 Datacenter
+Azure Stack HCI-24H2 SATA M.2 SSD Boot Only Type Drive Type Form Factor Endurance Vendor Series Model Device Part Number (P/N) Firmware Software Bundle Firmware Minimum Supported Version Capacity Use NVMe PCIe M.2 NA Solidigm PE9010 HFS960GDJ8X167N XN5KG 8X8YR 1.2.1 960GB Boot NVMe PCIe M.2 NA Solidigm PE9010 HFS960GEJ8X167N 4H05X YJG7C 1.3.1 960GB Boot NVMe PCIe M.2 NA Micron 7450 MTFDKBAXXXTFR PH7J6 JHKXR 1.4.0 960GB Boot NVMe 2.5&#34; Cache or Capacity Type Drive Type Form Factor Endurance Vendor Series Model Device Part Number (P/N) Firmware Software Bundle Firmware Minimum Supported Version Capacity Use NVMe PCIe E3.s Mixed Use Kioxia CD8P KCD8XPJE1T60 R64H4 50PDK 2.0.4 1.6TB Cache, Capacity NVMe PCIe E3.s Mixed Use Hynix PE1030 HFS1T6GFJCX180N MXDXH 0930W 1.1.0 1.6TB Cache, Capacity NVMe PCIe E3.s Mixed Use Samsung PM1745 MZ3LO3T2HCLSAD3 7R3TT 694C5 1.1.0 3.2TB Cache, Capacity NVMe PCIe E3.s Mixed Use Kioxia CM7 KCM7XVJE3T20 6J3Y1 0822W 2.0.4 3.2TB Cache, Capacity NVMe PCIe E3.s Mixed Use Kioxia CD8P KCD8XPJE3T20 GP5GV 50PDK 2.0.4 3.2TB Cache, Capacity NVMe PCIe E3.s Mixed Use Hynix PS1030 HFS3T2GFJCX171N 734CX WHGGM 1.1.0 3.2TB Cache, Capacity NVMe PCIe E3.s Mixed Use Hynix PE1030 HFS3T2GFJCX180N HCDFH 0930W 1.1.0 3.2TB Cache, Capacity NVMe PCIe E3.s Mixed Use Hynix PS1030 HFS6T4GFJCX171N DH5XD WHGGM 1.1.0 6.4TB Cache, Capacity NVMe PCIe E3.s Mixed Use Samsung PM1745 MZ3LO6T4HBLAAD3 FNPJC 694C5 1.1.0 6.4TB Cache, Capacity NVMe PCIe E3.s Mixed Use Kioxia CM7 KCM7XVJE6T40 V4DNH 0822W 2.0.4 6.4TB Cache, Capacity NVMe 2.5&#34; Capacity Only Type Drive Type Form Factor Endurance Vendor Series Model Device Part Number (P/N) Firmware Software Bundle Firmware Minimum Supported Version Capacity Use NVMe PCIe E3.s Read Intensive Kioxia CD8P KCD8XPJE1T92 59Y5J 50PDK 2.0.4 1.92TB Capacity NVMe PCIe E3.s Read Intensive Hynix PE1010 HFS1T9GFJCX180N 9CC5X 0930W 1.1.0 1.92TB Capacity NVMe PCIe E3.s Read Intensive Samsung PM1743 MZ3LO3T8HCLSAD3 831H5 8K2NH 1.1.0 3.84TB Capacity NVMe PCIe E3.s Read Intensive Kioxia CM7 KCM7XRJE3T84 YGK8R KCGDP 2.0.0 3.84TB Capacity NVMe PCIe E3.s Read Intensive Hynix PS1010 HFS3T8GFJCX171N 84M8H WHGGM 1.1.0 3.84TB Capacity NVMe PCIe E3.s Read Intensive Kioxia CD8P KCD8XPJE3T84 6RC59 50PDK 2.0.4 3.84TB Capacity NVMe PCIe E3.s Read Intensive Hynix PE1010 HFS3T8GFJCX180N 1NFG2 0930W 1.1.0 3.84TB Capacity NVMe PCIe E3.s Read Intensive Samsung PM1743 MZ3LO7T6HBLAAD3 NKGTX 8K2NH 1.1.0 7.68TB Capacity NVMe PCIe E3.s Read Intensive Kioxia CM7 KCM7XRJE7T68 G27W5 KCGDP 2.0.0 7.68TB Capacity NVMe PCIe E3.s Read Intensive Hynix PS1010 HFS7T6GFJCX171N DDKCG WHGGM 1.1.0 7.68TB Capacity NVMe PCIe E3.s Read Intensive Samsung PM1743 MZ3LO15THBLAAD3 RRYKC 8K2NH 1.1.0 15.36TB Capacity NVMe PCIe E3.s Read Intensive Kioxia CM7 KCM7XRJE15T3 YRN98 KCGDP 2.0.0 15.36TB Capacity NVMe PCIe E3.s Read Intensive Hynix PS1010 HFS15T3FJCX171N HK6WK WHGGM 1.1.0 15.36TB Capacity">
 
 
 
-<link rel="preload" href="https://dell.github.io/azurestack-docs/scss/main.min.4be8cdcf78a52ff9809ae73a7245abb788ca6ce762500dcb809e2dc2750919a0.css" as="style">
-<link href="https://dell.github.io/azurestack-docs/scss/main.min.4be8cdcf78a52ff9809ae73a7245abb788ca6ce762500dcb809e2dc2750919a0.css" rel="stylesheet" integrity="">
+<link rel="preload" href="https://dell.github.io/azurestack-docs/scss/main.min.263422b4ba2515e719b022fe1f0b677207de5c99c6d4e132919174eee1996ac0.css" as="style">
+<link href="https://dell.github.io/azurestack-docs/scss/main.min.263422b4ba2515e719b022fe1f0b677207de5c99c6d4e132919174eee1996ac0.css" rel="stylesheet" integrity="">
 
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -158,7 +322,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.26f59df13787b62c719f63806a15f60f.json"
+    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.9502516a2b39f8efbe60e616664f25db.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >

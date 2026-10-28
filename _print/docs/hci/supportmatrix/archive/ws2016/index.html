@@ -20,26 +20,2238 @@
 <link rel="icon" type="image/png" href="/azurestack-docs/favicons/android-192x192.png" sizes="192x192">
 
 <title>Azure Stack HCI Firmware and Driver Matrix for Legacy Windows Server Operating Systems (Windows Server 2016) | Solutions for Microsoft Azure</title>
-<meta name="description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; Introduction This matrix is for Windows Server operating systems that have exited Microsoft mainstream support. This Windows Server operating system is no longer being validated by Dell for use with hyperconverged cluster deployments. The table in the below link is a snapshot of the last firmware and driver versions that were validated by Dell engineering for use with this legacy Windows Server version.">
+<meta name="description" content="Introduction This matrix is for Windows Server operating systems that have exited Microsoft mainstream support. This Windows Server operating system is no longer being validated by Dell for use with hyperconverged cluster deployments. The table in the below link is a snapshot of the last firmware and driver versions that were validated by Dell engineering for use with this legacy Windows Server version. Windows Server 2016 - Microsoft Lifecycle | Microsoft Learn Customers that are still running this Windows Server version for their hyperconverged cluster deployments are encouraged to perform an in-place upgrade to the Windows Server 2022 operating system per instructions at the following link. Perform a Feature Update of Windows Server | Microsoft Learn NOTE To find a particular driver or firmware download, take the Software Bundle ID and append it to the following URL: https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=
+For example: https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=2R28V
+Storage Spaces Direct Ready Nodes and AX nodes Supported Firmware versions Component Type Category Software Bundle Minimum Supported Version Supported Systems BIOS Firmware DUP BIOS W77H1 2.16.1 AX-640
+R640
+AX-740xd
+R740xd
+BIOS Firmware DUP BIOS CKFTD 2.16.1 R440 BIOS Firmware DUP BIOS VHNTJ 2.16.1 R740xd2 BIOS Firmware DUP BIOS 61GYN 2.9.3 AX-6515 BIOS Firmware DUP BIOS C45MX 2.9.3 AX-7525 BIOS Firmware DUP BIOS G7K8G 1.8.2 AX-650
+AX-750
+iDRAC9 with Lifecycle Controller Firmware DUP BMC KMYV9 6.10.00.00 All Non-expander Storage Backplane Firmware DUP Storage-Backplane VV85D 4.35 AX-640
+AX-740xd
+R640
+R740xd
+Non-expander Storage Backplane Firmware DUP Storage-Backplane 6NNVP 3.72 AX-7525
+AX-650
+AX-750
+NVMe Switch Storage Backplane Firmware DUP Storage-Backplane 5XJWN 1.05 AX-750 Expander Storage Backplane Firmware DUP Storage-Backplane H9PV3 1.20 AX-750
+AX-7525
+Expander Storage Backplane Firmware DUP Storage-Backplane 60K1J 2.52 All Intel S3520, M.2, SSD, RI, 240 GB, 480 GB Firmware DUP BOSS (Boot) CHJGV DL43 All Micron 5100, M.2, SSD, 240 GB, 480 GB Firmware DUP BOSS (Boot) YM8KY E013 All Micron 5300, M.2, SSD, 240 GB, 480 GB Firmware DUP BOSS (Boot) PWVX5 J004 All CPLD Firmware DUP CPLD 1GW62 1.0.10 R440 CPLD Firmware DUP CPLD 9N4DH 1.0.6 AX-640
+R640
+CPLD Firmware DUP CPLD G65GH 1.1.4 AX-740xd
+R740xd
+CPLD Firmware DUP CPLD R13D8 1.0.4 R740xd2 CPLD Firmware DUP CPLD 79XGF 1.0.7 AX-6515 CPLD Firmware DUP CPLD XTPX5 1.1.15 AX-7525 CPLD Firmware DUP CPLD N9YTC 1.0.8 AX-650
+AX-750
+iDRAC Service Module OS DUP Application iSM XJ9W8 4.3.0.0 All (1) The &#34;Non-expander Storage Backplane&#34; is applicable only to R640 12-drive and R740xd 18-drive chassis configurations. Storage Spaces Direct Ready Nodes and AX nodes Firmware and Drivers for Windows Server 2016 Component Category Part Number Firmware Drivers Software Bundle Minimum Supported Version Software Bundle Minimum Supported Version Mellanox ConnectX-4 Lx Dual Port 25GbE DA/SFP rNDC
+Mellanox ConnextX-4 Lx Dual Port 25GbE DA/SFP Network Adapter, LP
+Mellanox ConnextX-4 Lx Dual Port 25GbE DA/SFP Network Adapter, FH
+Network / RDMA R887V
+20NJD
+MRT0D
+YTPJW 14.31.20.06 F3Y6R 02.80.02 - Installer
+2.80.25134.0 - Driver
+Mellanox Connectx-5 EX Dual Port 100GbE QSFP20 PCIe Adapter, FH
+Mellanox Connectx-5 EX Dual Port 100GbE QSFP20 PCIe Adapter, LP
+Mellanox ConnectX-5 Dual Port 25GbE SFP28 Adapter, FH
+Mellanox ConnectX-5 Dual Port 25GbE SFP28 Adapter, LP
+Network / RDMA 71C1T
+9FTMY
+TDNNT
+V5DG9
+3CJ0V 16.31.20.06 F3Y6R 02.80.02 - Installer
+2.80.25134.0 - Driver
+Mellanox ConnectX-6 Dx Dual Port 100GbE QSFP56 PCIe Adapter, LP
+Mellanox ConnectX-6 Dx Dual Port 100GbE QSFP56 PCIe Adapter, FH
+Network / RDMA F6FXM
+8P2T2
+1XPGP 22.31.20.06 F3Y6R 02.80.02 - Installer
+2.80.25134.0 - Driver
+Qlogic FastLinQ 41262 Dual Port 25Gbe SFP28, rNDC
+QLogic FastLinQ 41262 Dual Port 25Gb SFP28 Adapter, LP
+QLogic FastLinQ 41262 Dual Port 25Gb SFP28 Adapter, FH
+Network / iWARP 4KF8J
+415DX
+51GRM
+TD0M9 15.20.16 RYX52 35.20.14 - Installer
+8.53.1.0 - Driver
+QLogic FastLinQ 41162 Dual Port 10GbE BASE-T &amp; Dual Port 1GbE BASE-T, rNDC
+Network / NDC 0D1WT TD0M9 15.20.16 RYX52 35.20.14 - Installer
+8.53.1.0 - Driver
+QLogic FastLinQ 41164 Quad Port 10GbE SFP&#43;, rNDC Network / NDC XVVY1 TD0M9 15.20.16 RYX52 35.20.14 - Installer
+8.53.1.0 - Driver
+QLogic FastLinQ 41164 Quad Port 10GbE BASE-T, rNDC Network / NDC X1TD1 TD0M9 15.20.16 RYX52 35.20.14 - Installer
+8.53.1.0 - Driver
+Intel X710 DP 10Gb DA/SFP&#43;, &#43;I350 DP 1Gb Ethernet, NDC
+Network / NDC 6VDPG DK4G2 20.0.17 284J6 20.0.0 - Installer
+1.13.104.0 - Driver
+Qlogic 57800 2x10Gb BT &#43; 2x1Gb BT NDC
+QLogic 57800 2x10Gb DA/SFP&#43; &#43;2x1Gb BT NDC
+Network / NDC G8RPD
+165T0
+899FK 15.20.13 MJP9W 35.20.04 - Installer
+Broadcom 5720 Dual Port 1 GbE Network LOM Mezz Card Network / NDC KJMHJ M18WH 21.80.9 49X84 21.80.3 - Installer
+214.0.0.6 - Driver
+Broadcom 57412 2 Port 10Gb SRP&#43; &#43; 5720 2 Port 1 GB Base-T, rNDC Network / NDC NWMNX YPXWJ 21.85.21.91 XYJ8C 218.0.169.0 - Installer
+21.80.16.60 - Driver
+Broadcom 57416 Dual Port 10 Gb E SFP&#43; Network LOM Mezz Card Network / NDC WC9TR YPXWJ 21.85.21.91 XYJ8C 218.0.169.0 - Installer
+21.80.16.60 - Driver
+Broadcom 57414 Dual Port 25 Gb E SFP&#43; Network LOM Mezz Card Network / NDC / OCP 930PP YPXWJ 21.85.21.91
+XYJ8C 218.0.169.0 - Installer
+21.80.16.60 - Driver
+HBA330 Controller, 12Gps Mini Card
+HBA330 Controller, 12Gps Mini Card, LP
+Storage-HBA P2R3R
+J7TNV
+124X2
+NKNVC
+16.17.01.00 P1NP6
+2.51.25.01 - Windows Server 2016
+BOSS-S1 BOSS-S1 2MFVD 3P39V 2.5.13.3024 8KKVC 1.2.0.1052 Chipset driver for Intel platforms Chipset Not applicable Not applicable Not applicable MPXXJ
+10.1.18807.8279
+SAS 2.5” HDD Drives - Capacity Only Form Factor Type Vendor Model Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use 2.5&#34; 7.2K 12Gbps SAS HDD Seagate Avenger ST2000NX0463 TMVN7 GW3V7 NT32 2 TB Capacity 2.5&#34; 10K 12 Gbps SAS HDD Seagate Skybolt DL2400MM0159 RWR8F HYJ6K ST5C 2.4 TB Capacity 2.5&#34; 10K 12 Gbps SAS HDD Toshiba AL15SE AL15SEB24EQY F9NWJ 0T1RG EF06 2.4 TB Capacity 2.5&#34; 10K 12 Gbps SAS HDD Seagate Skybolt ST2400MM0159 36YG1 DY8C3 ST76 2.4 TB Capacity SATA 2.5” HDD Drives - Capacity Only Form Factor Type Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use 2.5&#34; 7.2K 6Gbps SATA HDD Seagate Avenger ST2000NX0423 VR92X GMW4P NB33 2 TB Capacity SATA 3.5” HDD Drives - Capacity Only Form Factor Type Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use 3.5&#34; HDD Hitachi Aries K Plus HUS726020ALA610
+HUS726040ALA610
+8NP2N
+61FFW
+X59KC KV45 2 TB
+4 TB
+Capacity 3.5&#34; HDD Hitachi Rainier MLK HUS722T2TALA600 V9H6C V3DJM MU03 2 TB Capacity 3.5&#34; HDD Toshiba Tomcat R MG04ACA200NY
+MG04ACA400NY
+NPVM6
+95M6K
+V47C4
+FK5D 2 TB
+4 TB
+Capacity 3.5&#34; HDD Seagate Nemo ST2000NM0018-2F3130 W8FW5 CMK5N EA04 2 TB Capacity 3.5&#34; HDD Seagate Makara BP ST2000NM0145-2DC104
+ST4000NM0265-2DC107
+WG9R0
+MWHY9
+M5GJ1 DB34 2 TB
+4 TB
+Capacity 3.5&#34; HDD Hitachi Vela-A HUS726T4TALA6L0 YH3T9 3CFT0 PV07 4 TB Capacity 3.5&#34; HDD Hitachi Vela-AP HUS728T8TALE6L0 1WMVC N26JT RT07 8 TB Capacity 3.5&#34; HDD Hitachi Libra HE10 HUH721008ALE600 KRV2W H12N2 LT21 8 TB Capacity 3.5&#34; HDD Seagate Makara Plus ST8000NM0205-2FF112 92MDW MR6RH PB53 8 TB Capacity 3.5&#34; HDD Toshiba MG06 MG06ACA800EY 9X09C PT7D8 GA09 8 TB Capacity 3.5&#34; HDD Hitachi Leo-A He12 HUH721212ALE600 T2YHT 0HF04 NT10 12 TB Capacity 3.5&#34; HDD Toshiba MG07 MG07ACA12TEY 753F0 0942Y GB03 12 TB Capacity 3.5&#34; HDD Toshiba MG08AC MG08ACA16TEY HPGJ4 MGF80 GC02 16 TB Capacity 3.5&#34; HDD Toshiba MG08AD MG08ADA400NY W2M9N 7NJXF GD03 4 TB Capacity 3.5&#34; HDD Seagate Cimarron ST4000NM016A-2HZ130
+ST8000NM012A-2KE131
+XPJ47
+F4JXT
+179WV
+V1521
+CAJC
+CALD
+4 TB
+8 TB
+Capacity 3.5&#34; HDD Seagate Cimarron BP ST4000NM018B-2TF130
+ST8000NM023B-2TJ133
+6KR2M
+J7W80
+J4X0T
+4P5X3
+LC09
+LA0A
+4 TB
+8 TB
+Capacity SAS 3.5” HDD Drives - Capacity Only Form Factor Type Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use 3.5&#34; HDD Hitachi Aries K Plus HUS726020ALS210
+HUS726040ALS210
+VH6FW
+X4FKY
+68X4C KU45 2 TB
+4 TB
+Capacity 3.5&#34; HDD Toshiba Tomcat R MG04SCA20ENY
+MG04SCA40ENY
+HHX14
+1MVTT
+RG9MK EG03 2 TB
+4 TB
+Capacity 3.5&#34; HDD Seagate Makara BP ST2000NM0155
+ST4000NM0295
+7RCGV
+5JH5X
+3CRY1 DT32 2 TB
+4 TB
+Capacity 3.5&#34; HDD Hitachi Vela-A HUS726T4TALS200 NT1X2 1DM5F PU07 4 TB Capacity 3.5 HDD Hitachi Vela-AP HUS728T8TAL5200 44YFV 6JJPV RS07 8 TB Capacity 3.5&#34; HDD Hitachi Libra HE10 HUH721008AL5200 KRDKK MGW91 LS21 8 TB Capacity 3.5&#34; HDD Seagate Makara Plus ST8000NM0185 M40TH/VFP4M 6421F PT55 8 TB Capacity 3.5&#34; HDD Toshiba MG06 MG06SCA800EY FV725
+4G5GY EH0D 8 TB Capacity 3.5&#34; HDD Hitachi Leo-A He12 HUH721212AL5200 9HXK6 230YX NS10 12 TB Capacity 3.5&#34; HDD Toshiba MG07 MG07SCA12TEY DK7C9/KFJ7G GT72W EI0C 12 TB Capacity 3.5&#34; HDD Seagate Evans ST12000NM009G 7KT9W NJ4NN ESL7 12 TB Capacity 3.5&#34; HDD Seagate Mobula BP ST12000NM0158 YMN53 VTX9C RSL5 12 TB Capacity 3.5&#34; HDD Toshiba MG08SC MG08SCA16TEY 8MG73 9N3RR EJ09 16 TB Capacity 3.5&#34; HDD Toshiba MG08SC MG08SCA16TEY 4N7V0 9N3RR EJ09 16 TB Capacity 3.5&#34; HDD Toshiba MG08SC MG08SCA16TEY 24HF9 9N3RR EJ09 16 TB Capacity 3.5&#34; HDD Seagate Evans ST16000NM010G CNXPV NJ4NN ESL7 16 TB Capacity 3.5&#34; HDD WD Paris-C WUH721816AL5200 VF206 19MP7 US06 16 TB Capacity 3.5&#34; HDD Seagate Cimarron ST4000NM017A
+ST8000NM014A
+KRM6X
+0N660
+WTX15
+PRFRJ
+CSJA
+CSLC
+4 TB
+8 TB
+Capacity 3.5 HDD Seagate Cimarron BP ST4000NM019B
+ST8000NM024B 10N7R
+C5HD0
+912Y9
+DTGXD
+LW0A
+LS0A
+4 TB
+8 TB
+Capacity 3.5 HDD Toshiba MG08SD MG08SDA400NY FN2YX N5XN3 EK05 4 TB Capacity SATA 2.5” SSD Drives - Cache or Capacity Endurance Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use Mixed Use Toshiba HK4 THNSF8800CCSE
+THNSF81D60CSE
+VCRY6
+DMF5Y
+H3XHN DACB 800 GB
+1.6 TB
+Cache, Capacity Mixed Use Micron 5300 MTFDDAK960TDT
+MTFDDAK1T9TDT
+XMWMK
+MMCDY
+X5R54 J004 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Samsung SM863a MZ7KM960HMJP0D3
+MZ7KM1T9HMJP0D3
+DD4G0
+K5P0T
+97D8J GD57 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Samsung SM883 MZ7KH960HAJR0D3
+MZ7KH1T9HAJR0D3
+YDHYX
+71K37
+3J3JR HF58 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Intel S4600 SSDSC2KG960G7R
+SSDSC2KG019T7R
+TR3MY
+MWKF2
+V141M DL5C 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Intel S4610 SSDSC2KG960G8R
+SSDSC2KG019T8R
+X31G3
+F8N2K/55J8H
+2674V DL69 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Micron 5200 MTFDDAK960TDN
+MTFDDAK1T9TDN
+HY1F8
+XKF5Y
+H72VG F005 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Toshiba HK6-V KHK6YVSE960G
+KHK6YVSE1T92
+XW4D1
+0DXJ7
+W0YR1 DBC4 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Hynix SE5031 HFS960G32FEH-BA10A
+HFS1T9G32FEH-BA10A
+7GR2K
+GKTF1
+7X9WV DD02 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Intel Youngsville-RR SSDSC2KG960GZR
+SSDSC2KG019TZR
+8MHYH
+8RXV5
+PN1T8 DL70 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Samsung PM897 MZ7L3960HBLTAD3
+MZ7L31T9HBNAAD3
+MZ7L33T8HBNAAD3
+96KT6
+RRR7M
+N04DW
+2PV21 HH53 960 GB
+1.92 TB
+3.84 TB
+Cache, Capacity SATA 2.5” SSD Drives - Capacity Only Endurance Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use Read Intensive Micron 5200 MTFDDAK1T9TDD VJ36D H72VG F005 1.92 TB Capacity Only Read Intensive Micron 5300 MTFDDAK1T9TDS GYGVV X5R54 J004 1.92 TB Capacity Only Read Intensive Toshiba HK6-R KHK6YRSE1T92
+KHK6YRSE3T84
+919J7
+8PYG5
+W0YR1 DBC4 1.92 TB
+3.84 TB
+Capacity Only Read Intensive Samsung PM883a MZ7LH1T9HALT0D3 9F9Y6 882YH HG58 1.92 TB Capacity Only Read Intensive Samsung PM883 MZ7LH1T9HMLT0D3 Y24T6 93P7P HE59 1.92 TB Capacity Only Read Intensive Hynix SE4011 HFS1T9G32FEH-7A10A 0XMV9 MFCH2 DE07 1.92 TB Capacity Only Read Intensive Intel S4510 SSDSC2KB019T8R 33R2T 2674V DL69 1.92 TB Capacity Only Read Intensive Intel S4500 SSDSC2KB019T7R
+SSDSC2KB038T7R
+XCN15
+3RRN8
+V141M DL5C 1.92 TB
+3.84 TB
+Capacity Only Read Intensive Intel S4510 SSDSC2KB038T8R 1RHK2 2674V DL69 3.84 TB Capacity Only Read Intensive Samsung PM883 MZ7LH3T8HMLT0D3 FYP5F 93P7P HE59 3.84 TB Capacity Only Read Intensive Samsung PM883a MZ7LH3T8HALT0D3 5TVXD 882YH HG58 3.84 TB Capacity Only Read Intensive Hynix SE4011 HFS3T8G32FEH-7410A D6C0R MFCH2 DE07 3.84 TB Capacity Only Read Intensive Micron 5300 MTFDDAK3T8TDT 4H1RX PXMD3 J404 3.84 TB Capacity Only Read Intensive Hynix SE5110 HFS1T9G3H2X069N
+HFS3T8G3H2X069N
+962FP
+3GDK0
+8KVKG DZ02 1.92 TB
+3.84 TB
+Capacity Only Read Intensive Intel Youngsville-RR SSDSC2KB960GZR
+SSDSC2KB019TZR
+SSDSC2KB038TZR
+F6H8H
+VYYW8
+WNPN1
+PN1T8 DL70 960 GB
+1.92 TB
+3.84 TB
+Capacity Only Read Intensive Samsung PM893 MZ7L31T9HBLTAD3
+MZ7L33T8HBLTAD3
+0KYP4
+GCN5W
+5MKJ8 HJ53 1.92 TB
+3.84 TB
+Capacity Only SAS 2.5” SSD Drives - Cache or Capacity Endurance Vendor Series Model Supported Config Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use Write Intensive Toshiba Phoenix M4 PX05SMB080Y
+PX05SMB160Y
+Hyb, AF CN3JH
+GVTYD
+1DJXX AS10 800 GB
+1.6 TB
+Cache, Capacity Mixed Use Toshiba Phoenix M4 PX05SVB096Y
+PX05SVB192Y
+PX05SVB384Y
+Hyb, AF 503M7
+V0K7V
+3DDFT
+1DJXX AS10 960 GB
+1.92 TB
+3.84 TB
+Cache, Capacity Write Intensive Toshiba Phoenix M5-M KPM5XMUG800G
+KPM5XMUG1T60
+Hyb, AF DHRVV
+W9G88
+4P9DW B026 800 GB
+1.6 TB
+Cache, Capacity Mixed Use Samsung PM1645a MZILT800HBHQ0D3
+MZILT1T6HBJR0D3
+Hyb, AF GW8T1
+3TCV6
+VJY6V DWA4 800 GB
+1.6 TB
+Cache, Capacity Mixed Use Samsung PM1645 MZILT1T6HAJQ0D3 Hyb, AF DR0HX C9JP2 DWF8 1.6 TB Cache, Capacity Mixed Use WD Bear Cove Quantum WUSTR6480BSS200
+WUSTR6416BSS200
+Hyb, AF 6VJC9
+6NF96
+X95FJ G130 800 GB
+1.6 TB
+Cache, Capacity Mixed Use Toshiba Phoenix M5-V KPM5XVUG960G
+KPM5XVUG1T92
+KPM5XVUG3T84
+Hyb, AF WFGTH
+2WVYG
+91W3V
+4P9DW B026 960 GB
+1.92 TB
+3.84 TB
+Cache, Capacity Write Intensive Kioxia PM6 KPM6XMUG800G
+KPM6XMUG1T60
+Hyb, AF H6GCD
+5GDXH
+6K5N9 BA0D 800 GB
+1.6 TB
+Cache, Capacity Mixed Use Kioxia PM6 KPM6XVUG800G
+KPM6XVUG1T60
+KPM6XVUG6T40
+Hyb, AF JTKH5
+GD3N0
+6NW3J
+6K5N9 BA0D 800 GB
+1.6 TB
+6.4 TB
+Cache, Capacity Mixed Use Kioxia PM6, FIPS KPM6WVUG960G
+KPM6WVUG1T92
+KPM6WVUG3T84
+Hyb, AF WMWKG
+DHWH5
+81H9C
+376CY BD0D 960 GB
+1.92 TB
+3.84 TB
+Cache, Capacity SAS 2.5” SSD Drives - Capacity Only Endurance Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use Read Intensive WD Bear Cove Plus WUSTR1519ASS200
+WUSTR1538ASS200
+5ND33
+YW17N
+358PN K960 1.92 TB
+3.84 TB
+Capacity Only Read Intensive WD Bear Cove Quantum WUSTVA119BSS200
+WUSTVA138BSS200
+02X38
+FP1KF
+1GGR2 G10A 1.92 TB
+3.84 TB
+Capacity Only Read Intensive Samsung PM1643 MZILT1T9HAJQ0D3
+MZILT3T8HALS0D3
+MZILT7T6HMLA0D3
+F0VFY
+X8F87
+RVYD5
+J3RRK DSF8 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only Read Intensive Samsung PM1643a MZILT1T9HBJR0D3
+MZILT3T8HBLS0D3
+MZILT7T6HALA0D3
+TMTW9
+CRNPH
+84C40
+D7RNT DSA4 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only Read Intensive Samsung PM1633a MZILS3T8HMLH0D3 JR1HP XNGNT DSLA 3.84 TB Capacity Only Read Intensive Toshiba Phoenix M5-R KPM5XRUG1T92
+KPM5XRUG3T84
+TDNP7
+N85XX
+4P9DW B026 1.92 TB
+3.84 TB
+Capacity Only Read Intensive Toshiba Phoenix M4 PX05SRB384Y XCRDV 1DJXX AS10 3.84 TB Capacity Only Read Intensive Kioxia PM6 KPM6XRUG1T92
+KPM6XRUG3T84
+KPM6XRUG7T68
+4CN85
+H9TT5
+PD02Y
+2N1R6 BA0B 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only Read Intensive Kioxia PM6 KPM6WRUG1T92
+KPM6WRUG3T84
+7F2D1
+FH1W9
+376CY BD0D 1.92 TB
+3.84 TB
+Capacity Only Value SAS 2.5” SSD Drives - Cache or Capacity Endurance Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use Mixed Use Toshiba Phoenix RM5 KRM5XVUG3T84
+X78JM
+12D7W B70C 3.84 TB
+Cache, Capacity Mixed Use Seagate LangeBP XS3840LE70154 NWGX3 NX13G 4D0C 3.84 TB Cache, Capacity Mixed Use Seagate LangeBP,SED XS960LE70134
+XS1920LE70134
+XS3840LE70134
+2RDWT
+N6DRV
+YM9HP
+G04C8 4S0C 960 GB
+1.92 TB
+3.84 TB
+Cache, Capacity Mixed Use Kioxia RM6,SED KRM6VVUG960G
+KRM6VVUG1T92
+KRM6VVUG3T84
+42XXC
+N15JP
+FXYGR
+3P4FR BJ02 960 GB
+1.92 TB
+3.84 TB
+Cache, Capacity Read Intensive Toshiba Phoenix RM5 KRM5XRUG7T68 5XD2F 12D7W B70C 7.68 TB Capacity Only Read Intensive Seagate Lange XS7680SE70074 2PKRH H3VHX EC16 7.68 TB Capacity Only Read Intensive Seagate LangeBP XS7680SE70154 5KW0F NX13G 4D0C 7.68 TB Capacity Only Read Intensive Seagate LangeBP,SED XS1920SE70134
+XS3840SE70134
+XS7680SE7013
+K9T53
+4KPKF
+2THYF
+G04C8 4S0C 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only Read Intensive Kioxia RM6,SED KRM6VRUG1T92
+KRM6VRUG3T84
+KRM6VRUG7T68
+1FGWG
+XNXD2
+5MHY8
+3P4FR BJ02 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only NVMe Drives - Cache or Capacity NOTE Intel Optane P4800x is supported only on the R640 Storage Spaces Direct Ready Node. Platform Vendor Form Factor Description Model Number Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use NVMe only Intel 2.5&#34; Optane P4800x SSD/NVMe, 375 GB U.2 2.5&#34; SFF SSDPE21K375GAT 3DM57 HD2YY E201DP38 375 GB Cache, Capacity NVMe only Samsung 2.5&#34; PM1725A
+MZWLL1T6HEHP-000D3
+MZWLL3T2HMJP-000D3
+MZWLL6T4HMLS-000D3
+JD6CH
+JDMHM
+Y3XT2
+34C36
+1.2.1 1.6 TB
+3.2 TB
+6.4 TB
+Cache, Capacity NVMe only Samsung 2.5&#34; PM1725b
+MZWLL1T6HAJQ-000D3
+MZWLL3T2HAJQ-000D3
+MZWLL6T4HMLA-000D3
+4WDXY
+K60N7
+08NMX
+3F3N1 1.2.2 1.6 TB
+3.2 TB
+6.4 TB
+Cache, Capacity NVMe only Intel 2.5&#34; P4600
+SSDPE2KE016T7T
+SSDPE2KE032T7T
+F5P84
+MCV6J
+CR0HC QDV1DP17 1.6 TB
+3.2 TB
+Cache, Capacity NVMe only Intel 2.5&#34; P4610
+SSDPE2KE016T8T
+SSDPE2KE032T8T
+SSDPE2KE064T8T
+58V30
+2CN1T
+X27HY
+GD4X4 VDV1DP25 1.6 TB
+3.2 TB
+6.4 TB
+Cache, Capacity NVMe only KIOXIA 2.5&#34; CM6,FIPS Dell Ent NVMe FIPS CM6 MU 1.6 TB G7N00 T79D5 1.2.0 1.6 TB Cache, Capacity NVMe only Samsung 2.5&#34; PM1735 Dell Ent NVMe AGN MU U.2 1.6 TB 6GK00 RP8RC 2.3.0 1.6 TB Cache, Capacity NVMe only Samsung 2.5&#34; PM1735 V2 Dell Ent NVMe v2 AGN MU U.2 1.6 TB
+Dell Ent NVMe v2 AGN MU U.2 3.2 TB
+Dell Ent NVMe v2 AGN MU U.2 6.4 TB
+0MNMV
+V69W3
+H8D5M
+TRCC6 2.3.0 1.6 TB
+3.2 TB
+6.4 TB
+Cache, Capacity NVMe only Kioxia 2.5&#34; CM6 SP Dell Ent NVMe CM6 MU 1.6 TB
+Dell Ent NVMe CM6 MU 3.2 TB
+Dell Ent NVMe CM6 MU 6.4 TB
+P03YC
+97GR0
+K916X
+511TX 2.1.8 1.6 TB
+3.2 TB
+6.4 TB
+Cache, Capacity NVMe only Intel 2.5&#34; P5600 SP Dell Ent NVMe P5600 MU U.2 1.6 TB
+Dell Ent NVMe P5600 MU U.2 3.2 TB
+C9X5T
+PRKTM
+J7FTF 1.2.4 1.6 TB
+3.2 TB
+Cache, Capacity NVMe only Intel 2.5&#34; Arbordale Plus RR SSDPF2KE016T1E
+SSDPF2KE032T1E
+82TVJ
+TY3M5
+J55N8 1.0.0 1.6 TB
+3.2 TB
+Cache, Capacity NVMe Drives - Capacity Only NOTE Toshiba CD5 960 GB capacity is supported only on the R640 Storage Spaces Direct Ready Node. Endurance Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use Read Intensive
+Toshiba CD5 KCD5XLUG960G
+KCD5XLUG3T84
+DRC9H
+17C57
+T79D5 1.2.0 960 GB
+3.84 TB
+Capacity Only Intel P4510 SSDPE2KX040T8T 5GMK0 GD4X4 VDV1DP25 4 TB Capacity Only Read Intensive KIOXIA CM6 Dell Ent NVMe FIPS CM6 RI 1.92 TB TXP72 T79D5 1.2.0 1.92 TB Capacity Only Read Intensive Intel P5500 Dell Ent NVMe P5500 RI U.2 1.92 TB
+Dell Ent NVMe P5500 RI U.2 3.84 TB
+Dell Ent NVMe P5500 RI U.2 7.68 TB
+WPP9G
+KRT3G
+RNN67
+XXN1D 1.2.3 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only Read Intensive Samsung PM1733 V2 Dell Ent NVMe v2 AGN RI U.2 3.84 TB
+Dell Ent NVMe v2 AGN RI U.2 7.68 TB
+G5N65
+DX74Y
+FJK0C 2.2.0 3.84 TB
+7.68 TB
+Capacity Only Read Intensive Kioxia CM6,SP KCM6XRUL1T92
+KCM6XRUL3T84
+KCM6XRUL7T86
+N0VK0
+8W2G5
+VD0JX
+511TX 2.1.8 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only Read Intensive Intel Arbordale Plus RR SSDPF2KX019T1E
+SSDPF2KX038T1E
+SSDPF2KX076T1E
+0HVC7
+77MRY
+90M2J
+J55N8 1.0.0 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only NVMe PCIe Add In Card (AIC) - Cache or Capacity Platform Vendor Form Factor Description Model Number Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use NVMe only Samsung PCIe AIC PM1725A
+MZPLL1T6HEHP-000D3
+MZPLL6T4HMLS-000D3
+06V6M
+604N5
+34C36 1.2.1 1.6 TB
+6.4 TB
+Cache, Capacity NVMe only Samsung PCIe AIC PM1725b
+MZPLL1T6HAJQ-000D3
+MZPLL6T4HMLA-000D3
+FTX2R
+FW2K0
+3F3N1 1.2.2 1.6 TB
+6.4 TB
+Cache, Capacity NVMe only Samsung PCIe AIC PM1735
+MZPLJ1T6HBJR-00AD3
+MZPLJ6T4HALA-00AD3
+Y7D7D
+91FXC
+RDKVC 2.4.0 1.6 TB
+6.4 TB
+Cache, Capacity">
 <meta property="og:url" content="https://dell.github.io/azurestack-docs/docs/hci/supportmatrix/archive/ws2016/">
 	<meta property="og:site_name" content="Solutions for Microsoft Azure">
 	<meta property="og:title" content="Azure Stack HCI Firmware and Driver Matrix for Legacy Windows Server Operating Systems (Windows Server 2016)">
-	<meta property="og:description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; Introduction This matrix is for Windows Server operating systems that have exited Microsoft mainstream support. This Windows Server operating system is no longer being validated by Dell for use with hyperconverged cluster deployments. The table in the below link is a snapshot of the last firmware and driver versions that were validated by Dell engineering for use with this legacy Windows Server version.">
+	<meta property="og:description" content="Introduction This matrix is for Windows Server operating systems that have exited Microsoft mainstream support. This Windows Server operating system is no longer being validated by Dell for use with hyperconverged cluster deployments. The table in the below link is a snapshot of the last firmware and driver versions that were validated by Dell engineering for use with this legacy Windows Server version. Windows Server 2016 - Microsoft Lifecycle | Microsoft Learn Customers that are still running this Windows Server version for their hyperconverged cluster deployments are encouraged to perform an in-place upgrade to the Windows Server 2022 operating system per instructions at the following link. Perform a Feature Update of Windows Server | Microsoft Learn NOTE To find a particular driver or firmware download, take the Software Bundle ID and append it to the following URL: https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=
+For example: https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=2R28V
+Storage Spaces Direct Ready Nodes and AX nodes Supported Firmware versions Component Type Category Software Bundle Minimum Supported Version Supported Systems BIOS Firmware DUP BIOS W77H1 2.16.1 AX-640
+R640
+AX-740xd
+R740xd
+BIOS Firmware DUP BIOS CKFTD 2.16.1 R440 BIOS Firmware DUP BIOS VHNTJ 2.16.1 R740xd2 BIOS Firmware DUP BIOS 61GYN 2.9.3 AX-6515 BIOS Firmware DUP BIOS C45MX 2.9.3 AX-7525 BIOS Firmware DUP BIOS G7K8G 1.8.2 AX-650
+AX-750
+iDRAC9 with Lifecycle Controller Firmware DUP BMC KMYV9 6.10.00.00 All Non-expander Storage Backplane Firmware DUP Storage-Backplane VV85D 4.35 AX-640
+AX-740xd
+R640
+R740xd
+Non-expander Storage Backplane Firmware DUP Storage-Backplane 6NNVP 3.72 AX-7525
+AX-650
+AX-750
+NVMe Switch Storage Backplane Firmware DUP Storage-Backplane 5XJWN 1.05 AX-750 Expander Storage Backplane Firmware DUP Storage-Backplane H9PV3 1.20 AX-750
+AX-7525
+Expander Storage Backplane Firmware DUP Storage-Backplane 60K1J 2.52 All Intel S3520, M.2, SSD, RI, 240 GB, 480 GB Firmware DUP BOSS (Boot) CHJGV DL43 All Micron 5100, M.2, SSD, 240 GB, 480 GB Firmware DUP BOSS (Boot) YM8KY E013 All Micron 5300, M.2, SSD, 240 GB, 480 GB Firmware DUP BOSS (Boot) PWVX5 J004 All CPLD Firmware DUP CPLD 1GW62 1.0.10 R440 CPLD Firmware DUP CPLD 9N4DH 1.0.6 AX-640
+R640
+CPLD Firmware DUP CPLD G65GH 1.1.4 AX-740xd
+R740xd
+CPLD Firmware DUP CPLD R13D8 1.0.4 R740xd2 CPLD Firmware DUP CPLD 79XGF 1.0.7 AX-6515 CPLD Firmware DUP CPLD XTPX5 1.1.15 AX-7525 CPLD Firmware DUP CPLD N9YTC 1.0.8 AX-650
+AX-750
+iDRAC Service Module OS DUP Application iSM XJ9W8 4.3.0.0 All (1) The &#34;Non-expander Storage Backplane&#34; is applicable only to R640 12-drive and R740xd 18-drive chassis configurations. Storage Spaces Direct Ready Nodes and AX nodes Firmware and Drivers for Windows Server 2016 Component Category Part Number Firmware Drivers Software Bundle Minimum Supported Version Software Bundle Minimum Supported Version Mellanox ConnectX-4 Lx Dual Port 25GbE DA/SFP rNDC
+Mellanox ConnextX-4 Lx Dual Port 25GbE DA/SFP Network Adapter, LP
+Mellanox ConnextX-4 Lx Dual Port 25GbE DA/SFP Network Adapter, FH
+Network / RDMA R887V
+20NJD
+MRT0D
+YTPJW 14.31.20.06 F3Y6R 02.80.02 - Installer
+2.80.25134.0 - Driver
+Mellanox Connectx-5 EX Dual Port 100GbE QSFP20 PCIe Adapter, FH
+Mellanox Connectx-5 EX Dual Port 100GbE QSFP20 PCIe Adapter, LP
+Mellanox ConnectX-5 Dual Port 25GbE SFP28 Adapter, FH
+Mellanox ConnectX-5 Dual Port 25GbE SFP28 Adapter, LP
+Network / RDMA 71C1T
+9FTMY
+TDNNT
+V5DG9
+3CJ0V 16.31.20.06 F3Y6R 02.80.02 - Installer
+2.80.25134.0 - Driver
+Mellanox ConnectX-6 Dx Dual Port 100GbE QSFP56 PCIe Adapter, LP
+Mellanox ConnectX-6 Dx Dual Port 100GbE QSFP56 PCIe Adapter, FH
+Network / RDMA F6FXM
+8P2T2
+1XPGP 22.31.20.06 F3Y6R 02.80.02 - Installer
+2.80.25134.0 - Driver
+Qlogic FastLinQ 41262 Dual Port 25Gbe SFP28, rNDC
+QLogic FastLinQ 41262 Dual Port 25Gb SFP28 Adapter, LP
+QLogic FastLinQ 41262 Dual Port 25Gb SFP28 Adapter, FH
+Network / iWARP 4KF8J
+415DX
+51GRM
+TD0M9 15.20.16 RYX52 35.20.14 - Installer
+8.53.1.0 - Driver
+QLogic FastLinQ 41162 Dual Port 10GbE BASE-T &amp; Dual Port 1GbE BASE-T, rNDC
+Network / NDC 0D1WT TD0M9 15.20.16 RYX52 35.20.14 - Installer
+8.53.1.0 - Driver
+QLogic FastLinQ 41164 Quad Port 10GbE SFP&#43;, rNDC Network / NDC XVVY1 TD0M9 15.20.16 RYX52 35.20.14 - Installer
+8.53.1.0 - Driver
+QLogic FastLinQ 41164 Quad Port 10GbE BASE-T, rNDC Network / NDC X1TD1 TD0M9 15.20.16 RYX52 35.20.14 - Installer
+8.53.1.0 - Driver
+Intel X710 DP 10Gb DA/SFP&#43;, &#43;I350 DP 1Gb Ethernet, NDC
+Network / NDC 6VDPG DK4G2 20.0.17 284J6 20.0.0 - Installer
+1.13.104.0 - Driver
+Qlogic 57800 2x10Gb BT &#43; 2x1Gb BT NDC
+QLogic 57800 2x10Gb DA/SFP&#43; &#43;2x1Gb BT NDC
+Network / NDC G8RPD
+165T0
+899FK 15.20.13 MJP9W 35.20.04 - Installer
+Broadcom 5720 Dual Port 1 GbE Network LOM Mezz Card Network / NDC KJMHJ M18WH 21.80.9 49X84 21.80.3 - Installer
+214.0.0.6 - Driver
+Broadcom 57412 2 Port 10Gb SRP&#43; &#43; 5720 2 Port 1 GB Base-T, rNDC Network / NDC NWMNX YPXWJ 21.85.21.91 XYJ8C 218.0.169.0 - Installer
+21.80.16.60 - Driver
+Broadcom 57416 Dual Port 10 Gb E SFP&#43; Network LOM Mezz Card Network / NDC WC9TR YPXWJ 21.85.21.91 XYJ8C 218.0.169.0 - Installer
+21.80.16.60 - Driver
+Broadcom 57414 Dual Port 25 Gb E SFP&#43; Network LOM Mezz Card Network / NDC / OCP 930PP YPXWJ 21.85.21.91
+XYJ8C 218.0.169.0 - Installer
+21.80.16.60 - Driver
+HBA330 Controller, 12Gps Mini Card
+HBA330 Controller, 12Gps Mini Card, LP
+Storage-HBA P2R3R
+J7TNV
+124X2
+NKNVC
+16.17.01.00 P1NP6
+2.51.25.01 - Windows Server 2016
+BOSS-S1 BOSS-S1 2MFVD 3P39V 2.5.13.3024 8KKVC 1.2.0.1052 Chipset driver for Intel platforms Chipset Not applicable Not applicable Not applicable MPXXJ
+10.1.18807.8279
+SAS 2.5” HDD Drives - Capacity Only Form Factor Type Vendor Model Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use 2.5&#34; 7.2K 12Gbps SAS HDD Seagate Avenger ST2000NX0463 TMVN7 GW3V7 NT32 2 TB Capacity 2.5&#34; 10K 12 Gbps SAS HDD Seagate Skybolt DL2400MM0159 RWR8F HYJ6K ST5C 2.4 TB Capacity 2.5&#34; 10K 12 Gbps SAS HDD Toshiba AL15SE AL15SEB24EQY F9NWJ 0T1RG EF06 2.4 TB Capacity 2.5&#34; 10K 12 Gbps SAS HDD Seagate Skybolt ST2400MM0159 36YG1 DY8C3 ST76 2.4 TB Capacity SATA 2.5” HDD Drives - Capacity Only Form Factor Type Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use 2.5&#34; 7.2K 6Gbps SATA HDD Seagate Avenger ST2000NX0423 VR92X GMW4P NB33 2 TB Capacity SATA 3.5” HDD Drives - Capacity Only Form Factor Type Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use 3.5&#34; HDD Hitachi Aries K Plus HUS726020ALA610
+HUS726040ALA610
+8NP2N
+61FFW
+X59KC KV45 2 TB
+4 TB
+Capacity 3.5&#34; HDD Hitachi Rainier MLK HUS722T2TALA600 V9H6C V3DJM MU03 2 TB Capacity 3.5&#34; HDD Toshiba Tomcat R MG04ACA200NY
+MG04ACA400NY
+NPVM6
+95M6K
+V47C4
+FK5D 2 TB
+4 TB
+Capacity 3.5&#34; HDD Seagate Nemo ST2000NM0018-2F3130 W8FW5 CMK5N EA04 2 TB Capacity 3.5&#34; HDD Seagate Makara BP ST2000NM0145-2DC104
+ST4000NM0265-2DC107
+WG9R0
+MWHY9
+M5GJ1 DB34 2 TB
+4 TB
+Capacity 3.5&#34; HDD Hitachi Vela-A HUS726T4TALA6L0 YH3T9 3CFT0 PV07 4 TB Capacity 3.5&#34; HDD Hitachi Vela-AP HUS728T8TALE6L0 1WMVC N26JT RT07 8 TB Capacity 3.5&#34; HDD Hitachi Libra HE10 HUH721008ALE600 KRV2W H12N2 LT21 8 TB Capacity 3.5&#34; HDD Seagate Makara Plus ST8000NM0205-2FF112 92MDW MR6RH PB53 8 TB Capacity 3.5&#34; HDD Toshiba MG06 MG06ACA800EY 9X09C PT7D8 GA09 8 TB Capacity 3.5&#34; HDD Hitachi Leo-A He12 HUH721212ALE600 T2YHT 0HF04 NT10 12 TB Capacity 3.5&#34; HDD Toshiba MG07 MG07ACA12TEY 753F0 0942Y GB03 12 TB Capacity 3.5&#34; HDD Toshiba MG08AC MG08ACA16TEY HPGJ4 MGF80 GC02 16 TB Capacity 3.5&#34; HDD Toshiba MG08AD MG08ADA400NY W2M9N 7NJXF GD03 4 TB Capacity 3.5&#34; HDD Seagate Cimarron ST4000NM016A-2HZ130
+ST8000NM012A-2KE131
+XPJ47
+F4JXT
+179WV
+V1521
+CAJC
+CALD
+4 TB
+8 TB
+Capacity 3.5&#34; HDD Seagate Cimarron BP ST4000NM018B-2TF130
+ST8000NM023B-2TJ133
+6KR2M
+J7W80
+J4X0T
+4P5X3
+LC09
+LA0A
+4 TB
+8 TB
+Capacity SAS 3.5” HDD Drives - Capacity Only Form Factor Type Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use 3.5&#34; HDD Hitachi Aries K Plus HUS726020ALS210
+HUS726040ALS210
+VH6FW
+X4FKY
+68X4C KU45 2 TB
+4 TB
+Capacity 3.5&#34; HDD Toshiba Tomcat R MG04SCA20ENY
+MG04SCA40ENY
+HHX14
+1MVTT
+RG9MK EG03 2 TB
+4 TB
+Capacity 3.5&#34; HDD Seagate Makara BP ST2000NM0155
+ST4000NM0295
+7RCGV
+5JH5X
+3CRY1 DT32 2 TB
+4 TB
+Capacity 3.5&#34; HDD Hitachi Vela-A HUS726T4TALS200 NT1X2 1DM5F PU07 4 TB Capacity 3.5 HDD Hitachi Vela-AP HUS728T8TAL5200 44YFV 6JJPV RS07 8 TB Capacity 3.5&#34; HDD Hitachi Libra HE10 HUH721008AL5200 KRDKK MGW91 LS21 8 TB Capacity 3.5&#34; HDD Seagate Makara Plus ST8000NM0185 M40TH/VFP4M 6421F PT55 8 TB Capacity 3.5&#34; HDD Toshiba MG06 MG06SCA800EY FV725
+4G5GY EH0D 8 TB Capacity 3.5&#34; HDD Hitachi Leo-A He12 HUH721212AL5200 9HXK6 230YX NS10 12 TB Capacity 3.5&#34; HDD Toshiba MG07 MG07SCA12TEY DK7C9/KFJ7G GT72W EI0C 12 TB Capacity 3.5&#34; HDD Seagate Evans ST12000NM009G 7KT9W NJ4NN ESL7 12 TB Capacity 3.5&#34; HDD Seagate Mobula BP ST12000NM0158 YMN53 VTX9C RSL5 12 TB Capacity 3.5&#34; HDD Toshiba MG08SC MG08SCA16TEY 8MG73 9N3RR EJ09 16 TB Capacity 3.5&#34; HDD Toshiba MG08SC MG08SCA16TEY 4N7V0 9N3RR EJ09 16 TB Capacity 3.5&#34; HDD Toshiba MG08SC MG08SCA16TEY 24HF9 9N3RR EJ09 16 TB Capacity 3.5&#34; HDD Seagate Evans ST16000NM010G CNXPV NJ4NN ESL7 16 TB Capacity 3.5&#34; HDD WD Paris-C WUH721816AL5200 VF206 19MP7 US06 16 TB Capacity 3.5&#34; HDD Seagate Cimarron ST4000NM017A
+ST8000NM014A
+KRM6X
+0N660
+WTX15
+PRFRJ
+CSJA
+CSLC
+4 TB
+8 TB
+Capacity 3.5 HDD Seagate Cimarron BP ST4000NM019B
+ST8000NM024B 10N7R
+C5HD0
+912Y9
+DTGXD
+LW0A
+LS0A
+4 TB
+8 TB
+Capacity 3.5 HDD Toshiba MG08SD MG08SDA400NY FN2YX N5XN3 EK05 4 TB Capacity SATA 2.5” SSD Drives - Cache or Capacity Endurance Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use Mixed Use Toshiba HK4 THNSF8800CCSE
+THNSF81D60CSE
+VCRY6
+DMF5Y
+H3XHN DACB 800 GB
+1.6 TB
+Cache, Capacity Mixed Use Micron 5300 MTFDDAK960TDT
+MTFDDAK1T9TDT
+XMWMK
+MMCDY
+X5R54 J004 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Samsung SM863a MZ7KM960HMJP0D3
+MZ7KM1T9HMJP0D3
+DD4G0
+K5P0T
+97D8J GD57 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Samsung SM883 MZ7KH960HAJR0D3
+MZ7KH1T9HAJR0D3
+YDHYX
+71K37
+3J3JR HF58 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Intel S4600 SSDSC2KG960G7R
+SSDSC2KG019T7R
+TR3MY
+MWKF2
+V141M DL5C 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Intel S4610 SSDSC2KG960G8R
+SSDSC2KG019T8R
+X31G3
+F8N2K/55J8H
+2674V DL69 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Micron 5200 MTFDDAK960TDN
+MTFDDAK1T9TDN
+HY1F8
+XKF5Y
+H72VG F005 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Toshiba HK6-V KHK6YVSE960G
+KHK6YVSE1T92
+XW4D1
+0DXJ7
+W0YR1 DBC4 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Hynix SE5031 HFS960G32FEH-BA10A
+HFS1T9G32FEH-BA10A
+7GR2K
+GKTF1
+7X9WV DD02 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Intel Youngsville-RR SSDSC2KG960GZR
+SSDSC2KG019TZR
+8MHYH
+8RXV5
+PN1T8 DL70 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Samsung PM897 MZ7L3960HBLTAD3
+MZ7L31T9HBNAAD3
+MZ7L33T8HBNAAD3
+96KT6
+RRR7M
+N04DW
+2PV21 HH53 960 GB
+1.92 TB
+3.84 TB
+Cache, Capacity SATA 2.5” SSD Drives - Capacity Only Endurance Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use Read Intensive Micron 5200 MTFDDAK1T9TDD VJ36D H72VG F005 1.92 TB Capacity Only Read Intensive Micron 5300 MTFDDAK1T9TDS GYGVV X5R54 J004 1.92 TB Capacity Only Read Intensive Toshiba HK6-R KHK6YRSE1T92
+KHK6YRSE3T84
+919J7
+8PYG5
+W0YR1 DBC4 1.92 TB
+3.84 TB
+Capacity Only Read Intensive Samsung PM883a MZ7LH1T9HALT0D3 9F9Y6 882YH HG58 1.92 TB Capacity Only Read Intensive Samsung PM883 MZ7LH1T9HMLT0D3 Y24T6 93P7P HE59 1.92 TB Capacity Only Read Intensive Hynix SE4011 HFS1T9G32FEH-7A10A 0XMV9 MFCH2 DE07 1.92 TB Capacity Only Read Intensive Intel S4510 SSDSC2KB019T8R 33R2T 2674V DL69 1.92 TB Capacity Only Read Intensive Intel S4500 SSDSC2KB019T7R
+SSDSC2KB038T7R
+XCN15
+3RRN8
+V141M DL5C 1.92 TB
+3.84 TB
+Capacity Only Read Intensive Intel S4510 SSDSC2KB038T8R 1RHK2 2674V DL69 3.84 TB Capacity Only Read Intensive Samsung PM883 MZ7LH3T8HMLT0D3 FYP5F 93P7P HE59 3.84 TB Capacity Only Read Intensive Samsung PM883a MZ7LH3T8HALT0D3 5TVXD 882YH HG58 3.84 TB Capacity Only Read Intensive Hynix SE4011 HFS3T8G32FEH-7410A D6C0R MFCH2 DE07 3.84 TB Capacity Only Read Intensive Micron 5300 MTFDDAK3T8TDT 4H1RX PXMD3 J404 3.84 TB Capacity Only Read Intensive Hynix SE5110 HFS1T9G3H2X069N
+HFS3T8G3H2X069N
+962FP
+3GDK0
+8KVKG DZ02 1.92 TB
+3.84 TB
+Capacity Only Read Intensive Intel Youngsville-RR SSDSC2KB960GZR
+SSDSC2KB019TZR
+SSDSC2KB038TZR
+F6H8H
+VYYW8
+WNPN1
+PN1T8 DL70 960 GB
+1.92 TB
+3.84 TB
+Capacity Only Read Intensive Samsung PM893 MZ7L31T9HBLTAD3
+MZ7L33T8HBLTAD3
+0KYP4
+GCN5W
+5MKJ8 HJ53 1.92 TB
+3.84 TB
+Capacity Only SAS 2.5” SSD Drives - Cache or Capacity Endurance Vendor Series Model Supported Config Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use Write Intensive Toshiba Phoenix M4 PX05SMB080Y
+PX05SMB160Y
+Hyb, AF CN3JH
+GVTYD
+1DJXX AS10 800 GB
+1.6 TB
+Cache, Capacity Mixed Use Toshiba Phoenix M4 PX05SVB096Y
+PX05SVB192Y
+PX05SVB384Y
+Hyb, AF 503M7
+V0K7V
+3DDFT
+1DJXX AS10 960 GB
+1.92 TB
+3.84 TB
+Cache, Capacity Write Intensive Toshiba Phoenix M5-M KPM5XMUG800G
+KPM5XMUG1T60
+Hyb, AF DHRVV
+W9G88
+4P9DW B026 800 GB
+1.6 TB
+Cache, Capacity Mixed Use Samsung PM1645a MZILT800HBHQ0D3
+MZILT1T6HBJR0D3
+Hyb, AF GW8T1
+3TCV6
+VJY6V DWA4 800 GB
+1.6 TB
+Cache, Capacity Mixed Use Samsung PM1645 MZILT1T6HAJQ0D3 Hyb, AF DR0HX C9JP2 DWF8 1.6 TB Cache, Capacity Mixed Use WD Bear Cove Quantum WUSTR6480BSS200
+WUSTR6416BSS200
+Hyb, AF 6VJC9
+6NF96
+X95FJ G130 800 GB
+1.6 TB
+Cache, Capacity Mixed Use Toshiba Phoenix M5-V KPM5XVUG960G
+KPM5XVUG1T92
+KPM5XVUG3T84
+Hyb, AF WFGTH
+2WVYG
+91W3V
+4P9DW B026 960 GB
+1.92 TB
+3.84 TB
+Cache, Capacity Write Intensive Kioxia PM6 KPM6XMUG800G
+KPM6XMUG1T60
+Hyb, AF H6GCD
+5GDXH
+6K5N9 BA0D 800 GB
+1.6 TB
+Cache, Capacity Mixed Use Kioxia PM6 KPM6XVUG800G
+KPM6XVUG1T60
+KPM6XVUG6T40
+Hyb, AF JTKH5
+GD3N0
+6NW3J
+6K5N9 BA0D 800 GB
+1.6 TB
+6.4 TB
+Cache, Capacity Mixed Use Kioxia PM6, FIPS KPM6WVUG960G
+KPM6WVUG1T92
+KPM6WVUG3T84
+Hyb, AF WMWKG
+DHWH5
+81H9C
+376CY BD0D 960 GB
+1.92 TB
+3.84 TB
+Cache, Capacity SAS 2.5” SSD Drives - Capacity Only Endurance Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use Read Intensive WD Bear Cove Plus WUSTR1519ASS200
+WUSTR1538ASS200
+5ND33
+YW17N
+358PN K960 1.92 TB
+3.84 TB
+Capacity Only Read Intensive WD Bear Cove Quantum WUSTVA119BSS200
+WUSTVA138BSS200
+02X38
+FP1KF
+1GGR2 G10A 1.92 TB
+3.84 TB
+Capacity Only Read Intensive Samsung PM1643 MZILT1T9HAJQ0D3
+MZILT3T8HALS0D3
+MZILT7T6HMLA0D3
+F0VFY
+X8F87
+RVYD5
+J3RRK DSF8 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only Read Intensive Samsung PM1643a MZILT1T9HBJR0D3
+MZILT3T8HBLS0D3
+MZILT7T6HALA0D3
+TMTW9
+CRNPH
+84C40
+D7RNT DSA4 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only Read Intensive Samsung PM1633a MZILS3T8HMLH0D3 JR1HP XNGNT DSLA 3.84 TB Capacity Only Read Intensive Toshiba Phoenix M5-R KPM5XRUG1T92
+KPM5XRUG3T84
+TDNP7
+N85XX
+4P9DW B026 1.92 TB
+3.84 TB
+Capacity Only Read Intensive Toshiba Phoenix M4 PX05SRB384Y XCRDV 1DJXX AS10 3.84 TB Capacity Only Read Intensive Kioxia PM6 KPM6XRUG1T92
+KPM6XRUG3T84
+KPM6XRUG7T68
+4CN85
+H9TT5
+PD02Y
+2N1R6 BA0B 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only Read Intensive Kioxia PM6 KPM6WRUG1T92
+KPM6WRUG3T84
+7F2D1
+FH1W9
+376CY BD0D 1.92 TB
+3.84 TB
+Capacity Only Value SAS 2.5” SSD Drives - Cache or Capacity Endurance Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use Mixed Use Toshiba Phoenix RM5 KRM5XVUG3T84
+X78JM
+12D7W B70C 3.84 TB
+Cache, Capacity Mixed Use Seagate LangeBP XS3840LE70154 NWGX3 NX13G 4D0C 3.84 TB Cache, Capacity Mixed Use Seagate LangeBP,SED XS960LE70134
+XS1920LE70134
+XS3840LE70134
+2RDWT
+N6DRV
+YM9HP
+G04C8 4S0C 960 GB
+1.92 TB
+3.84 TB
+Cache, Capacity Mixed Use Kioxia RM6,SED KRM6VVUG960G
+KRM6VVUG1T92
+KRM6VVUG3T84
+42XXC
+N15JP
+FXYGR
+3P4FR BJ02 960 GB
+1.92 TB
+3.84 TB
+Cache, Capacity Read Intensive Toshiba Phoenix RM5 KRM5XRUG7T68 5XD2F 12D7W B70C 7.68 TB Capacity Only Read Intensive Seagate Lange XS7680SE70074 2PKRH H3VHX EC16 7.68 TB Capacity Only Read Intensive Seagate LangeBP XS7680SE70154 5KW0F NX13G 4D0C 7.68 TB Capacity Only Read Intensive Seagate LangeBP,SED XS1920SE70134
+XS3840SE70134
+XS7680SE7013
+K9T53
+4KPKF
+2THYF
+G04C8 4S0C 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only Read Intensive Kioxia RM6,SED KRM6VRUG1T92
+KRM6VRUG3T84
+KRM6VRUG7T68
+1FGWG
+XNXD2
+5MHY8
+3P4FR BJ02 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only NVMe Drives - Cache or Capacity NOTE Intel Optane P4800x is supported only on the R640 Storage Spaces Direct Ready Node. Platform Vendor Form Factor Description Model Number Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use NVMe only Intel 2.5&#34; Optane P4800x SSD/NVMe, 375 GB U.2 2.5&#34; SFF SSDPE21K375GAT 3DM57 HD2YY E201DP38 375 GB Cache, Capacity NVMe only Samsung 2.5&#34; PM1725A
+MZWLL1T6HEHP-000D3
+MZWLL3T2HMJP-000D3
+MZWLL6T4HMLS-000D3
+JD6CH
+JDMHM
+Y3XT2
+34C36
+1.2.1 1.6 TB
+3.2 TB
+6.4 TB
+Cache, Capacity NVMe only Samsung 2.5&#34; PM1725b
+MZWLL1T6HAJQ-000D3
+MZWLL3T2HAJQ-000D3
+MZWLL6T4HMLA-000D3
+4WDXY
+K60N7
+08NMX
+3F3N1 1.2.2 1.6 TB
+3.2 TB
+6.4 TB
+Cache, Capacity NVMe only Intel 2.5&#34; P4600
+SSDPE2KE016T7T
+SSDPE2KE032T7T
+F5P84
+MCV6J
+CR0HC QDV1DP17 1.6 TB
+3.2 TB
+Cache, Capacity NVMe only Intel 2.5&#34; P4610
+SSDPE2KE016T8T
+SSDPE2KE032T8T
+SSDPE2KE064T8T
+58V30
+2CN1T
+X27HY
+GD4X4 VDV1DP25 1.6 TB
+3.2 TB
+6.4 TB
+Cache, Capacity NVMe only KIOXIA 2.5&#34; CM6,FIPS Dell Ent NVMe FIPS CM6 MU 1.6 TB G7N00 T79D5 1.2.0 1.6 TB Cache, Capacity NVMe only Samsung 2.5&#34; PM1735 Dell Ent NVMe AGN MU U.2 1.6 TB 6GK00 RP8RC 2.3.0 1.6 TB Cache, Capacity NVMe only Samsung 2.5&#34; PM1735 V2 Dell Ent NVMe v2 AGN MU U.2 1.6 TB
+Dell Ent NVMe v2 AGN MU U.2 3.2 TB
+Dell Ent NVMe v2 AGN MU U.2 6.4 TB
+0MNMV
+V69W3
+H8D5M
+TRCC6 2.3.0 1.6 TB
+3.2 TB
+6.4 TB
+Cache, Capacity NVMe only Kioxia 2.5&#34; CM6 SP Dell Ent NVMe CM6 MU 1.6 TB
+Dell Ent NVMe CM6 MU 3.2 TB
+Dell Ent NVMe CM6 MU 6.4 TB
+P03YC
+97GR0
+K916X
+511TX 2.1.8 1.6 TB
+3.2 TB
+6.4 TB
+Cache, Capacity NVMe only Intel 2.5&#34; P5600 SP Dell Ent NVMe P5600 MU U.2 1.6 TB
+Dell Ent NVMe P5600 MU U.2 3.2 TB
+C9X5T
+PRKTM
+J7FTF 1.2.4 1.6 TB
+3.2 TB
+Cache, Capacity NVMe only Intel 2.5&#34; Arbordale Plus RR SSDPF2KE016T1E
+SSDPF2KE032T1E
+82TVJ
+TY3M5
+J55N8 1.0.0 1.6 TB
+3.2 TB
+Cache, Capacity NVMe Drives - Capacity Only NOTE Toshiba CD5 960 GB capacity is supported only on the R640 Storage Spaces Direct Ready Node. Endurance Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use Read Intensive
+Toshiba CD5 KCD5XLUG960G
+KCD5XLUG3T84
+DRC9H
+17C57
+T79D5 1.2.0 960 GB
+3.84 TB
+Capacity Only Intel P4510 SSDPE2KX040T8T 5GMK0 GD4X4 VDV1DP25 4 TB Capacity Only Read Intensive KIOXIA CM6 Dell Ent NVMe FIPS CM6 RI 1.92 TB TXP72 T79D5 1.2.0 1.92 TB Capacity Only Read Intensive Intel P5500 Dell Ent NVMe P5500 RI U.2 1.92 TB
+Dell Ent NVMe P5500 RI U.2 3.84 TB
+Dell Ent NVMe P5500 RI U.2 7.68 TB
+WPP9G
+KRT3G
+RNN67
+XXN1D 1.2.3 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only Read Intensive Samsung PM1733 V2 Dell Ent NVMe v2 AGN RI U.2 3.84 TB
+Dell Ent NVMe v2 AGN RI U.2 7.68 TB
+G5N65
+DX74Y
+FJK0C 2.2.0 3.84 TB
+7.68 TB
+Capacity Only Read Intensive Kioxia CM6,SP KCM6XRUL1T92
+KCM6XRUL3T84
+KCM6XRUL7T86
+N0VK0
+8W2G5
+VD0JX
+511TX 2.1.8 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only Read Intensive Intel Arbordale Plus RR SSDPF2KX019T1E
+SSDPF2KX038T1E
+SSDPF2KX076T1E
+0HVC7
+77MRY
+90M2J
+J55N8 1.0.0 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only NVMe PCIe Add In Card (AIC) - Cache or Capacity Platform Vendor Form Factor Description Model Number Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use NVMe only Samsung PCIe AIC PM1725A
+MZPLL1T6HEHP-000D3
+MZPLL6T4HMLS-000D3
+06V6M
+604N5
+34C36 1.2.1 1.6 TB
+6.4 TB
+Cache, Capacity NVMe only Samsung PCIe AIC PM1725b
+MZPLL1T6HAJQ-000D3
+MZPLL6T4HMLA-000D3
+FTX2R
+FW2K0
+3F3N1 1.2.2 1.6 TB
+6.4 TB
+Cache, Capacity NVMe only Samsung PCIe AIC PM1735
+MZPLJ1T6HBJR-00AD3
+MZPLJ6T4HALA-00AD3
+Y7D7D
+91FXC
+RDKVC 2.4.0 1.6 TB
+6.4 TB
+Cache, Capacity">
 	<meta property="og:locale" content="en">
 	<meta property="og:type" content="website">
 
 	<meta itemprop="name" content="Azure Stack HCI Firmware and Driver Matrix for Legacy Windows Server Operating Systems (Windows Server 2016)">
-	<meta itemprop="description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; Introduction This matrix is for Windows Server operating systems that have exited Microsoft mainstream support. This Windows Server operating system is no longer being validated by Dell for use with hyperconverged cluster deployments. The table in the below link is a snapshot of the last firmware and driver versions that were validated by Dell engineering for use with this legacy Windows Server version.">
+	<meta itemprop="description" content="Introduction This matrix is for Windows Server operating systems that have exited Microsoft mainstream support. This Windows Server operating system is no longer being validated by Dell for use with hyperconverged cluster deployments. The table in the below link is a snapshot of the last firmware and driver versions that were validated by Dell engineering for use with this legacy Windows Server version. Windows Server 2016 - Microsoft Lifecycle | Microsoft Learn Customers that are still running this Windows Server version for their hyperconverged cluster deployments are encouraged to perform an in-place upgrade to the Windows Server 2022 operating system per instructions at the following link. Perform a Feature Update of Windows Server | Microsoft Learn NOTE To find a particular driver or firmware download, take the Software Bundle ID and append it to the following URL: https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=
+For example: https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=2R28V
+Storage Spaces Direct Ready Nodes and AX nodes Supported Firmware versions Component Type Category Software Bundle Minimum Supported Version Supported Systems BIOS Firmware DUP BIOS W77H1 2.16.1 AX-640
+R640
+AX-740xd
+R740xd
+BIOS Firmware DUP BIOS CKFTD 2.16.1 R440 BIOS Firmware DUP BIOS VHNTJ 2.16.1 R740xd2 BIOS Firmware DUP BIOS 61GYN 2.9.3 AX-6515 BIOS Firmware DUP BIOS C45MX 2.9.3 AX-7525 BIOS Firmware DUP BIOS G7K8G 1.8.2 AX-650
+AX-750
+iDRAC9 with Lifecycle Controller Firmware DUP BMC KMYV9 6.10.00.00 All Non-expander Storage Backplane Firmware DUP Storage-Backplane VV85D 4.35 AX-640
+AX-740xd
+R640
+R740xd
+Non-expander Storage Backplane Firmware DUP Storage-Backplane 6NNVP 3.72 AX-7525
+AX-650
+AX-750
+NVMe Switch Storage Backplane Firmware DUP Storage-Backplane 5XJWN 1.05 AX-750 Expander Storage Backplane Firmware DUP Storage-Backplane H9PV3 1.20 AX-750
+AX-7525
+Expander Storage Backplane Firmware DUP Storage-Backplane 60K1J 2.52 All Intel S3520, M.2, SSD, RI, 240 GB, 480 GB Firmware DUP BOSS (Boot) CHJGV DL43 All Micron 5100, M.2, SSD, 240 GB, 480 GB Firmware DUP BOSS (Boot) YM8KY E013 All Micron 5300, M.2, SSD, 240 GB, 480 GB Firmware DUP BOSS (Boot) PWVX5 J004 All CPLD Firmware DUP CPLD 1GW62 1.0.10 R440 CPLD Firmware DUP CPLD 9N4DH 1.0.6 AX-640
+R640
+CPLD Firmware DUP CPLD G65GH 1.1.4 AX-740xd
+R740xd
+CPLD Firmware DUP CPLD R13D8 1.0.4 R740xd2 CPLD Firmware DUP CPLD 79XGF 1.0.7 AX-6515 CPLD Firmware DUP CPLD XTPX5 1.1.15 AX-7525 CPLD Firmware DUP CPLD N9YTC 1.0.8 AX-650
+AX-750
+iDRAC Service Module OS DUP Application iSM XJ9W8 4.3.0.0 All (1) The &#34;Non-expander Storage Backplane&#34; is applicable only to R640 12-drive and R740xd 18-drive chassis configurations. Storage Spaces Direct Ready Nodes and AX nodes Firmware and Drivers for Windows Server 2016 Component Category Part Number Firmware Drivers Software Bundle Minimum Supported Version Software Bundle Minimum Supported Version Mellanox ConnectX-4 Lx Dual Port 25GbE DA/SFP rNDC
+Mellanox ConnextX-4 Lx Dual Port 25GbE DA/SFP Network Adapter, LP
+Mellanox ConnextX-4 Lx Dual Port 25GbE DA/SFP Network Adapter, FH
+Network / RDMA R887V
+20NJD
+MRT0D
+YTPJW 14.31.20.06 F3Y6R 02.80.02 - Installer
+2.80.25134.0 - Driver
+Mellanox Connectx-5 EX Dual Port 100GbE QSFP20 PCIe Adapter, FH
+Mellanox Connectx-5 EX Dual Port 100GbE QSFP20 PCIe Adapter, LP
+Mellanox ConnectX-5 Dual Port 25GbE SFP28 Adapter, FH
+Mellanox ConnectX-5 Dual Port 25GbE SFP28 Adapter, LP
+Network / RDMA 71C1T
+9FTMY
+TDNNT
+V5DG9
+3CJ0V 16.31.20.06 F3Y6R 02.80.02 - Installer
+2.80.25134.0 - Driver
+Mellanox ConnectX-6 Dx Dual Port 100GbE QSFP56 PCIe Adapter, LP
+Mellanox ConnectX-6 Dx Dual Port 100GbE QSFP56 PCIe Adapter, FH
+Network / RDMA F6FXM
+8P2T2
+1XPGP 22.31.20.06 F3Y6R 02.80.02 - Installer
+2.80.25134.0 - Driver
+Qlogic FastLinQ 41262 Dual Port 25Gbe SFP28, rNDC
+QLogic FastLinQ 41262 Dual Port 25Gb SFP28 Adapter, LP
+QLogic FastLinQ 41262 Dual Port 25Gb SFP28 Adapter, FH
+Network / iWARP 4KF8J
+415DX
+51GRM
+TD0M9 15.20.16 RYX52 35.20.14 - Installer
+8.53.1.0 - Driver
+QLogic FastLinQ 41162 Dual Port 10GbE BASE-T &amp; Dual Port 1GbE BASE-T, rNDC
+Network / NDC 0D1WT TD0M9 15.20.16 RYX52 35.20.14 - Installer
+8.53.1.0 - Driver
+QLogic FastLinQ 41164 Quad Port 10GbE SFP&#43;, rNDC Network / NDC XVVY1 TD0M9 15.20.16 RYX52 35.20.14 - Installer
+8.53.1.0 - Driver
+QLogic FastLinQ 41164 Quad Port 10GbE BASE-T, rNDC Network / NDC X1TD1 TD0M9 15.20.16 RYX52 35.20.14 - Installer
+8.53.1.0 - Driver
+Intel X710 DP 10Gb DA/SFP&#43;, &#43;I350 DP 1Gb Ethernet, NDC
+Network / NDC 6VDPG DK4G2 20.0.17 284J6 20.0.0 - Installer
+1.13.104.0 - Driver
+Qlogic 57800 2x10Gb BT &#43; 2x1Gb BT NDC
+QLogic 57800 2x10Gb DA/SFP&#43; &#43;2x1Gb BT NDC
+Network / NDC G8RPD
+165T0
+899FK 15.20.13 MJP9W 35.20.04 - Installer
+Broadcom 5720 Dual Port 1 GbE Network LOM Mezz Card Network / NDC KJMHJ M18WH 21.80.9 49X84 21.80.3 - Installer
+214.0.0.6 - Driver
+Broadcom 57412 2 Port 10Gb SRP&#43; &#43; 5720 2 Port 1 GB Base-T, rNDC Network / NDC NWMNX YPXWJ 21.85.21.91 XYJ8C 218.0.169.0 - Installer
+21.80.16.60 - Driver
+Broadcom 57416 Dual Port 10 Gb E SFP&#43; Network LOM Mezz Card Network / NDC WC9TR YPXWJ 21.85.21.91 XYJ8C 218.0.169.0 - Installer
+21.80.16.60 - Driver
+Broadcom 57414 Dual Port 25 Gb E SFP&#43; Network LOM Mezz Card Network / NDC / OCP 930PP YPXWJ 21.85.21.91
+XYJ8C 218.0.169.0 - Installer
+21.80.16.60 - Driver
+HBA330 Controller, 12Gps Mini Card
+HBA330 Controller, 12Gps Mini Card, LP
+Storage-HBA P2R3R
+J7TNV
+124X2
+NKNVC
+16.17.01.00 P1NP6
+2.51.25.01 - Windows Server 2016
+BOSS-S1 BOSS-S1 2MFVD 3P39V 2.5.13.3024 8KKVC 1.2.0.1052 Chipset driver for Intel platforms Chipset Not applicable Not applicable Not applicable MPXXJ
+10.1.18807.8279
+SAS 2.5” HDD Drives - Capacity Only Form Factor Type Vendor Model Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use 2.5&#34; 7.2K 12Gbps SAS HDD Seagate Avenger ST2000NX0463 TMVN7 GW3V7 NT32 2 TB Capacity 2.5&#34; 10K 12 Gbps SAS HDD Seagate Skybolt DL2400MM0159 RWR8F HYJ6K ST5C 2.4 TB Capacity 2.5&#34; 10K 12 Gbps SAS HDD Toshiba AL15SE AL15SEB24EQY F9NWJ 0T1RG EF06 2.4 TB Capacity 2.5&#34; 10K 12 Gbps SAS HDD Seagate Skybolt ST2400MM0159 36YG1 DY8C3 ST76 2.4 TB Capacity SATA 2.5” HDD Drives - Capacity Only Form Factor Type Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use 2.5&#34; 7.2K 6Gbps SATA HDD Seagate Avenger ST2000NX0423 VR92X GMW4P NB33 2 TB Capacity SATA 3.5” HDD Drives - Capacity Only Form Factor Type Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use 3.5&#34; HDD Hitachi Aries K Plus HUS726020ALA610
+HUS726040ALA610
+8NP2N
+61FFW
+X59KC KV45 2 TB
+4 TB
+Capacity 3.5&#34; HDD Hitachi Rainier MLK HUS722T2TALA600 V9H6C V3DJM MU03 2 TB Capacity 3.5&#34; HDD Toshiba Tomcat R MG04ACA200NY
+MG04ACA400NY
+NPVM6
+95M6K
+V47C4
+FK5D 2 TB
+4 TB
+Capacity 3.5&#34; HDD Seagate Nemo ST2000NM0018-2F3130 W8FW5 CMK5N EA04 2 TB Capacity 3.5&#34; HDD Seagate Makara BP ST2000NM0145-2DC104
+ST4000NM0265-2DC107
+WG9R0
+MWHY9
+M5GJ1 DB34 2 TB
+4 TB
+Capacity 3.5&#34; HDD Hitachi Vela-A HUS726T4TALA6L0 YH3T9 3CFT0 PV07 4 TB Capacity 3.5&#34; HDD Hitachi Vela-AP HUS728T8TALE6L0 1WMVC N26JT RT07 8 TB Capacity 3.5&#34; HDD Hitachi Libra HE10 HUH721008ALE600 KRV2W H12N2 LT21 8 TB Capacity 3.5&#34; HDD Seagate Makara Plus ST8000NM0205-2FF112 92MDW MR6RH PB53 8 TB Capacity 3.5&#34; HDD Toshiba MG06 MG06ACA800EY 9X09C PT7D8 GA09 8 TB Capacity 3.5&#34; HDD Hitachi Leo-A He12 HUH721212ALE600 T2YHT 0HF04 NT10 12 TB Capacity 3.5&#34; HDD Toshiba MG07 MG07ACA12TEY 753F0 0942Y GB03 12 TB Capacity 3.5&#34; HDD Toshiba MG08AC MG08ACA16TEY HPGJ4 MGF80 GC02 16 TB Capacity 3.5&#34; HDD Toshiba MG08AD MG08ADA400NY W2M9N 7NJXF GD03 4 TB Capacity 3.5&#34; HDD Seagate Cimarron ST4000NM016A-2HZ130
+ST8000NM012A-2KE131
+XPJ47
+F4JXT
+179WV
+V1521
+CAJC
+CALD
+4 TB
+8 TB
+Capacity 3.5&#34; HDD Seagate Cimarron BP ST4000NM018B-2TF130
+ST8000NM023B-2TJ133
+6KR2M
+J7W80
+J4X0T
+4P5X3
+LC09
+LA0A
+4 TB
+8 TB
+Capacity SAS 3.5” HDD Drives - Capacity Only Form Factor Type Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use 3.5&#34; HDD Hitachi Aries K Plus HUS726020ALS210
+HUS726040ALS210
+VH6FW
+X4FKY
+68X4C KU45 2 TB
+4 TB
+Capacity 3.5&#34; HDD Toshiba Tomcat R MG04SCA20ENY
+MG04SCA40ENY
+HHX14
+1MVTT
+RG9MK EG03 2 TB
+4 TB
+Capacity 3.5&#34; HDD Seagate Makara BP ST2000NM0155
+ST4000NM0295
+7RCGV
+5JH5X
+3CRY1 DT32 2 TB
+4 TB
+Capacity 3.5&#34; HDD Hitachi Vela-A HUS726T4TALS200 NT1X2 1DM5F PU07 4 TB Capacity 3.5 HDD Hitachi Vela-AP HUS728T8TAL5200 44YFV 6JJPV RS07 8 TB Capacity 3.5&#34; HDD Hitachi Libra HE10 HUH721008AL5200 KRDKK MGW91 LS21 8 TB Capacity 3.5&#34; HDD Seagate Makara Plus ST8000NM0185 M40TH/VFP4M 6421F PT55 8 TB Capacity 3.5&#34; HDD Toshiba MG06 MG06SCA800EY FV725
+4G5GY EH0D 8 TB Capacity 3.5&#34; HDD Hitachi Leo-A He12 HUH721212AL5200 9HXK6 230YX NS10 12 TB Capacity 3.5&#34; HDD Toshiba MG07 MG07SCA12TEY DK7C9/KFJ7G GT72W EI0C 12 TB Capacity 3.5&#34; HDD Seagate Evans ST12000NM009G 7KT9W NJ4NN ESL7 12 TB Capacity 3.5&#34; HDD Seagate Mobula BP ST12000NM0158 YMN53 VTX9C RSL5 12 TB Capacity 3.5&#34; HDD Toshiba MG08SC MG08SCA16TEY 8MG73 9N3RR EJ09 16 TB Capacity 3.5&#34; HDD Toshiba MG08SC MG08SCA16TEY 4N7V0 9N3RR EJ09 16 TB Capacity 3.5&#34; HDD Toshiba MG08SC MG08SCA16TEY 24HF9 9N3RR EJ09 16 TB Capacity 3.5&#34; HDD Seagate Evans ST16000NM010G CNXPV NJ4NN ESL7 16 TB Capacity 3.5&#34; HDD WD Paris-C WUH721816AL5200 VF206 19MP7 US06 16 TB Capacity 3.5&#34; HDD Seagate Cimarron ST4000NM017A
+ST8000NM014A
+KRM6X
+0N660
+WTX15
+PRFRJ
+CSJA
+CSLC
+4 TB
+8 TB
+Capacity 3.5 HDD Seagate Cimarron BP ST4000NM019B
+ST8000NM024B 10N7R
+C5HD0
+912Y9
+DTGXD
+LW0A
+LS0A
+4 TB
+8 TB
+Capacity 3.5 HDD Toshiba MG08SD MG08SDA400NY FN2YX N5XN3 EK05 4 TB Capacity SATA 2.5” SSD Drives - Cache or Capacity Endurance Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use Mixed Use Toshiba HK4 THNSF8800CCSE
+THNSF81D60CSE
+VCRY6
+DMF5Y
+H3XHN DACB 800 GB
+1.6 TB
+Cache, Capacity Mixed Use Micron 5300 MTFDDAK960TDT
+MTFDDAK1T9TDT
+XMWMK
+MMCDY
+X5R54 J004 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Samsung SM863a MZ7KM960HMJP0D3
+MZ7KM1T9HMJP0D3
+DD4G0
+K5P0T
+97D8J GD57 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Samsung SM883 MZ7KH960HAJR0D3
+MZ7KH1T9HAJR0D3
+YDHYX
+71K37
+3J3JR HF58 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Intel S4600 SSDSC2KG960G7R
+SSDSC2KG019T7R
+TR3MY
+MWKF2
+V141M DL5C 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Intel S4610 SSDSC2KG960G8R
+SSDSC2KG019T8R
+X31G3
+F8N2K/55J8H
+2674V DL69 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Micron 5200 MTFDDAK960TDN
+MTFDDAK1T9TDN
+HY1F8
+XKF5Y
+H72VG F005 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Toshiba HK6-V KHK6YVSE960G
+KHK6YVSE1T92
+XW4D1
+0DXJ7
+W0YR1 DBC4 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Hynix SE5031 HFS960G32FEH-BA10A
+HFS1T9G32FEH-BA10A
+7GR2K
+GKTF1
+7X9WV DD02 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Intel Youngsville-RR SSDSC2KG960GZR
+SSDSC2KG019TZR
+8MHYH
+8RXV5
+PN1T8 DL70 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Samsung PM897 MZ7L3960HBLTAD3
+MZ7L31T9HBNAAD3
+MZ7L33T8HBNAAD3
+96KT6
+RRR7M
+N04DW
+2PV21 HH53 960 GB
+1.92 TB
+3.84 TB
+Cache, Capacity SATA 2.5” SSD Drives - Capacity Only Endurance Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use Read Intensive Micron 5200 MTFDDAK1T9TDD VJ36D H72VG F005 1.92 TB Capacity Only Read Intensive Micron 5300 MTFDDAK1T9TDS GYGVV X5R54 J004 1.92 TB Capacity Only Read Intensive Toshiba HK6-R KHK6YRSE1T92
+KHK6YRSE3T84
+919J7
+8PYG5
+W0YR1 DBC4 1.92 TB
+3.84 TB
+Capacity Only Read Intensive Samsung PM883a MZ7LH1T9HALT0D3 9F9Y6 882YH HG58 1.92 TB Capacity Only Read Intensive Samsung PM883 MZ7LH1T9HMLT0D3 Y24T6 93P7P HE59 1.92 TB Capacity Only Read Intensive Hynix SE4011 HFS1T9G32FEH-7A10A 0XMV9 MFCH2 DE07 1.92 TB Capacity Only Read Intensive Intel S4510 SSDSC2KB019T8R 33R2T 2674V DL69 1.92 TB Capacity Only Read Intensive Intel S4500 SSDSC2KB019T7R
+SSDSC2KB038T7R
+XCN15
+3RRN8
+V141M DL5C 1.92 TB
+3.84 TB
+Capacity Only Read Intensive Intel S4510 SSDSC2KB038T8R 1RHK2 2674V DL69 3.84 TB Capacity Only Read Intensive Samsung PM883 MZ7LH3T8HMLT0D3 FYP5F 93P7P HE59 3.84 TB Capacity Only Read Intensive Samsung PM883a MZ7LH3T8HALT0D3 5TVXD 882YH HG58 3.84 TB Capacity Only Read Intensive Hynix SE4011 HFS3T8G32FEH-7410A D6C0R MFCH2 DE07 3.84 TB Capacity Only Read Intensive Micron 5300 MTFDDAK3T8TDT 4H1RX PXMD3 J404 3.84 TB Capacity Only Read Intensive Hynix SE5110 HFS1T9G3H2X069N
+HFS3T8G3H2X069N
+962FP
+3GDK0
+8KVKG DZ02 1.92 TB
+3.84 TB
+Capacity Only Read Intensive Intel Youngsville-RR SSDSC2KB960GZR
+SSDSC2KB019TZR
+SSDSC2KB038TZR
+F6H8H
+VYYW8
+WNPN1
+PN1T8 DL70 960 GB
+1.92 TB
+3.84 TB
+Capacity Only Read Intensive Samsung PM893 MZ7L31T9HBLTAD3
+MZ7L33T8HBLTAD3
+0KYP4
+GCN5W
+5MKJ8 HJ53 1.92 TB
+3.84 TB
+Capacity Only SAS 2.5” SSD Drives - Cache or Capacity Endurance Vendor Series Model Supported Config Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use Write Intensive Toshiba Phoenix M4 PX05SMB080Y
+PX05SMB160Y
+Hyb, AF CN3JH
+GVTYD
+1DJXX AS10 800 GB
+1.6 TB
+Cache, Capacity Mixed Use Toshiba Phoenix M4 PX05SVB096Y
+PX05SVB192Y
+PX05SVB384Y
+Hyb, AF 503M7
+V0K7V
+3DDFT
+1DJXX AS10 960 GB
+1.92 TB
+3.84 TB
+Cache, Capacity Write Intensive Toshiba Phoenix M5-M KPM5XMUG800G
+KPM5XMUG1T60
+Hyb, AF DHRVV
+W9G88
+4P9DW B026 800 GB
+1.6 TB
+Cache, Capacity Mixed Use Samsung PM1645a MZILT800HBHQ0D3
+MZILT1T6HBJR0D3
+Hyb, AF GW8T1
+3TCV6
+VJY6V DWA4 800 GB
+1.6 TB
+Cache, Capacity Mixed Use Samsung PM1645 MZILT1T6HAJQ0D3 Hyb, AF DR0HX C9JP2 DWF8 1.6 TB Cache, Capacity Mixed Use WD Bear Cove Quantum WUSTR6480BSS200
+WUSTR6416BSS200
+Hyb, AF 6VJC9
+6NF96
+X95FJ G130 800 GB
+1.6 TB
+Cache, Capacity Mixed Use Toshiba Phoenix M5-V KPM5XVUG960G
+KPM5XVUG1T92
+KPM5XVUG3T84
+Hyb, AF WFGTH
+2WVYG
+91W3V
+4P9DW B026 960 GB
+1.92 TB
+3.84 TB
+Cache, Capacity Write Intensive Kioxia PM6 KPM6XMUG800G
+KPM6XMUG1T60
+Hyb, AF H6GCD
+5GDXH
+6K5N9 BA0D 800 GB
+1.6 TB
+Cache, Capacity Mixed Use Kioxia PM6 KPM6XVUG800G
+KPM6XVUG1T60
+KPM6XVUG6T40
+Hyb, AF JTKH5
+GD3N0
+6NW3J
+6K5N9 BA0D 800 GB
+1.6 TB
+6.4 TB
+Cache, Capacity Mixed Use Kioxia PM6, FIPS KPM6WVUG960G
+KPM6WVUG1T92
+KPM6WVUG3T84
+Hyb, AF WMWKG
+DHWH5
+81H9C
+376CY BD0D 960 GB
+1.92 TB
+3.84 TB
+Cache, Capacity SAS 2.5” SSD Drives - Capacity Only Endurance Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use Read Intensive WD Bear Cove Plus WUSTR1519ASS200
+WUSTR1538ASS200
+5ND33
+YW17N
+358PN K960 1.92 TB
+3.84 TB
+Capacity Only Read Intensive WD Bear Cove Quantum WUSTVA119BSS200
+WUSTVA138BSS200
+02X38
+FP1KF
+1GGR2 G10A 1.92 TB
+3.84 TB
+Capacity Only Read Intensive Samsung PM1643 MZILT1T9HAJQ0D3
+MZILT3T8HALS0D3
+MZILT7T6HMLA0D3
+F0VFY
+X8F87
+RVYD5
+J3RRK DSF8 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only Read Intensive Samsung PM1643a MZILT1T9HBJR0D3
+MZILT3T8HBLS0D3
+MZILT7T6HALA0D3
+TMTW9
+CRNPH
+84C40
+D7RNT DSA4 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only Read Intensive Samsung PM1633a MZILS3T8HMLH0D3 JR1HP XNGNT DSLA 3.84 TB Capacity Only Read Intensive Toshiba Phoenix M5-R KPM5XRUG1T92
+KPM5XRUG3T84
+TDNP7
+N85XX
+4P9DW B026 1.92 TB
+3.84 TB
+Capacity Only Read Intensive Toshiba Phoenix M4 PX05SRB384Y XCRDV 1DJXX AS10 3.84 TB Capacity Only Read Intensive Kioxia PM6 KPM6XRUG1T92
+KPM6XRUG3T84
+KPM6XRUG7T68
+4CN85
+H9TT5
+PD02Y
+2N1R6 BA0B 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only Read Intensive Kioxia PM6 KPM6WRUG1T92
+KPM6WRUG3T84
+7F2D1
+FH1W9
+376CY BD0D 1.92 TB
+3.84 TB
+Capacity Only Value SAS 2.5” SSD Drives - Cache or Capacity Endurance Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use Mixed Use Toshiba Phoenix RM5 KRM5XVUG3T84
+X78JM
+12D7W B70C 3.84 TB
+Cache, Capacity Mixed Use Seagate LangeBP XS3840LE70154 NWGX3 NX13G 4D0C 3.84 TB Cache, Capacity Mixed Use Seagate LangeBP,SED XS960LE70134
+XS1920LE70134
+XS3840LE70134
+2RDWT
+N6DRV
+YM9HP
+G04C8 4S0C 960 GB
+1.92 TB
+3.84 TB
+Cache, Capacity Mixed Use Kioxia RM6,SED KRM6VVUG960G
+KRM6VVUG1T92
+KRM6VVUG3T84
+42XXC
+N15JP
+FXYGR
+3P4FR BJ02 960 GB
+1.92 TB
+3.84 TB
+Cache, Capacity Read Intensive Toshiba Phoenix RM5 KRM5XRUG7T68 5XD2F 12D7W B70C 7.68 TB Capacity Only Read Intensive Seagate Lange XS7680SE70074 2PKRH H3VHX EC16 7.68 TB Capacity Only Read Intensive Seagate LangeBP XS7680SE70154 5KW0F NX13G 4D0C 7.68 TB Capacity Only Read Intensive Seagate LangeBP,SED XS1920SE70134
+XS3840SE70134
+XS7680SE7013
+K9T53
+4KPKF
+2THYF
+G04C8 4S0C 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only Read Intensive Kioxia RM6,SED KRM6VRUG1T92
+KRM6VRUG3T84
+KRM6VRUG7T68
+1FGWG
+XNXD2
+5MHY8
+3P4FR BJ02 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only NVMe Drives - Cache or Capacity NOTE Intel Optane P4800x is supported only on the R640 Storage Spaces Direct Ready Node. Platform Vendor Form Factor Description Model Number Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use NVMe only Intel 2.5&#34; Optane P4800x SSD/NVMe, 375 GB U.2 2.5&#34; SFF SSDPE21K375GAT 3DM57 HD2YY E201DP38 375 GB Cache, Capacity NVMe only Samsung 2.5&#34; PM1725A
+MZWLL1T6HEHP-000D3
+MZWLL3T2HMJP-000D3
+MZWLL6T4HMLS-000D3
+JD6CH
+JDMHM
+Y3XT2
+34C36
+1.2.1 1.6 TB
+3.2 TB
+6.4 TB
+Cache, Capacity NVMe only Samsung 2.5&#34; PM1725b
+MZWLL1T6HAJQ-000D3
+MZWLL3T2HAJQ-000D3
+MZWLL6T4HMLA-000D3
+4WDXY
+K60N7
+08NMX
+3F3N1 1.2.2 1.6 TB
+3.2 TB
+6.4 TB
+Cache, Capacity NVMe only Intel 2.5&#34; P4600
+SSDPE2KE016T7T
+SSDPE2KE032T7T
+F5P84
+MCV6J
+CR0HC QDV1DP17 1.6 TB
+3.2 TB
+Cache, Capacity NVMe only Intel 2.5&#34; P4610
+SSDPE2KE016T8T
+SSDPE2KE032T8T
+SSDPE2KE064T8T
+58V30
+2CN1T
+X27HY
+GD4X4 VDV1DP25 1.6 TB
+3.2 TB
+6.4 TB
+Cache, Capacity NVMe only KIOXIA 2.5&#34; CM6,FIPS Dell Ent NVMe FIPS CM6 MU 1.6 TB G7N00 T79D5 1.2.0 1.6 TB Cache, Capacity NVMe only Samsung 2.5&#34; PM1735 Dell Ent NVMe AGN MU U.2 1.6 TB 6GK00 RP8RC 2.3.0 1.6 TB Cache, Capacity NVMe only Samsung 2.5&#34; PM1735 V2 Dell Ent NVMe v2 AGN MU U.2 1.6 TB
+Dell Ent NVMe v2 AGN MU U.2 3.2 TB
+Dell Ent NVMe v2 AGN MU U.2 6.4 TB
+0MNMV
+V69W3
+H8D5M
+TRCC6 2.3.0 1.6 TB
+3.2 TB
+6.4 TB
+Cache, Capacity NVMe only Kioxia 2.5&#34; CM6 SP Dell Ent NVMe CM6 MU 1.6 TB
+Dell Ent NVMe CM6 MU 3.2 TB
+Dell Ent NVMe CM6 MU 6.4 TB
+P03YC
+97GR0
+K916X
+511TX 2.1.8 1.6 TB
+3.2 TB
+6.4 TB
+Cache, Capacity NVMe only Intel 2.5&#34; P5600 SP Dell Ent NVMe P5600 MU U.2 1.6 TB
+Dell Ent NVMe P5600 MU U.2 3.2 TB
+C9X5T
+PRKTM
+J7FTF 1.2.4 1.6 TB
+3.2 TB
+Cache, Capacity NVMe only Intel 2.5&#34; Arbordale Plus RR SSDPF2KE016T1E
+SSDPF2KE032T1E
+82TVJ
+TY3M5
+J55N8 1.0.0 1.6 TB
+3.2 TB
+Cache, Capacity NVMe Drives - Capacity Only NOTE Toshiba CD5 960 GB capacity is supported only on the R640 Storage Spaces Direct Ready Node. Endurance Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use Read Intensive
+Toshiba CD5 KCD5XLUG960G
+KCD5XLUG3T84
+DRC9H
+17C57
+T79D5 1.2.0 960 GB
+3.84 TB
+Capacity Only Intel P4510 SSDPE2KX040T8T 5GMK0 GD4X4 VDV1DP25 4 TB Capacity Only Read Intensive KIOXIA CM6 Dell Ent NVMe FIPS CM6 RI 1.92 TB TXP72 T79D5 1.2.0 1.92 TB Capacity Only Read Intensive Intel P5500 Dell Ent NVMe P5500 RI U.2 1.92 TB
+Dell Ent NVMe P5500 RI U.2 3.84 TB
+Dell Ent NVMe P5500 RI U.2 7.68 TB
+WPP9G
+KRT3G
+RNN67
+XXN1D 1.2.3 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only Read Intensive Samsung PM1733 V2 Dell Ent NVMe v2 AGN RI U.2 3.84 TB
+Dell Ent NVMe v2 AGN RI U.2 7.68 TB
+G5N65
+DX74Y
+FJK0C 2.2.0 3.84 TB
+7.68 TB
+Capacity Only Read Intensive Kioxia CM6,SP KCM6XRUL1T92
+KCM6XRUL3T84
+KCM6XRUL7T86
+N0VK0
+8W2G5
+VD0JX
+511TX 2.1.8 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only Read Intensive Intel Arbordale Plus RR SSDPF2KX019T1E
+SSDPF2KX038T1E
+SSDPF2KX076T1E
+0HVC7
+77MRY
+90M2J
+J55N8 1.0.0 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only NVMe PCIe Add In Card (AIC) - Cache or Capacity Platform Vendor Form Factor Description Model Number Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use NVMe only Samsung PCIe AIC PM1725A
+MZPLL1T6HEHP-000D3
+MZPLL6T4HMLS-000D3
+06V6M
+604N5
+34C36 1.2.1 1.6 TB
+6.4 TB
+Cache, Capacity NVMe only Samsung PCIe AIC PM1725b
+MZPLL1T6HAJQ-000D3
+MZPLL6T4HMLA-000D3
+FTX2R
+FW2K0
+3F3N1 1.2.2 1.6 TB
+6.4 TB
+Cache, Capacity NVMe only Samsung PCIe AIC PM1735
+MZPLJ1T6HBJR-00AD3
+MZPLJ6T4HALA-00AD3
+Y7D7D
+91FXC
+RDKVC 2.4.0 1.6 TB
+6.4 TB
+Cache, Capacity">
 	<meta itemprop="dateModified" content="2026-01-06T09:36:02-06:00">
-	<meta itemprop="wordCount" content="3100">
+	<meta itemprop="wordCount" content="3092">
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="Azure Stack HCI Firmware and Driver Matrix for Legacy Windows Server Operating Systems (Windows Server 2016)">
-	<meta name="twitter:description" content="&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; Introduction This matrix is for Windows Server operating systems that have exited Microsoft mainstream support. This Windows Server operating system is no longer being validated by Dell for use with hyperconverged cluster deployments. The table in the below link is a snapshot of the last firmware and driver versions that were validated by Dell engineering for use with this legacy Windows Server version.">
+	<meta name="twitter:description" content="Introduction This matrix is for Windows Server operating systems that have exited Microsoft mainstream support. This Windows Server operating system is no longer being validated by Dell for use with hyperconverged cluster deployments. The table in the below link is a snapshot of the last firmware and driver versions that were validated by Dell engineering for use with this legacy Windows Server version. Windows Server 2016 - Microsoft Lifecycle | Microsoft Learn Customers that are still running this Windows Server version for their hyperconverged cluster deployments are encouraged to perform an in-place upgrade to the Windows Server 2022 operating system per instructions at the following link. Perform a Feature Update of Windows Server | Microsoft Learn NOTE To find a particular driver or firmware download, take the Software Bundle ID and append it to the following URL: https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=
+For example: https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=2R28V
+Storage Spaces Direct Ready Nodes and AX nodes Supported Firmware versions Component Type Category Software Bundle Minimum Supported Version Supported Systems BIOS Firmware DUP BIOS W77H1 2.16.1 AX-640
+R640
+AX-740xd
+R740xd
+BIOS Firmware DUP BIOS CKFTD 2.16.1 R440 BIOS Firmware DUP BIOS VHNTJ 2.16.1 R740xd2 BIOS Firmware DUP BIOS 61GYN 2.9.3 AX-6515 BIOS Firmware DUP BIOS C45MX 2.9.3 AX-7525 BIOS Firmware DUP BIOS G7K8G 1.8.2 AX-650
+AX-750
+iDRAC9 with Lifecycle Controller Firmware DUP BMC KMYV9 6.10.00.00 All Non-expander Storage Backplane Firmware DUP Storage-Backplane VV85D 4.35 AX-640
+AX-740xd
+R640
+R740xd
+Non-expander Storage Backplane Firmware DUP Storage-Backplane 6NNVP 3.72 AX-7525
+AX-650
+AX-750
+NVMe Switch Storage Backplane Firmware DUP Storage-Backplane 5XJWN 1.05 AX-750 Expander Storage Backplane Firmware DUP Storage-Backplane H9PV3 1.20 AX-750
+AX-7525
+Expander Storage Backplane Firmware DUP Storage-Backplane 60K1J 2.52 All Intel S3520, M.2, SSD, RI, 240 GB, 480 GB Firmware DUP BOSS (Boot) CHJGV DL43 All Micron 5100, M.2, SSD, 240 GB, 480 GB Firmware DUP BOSS (Boot) YM8KY E013 All Micron 5300, M.2, SSD, 240 GB, 480 GB Firmware DUP BOSS (Boot) PWVX5 J004 All CPLD Firmware DUP CPLD 1GW62 1.0.10 R440 CPLD Firmware DUP CPLD 9N4DH 1.0.6 AX-640
+R640
+CPLD Firmware DUP CPLD G65GH 1.1.4 AX-740xd
+R740xd
+CPLD Firmware DUP CPLD R13D8 1.0.4 R740xd2 CPLD Firmware DUP CPLD 79XGF 1.0.7 AX-6515 CPLD Firmware DUP CPLD XTPX5 1.1.15 AX-7525 CPLD Firmware DUP CPLD N9YTC 1.0.8 AX-650
+AX-750
+iDRAC Service Module OS DUP Application iSM XJ9W8 4.3.0.0 All (1) The &#34;Non-expander Storage Backplane&#34; is applicable only to R640 12-drive and R740xd 18-drive chassis configurations. Storage Spaces Direct Ready Nodes and AX nodes Firmware and Drivers for Windows Server 2016 Component Category Part Number Firmware Drivers Software Bundle Minimum Supported Version Software Bundle Minimum Supported Version Mellanox ConnectX-4 Lx Dual Port 25GbE DA/SFP rNDC
+Mellanox ConnextX-4 Lx Dual Port 25GbE DA/SFP Network Adapter, LP
+Mellanox ConnextX-4 Lx Dual Port 25GbE DA/SFP Network Adapter, FH
+Network / RDMA R887V
+20NJD
+MRT0D
+YTPJW 14.31.20.06 F3Y6R 02.80.02 - Installer
+2.80.25134.0 - Driver
+Mellanox Connectx-5 EX Dual Port 100GbE QSFP20 PCIe Adapter, FH
+Mellanox Connectx-5 EX Dual Port 100GbE QSFP20 PCIe Adapter, LP
+Mellanox ConnectX-5 Dual Port 25GbE SFP28 Adapter, FH
+Mellanox ConnectX-5 Dual Port 25GbE SFP28 Adapter, LP
+Network / RDMA 71C1T
+9FTMY
+TDNNT
+V5DG9
+3CJ0V 16.31.20.06 F3Y6R 02.80.02 - Installer
+2.80.25134.0 - Driver
+Mellanox ConnectX-6 Dx Dual Port 100GbE QSFP56 PCIe Adapter, LP
+Mellanox ConnectX-6 Dx Dual Port 100GbE QSFP56 PCIe Adapter, FH
+Network / RDMA F6FXM
+8P2T2
+1XPGP 22.31.20.06 F3Y6R 02.80.02 - Installer
+2.80.25134.0 - Driver
+Qlogic FastLinQ 41262 Dual Port 25Gbe SFP28, rNDC
+QLogic FastLinQ 41262 Dual Port 25Gb SFP28 Adapter, LP
+QLogic FastLinQ 41262 Dual Port 25Gb SFP28 Adapter, FH
+Network / iWARP 4KF8J
+415DX
+51GRM
+TD0M9 15.20.16 RYX52 35.20.14 - Installer
+8.53.1.0 - Driver
+QLogic FastLinQ 41162 Dual Port 10GbE BASE-T &amp; Dual Port 1GbE BASE-T, rNDC
+Network / NDC 0D1WT TD0M9 15.20.16 RYX52 35.20.14 - Installer
+8.53.1.0 - Driver
+QLogic FastLinQ 41164 Quad Port 10GbE SFP&#43;, rNDC Network / NDC XVVY1 TD0M9 15.20.16 RYX52 35.20.14 - Installer
+8.53.1.0 - Driver
+QLogic FastLinQ 41164 Quad Port 10GbE BASE-T, rNDC Network / NDC X1TD1 TD0M9 15.20.16 RYX52 35.20.14 - Installer
+8.53.1.0 - Driver
+Intel X710 DP 10Gb DA/SFP&#43;, &#43;I350 DP 1Gb Ethernet, NDC
+Network / NDC 6VDPG DK4G2 20.0.17 284J6 20.0.0 - Installer
+1.13.104.0 - Driver
+Qlogic 57800 2x10Gb BT &#43; 2x1Gb BT NDC
+QLogic 57800 2x10Gb DA/SFP&#43; &#43;2x1Gb BT NDC
+Network / NDC G8RPD
+165T0
+899FK 15.20.13 MJP9W 35.20.04 - Installer
+Broadcom 5720 Dual Port 1 GbE Network LOM Mezz Card Network / NDC KJMHJ M18WH 21.80.9 49X84 21.80.3 - Installer
+214.0.0.6 - Driver
+Broadcom 57412 2 Port 10Gb SRP&#43; &#43; 5720 2 Port 1 GB Base-T, rNDC Network / NDC NWMNX YPXWJ 21.85.21.91 XYJ8C 218.0.169.0 - Installer
+21.80.16.60 - Driver
+Broadcom 57416 Dual Port 10 Gb E SFP&#43; Network LOM Mezz Card Network / NDC WC9TR YPXWJ 21.85.21.91 XYJ8C 218.0.169.0 - Installer
+21.80.16.60 - Driver
+Broadcom 57414 Dual Port 25 Gb E SFP&#43; Network LOM Mezz Card Network / NDC / OCP 930PP YPXWJ 21.85.21.91
+XYJ8C 218.0.169.0 - Installer
+21.80.16.60 - Driver
+HBA330 Controller, 12Gps Mini Card
+HBA330 Controller, 12Gps Mini Card, LP
+Storage-HBA P2R3R
+J7TNV
+124X2
+NKNVC
+16.17.01.00 P1NP6
+2.51.25.01 - Windows Server 2016
+BOSS-S1 BOSS-S1 2MFVD 3P39V 2.5.13.3024 8KKVC 1.2.0.1052 Chipset driver for Intel platforms Chipset Not applicable Not applicable Not applicable MPXXJ
+10.1.18807.8279
+SAS 2.5” HDD Drives - Capacity Only Form Factor Type Vendor Model Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use 2.5&#34; 7.2K 12Gbps SAS HDD Seagate Avenger ST2000NX0463 TMVN7 GW3V7 NT32 2 TB Capacity 2.5&#34; 10K 12 Gbps SAS HDD Seagate Skybolt DL2400MM0159 RWR8F HYJ6K ST5C 2.4 TB Capacity 2.5&#34; 10K 12 Gbps SAS HDD Toshiba AL15SE AL15SEB24EQY F9NWJ 0T1RG EF06 2.4 TB Capacity 2.5&#34; 10K 12 Gbps SAS HDD Seagate Skybolt ST2400MM0159 36YG1 DY8C3 ST76 2.4 TB Capacity SATA 2.5” HDD Drives - Capacity Only Form Factor Type Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use 2.5&#34; 7.2K 6Gbps SATA HDD Seagate Avenger ST2000NX0423 VR92X GMW4P NB33 2 TB Capacity SATA 3.5” HDD Drives - Capacity Only Form Factor Type Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use 3.5&#34; HDD Hitachi Aries K Plus HUS726020ALA610
+HUS726040ALA610
+8NP2N
+61FFW
+X59KC KV45 2 TB
+4 TB
+Capacity 3.5&#34; HDD Hitachi Rainier MLK HUS722T2TALA600 V9H6C V3DJM MU03 2 TB Capacity 3.5&#34; HDD Toshiba Tomcat R MG04ACA200NY
+MG04ACA400NY
+NPVM6
+95M6K
+V47C4
+FK5D 2 TB
+4 TB
+Capacity 3.5&#34; HDD Seagate Nemo ST2000NM0018-2F3130 W8FW5 CMK5N EA04 2 TB Capacity 3.5&#34; HDD Seagate Makara BP ST2000NM0145-2DC104
+ST4000NM0265-2DC107
+WG9R0
+MWHY9
+M5GJ1 DB34 2 TB
+4 TB
+Capacity 3.5&#34; HDD Hitachi Vela-A HUS726T4TALA6L0 YH3T9 3CFT0 PV07 4 TB Capacity 3.5&#34; HDD Hitachi Vela-AP HUS728T8TALE6L0 1WMVC N26JT RT07 8 TB Capacity 3.5&#34; HDD Hitachi Libra HE10 HUH721008ALE600 KRV2W H12N2 LT21 8 TB Capacity 3.5&#34; HDD Seagate Makara Plus ST8000NM0205-2FF112 92MDW MR6RH PB53 8 TB Capacity 3.5&#34; HDD Toshiba MG06 MG06ACA800EY 9X09C PT7D8 GA09 8 TB Capacity 3.5&#34; HDD Hitachi Leo-A He12 HUH721212ALE600 T2YHT 0HF04 NT10 12 TB Capacity 3.5&#34; HDD Toshiba MG07 MG07ACA12TEY 753F0 0942Y GB03 12 TB Capacity 3.5&#34; HDD Toshiba MG08AC MG08ACA16TEY HPGJ4 MGF80 GC02 16 TB Capacity 3.5&#34; HDD Toshiba MG08AD MG08ADA400NY W2M9N 7NJXF GD03 4 TB Capacity 3.5&#34; HDD Seagate Cimarron ST4000NM016A-2HZ130
+ST8000NM012A-2KE131
+XPJ47
+F4JXT
+179WV
+V1521
+CAJC
+CALD
+4 TB
+8 TB
+Capacity 3.5&#34; HDD Seagate Cimarron BP ST4000NM018B-2TF130
+ST8000NM023B-2TJ133
+6KR2M
+J7W80
+J4X0T
+4P5X3
+LC09
+LA0A
+4 TB
+8 TB
+Capacity SAS 3.5” HDD Drives - Capacity Only Form Factor Type Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use 3.5&#34; HDD Hitachi Aries K Plus HUS726020ALS210
+HUS726040ALS210
+VH6FW
+X4FKY
+68X4C KU45 2 TB
+4 TB
+Capacity 3.5&#34; HDD Toshiba Tomcat R MG04SCA20ENY
+MG04SCA40ENY
+HHX14
+1MVTT
+RG9MK EG03 2 TB
+4 TB
+Capacity 3.5&#34; HDD Seagate Makara BP ST2000NM0155
+ST4000NM0295
+7RCGV
+5JH5X
+3CRY1 DT32 2 TB
+4 TB
+Capacity 3.5&#34; HDD Hitachi Vela-A HUS726T4TALS200 NT1X2 1DM5F PU07 4 TB Capacity 3.5 HDD Hitachi Vela-AP HUS728T8TAL5200 44YFV 6JJPV RS07 8 TB Capacity 3.5&#34; HDD Hitachi Libra HE10 HUH721008AL5200 KRDKK MGW91 LS21 8 TB Capacity 3.5&#34; HDD Seagate Makara Plus ST8000NM0185 M40TH/VFP4M 6421F PT55 8 TB Capacity 3.5&#34; HDD Toshiba MG06 MG06SCA800EY FV725
+4G5GY EH0D 8 TB Capacity 3.5&#34; HDD Hitachi Leo-A He12 HUH721212AL5200 9HXK6 230YX NS10 12 TB Capacity 3.5&#34; HDD Toshiba MG07 MG07SCA12TEY DK7C9/KFJ7G GT72W EI0C 12 TB Capacity 3.5&#34; HDD Seagate Evans ST12000NM009G 7KT9W NJ4NN ESL7 12 TB Capacity 3.5&#34; HDD Seagate Mobula BP ST12000NM0158 YMN53 VTX9C RSL5 12 TB Capacity 3.5&#34; HDD Toshiba MG08SC MG08SCA16TEY 8MG73 9N3RR EJ09 16 TB Capacity 3.5&#34; HDD Toshiba MG08SC MG08SCA16TEY 4N7V0 9N3RR EJ09 16 TB Capacity 3.5&#34; HDD Toshiba MG08SC MG08SCA16TEY 24HF9 9N3RR EJ09 16 TB Capacity 3.5&#34; HDD Seagate Evans ST16000NM010G CNXPV NJ4NN ESL7 16 TB Capacity 3.5&#34; HDD WD Paris-C WUH721816AL5200 VF206 19MP7 US06 16 TB Capacity 3.5&#34; HDD Seagate Cimarron ST4000NM017A
+ST8000NM014A
+KRM6X
+0N660
+WTX15
+PRFRJ
+CSJA
+CSLC
+4 TB
+8 TB
+Capacity 3.5 HDD Seagate Cimarron BP ST4000NM019B
+ST8000NM024B 10N7R
+C5HD0
+912Y9
+DTGXD
+LW0A
+LS0A
+4 TB
+8 TB
+Capacity 3.5 HDD Toshiba MG08SD MG08SDA400NY FN2YX N5XN3 EK05 4 TB Capacity SATA 2.5” SSD Drives - Cache or Capacity Endurance Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use Mixed Use Toshiba HK4 THNSF8800CCSE
+THNSF81D60CSE
+VCRY6
+DMF5Y
+H3XHN DACB 800 GB
+1.6 TB
+Cache, Capacity Mixed Use Micron 5300 MTFDDAK960TDT
+MTFDDAK1T9TDT
+XMWMK
+MMCDY
+X5R54 J004 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Samsung SM863a MZ7KM960HMJP0D3
+MZ7KM1T9HMJP0D3
+DD4G0
+K5P0T
+97D8J GD57 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Samsung SM883 MZ7KH960HAJR0D3
+MZ7KH1T9HAJR0D3
+YDHYX
+71K37
+3J3JR HF58 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Intel S4600 SSDSC2KG960G7R
+SSDSC2KG019T7R
+TR3MY
+MWKF2
+V141M DL5C 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Intel S4610 SSDSC2KG960G8R
+SSDSC2KG019T8R
+X31G3
+F8N2K/55J8H
+2674V DL69 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Micron 5200 MTFDDAK960TDN
+MTFDDAK1T9TDN
+HY1F8
+XKF5Y
+H72VG F005 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Toshiba HK6-V KHK6YVSE960G
+KHK6YVSE1T92
+XW4D1
+0DXJ7
+W0YR1 DBC4 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Hynix SE5031 HFS960G32FEH-BA10A
+HFS1T9G32FEH-BA10A
+7GR2K
+GKTF1
+7X9WV DD02 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Intel Youngsville-RR SSDSC2KG960GZR
+SSDSC2KG019TZR
+8MHYH
+8RXV5
+PN1T8 DL70 960 GB
+1.92 TB
+Cache, Capacity Mixed Use Samsung PM897 MZ7L3960HBLTAD3
+MZ7L31T9HBNAAD3
+MZ7L33T8HBNAAD3
+96KT6
+RRR7M
+N04DW
+2PV21 HH53 960 GB
+1.92 TB
+3.84 TB
+Cache, Capacity SATA 2.5” SSD Drives - Capacity Only Endurance Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use Read Intensive Micron 5200 MTFDDAK1T9TDD VJ36D H72VG F005 1.92 TB Capacity Only Read Intensive Micron 5300 MTFDDAK1T9TDS GYGVV X5R54 J004 1.92 TB Capacity Only Read Intensive Toshiba HK6-R KHK6YRSE1T92
+KHK6YRSE3T84
+919J7
+8PYG5
+W0YR1 DBC4 1.92 TB
+3.84 TB
+Capacity Only Read Intensive Samsung PM883a MZ7LH1T9HALT0D3 9F9Y6 882YH HG58 1.92 TB Capacity Only Read Intensive Samsung PM883 MZ7LH1T9HMLT0D3 Y24T6 93P7P HE59 1.92 TB Capacity Only Read Intensive Hynix SE4011 HFS1T9G32FEH-7A10A 0XMV9 MFCH2 DE07 1.92 TB Capacity Only Read Intensive Intel S4510 SSDSC2KB019T8R 33R2T 2674V DL69 1.92 TB Capacity Only Read Intensive Intel S4500 SSDSC2KB019T7R
+SSDSC2KB038T7R
+XCN15
+3RRN8
+V141M DL5C 1.92 TB
+3.84 TB
+Capacity Only Read Intensive Intel S4510 SSDSC2KB038T8R 1RHK2 2674V DL69 3.84 TB Capacity Only Read Intensive Samsung PM883 MZ7LH3T8HMLT0D3 FYP5F 93P7P HE59 3.84 TB Capacity Only Read Intensive Samsung PM883a MZ7LH3T8HALT0D3 5TVXD 882YH HG58 3.84 TB Capacity Only Read Intensive Hynix SE4011 HFS3T8G32FEH-7410A D6C0R MFCH2 DE07 3.84 TB Capacity Only Read Intensive Micron 5300 MTFDDAK3T8TDT 4H1RX PXMD3 J404 3.84 TB Capacity Only Read Intensive Hynix SE5110 HFS1T9G3H2X069N
+HFS3T8G3H2X069N
+962FP
+3GDK0
+8KVKG DZ02 1.92 TB
+3.84 TB
+Capacity Only Read Intensive Intel Youngsville-RR SSDSC2KB960GZR
+SSDSC2KB019TZR
+SSDSC2KB038TZR
+F6H8H
+VYYW8
+WNPN1
+PN1T8 DL70 960 GB
+1.92 TB
+3.84 TB
+Capacity Only Read Intensive Samsung PM893 MZ7L31T9HBLTAD3
+MZ7L33T8HBLTAD3
+0KYP4
+GCN5W
+5MKJ8 HJ53 1.92 TB
+3.84 TB
+Capacity Only SAS 2.5” SSD Drives - Cache or Capacity Endurance Vendor Series Model Supported Config Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use Write Intensive Toshiba Phoenix M4 PX05SMB080Y
+PX05SMB160Y
+Hyb, AF CN3JH
+GVTYD
+1DJXX AS10 800 GB
+1.6 TB
+Cache, Capacity Mixed Use Toshiba Phoenix M4 PX05SVB096Y
+PX05SVB192Y
+PX05SVB384Y
+Hyb, AF 503M7
+V0K7V
+3DDFT
+1DJXX AS10 960 GB
+1.92 TB
+3.84 TB
+Cache, Capacity Write Intensive Toshiba Phoenix M5-M KPM5XMUG800G
+KPM5XMUG1T60
+Hyb, AF DHRVV
+W9G88
+4P9DW B026 800 GB
+1.6 TB
+Cache, Capacity Mixed Use Samsung PM1645a MZILT800HBHQ0D3
+MZILT1T6HBJR0D3
+Hyb, AF GW8T1
+3TCV6
+VJY6V DWA4 800 GB
+1.6 TB
+Cache, Capacity Mixed Use Samsung PM1645 MZILT1T6HAJQ0D3 Hyb, AF DR0HX C9JP2 DWF8 1.6 TB Cache, Capacity Mixed Use WD Bear Cove Quantum WUSTR6480BSS200
+WUSTR6416BSS200
+Hyb, AF 6VJC9
+6NF96
+X95FJ G130 800 GB
+1.6 TB
+Cache, Capacity Mixed Use Toshiba Phoenix M5-V KPM5XVUG960G
+KPM5XVUG1T92
+KPM5XVUG3T84
+Hyb, AF WFGTH
+2WVYG
+91W3V
+4P9DW B026 960 GB
+1.92 TB
+3.84 TB
+Cache, Capacity Write Intensive Kioxia PM6 KPM6XMUG800G
+KPM6XMUG1T60
+Hyb, AF H6GCD
+5GDXH
+6K5N9 BA0D 800 GB
+1.6 TB
+Cache, Capacity Mixed Use Kioxia PM6 KPM6XVUG800G
+KPM6XVUG1T60
+KPM6XVUG6T40
+Hyb, AF JTKH5
+GD3N0
+6NW3J
+6K5N9 BA0D 800 GB
+1.6 TB
+6.4 TB
+Cache, Capacity Mixed Use Kioxia PM6, FIPS KPM6WVUG960G
+KPM6WVUG1T92
+KPM6WVUG3T84
+Hyb, AF WMWKG
+DHWH5
+81H9C
+376CY BD0D 960 GB
+1.92 TB
+3.84 TB
+Cache, Capacity SAS 2.5” SSD Drives - Capacity Only Endurance Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use Read Intensive WD Bear Cove Plus WUSTR1519ASS200
+WUSTR1538ASS200
+5ND33
+YW17N
+358PN K960 1.92 TB
+3.84 TB
+Capacity Only Read Intensive WD Bear Cove Quantum WUSTVA119BSS200
+WUSTVA138BSS200
+02X38
+FP1KF
+1GGR2 G10A 1.92 TB
+3.84 TB
+Capacity Only Read Intensive Samsung PM1643 MZILT1T9HAJQ0D3
+MZILT3T8HALS0D3
+MZILT7T6HMLA0D3
+F0VFY
+X8F87
+RVYD5
+J3RRK DSF8 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only Read Intensive Samsung PM1643a MZILT1T9HBJR0D3
+MZILT3T8HBLS0D3
+MZILT7T6HALA0D3
+TMTW9
+CRNPH
+84C40
+D7RNT DSA4 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only Read Intensive Samsung PM1633a MZILS3T8HMLH0D3 JR1HP XNGNT DSLA 3.84 TB Capacity Only Read Intensive Toshiba Phoenix M5-R KPM5XRUG1T92
+KPM5XRUG3T84
+TDNP7
+N85XX
+4P9DW B026 1.92 TB
+3.84 TB
+Capacity Only Read Intensive Toshiba Phoenix M4 PX05SRB384Y XCRDV 1DJXX AS10 3.84 TB Capacity Only Read Intensive Kioxia PM6 KPM6XRUG1T92
+KPM6XRUG3T84
+KPM6XRUG7T68
+4CN85
+H9TT5
+PD02Y
+2N1R6 BA0B 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only Read Intensive Kioxia PM6 KPM6WRUG1T92
+KPM6WRUG3T84
+7F2D1
+FH1W9
+376CY BD0D 1.92 TB
+3.84 TB
+Capacity Only Value SAS 2.5” SSD Drives - Cache or Capacity Endurance Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use Mixed Use Toshiba Phoenix RM5 KRM5XVUG3T84
+X78JM
+12D7W B70C 3.84 TB
+Cache, Capacity Mixed Use Seagate LangeBP XS3840LE70154 NWGX3 NX13G 4D0C 3.84 TB Cache, Capacity Mixed Use Seagate LangeBP,SED XS960LE70134
+XS1920LE70134
+XS3840LE70134
+2RDWT
+N6DRV
+YM9HP
+G04C8 4S0C 960 GB
+1.92 TB
+3.84 TB
+Cache, Capacity Mixed Use Kioxia RM6,SED KRM6VVUG960G
+KRM6VVUG1T92
+KRM6VVUG3T84
+42XXC
+N15JP
+FXYGR
+3P4FR BJ02 960 GB
+1.92 TB
+3.84 TB
+Cache, Capacity Read Intensive Toshiba Phoenix RM5 KRM5XRUG7T68 5XD2F 12D7W B70C 7.68 TB Capacity Only Read Intensive Seagate Lange XS7680SE70074 2PKRH H3VHX EC16 7.68 TB Capacity Only Read Intensive Seagate LangeBP XS7680SE70154 5KW0F NX13G 4D0C 7.68 TB Capacity Only Read Intensive Seagate LangeBP,SED XS1920SE70134
+XS3840SE70134
+XS7680SE7013
+K9T53
+4KPKF
+2THYF
+G04C8 4S0C 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only Read Intensive Kioxia RM6,SED KRM6VRUG1T92
+KRM6VRUG3T84
+KRM6VRUG7T68
+1FGWG
+XNXD2
+5MHY8
+3P4FR BJ02 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only NVMe Drives - Cache or Capacity NOTE Intel Optane P4800x is supported only on the R640 Storage Spaces Direct Ready Node. Platform Vendor Form Factor Description Model Number Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use NVMe only Intel 2.5&#34; Optane P4800x SSD/NVMe, 375 GB U.2 2.5&#34; SFF SSDPE21K375GAT 3DM57 HD2YY E201DP38 375 GB Cache, Capacity NVMe only Samsung 2.5&#34; PM1725A
+MZWLL1T6HEHP-000D3
+MZWLL3T2HMJP-000D3
+MZWLL6T4HMLS-000D3
+JD6CH
+JDMHM
+Y3XT2
+34C36
+1.2.1 1.6 TB
+3.2 TB
+6.4 TB
+Cache, Capacity NVMe only Samsung 2.5&#34; PM1725b
+MZWLL1T6HAJQ-000D3
+MZWLL3T2HAJQ-000D3
+MZWLL6T4HMLA-000D3
+4WDXY
+K60N7
+08NMX
+3F3N1 1.2.2 1.6 TB
+3.2 TB
+6.4 TB
+Cache, Capacity NVMe only Intel 2.5&#34; P4600
+SSDPE2KE016T7T
+SSDPE2KE032T7T
+F5P84
+MCV6J
+CR0HC QDV1DP17 1.6 TB
+3.2 TB
+Cache, Capacity NVMe only Intel 2.5&#34; P4610
+SSDPE2KE016T8T
+SSDPE2KE032T8T
+SSDPE2KE064T8T
+58V30
+2CN1T
+X27HY
+GD4X4 VDV1DP25 1.6 TB
+3.2 TB
+6.4 TB
+Cache, Capacity NVMe only KIOXIA 2.5&#34; CM6,FIPS Dell Ent NVMe FIPS CM6 MU 1.6 TB G7N00 T79D5 1.2.0 1.6 TB Cache, Capacity NVMe only Samsung 2.5&#34; PM1735 Dell Ent NVMe AGN MU U.2 1.6 TB 6GK00 RP8RC 2.3.0 1.6 TB Cache, Capacity NVMe only Samsung 2.5&#34; PM1735 V2 Dell Ent NVMe v2 AGN MU U.2 1.6 TB
+Dell Ent NVMe v2 AGN MU U.2 3.2 TB
+Dell Ent NVMe v2 AGN MU U.2 6.4 TB
+0MNMV
+V69W3
+H8D5M
+TRCC6 2.3.0 1.6 TB
+3.2 TB
+6.4 TB
+Cache, Capacity NVMe only Kioxia 2.5&#34; CM6 SP Dell Ent NVMe CM6 MU 1.6 TB
+Dell Ent NVMe CM6 MU 3.2 TB
+Dell Ent NVMe CM6 MU 6.4 TB
+P03YC
+97GR0
+K916X
+511TX 2.1.8 1.6 TB
+3.2 TB
+6.4 TB
+Cache, Capacity NVMe only Intel 2.5&#34; P5600 SP Dell Ent NVMe P5600 MU U.2 1.6 TB
+Dell Ent NVMe P5600 MU U.2 3.2 TB
+C9X5T
+PRKTM
+J7FTF 1.2.4 1.6 TB
+3.2 TB
+Cache, Capacity NVMe only Intel 2.5&#34; Arbordale Plus RR SSDPF2KE016T1E
+SSDPF2KE032T1E
+82TVJ
+TY3M5
+J55N8 1.0.0 1.6 TB
+3.2 TB
+Cache, Capacity NVMe Drives - Capacity Only NOTE Toshiba CD5 960 GB capacity is supported only on the R640 Storage Spaces Direct Ready Node. Endurance Vendor Series Model Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use Read Intensive
+Toshiba CD5 KCD5XLUG960G
+KCD5XLUG3T84
+DRC9H
+17C57
+T79D5 1.2.0 960 GB
+3.84 TB
+Capacity Only Intel P4510 SSDPE2KX040T8T 5GMK0 GD4X4 VDV1DP25 4 TB Capacity Only Read Intensive KIOXIA CM6 Dell Ent NVMe FIPS CM6 RI 1.92 TB TXP72 T79D5 1.2.0 1.92 TB Capacity Only Read Intensive Intel P5500 Dell Ent NVMe P5500 RI U.2 1.92 TB
+Dell Ent NVMe P5500 RI U.2 3.84 TB
+Dell Ent NVMe P5500 RI U.2 7.68 TB
+WPP9G
+KRT3G
+RNN67
+XXN1D 1.2.3 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only Read Intensive Samsung PM1733 V2 Dell Ent NVMe v2 AGN RI U.2 3.84 TB
+Dell Ent NVMe v2 AGN RI U.2 7.68 TB
+G5N65
+DX74Y
+FJK0C 2.2.0 3.84 TB
+7.68 TB
+Capacity Only Read Intensive Kioxia CM6,SP KCM6XRUL1T92
+KCM6XRUL3T84
+KCM6XRUL7T86
+N0VK0
+8W2G5
+VD0JX
+511TX 2.1.8 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only Read Intensive Intel Arbordale Plus RR SSDPF2KX019T1E
+SSDPF2KX038T1E
+SSDPF2KX076T1E
+0HVC7
+77MRY
+90M2J
+J55N8 1.0.0 1.92 TB
+3.84 TB
+7.68 TB
+Capacity Only NVMe PCIe Add In Card (AIC) - Cache or Capacity Platform Vendor Form Factor Description Model Number Device Part Number (P/N) Software Bundle Minimum Supported Version Capacity Use NVMe only Samsung PCIe AIC PM1725A
+MZPLL1T6HEHP-000D3
+MZPLL6T4HMLS-000D3
+06V6M
+604N5
+34C36 1.2.1 1.6 TB
+6.4 TB
+Cache, Capacity NVMe only Samsung PCIe AIC PM1725b
+MZPLL1T6HAJQ-000D3
+MZPLL6T4HMLA-000D3
+FTX2R
+FW2K0
+3F3N1 1.2.2 1.6 TB
+6.4 TB
+Cache, Capacity NVMe only Samsung PCIe AIC PM1735
+MZPLJ1T6HBJR-00AD3
+MZPLJ6T4HALA-00AD3
+Y7D7D
+91FXC
+RDKVC 2.4.0 1.6 TB
+6.4 TB
+Cache, Capacity">
 
 
 
-<link rel="preload" href="https://dell.github.io/azurestack-docs/scss/main.min.4be8cdcf78a52ff9809ae73a7245abb788ca6ce762500dcb809e2dc2750919a0.css" as="style">
-<link href="https://dell.github.io/azurestack-docs/scss/main.min.4be8cdcf78a52ff9809ae73a7245abb788ca6ce762500dcb809e2dc2750919a0.css" rel="stylesheet" integrity="">
+<link rel="preload" href="https://dell.github.io/azurestack-docs/scss/main.min.263422b4ba2515e719b022fe1f0b677207de5c99c6d4e132919174eee1996ac0.css" as="style">
+<link href="https://dell.github.io/azurestack-docs/scss/main.min.263422b4ba2515e719b022fe1f0b677207de5c99c6d4e132919174eee1996ac0.css" rel="stylesheet" integrity="">
 
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -158,7 +2370,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.26f59df13787b62c719f63806a15f60f.json"
+    data-offline-search-index-json-src="/azurestack-docs/offline-search-index.9502516a2b39f8efbe60e616664f25db.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
