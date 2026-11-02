@@ -204,6 +204,7 @@ caption {
 <tr><td>KIOXIA KPM5XVUG3T84</td><td>Firmware DUP</td><td>Storage - 3.84TB SAS SSD</td><td>91W3V</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=CPP97'>CPP97</a></td><td>B02A</td></tr>
 <tr><td>KIOXIA KPM6WRUG3T84</td><td>Firmware DUP</td><td>Storage - 3.84TB SAS SSD</td><td>FH1W9</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=6DH0W'>6DH0W</a></td><td>BD48</td></tr>
 <tr><td>KIOXIA KPM6WVUG3T84</td><td>Firmware DUP</td><td>Storage - 3.84TB SAS SSD</td><td>81H9C</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=6DH0W'>6DH0W</a></td><td>BD48</td></tr>
+<tr><td>KIOXIA KPM7WVUG3T84</td><td>Firmware DUP</td><td>Storage - 3.84TB SAS FIPS SSD</td><td>FMP6K</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=57MM2'>57MM2</a></td><td>57MM2</td></tr>
 <tr><td>KIOXIA KPM6WVUG3T84</td><td>Firmware DUP</td><td>Storage - 3.84TB SAS SSD</td><td>MD4YN</td><td><a href='https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=6DH0W'>6DH0W</a></td><td>BD48</td></tr>
 <tr><td>KIOXIA KPM7WRUG3T84</td><td>Firmware DUP</td><td>Storage - 3.84TB SAS SSD</td><td>YTVTF</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>KIOXIA KPM7XRUG3T84</td><td>Firmware DUP</td><td>Storage - 3.84TB SAS SSD</td><td>MT0R5</td><td>N/A</td><td>N/A</td></tr>
